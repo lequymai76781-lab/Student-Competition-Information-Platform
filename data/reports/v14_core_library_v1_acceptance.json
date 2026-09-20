@@ -1,0 +1,76 @@
+{
+  "round": "Core Competition Library V1 - release candidate acceptance",
+  "generated_at": "2026-09-05T15:14:08.420758+00:00",
+  "core_library": {
+    "core_competitions": 100,
+    "hall_visible_total": 133,
+    "hall_visible_core": 100,
+    "pending_visible": 24,
+    "school_confirmed_visible": 9,
+    "hidden": {
+      "duplicate": 2,
+      "non_competition": 0,
+      "suspected": 7,
+      "no_evidence_unverified_hidden": 1
+    },
+    "manual_review_pending_rows": 28
+  },
+  "coverage": {
+    "has_organizer_pct": 35.0,
+    "has_official_website_pct": 31.0,
+    "has_target_students_pct": 13.0,
+    "has_edition_pct": 39.0,
+    "has_two_recent_pct": 5.0,
+    "has_three_recent_pct": 3.0,
+    "has_current_edition_info_pct": 18.0
+  },
+  "detail_audit": {
+    "PASS": 14,
+    "WARN": 6,
+    "FAIL": 0
+  },
+  "maintenance_queue": {
+    "missing_history": 96,
+    "missing_latest_edition": 85,
+    "missing_official_page": 69,
+    "missing_organizer": 65,
+    "missing_participant_rule": 87,
+    "official_site_js_only": 7
+  },
+  "data_safety": {
+    "hall_duplicate_count": 0,
+    "hall_non_competition_count": 0,
+    "third_party_official_website_rows": [],
+    "school_copied_national_field_editions": [
+      {
+        "edition_id": 22,
+        "competition_id": 137,
+        "year": 2026,
+        "official_registration_deadline": "2026-09-15 23:59:59.000000"
+      },
+      {
+        "edition_id": 23,
+        "competition_id": 109,
+        "year": 2026,
+        "official_registration_deadline": "2026-10-06 23:59:59.000000"
+      }
+    ],
+    "campus_after_national_deadline": [
+      {
+        "id": 46,
+        "school_id": 38,
+        "competition_id": 137,
+        "competition_edition_id": 22,
+        "campus_registration_deadline": "2026-09-30 23:59:59.000000",
+        "official_registration_deadline": "2026-09-15 23:59:59.000000"
+      }
+    ],
+    "template_description_rows_hidden": 77,
+    "ai_generated_fact_claims": 0
+  },
+  "notes": {
+    "tiaozhanbei": "comp2(大挑)/comp3(小挑)为两个独立 Competition（均无 parent），“大挑/小挑”仅存在于 aliases；各自官方名称与当届 Edition 已核验。",
+    "robotic_manual": "RoboTac vs CURC 等证据不足关系继续保持人工复核（review_queue/manual），本轮未做强制合并。",
+    "pending_rule": "大厅允许展示 pending/school 赛事，但前端核验徽标明确显示“信息核验中/高校正式收录”，与 verified/authority 的“官方来源已核验/权威目录收录”视觉区分；无任何核验证据的 unverified 实体不进大厅。"
+  }
+}

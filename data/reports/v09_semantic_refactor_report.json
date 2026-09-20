@@ -1,0 +1,242 @@
+{
+  "version": "v0.9",
+  "stage": "semantic refactor",
+  "generated_at": "2026-09-04T11:21:50.228836+00:00",
+  "source_tiers": {
+    "school_confirmed": 201,
+    "unverified": 24,
+    "verified_official": 11
+  },
+  "authority_distribution": {
+    "B": 178,
+    "C": 23,
+    "D": 24,
+    "S": 11
+  },
+  "competition_verification_before": {
+    "pending_verification": 89,
+    "school_confirmed": 32,
+    "unverified": 12,
+    "verified_official": 10
+  },
+  "competition_verification_after": {
+    "pending_verification": 89,
+    "school_confirmed": 32,
+    "unverified": 12,
+    "verified_official": 10
+  },
+  "edition_verification_before": {
+    "pending_verification": 8,
+    "school_confirmed": 40,
+    "verified_official": 5
+  },
+  "edition_verification_after": {
+    "pending_verification": 8,
+    "school_confirmed": 40,
+    "verified_official": 5
+  },
+  "lead_review_before": {
+    "duplicate": 33,
+    "matched": 109,
+    "pending": 314,
+    "verified": 35
+  },
+  "lead_review_after": {
+    "duplicate": 33,
+    "matched": 109,
+    "pending": 314,
+    "verified": 35
+  },
+  "school_competitions": {
+    "recognition_input_rows": 102,
+    "relation_input_rows": 75,
+    "recognition_pairs": 102,
+    "relation_pairs": 70,
+    "school_competition_rows": 172,
+    "merged_rows": 0,
+    "recognition_only_rows": 102,
+    "relation_only_rows": 70,
+    "recognition_ids_attached": 102,
+    "relation_ids_attached": 75,
+    "conflicts": [
+      {
+        "school_id": 40,
+        "competition_id": 7,
+        "competition_name": "中国新闻奖",
+        "notes": "实体类型异常: award"
+      },
+      {
+        "school_id": 40,
+        "competition_id": 12,
+        "competition_name": "全国大学生艺术节",
+        "notes": "实体类型异常: festival"
+      },
+      {
+        "school_id": 40,
+        "competition_id": 14,
+        "competition_name": "中国舞蹈荷花奖",
+        "notes": "实体类型异常: award"
+      },
+      {
+        "school_id": 40,
+        "competition_id": 16,
+        "competition_name": "省级新闻奖",
+        "notes": "实体类型异常: award"
+      },
+      {
+        "school_id": 40,
+        "competition_id": 26,
+        "competition_name": "全国大学生创新创业训练计划年会展示",
+        "notes": "实体类型异常: exhibition"
+      },
+      {
+        "school_id": 40,
+        "competition_id": 89,
+        "competition_name": "AIGC应用大赛",
+        "notes": "实体类型异常: unknown"
+      },
+      {
+        "school_id": 40,
+        "competition_id": 90,
+        "competition_name": "市级新闻奖",
+        "notes": "实体类型异常: award"
+      }
+    ],
+    "conflict_count": 7,
+    "needs_human_review_count": 7,
+    "total_rows": 172
+  },
+  "policy_only_demoted_ids": [
+    6,
+    7,
+    9,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    23,
+    25,
+    26,
+    27,
+    28,
+    30,
+    31,
+    33,
+    37,
+    38,
+    40,
+    41,
+    43,
+    44,
+    49,
+    50,
+    52,
+    53,
+    55,
+    56,
+    57,
+    58,
+    60,
+    61,
+    62,
+    64,
+    67,
+    69,
+    70,
+    72,
+    73,
+    74,
+    75,
+    76,
+    78,
+    79,
+    80,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97
+  ],
+  "policy_only_demoted_count": 63,
+  "generic_deadline_fixes": [
+    {
+      "id": 5,
+      "competition_id": 123,
+      "year": 2026,
+      "registration_deadline": "2026-09-17 23:59:59.000000",
+      "official_registration_deadline": "2026-09-17 23:59:59.000000",
+      "university_registration_deadline": "2026-09-17 23:59:59.000000"
+    },
+    {
+      "id": 19,
+      "competition_id": 135,
+      "year": 2026,
+      "registration_deadline": "2026-09-20 23:59:59.000000",
+      "official_registration_deadline": "2026-09-20 23:59:59.000000",
+      "university_registration_deadline": "2026-09-20 23:59:59.000000"
+    }
+  ],
+  "duplicate_lead_ids": [
+    212,
+    216,
+    220,
+    244,
+    246,
+    247,
+    249,
+    258,
+    259,
+    265,
+    268,
+    282,
+    285,
+    286,
+    291,
+    294,
+    295,
+    303,
+    306,
+    307,
+    375,
+    376,
+    396,
+    397,
+    398,
+    439,
+    440,
+    441,
+    442,
+    481,
+    483,
+    486,
+    488
+  ],
+  "duplicate_lead_count": 33,
+  "verified_official_downgrade_hint": {},
+  "competitions_with_sa_sources": 10,
+  "verification_recompute": {
+    "verified_official": 10,
+    "pending_verification": 82,
+    "school_confirmed": 32,
+    "suspected": 7,
+    "unverified": 12
+  },
+  "statistics_recompute": {
+    "competitions_scored": 136
+  },
+  "check_school_can_promote_directly": false
+}

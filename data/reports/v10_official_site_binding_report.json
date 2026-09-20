@@ -1,0 +1,222 @@
+{
+  "generated_at": "2026-09-05T13:10:32.209078+00:00",
+  "dry_run": false,
+  "entries": 22,
+  "source_rows_added": 6,
+  "plan": [
+    {
+      "competition_id": 2,
+      "competition_name": "“挑战杯”全国大学生课外学术科技作品竞赛",
+      "source_url": "https://www.tiaozhanbei.net/",
+      "source_type": "competition_official_website",
+      "evidence_exists": true,
+      "evidence_bytes": 74308,
+      "source_exists": true
+    },
+    {
+      "competition_id": 3,
+      "competition_name": "“挑战杯”中国大学生创业计划竞赛",
+      "source_url": "https://www.tiaozhanbei.net/",
+      "source_type": "competition_official_website",
+      "evidence_exists": true,
+      "evidence_bytes": 74308,
+      "source_exists": true
+    },
+    {
+      "competition_id": 5,
+      "competition_name": "全国大学生电子设计竞赛",
+      "source_url": "https://www.nuedc-training.com.cn/",
+      "source_type": "competition_official_website",
+      "evidence_exists": true,
+      "evidence_bytes": 179546,
+      "source_exists": true
+    },
+    {
+      "competition_id": 21,
+      "competition_name": "全国大学生电子商务“创新、创意及创业”挑战赛",
+      "source_url": "http://www.3chuang.net/",
+      "source_type": "competition_official_website",
+      "evidence_exists": true,
+      "evidence_bytes": 1028,
+      "source_exists": true
+    },
+    {
+      "competition_id": 24,
+      "competition_name": "外研社·国才杯“理解当代中国”全国大学生外语能力大赛",
+      "source_url": "https://ucc.fltrp.com/",
+      "source_type": "competition_official_website",
+      "evidence_exists": true,
+      "evidence_bytes": 84257,
+      "source_exists": true
+    },
+    {
+      "competition_id": 32,
+      "competition_name": "“西门子杯”中国智能制造挑战赛",
+      "source_url": "http://www.siemenscup-cimc.org.cn/notice/NoticeDetail?id=2431",
+      "source_type": "official_notice",
+      "evidence_exists": true,
+      "evidence_bytes": 34467,
+      "source_exists": true
+    },
+    {
+      "competition_id": 34,
+      "competition_name": "中国大学生计算机设计大赛",
+      "source_url": "https://jsjds.blcu.edu.cn/",
+      "source_type": "competition_official_website",
+      "evidence_exists": true,
+      "evidence_bytes": 20968,
+      "source_exists": true
+    },
+    {
+      "competition_id": 36,
+      "competition_name": "蓝桥杯全国软件和信息技术专业人才大赛",
+      "source_url": "https://dasai.lanqiao.cn/",
+      "source_type": "competition_official_website",
+      "evidence_exists": true,
+      "evidence_bytes": 1790,
+      "source_exists": true
+    },
+    {
+      "competition_id": 46,
+      "competition_name": "中国机器人大赛暨RoboCup机器人世界杯中国赛",
+      "source_url": "https://rcccaa.drct-caa.org.cn/",
+      "source_type": "competition_official_website",
+      "evidence_exists": true,
+      "evidence_bytes": 35626,
+      "source_exists": true
+    },
+    {
+      "competition_id": 47,
+      "competition_name": "“中国软件杯”大学生软件设计大赛",
+      "source_url": "https://www.cnsoftbei.com/content-18-399-1.html",
+      "source_type": "competition_official_website",
+      "evidence_exists": true,
+      "evidence_bytes": 13056,
+      "source_exists": true
+    },
+    {
+      "competition_id": 59,
+      "competition_name": "中国好创意暨全国数字艺术设计大赛",
+      "source_url": "https://www.cdec.org.cn/",
+      "source_type": "competition_official_website",
+      "evidence_exists": true,
+      "evidence_bytes": 69876,
+      "source_exists": true
+    },
+    {
+      "competition_id": 63,
+      "competition_name": "iCAN大学生创新创业大赛",
+      "source_url": "http://www.g-ican.com/competition/details?id=78",
+      "source_type": "competition_official_website",
+      "evidence_exists": true,
+      "evidence_bytes": 19989,
+      "source_exists": true
+    },
+    {
+      "competition_id": 65,
+      "competition_name": "中华经典诵写讲大赛",
+      "source_url": "https://jdsxj.eduyun.cn/",
+      "source_type": "competition_official_website",
+      "evidence_exists": true,
+      "evidence_bytes": 6716,
+      "source_exists": true
+    },
+    {
+      "competition_id": 65,
+      "competition_name": "中华经典诵写讲大赛",
+      "source_url": "http://www.moe.gov.cn/srcsite/A18/s3137/202605/t20260528_1437956.html",
+      "source_type": "government_official_notice",
+      "evidence_exists": true,
+      "evidence_bytes": 22605,
+      "source_exists": true
+    },
+    {
+      "competition_id": 101,
+      "competition_name": "全国大学生英语竞赛",
+      "source_url": "http://www.chinaneccs.cn/",
+      "source_type": "competition_official_website",
+      "evidence_exists": true,
+      "evidence_bytes": 1744,
+      "source_exists": true
+    },
+    {
+      "competition_id": 125,
+      "competition_name": "中国研究生企业管理创新大赛",
+      "source_url": "https://cpipc.acge.org.cn/cw/hp/2c90801786cfa2b60186de4143390279",
+      "source_type": "competition_official_website",
+      "evidence_exists": true,
+      "evidence_bytes": 108413,
+      "source_exists": true
+    },
+    {
+      "competition_id": 28,
+      "competition_name": "全国大学生机器人大赛",
+      "source_url": "http://www.cnrobocon.net/",
+      "source_type": "competition_official_website",
+      "evidence_exists": true,
+      "evidence_bytes": 289330,
+      "source_exists": false
+    },
+    {
+      "competition_id": 35,
+      "competition_name": "中国高校计算机大赛",
+      "source_url": "http://www.c4best.cn/",
+      "source_type": "competition_official_website",
+      "evidence_exists": true,
+      "evidence_bytes": 1268,
+      "source_exists": false
+    },
+    {
+      "competition_id": 56,
+      "competition_name": "全国高校商业精英挑战赛",
+      "source_url": "http://www.cubec.org.cn/",
+      "source_type": "competition_official_website",
+      "evidence_exists": true,
+      "evidence_bytes": 591,
+      "source_exists": false
+    },
+    {
+      "competition_id": 100,
+      "competition_name": "RoboMaster机甲大师赛",
+      "source_url": "https://www.robomaster.com/zh-CN",
+      "source_type": "competition_official_website",
+      "evidence_exists": true,
+      "evidence_bytes": 205209,
+      "source_exists": false
+    },
+    {
+      "competition_id": 111,
+      "competition_name": "ABU RoboCon全国大学生机器人大赛",
+      "source_url": "http://www.cnrobocon.net/",
+      "source_type": "competition_official_website",
+      "evidence_exists": true,
+      "evidence_bytes": 289330,
+      "source_exists": false
+    },
+    {
+      "competition_id": 114,
+      "competition_name": "中国高校计算机大赛网络技术挑战赛",
+      "source_url": "http://net.c4best.cn/",
+      "source_type": "competition_official_website",
+      "evidence_exists": true,
+      "evidence_bytes": 1335,
+      "source_exists": false
+    }
+  ],
+  "status_before": {
+    "authority_confirmed": 74,
+    "pending_verification": 25,
+    "school_confirmed": 9,
+    "suspected": 7,
+    "unverified": 3,
+    "verified_official": 25
+  },
+  "status_after": {
+    "authority_confirmed": 68,
+    "pending_verification": 25,
+    "school_confirmed": 9,
+    "suspected": 7,
+    "unverified": 3,
+    "verified_official": 31
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "registry_id": "cahe-2022-analysis-report",
+  "version": 1,
+  "enabled": true,
+  "source_type": "higher_education_association",
+  "authority_level": "A",
+  "organization_name": "中国高等教育学会",
+  "source_name": "《2022全国普通高校大学生竞赛分析报告》发布",
+  "title": "《2022全国普通高校大学生竞赛分析报告》发布",
+  "doc_number": null,
+  "source_url": "https://m.cahe.edu.cn/site/content/16011.html",
+  "canonical_source_url": "https://www.cahe.edu.cn/site/content/16011.html",
+  "published_at": "2023-03-22",
+  "local_content_path": "data/raw/authority/cahe_2022_analysis_report.md",
+  "expected": null,
+  "relationship_scope": [
+    "association_directory"
+  ],
+  "relation_role": null,
+  "competition_facts": {},
+  "edition": null,
+  "notes": "中国高等教育学会官网发布页。公开正文只给出分析报告/榜单数量与2023目录新增竞赛数量（附件2），未逐项展开竞赛名单；附件需另行解析官方PDF/Excel后方可做逐赛A级绑定。本条目仅登记为A级目录证据源，不生成任何逐赛绑定。"
+}

@@ -1,0 +1,436 @@
+{
+  "task": "SPECIALIZED_INSTITUTIONS_COVERAGE_02",
+  "generated_at": "2026-09-15T00:59:46.813223+00:00",
+  "sample_size": 21,
+  "category_counts": {
+    "music": 10,
+    "fine_arts": 11
+  },
+  "summary": {
+    "PASS": 21,
+    "FAIL": 0,
+    "UNCERTAIN": 0
+  },
+  "samples": [
+    {
+      "sample": 1,
+      "category": "music",
+      "school": "中央音乐学院",
+      "competition": "中国音乐金钟奖",
+      "event_type": "competition",
+      "relation_type": "participation",
+      "scope": "university",
+      "source_url": "https://www.ccom.edu.cn/info/2571/86451.htm",
+      "checks": {
+        "school": true,
+        "category": true,
+        "event_type": true,
+        "relation_type": true,
+        "scope": true,
+        "official_source": true,
+        "canonical_competition": true
+      },
+      "result": "PASS"
+    },
+    {
+      "sample": 2,
+      "category": "music",
+      "school": "上海音乐学院",
+      "competition": "中国音乐金钟奖",
+      "event_type": "competition",
+      "relation_type": "participation",
+      "scope": "university",
+      "source_url": "https://www.shcmusic.edu.cn/_t112/2025/1031/c2825a59208/page.htm",
+      "checks": {
+        "school": true,
+        "category": true,
+        "event_type": true,
+        "relation_type": true,
+        "scope": true,
+        "official_source": true,
+        "canonical_competition": true
+      },
+      "result": "PASS"
+    },
+    {
+      "sample": 3,
+      "category": "music",
+      "school": "天津音乐学院",
+      "competition": "中国音乐金钟奖",
+      "event_type": "competition",
+      "relation_type": "participation",
+      "scope": "university",
+      "source_url": "https://www.tjcm.edu.cn/ejyx/gjxy/xyjs.htm",
+      "checks": {
+        "school": true,
+        "category": true,
+        "event_type": true,
+        "relation_type": true,
+        "scope": true,
+        "official_source": true,
+        "canonical_competition": true
+      },
+      "result": "PASS"
+    },
+    {
+      "sample": 4,
+      "category": "music",
+      "school": "沈阳音乐学院",
+      "competition": "中国音乐金钟奖",
+      "event_type": "competition",
+      "relation_type": "recognition",
+      "scope": "university",
+      "source_url": "https://www.sycm.edu.cn/video/2025%E5%B9%B4%E6%B2%88%E9%98%B3%E9%9F%B3%E4%B9%90%E5%AD%A6%E9%99%A2%E6%9C%AC%E7%A7%91%E6%8B%9B%E7%94%9F%E7%AE%80%E7%AB%A0.pdf",
+      "checks": {
+        "school": true,
+        "category": true,
+        "event_type": true,
+        "relation_type": true,
+        "scope": true,
+        "official_source": true,
+        "canonical_competition": true
+      },
+      "result": "PASS"
+    },
+    {
+      "sample": 5,
+      "category": "music",
+      "school": "沈阳音乐学院",
+      "competition": "中国音乐金钟奖",
+      "event_type": "competition",
+      "relation_type": "participation",
+      "scope": "university",
+      "source_url": "https://www.sycm.edu.cn/display_son.aspx?DWid=157&Nid=30313&Vid=-1",
+      "checks": {
+        "school": true,
+        "category": true,
+        "event_type": true,
+        "relation_type": true,
+        "scope": true,
+        "official_source": true,
+        "canonical_competition": true
+      },
+      "result": "PASS"
+    },
+    {
+      "sample": 6,
+      "category": "music",
+      "school": "四川音乐学院",
+      "competition": "中国音乐金钟奖",
+      "event_type": "competition",
+      "relation_type": "participation",
+      "scope": "university",
+      "source_url": "https://www.sccm.edu.cn/xwzx/show-832.html",
+      "checks": {
+        "school": true,
+        "category": true,
+        "event_type": true,
+        "relation_type": true,
+        "scope": true,
+        "official_source": true,
+        "canonical_competition": true
+      },
+      "result": "PASS"
+    },
+    {
+      "sample": 7,
+      "category": "music",
+      "school": "四川音乐学院",
+      "competition": "中国音乐金钟奖",
+      "event_type": "competition",
+      "relation_type": "notification",
+      "scope": "university",
+      "source_url": "https://www.chnmusic.org.cn/lb/15jz/202505/t20250523_1344697.html",
+      "checks": {
+        "school": true,
+        "category": true,
+        "event_type": true,
+        "relation_type": true,
+        "scope": true,
+        "official_source": true,
+        "canonical_competition": true
+      },
+      "result": "PASS"
+    },
+    {
+      "sample": 8,
+      "category": "music",
+      "school": "西安音乐学院",
+      "competition": "中国音乐金钟奖",
+      "event_type": "competition",
+      "relation_type": "participation",
+      "scope": "college",
+      "source_url": "https://myx.xacom.edu.cn/2025/0616/c1518a103591/page.htm",
+      "checks": {
+        "school": true,
+        "category": true,
+        "event_type": true,
+        "relation_type": true,
+        "scope": true,
+        "official_source": true,
+        "canonical_competition": true
+      },
+      "result": "PASS"
+    },
+    {
+      "sample": 9,
+      "category": "music",
+      "school": "浙江音乐学院",
+      "competition": "中国音乐金钟奖",
+      "event_type": "competition",
+      "relation_type": "participation",
+      "scope": "university",
+      "source_url": "https://www.zjcm.edu.cn/zyxw/zyyw/202110/58610.html",
+      "checks": {
+        "school": true,
+        "category": true,
+        "event_type": true,
+        "relation_type": true,
+        "scope": true,
+        "official_source": true,
+        "canonical_competition": true
+      },
+      "result": "PASS"
+    },
+    {
+      "sample": 10,
+      "category": "music",
+      "school": "哈尔滨音乐学院",
+      "competition": "中国音乐金钟奖",
+      "event_type": "competition",
+      "relation_type": "recognition",
+      "scope": "university",
+      "source_url": "https://www.hrbcm.edu.cn/info/1023/8972.htm",
+      "checks": {
+        "school": true,
+        "category": true,
+        "event_type": true,
+        "relation_type": true,
+        "scope": true,
+        "official_source": true,
+        "canonical_competition": true
+      },
+      "result": "PASS"
+    },
+    {
+      "sample": 11,
+      "category": "fine_arts",
+      "school": "中央美术学院",
+      "competition": "中国国际大学生创新大赛",
+      "event_type": "competition",
+      "relation_type": "participation",
+      "scope": "university",
+      "source_url": "https://www.cafa.edu.cn/st/2025/90133289.htm",
+      "checks": {
+        "school": true,
+        "category": true,
+        "event_type": true,
+        "relation_type": true,
+        "scope": true,
+        "official_source": true,
+        "canonical_competition": true
+      },
+      "result": "PASS"
+    },
+    {
+      "sample": 12,
+      "category": "fine_arts",
+      "school": "中国美术学院",
+      "competition": "“挑战杯”全国大学生课外学术科技作品竞赛",
+      "event_type": "competition",
+      "relation_type": "notification",
+      "scope": "university",
+      "source_url": "https://gmqn.caa.edu.cn/info/1026/72261.htm",
+      "checks": {
+        "school": true,
+        "category": true,
+        "event_type": true,
+        "relation_type": true,
+        "scope": true,
+        "official_source": true,
+        "canonical_competition": true
+      },
+      "result": "PASS"
+    },
+    {
+      "sample": 13,
+      "category": "fine_arts",
+      "school": "清华大学",
+      "competition": "Young·绒—中国创新创意设计大赛",
+      "event_type": "competition",
+      "relation_type": "notification",
+      "scope": "college",
+      "source_url": "https://www.ad.tsinghua.edu.cn/info/1061/32725.htm",
+      "checks": {
+        "school": true,
+        "category": true,
+        "event_type": true,
+        "relation_type": true,
+        "scope": true,
+        "official_source": true,
+        "canonical_competition": true
+      },
+      "result": "PASS"
+    },
+    {
+      "sample": 14,
+      "category": "fine_arts",
+      "school": "清华大学",
+      "competition": "比亚迪全球汽车设计大赛",
+      "event_type": "competition",
+      "relation_type": "participation",
+      "scope": "college",
+      "source_url": "https://www.ad.tsinghua.edu.cn/info/1455/32288.htm",
+      "checks": {
+        "school": true,
+        "category": true,
+        "event_type": true,
+        "relation_type": true,
+        "scope": true,
+        "official_source": true,
+        "canonical_competition": true
+      },
+      "result": "PASS"
+    },
+    {
+      "sample": 15,
+      "category": "fine_arts",
+      "school": "广州美术学院",
+      "competition": "中国国际大学生创新大赛",
+      "event_type": "competition",
+      "relation_type": "notification",
+      "scope": "university",
+      "source_url": "https://www.gzarts.edu.cn/info/3460/166914.htm",
+      "checks": {
+        "school": true,
+        "category": true,
+        "event_type": true,
+        "relation_type": true,
+        "scope": true,
+        "official_source": true,
+        "canonical_competition": true
+      },
+      "result": "PASS"
+    },
+    {
+      "sample": 16,
+      "category": "fine_arts",
+      "school": "四川美术学院",
+      "competition": "全国大学生工业设计大赛",
+      "event_type": "competition",
+      "relation_type": "participation",
+      "scope": "university",
+      "source_url": "https://www.scfai.edu.cn/info/1124/33499.htm",
+      "checks": {
+        "school": true,
+        "category": true,
+        "event_type": true,
+        "relation_type": true,
+        "scope": true,
+        "official_source": true,
+        "canonical_competition": true
+      },
+      "result": "PASS"
+    },
+    {
+      "sample": 17,
+      "category": "fine_arts",
+      "school": "四川美术学院",
+      "competition": "未来设计师·全国高校数字艺术设计大赛",
+      "event_type": "competition",
+      "relation_type": "participation",
+      "scope": "university",
+      "source_url": "https://www.scfai.edu.cn/__local/D/58/66/DCD0908974980CF89A6B759B4E1_85D724DB_25FB420.pdf",
+      "checks": {
+        "school": true,
+        "category": true,
+        "event_type": true,
+        "relation_type": true,
+        "scope": true,
+        "official_source": true,
+        "canonical_competition": true
+      },
+      "result": "PASS"
+    },
+    {
+      "sample": 18,
+      "category": "fine_arts",
+      "school": "西安美术学院",
+      "competition": "“到延安去·三秦学子圣地行”主题文创设计大赛",
+      "event_type": "competition",
+      "relation_type": "notification",
+      "scope": "college",
+      "source_url": "https://sheji.xafa.edu.cn/dynamic/show/709.html",
+      "checks": {
+        "school": true,
+        "category": true,
+        "event_type": true,
+        "relation_type": true,
+        "scope": true,
+        "official_source": true,
+        "canonical_competition": true
+      },
+      "result": "PASS"
+    },
+    {
+      "sample": 19,
+      "category": "fine_arts",
+      "school": "鲁迅美术学院",
+      "competition": "“学院杯”中国室内与环境设计大赛",
+      "event_type": "competition",
+      "relation_type": "participation",
+      "scope": "college",
+      "source_url": "https://www.lumei.edu.cn/jzyssjxy/info/1004/1926.htm",
+      "checks": {
+        "school": true,
+        "category": true,
+        "event_type": true,
+        "relation_type": true,
+        "scope": true,
+        "official_source": true,
+        "canonical_competition": true
+      },
+      "result": "PASS"
+    },
+    {
+      "sample": 20,
+      "category": "fine_arts",
+      "school": "天津美术学院",
+      "competition": "天津市大学生民族文创设计大赛",
+      "event_type": "competition",
+      "relation_type": "participation",
+      "scope": "university",
+      "source_url": "https://www.tjarts.edu.cn/info/1155/18834.htm",
+      "checks": {
+        "school": true,
+        "category": true,
+        "event_type": true,
+        "relation_type": true,
+        "scope": true,
+        "official_source": true,
+        "canonical_competition": true
+      },
+      "result": "PASS"
+    },
+    {
+      "sample": 21,
+      "category": "fine_arts",
+      "school": "湖北美术学院",
+      "competition": "未来设计师·全国高校数字艺术设计大赛",
+      "event_type": "competition",
+      "relation_type": "participation",
+      "scope": "university",
+      "source_url": "https://www.hifa.edu.cn/info/1027/26154.htm",
+      "checks": {
+        "school": true,
+        "category": true,
+        "event_type": true,
+        "relation_type": true,
+        "scope": true,
+        "official_source": true,
+        "canonical_competition": true
+      },
+      "result": "PASS"
+    }
+  ]
+}

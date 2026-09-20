@@ -1,0 +1,17 @@
+def test_pytest_can_append_log():
+    p = r"D:\Python\xuesheng\data\logs\app.log"
+    with open(p, "a", encoding="utf-8") as f:
+        f.write("pytest probe\n")
+
+
+def test_pytest_can_write_sqlite():
+    import sqlite3
+
+    con = sqlite3.connect(r"D:\Python\xuesheng\data\v02.sqlite")
+    con.execute("update conference_series set updated_at=updated_at where id=1")
+    con.commit()
+    con.close()
+
+
+def test_pytest_import_app_main():
+    import app.main  # noqa: F401

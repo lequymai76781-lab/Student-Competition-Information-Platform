@@ -1,0 +1,269 @@
+{
+  "batch": "DATA_READINESS_SPRINT_01",
+  "generated_at": "2026-09-14T04:26:54.715859+00:00",
+  "before": {
+    "competitions": 150,
+    "sources": 547,
+    "policy_documents": 11,
+    "policy_attachments": 9,
+    "recognitions": 261,
+    "recognized_current": 223,
+    "recognized_historical": 38,
+    "candidate_competitions": 261,
+    "school_competitions": 330,
+    "fact_revisions": 78
+  },
+  "after": {
+    "competitions": 150,
+    "sources": 547,
+    "policy_documents": 11,
+    "policy_attachments": 9,
+    "recognitions": 261,
+    "recognized_current": 223,
+    "recognized_historical": 38,
+    "candidate_competitions": 261,
+    "school_competitions": 330,
+    "fact_revisions": 78
+  },
+  "delta": {
+    "competitions": 0,
+    "sources": 0,
+    "policy_documents": 0,
+    "policy_attachments": 0,
+    "recognitions": 0,
+    "recognized_current": 0,
+    "recognized_historical": 0,
+    "candidate_competitions": 0,
+    "school_competitions": 0,
+    "fact_revisions": 0
+  },
+  "created_competitions": [],
+  "documents": [
+    {
+      "key": "swjtu-2027",
+      "school": "西南交通大学",
+      "rows": 49,
+      "parser_type": "pypdf",
+      "page_count": 3,
+      "file_hash": "ea74c97799cc6c69f185324d4971ce3c904c86e5fb7acd8a9394d8ae96bf8df0"
+    },
+    {
+      "key": "seu-2025-current-in-2026",
+      "school": "东南大学",
+      "rows": 60,
+      "parser_type": "xlrd",
+      "page_count": null,
+      "file_hash": "c65e848be6ee121cabc45931d7a2f589e855f62abb6f1f4c04847e9a13b07019"
+    },
+    {
+      "key": "hzau-2026-html",
+      "school": "华中农业大学",
+      "rows": 1,
+      "parser_type": "verified_html",
+      "page_count": null,
+      "file_hash": "710fecbbf2e341c45d15ac4f91baf325b2972e5d2c978c3b5e34774fd8f3b9a3"
+    },
+    {
+      "key": "nwpu-2026-keyun-html",
+      "school": "西北工业大学",
+      "rows": 1,
+      "parser_type": "verified_html",
+      "page_count": null,
+      "file_hash": "e87e203595565948a5cd26a9dc0ba18d24cb54fbacccc590e407063a5e106ef4"
+    }
+  ],
+  "current_recognition_import": {
+    "attempted": 111,
+    "imported": 111,
+    "unresolved": []
+  },
+  "first_run_artifact_cleanup": {
+    "deleted_recognitions": 0,
+    "deleted_candidates": 0
+  },
+  "carry_over_candidates": [
+    {
+      "candidate_id": 112,
+      "raw_name": "全国大学生红色旅游创意策划大赛（简称“红旅大赛”）",
+      "competition_id": 146,
+      "canonical_name": "全国大学生红色旅游创意策划大赛",
+      "status": "resolved"
+    },
+    {
+      "candidate_id": 121,
+      "raw_name": "“中航工业杯”国际无人飞行器创新大奖赛",
+      "competition_id": 147,
+      "canonical_name": "“中航工业杯”国际无人飞行器创新大奖赛",
+      "status": "resolved"
+    },
+    {
+      "candidate_id": 124,
+      "raw_name": "ACM国际大学生程序设计竞赛",
+      "competition_id": 8,
+      "canonical_name": "ACM-ICPC国际大学生程序设计竞赛",
+      "status": "resolved"
+    },
+    {
+      "candidate_id": 131,
+      "raw_name": "全国“电脑鼠走迷宫”竞赛",
+      "competition_id": 148,
+      "canonical_name": "全国“电脑鼠走迷宫”竞赛",
+      "status": "resolved"
+    },
+    {
+      "candidate_id": 140,
+      "raw_name": "东芝杯·中国师范大学师范专业理科大学生教学技能创新实践大赛",
+      "competition_id": 149,
+      "canonical_name": "“东芝杯”中国师范大学理科师范生教学技能创新大赛",
+      "status": "resolved"
+    },
+    {
+      "candidate_id": 150,
+      "raw_name": "全国大学生交通运输科技大赛",
+      "competition_id": 150,
+      "canonical_name": "全国大学生交通运输科技大赛",
+      "status": "resolved"
+    }
+  ],
+  "deadline_repairs": [
+    {
+      "edition_id": 55,
+      "year": 2024,
+      "status": "already_repaired"
+    },
+    {
+      "edition_id": 54,
+      "year": 2025,
+      "status": "already_repaired"
+    }
+  ],
+  "quality_refresh": {
+    "competitions_scored": 143
+  },
+  "school_read_model": {
+    "recognition_input_rows": 261,
+    "relation_input_rows": 93,
+    "recognition_pairs": 251,
+    "relation_pairs": 86,
+    "school_competition_rows": 330,
+    "merged_rows": 7,
+    "recognition_only_rows": 244,
+    "relation_only_rows": 79,
+    "recognition_ids_attached": 261,
+    "relation_ids_attached": 93,
+    "conflicts": [
+      {
+        "school_id": 40,
+        "competition_id": 7,
+        "competition_name": "中国新闻奖",
+        "notes": "实体类型异常: award"
+      },
+      {
+        "school_id": 40,
+        "competition_id": 12,
+        "competition_name": "全国大学生艺术节",
+        "notes": "实体类型异常: festival"
+      },
+      {
+        "school_id": 40,
+        "competition_id": 14,
+        "competition_name": "中国舞蹈荷花奖",
+        "notes": "实体类型异常: award"
+      },
+      {
+        "school_id": 40,
+        "competition_id": 16,
+        "competition_name": "省级新闻奖",
+        "notes": "实体类型异常: award"
+      },
+      {
+        "school_id": 40,
+        "competition_id": 26,
+        "competition_name": "全国大学生创新创业训练计划年会展示",
+        "notes": "实体类型异常: exhibition"
+      },
+      {
+        "school_id": 40,
+        "competition_id": 89,
+        "competition_name": "AIGC应用大赛",
+        "notes": "实体类型异常: unknown"
+      },
+      {
+        "school_id": 40,
+        "competition_id": 90,
+        "competition_name": "市级新闻奖",
+        "notes": "实体类型异常: award"
+      },
+      {
+        "school_id": 98,
+        "competition_id": 1,
+        "competition_name": "中国国际大学生创新大赛",
+        "notes": "目录级别冲突: ['A类', '国家级、省级']；目录状态冲突: ['expired', 'recognized']"
+      },
+      {
+        "school_id": 98,
+        "competition_id": 2,
+        "competition_name": "“挑战杯”全国大学生课外学术科技作品竞赛",
+        "notes": "目录级别冲突: ['A类', '国家级、省级']；目录状态冲突: ['expired', 'recognized']"
+      },
+      {
+        "school_id": 98,
+        "competition_id": 3,
+        "competition_name": "“挑战杯”中国大学生创业计划竞赛",
+        "notes": "目录级别冲突: ['A类', '国家级、省级']；目录状态冲突: ['expired', 'recognized']"
+      },
+      {
+        "school_id": 98,
+        "competition_id": 4,
+        "competition_name": "全国大学生数学建模竞赛",
+        "notes": "目录级别冲突: ['A类', '国家级、省级']；目录状态冲突: ['expired', 'recognized']"
+      },
+      {
+        "school_id": 98,
+        "competition_id": 5,
+        "competition_name": "全国大学生电子设计竞赛",
+        "notes": "目录级别冲突: ['A类', '国家级、省级']；目录状态冲突: ['expired', 'recognized']"
+      },
+      {
+        "school_id": 98,
+        "competition_id": 8,
+        "competition_name": "ACM-ICPC国际大学生程序设计竞赛",
+        "notes": "目录级别冲突: ['A类', '国家级、省级']；目录状态冲突: ['expired', 'recognized']"
+      },
+      {
+        "school_id": 98,
+        "competition_id": 10,
+        "competition_name": "全国大学生机械创新设计大赛",
+        "notes": "目录级别冲突: ['A类', '国家级、省级']；目录状态冲突: ['expired', 'recognized']"
+      },
+      {
+        "school_id": 98,
+        "competition_id": 11,
+        "competition_name": "全国大学生结构设计竞赛",
+        "notes": "目录级别冲突: ['A类', '国家级、省级']；目录状态冲突: ['expired', 'recognized']"
+      },
+      {
+        "school_id": 98,
+        "competition_id": 19,
+        "competition_name": "全国大学生广告艺术大赛",
+        "notes": "目录级别冲突: ['A类', '国家级、省级']；目录状态冲突: ['expired', 'recognized']"
+      },
+      {
+        "school_id": 98,
+        "competition_id": 150,
+        "competition_name": "全国大学生交通运输科技大赛",
+        "notes": "目录级别冲突: ['A类', '国家级']；目录状态冲突: ['expired', 'recognized']"
+      }
+    ],
+    "conflict_count": 17,
+    "needs_human_review_count": 17
+  },
+  "audit": {
+    "documents": 4,
+    "current_recognitions_in_batch": 111,
+    "current_recognition_school_count": 7,
+    "remaining_carry_over_targets": 0,
+    "notification_or_participation_promoted": 0,
+    "stale_cross_year_deadlines": 0
+  }
+}

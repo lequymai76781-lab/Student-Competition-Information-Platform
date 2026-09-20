@@ -1,0 +1,17 @@
+[Unit]
+Description=Competition Intelligence Scheduler (notifications/freshness)
+After=network.target postgresql.service backend.service
+
+[Service]
+Type=simple
+User=www
+Group=www
+WorkingDirectory=/www/wwwroot/competition/backend
+EnvironmentFile=/www/wwwroot/competition/backend/.env
+# 每日运行一次（--loop-minutes 1440）；服务器重启后 systemd 自动拉起
+ExecStart=/www/wwwroot/competition/backend/venv/bin/python scripts/run_v1_prod_ops.py --loop-minutes 1440
+Restart=always
+RestartSec=30
+
+[Install]
+WantedBy=multi-user.target

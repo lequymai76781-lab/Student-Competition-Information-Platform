@@ -1,0 +1,75 @@
+{
+  "pipeline": "authority-main-library-v1",
+  "dry_run": true,
+  "generated_at": "2026-09-04T14:55:56.409329+00:00",
+  "registry_dir": "D:\\Python\\xuesheng\\data\\seeds\\authority_registry",
+  "counters": {
+    "fact_rows_exist": 13,
+    "matched": 3,
+    "no_name_discovery": 1,
+    "registry_entries": 4,
+    "registry_total": 4,
+    "source_exists": 3,
+    "sources_total_change": 0
+  },
+  "matches": [
+    {
+      "registry_id": "cahe-2022-analysis-report",
+      "title": "《2022全国普通高校大学生竞赛分析报告》发布",
+      "authority_level": "A",
+      "competition": null,
+      "edition": null,
+      "method": "no_competition_name",
+      "needs_manual_review": true
+    },
+    {
+      "registry_id": "mcm-2026-first-notice",
+      "title": "2026高教社杯全国大学生数学建模竞赛第一次通知",
+      "authority_level": "S",
+      "competition": "全国大学生数学建模竞赛",
+      "edition": 2026,
+      "method": "exact",
+      "needs_manual_review": false,
+      "confidence": 1.0,
+      "reasons": [
+        "exact name / alias match"
+      ]
+    },
+    {
+      "registry_id": "moe-2025-innovation-notice",
+      "title": "教育部关于举办中国国际大学生创新大赛（2025）的通知",
+      "authority_level": "S",
+      "competition": "中国国际大学生创新大赛",
+      "edition": 2025,
+      "method": "exact",
+      "needs_manual_review": false,
+      "confidence": 1.0,
+      "reasons": [
+        "exact name / alias match"
+      ]
+    },
+    {
+      "registry_id": "moe-2026-innovation-notice",
+      "title": "教育部关于举办中国国际大学生创新大赛（2026）的通知",
+      "authority_level": "S",
+      "competition": "中国国际大学生创新大赛",
+      "edition": 2026,
+      "method": "exact",
+      "needs_manual_review": false,
+      "confidence": 1.0,
+      "reasons": [
+        "exact name / alias match"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "manual_review": [],
+  "unmatched": [
+    {
+      "registry_id": "cahe-2022-analysis-report",
+      "reason": "registry entry has no expected competition name",
+      "notes": "中国高等教育学会官网发布页。公开正文只给出分析报告/榜单数量与2023目录新增竞赛数量（附件2），未逐项展开竞赛名单；附件需另行解析官方PDF/Excel后方可做逐赛A级绑定。本条目仅登记为A级目录证据源，不生成任何逐赛绑定。"
+    }
+  ],
+  "organizations": []
+}

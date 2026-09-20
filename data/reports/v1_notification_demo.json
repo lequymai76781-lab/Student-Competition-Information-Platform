@@ -1,0 +1,101 @@
+[
+  {
+    "email": "case1@test.local",
+    "followed": [
+      122,
+      4,
+      123
+    ],
+    "reminders_created_now": 0,
+    "total_notifications": 2
+  },
+  {
+    "email": "case2@test.local",
+    "followed": [
+      122,
+      4,
+      123
+    ],
+    "reminders_created_now": 0,
+    "total_notifications": 2
+  },
+  {
+    "email": "case3@test.local",
+    "followed": [
+      122,
+      123,
+      128
+    ],
+    "reminders_created_now": 0,
+    "total_notifications": 1
+  },
+  {
+    "email": "case4@test.local",
+    "followed": [
+      10,
+      11,
+      28
+    ],
+    "reminders_created_now": 0,
+    "total_notifications": 0
+  },
+  {
+    "email": "case5@test.local",
+    "followed": [
+      137,
+      125,
+      139
+    ],
+    "reminders_created_now": 0,
+    "total_notifications": 1
+  },
+  {
+    "email": "case6@test.local",
+    "followed": [
+      128,
+      8
+    ],
+    "reminders_created_now": 0,
+    "total_notifications": 0
+  },
+  {
+    "email": "case7@test.local",
+    "followed": [
+      4,
+      128,
+      124
+    ],
+    "reminders_created_now": 0,
+    "total_notifications": 1
+  },
+  {
+    "email": "case8@test.local",
+    "followed": [
+      122,
+      4,
+      123
+    ],
+    "reminders_created_now": 0,
+    "total_notifications": 2
+  },
+  {
+    "email": "case9@test.local",
+    "followed": [
+      122,
+      4,
+      123
+    ],
+    "reminders_created_now": 0,
+    "total_notifications": 2
+  },
+  {
+    "email": "case10@test.local",
+    "followed": [
+      137,
+      125,
+      139
+    ],
+    "reminders_created_now": 0,
+    "total_notifications": 1
+  }
+]

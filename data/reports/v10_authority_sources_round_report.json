@@ -1,0 +1,208 @@
+{
+  "round": "v10 权威来源补全（高教学会目录取证 + 官方来源反向补全）",
+  "generated_at": "2026-09-05T13:11:24.574881+00:00",
+  "before": {
+    "pending_verification": 82,
+    "verified_official": 10,
+    "school_confirmed": 32,
+    "unverified": 12,
+    "suspected": 7,
+    "s_level_competitions": 10,
+    "a_level_competitions": 0,
+    "only_university_sources_competitions": 118,
+    "no_source_competitions": 12
+  },
+  "after": {
+    "pending_verification": 25,
+    "verified_official": 31,
+    "school_confirmed": 9,
+    "unverified": 3,
+    "suspected": 7,
+    "s_level_competitions": 31,
+    "a_level_competitions": 92,
+    "only_university_sources_competitions": 38,
+    "no_source_competitions": 3
+  },
+  "editions_unchanged": {
+    "total": 54,
+    "verified_official": 8,
+    "school_confirmed": 38,
+    "pending_verification": 8
+  },
+  "cahe_directory": {
+    "source": "《2023全国普通高校大学生竞赛分析报告》竞赛目录（官方数据平台 newsdetail?id=3243 的 PDF，OCR 提取）",
+    "total_items_extracted": 84,
+    "matched_and_bound_db_competitions": 92,
+    "top_level_matches": 78,
+    "sub_item_matches": 14,
+    "new_not_in_db": 5,
+    "manual_review": 1,
+    "unmatched_items": [
+      "全国职业院校技能大赛",
+      "世界技能大赛",
+      "世界技能大赛中国选拔赛",
+      "一带一路暨金砖国家技能发展与技术创新大赛",
+      "码蹄杯全国职业院校程序设计大赛"
+    ],
+    "review_items": [
+      "全国大学生机器人大赛-RoboTac（中置信，与CURC系列关系待人工确认，未绑定）"
+    ]
+  },
+  "official_site_backfill": {
+    "source_rows_added": 22,
+    "competitions_newly_verified_official": 21,
+    "ministry_document_rows": 1,
+    "competition_official_site_rows": 21
+  },
+  "matching_quality": {
+    "automatic_matches": 92,
+    "manual_review": 4,
+    "duplicate_pairs_review": 2,
+    "conflicts": 0
+  },
+  "no_source_12_verdicts": [
+    {
+      "id": 103,
+      "name": "外研社·国才杯英语演讲赛项",
+      "official_source": true,
+      "cahe_directory": true,
+      "school_relation": false,
+      "duplicate": false,
+      "not_competition": false,
+      "suggested": "authority_confirmed（目录子项+母赛事官网）",
+      "status": "authority_confirmed"
+    },
+    {
+      "id": 104,
+      "name": "外研社·国才杯英语写作赛项",
+      "official_source": true,
+      "cahe_directory": true,
+      "school_relation": false,
+      "duplicate": false,
+      "not_competition": false,
+      "suggested": "authority_confirmed（目录子项+母赛事官网）",
+      "status": "authority_confirmed"
+    },
+    {
+      "id": 105,
+      "name": "外研社·国才杯英语阅读赛项",
+      "official_source": true,
+      "cahe_directory": true,
+      "school_relation": false,
+      "duplicate": false,
+      "not_competition": false,
+      "suggested": "authority_confirmed（目录子项+母赛事官网）",
+      "status": "authority_confirmed"
+    },
+    {
+      "id": 106,
+      "name": "外研社·国才杯英语辩论赛项",
+      "official_source": true,
+      "cahe_directory": true,
+      "school_relation": false,
+      "duplicate": false,
+      "not_competition": false,
+      "suggested": "authority_confirmed（目录子项+母赛事官网）",
+      "status": "authority_confirmed"
+    },
+    {
+      "id": 110,
+      "name": "外研社·国才杯“四新”专项赛",
+      "official_source": false,
+      "cahe_directory": false,
+      "school_relation": false,
+      "duplicate": false,
+      "not_competition": false,
+      "suggested": "保留待核验；与母赛事 comp24 关联，官方2026报名页含该赛项但未取到精确URL",
+      "status": "unverified"
+    },
+    {
+      "id": 111,
+      "name": "ABU RoboCon全国大学生机器人大赛",
+      "official_source": true,
+      "cahe_directory": true,
+      "school_relation": false,
+      "duplicate": false,
+      "not_competition": false,
+      "suggested": "verified_official（cnrobocon.net 官方平台+目录子项）",
+      "status": "verified_official"
+    },
+    {
+      "id": 114,
+      "name": "中国高校计算机大赛网络技术挑战赛",
+      "official_source": true,
+      "cahe_directory": true,
+      "school_relation": false,
+      "duplicate": false,
+      "not_competition": false,
+      "suggested": "verified_official（net.c4best.cn）",
+      "status": "verified_official"
+    },
+    {
+      "id": 115,
+      "name": "中国高校计算机大赛大数据挑战赛",
+      "official_source": false,
+      "cahe_directory": true,
+      "school_relation": false,
+      "duplicate": false,
+      "not_competition": false,
+      "suggested": "authority_confirmed（目录子项）；独立官网待补",
+      "status": "authority_confirmed"
+    },
+    {
+      "id": 117,
+      "name": "全国高校商业精英挑战赛品牌策划竞赛",
+      "official_source": false,
+      "cahe_directory": true,
+      "school_relation": false,
+      "duplicate": false,
+      "not_competition": false,
+      "suggested": "authority_confirmed（目录子项+母赛事官网）",
+      "status": "authority_confirmed"
+    },
+    {
+      "id": 118,
+      "name": "全国高校商业精英挑战赛会展专业创新创业实践竞赛",
+      "official_source": false,
+      "cahe_directory": false,
+      "school_relation": false,
+      "duplicate": true,
+      "not_competition": false,
+      "suggested": "疑似与121（文旅与会展…）为同一赛事前后名称，人工合并评估；不删除",
+      "status": "unverified"
+    },
+    {
+      "id": 120,
+      "name": "全国高校商业精英挑战赛创新创业竞赛",
+      "official_source": false,
+      "cahe_directory": true,
+      "school_relation": false,
+      "duplicate": false,
+      "not_competition": false,
+      "suggested": "authority_confirmed（目录子项+母赛事官网）",
+      "status": "authority_confirmed"
+    },
+    {
+      "id": 121,
+      "name": "全国高校商业精英挑战赛文旅与会展创新创业实践竞赛",
+      "official_source": false,
+      "cahe_directory": false,
+      "school_relation": false,
+      "duplicate": true,
+      "not_competition": false,
+      "suggested": "与目录第47项子赛名称一致，与118疑似重复，人工合并评估；不删除",
+      "status": "unverified"
+    }
+  ],
+  "blocked_or_pending_materials": [
+    "高教学会官网2023附件1（榜单一览表，扫描图2页）：未做OCR，未采用为逐项目录；改用官方数据平台目录PDF（图片型）OCR 成功",
+    "高教学会2023观察目录（附件3，34项）未取得",
+    "2024/2025年度更新版目录尚未获取（本轮固定2023版84项）",
+    "heec.cahe.edu.cn 部分旧页面证书不可验证，正文未能直接抓取",
+    "rank.moocollege.com 为JS单页；已通过公开API获得2023目录新闻条目及PDF（无需登录）",
+    "三创赛/蓝桥/NECCS/c4best 等官网为JS单页：域名+标题可验证，正文组织信息需后续站内复核",
+    "cubec.org.cn 站点旧证书主机名不匹配：仅记录标题证据（降级保存）",
+    "外研社·国才杯“四新”专项赛精确官网赛项URL未取得（母赛事 ucc.fltrp.com 已绑定）",
+    "5项高职/职业院校赛事与RoboTac为目录内新发现、数据库不存在：不自动创建实体"
+  ]
+}

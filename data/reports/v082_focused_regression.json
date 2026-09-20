@@ -1,0 +1,879 @@
+{
+  "version": "v0.8.2-focused",
+  "scope": [
+    "华中农业大学"
+  ],
+  "metrics": {
+    "truth_total": 4,
+    "page_tp": 0,
+    "page_fn": 4,
+    "page_recall": 0.0,
+    "candidate_tp": 0,
+    "candidate_fn": 4,
+    "candidate_recall": 0.0,
+    "lead_tp": 0,
+    "lead_fp": 10,
+    "lead_precision": 0.0
+  },
+  "schools": [
+    {
+      "university": "华中农业大学",
+      "truth": [
+        "商业精英挑战赛品牌策划竞赛",
+        "全国大学生英语竞赛",
+        "市场调查与分析大赛",
+        "外研社·国才杯"
+      ],
+      "page_tp": [],
+      "page_fn": [
+        "商业精英挑战赛品牌策划竞赛",
+        "全国大学生英语竞赛",
+        "市场调查与分析大赛",
+        "外研社·国才杯"
+      ],
+      "candidate_tp": [],
+      "candidate_fn": [
+        "商业精英挑战赛品牌策划竞赛",
+        "全国大学生英语竞赛",
+        "市场调查与分析大赛",
+        "外研社·国才杯"
+      ],
+      "lead_tp": 0,
+      "lead_fp": 10,
+      "trace": {
+        "university": "华中农业大学",
+        "batch_name": "v082-focused-01",
+        "status": "completed",
+        "methods_attempted": [
+          "sitemap",
+          "navigation",
+          "known_path",
+          "internal_search",
+          "department_feed",
+          "external_search",
+          "site_search",
+          "wechat",
+          "reverse_match"
+        ],
+        "methods_successful": [
+          "navigation",
+          "known_path",
+          "department_feed"
+        ],
+        "pages_examined": 74,
+        "candidate_articles": 12,
+        "pages_searched": 94,
+        "competition_leads": 10,
+        "matched_competitions": 3,
+        "new_competitions": 0,
+        "new_editions": 1,
+        "official_sources": 10,
+        "university_notice_count": 1,
+        "college_notice_count": 0,
+        "current_registration_count": 0,
+        "edition_2026_count": 1,
+        "wechat_leads": 0,
+        "internal_deadlines": 3,
+        "last_crawled_at": "2026-09-13T12:56:11.180762+00:00",
+        "reason": "部门栏目成功(50条)；导航发现成功(13条)",
+        "errors": [
+          {
+            "method": "known_path",
+            "url": "http://jwc.hzau.edu.cn/",
+            "error": "HTTP 502"
+          },
+          {
+            "method": "known_path",
+            "url": "http://www.hzau.edu.cn/jwc/",
+            "error": "HTTP 404"
+          },
+          {
+            "method": "known_path",
+            "url": "http://www.hzau.edu.cn/undergraduate/",
+            "error": "HTTP 404"
+          },
+          {
+            "method": "known_path",
+            "url": "http://undergraduate.hzau.edu.cn/",
+            "error": "HTTP 502"
+          },
+          {
+            "method": "department_feed",
+            "url": "http://news.hzau.edu.cn/ztw/ddesjszqh/ztsy.htm",
+            "error": "HTTP 502"
+          }
+        ],
+        "examined_pages": [
+          {
+            "url": "http://dxscxcy.hzau.edu.cn/Error.html?statusCode=403",
+            "method": "department_feed",
+            "title": "华中农业大学大学生创新创业训练计划管理系统",
+            "notice_like": true,
+            "student_competition": true,
+            "published_at": null,
+            "action": "outside_recent_window"
+          },
+          {
+            "url": "https://bksy.hzau.edu.cn/info/1006/16644.htm",
+            "method": "department_feed",
+            "title": "关于公布华中农业大学2026年大学生创新创业训练计划项目立项名单的通知",
+            "notice_like": true,
+            "student_competition": true,
+            "published_at": "2026-05-18T00:00:00+00:00",
+            "action": "lead"
+          },
+          {
+            "url": "https://bksy.hzau.edu.cn/info/1006/16844.htm",
+            "method": "department_feed",
+            "title": "关于开展农业机器人创新班遴选的通知",
+            "notice_like": true,
+            "student_competition": false,
+            "published_at": "2026-06-12T00:00:00+00:00",
+            "action": "filtered"
+          },
+          {
+            "url": "https://bksy.hzau.edu.cn/info/1006/16904.htm",
+            "method": "department_feed",
+            "title": "关于开展2026年微专业宣讲及报名工作的通知",
+            "notice_like": true,
+            "student_competition": false,
+            "published_at": "2026-06-16T00:00:00+00:00",
+            "action": "filtered"
+          },
+          {
+            "url": "https://bksy.hzau.edu.cn/info/1006/16944.htm",
+            "method": "department_feed",
+            "title": "关于公布华中农业大学2026年大学生创新创业训练计划项目第一批结题验收结果的通知",
+            "notice_like": true,
+            "student_competition": true,
+            "published_at": "2026-06-17T00:00:00+00:00",
+            "action": "lead"
+          },
+          {
+            "url": "https://bksy.hzau.edu.cn/info/1006/16994.htm",
+            "method": "department_feed",
+            "title": "华中农业大学关于做好2026年下半年全国计算机等级考试工作的通知",
+            "notice_like": true,
+            "student_competition": false,
+            "published_at": "2026-06-21T00:00:00+00:00",
+            "action": "filtered"
+          },
+          {
+            "url": "https://bksy.hzau.edu.cn/info/1006/17264.htm",
+            "method": "department_feed",
+            "title": "关于开展2023级农业机器人创新班遴选的通知",
+            "notice_like": true,
+            "student_competition": false,
+            "published_at": "2026-07-18T00:00:00+00:00",
+            "action": "filtered"
+          },
+          {
+            "url": "https://bksy.hzau.edu.cn/info/1006/17394.htm",
+            "method": "department_feed",
+            "title": "关于组织开展2026年度省级本科智慧课程建设项目申报工作的通知",
+            "notice_like": true,
+            "student_competition": false,
+            "published_at": "2026-08-15T00:00:00+00:00",
+            "action": "filtered"
+          },
+          {
+            "url": "https://bksy.hzau.edu.cn/info/1006/17764.htm",
+            "method": "department_feed",
+            "title": "关于开展2026级本科创新班遴选的通知",
+            "notice_like": true,
+            "student_competition": false,
+            "published_at": "2026-09-07T00:00:00+00:00",
+            "action": "filtered"
+          },
+          {
+            "url": "https://bksy.hzau.edu.cn/info/1006/17804.htm",
+            "method": "department_feed",
+            "title": "关于开展2025级“农业人工智能+”拔尖创新人才培养项目二次遴选的通知",
+            "notice_like": true,
+            "student_competition": false,
+            "published_at": "2026-09-09T00:00:00+00:00",
+            "action": "filtered"
+          },
+          {
+            "url": "https://bksy.hzau.edu.cn/info/1006/17834.htm",
+            "method": "department_feed",
+            "title": "1. 核对时间：本通知发布之日起至报名开始前，务请完成注册、考区及个人信息核对，未按时核对导致报名失败，后果自负。流程详见：",
+            "notice_like": true,
+            "student_competition": false,
+            "published_at": "2026-09-10T00:00:00+00:00",
+            "action": "filtered"
+          },
+          {
+            "url": "https://bksy.hzau.edu.cn/info/1007/16344.htm",
+            "method": "department_feed",
+            "title": "时代回响，心声悠扬——我校第十八届心理情景剧大赛圆满落幕",
+            "notice_like": true,
+            "student_competition": true,
+            "published_at": "2026-04-21T00:00:00+00:00",
+            "action": "lead"
+          },
+          {
+            "url": "https://bksy.hzau.edu.cn/info/1007/16404.htm",
+            "method": "department_feed",
+            "title": "我校教师受邀作专题报告 数智赋能新农科教材创新",
+            "notice_like": false,
+            "student_competition": false,
+            "published_at": "2026-04-28T00:00:00+00:00",
+            "action": "filtered"
+          },
+          {
+            "url": "https://bksy.hzau.edu.cn/info/1007/17134.htm",
+            "method": "department_feed",
+            "title": "学校教师在第二届全国高校教师数智教育创新大赛中再创佳绩",
+            "notice_like": true,
+            "student_competition": false,
+            "published_at": "2026-06-29T00:00:00+00:00",
+            "action": "filtered"
+          },
+          {
+            "url": "https://bksy.hzau.edu.cn/jgsz/ywcs/sjjxglc_cxcyjyzx_.htm",
+            "method": "department_feed",
+            "title": "实践教学管理处（创新创业教育中心）",
+            "notice_like": true,
+            "student_competition": true,
+            "published_at": null,
+            "action": "outside_recent_window"
+          },
+          {
+            "url": "https://bksy.hzau.edu.cn/jsfw/cxcyzd/cxcyjs.htm",
+            "method": "department_feed",
+            "title": "关于公布2026年本科生创新创业“111”赛事 指导性目录的通知",
+            "notice_like": true,
+            "student_competition": false,
+            "published_at": null,
+            "action": "filtered"
+          },
+          {
+            "url": "https://bksy.hzau.edu.cn/jsfw/cxcyzd/cxcyxm.htm",
+            "method": "department_feed",
+            "title": "关于公布华中农业大学2025年新农科新工科时代英才培育行动专项大学生科技创新基金（SRF）项目立项结果的通知",
+            "notice_like": true,
+            "student_competition": false,
+            "published_at": null,
+            "action": "filtered"
+          },
+          {
+            "url": "https://bksy.hzau.edu.cn/jsfw/jsjxfzzx/jxjs.htm",
+            "method": "department_feed",
+            "title": "关于举办华中农业大学第三届教师教学创新大赛的通知",
+            "notice_like": true,
+            "student_competition": false,
+            "published_at": null,
+            "action": "filtered"
+          },
+          {
+            "url": "https://bksy.hzau.edu.cn/xsfw/cxcy.htm",
+            "method": "department_feed",
+            "title": "关于公布华中农业大学2025年新农科新工科时代英才培育行动专项大学生科技创新基金（SRF）项目立项结果的通知",
+            "notice_like": true,
+            "student_competition": false,
+            "published_at": null,
+            "action": "filtered"
+          },
+          {
+            "url": "https://bksy.hzau.edu.cn/xsfw/cxcy/cxcyjs.htm",
+            "method": "department_feed",
+            "title": "关于公布2026年本科生创新创业“111”赛事 指导性目录的通知",
+            "notice_like": true,
+            "student_competition": false,
+            "published_at": null,
+            "action": "filtered"
+          },
+          {
+            "url": "https://bksy.hzau.edu.cn/xsfw/cxcy/cxcyxm.htm",
+            "method": "department_feed",
+            "title": "关于公布华中农业大学2025年新农科新工科时代英才培育行动专项大学生科技创新基金（SRF）项目立项结果的通知",
+            "notice_like": true,
+            "student_competition": false,
+            "published_at": null,
+            "action": "filtered"
+          },
+          {
+            "url": "https://coi.hzau.edu.cn/info/1611/61791.htm",
+            "method": "department_feed",
+            "title": "关于举办华中农业大学第十二届计算机设计大赛的通知-信息学院",
+            "notice_like": true,
+            "student_competition": true,
+            "published_at": "2026-04-10T00:00:00+00:00",
+            "action": "lead"
+          },
+          {
+            "url": "https://coi.hzau.edu.cn/info/1611/62531.htm",
+            "method": "department_feed",
+            "title": "赛事通知 | “扬翔杯” 第六届中国农业机器人创新大赛正式开启！-信息学院",
+            "notice_like": true,
+            "student_competition": true,
+            "published_at": "2026-04-27T00:00:00+00:00",
+            "action": "lead"
+          },
+          {
+            "url": "https://coi.hzau.edu.cn/info/1611/64151.htm",
+            "method": "department_feed",
+            "title": "信息学院2026年中国国际大学生创新大赛拟推荐校赛项目公示-信息学院",
+            "notice_like": true,
+            "student_competition": true,
+            "published_at": "2026-06-04T00:00:00+00:00",
+            "action": "lead"
+          },
+          {
+            "url": "https://coi.hzau.edu.cn/info/1611/64631.htm",
+            "method": "department_feed",
+            "title": "信息学院2026级本科新生班主任名单公示-信息学院",
+            "notice_like": false,
+            "student_competition": false,
+            "published_at": "2026-06-18T00:00:00+00:00",
+            "action": "filtered"
+          },
+          {
+            "url": "https://coi.hzau.edu.cn/info/1611/65211.htm",
+            "method": "department_feed",
+            "title": "关于举办华中农业大学第十二届生物信息设计与技能竞赛的通知-信息学院",
+            "notice_like": true,
+            "student_competition": true,
+            "published_at": "2026-07-08T00:00:00+00:00",
+            "action": "lead"
+          },
+          {
+            "url": "https://coi.hzau.edu.cn/info/1611/66481.htm",
+            "method": "department_feed",
+            "title": "2026-2027-1学期本科生课程研究生助教拟聘用名单公示-信息学院",
+            "notice_like": false,
+            "student_competition": false,
+            "published_at": "2026-09-04T00:00:00+00:00",
+            "action": "filtered"
+          },
+          {
+            "url": "https://coi.hzau.edu.cn/info/1611/66891.htm",
+            "method": "department_feed",
+            "title": "2025级“农业人工智能+”拔尖创新人才培养项目二次遴选上机编程考试公告-信息学院",
+            "notice_like": true,
+            "student_competition": false,
+            "published_at": "2026-09-11T00:00:00+00:00",
+            "action": "filtered"
+          },
+          {
+            "url": "https://emc.hzau.edu.cn/info/1111/20393.htm",
+            "method": "department_feed",
+            "title": "“亚非杯”万年青皱叶菜短视频推广大赛颁奖典礼圆满举行-华中农业大学经济管理学院",
+            "notice_like": true,
+            "student_competition": true,
+            "published_at": "2026-05-21T00:00:00+00:00",
+            "action": "lead"
+          },
+          {
+            "url": "https://emc.hzau.edu.cn/info/1147/22903.htm",
+            "method": "department_feed",
+            "title": "我院代表队在2026年第十三届“学创杯”全国大学生创业综合模拟大赛湖北省选拔赛中喜获佳绩-华中农业大学经济管理学院",
+            "notice_like": true,
+            "student_competition": true,
+            "published_at": "2026-09-10T00:00:00+00:00",
+            "action": "lead"
+          },
+          {
+            "url": "https://emc.hzau.edu.cn/info/1148/20473.htm",
+            "method": "department_feed",
+            "title": "我校举办大学生模拟就业大赛（出国出境赛道）决赛-华中农业大学经济管理学院",
+            "notice_like": true,
+            "student_competition": true,
+            "published_at": "2026-05-26T00:00:00+00:00",
+            "action": "lead"
+          },
+          {
+            "url": "https://fld.hzau.edu.cn/info/1070/14261.htm",
+            "method": "department_feed",
+            "title": "已备演讲主题（地区初赛至全国半决赛）",
+            "notice_like": true,
+            "student_competition": false,
+            "published_at": "2026-03-24T00:00:00+00:00",
+            "action": "filtered"
+          },
+          {
+            "url": "https://fld.hzau.edu.cn/info/1070/14321.htm",
+            "method": "department_feed",
+            "title": "Admission&Career",
+            "notice_like": false,
+            "student_competition": false,
+            "published_at": "2026-03-26T00:00:00+00:00",
+            "action": "filtered"
+          },
+          {
+            "url": "https://fld.hzau.edu.cn/info/1070/14501.htm",
+            "method": "department_feed",
+            "title": "Admission&Career",
+            "notice_like": false,
+            "student_competition": false,
+            "published_at": "2026-04-23T00:00:00+00:00",
+            "action": "filtered"
+          },
+          {
+            "url": "https://fld.hzau.edu.cn/info/1070/14591.htm",
+            "method": "department_feed",
+            "title": "Admission&Career",
+            "notice_like": false,
+            "student_competition": false,
+            "published_at": "2026-04-28T00:00:00+00:00",
+            "action": "filtered"
+          },
+          {
+            "url": "https://fld.hzau.edu.cn/info/1070/14861.htm",
+            "method": "department_feed",
+            "title": "Admission&Career",
+            "notice_like": false,
+            "student_competition": false,
+            "published_at": "2026-06-05T00:00:00+00:00",
+            "action": "filtered"
+          },
+          {
+            "url": "https://fld.hzau.edu.cn/info/1070/14921.htm",
+            "method": "department_feed",
+            "title": "Admission&Career",
+            "notice_like": false,
+            "student_competition": false,
+            "published_at": "2026-06-15T00:00:00+00:00",
+            "action": "filtered"
+          },
+          {
+            "url": "https://fld.hzau.edu.cn/info/1070/15201.htm",
+            "method": "department_feed",
+            "title": "Admission&Career",
+            "notice_like": false,
+            "student_competition": false,
+            "published_at": "2026-08-07T00:00:00+00:00",
+            "action": "filtered"
+          },
+          {
+            "url": "https://fld.hzau.edu.cn/info/1070/15381.htm",
+            "method": "department_feed",
+            "title": "Admission&Career",
+            "notice_like": false,
+            "student_competition": false,
+            "published_at": "2026-09-02T00:00:00+00:00",
+            "action": "filtered"
+          },
+          {
+            "url": "https://fld.hzau.edu.cn/info/1070/15431.htm",
+            "method": "department_feed",
+            "title": "Admission&Career",
+            "notice_like": false,
+            "student_competition": false,
+            "published_at": "2026-09-05T00:00:00+00:00",
+            "action": "filtered"
+          },
+          {
+            "url": "https://fld.hzau.edu.cn/rcpy/jstd.htm",
+            "method": "department_feed",
+            "title": "Admission&Career",
+            "notice_like": false,
+            "student_competition": false,
+            "published_at": null,
+            "action": "filtered"
+          },
+          {
+            "url": "https://news.hzau.edu.cn/info/1009/70198.htm",
+            "method": "department_feed",
+            "title": "习近平在加强基础研究座谈会上强调 以更大力度更实举措加强基础研究 进",
+            "notice_like": false,
+            "student_competition": false,
+            "published_at": "2026-04-25T00:00:00+00:00",
+            "action": "filtered"
+          },
+          {
+            "url": "https://news.hzau.edu.cn/info/1009/73498.htm",
+            "method": "department_feed",
+            "title": "张启发院士在全国粮食和物资储备科技活动周暨湖北省粮食科技活动周开幕",
+            "notice_like": false,
+            "student_competition": false,
+            "published_at": "2026-05-31T00:00:00+00:00",
+            "action": "filtered"
+          },
+          {
+            "url": "https://news.hzau.edu.cn/info/1014/72638.htm",
+            "method": "department_feed",
+            "title": "我校举办自主知识体系构建与学术期刊使命担当暨华中农业大学学报创刊70",
+            "notice_like": false,
+            "student_competition": false,
+            "published_at": "2026-05-23T00:00:00+00:00",
+            "action": "filtered"
+          },
+          {
+            "url": "https://news.hzau.edu.cn/info/1014/72918.htm",
+            "method": "department_feed",
+            "title": "我校举办自主知识体系构建与学术期刊使命担当暨华中农业大学学报创刊70",
+            "notice_like": false,
+            "student_competition": false,
+            "published_at": "2026-05-26T00:00:00+00:00",
+            "action": "filtered"
+          },
+          {
+            "url": "https://news.hzau.edu.cn/info/1014/73728.htm",
+            "method": "department_feed",
+            "title": "张启发院士在全国粮食和物资储备科技活动周暨湖北省粮食科技活动周开幕",
+            "notice_like": false,
+            "student_competition": false,
+            "published_at": "2026-05-26T00:00:00+00:00",
+            "action": "filtered"
+          },
+          {
+            "url": "https://news.hzau.edu.cn/ztw/ddh/ztsy.htm",
+            "method": "navigation",
+            "title": "【贯彻落实党代会】“红色导师”领学，食科园林样板支部研学第十一次党代会报告",
+            "notice_like": false,
+            "student_competition": false,
+            "published_at": null,
+            "action": "filtered"
+          },
+          {
+            "url": "https://news.hzau.edu.cn/ztw/djsx/ztsy.htm",
+            "method": "navigation",
+            "title": "【长江日报】华中农业大学马克思主义学院教授程华东：把党的优秀特质不断转化为新时代党的独特优势",
+            "notice_like": false,
+            "student_competition": false,
+            "published_at": null,
+            "action": "filtered"
+          },
+          {
+            "url": "https://news.hzau.edu.cn/ztw/hyjyjkxjjs/ztsy.htm",
+            "method": "navigation",
+            "title": "专题首页-华中农业大学南湖新闻网",
+            "notice_like": false,
+            "student_competition": false,
+            "published_at": null,
+            "action": "filtered"
+          },
+          {
+            "url": "https://www.hzau.edu.cn/jyjx/bksjy.htm",
+            "method": "navigation",
+            "title": "鄂公网安备 42011102000808号",
+            "notice_like": false,
+            "student_competition": false,
+            "published_at": null,
+            "action": "filtered"
+          },
+          {
+            "url": "https://www.hzau.edu.cn/zsjy/bksjy.htm",
+            "method": "navigation",
+            "title": "鄂公网安备 42011102000808号",
+            "notice_like": false,
+            "student_competition": false,
+            "published_at": null,
+            "action": "filtered"
+          }
+        ],
+        "channel_stats": {
+          "sitemap": {
+            "status": "empty",
+            "items": 0,
+            "detail": "未发现Sitemap或未命中通知路径"
+          },
+          "navigation": {
+            "status": "ok",
+            "items": 13,
+            "detail": "提取 188 条首页链接"
+          },
+          "known_path": {
+            "status": "ok",
+            "items": 4,
+            "detail": "有限入口探测命中 4 个官网入口"
+          },
+          "internal_search": {
+            "status": "empty",
+            "items": 0,
+            "detail": "站内检索入口抓取 0 页，未命中"
+          },
+          "department_feed": {
+            "status": "ok",
+            "items": 50,
+            "detail": "部门栏目抓取 50 条候选文章"
+          },
+          "external_search": {
+            "status": "empty",
+            "items": 0,
+            "detail": "多搜索引擎检索完成，未命中官网URL"
+          },
+          "site_search": {
+            "status": "empty",
+            "items": 0,
+            "detail": "官网限定搜索未命中"
+          },
+          "wechat": {
+            "status": "empty",
+            "items": 0,
+            "detail": "公众号公开检索未命中"
+          },
+          "reverse_match": {
+            "status": "empty",
+            "items": 0,
+            "detail": "已知赛事反向检索未命中"
+          }
+        },
+        "search_queries": [
+          "site:hzau.edu.cn 2026 竞赛 通知",
+          "site:hzau.edu.cn 2026 校内选拔赛",
+          "site:hzau.edu.cn 2026 大赛 报名",
+          "site:hzau.edu.cn 2026 学科竞赛",
+          "site:hzau.edu.cn 2026 征稿 大赛",
+          "site:hzau.edu.cn 2026 数学建模 电子设计",
+          "site:hzau.edu.cn 2026 挑战杯 创新创业",
+          "site:hzau.edu.cn 2026 获奖 竞赛",
+          "site:hzau.edu.cn 2026 (竞赛 OR 大赛) (报名 OR 参赛)",
+          "site:mp.weixin.qq.com \"华中农业大学\" 2026 竞赛 报名",
+          "site:mp.weixin.qq.com \"华中农业大学\" 2026 大赛 通知",
+          "site:mp.weixin.qq.com \"华中农业大学\" 学科竞赛 2026",
+          "\"华中农业大学\" 中国国际大学生创新大赛 2026",
+          "\"华中农业大学\" “挑战杯”全国大学生课外学术科技作品竞赛 2026",
+          "\"华中农业大学\" “挑战杯”中国大学生创业计划竞赛 2026",
+          "\"华中农业大学\" 全国大学生数学建模竞赛 2026",
+          "\"华中农业大学\" 全国大学生电子设计竞赛 2026",
+          "\"华中农业大学\" 全国大学生机械创新设计大赛 2026",
+          "\"华中农业大学\" 全国大学生广告艺术大赛 报名",
+          "\"华中农业大学\" 全国大学生智能汽车竞赛 报名"
+        ],
+        "source_domains": [
+          "bksy.hzau.edu.cn",
+          "coi.hzau.edu.cn",
+          "dxscxcy.hzau.edu.cn",
+          "emc.hzau.edu.cn",
+          "fld.hzau.edu.cn",
+          "news.hzau.edu.cn",
+          "www.hzau.edu.cn"
+        ],
+        "seed_version": "v0.8.2",
+        "discovery_funnel": {
+          "entry_urls_discovered": 25,
+          "department_urls_discovered": 25,
+          "search_results_discovered": 0,
+          "urls_discovered": 81,
+          "urls_fetched": 78,
+          "urls_skipped": 0,
+          "urls_failed": 14,
+          "fetch_success": 64,
+          "http_403": 0,
+          "http_412": 0,
+          "timeout": 0,
+          "source_unavailable": 0,
+          "parsed_pages": 63,
+          "competition_candidate_pages": 51,
+          "valid_competition_leads": 10,
+          "matched_competitions": 3,
+          "relations_created": 1,
+          "deadlines_found": 3,
+          "discovery_sources": {
+            "department": 12,
+            "department_feed": 52,
+            "homepage": 1,
+            "known_path": 12,
+            "navigation": 6,
+            "sitemap": 4
+          }
+        }
+      },
+      "leads": [
+        {
+          "raw_title": "关于公布华中农业大学2026年大学生创新创业训练计划项目立项名单的通知",
+          "source_url": "https://bksy.hzau.edu.cn/info/1006/16644.htm",
+          "detected_competition_name": null,
+          "possible_year": 2026,
+          "possible_deadline": null,
+          "published_at": "2026-05-18T00:00:00+00:00",
+          "source_name": "华中农业大学公开渠道",
+          "source_scope": "211_non_985",
+          "channel": "university_website",
+          "needs_review": true,
+          "discovery_method": "department_feed",
+          "university": "华中农业大学",
+          "batch_name": "v082-focused-01",
+          "raw_content": "﻿ 关于公布华中农业大学2026年大学生创新创业训练计划项目立项名单的通知-本科生院 校历 作息时间 院长信箱 上课信息查询 教育教学在线 网站首页 学校首页 机构设置 部门职能 部门领导 业务处室 通知公告 新闻中心 联系我们 教学资源 专业设置 课程教材 教学平台 教学组织 教学名师 教学改革 培养模式 教研教改 课程思政 教学成果 招生就业 招生网 就业网 信息公开 规章制度 院务公开 质量报告 下载专区 学生事务 教师事务 校历 | 作息时间 | 院长信箱 | 上课信息查询 | 教育教学在线 网站首页 学校首页 机构设置 部门职能 部门领导 业务处室 综合事务办公室 教学运行管理处 实践教学管理处（创新创业教育中心） 质量与评估处 思想政治教育管理处 本科生招生就业处 学生事务中心(注册与学籍管理中心、学生资助管理中心） 大学生心理健康教育中心 教师教学发展中心 博物馆 通知公告 新闻中心 联系我们 教学资源 专业设置 专业目录 培养方案 专业建设 辅修项目 课程教材 课程建设 规划教材 教学平台 实验教学中心 教育教学基地 教学组织 优秀基层教学组织 教学名师 教学改革 培养模式 教研教改 课程思政 教学成果 招生就业 招生网 就业网 信息公开 规章制度 院务公开 质量报告 下载专区 学生事务 教师事务 学生服务 学生事务 课表查询 空教室查询 考试查询 成绩查询 学务指南 休学 复学 退学 保留学籍 转入低一年级 提前毕业 延期毕业 宿舍事务 学生发展 最新动态 领航计划 启航计划 远航计划 助航计划 学生推免 毕业论文 毕业论文工作手册 毕业论文管理系统 创新创业 创新创业项目 创新创业竞赛 大学生创新创业训练计划管理系统 交流学习 国内项目 国（境）外项目 学生资助 语言文字 普通话测试 心理健康 教师服务 教育教学服务 课表查询 空教室查询 考试命题 成绩录入 调停补课 教室借用 教师教学发展中心 教师培训 教学竞赛 教学咨询 教学奖励 毕业论文指导 毕业论文工作手册 毕业论文管理系统 创新创业指导 创新创业项目 创新创业竞赛 大学生创新创业训练计划管理系统 心理健康服务 校友服务 档案提取与政审 录检信息核查 成绩证明办理 学历学位证明办理 学历学位证明书办理 学信网学历信息勘误 学信网学历学位认证报告申请指南 学费补偿贷款代偿 常见问题解答 机构设置 部门职能 部门领导 业务处室 通知公告 新闻中心 联系我们 当前位置： 网站首页 > 机构设置 > 通知公告 > 正文 关于公布华中农业大学2026年大学生创新创业训练计划项目立项名单的通知 时间：2026-05-18 来源： 点击量： 各学院： 根据《教育部高等教育司关于开展2026年国家级大学生创新训练计划立项和结题验收工作的通知》《国家级大学生创新创业训练计划管理办法》（教高函〔2019〕13号）等文件要求，按照学校《华中农业大学大学生创新创业训练计划项目管理办法》（校学[2024]25号）安排，学校组织开展了2026年大学生创新创业训练计划项目申报遴选工作。经项目组申报、学院推荐、学校审核，现将各级立项项目名单予以公布。 本次立项国家级大学生创新创业训练计划项目共计115项，包括《基于3K水稻种质微观表型深度解析及品种识别方法研究》等109项创新训练项目、《游刃有鱼》等5项创业训练项目和《分布式模块化畜禽养殖废弃物全量资源利用项目》等1项创业实践项目。该类项目信息将报教育部备案。 立项湖北省大学生创新创业训练计划项目共计345项，包括《不同储存条件对板蓝根油菜薹中活性物质的影响分析》等336项创新训练项目、《一针四防——全球首款靶向PRDC主要病原的猪四联亚单位疫苗》等7项创业训练项目和《碳点护柑——基于碳纳米材料的柑橘黄龙病高效防治服务》等2项创业实践项目。该类项目信息将报湖北省教育厅备案。 立项《基于机器视觉的鸡蛋品质无损检测系统的开发与应用》等222项创新训练项目为校级大学生科技创新基金（SRF）项目，其中《甘蓝型油菜-白菜型油菜种间渗入系的创建》等62项为襄阳专项项目。 本次立项项目来源为原校级大学生科技创新基金（SRF）、本科生科技创新专项、创业扶持项目的，实际资助经费会扣除原来项目经费额度，不重复资助。 请各学院重视各级各类大学生创新创业训练计划项目过程管理，加强对项目的指导，积极为项目研究提供条件支持，切实保证项目顺利开展。 附件： 1.华中农业大学2026年国家级大学生创新创业训练计划项目立项名单 2.华中农业大学2026年湖北省大学生创新创业训练计划项目立项名单 3.华中农业大学2026年大学生科技创新基金（SRF）项目立项名单 4.华中农业大学2026年大学生科技创新基金（SRF）襄阳专项项目立项名单 华中农业大学本科生院 2026年5月18日 附件【 1.华中农业大学2026年国家级大学生创新创业训练计划项目立项名单.docx 】已下载 次 附件【 2.华中农业大学2026年湖北省大学生创新创业训练计划项目立项名单.docx 】已下载 次 附件【 3.华中农业大学2026年大学生科技创新基金（SRF）项目立项名单.docx 】已下载 次 附件【 4.华中农业大学2026年大学生科技创新基金（SRF）襄阳专项项目立项名单.docx 】已下载 次 上一篇： 关于2026-2027学年选派本科生赴国内高校交流学习的通知 下一篇： 关于开展延期毕业申请工作的通知 地址：湖北省武汉市洪山区狮子山街1号学生综合服务楼 电话：027-87282009 | 传真：027-87280707 华中农业大学本科生院 狮子山下问教问学 友情链接 教育部 农业农村部 湖北省教育厅 清华大学 北京大学 中国农业大学 华中农业大学 中国大学MOOC 中国高等教育学生信息网(学信网) 在线教学平台 国家智慧教育平台 国家虚拟仿真实验教学课程共享平台 新华思政全国高校课程思政教学资源服务平台 长江雨课堂 智慧实践教学一体化平台 学堂在线 智慧树网 Coursera edX Udacity 可汗学院 中国大学慕课平台 CopyRight © 华中农业大学本科生院版权所有 鄂ICP备13013419号 鄂公网安备 42011102000808号",
+          "classification": "registration_notice",
+          "source_type": "university_official",
+          "source_platform": "university_website",
+          "verification_status": "verified_official"
+        },
+        {
+          "raw_title": "关于公布华中农业大学2026年大学生创新创业训练计划项目第一批结题验收结果的通知",
+          "source_url": "https://bksy.hzau.edu.cn/info/1006/16944.htm",
+          "detected_competition_name": null,
+          "possible_year": 2026,
+          "possible_deadline": null,
+          "published_at": "2026-06-17T00:00:00+00:00",
+          "source_name": "华中农业大学公开渠道",
+          "source_scope": "211_non_985",
+          "channel": "university_website",
+          "needs_review": true,
+          "discovery_method": "department_feed",
+          "university": "华中农业大学",
+          "batch_name": "v082-focused-01",
+          "raw_content": "﻿ 关于公布华中农业大学2026年大学生创新创业训练计划项目第一批结题验收结果的通知-本科生院 校历 作息时间 院长信箱 上课信息查询 教育教学在线 网站首页 学校首页 机构设置 部门职能 部门领导 业务处室 通知公告 新闻中心 联系我们 教学资源 专业设置 课程教材 教学平台 教学组织 教学名师 教学改革 培养模式 教研教改 课程思政 教学成果 招生就业 招生网 就业网 信息公开 规章制度 院务公开 质量报告 下载专区 学生事务 教师事务 校历 | 作息时间 | 院长信箱 | 上课信息查询 | 教育教学在线 网站首页 学校首页 机构设置 部门职能 部门领导 业务处室 综合事务办公室 教学运行管理处 实践教学管理处（创新创业教育中心） 质量与评估处 思想政治教育管理处 本科生招生就业处 学生事务中心(注册与学籍管理中心、学生资助管理中心） 大学生心理健康教育中心 教师教学发展中心 博物馆 通知公告 新闻中心 联系我们 教学资源 专业设置 专业目录 培养方案 专业建设 辅修项目 课程教材 课程建设 规划教材 教学平台 实验教学中心 教育教学基地 教学组织 优秀基层教学组织 教学名师 教学改革 培养模式 教研教改 课程思政 教学成果 招生就业 招生网 就业网 信息公开 规章制度 院务公开 质量报告 下载专区 学生事务 教师事务 学生服务 学生事务 课表查询 空教室查询 考试查询 成绩查询 学务指南 休学 复学 退学 保留学籍 转入低一年级 提前毕业 延期毕业 宿舍事务 学生发展 最新动态 领航计划 启航计划 远航计划 助航计划 学生推免 毕业论文 毕业论文工作手册 毕业论文管理系统 创新创业 创新创业项目 创新创业竞赛 大学生创新创业训练计划管理系统 交流学习 国内项目 国（境）外项目 学生资助 语言文字 普通话测试 心理健康 教师服务 教育教学服务 课表查询 空教室查询 考试命题 成绩录入 调停补课 教室借用 教师教学发展中心 教师培训 教学竞赛 教学咨询 教学奖励 毕业论文指导 毕业论文工作手册 毕业论文管理系统 创新创业指导 创新创业项目 创新创业竞赛 大学生创新创业训练计划管理系统 心理健康服务 校友服务 档案提取与政审 录检信息核查 成绩证明办理 学历学位证明办理 学历学位证明书办理 学信网学历信息勘误 学信网学历学位认证报告申请指南 学费补偿贷款代偿 常见问题解答 机构设置 部门职能 部门领导 业务处室 通知公告 新闻中心 联系我们 当前位置： 网站首页 > 机构设置 > 通知公告 > 正文 关于公布华中农业大学2026年大学生创新创业训练计划项目第一批结题验收结果的通知 时间：2026-06-17 来源： 点击量： 各学院： 根据《华中农业大学大学生创新创业训练计划项目管理办法》（校学[2024]25号）文件，学校于近期面向国家级、湖北省大学生创新创业训练计划项目，大学生科技创新基金项目，院级创新创业训练项目（后简称国创、省创、SRF、院创），组织开展了年度第一批结题验收工作，并对所有在研项目开展了进展检查。 经各项目组提交进展检查与结题材料、通过校院专家评审，共有75项国创、173项省创、84项SRF、23项院创项目通过结题验收。其中，23项国创、49项省创、25项SRF和4项院创项目评定为“优秀”。具体验收结果详见附件。 学校将为通过结题验收的项目组师生发放结题证书，对项目组成员按相关规定认定创新创业学分。 附件: 1. 华中农业大学2026年国家级大学生创新创业训练计划项目第一批结题验收结果 2. 华中农业大学2026年湖北省大学生创新创业训练计划项目第一批结题验收结果 3. 华中农业大学2026年大学生科技创新基金（SRF）项目第一批结题验收结果 4. 华中农业大学2026年院级创新创业训练项目第一批结题验收结果 华中农业大学本科生院 2026年6月17日 附件【 华中农业大学2026年国家级大学生创新创业训练计划项目第一批结题验收结果.docx 】已下载 次 附件【 华中农业大学2026年湖北省大学生创新创业训练计划项目第一批结题验收结果.docx 】已下载 次 附件【 华中农业大学2026年大学生科技创新基金（SRF）项目第一批结题验收结果.docx 】已下载 次 附件【 华中农业大学2026年院级创新创业项目第一批结题验收结果.docx 】已下载 次 上一篇： 关于开展2026年“实践创新课程提升计划” 课程建设立项工作的通知 下一篇： 关于开展2026年微专业宣讲及报名工作的通知 地址：湖北省武汉市洪山区狮子山街1号学生综合服务楼 电话：027-87282009 | 传真：027-87280707 华中农业大学本科生院 狮子山下问教问学 友情链接 教育部 农业农村部 湖北省教育厅 清华大学 北京大学 中国农业大学 华中农业大学 中国大学MOOC 中国高等教育学生信息网(学信网) 在线教学平台 国家智慧教育平台 国家虚拟仿真实验教学课程共享平台 新华思政全国高校课程思政教学资源服务平台 长江雨课堂 智慧实践教学一体化平台 学堂在线 智慧树网 Coursera edX Udacity 可汗学院 中国大学慕课平台 CopyRight © 华中农业大学本科生院版权所有 鄂ICP备13013419号 鄂公网安备 42011102000808号",
+          "classification": "registration_notice",
+          "source_type": "university_official",
+          "source_platform": "university_website",
+          "verification_status": "verified_official"
+        },
+        {
+          "raw_title": "时代回响，心声悠扬——我校第十八届心理情景剧大赛圆满落幕",
+          "source_url": "https://bksy.hzau.edu.cn/info/1007/16344.htm",
+          "detected_competition_name": null,
+          "possible_year": null,
+          "possible_deadline": null,
+          "published_at": "2026-04-21T00:00:00+00:00",
+          "source_name": "华中农业大学公开渠道",
+          "source_scope": "211_non_985",
+          "channel": "university_website",
+          "needs_review": true,
+          "discovery_method": "department_feed",
+          "university": "华中农业大学",
+          "batch_name": "v082-focused-01",
+          "raw_content": "﻿ 时代回响，心声悠扬——我校第十八届心理情景剧大赛圆满落幕-本科生院 校历 作息时间 院长信箱 上课信息查询 教育教学在线 网站首页 学校首页 机构设置 部门职能 部门领导 业务处室 通知公告 新闻中心 联系我们 教学资源 专业设置 课程教材 教学平台 教学组织 教学名师 教学改革 培养模式 教研教改 课程思政 教学成果 招生就业 招生网 就业网 信息公开 规章制度 院务公开 质量报告 下载专区 学生事务 教师事务 校历 | 作息时间 | 院长信箱 | 上课信息查询 | 教育教学在线 网站首页 学校首页 机构设置 部门职能 部门领导 业务处室 综合事务办公室 教学运行管理处 实践教学管理处（创新创业教育中心） 质量与评估处 思想政治教育管理处 本科生招生就业处 学生事务中心(注册与学籍管理中心、学生资助管理中心） 大学生心理健康教育中心 教师教学发展中心 博物馆 通知公告 新闻中心 联系我们 教学资源 专业设置 专业目录 培养方案 专业建设 辅修项目 课程教材 课程建设 规划教材 教学平台 实验教学中心 教育教学基地 教学组织 优秀基层教学组织 教学名师 教学改革 培养模式 教研教改 课程思政 教学成果 招生就业 招生网 就业网 信息公开 规章制度 院务公开 质量报告 下载专区 学生事务 教师事务 学生服务 学生事务 课表查询 空教室查询 考试查询 成绩查询 学务指南 休学 复学 退学 保留学籍 转入低一年级 提前毕业 延期毕业 宿舍事务 学生发展 最新动态 领航计划 启航计划 远航计划 助航计划 学生推免 毕业论文 毕业论文工作手册 毕业论文管理系统 创新创业 创新创业项目 创新创业竞赛 大学生创新创业训练计划管理系统 交流学习 国内项目 国（境）外项目 学生资助 语言文字 普通话测试 心理健康 教师服务 教育教学服务 课表查询 空教室查询 考试命题 成绩录入 调停补课 教室借用 教师教学发展中心 教师培训 教学竞赛 教学咨询 教学奖励 毕业论文指导 毕业论文工作手册 毕业论文管理系统 创新创业指导 创新创业项目 创新创业竞赛 大学生创新创业训练计划管理系统 心理健康服务 校友服务 档案提取与政审 录检信息核查 成绩证明办理 学历学位证明办理 学历学位证明书办理 学信网学历信息勘误 学信网学历学位认证报告申请指南 学费补偿贷款代偿 常见问题解答 机构设置 部门职能 部门领导 业务处室 通知公告 新闻中心 联系我们 当前位置： 网站首页 > 机构设置 > 新闻中心 > 正文 时代回响，心声悠扬——我校第十八届心理情景剧大赛圆满落幕 时间：2026-04-21 来源： 点击量： （通讯员：翟烨琳 于嫣然 段佳宁）近日，华中农业大学第十八届校园心理情景剧大赛在大学生活动中心剧场圆满落幕。华中农业大学马克思主义学院李凤兰教授、华中师范大学心理健康教育中心于丽霞副教授、中南财经政法大学心理健康教育咨询中心祝颖老师、华中农业大学大学生心理健康教育中心副主任张延华等担任大赛评委，与现场师生共同见证了这场心灵与艺术交织的视听盛宴。 经过初赛的角逐，经济管理学院、公共管理学院、工学院、生命科学技术学院、食品科学技术学院、动科动医学院、文法学院七支队伍晋级决赛。各学院围绕“时代回响，心声悠扬”的主题，聚焦当代大学生在人机互动、自我认同、情感表达等方面的真实心理困惑，用生动的舞台语言和真挚的演绎，呈现出一幕幕直击心灵的心理情景剧。 公共管理学院《完美陷阱》 将镜头对准“完美主义”这一隐形枷锁。主人公沈薇是一名在绩点、父母期待与同辈比较中不断内耗的大学生。一次考试挂科的打击成为压垮她的最后一根稻草，她与所谓的“完美代理人”定下回溯契约，试图通过一次次修正过去来换取所有人的认可。然而，在追逐完美幻象的过程中，她逐渐疏远挚友、迷失本心，直至崩溃边缘才惊觉：那个完美代理人，不过是自己执念的化身。剧中，沈薇与自我的激烈对峙令人屏息，而她最终听见心底最真实的心声，读懂亲友藏在期许背后的温柔，选择拥抱那个不完美却真实的自己。作品以细腻的表演和富有张力的叙事，传递出“接纳不完美，才是真正的成长”这一温暖内核，引发全场强烈共鸣。 工学院《有口难开》聚焦网络时代青年的表达困境。主人公君宜渴望被群体接纳，拼命追赶网络潮流语言，学得越快、说得越热闹，却渐渐听不见自己内心的声音。当女友小怀因爷爷出事而悲痛欲绝时，他才发现自己竟说不出任何一句真正安慰的话——在追逐流行语的过程中，他弄丢了表达真实情感的能力。剧中最动人的一幕，是君宜选择停下来，把那些不属于自己的词从嘴边拿开，重新学习用真诚的语言去关心、道歉和爱。该剧紧扣当下青年社交现状，反思虚拟表达对真实情感的冲淡，呼吁大家放下套路、以真心换真心，立意现实，引人深思。 生命科学技术学院《都闭嘴，听我说话》关注大学生在外界纷杂声音中迷失自我的普遍困境。主人公安歌长期陷入困惑：自己的行为和想法究竟是否出于真实内心？脑海中那些声音是真是假？她分不清、道不明，几近窒息。机缘巧合下，她遇见了同样拥有“特殊的朋友”的小白，两人彼此映照，让她意识到：或许事情并不是她想的那样，也并非只有她一个人在与无形的力量抗争。作品以温柔而坚定的笔触，展现了安歌从迷茫、挣扎到勇敢迈出一步、学会倾听自己内心真实声音的成长历程。它鼓励每一位年轻人在喧嚣中坚守本心，不被外界裹挟，找到属于自己的节奏。 文法学院、食品科学技术学院、经济管理学院、动科动医学院也为观众带来了精彩纷呈的演出。最终，公共管理学院、工学院获得一等奖；生命科学技术学院、食品科学技术学院、经济管理学院获得二等奖；文法学院、动科动医学院获得三等奖。 在点评环节，华中农业大学马克思主义学院教授李凤兰对本届大赛给予了高度评价。她指出，心理情景剧是大学生自我探索、情感表达与心理成长的重要载体。本届参赛作品不仅艺术表现力强，更可贵的是能够真实、敏锐地捕捉到当代大学生在时代浪潮中普遍面临的心理议题。李老师表示，这些剧目没有停留在“提出问题”的层面，而是通过主角的挣扎与顿悟，给出了具有建设性的心理成长路径——接纳不完美、重拾真诚表达、学会倾听内心。她鼓励同学们把舞台上的感悟延伸到日常生活中，在真实的体验和关系中不断整合自我，成长为更有韧性、更懂自己的人。 在热烈的掌声与欢呼声中，我校第十八届心理情景剧大赛圆满落幕。与此同时，我校第二十四届大学生心理健康活动节也正式启动。活动节期间，学校将陆续推出“狮山心旅”系列心理讲坛、主题心理班会大赛、校级优秀心理委员评选等活动，通过多元形式引导学生关注心理健康，培育积极乐观的生活态度，进一步提升心理健康素养，为校园注入温暖向上的精神力量。 审核：周雷 上一篇： 学校举办新时代民族团结的法治保障专题报告会 下一篇： 2026年学生发展支持项目集中发布，AI赋能助力学子全面成长 地址：湖北省武汉市洪山区狮子山街1号学生综合服务楼 电话：027-87282009 | 传真：027-87280707 华中农业大学本科生院 狮子山下问教问学 友情链接 教育部 农业农村部 湖北省教育厅 清华大学 北京大学 中国农业大学 华中农业大学 中国大学MOOC 中国高等教育学生信息网(学信网) 在线教学平台 国家智慧教育平台 国家虚拟仿真实验教学课程共享平台 新华思政全国高校课程思政教学资源服务平台 长江雨课堂 智慧实践教学一体化平台 学堂在线 智慧树网 Coursera edX Udacity 可汗学院 中国大学慕课平台 CopyRight © 华中农业大学本科生院版权所有 鄂ICP备13013419号 鄂公网安备 42011102000808号",
+          "classification": "award_news",
+          "source_type": "university_official",
+          "source_platform": "university_website",
+          "verification_status": "verified_official"
+        },
+        {
+          "raw_title": "关于举办华中农业大学第十二届计算机设计大赛的通知-信息学院",
+          "source_url": "https://coi.hzau.edu.cn/info/1611/61791.htm",
+          "detected_competition_name": "中国大学生计算机设计大赛",
+          "possible_year": 2026,
+          "possible_deadline": "2026-04-30T23:59:00+00:00",
+          "published_at": "2026-04-10T00:00:00+00:00",
+          "source_name": "华中农业大学公开渠道",
+          "source_scope": "211_non_985",
+          "channel": "university_website",
+          "needs_review": false,
+          "discovery_method": "department_feed",
+          "university": "华中农业大学",
+          "batch_name": "v082-focused-01",
+          "raw_content": "﻿ 关于举办华中农业大学第十二届计算机设计大赛的通知-信息学院 华中农业大学首页 人才招聘 投诉举报 访问旧站 EN 学院首页 学院概况 学院简介 管理团队 组织机构 发展大事记 学院文化 联系我们 师资队伍 教师名录 诚聘英才 人才培养 培养方案 实验教学中心 实践教学基地 大学生科创中心 科学研究 创新平台 团队方向 研究进展 学术论坛 项目成果 学生工作 学生组织 学工快讯 研学在线 日常管理 青春榜样 合作交流 国内合作 国际交流 社会服务 校友联络 党群纪检 党建要闻 支部风采 工会之声 离退休工作 纪检监督 信息公开 规章制度 办事指南 常用电话 下载专区 华中农业大学首页 人才招聘 投诉举报 访问旧站 学院首页 学院概况 学院简介 管理团队 组织机构 发展大事记 学院文化 联系我们 师资队伍 教师名录 诚聘英才 人才培养 培养方案 实验教学中心 实践教学基地 大学生科创中心 科学研究 创新平台 团队方向 研究进展 学术论坛 项目成果 学生工作 学生组织 学工快讯 研学在线 日常管理 青春榜样 合作交流 国内合作 国际交流 社会服务 校友联络 党群纪检 党建要闻 支部风采 工会之声 离退休工作 纪检监督 信息公开 规章制度 办事指南 常用电话 下载专区 通知公告 通知公告 当前位置： 学院首页 > 通知公告 > 正文 关于举办华中农业大学第十二届计算机设计大赛的通知 发布日期 2026-04-10 浏览次数 为进一步增强大学生计算机素养，培养团队协作意识，提高运用信息技术解决实际问题的综合实践能力。经研究，决定面向全校本科生举办“华中农业大学第十二届计算机设计大赛”。 一、比赛简介 “华中农业大学第十二届计算机设计大赛”是“2026年（第19届）中国大学生计算机设计大赛”的选拔赛。中国大学生计算机设计大赛是我国高校面向本科生最早的赛事之一，自2008年开赛至今，一直由教育部高校与计算机相关教指委等或独立或联合主办。大赛的目的是以赛促学、以赛促教、以赛促创，为国家培养德智体美劳全面发展的创新型、复合型、应用型人才服务。中国大学生计算机设计大赛目前是全国普通高校大学生竞赛排行榜榜单赛事之一。 二、比赛内容和主题 1．软件应用与开发 2．微课与AI教学辅助 3．物联网应用与物联网创新转化 4．大数据应用 5．人工智能应用 6．AI+信息可视化设计 7．AI+数媒静态设计 8．AI+数媒动漫与短片 9．AI+数媒游戏与交互设计 10．Al+计算机音乐创作 11．国际生“AI+汉学” 以上比赛详细内容请在 附件一 中查看。 三、参赛方式 1.参赛对象：所有全日制本科生。 2.每队参赛人数为2-9人。 3.每个作者在本类只能提供1件作品，无论作者排名如何。 4.参赛学生与指导教师登录https://2026.jsjds.com.cn，进行用户注册与作品创建，详细操作见 附件二 与 附件三 。 5.比赛评审：本次比赛采用线上评审方式，参赛学生需在2026年4月30日前完成作品，评审结果在2026年5月2日公布。 6.大赛QQ群:195241129 7. 联系人:章程，QQ：1428828 姚娟，QQ：2531958 四、作品要求 1．大赛参赛作品应为参加当年大赛而完成制作，不得使用以前完成的作品或与已发表的作品相似的作品参赛。 2．所有参赛作品都必须为原创作品，必须遵守国家宪法，有关法律、法规以及社会道德规范，如果和已发表、展出、获奖的作品雷同或相似的作品（包括作者前期的作品），均不得参赛。 3．作者对参赛作品须拥有独立、完整的知识产权，不得侵犯他人知识产权。抄袭、盗用、提供虚假材料或违反相关法律法规，自负一切法律责任。 五、评价标准 1.创：作品原创性与创意（20%）； 2.量：作品创作、设计工作量、知识基础容量、作品质量（20%）； 3.健：作品的健壮性评价，作品的内容健康或积极人文思想性评价（20%）； 4.技：作品创作过程中选用的支撑技术难易度或技术支撑的综合程度（20%）； 5.美：作品交互便捷性和界面美观程度，作品呈现的和谐、审美评价（20%）。 六、设奖等级及比例 一等奖：占参赛作品10%； 二等奖：占参赛作品20%； 三等奖：占参赛作品30%； 学校对获奖作品颁发获奖证书，并从作品中择优推荐参加“2026年（第19届）中国大学生计算机设计大赛”中南地区赛和全国赛。 附件一_2026计算机设计大赛内容分类-作品要求.pdf 附件二_华中农业大学计算机设计大赛系统参赛作者使用说明.pdf 附件三_华中农业大学计算机设计大赛系统指导教师使用说明.pdf 主办单位：华中农业大学本科生院 共青团华中农业大学委员会 承办单位：华中农业大学信息学院 华中农业大学信息学院科创部 2026年4月10日 分享 上一篇 赛事通知 | “扬翔杯” 第六届中国农业机器人创新大赛正式开启！ 下一篇 信息学院2026年“申请-考核”制博士研究生初审合格名单公示 地址：湖北省武汉市南湖狮子山街一号 邮编：430070 联系电话：027-87288509 招生就业电话：027-87286876 电子邮件：coi@mail.hzau.edu.cn 微信公众号 版权所有：华中农业大学信息学院 鄂ICP备13013419号-1 鄂公网安备 42011102000808号 友情链接 华中农业大学本科生院 华中农业大学研究生院 华中农业大学图书馆 农业生物信息湖北省重点实验室",
+          "classification": "internal_selection",
+          "source_type": "university_official",
+          "source_platform": "university_website",
+          "verification_status": "verified_official"
+        },
+        {
+          "raw_title": "赛事通知 | “扬翔杯” 第六届中国农业机器人创新大赛正式开启！-信息学院",
+          "source_url": "https://coi.hzau.edu.cn/info/1611/62531.htm",
+          "detected_competition_name": null,
+          "possible_year": null,
+          "possible_deadline": "2026-07-31T23:59:00+00:00",
+          "published_at": "2026-04-27T00:00:00+00:00",
+          "source_name": "华中农业大学公开渠道",
+          "source_scope": "211_non_985",
+          "channel": "university_website",
+          "needs_review": true,
+          "discovery_method": "department_feed",
+          "university": "华中农业大学",
+          "batch_name": "v082-focused-01",
+          "raw_content": "﻿ 赛事通知 | “扬翔杯” 第六届中国农业机器人创新大赛正式开启！-信息学院 华中农业大学首页 人才招聘 投诉举报 访问旧站 EN 学院首页 学院概况 学院简介 管理团队 组织机构 发展大事记 学院文化 联系我们 师资队伍 教师名录 诚聘英才 人才培养 培养方案 实验教学中心 实践教学基地 大学生科创中心 科学研究 创新平台 团队方向 研究进展 学术论坛 项目成果 学生工作 学生组织 学工快讯 研学在线 日常管理 青春榜样 合作交流 国内合作 国际交流 社会服务 校友联络 党群纪检 党建要闻 支部风采 工会之声 离退休工作 纪检监督 信息公开 规章制度 办事指南 常用电话 下载专区 华中农业大学首页 人才招聘 投诉举报 访问旧站 学院首页 学院概况 学院简介 管理团队 组织机构 发展大事记 学院文化 联系我们 师资队伍 教师名录 诚聘英才 人才培养 培养方案 实验教学中心 实践教学基地 大学生科创中心 科学研究 创新平台 团队方向 研究进展 学术论坛 项目成果 学生工作 学生组织 学工快讯 研学在线 日常管理 青春榜样 合作交流 国内合作 国际交流 社会服务 校友联络 党群纪检 党建要闻 支部风采 工会之声 离退休工作 纪检监督 信息公开 规章制度 办事指南 常用电话 下载专区 通知公告 通知公告 当前位置： 学院首页 > 通知公告 > 正文 赛事通知 | “扬翔杯” 第六届中国农业机器人创新大赛正式开启！ 发布日期 2026-04-27 浏览次数 一、大赛介绍 全球性的农业劳动力短缺与成本上涨，推动农业生产模式从依赖人力向寻求自动化转型。具备智能感知和自主决策能力的农业机器人，是实现农业复杂环节机械化作业的必要装备支撑。随着人工智能与机器人技术跨越发展，农业机器人技术创新与产业应用加速迭代，已成为全球智慧农业领域技术竞争的新热点。2026年中央一号文件指出，促进人工智能与农业发展相结合，拓展农业机器人应用场景。依托我国智能机器人高精尖产业优势，聚焦农业生产实际需求，加快推进农业机器人核心技术攻关和产业应用，对于拓展我国人工智能技术应用场景，推进我国农业现代化发展战略具有重要意义。 中国农业机器人创新大赛由中国人工智能学会等单位联合主办，紧密围绕国家农业强国战略与科技自立自强部署，聚焦行业前沿技术与实际应用难题，以赛促研、以赛促用，是首个全国性农业机器人技术主题的科技竞赛。自2021年起已连续举办五届，征集范围覆盖大田、果园、设施、养殖、农产品加工等全产业链环节，累计获奖项目近百项，有效促进了跨学科技术交流与前沿成果产业落地。 二、组织机构 1. 主办单位 中国人工智能学会 国家农业智能装备工程技术研究中心 国家农业信息化工程技术研究中心 2. 协办单位 中国农学会 中国农业机械学会 中国农业工程学会 中国农业机械化协会 华中农业大学 北京农学院 ...... 3. 承办单位 农芯科技（天津）有限责任公司 北京农业信息化学会 首都科技条件平台北京市农林科学院 北京农业人工智能与机器人研究院 中国人工智能学会智能农业专业委员会 4. 支持单位 广西扬翔集团股份有限公司 广州影子科技有限公司 深圳数影科技有限公司 三、参赛对象 国内高校、科研院所、企业、政府机构相关研发团队。鼓励学生和青年研究人员组队参加，鼓励参赛者发挥各自优势进行跨学科、跨产学研界别的合作。团队人数不超过10人。 四、征集要求 1. 征集范围 农业耕、种、养、管、收、加工等环节作业机器人的感知/决策/控制核心算法、关键部件及整机系统等方面技术创新成果。 2. 参赛项目要求 （1）参赛项目须是团队自主研发设计的成果； （2）知识产权清晰，涉及的论文、专利等必须是近两年的成果，且主要完成人须为团队成员； （3）不得使用由组织机构举办的相关比赛的奖励成果重复申报； （4）不得剽窃任何不属于本团队的成果。 注：对于违背大赛项目要求、弄虚作假的参赛项目，经大赛组委会核实后将取消项目申报资格，同时在大赛官方网站通报参赛单位和参赛人员名单；对于已获奖励的项目，将撤销项目奖励资格。 3. 报名要求及方式 请参赛团队通过“中国农业机器人创新大赛”官网http://agrobot.nercita.org.cn报名并提交项目材料。 每个参赛项目需提交1套申报文档（见附件1、2、3）及机器人作业展示视频（时长3分钟以内，格式为MP4，分辨率为1920×1080）。申报文档包括大赛申报表、大赛报名表、大赛承诺函。 4. 评审规则 大赛评委会由主办单位邀请相关领域专家组成，本着公开、公平、公正的原则对参赛项目进行评选，评审主要指标如下： 创意创新性：在结构设计、实现方法、技术特点等方面的创新性； 方案合理性：技术可操作性、解决方案可行性、内容表述完整性； 系统功能性：能够实现满足机器人功能与性能要求的整套作业； 人机交互性：人机交互界面使用便捷性、对作业伙伴（人/其他机器人）作业行为感知的准确性、协同作业配合的协调性等； 系统稳定性：作业成功率、操作可重复性、软件可靠性等； 技术经济性：系统搭建成本，系统作业效率与人工/其他机械设备效率的比较优势，方案应用场景条件要求等。 五、比赛安排 征集截止时间： 2026年7月31日 初审时间： 30-60天 现场评审时间： 具体评审时间待定 地 点： 具体比赛场地待定 * 有关大赛的详细日程安排将在大赛官方网站更新，请各参赛团队及时关注。 六、奖项设置 本届大赛设立特等奖、一等奖、二等奖、三等奖，将颁发由院士签名的奖励证书。 七、联系方式 贺晓琳 010-81128481 13811338099 hexl@nercita.org.cn 魏一博 010-81128479 18686777186 weiyb@nercita.org.cn 附件： “扬翔杯”第六届中国农业机器人创新大赛通知V2.doc 附件：“扬翔杯”第六届中国农业机器人创新大赛申报附件.zip 分享 上一篇 2026年信息学院“申请-考核”制招收博士研究生考核录取工作方案 下一篇 关于举办华中农业大学第十二届计算机设计大赛的通知 地址：湖北省武汉市南湖狮子山街一号 邮编：430070 联系电话：027-87288509 招生就业电话：027-87286876 电子邮件：coi@mail.hzau.edu.cn 微信公众号 版权所有：华中农业大学信息学院 鄂ICP备13013419号-1 鄂公网安备 42011102000808号 友情链接 华中农业大学本科生院 华中农业大学研究生院 华中农业大学图书馆 农业生物信息湖北省重点实验室",
+          "classification": "team_recruitment",
+          "source_type": "university_official",
+          "source_platform": "university_website",
+          "verification_status": "verified_official"
+        },
+        {
+          "raw_title": "信息学院2026年中国国际大学生创新大赛拟推荐校赛项目公示-信息学院",
+          "source_url": "https://coi.hzau.edu.cn/info/1611/64151.htm",
+          "detected_competition_name": "中国国际大学生创新大赛",
+          "possible_year": 2026,
+          "possible_deadline": "2026-06-04T23:59:00+00:00",
+          "published_at": "2026-06-04T00:00:00+00:00",
+          "source_name": "华中农业大学公开渠道",
+          "source_scope": "211_non_985",
+          "channel": "university_website",
+          "needs_review": false,
+          "discovery_method": "department_feed",
+          "university": "华中农业大学",
+          "batch_name": "v082-focused-01",
+          "raw_content": "﻿ 信息学院2026年中国国际大学生创新大赛拟推荐校赛项目公示-信息学院 华中农业大学首页 人才招聘 投诉举报 访问旧站 EN 学院首页 学院概况 学院简介 管理团队 组织机构 发展大事记 学院文化 联系我们 师资队伍 教师名录 诚聘英才 人才培养 培养方案 实验教学中心 实践教学基地 大学生科创中心 科学研究 创新平台 团队方向 研究进展 学术论坛 项目成果 学生工作 学生组织 学工快讯 研学在线 日常管理 青春榜样 合作交流 国内合作 国际交流 社会服务 校友联络 党群纪检 党建要闻 支部风采 工会之声 离退休工作 纪检监督 信息公开 规章制度 办事指南 常用电话 下载专区 华中农业大学首页 人才招聘 投诉举报 访问旧站 学院首页 学院概况 学院简介 管理团队 组织机构 发展大事记 学院文化 联系我们 师资队伍 教师名录 诚聘英才 人才培养 培养方案 实验教学中心 实践教学基地 大学生科创中心 科学研究 创新平台 团队方向 研究进展 学术论坛 项目成果 学生工作 学生组织 学工快讯 研学在线 日常管理 青春榜样 合作交流 国内合作 国际交流 社会服务 校友联络 党群纪检 党建要闻 支部风采 工会之声 离退休工作 纪检监督 信息公开 规章制度 办事指南 常用电话 下载专区 通知公告 通知公告 当前位置： 学院首页 > 通知公告 > 正文 信息学院2026年中国国际大学生创新大赛拟推荐校赛项目公示 发布日期 2026-06-04 浏览次数 经前期宣传动员、学生自主申请参加、学院统一组织进行项目答辩、专家评审、评分，现将拟推荐校赛项目予以公示。 赛道 组别 负责人 团队成员 指导老师 高教 主赛道 本科生创意组 汤喻杰 李尚凯、唐一洋、詹晨喆、刘孟绚、张瑞璐、朱轶、周泽宇 李国亮、何帅、何劲 高教 主赛道 本科生创意组 石钟玉 郭俊岑、张晨曦、黄馨瑶、万秋、薛语薇、全泽滨、张家铭、陈志远、耿婧琳、刘钦文、邱玉彤 左志奇、李林、李伟夫 高教 主赛道 研究生创意组 邓仕银 邓仕银、肖易敏、张顺风、解世博、陈百惠、阎宇凡、谢忠斌、陈薇羽、卢义山秋 冯在文、秦丽 高教 主赛道 研究生创意组 龚钰坤 申传雄、邵博添、刘荣沁、刘枭、 原雨田、童心怡、石锦源、黄文荣、 钱锦博、叶晨琰、石永贵 王欢、黄宝金、苗壮 高教 主赛道 研究生创意组 彭宗扬 孙元辉、孙心聪、李庆华、王曾琦、白怡然、蔡天宝、钟琳雲 李国亮、周强伟、刘洋、苗壮 信息学院学生工作办公室 2026年6月4日 分享 上一篇 信息学院2026级本科新生班主任名单公示 下一篇 华中农业大学信息学院2026年博士“申请-考核”人员成绩公示 地址：湖北省武汉市南湖狮子山街一号 邮编：430070 联系电话：027-87288509 招生就业电话：027-87286876 电子邮件：coi@mail.hzau.edu.cn 微信公众号 版权所有：华中农业大学信息学院 鄂ICP备13013419号-1 鄂公网安备 42011102000808号 友情链接 华中农业大学本科生院 华中农业大学研究生院 华中农业大学图书馆 农业生物信息湖北省重点实验室",
+          "classification": "result_notice",
+          "source_type": "university_official",
+          "source_platform": "university_website",
+          "verification_status": "verified_official"
+        },
+        {
+          "raw_title": "关于举办华中农业大学第十二届生物信息设计与技能竞赛的通知-信息学院",
+          "source_url": "https://coi.hzau.edu.cn/info/1611/65211.htm",
+          "detected_competition_name": null,
+          "possible_year": null,
+          "possible_deadline": null,
+          "published_at": "2026-07-08T00:00:00+00:00",
+          "source_name": "华中农业大学公开渠道",
+          "source_scope": "211_non_985",
+          "channel": "university_website",
+          "needs_review": true,
+          "discovery_method": "department_feed",
+          "university": "华中农业大学",
+          "batch_name": "v082-focused-01",
+          "raw_content": "﻿ 关于举办华中农业大学第十二届生物信息设计与技能竞赛的通知-信息学院 华中农业大学首页 人才招聘 投诉举报 访问旧站 EN 学院首页 学院概况 学院简介 管理团队 组织机构 发展大事记 学院文化 联系我们 师资队伍 教师名录 诚聘英才 人才培养 培养方案 实验教学中心 实践教学基地 大学生科创中心 科学研究 创新平台 团队方向 研究进展 学术论坛 项目成果 学生工作 学生组织 学工快讯 研学在线 日常管理 青春榜样 合作交流 国内合作 国际交流 社会服务 校友联络 党群纪检 党建要闻 支部风采 工会之声 离退休工作 纪检监督 信息公开 规章制度 办事指南 常用电话 下载专区 华中农业大学首页 人才招聘 投诉举报 访问旧站 学院首页 学院概况 学院简介 管理团队 组织机构 发展大事记 学院文化 联系我们 师资队伍 教师名录 诚聘英才 人才培养 培养方案 实验教学中心 实践教学基地 大学生科创中心 科学研究 创新平台 团队方向 研究进展 学术论坛 项目成果 学生工作 学生组织 学工快讯 研学在线 日常管理 青春榜样 合作交流 国内合作 国际交流 社会服务 校友联络 党群纪检 党建要闻 支部风采 工会之声 离退休工作 纪检监督 信息公开 规章制度 办事指南 常用电话 下载专区 通知公告 通知公告 当前位置： 学院首页 > 通知公告 > 正文 关于举办华中农业大学第十二届生物信息设计与技能竞赛的通知 发布日期 2026-07-08 浏览次数 为了进一步激发大学生学习生物信息知识的兴趣，提高专业技能，强化创新意识、实践技能及团队精神，营造自主学习、多元发展的良好氛围，充分展示生物信息“项目育人”特色学科建设成果，经研究，现面向全校本科生举办“华中农业大学第十二届生物信息设计与技能竞赛”。相关事宜通知如下： 一、组织机构： 主办单位：华中农业大学本科生院 承办单位：华中农业大学信息学院 二、参赛方式 （一）参赛对象：全体2023级生物信息系本科生及校内生物科学、信息科学相关专业全日制本科生。 （二）队伍组成：（1）自由组队方式：1-4人自愿灵活组成参赛队伍，每支队伍自由推选1名队长和选择1名指导老师。（2）“项目育人”实训组队方式：以生物信息专业项目实训小组作为参赛队伍，默认原项目组长及指导老师为各队队长和指导老师。要求：每人次仅限参加1支队伍；每位教师参与指导的队伍不得多于3支。 三、竞赛内容 赛 道 竞赛内容 作品要求 第一赛道： 生物信息算法与软件的设计和优化 1.生物信息学算法设计、改进或软件优化 如提高常用生物信息学软件的运行效率，高性能并行算法和程序的设计与开发等。 2.生物信息学软件的集成和多平台化 如针对某个实验或分析流程，建立常用软件的流水线，开发在线或移动端的分析工具等。 3.生物信息数据库或网络服务开发 如二次生物信息（非第一手实验数据）的数据库开发，生物信息数据的在线搜索与查询的网络服务的开发等。 4.数字和多媒体资源制作 如制作介绍生物信息学相关研究内容的网页、网站、动画演示，制作生物信息学相关内容的多媒体小课件等。 1.论证算法或软件的设计思路及创新性，证明算法或软件切实可用或效率更高。 2.提交设计流程图以及本地、在线或移动端中至少一个平台的软件及源代码。 3.提交数据库或网络服务的完整程序和数据，并进行相应数据查询与展示方式的操作演示。 4.提交所制作的数字和多媒体资源，并进行现场介绍和演示。 第二赛道： 数据挖掘、统计分析、机器学习与预测 1.基因组、转录组、蛋白组、代谢组 2.药物组、定量构效关系、化学信息学 3.表型组、数量遗传学 4.其他组学数据 1.模式特征提取与预测。 2.聚类分析、相关性分析、进化分析等。 3.参考学术论文的格式，提交分析报告。 4.制作PPT，现场答辩。 第三赛道： 生物系统的建模与模拟 1.生物网络分析 如生物网络的构建，拓扑特征分析，网络模体（Motif）识别，模块性分析，层次性分析，网络整合与进化分析等。 2.生物过程的建模与模拟 如生理生化过程的建模与模拟，细胞行为的建模与模拟，生物分子及其相互作用的建模与模拟等。 3.基因回路设计 如构建各种检测回路、开关回路、振荡回路、逻辑门回路及其组合回路、记忆和时序回路、模拟计算回路、生物计算机等，鼓励面向实际问题（如环境能源，医疗健康等）的回路设计与应用。 1.以常用的数据格式，提交完整的网络模型，并参考学术论文的格式，提交分析报告，制作PPT，现场答辩。 2.提交完整的模型描述，包括问题背景、模型数据、软件代码等，展示模拟过程和结果，制作PPT，现场答辩。 3.提交完整的设计路线图及相关描述文档，论证基因回路的可行性及其应用价值或潜力，制作PPT，现场答辩。 四、奖项设置 参赛队伍提交相关材料，进行现场展示后，大赛评委会根据各参赛队的实际工作量及设计的完整性、可行性及创新性综合评价及打分，各赛道拟评选出一、二、三等奖各一，奖励设置为一等奖900元/队，二等奖600元/队，三等奖300元/队，并颁发获奖证书。 五、时间安排 1.参赛报名：请各队学生充分考虑参与项目及竞赛赛道内容后，下载并填写《华中农业大学第十二届生物信息设计与技能竞赛报名表》，并于 202 6 年 9 月 9 日17:00 前发送至信息学院科创中心公共邮箱： 3 444973850 @qq.com ，《报名表》以“Bic-HZAU+队名+队长姓名”命名。 2.作品提交及评选：参赛队伍按照大赛要求完成作品，并于 202 6 年 9 月 21 日 17:00 前将相关资料打包发送至科创中心公共邮箱： 3444973850@qq.com 。邮件标题以“BiC-HZAU+队名+队长姓名”命名。展示评选日期暂定为 202 6 年9月2 3 日 ，届时需进行现场答辩、作品展示及颁奖仪式等。具体提交时间、评选要求、答辩场地及其他未尽事宜等将在QQ群（ 群号：1056067729 ）另行通知。 华中农业大学信息学院 2026年7月8日 竞赛报名表.docx 分享 上一篇 关于2026年度中国商业联合会科学技术奖申报的公示 下一篇 关于推荐刘凌等3位老师申报学校管理岗位七、八级职员的公示 地址：湖北省武汉市南湖狮子山街一号 邮编：430070 联系电话：027-87288509 招生就业电话：027-87286876 电子邮件：coi@mail.hzau.edu.cn 微信公众号 版权所有：华中农业大学信息学院 鄂ICP备13013419号-1 鄂公网安备 42011102000808号 友情链接 华中农业大学本科生院 华中农业大学研究生院 华中农业大学图书馆 农业生物信息湖北省重点实验室",
+          "classification": "team_recruitment",
+          "source_type": "university_official",
+          "source_platform": "university_website",
+          "verification_status": "verified_official"
+        },
+        {
+          "raw_title": "“亚非杯”万年青皱叶菜短视频推广大赛颁奖典礼圆满举行-华中农业大学经济管理学院",
+          "source_url": "https://emc.hzau.edu.cn/info/1111/20393.htm",
+          "detected_competition_name": null,
+          "possible_year": 2026,
+          "possible_deadline": null,
+          "published_at": "2026-05-21T00:00:00+00:00",
+          "source_name": "华中农业大学公开渠道",
+          "source_scope": "211_non_985",
+          "channel": "university_website",
+          "needs_review": true,
+          "discovery_method": "department_feed",
+          "university": "华中农业大学",
+          "batch_name": "v082-focused-01",
+          "raw_content": "﻿ “亚非杯”万年青皱叶菜短视频推广大赛颁奖典礼圆满举行-华中农业大学经济管理学院 首页 学院概况 学院简介 历史沿革 领导团队 院长致辞 组织机构 制度公开 工作流程 师资队伍 农林经济管理系 工商管理系 经济学系 会计学系 大数据管理系 荣休教师 人才培养 本科生教育 研究生教育 继续教育 招生宣传 教学资源 学科学术 学科团队 学科平台 科研成果 党群工作 理论学习 党建动态 工会工作 学生事务 本科生 研究生 就业信息 交流合作 学术交流 合作培养 青年科学家论坛 青年科学家联盟 招贤纳才 校友之家 校友名录 MBA联合会 校友活动 下载专区 教师下载 学生下载 首页 学院概况 学院简介 历史沿革 领导团队 院长致辞 组织机构 制度公开 工作流程 师资队伍 农林经济管理系 工商管理系 经济学系 会计学系 大数据管理系 荣休教师 人才培养 本科生教育 研究生教育 继续教育 招生宣传 教学资源 学科学术 学科团队 学科平台 科研成果 党群工作 理论学习 党建动态 工会工作 学生事务 本科生 研究生 就业信息 交流合作 学术交流 合作培养 青年科学家论坛 青年科学家联盟 招贤纳才 校友之家 校友名录 MBA联合会 校友活动 下载专区 教师下载 学生下载 本科生教育 教学资源 教学成果 教学管理 本科生教育 您的位置是： 首页 > 人才培养 > 本科生教育 > 正文 “亚非杯”万年青皱叶菜短视频推广大赛颁奖典礼圆满举行 发布日期：2026-05-21 访问次数： 2026年5月10日下午，“亚非杯”万年青皱叶菜短视频推广大赛暨经济管理学院人力资源管理专业技能竞赛颁奖典礼在新人文楼263圆满举行。亚非种业公司张亚芳经理、戢小宇经理、大赛指导老师施丹以及十三支参赛队伍代表出席了本次活动。 典礼伊始，各获奖小组代表依次登台，围绕参赛作品的选题思路、拍摄手法、剪辑逻辑及推广策略进行了分享。特等奖小组代表叶可琰表示：“在拍摄手法上我们没有选择传统的推广形式，而是选择了当今年轻人喜爱的VLOG形式，这样更容易引起大家的兴趣。” 哈萨克族同学阿亚拉则分享道：“作为一名哈萨克族同学，我希望跳出传统农产品推广的框架，用母语搭配中文，把亚非万连青皱叶菜的高营养、高膳食纤维这些优势讲清楚。”她巧妙地将皱叶菜的推广宣传与民族特色相结合，作品获得良好反响。 随后进入颁奖环节，亚非种业公司张经理、戢经理与施丹老师分别为获得特等奖及一、二、三等奖的小组颁发荣誉证书与奖金。现场掌声不断，获奖同学们脸上都洋溢着由衷的成就感与自豪感。 亚非种业公司张经理在总结发言中表示，同学们制作的短视频画质优美、风格各异、令人惊喜，为万年青皱叶菜的推广带来了许多新思路。她强调，公司一直注重创新品牌宣传方式，后续会充分吸收大学生的创意，并计划打造万年青皱叶菜卡通IP形象，以吸引更多年轻消费群体。 大赛指导老师施丹在总结致辞中指出，短视频制作不仅是当下备受关注的实用技能，更是连接专业知识与大众传播的重要桥梁。她呼吁同学们以此为契机，将比赛中的创新精神延伸至更广阔的学习与工作场景，努力成长为知行合一的拔尖创新人才。 最后，本次颁奖典礼在热烈的气氛中圆满落幕，全体成员合影留念，为这场创意赛事画上圆满句号。 文字：阮亚红 审核：施丹 罗小锋 上一篇： 我院教师参加教育部虚拟教研室经济管理学科协作组会议并作经验分享 下一篇： 【学科专业竞赛】关于举办2026年“学创杯”全国大学生创业综合模拟大赛校内选拔赛暨华中农业大学第十三届“网络虚拟运营”创业综合暨市场营销专业技能竞赛的通知 友情链接： — — 主管部门 — — 中华人民共和国教育部 中华人民共和国农业农村部 华中农业大学 — — 合作单位 — — — — 职能机构 — — 研究生院 本科生院 — — 教学部门 — — 地址：中国.湖北.武汉 南湖狮子山街一号430070 电话：027-87286896 电子邮箱：jgxy CopyRight 华中农业大学 版权所有 累计访问次数： 微信公众号",
+          "classification": "activity",
+          "source_type": "university_official",
+          "source_platform": "university_website",
+          "verification_status": "verified_official"
+        },
+        {
+          "raw_title": "我院代表队在2026年第十三届“学创杯”全国大学生创业综合模拟大赛湖北省选拔赛中喜获佳绩-华中农业大学经济管理学院",
+          "source_url": "https://emc.hzau.edu.cn/info/1147/22903.htm",
+          "detected_competition_name": "“学创杯”全国大学生创业综合模拟大赛",
+          "possible_year": 2026,
+          "possible_deadline": null,
+          "published_at": "2026-09-10T00:00:00+00:00",
+          "source_name": "华中农业大学公开渠道",
+          "source_scope": "211_non_985",
+          "channel": "university_website",
+          "needs_review": false,
+          "discovery_method": "department_feed",
+          "university": "华中农业大学",
+          "batch_name": "v082-focused-01",
+          "raw_content": "﻿ 我院代表队在2026年第十三届“学创杯”全国大学生创业综合模拟大赛湖北省选拔赛中喜获佳绩-华中农业大学经济管理学院 首页 学院概况 学院简介 历史沿革 领导团队 院长致辞 组织机构 制度公开 工作流程 师资队伍 农林经济管理系 工商管理系 经济学系 会计学系 大数据管理系 荣休教师 人才培养 本科生教育 研究生教育 继续教育 招生宣传 教学资源 学科学术 学科团队 学科平台 科研成果 党群工作 理论学习 党建动态 工会工作 学生事务 本科生 研究生 就业信息 交流合作 学术交流 合作培养 青年科学家论坛 青年科学家联盟 招贤纳才 校友之家 校友名录 MBA联合会 校友活动 下载专区 教师下载 学生下载 首页 学院概况 学院简介 历史沿革 领导团队 院长致辞 组织机构 制度公开 工作流程 师资队伍 农林经济管理系 工商管理系 经济学系 会计学系 大数据管理系 荣休教师 人才培养 本科生教育 研究生教育 继续教育 招生宣传 教学资源 学科学术 学科团队 学科平台 科研成果 党群工作 理论学习 党建动态 工会工作 学生事务 本科生 研究生 就业信息 交流合作 学术交流 合作培养 青年科学家论坛 青年科学家联盟 招贤纳才 校友之家 校友名录 MBA联合会 校友活动 下载专区 教师下载 学生下载 教学信息 教学信息 教学信息 您的位置是： 首页 > 教学信息 > 正文 我院代表队在2026年第十三届“学创杯”全国大学生创业综合模拟大赛湖北省选拔赛中喜获佳绩 发布日期：2026-09-10 访问次数： 2026年9月4日，第十三届“学创杯”全国大学生创业综合模拟大赛湖北省选拔赛在湖北工程学院开赛。本次湖北省选拔赛由高等学校国家级实验教学示范中心联席会经济与管理学科组、中国陶行知研究会、湖北省高等学校经济管理实验教学示范中心联席会共同主办，湖北工程学院承办。在本次比赛中，我院代表获得一项省级一等奖、三项省级三等奖的佳绩。 我院参赛团队上台领取一等奖证书 “学创杯”全国大学生创业综合模拟大赛是中国高等教育学会全国普通高校大学生竞赛排行榜收录赛事，同时也是华中农业大学二类学科竞赛。赛事依托企业虚拟运营仿真平台，考验参赛团队市场研判、数据分析、战略决策与团队协作能力，重在锻炼学生将经管专业理论转化为经营决策的实践本领。 在指导老师的悉心带领下，参赛队员分工协作、密切配合，对市场环境进行研判，不断调整企业生产、营销、财务等多维度经营策略，在全省众多参赛队伍的激烈角逐中奋勇争先，最终斩获佳绩，充分展现出华农经管学子扎实的专业素养与创新创业实践能力。 此次竞赛历练，不仅进一步锤炼了团队的创新思辨意识，也切实强化了数据分析、财务研判与市场趋势预判的专业能力。队员在实战中看清自身能力短板，明晰后续学习提升的方向，也极大增强了直面复杂商业场景、投身创业实践的信心。 附获奖名单： 文字：李天谊 图片：唐文雨 初审：卢云帆 、 王清 终审：罗小锋 上一篇： 无 下一篇： 经济管理学院举行新聘研究生导师岗前座谈会暨聘任仪式 友情链接： — — 主管部门 — — 中华人民共和国教育部 中华人民共和国农业农村部 华中农业大学 — — 合作单位 — — — — 职能机构 — — 研究生院 本科生院 — — 教学部门 — — 地址：中国.湖北.武汉 南湖狮子山街一号430070 电话：027-87286896 电子邮箱：jgxy CopyRight 华中农业大学 版权所有 累计访问次数： 微信公众号",
+          "classification": "award_news",
+          "source_type": "university_official",
+          "source_platform": "university_website",
+          "verification_status": "verified_official"
+        },
+        {
+          "raw_title": "我校举办大学生模拟就业大赛（出国出境赛道）决赛-华中农业大学经济管理学院",
+          "source_url": "https://emc.hzau.edu.cn/info/1148/20473.htm",
+          "detected_competition_name": null,
+          "possible_year": null,
+          "possible_deadline": null,
+          "published_at": "2026-05-26T00:00:00+00:00",
+          "source_name": "华中农业大学公开渠道",
+          "source_scope": "211_non_985",
+          "channel": "university_website",
+          "needs_review": true,
+          "discovery_method": "department_feed",
+          "university": "华中农业大学",
+          "batch_name": "v082-focused-01",
+          "raw_content": "﻿ 我校举办大学生模拟就业大赛（出国出境赛道）决赛-华中农业大学经济管理学院 首页 学院概况 学院简介 历史沿革 领导团队 院长致辞 组织机构 制度公开 工作流程 师资队伍 农林经济管理系 工商管理系 经济学系 会计学系 大数据管理系 荣休教师 人才培养 本科生教育 研究生教育 继续教育 招生宣传 教学资源 学科学术 学科团队 学科平台 科研成果 党群工作 理论学习 党建动态 工会工作 学生事务 本科生 研究生 就业信息 交流合作 学术交流 合作培养 青年科学家论坛 青年科学家联盟 招贤纳才 校友之家 校友名录 MBA联合会 校友活动 下载专区 教师下载 学生下载 首页 学院概况 学院简介 历史沿革 领导团队 院长致辞 组织机构 制度公开 工作流程 师资队伍 农林经济管理系 工商管理系 经济学系 会计学系 大数据管理系 荣休教师 人才培养 本科生教育 研究生教育 继续教育 招生宣传 教学资源 学科学术 学科团队 学科平台 科研成果 党群工作 理论学习 党建动态 工会工作 学生事务 本科生 研究生 就业信息 交流合作 学术交流 合作培养 青年科学家论坛 青年科学家联盟 招贤纳才 校友之家 校友名录 MBA联合会 校友活动 下载专区 教师下载 学生下载 学工信息 学工信息 学工信息 您的位置是： 首页 > 学工信息 > 正文 我校举办大学生模拟就业大赛（出国出境赛道）决赛 发布日期：2026-05-26 访问次数： 5月24日上午，由我校就业指导中心主办、经济管理学院承办的首届大学生模拟就业大赛（出国出境赛道）决赛在新人文社科楼280会议室举行。经济管理学院党委副书记张进、新东方规划师刘歆琦、闫倩倩等担任评委。 经简历筛选与培训强化，来自各学院的九名选手晋级决赛。现场，选手们围绕出国出境深造动机、学术目标、个人竞争力等维度，结合专业背景与实践经历进行展示，沉着应对评委关于跨文化适应、专业选择、申请策略等即兴提问，展现出扎实的专业素养与清晰的个人规划。 公共管理学院土地资源管理专业陈欣鑫准备申请英国约克大学环境地理学，她坦言，导师的约克大学背景点燃了她对这所古朴学府的向往。工程管理专业的黄家豪在校参与高蛋白玉米专利分析、高标准农田建设等交叉科研项目，具备全英文国际会议与实习经历，拟申请新加坡国立大学的系统工程与项目管理专业。动物科学技术学院、动物医学院的李宏宇立志赴加拿大萨斯喀彻温大学攻读兽医学，他希望未来能考取北美兽医执业资格，回国服务动物健康与公共卫生事业。 “愿以数据为翼，赴智能之约。”经济管理学院大数据管理与应用专业的马宁将“人工智能与数据科学”确立为深造方向，专注新加坡与香港地区硕士项目申请。经济统计学专业田佳凝则锚定香港地区商业分析硕士申请，她希望通过香港的区位优势，成长为具备国际视野的商业分析人才。工学院能源动力学专业田彪的全栈式科研画像和工程闭环能力令评委印象深刻，他正致力于申请香港科技大学（广州）硕士项目，聚焦生物质碳化与能源存储。 植物科学技术学院智慧农业专业的丁俐心广泛参与鱼类表型、水稻基因、柑橘黄龙病等多个科研项目，拟申请美国高校智慧农业相关方向提升科研创新能力。外国语学院的刘瑄宜聚焦申请海外英语研究相关硕士项目，希望将一线教学经验与前沿教育理论相结合，深耕双语教育与跨文化传播领域。生命科学技术学院的余锦仪志在赴美国、新加坡攻读合成生物学或农业生物技术博士，她围绕Bt基因异源表达瓶颈提出“五阶段进化约束模型”，展现出一定的理论功底与前沿交叉研究能力。 最终，马宁获得本届赛事一等奖，黄佳豪、田佳凝获得二等奖，李宏宇、田彪、陈欣鑫获得三等奖。本次大赛，旨在引导学生客观认识自身条件与目标院校之间的差距，帮助选手们进一步明晰了出国出境发展路径，为高质量升学与未来发展奠定基础。 文字：徐晗 姚可漪 图片：杨子萱 审核：张进 编辑：徐嘉楠 上一篇： 经济管理学院师生赴红安开展红色实践研学 下一篇： 发挥高校班主任在思政课堂与社会课堂有效融合中的作用 友情链接： — — 主管部门 — — 中华人民共和国教育部 中华人民共和国农业农村部 华中农业大学 — — 合作单位 — — — — 职能机构 — — 研究生院 本科生院 — — 教学部门 — — 地址：中国.湖北.武汉 南湖狮子山街一号430070 电话：027-87286896 电子邮箱：jgxy CopyRight 华中农业大学 版权所有 累计访问次数： 微信公众号",
+          "classification": "competition_notice",
+          "source_type": "university_official",
+          "source_platform": "university_website",
+          "verification_status": "verified_official"
+        }
+      ]
+    }
+  ]
+}

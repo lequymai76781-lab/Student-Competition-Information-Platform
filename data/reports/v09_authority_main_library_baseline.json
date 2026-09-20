@@ -1,0 +1,40 @@
+{
+  "description": "V1 authority main library baseline + cumulative applied outcome.",
+  "created_at": "2026-09-04T22:50:55+00:00",
+  "counts": {
+    "competitions": 143,
+    "editions": 53,
+    "sources": 236,
+    "school_competitions": 172,
+    "leads": 491,
+    "fact_sources": 591,
+    "fact_revisions": 6,
+    "organizations": 67
+  },
+  "statuses": {
+    "competitions": {
+      "verified_official": 10,
+      "pending_verification": 89,
+      "school_confirmed": 32,
+      "unverified": 12
+    },
+    "editions": {
+      "verified_official": 5,
+      "school_confirmed": 40,
+      "pending_verification": 8
+    }
+  },
+  "cumulative_cleanup": {
+    "sources_added_S": 1,
+    "editions_created": 1,
+    "edition_source_links_added": 3,
+    "school_copied_deadline_fixes": 5,
+    "source_url_fixes": 5,
+    "fact_revisions_added": 19,
+    "fact_sources_added": 17,
+    "organizations_created": 1,
+    "auto_matches": 3,
+    "conflicts_recorded": 2,
+    "no_name_discovery": 1
+  }
+}

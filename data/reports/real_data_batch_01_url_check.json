@@ -1,0 +1,148 @@
+{
+  "total": 20,
+  "ok": 20,
+  "http_error": 0,
+  "transport_error": 0,
+  "rows": [
+    {
+      "url": "http://chem.swjtu.edu.cn/info/1119/13749.htm",
+      "status": 200,
+      "final_url": "http://chem.swjtu.edu.cn/info/1119/13749.htm",
+      "content_type": "text/html",
+      "ok": true
+    },
+    {
+      "url": "http://news.swjtu.edu.cn/info/1034/105275.htm",
+      "status": 200,
+      "final_url": "http://news.swjtu.edu.cn/info/1034/105275.htm",
+      "content_type": "text/html",
+      "ok": true
+    },
+    {
+      "url": "https://cet.hzau.edu.cn/info/1030/11825.htm",
+      "status": 200,
+      "final_url": "https://cet.hzau.edu.cn/info/1030/11825.htm",
+      "content_type": "text/html",
+      "ok": true
+    },
+    {
+      "url": "https://coi.hzau.edu.cn/info/1611/61791.htm",
+      "status": 200,
+      "final_url": "https://coi.hzau.edu.cn/info/1611/61791.htm",
+      "content_type": "text/html",
+      "ok": true
+    },
+    {
+      "url": "https://ec.jnu.edu.cn/2026/0413/c24919a853510/page.htm",
+      "status": 200,
+      "final_url": "https://ec.jnu.edu.cn/2026/0413/c24919a853510/page.htm",
+      "content_type": "text/html",
+      "ok": true
+    },
+    {
+      "url": "https://gsee.swjtu.edu.cn/info/1061/31693.htm",
+      "status": 200,
+      "final_url": "https://gsee.swjtu.edu.cn/info/1061/31693.htm",
+      "content_type": "text/html",
+      "ok": true
+    },
+    {
+      "url": "https://jwc.jnu.edu.cn/2026/0714/c24745a860169/page.htm",
+      "status": 200,
+      "final_url": "https://jwc.jnu.edu.cn/2026/0714/c24745a860169/page.htm",
+      "content_type": "text/html",
+      "ok": true
+    },
+    {
+      "url": "https://jwc.swjtu.edu.cn/vatuu/WebAction?newsId=2F36F08662540230&setAction=newsDetail&viewType=web",
+      "status": 200,
+      "final_url": "https://jwc.swjtu.edu.cn/vatuu/WebAction?newsId=2F36F08662540230&setAction=newsDetail&viewType=web",
+      "content_type": "text/html;charset=UTF-8",
+      "ok": true
+    },
+    {
+      "url": "https://jwc.swjtu.edu.cn/vatuu/WebAction?newsId=49F3C187B943DDA3&setAction=newsDetail&viewType=web",
+      "status": 200,
+      "final_url": "https://jwc.swjtu.edu.cn/vatuu/WebAction?newsId=49F3C187B943DDA3&setAction=newsDetail&viewType=web",
+      "content_type": "text/html;charset=UTF-8",
+      "ok": true
+    },
+    {
+      "url": "https://jwc.ustb.edu.cn/tztg/84e877f8e8a84d31849e22e6273f5119.htm",
+      "status": 200,
+      "final_url": "https://jwc.ustb.edu.cn/tztg/84e877f8e8a84d31849e22e6273f5119.htm",
+      "content_type": "text/html",
+      "ok": true
+    },
+    {
+      "url": "https://jwc.ustb.edu.cn/tztg/b74f7f264eef4ab189ae6c0dbc278307.htm",
+      "status": 200,
+      "final_url": "https://jwc.ustb.edu.cn/tztg/b74f7f264eef4ab189ae6c0dbc278307.htm",
+      "content_type": "text/html",
+      "ok": true
+    },
+    {
+      "url": "https://news.jnu.edu.cn/content/202510/29/c5439.html",
+      "status": 200,
+      "final_url": "https://news.jnu.edu.cn/content/202510/29/c5439.html",
+      "content_type": "text/html; charset=utf-8",
+      "ok": true
+    },
+    {
+      "url": "https://news.jnu.edu.cn/content/202512/20/c5735.html",
+      "status": 200,
+      "final_url": "https://news.jnu.edu.cn/content/202512/20/c5735.html",
+      "content_type": "text/html; charset=utf-8",
+      "ok": true
+    },
+    {
+      "url": "https://news.jnu.edu.cn/content/202601/16/c5841.html",
+      "status": 200,
+      "final_url": "https://news.jnu.edu.cn/content/202601/16/c5841.html",
+      "content_type": "text/html; charset=utf-8",
+      "ok": true
+    },
+    {
+      "url": "https://news.jnu.edu.cn/content/202606/12/c6356.html",
+      "status": 200,
+      "final_url": "https://news.jnu.edu.cn/content/202606/12/c6356.html",
+      "content_type": "text/html; charset=utf-8",
+      "ok": true
+    },
+    {
+      "url": "https://nongye.ustb.edu.cn/xwdt/5e51b99d11fe4604b81a6761d08a43e3.htm",
+      "status": 200,
+      "final_url": "https://nongye.ustb.edu.cn/xwdt/5e51b99d11fe4604b81a6761d08a43e3.htm",
+      "content_type": "text/html",
+      "ok": true
+    },
+    {
+      "url": "https://rwsz.ustb.edu.cn/zxdt/tzgg/64333994a875444a974a459fc4332187.htm",
+      "status": 200,
+      "final_url": "https://rwsz.ustb.edu.cn/zxdt/tzgg/64333994a875444a974a459fc4332187.htm",
+      "content_type": "text/html",
+      "ok": true
+    },
+    {
+      "url": "https://sme.swjtu.edu.cn/info/1055/63241.htm",
+      "status": 200,
+      "final_url": "https://sme.swjtu.edu.cn/info/1055/63241.htm",
+      "content_type": "text/html",
+      "ok": true
+    },
+    {
+      "url": "https://youth.swjtu.edu.cn/info/1191/169031.htm",
+      "status": 200,
+      "final_url": "https://youth.swjtu.edu.cn/info/1191/169031.htm",
+      "content_type": "text/html",
+      "ok": true
+    },
+    {
+      "url": "https://zhjw.jnu.edu.cn/2026/0318/c7164a851911/page.htm",
+      "status": 200,
+      "final_url": "https://zhjw.jnu.edu.cn/2026/0318/c7164a851911/page.htm",
+      "content_type": "text/html",
+      "ok": true
+    }
+  ]
+}

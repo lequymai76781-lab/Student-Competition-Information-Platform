@@ -1,0 +1,442 @@
+{
+  "mappings": [
+    {
+      "major_alias": "新闻学",
+      "discipline": "journalism_communication",
+      "relationship_type": "direct",
+      "mapping_basis": "依据《普通高等学校本科专业目录》专业/专业类与平台 Conference 受控学科分类对照整理；仅做检索词汇映射，不构成会议推荐或专业匹配结论。",
+      "evidence": "公开专业目录/专业类与平台学科受控词汇对照，2026-09-06 整理。",
+      "status": "active"
+    },
+    {
+      "major_alias": "传播学",
+      "discipline": "journalism_communication",
+      "relationship_type": "direct",
+      "mapping_basis": "依据《普通高等学校本科专业目录》专业/专业类与平台 Conference 受控学科分类对照整理；仅做检索词汇映射，不构成会议推荐或专业匹配结论。",
+      "evidence": "公开专业目录/专业类与平台学科受控词汇对照，2026-09-06 整理。",
+      "status": "active"
+    },
+    {
+      "major_alias": "广播电视学",
+      "discipline": "journalism_communication",
+      "relationship_type": "direct",
+      "mapping_basis": "依据《普通高等学校本科专业目录》专业/专业类与平台 Conference 受控学科分类对照整理；仅做检索词汇映射，不构成会议推荐或专业匹配结论。",
+      "evidence": "公开专业目录/专业类与平台学科受控词汇对照，2026-09-06 整理。",
+      "status": "active"
+    },
+    {
+      "major_alias": "播音与主持艺术",
+      "discipline": "journalism_communication",
+      "relationship_type": "direct",
+      "mapping_basis": "依据《普通高等学校本科专业目录》专业/专业类与平台 Conference 受控学科分类对照整理；仅做检索词汇映射，不构成会议推荐或专业匹配结论。",
+      "evidence": "公开专业目录/专业类与平台学科受控词汇对照，2026-09-06 整理。",
+      "status": "active"
+    },
+    {
+      "major_alias": "网络与新媒体",
+      "discipline": "journalism_communication",
+      "relationship_type": "direct",
+      "mapping_basis": "依据《普通高等学校本科专业目录》专业/专业类与平台 Conference 受控学科分类对照整理；仅做检索词汇映射，不构成会议推荐或专业匹配结论。",
+      "evidence": "公开专业目录/专业类与平台学科受控词汇对照，2026-09-06 整理。",
+      "status": "active"
+    },
+    {
+      "major_alias": "广告学",
+      "discipline": "journalism_communication",
+      "relationship_type": "direct",
+      "mapping_basis": "依据《普通高等学校本科专业目录》专业/专业类与平台 Conference 受控学科分类对照整理；仅做检索词汇映射，不构成会议推荐或专业匹配结论。",
+      "evidence": "公开专业目录/专业类与平台学科受控词汇对照，2026-09-06 整理。",
+      "status": "active"
+    },
+    {
+      "major_alias": "数字出版",
+      "discipline": "journalism_communication",
+      "relationship_type": "direct",
+      "mapping_basis": "依据《普通高等学校本科专业目录》专业/专业类与平台 Conference 受控学科分类对照整理；仅做检索词汇映射，不构成会议推荐或专业匹配结论。",
+      "evidence": "公开专业目录/专业类与平台学科受控词汇对照，2026-09-06 整理。",
+      "status": "active"
+    },
+    {
+      "major_alias": "编辑出版学",
+      "discipline": "journalism_communication",
+      "relationship_type": "direct",
+      "mapping_basis": "依据《普通高等学校本科专业目录》专业/专业类与平台 Conference 受控学科分类对照整理；仅做检索词汇映射，不构成会议推荐或专业匹配结论。",
+      "evidence": "公开专业目录/专业类与平台学科受控词汇对照，2026-09-06 整理。",
+      "status": "active"
+    },
+    {
+      "major_alias": "新闻传播学类",
+      "discipline": "journalism_communication",
+      "relationship_type": "direct",
+      "mapping_basis": "依据《普通高等学校本科专业目录》专业/专业类与平台 Conference 受控学科分类对照整理；仅做检索词汇映射，不构成会议推荐或专业匹配结论。",
+      "evidence": "公开专业目录/专业类与平台学科受控词汇对照，2026-09-06 整理。",
+      "status": "active"
+    },
+    {
+      "major_alias": "国际新闻与传播",
+      "discipline": "journalism_communication",
+      "relationship_type": "direct",
+      "mapping_basis": "依据《普通高等学校本科专业目录》专业/专业类与平台 Conference 受控学科分类对照整理；仅做检索词汇映射，不构成会议推荐或专业匹配结论。",
+      "evidence": "公开专业目录/专业类与平台学科受控词汇对照，2026-09-06 整理。",
+      "status": "active"
+    },
+    {
+      "major_alias": "数据新闻",
+      "discipline": "journalism_communication",
+      "relationship_type": "direct",
+      "mapping_basis": "依据《普通高等学校本科专业目录》专业/专业类与平台 Conference 受控学科分类对照整理；仅做检索词汇映射，不构成会议推荐或专业匹配结论。",
+      "evidence": "公开专业目录/专业类与平台学科受控词汇对照，2026-09-06 整理。",
+      "status": "active"
+    },
+    {
+      "major_alias": "数据新闻",
+      "discipline": "data_science",
+      "relationship_type": "interdisciplinary",
+      "mapping_basis": "依据《普通高等学校本科专业目录》专业/专业类与平台 Conference 受控学科分类对照整理；仅做检索词汇映射，不构成会议推荐或专业匹配结论。",
+      "evidence": "公开专业目录/专业类与平台学科受控词汇对照，2026-09-06 整理。",
+      "status": "active"
+    },
+    {
+      "major_alias": "智能传播",
+      "discipline": "journalism_communication",
+      "relationship_type": "direct",
+      "mapping_basis": "依据《普通高等学校本科专业目录》专业/专业类与平台 Conference 受控学科分类对照整理；仅做检索词汇映射，不构成会议推荐或专业匹配结论。",
+      "evidence": "公开专业目录/专业类与平台学科受控词汇对照，2026-09-06 整理。",
+      "status": "active"
+    },
+    {
+      "major_alias": "智能传播",
+      "discipline": "data_science",
+      "relationship_type": "interdisciplinary",
+      "mapping_basis": "依据《普通高等学校本科专业目录》专业/专业类与平台 Conference 受控学科分类对照整理；仅做检索词汇映射，不构成会议推荐或专业匹配结论。",
+      "evidence": "公开专业目录/专业类与平台学科受控词汇对照，2026-09-06 整理。",
+      "status": "active"
+    },
+    {
+      "major_alias": "体育新闻",
+      "discipline": "journalism_communication",
+      "relationship_type": "related",
+      "mapping_basis": "依据《普通高等学校本科专业目录》专业/专业类与平台 Conference 受控学科分类对照整理；仅做检索词汇映射，不构成会议推荐或专业匹配结论。",
+      "evidence": "公开专业目录/专业类与平台学科受控词汇对照，2026-09-06 整理。",
+      "status": "active"
+    },
+    {
+      "major_alias": "体育新闻",
+      "discipline": "sports_science",
+      "relationship_type": "related",
+      "mapping_basis": "依据《普通高等学校本科专业目录》专业/专业类与平台 Conference 受控学科分类对照整理；仅做检索词汇映射，不构成会议推荐或专业匹配结论。",
+      "evidence": "公开专业目录/专业类与平台学科受控词汇对照，2026-09-06 整理。",
+      "status": "active"
+    },
+    {
+      "major_alias": "数据科学",
+      "discipline": "data_science",
+      "relationship_type": "direct",
+      "mapping_basis": "依据《普通高等学校本科专业目录》专业/专业类与平台 Conference 受控学科分类对照整理；仅做检索词汇映射，不构成会议推荐或专业匹配结论。",
+      "evidence": "公开专业目录/专业类与平台学科受控词汇对照，2026-09-06 整理。",
+      "status": "active"
+    },
+    {
+      "major_alias": "大数据管理与应用",
+      "discipline": "data_science",
+      "relationship_type": "direct",
+      "mapping_basis": "依据《普通高等学校本科专业目录》专业/专业类与平台 Conference 受控学科分类对照整理；仅做检索词汇映射，不构成会议推荐或专业匹配结论。",
+      "evidence": "公开专业目录/专业类与平台学科受控词汇对照，2026-09-06 整理。",
+      "status": "active"
+    },
+    {
+      "major_alias": "统计学",
+      "discipline": "data_science",
+      "relationship_type": "direct",
+      "mapping_basis": "依据《普通高等学校本科专业目录》专业/专业类与平台 Conference 受控学科分类对照整理；仅做检索词汇映射，不构成会议推荐或专业匹配结论。",
+      "evidence": "公开专业目录/专业类与平台学科受控词汇对照，2026-09-06 整理。",
+      "status": "active"
+    },
+    {
+      "major_alias": "应用统计学",
+      "discipline": "data_science",
+      "relationship_type": "direct",
+      "mapping_basis": "依据《普通高等学校本科专业目录》专业/专业类与平台 Conference 受控学科分类对照整理；仅做检索词汇映射，不构成会议推荐或专业匹配结论。",
+      "evidence": "公开专业目录/专业类与平台学科受控词汇对照，2026-09-06 整理。",
+      "status": "active"
+    },
+    {
+      "major_alias": "信息管理与信息系统",
+      "discipline": "data_science",
+      "relationship_type": "related",
+      "mapping_basis": "依据《普通高等学校本科专业目录》专业/专业类与平台 Conference 受控学科分类对照整理；仅做检索词汇映射，不构成会议推荐或专业匹配结论。",
+      "evidence": "公开专业目录/专业类与平台学科受控词汇对照，2026-09-06 整理。",
+      "status": "active"
+    },
+    {
+      "major_alias": "数据科学与大数据技术",
+      "discipline": "data_science",
+      "relationship_type": "direct",
+      "mapping_basis": "依据《普通高等学校本科专业目录》专业/专业类与平台 Conference 受控学科分类对照整理；仅做检索词汇映射，不构成会议推荐或专业匹配结论。",
+      "evidence": "公开专业目录/专业类与平台学科受控词汇对照，2026-09-06 整理。",
+      "status": "active"
+    },
+    {
+      "major_alias": "计算机科学与技术",
+      "discipline": "computer_science",
+      "relationship_type": "direct",
+      "mapping_basis": "依据《普通高等学校本科专业目录》专业/专业类与平台 Conference 受控学科分类对照整理；仅做检索词汇映射，不构成会议推荐或专业匹配结论。",
+      "evidence": "公开专业目录/专业类与平台学科受控词汇对照，2026-09-06 整理。",
+      "status": "active"
+    },
+    {
+      "major_alias": "软件工程",
+      "discipline": "computer_science",
+      "relationship_type": "direct",
+      "mapping_basis": "依据《普通高等学校本科专业目录》专业/专业类与平台 Conference 受控学科分类对照整理；仅做检索词汇映射，不构成会议推荐或专业匹配结论。",
+      "evidence": "公开专业目录/专业类与平台学科受控词汇对照，2026-09-06 整理。",
+      "status": "active"
+    },
+    {
+      "major_alias": "网络工程",
+      "discipline": "computer_science",
+      "relationship_type": "direct",
+      "mapping_basis": "依据《普通高等学校本科专业目录》专业/专业类与平台 Conference 受控学科分类对照整理；仅做检索词汇映射，不构成会议推荐或专业匹配结论。",
+      "evidence": "公开专业目录/专业类与平台学科受控词汇对照，2026-09-06 整理。",
+      "status": "active"
+    },
+    {
+      "major_alias": "信息安全",
+      "discipline": "computer_science",
+      "relationship_type": "direct",
+      "mapping_basis": "依据《普通高等学校本科专业目录》专业/专业类与平台 Conference 受控学科分类对照整理；仅做检索词汇映射，不构成会议推荐或专业匹配结论。",
+      "evidence": "公开专业目录/专业类与平台学科受控词汇对照，2026-09-06 整理。",
+      "status": "active"
+    },
+    {
+      "major_alias": "人工智能",
+      "discipline": "artificial_intelligence",
+      "relationship_type": "direct",
+      "mapping_basis": "依据《普通高等学校本科专业目录》专业/专业类与平台 Conference 受控学科分类对照整理；仅做检索词汇映射，不构成会议推荐或专业匹配结论。",
+      "evidence": "公开专业目录/专业类与平台学科受控词汇对照，2026-09-06 整理。",
+      "status": "active"
+    },
+    {
+      "major_alias": "人工智能",
+      "discipline": "computer_science",
+      "relationship_type": "related",
+      "mapping_basis": "依据《普通高等学校本科专业目录》专业/专业类与平台 Conference 受控学科分类对照整理；仅做检索词汇映射，不构成会议推荐或专业匹配结论。",
+      "evidence": "公开专业目录/专业类与平台学科受控词汇对照，2026-09-06 整理。",
+      "status": "active"
+    },
+    {
+      "major_alias": "智能科学与技术",
+      "discipline": "artificial_intelligence",
+      "relationship_type": "direct",
+      "mapping_basis": "依据《普通高等学校本科专业目录》专业/专业类与平台 Conference 受控学科分类对照整理；仅做检索词汇映射，不构成会议推荐或专业匹配结论。",
+      "evidence": "公开专业目录/专业类与平台学科受控词汇对照，2026-09-06 整理。",
+      "status": "active"
+    },
+    {
+      "major_alias": "数据科学与大数据技术",
+      "discipline": "computer_science",
+      "relationship_type": "related",
+      "mapping_basis": "依据《普通高等学校本科专业目录》专业/专业类与平台 Conference 受控学科分类对照整理；仅做检索词汇映射，不构成会议推荐或专业匹配结论。",
+      "evidence": "公开专业目录/专业类与平台学科受控词汇对照，2026-09-06 整理。",
+      "status": "active"
+    },
+    {
+      "major_alias": "教育学",
+      "discipline": "education",
+      "relationship_type": "direct",
+      "mapping_basis": "依据《普通高等学校本科专业目录》专业/专业类与平台 Conference 受控学科分类对照整理；仅做检索词汇映射，不构成会议推荐或专业匹配结论。",
+      "evidence": "公开专业目录/专业类与平台学科受控词汇对照，2026-09-06 整理。",
+      "status": "active"
+    },
+    {
+      "major_alias": "教育技术学",
+      "discipline": "education",
+      "relationship_type": "direct",
+      "mapping_basis": "依据《普通高等学校本科专业目录》专业/专业类与平台 Conference 受控学科分类对照整理；仅做检索词汇映射，不构成会议推荐或专业匹配结论。",
+      "evidence": "公开专业目录/专业类与平台学科受控词汇对照，2026-09-06 整理。",
+      "status": "active"
+    },
+    {
+      "major_alias": "教育技术学",
+      "discipline": "data_science",
+      "relationship_type": "interdisciplinary",
+      "mapping_basis": "依据《普通高等学校本科专业目录》专业/专业类与平台 Conference 受控学科分类对照整理；仅做检索词汇映射，不构成会议推荐或专业匹配结论。",
+      "evidence": "公开专业目录/专业类与平台学科受控词汇对照，2026-09-06 整理。",
+      "status": "active"
+    },
+    {
+      "major_alias": "学前教育",
+      "discipline": "education",
+      "relationship_type": "direct",
+      "mapping_basis": "依据《普通高等学校本科专业目录》专业/专业类与平台 Conference 受控学科分类对照整理；仅做检索词汇映射，不构成会议推荐或专业匹配结论。",
+      "evidence": "公开专业目录/专业类与平台学科受控词汇对照，2026-09-06 整理。",
+      "status": "active"
+    },
+    {
+      "major_alias": "小学教育",
+      "discipline": "education",
+      "relationship_type": "direct",
+      "mapping_basis": "依据《普通高等学校本科专业目录》专业/专业类与平台 Conference 受控学科分类对照整理；仅做检索词汇映射，不构成会议推荐或专业匹配结论。",
+      "evidence": "公开专业目录/专业类与平台学科受控词汇对照，2026-09-06 整理。",
+      "status": "active"
+    },
+    {
+      "major_alias": "高等教育学",
+      "discipline": "education",
+      "relationship_type": "direct",
+      "mapping_basis": "依据《普通高等学校本科专业目录》专业/专业类与平台 Conference 受控学科分类对照整理；仅做检索词汇映射，不构成会议推荐或专业匹配结论。",
+      "evidence": "公开专业目录/专业类与平台学科受控词汇对照，2026-09-06 整理。",
+      "status": "active"
+    },
+    {
+      "major_alias": "体育教育",
+      "discipline": "sports_science",
+      "relationship_type": "direct",
+      "mapping_basis": "依据《普通高等学校本科专业目录》专业/专业类与平台 Conference 受控学科分类对照整理；仅做检索词汇映射，不构成会议推荐或专业匹配结论。",
+      "evidence": "公开专业目录/专业类与平台学科受控词汇对照，2026-09-06 整理。",
+      "status": "active"
+    },
+    {
+      "major_alias": "运动训练",
+      "discipline": "sports_science",
+      "relationship_type": "direct",
+      "mapping_basis": "依据《普通高等学校本科专业目录》专业/专业类与平台 Conference 受控学科分类对照整理；仅做检索词汇映射，不构成会议推荐或专业匹配结论。",
+      "evidence": "公开专业目录/专业类与平台学科受控词汇对照，2026-09-06 整理。",
+      "status": "active"
+    },
+    {
+      "major_alias": "运动人体科学",
+      "discipline": "sports_science",
+      "relationship_type": "direct",
+      "mapping_basis": "依据《普通高等学校本科专业目录》专业/专业类与平台 Conference 受控学科分类对照整理；仅做检索词汇映射，不构成会议推荐或专业匹配结论。",
+      "evidence": "公开专业目录/专业类与平台学科受控词汇对照，2026-09-06 整理。",
+      "status": "active"
+    },
+    {
+      "major_alias": "运动康复",
+      "discipline": "sports_science",
+      "relationship_type": "direct",
+      "mapping_basis": "依据《普通高等学校本科专业目录》专业/专业类与平台 Conference 受控学科分类对照整理；仅做检索词汇映射，不构成会议推荐或专业匹配结论。",
+      "evidence": "公开专业目录/专业类与平台学科受控词汇对照，2026-09-06 整理。",
+      "status": "active"
+    },
+    {
+      "major_alias": "体育经济与管理",
+      "discipline": "sports_science",
+      "relationship_type": "direct",
+      "mapping_basis": "依据《普通高等学校本科专业目录》专业/专业类与平台 Conference 受控学科分类对照整理；仅做检索词汇映射，不构成会议推荐或专业匹配结论。",
+      "evidence": "公开专业目录/专业类与平台学科受控词汇对照，2026-09-06 整理。",
+      "status": "active"
+    },
+    {
+      "major_alias": "体育经济与管理",
+      "discipline": "management",
+      "relationship_type": "related",
+      "mapping_basis": "依据《普通高等学校本科专业目录》专业/专业类与平台 Conference 受控学科分类对照整理；仅做检索词汇映射，不构成会议推荐或专业匹配结论。",
+      "evidence": "公开专业目录/专业类与平台学科受控词汇对照，2026-09-06 整理。",
+      "status": "active"
+    },
+    {
+      "major_alias": "电子信息工程",
+      "discipline": "engineering",
+      "relationship_type": "direct",
+      "mapping_basis": "依据《普通高等学校本科专业目录》专业/专业类与平台 Conference 受控学科分类对照整理；仅做检索词汇映射，不构成会议推荐或专业匹配结论。",
+      "evidence": "公开专业目录/专业类与平台学科受控词汇对照，2026-09-06 整理。",
+      "status": "active"
+    },
+    {
+      "major_alias": "自动化",
+      "discipline": "engineering",
+      "relationship_type": "direct",
+      "mapping_basis": "依据《普通高等学校本科专业目录》专业/专业类与平台 Conference 受控学科分类对照整理；仅做检索词汇映射，不构成会议推荐或专业匹配结论。",
+      "evidence": "公开专业目录/专业类与平台学科受控词汇对照，2026-09-06 整理。",
+      "status": "active"
+    },
+    {
+      "major_alias": "机器人工程",
+      "discipline": "engineering",
+      "relationship_type": "direct",
+      "mapping_basis": "依据《普通高等学校本科专业目录》专业/专业类与平台 Conference 受控学科分类对照整理；仅做检索词汇映射，不构成会议推荐或专业匹配结论。",
+      "evidence": "公开专业目录/专业类与平台学科受控词汇对照，2026-09-06 整理。",
+      "status": "active"
+    },
+    {
+      "major_alias": "工商管理",
+      "discipline": "management",
+      "relationship_type": "direct",
+      "mapping_basis": "依据《普通高等学校本科专业目录》专业/专业类与平台 Conference 受控学科分类对照整理；仅做检索词汇映射，不构成会议推荐或专业匹配结论。",
+      "evidence": "公开专业目录/专业类与平台学科受控词汇对照，2026-09-06 整理。",
+      "status": "active"
+    },
+    {
+      "major_alias": "市场营销",
+      "discipline": "management",
+      "relationship_type": "related",
+      "mapping_basis": "依据《普通高等学校本科专业目录》专业/专业类与平台 Conference 受控学科分类对照整理；仅做检索词汇映射，不构成会议推荐或专业匹配结论。",
+      "evidence": "公开专业目录/专业类与平台学科受控词汇对照，2026-09-06 整理。",
+      "status": "active"
+    },
+    {
+      "major_alias": "经济学",
+      "discipline": "economics",
+      "relationship_type": "direct",
+      "mapping_basis": "依据《普通高等学校本科专业目录》专业/专业类与平台 Conference 受控学科分类对照整理；仅做检索词汇映射，不构成会议推荐或专业匹配结论。",
+      "evidence": "公开专业目录/专业类与平台学科受控词汇对照，2026-09-06 整理。",
+      "status": "active"
+    },
+    {
+      "major_alias": "金融学",
+      "discipline": "economics",
+      "relationship_type": "direct",
+      "mapping_basis": "依据《普通高等学校本科专业目录》专业/专业类与平台 Conference 受控学科分类对照整理；仅做检索词汇映射，不构成会议推荐或专业匹配结论。",
+      "evidence": "公开专业目录/专业类与平台学科受控词汇对照，2026-09-06 整理。",
+      "status": "active"
+    },
+    {
+      "major_alias": "应用物理学",
+      "discipline": "natural_sciences",
+      "relationship_type": "direct",
+      "mapping_basis": "依据《普通高等学校本科专业目录》专业/专业类与平台 Conference 受控学科分类对照整理；仅做检索词汇映射，不构成会议推荐或专业匹配结论。",
+      "evidence": "公开专业目录/专业类与平台学科受控词汇对照，2026-09-06 整理。",
+      "status": "active"
+    },
+    {
+      "major_alias": "化学",
+      "discipline": "natural_sciences",
+      "relationship_type": "direct",
+      "mapping_basis": "依据《普通高等学校本科专业目录》专业/专业类与平台 Conference 受控学科分类对照整理；仅做检索词汇映射，不构成会议推荐或专业匹配结论。",
+      "evidence": "公开专业目录/专业类与平台学科受控词汇对照，2026-09-06 整理。",
+      "status": "active"
+    },
+    {
+      "major_alias": "数学与应用数学",
+      "discipline": "natural_sciences",
+      "relationship_type": "direct",
+      "mapping_basis": "依据《普通高等学校本科专业目录》专业/专业类与平台 Conference 受控学科分类对照整理；仅做检索词汇映射，不构成会议推荐或专业匹配结论。",
+      "evidence": "公开专业目录/专业类与平台学科受控词汇对照，2026-09-06 整理。",
+      "status": "active"
+    },
+    {
+      "major_alias": "数学与应用数学",
+      "discipline": "data_science",
+      "relationship_type": "related",
+      "mapping_basis": "依据《普通高等学校本科专业目录》专业/专业类与平台 Conference 受控学科分类对照整理；仅做检索词汇映射，不构成会议推荐或专业匹配结论。",
+      "evidence": "公开专业目录/专业类与平台学科受控词汇对照，2026-09-06 整理。",
+      "status": "active"
+    },
+    {
+      "major_alias": "心理学",
+      "discipline": "interdisciplinary",
+      "relationship_type": "related",
+      "mapping_basis": "依据《普通高等学校本科专业目录》专业/专业类与平台 Conference 受控学科分类对照整理；仅做检索词汇映射，不构成会议推荐或专业匹配结论。",
+      "evidence": "公开专业目录/专业类与平台学科受控词汇对照，2026-09-06 整理。",
+      "status": "active"
+    }
+  ],
+  "meta": {
+    "schema_version": "1",
+    "generated_at": "2026-09-06T11:38:07+00:00",
+    "count": 54,
+    "note": "Major/专业词汇 -> Conference 受控学科映射，仅用于检索词汇关联，不做推荐或评分。"
+  }
+}

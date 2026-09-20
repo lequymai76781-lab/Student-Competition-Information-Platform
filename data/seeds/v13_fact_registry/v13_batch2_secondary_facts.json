@@ -1,0 +1,297 @@
+{
+  "round": "v13 batch2 secondary field facts",
+  "notes": "身份验证不变（S/A）；字段级事实允许高校官方通知/新闻的明确陈述，证据等级 LEVEL_3，绝不覆盖已有高层级事实。所有原文出处均为本地归档高校官方页面。",
+  "entries": [
+    {
+      "competition_id": 29,
+      "name": "全国大学生市场调查与分析大赛",
+      "notes": "暨南大学本科生院官方新闻明确引述全国主办方与赛事沿革。",
+      "competition_fields": {
+        "organizer": {
+          "value": "中国商业统计学会",
+          "source_url": "https://jwc.jnu.edu.cn/2026/0714/c24745a860169/page.htm",
+          "source_type": "university_official_notice",
+          "authority_level": "B",
+          "raw_title": "以赛促学、以赛育人：暨南大学第十六届全国大学生市场调查与分析大赛落幕",
+          "published_at": "2026-07-14T00:00:00",
+          "evidence_file": "data/seeds/v081_211_radar_fix_discovery.json",
+          "repository": "v13-secondary-registry",
+          "evidence_level": "LEVEL_3",
+          "source_scope": "university_official_news",
+          "notes": "原文：由中国商业统计学会主办的“正大杯”全国大学生市场调查与分析大赛始创于2010年，自2018年起入选《全国普通高校学科竞赛目录》"
+        },
+        "founded_year": {
+          "value": 2010,
+          "source_url": "https://jwc.jnu.edu.cn/2026/0714/c24745a860169/page.htm",
+          "source_type": "university_official_notice",
+          "authority_level": "B",
+          "raw_title": "以赛促学、以赛育人：暨南大学第十六届全国大学生市场调查与分析大赛落幕",
+          "published_at": "2026-07-14T00:00:00",
+          "evidence_file": "data/seeds/v081_211_radar_fix_discovery.json",
+          "repository": "v13-secondary-registry",
+          "evidence_level": "LEVEL_3",
+          "source_scope": "university_official_news",
+          "notes": "原文：…大赛始创于2010年"
+        }
+      },
+      "editions": [
+        {
+          "year": 2026,
+          "fields": {
+            "edition_name": "“正大杯”第十六届全国大学生市场调查与分析大赛",
+            "host_location": "大连理工大学（本科生组全国总决赛）",
+            "competition_start": "2026-05-30T00:00:00",
+            "competition_end": "2026-05-31T23:59:59",
+            "edition_status": "finished",
+            "current_status": "finished"
+          },
+          "source_url": "https://jwc.jnu.edu.cn/2026/0714/c24745a860169/page.htm",
+          "source_type": "university_official_notice",
+          "authority_level": "B",
+          "raw_title": "以赛促学、以赛育人：暨南大学第十六届全国大学生市场调查与分析大赛落幕",
+          "published_at": "2026-07-14T00:00:00",
+          "evidence_file": "data/seeds/v081_211_radar_fix_discovery.json",
+          "repository": "v13-secondary-registry",
+          "evidence_level": "LEVEL_3",
+          "source_scope": "university_official_news",
+          "notes": "原文：本科生组全国总决赛于2026年5月30日-31日在大连理工大学举行，全国29个赛区超30万名学生参赛，320支团队晋级全国总决赛"
+        }
+      ]
+    },
+    {
+      "competition_id": 40,
+      "name": "全国大学生集成电路创新创业大赛",
+      "notes": "江南大学新闻网明确表述全国主办方。",
+      "competition_fields": {
+        "organizer": {
+          "value": "工业和信息化部人才交流中心",
+          "source_url": "https://news.jiangnan.edu.cn/info/1284/110032.htm",
+          "source_type": "university_official_notice",
+          "authority_level": "B",
+          "raw_title": "集电学子在第十届全国大学生集成电路创新创业大赛中斩获佳绩-江南大学新闻网",
+          "published_at": "2026-08-24T00:00:00",
+          "evidence_file": "data/seeds/v081_211_radar_fix_discovery.json",
+          "repository": "v13-secondary-registry",
+          "evidence_level": "LEVEL_3",
+          "source_scope": "university_official_news",
+          "notes": "原文：全国大学生集成电路创新创业大赛（简称“集创赛”）由工业和信息化部人才交流中心主办…"
+        }
+      }
+    },
+    {
+      "competition_id": 42,
+      "name": "全国大学生信息安全竞赛",
+      "notes": "北工大新闻网明确表述指导与主办方。",
+      "competition_fields": {
+        "organizer": {
+          "value": "教育部高等学校网络空间安全专业教学指导委员会",
+          "source_url": "https://news.bjut.edu.cn/info/1003/13960.htm",
+          "source_type": "university_official_notice",
+          "authority_level": "B",
+          "raw_title": "网络空间安全学院在2026年第19届全国大学生信息安全竞赛中创佳绩-北工大新闻网",
+          "published_at": "2026-08-26T00:00:00",
+          "evidence_file": "data/seeds/v081_211_radar_fix_discovery.json",
+          "repository": "v13-secondary-registry",
+          "evidence_level": "LEVEL_3",
+          "source_scope": "university_official_news",
+          "notes": "原文：由中央网信办网络安全协调局、教育部高教司指导，教育部高等学校网络空间安全专业教学指导委员会发起并主办，全国知名高校轮流承办"
+        },
+        "guiding_organizations": {
+          "value": ["中央网信办网络安全协调局", "教育部高教司"],
+          "source_url": "https://news.bjut.edu.cn/info/1003/13960.htm",
+          "source_type": "university_official_notice",
+          "authority_level": "B",
+          "raw_title": "网络空间安全学院在2026年第19届全国大学生信息安全竞赛中创佳绩-北工大新闻网",
+          "published_at": "2026-08-26T00:00:00",
+          "evidence_file": "data/seeds/v081_211_radar_fix_discovery.json",
+          "repository": "v13-secondary-registry",
+          "evidence_level": "LEVEL_3",
+          "source_scope": "university_official_news",
+          "notes": "原文：由中央网信办网络安全协调局、教育部高教司指导，…发起并主办（指导单位按原文记录）"
+        }
+      }
+    },
+    {
+      "competition_id": 45,
+      "name": "中国大学生机械工程创新创意大赛",
+      "notes": "安徽大学官方新闻明确表述全国主办方。",
+      "competition_fields": {
+        "organizer": {
+          "value": "中国机械工程学会",
+          "source_url": "https://www.ahu.edu.cn/2026/0831/c15129a399353/page.htm",
+          "source_type": "university_official_notice",
+          "authority_level": "B",
+          "raw_title": "我校学子在中国大学生机械工程创新创意大赛总决赛中获最高奖-安徽大学",
+          "published_at": "2026-08-31T00:00:00",
+          "evidence_file": "data/seeds/v081_211_radar_fix_discovery.json",
+          "repository": "v13-secondary-registry",
+          "evidence_level": "LEVEL_3",
+          "source_scope": "university_official_news",
+          "notes": "原文：赛事由中国机械工程学会主办，面向全国高校机械类、机器人工程、智能制造工程等相关专业大学生开展"
+        }
+      }
+    },
+    {
+      "competition_id": 70,
+      "name": "全国大学生化工实验大赛",
+      "notes": "西南大学本科生院官方新闻明确表述主办方。",
+      "competition_fields": {
+        "organizer": {
+          "value": "中国化工教育协会",
+          "source_url": "http://ugs.swu.edu.cn/info/1074/4530.htm",
+          "source_type": "university_official_notice",
+          "authority_level": "B",
+          "raw_title": "双赛双捷：化学化工学院学生在全国大学生化学实验竞赛和化工实验大赛中荣获一等奖-西南大学本科生院",
+          "published_at": "2026-08-20T00:00:00",
+          "evidence_file": "data/seeds/v081_211_radar_fix_discovery.json",
+          "repository": "v13-secondary-registry",
+          "evidence_level": "LEVEL_3",
+          "source_scope": "university_official_news",
+          "notes": "原文：该赛事（全国大学生化工实验大赛）由中国化工教育协会主办，为国家级A类竞赛…"
+        }
+      }
+    },
+    {
+      "competition_id": 77,
+      "name": "全国大学生统计建模大赛",
+      "notes": "湖南师范大学新闻网明确表述主办方与2026年总决赛地点。",
+      "competition_fields": {
+        "organizer": {
+          "value": "中国统计教育学会",
+          "source_url": "https://news.hunnu.edu.cn/info/1005/101394.htm",
+          "source_type": "university_official_notice",
+          "authority_level": "B",
+          "raw_title": "我校学子在第十二届全国大学生统计建模大赛中斩获两项一等奖-湖南师范大学新闻网",
+          "published_at": "2026-08-25T00:00:00",
+          "evidence_file": "data/seeds/v081_211_radar_fix_discovery.json",
+          "repository": "v13-secondary-registry",
+          "evidence_level": "LEVEL_3",
+          "source_scope": "university_official_news",
+          "notes": "原文：第十二届全国大学生统计建模大赛由中国统计教育学会主办，以“服务国家战略 创新统计赋能”为主题"
+        }
+      },
+      "editions": [
+        {
+          "year": 2026,
+          "allow_overwrite": ["host_location"],
+          "fields": {
+            "host_location": "内蒙古财经大学（全国总决赛）",
+            "edition_status": "finished",
+            "current_status": "result_announced"
+          },
+          "source_url": "https://news.hunnu.edu.cn/info/1005/101394.htm",
+          "source_type": "university_official_notice",
+          "authority_level": "B",
+          "raw_title": "我校学子在第十二届全国大学生统计建模大赛中斩获两项一等奖-湖南师范大学新闻网",
+          "published_at": "2026-08-25T00:00:00",
+          "evidence_file": "data/seeds/v081_211_radar_fix_discovery.json",
+          "repository": "v13-secondary-registry",
+          "evidence_level": "LEVEL_3",
+          "source_scope": "university_official_news",
+          "notes": "原文：第十二届全国大学生统计建模大赛全国总决赛在内蒙古财经大学举行"
+        }
+      ]
+    },
+    {
+      "competition_id": 68,
+      "name": "全国大学生工业设计大赛",
+      "notes": "湖南师范大学官方通知明确给出大赛官方报名网站（独立官方域名，非第三方平台）。",
+      "competition_fields": {
+        "official_website": {
+          "value": "https://www.cuidc.net/",
+          "source_url": "https://jwc.hunnu.edu.cn/info/1093/10932.htm",
+          "source_type": "university_official_notice",
+          "authority_level": "B",
+          "raw_title": "关于组织参加2026年第八届全国大学生工业设计大赛暨湖南师范大学校内选拔工作的通知",
+          "published_at": "2026-06-30T00:00:00",
+          "evidence_file": "data/seeds/v081_211_radar_fix_discovery.json",
+          "repository": "v13-secondary-registry",
+          "evidence_level": "LEVEL_3",
+          "homepage_type": "registration_system",
+          "source_scope": "university_official_notice_quoting_official_site",
+          "notes": "原文：参赛者登录大赛官方网站（https://www.cuidc.net/）在线注册报名…"
+        }
+      }
+    },
+    {
+      "competition_id": 20,
+      "name": "全国大学生智能汽车竞赛",
+      "notes": "安徽大学官方新闻确认2026年第二十一届总决赛在其校内举办（举办事实）。",
+      "editions": [
+        {
+          "year": 2026,
+          "fields": {
+            "edition_name": "第二十一届全国大学生智能汽车竞赛",
+            "host_location": "安徽大学（全国总决赛）",
+            "edition_status": "finished",
+            "current_status": "finished"
+          },
+          "source_url": "https://www.ahu.edu.cn/2026/0831/c15129a399352/page.htm",
+          "source_type": "university_official_notice",
+          "authority_level": "B",
+          "raw_title": "多项国一！我校学子在中国研究生电子设计等学科竞赛中斩获佳绩-安徽大学",
+          "published_at": "2026-08-31T00:00:00",
+          "evidence_file": "data/seeds/v081_211_radar_fix_discovery.json",
+          "repository": "v13-secondary-registry",
+          "evidence_level": "LEVEL_3",
+          "source_scope": "university_official_news",
+          "notes": "原文：第二十一届全国大学生智能汽车竞赛全国总决赛在我校举行，全国642所高校、3620支队伍报名，599支晋级总决赛"
+        }
+      ]
+    },
+    {
+      "competition_id": 51,
+      "name": "华为ICT大赛",
+      "notes": "长安大学官方通知确认2026年第十届中国总决赛举办地点与日期。",
+      "editions": [
+        {
+          "year": 2026,
+          "fields": {
+            "edition_name": "第十届华为ICT大赛",
+            "host_location": "华中科技大学（中国总决赛，武汉）",
+            "official_competition_date": "2026-04-19T00:00:00",
+            "edition_status": "finished",
+            "current_status": "finished"
+          },
+          "source_url": "https://jwc.chd.edu.cn/2026/0506/c6997a260422/page.htm",
+          "source_type": "university_official_notice",
+          "authority_level": "B",
+          "raw_title": "喜报丨长安大学未来交通学院华为班在第十届华为ICT大赛中斩获佳绩！",
+          "published_at": "2026-05-06T00:00:00",
+          "evidence_file": "data/seeds/v081_211_radar_fix_discovery.json",
+          "repository": "v13-secondary-registry",
+          "evidence_level": "LEVEL_3",
+          "source_scope": "university_official_news",
+          "notes": "原文：4月19日，第十届华为ICT大赛中国总决赛于华中科技大学光谷体育馆圆满落幕"
+        }
+      ]
+    },
+    {
+      "competition_id": 58,
+      "name": "中国高校智能机器人创意大赛",
+      "notes": "华南师范大学官方新闻确认2026年第九届全国总决赛赛期（举办事实）。",
+      "editions": [
+        {
+          "year": 2026,
+          "fields": {
+            "edition_name": "第九届中国高校智能机器人创意大赛",
+            "competition_start": "2026-08-17T00:00:00",
+            "competition_end": "2026-08-19T23:59:59",
+            "edition_status": "finished",
+            "current_status": "finished"
+          },
+          "source_url": "https://news.scnu.edu.cn/73330/1",
+          "source_type": "university_official_notice",
+          "authority_level": "B",
+          "raw_title": "人工智能学院学子在第九届中国高校智能机器人创意大赛全国总决赛中斩获佳绩-华南师大新闻网",
+          "published_at": "2026-08-24T00:00:00",
+          "evidence_file": "data/seeds/v081_211_radar_fix_discovery.json",
+          "repository": "v13-secondary-registry",
+          "evidence_level": "LEVEL_3",
+          "source_scope": "university_official_news",
+          "notes": "原文：8月17日至19日，第九届中国高校智能机器人创意大赛全国总决赛顺利举行"
+        }
+      ]
+    }
+  ]
+}

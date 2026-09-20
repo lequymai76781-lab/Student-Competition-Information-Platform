@@ -1,0 +1,172 @@
+{
+  "round": "v14 core-library detail/hall audit",
+  "generated_at": "2026-09-05T15:11:59.743760+00:00",
+  "hall_total": 133,
+  "hidden_checks": {
+    "duplicate_102": true,
+    "duplicate_118": true,
+    "non_competition_7": true,
+    "non_competition_12": true,
+    "no_evidence_unverified_110": true,
+    "core_confirmed_present": true
+  },
+  "samples": [
+    {
+      "competition_id": 1,
+      "checks": [],
+      "warns": [],
+      "fails": [],
+      "name": "中国国际大学生创新大赛"
+    },
+    {
+      "competition_id": 2,
+      "checks": [],
+      "warns": [],
+      "fails": [],
+      "name": "“挑战杯”全国大学生课外学术科技作品竞赛"
+    },
+    {
+      "competition_id": 3,
+      "checks": [],
+      "warns": [],
+      "fails": [],
+      "name": "“挑战杯”中国大学生创业计划竞赛"
+    },
+    {
+      "competition_id": 4,
+      "checks": [],
+      "warns": [],
+      "fails": [],
+      "name": "全国大学生数学建模竞赛"
+    },
+    {
+      "competition_id": 5,
+      "checks": [],
+      "warns": [],
+      "fails": [],
+      "name": "全国大学生电子设计竞赛"
+    },
+    {
+      "competition_id": 8,
+      "checks": [],
+      "warns": [],
+      "fails": [],
+      "name": "ACM-ICPC国际大学生程序设计竞赛"
+    },
+    {
+      "competition_id": 21,
+      "checks": [],
+      "warns": [
+        "no editions (expected for some)"
+      ],
+      "fails": [],
+      "name": "全国大学生电子商务“创新、创意及创业”挑战赛"
+    },
+    {
+      "competition_id": 29,
+      "checks": [],
+      "warns": [],
+      "fails": [],
+      "name": "全国大学生市场调查与分析大赛"
+    },
+    {
+      "competition_id": 34,
+      "checks": [],
+      "warns": [],
+      "fails": [],
+      "name": "中国大学生计算机设计大赛"
+    },
+    {
+      "competition_id": 35,
+      "checks": [],
+      "warns": [
+        "no editions (expected for some)"
+      ],
+      "fails": [],
+      "name": "中国高校计算机大赛"
+    },
+    {
+      "competition_id": 36,
+      "checks": [],
+      "warns": [
+        "no editions (expected for some)"
+      ],
+      "fails": [],
+      "name": "蓝桥杯全国软件和信息技术专业人才大赛"
+    },
+    {
+      "competition_id": 40,
+      "checks": [],
+      "warns": [
+        "no editions (expected for some)"
+      ],
+      "fails": [],
+      "name": "全国大学生集成电路创新创业大赛"
+    },
+    {
+      "competition_id": 42,
+      "checks": [],
+      "warns": [],
+      "fails": [],
+      "name": "全国大学生信息安全竞赛"
+    },
+    {
+      "competition_id": 45,
+      "checks": [],
+      "warns": [],
+      "fails": [],
+      "name": "中国大学生机械工程创新创意大赛"
+    },
+    {
+      "competition_id": 56,
+      "checks": [],
+      "warns": [
+        "no editions (expected for some)"
+      ],
+      "fails": [],
+      "name": "全国高校商业精英挑战赛"
+    },
+    {
+      "competition_id": 65,
+      "checks": [],
+      "warns": [],
+      "fails": [],
+      "name": "中华经典诵写讲大赛"
+    },
+    {
+      "competition_id": 70,
+      "checks": [],
+      "warns": [
+        "no editions (expected for some)"
+      ],
+      "fails": [],
+      "name": "全国大学生化工实验大赛"
+    },
+    {
+      "competition_id": 77,
+      "checks": [],
+      "warns": [],
+      "fails": [],
+      "name": "全国大学生统计建模大赛"
+    },
+    {
+      "competition_id": 99,
+      "checks": [],
+      "warns": [],
+      "fails": [],
+      "name": "全国大学生数学竞赛"
+    },
+    {
+      "competition_id": 125,
+      "checks": [],
+      "warns": [],
+      "fails": [],
+      "name": "中国研究生企业管理创新大赛"
+    }
+  ],
+  "summary": {
+    "PASS": 14,
+    "WARN": 6,
+    "FAIL": 0
+  }
+}

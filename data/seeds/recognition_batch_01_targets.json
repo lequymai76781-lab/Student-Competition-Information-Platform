@@ -1,0 +1,107 @@
+{
+  "batch": "RECOGNITION_BATCH_01_TARGETS",
+  "verified_at": "2026-09-14T00:00:00+08:00",
+  "selection_rule": "优先复用上一批遗留高校，并补入已有高校库中可公开核验正式目录的 985/211 高校；只接受高校官方域名页面或附件。",
+  "targets": [
+    {
+      "school": "南京航空航天大学",
+      "is_985": false,
+      "is_211": true,
+      "region": "江苏",
+      "search_entry": "https://aao.nuaa.edu.cn/8010/list.htm",
+      "possible_policy_source": "教务部学生竞赛分级分类认定栏目、2024 年度大学生竞赛级别认定表",
+      "reason": "上一批超时；官方教务栏目提供校级竞赛分级制度和年度认定结果。",
+      "result": "success"
+    },
+    {
+      "school": "中国地质大学（武汉）",
+      "is_985": false,
+      "is_211": true,
+      "region": "湖北",
+      "search_entry": "https://jgxy.cug.edu.cn/info/1135/19664.htm",
+      "possible_policy_source": "《中国地质大学（武汉）大学生学科竞赛目录》附件",
+      "reason": "上一批超时；2026 官方学院通知明确挂载校级目录。",
+      "result": "completed_with_gaps"
+    },
+    {
+      "school": "华南师范大学",
+      "is_985": false,
+      "is_211": true,
+      "region": "广东",
+      "search_entry": "https://statics.scnu.edu.cn/pics/physics/2020/1220/1608470828120820.pdf",
+      "possible_policy_source": "物理与电信工程学院本科生学科竞赛级别认定表",
+      "reason": "上一批超时；官方静态域名保留可解析的学院级历史目录。",
+      "result": "success"
+    },
+    {
+      "school": "西南财经大学",
+      "is_985": false,
+      "is_211": true,
+      "region": "四川",
+      "search_entry": "https://kj.swufe.edu.cn/info/1073/70322.htm",
+      "possible_policy_source": "《西南财经大学学生竞赛认定目录（2026版）》",
+      "reason": "上一批超时；2026 目录和竞赛管理办法由官方学院页面公开。",
+      "result": "success"
+    },
+    {
+      "school": "武汉理工大学",
+      "is_985": false,
+      "is_211": true,
+      "region": "湖北",
+      "search_entry": "https://stle.whut.edu.cn/bks/jxwj/202412/P020241231652686468394.pdf",
+      "possible_policy_source": "《武汉理工大学本科生学科竞赛组织实施细则（试行）》",
+      "reason": "上一批主站 403；验证二级站 PDF fallback 是否能形成稳定正式来源。",
+      "result": "success"
+    },
+    {
+      "school": "北京交通大学",
+      "is_985": false,
+      "is_211": true,
+      "region": "北京",
+      "search_entry": "https://civil.bjtu.edu.cn/cms/item/23766.html",
+      "possible_policy_source": "2025 年度本科生学科竞赛项目列表",
+      "reason": "学校年度目录明确作为双创学分、推免加分和奖励依据，适合验证 S/A/B/C 原始分类。",
+      "result": "success"
+    },
+    {
+      "school": "北京科技大学",
+      "is_985": false,
+      "is_211": true,
+      "region": "北京",
+      "search_entry": "https://jwc.ustb.edu.cn/",
+      "possible_policy_source": "教务处竞赛制度、学院综合测评竞赛表",
+      "reason": "上一批数据较丰富，用于检查是否存在校级现行目录而不把学院获奖表泛化成校级认可。",
+      "result": "completed_with_gaps"
+    },
+    {
+      "school": "华中农业大学",
+      "is_985": false,
+      "is_211": true,
+      "region": "湖北",
+      "search_entry": "https://bksy.hzau.edu.cn/info/1070/6254.htm",
+      "possible_policy_source": "2025 年本科生创新创业“111”赛事指导性目录及三个附件",
+      "reason": "本科生院正式公告明确目录分类，但附件下载入口需单独核验。",
+      "result": "completed_with_gaps"
+    },
+    {
+      "school": "西南交通大学",
+      "is_985": false,
+      "is_211": true,
+      "region": "四川",
+      "search_entry": "https://ctten.swjtu.edu.cn/info/4411/148101.htm",
+      "possible_policy_source": "2025 年推荐免试研究生 A 类学科竞赛目录",
+      "reason": "官方学院页提供校级目录镜像，可验证主教务站连接失败时的二级站 fallback。",
+      "result": "success"
+    },
+    {
+      "school": "武汉大学",
+      "is_985": true,
+      "is_211": true,
+      "region": "湖北",
+      "search_entry": "https://journal.whu.edu.cn/20250611use7",
+      "possible_policy_source": "新闻与传播学院本科学生素质综合测评实施细则（2025年修订版）",
+      "reason": "作为 985 样本复用既有已核验政策，检查当前 Recognition 与新增历史目录的并存语义。",
+      "result": "success"
+    }
+  ]
+}

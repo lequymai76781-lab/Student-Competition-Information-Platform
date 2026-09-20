@@ -1,0 +1,135 @@
+{
+  "generated_at": "2026-09-05T13:44:12.521799+00:00",
+  "dry_run": false,
+  "changes": [
+    {
+      "type": "duplicate",
+      "dup_id": 102,
+      "keep_id": 53,
+      "alias_added": true,
+      "before": {
+        "verification_status": "pending_verification",
+        "is_official_verified": false
+      },
+      "after": {
+        "verification_status": "duplicate",
+        "is_official_verified": false
+      },
+      "reason": "同名赛事：全国大学生生命科学竞赛（CULSC）为高教学会2023目录第44项；id=102 为无CULSC后缀的重复记录，仅含D级来源"
+    },
+    {
+      "type": "duplicate",
+      "dup_id": 118,
+      "keep_id": 121,
+      "alias_added": true,
+      "before": {
+        "verification_status": "unverified",
+        "is_official_verified": false
+      },
+      "after": {
+        "verification_status": "duplicate",
+        "is_official_verified": false
+      },
+      "reason": "高教学会2023目录第47项子赛名称为“文旅与会展创新创业实践竞赛”（=id121）；id=118 “会展专业创新创业实践竞赛”为历史/别名形式，未获目录独立收录"
+    },
+    {
+      "type": "alias",
+      "competition_id": 2,
+      "alias": "大挑",
+      "source": "common_name",
+      "is_verified": false,
+      "note": "学生俗称，非官方名称",
+      "added": false
+    },
+    {
+      "type": "alias",
+      "competition_id": 3,
+      "alias": "小挑",
+      "source": "common_name",
+      "is_verified": false,
+      "note": "学生俗称，非官方名称",
+      "added": false
+    },
+    {
+      "type": "alias",
+      "competition_id": 1,
+      "alias": "中国“互联网+”大学生创新创业大赛",
+      "source": "cahe-directory-2023",
+      "is_verified": true,
+      "note": "2023目录原始名称",
+      "added": false
+    },
+    {
+      "type": "alias",
+      "competition_id": 1,
+      "alias": "“互联网+”大学生创新创业大赛",
+      "source": "historical_name",
+      "is_verified": true,
+      "note": "历史官方名称",
+      "added": true
+    },
+    {
+      "type": "alias",
+      "competition_id": 3,
+      "alias": "“挑战杯”中国大学生创业计划大赛",
+      "source": "cahe-directory-2023",
+      "is_verified": true,
+      "note": "2023目录用名（大赛/竞赛变体）",
+      "added": false
+    },
+    {
+      "type": "alias",
+      "competition_id": 24,
+      "alias": "外研社全国大学生英语系列赛",
+      "source": "cahe-directory-2023",
+      "is_verified": true,
+      "note": "2023目录原始名称",
+      "added": true
+    },
+    {
+      "type": "alias",
+      "competition_id": 28,
+      "alias": "全国大学生机器人大赛（CURC）",
+      "source": "cahe-directory-2023",
+      "is_verified": true,
+      "note": "2023目录用名",
+      "added": true
+    },
+    {
+      "type": "alias",
+      "competition_id": 35,
+      "alias": "中国高校计算机大赛（C4）",
+      "source": "common_name",
+      "is_verified": false,
+      "note": "英文缩写",
+      "added": true
+    },
+    {
+      "type": "alias",
+      "competition_id": 101,
+      "alias": "NECCS",
+      "source": "common_name",
+      "is_verified": false,
+      "note": "英文缩写",
+      "added": false
+    },
+    {
+      "type": "alias",
+      "competition_id": 98,
+      "alias": "美赛",
+      "source": "common_name",
+      "is_verified": false,
+      "note": "学生俗称",
+      "added": true
+    }
+  ],
+  "status_after": {
+    "authority_confirmed": 69,
+    "duplicate": 2,
+    "pending_verification": 24,
+    "school_confirmed": 9,
+    "suspected": 7,
+    "unverified": 1,
+    "verified_official": 31
+  }
+}

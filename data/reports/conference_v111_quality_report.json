@@ -1,0 +1,557 @@
+{
+  "stage": "Academic Conference V1.1.1（数据债务清理 + 学科再平衡 + Edition 学生机会补全）",
+  "generated_at": "2026-09-06T09:05:24+00:00",
+  "database": "data/v02.sqlite",
+  "reference_date": "2026-09-06",
+  "pytest": {
+    "passed": 131,
+    "total": 131
+  },
+  "stats": {
+    "1_series_total": 206,
+    "1_series_added_in_v111": 49,
+    "2_editions_total": 132,
+    "2_editions_added_in_v111": 49,
+    "3_series_by_discipline": {
+      "computer_science": {
+        "name_en": "Computer Science",
+        "name_zh": "计算机科学",
+        "series_count": 91,
+        "edition_count": 52
+      },
+      "artificial_intelligence": {
+        "name_en": "Artificial Intelligence",
+        "name_zh": "人工智能",
+        "series_count": 15,
+        "edition_count": 7
+      },
+      "data_science": {
+        "name_en": "Data Science",
+        "name_zh": "数据科学",
+        "series_count": 17,
+        "edition_count": 12
+      },
+      "engineering": {
+        "name_en": "Engineering",
+        "name_zh": "工程技术",
+        "series_count": 18,
+        "edition_count": 9
+      },
+      "sports_science": {
+        "name_en": "Sports Science",
+        "name_zh": "体育科学",
+        "series_count": 15,
+        "edition_count": 15
+      },
+      "journalism_communication": {
+        "name_en": "Journalism & Communication",
+        "name_zh": "新闻传播学",
+        "series_count": 18,
+        "edition_count": 17
+      },
+      "management": {
+        "name_en": "Management Science",
+        "name_zh": "管理科学",
+        "series_count": 2,
+        "edition_count": 0
+      },
+      "economics": {
+        "name_en": "Economics",
+        "name_zh": "经济学",
+        "series_count": 2,
+        "edition_count": 1
+      },
+      "education": {
+        "name_en": "Education",
+        "name_zh": "教育学",
+        "series_count": 15,
+        "edition_count": 14
+      },
+      "natural_sciences": {
+        "name_en": "Natural Sciences",
+        "name_zh": "自然科学",
+        "series_count": 4,
+        "edition_count": 3
+      },
+      "interdisciplinary": {
+        "name_en": "Interdisciplinary",
+        "name_zh": "交叉学科",
+        "series_count": 9,
+        "edition_count": 2
+      }
+    },
+    "4_editions_by_discipline": {
+      "computer_science": 52,
+      "artificial_intelligence": 7,
+      "data_science": 12,
+      "engineering": 9,
+      "sports_science": 15,
+      "journalism_communication": 17,
+      "management": 0,
+      "economics": 1,
+      "education": 14,
+      "natural_sciences": 3,
+      "interdisciplinary": 2
+    },
+    "5_source_quality": {
+      "S": 272,
+      "A": 8,
+      "B": 7,
+      "C": 1,
+      "total": 288
+    },
+    "6_verification": {
+      "series_authority_status": {
+        "authority_confirmed": 3,
+        "pending_verification": 1,
+        "verified_official": 202
+      },
+      "edition_authority_status": {
+        "authority_confirmed": 5,
+        "verified_official": 127
+      },
+      "verified_official": 329,
+      "authority_confirmed": 8,
+      "pending_or_unverified": 1,
+      "discovery_candidates_by_status": {
+        "pending": 2,
+        "rejected": 1
+      },
+      "rejected_reasons": {
+        "unofficial_source_only": 1
+      }
+    },
+    "7_recognition": {
+      "recognition_records": 36,
+      "series_with_recognition": 36,
+      "by_system_level": {
+        "CCF-A": 26,
+        "CCF-B": 9,
+        "CCF-C": 1
+      }
+    },
+    "8_recognition_evidence": {
+      "records_with_direct_source_url": 36,
+      "records_with_evidence": 36,
+      "direct_source_url_ratio": 1.0,
+      "evidence_ratio": 1.0
+    },
+    "9_student_value_series_coverage": {
+      "series_total": 206,
+      "series_with_student_value_tags": 0,
+      "series_covering_student_opportunity_editions": 10,
+      "coverage_ratio": 0.0485,
+      "series_by_tag": {}
+    },
+    "10_student_opportunity_edition_coverage": {
+      "editions_total": 132,
+      "editions_with_student_opportunity": 10,
+      "coverage_ratio": 0.0758,
+      "edition_by_opportunity_tag": {
+        "doctoral_consortium": 2,
+        "poster": 3,
+        "student_forum": 2,
+        "undergraduate_friendly": 1
+      },
+      "edition_by_any_tag": {
+        "academic_exchange": 1,
+        "doctoral_consortium": 2,
+        "paper_submission": 4,
+        "poster": 3,
+        "student_forum": 2,
+        "undergraduate_friendly": 1
+      },
+      "controlled_vocabulary": [
+        "undergraduate_friendly",
+        "graduate_friendly",
+        "paper_submission",
+        "student_paper",
+        "poster",
+        "workshop",
+        "doctoral_consortium",
+        "student_forum",
+        "youth_forum",
+        "academic_exchange",
+        "publication_opportunity",
+        "research_resume_value"
+      ]
+    },
+    "11_editions_with_paper_deadline": 2,
+    "12_editions_with_poster": 3,
+    "13_editions_with_student_track": 6,
+    "14_editions_with_registration_deadline": 4,
+    "15_school_conferences": {
+      "total": 8,
+      "by_relation_type": {
+        "co_organizer": 1,
+        "co_undertaker": 1,
+        "organizer": 1,
+        "undertaker": 5
+      },
+      "new_in_v111": 0,
+      "note": "V1.1.1 未新增 SchoolConference：ICDM 2026 等虽可判断高校承办，但无独立校方通知，不冒然建关系。"
+    },
+    "16_discovery_candidates": {
+      "total": 3,
+      "by_status": {
+        "pending": 2,
+        "rejected": 1
+      },
+      "rejection_reasons": {
+        "unofficial_source_only": 1
+      },
+      "note": "第三方目录/商业平台只进发现池；rejected 必须带受控 reason。"
+    },
+    "17_null_unknown_field_stats": {
+      "abstract_deadline": {
+        "editions_total": 132,
+        "null_count": 132,
+        "filled_count": 0,
+        "null_ratio": 1.0
+      },
+      "paper_deadline": {
+        "editions_total": 132,
+        "null_count": 130,
+        "filled_count": 2,
+        "null_ratio": 0.9848
+      },
+      "poster_deadline": {
+        "editions_total": 132,
+        "null_count": 131,
+        "filled_count": 1,
+        "null_ratio": 0.9924
+      },
+      "workshop_deadline": {
+        "editions_total": 132,
+        "null_count": 132,
+        "filled_count": 0,
+        "null_ratio": 1.0
+      },
+      "notification_date": {
+        "editions_total": 132,
+        "null_count": 131,
+        "filled_count": 1,
+        "null_ratio": 0.9924
+      },
+      "camera_ready_deadline": {
+        "editions_total": 132,
+        "null_count": 132,
+        "filled_count": 0,
+        "null_ratio": 1.0
+      },
+      "registration_deadline": {
+        "editions_total": 132,
+        "null_count": 128,
+        "filled_count": 4,
+        "null_ratio": 0.9697
+      },
+      "registration_url": {
+        "editions_total": 132,
+        "null_count": 131,
+        "filled_count": 1
+      },
+      "call_for_papers_url": {
+        "editions_total": 132,
+        "null_count": 129,
+        "filled_count": 3
+      },
+      "edition_official_url": {
+        "editions_total": 132,
+        "null_count": 0,
+        "filled_count": 132
+      },
+      "student_value_tags": {
+        "editions_total": 132,
+        "empty_count": 123,
+        "filled_count": 9
+      },
+      "participation_details": {
+        "editions_total": 132,
+        "null_count": 126,
+        "filled_count": 6
+      },
+      "paper_details": {
+        "editions_total": 132,
+        "null_count": 132,
+        "filled_count": 0
+      },
+      "edition_status_unknown_or_empty": 0,
+      "indexing_claim_status_unknown": 132
+    },
+    "2026_actionable": {
+      "definition": "存在真实 2026 Edition，且具备 paper_deadline/poster_deadline/registration_deadline/workshop_deadline 或官方学生机会标签中的至少一项；open=官方截止日期仍未来；upcoming=无未来截止但会期未结束；closed=会期已结束；unknown=有官方信息但无可用日期。状态由 2026-09-06 计算，不预测。",
+      "reference_date": "2026-09-06",
+      "actionable_editions_total": 11,
+      "actionable_series_total": 11,
+      "by_status": {
+        "closed": 4,
+        "open": 2,
+        "upcoming": 5
+      },
+      "editions": [
+        {
+          "edition_id": 1,
+          "series_id": 1,
+          "series_name": "NeurIPS",
+          "edition_name": "NeurIPS 2026",
+          "status": "open",
+          "deadlines": {
+            "abstract_deadline": null,
+            "paper_deadline": "2026-05-06",
+            "poster_deadline": null,
+            "workshop_deadline": null,
+            "registration_deadline": "2026-10-30"
+          },
+          "opportunity_tags": []
+        },
+        {
+          "edition_id": 39,
+          "series_id": 73,
+          "series_name": "SPLASH/OOPSLA",
+          "edition_name": "SPLASH 2026（含 OOPSLA）",
+          "status": "upcoming",
+          "deadlines": {
+            "abstract_deadline": null,
+            "paper_deadline": null,
+            "poster_deadline": null,
+            "workshop_deadline": null,
+            "registration_deadline": null
+          },
+          "opportunity_tags": [
+            "poster",
+            "doctoral_consortium"
+          ]
+        },
+        {
+          "edition_id": 63,
+          "series_id": 45,
+          "series_name": "UIST",
+          "edition_name": "UIST 2026",
+          "status": "upcoming",
+          "deadlines": {
+            "abstract_deadline": null,
+            "paper_deadline": null,
+            "poster_deadline": null,
+            "workshop_deadline": null,
+            "registration_deadline": null
+          },
+          "opportunity_tags": [
+            "poster"
+          ]
+        },
+        {
+          "edition_id": 84,
+          "series_id": 158,
+          "series_name": "AEJMC Annual Conference",
+          "edition_name": "AEJMC 2026 Annual Conference",
+          "status": "closed",
+          "deadlines": {
+            "abstract_deadline": null,
+            "paper_deadline": "2026-04-01",
+            "poster_deadline": null,
+            "workshop_deadline": null,
+            "registration_deadline": null
+          },
+          "opportunity_tags": []
+        },
+        {
+          "edition_id": 85,
+          "series_id": 159,
+          "series_name": "NCA Annual Convention",
+          "edition_name": "NCA 112th Annual Convention",
+          "status": "open",
+          "deadlines": {
+            "abstract_deadline": null,
+            "paper_deadline": null,
+            "poster_deadline": null,
+            "workshop_deadline": null,
+            "registration_deadline": "2026-09-16"
+          },
+          "opportunity_tags": []
+        },
+        {
+          "edition_id": 86,
+          "series_id": 160,
+          "series_name": "European Communication Conference (ECC)",
+          "edition_name": "ECC 2026（第 11 届）",
+          "status": "upcoming",
+          "deadlines": {
+            "abstract_deadline": null,
+            "paper_deadline": null,
+            "poster_deadline": "2026-01-08",
+            "workshop_deadline": null,
+            "registration_deadline": null
+          },
+          "opportunity_tags": [
+            "poster"
+          ]
+        },
+        {
+          "edition_id": 89,
+          "series_id": 163,
+          "series_name": "SCMS Annual Conference",
+          "edition_name": "SCMS 2026 Annual Conference",
+          "status": "closed",
+          "deadlines": {
+            "abstract_deadline": null,
+            "paper_deadline": null,
+            "poster_deadline": null,
+            "workshop_deadline": null,
+            "registration_deadline": "2026-01-14"
+          },
+          "opportunity_tags": []
+        },
+        {
+          "edition_id": 106,
+          "series_id": 180,
+          "series_name": "EASM European Sport Management Conference",
+          "edition_name": "EASM 2026（第 34 届）",
+          "status": "upcoming",
+          "deadlines": {
+            "abstract_deadline": null,
+            "paper_deadline": null,
+            "poster_deadline": null,
+            "workshop_deadline": null,
+            "registration_deadline": null
+          },
+          "opportunity_tags": [
+            "student_forum",
+            "doctoral_consortium"
+          ]
+        },
+        {
+          "edition_id": 112,
+          "series_id": 186,
+          "series_name": "ECER",
+          "edition_name": "ECER 2026 Tampere",
+          "status": "closed",
+          "deadlines": {
+            "abstract_deadline": null,
+            "paper_deadline": null,
+            "poster_deadline": null,
+            "workshop_deadline": null,
+            "registration_deadline": null
+          },
+          "opportunity_tags": [
+            "student_forum"
+          ]
+        },
+        {
+          "edition_id": 115,
+          "series_id": 189,
+          "series_name": "Learning Analytics and Knowledge (LAK)",
+          "edition_name": "LAK'26",
+          "status": "closed",
+          "deadlines": {
+            "abstract_deadline": null,
+            "paper_deadline": null,
+            "poster_deadline": null,
+            "workshop_deadline": null,
+            "registration_deadline": "2026-01-29"
+          },
+          "opportunity_tags": []
+        },
+        {
+          "edition_id": 123,
+          "series_id": 197,
+          "series_name": "IEEE BigData",
+          "edition_name": "IEEE BigData 2026",
+          "status": "upcoming",
+          "deadlines": {
+            "abstract_deadline": null,
+            "paper_deadline": null,
+            "poster_deadline": null,
+            "workshop_deadline": null,
+            "registration_deadline": null
+          },
+          "opportunity_tags": [
+            "undergraduate_friendly"
+          ]
+        }
+      ]
+    },
+    "coverage": {
+      "series_with_edition": 132,
+      "series_without_edition": 74,
+      "editions_with_registration": 4,
+      "editions_with_cfp_url": 3,
+      "organization_links": 242,
+      "series_with_recognition": 36
+    }
+  },
+  "quality_audit": {
+    "duplicate_series_tokens": 0,
+    "duplicate_details": [],
+    "recognition_missing_evidence": 0,
+    "wrong_city_reviewed": [
+      {
+        "item": "SC26",
+        "finding": "官网 Attend 模板 bug，导航站日期不可信",
+        "action": "Edition 只记 Chicago/McCormick Place；日期保持 NULL（V1.1.1 未改判）"
+      },
+      {
+        "item": "BEI/部分国际学会官网",
+        "finding": "beaweb.org、cmstudies.org、ire.org 等对自动访问受限",
+        "action": "日期以官方会议页/官方站内检索片段为准，notes 标注核对方式；不采第三方目录"
+      },
+      {
+        "item": "FIMS 2026",
+        "finding": "部分转发材料误写 9 月",
+        "action": "以 fims.org 官方新闻（2026-04-16）的 11/24-27 Santiago 为准"
+      },
+      {
+        "item": "AEJMC 2026",
+        "finding": "division 页投稿日期不一（部分 7/15）",
+        "action": "Edition 采用 AEJMC 年会总页 4/1 paper deadline，notes 说明差异"
+      }
+    ],
+    "school_relations_without_dedicated_notice": [
+      {
+        "note": "NDBC 2025（吉林大学）、中国力学大会 2025（国防科技大学）沿用 Edition 的 S/A 来源作证据，不重复建 notice_url。"
+      }
+    ]
+  },
+  "fixed": [
+    "CCF 2022 分级证据回填：为缺 source_url/evidence 的 recognition 行补 CCF 官方目录公告 URL 与 evidence，标记 legacy；36/36 条 recognition 现均带证据（PRCV 保留 pending_evidence）",
+    "新增 v111_series.py：49 个新 Series，全部为官方学会/会议站核实的新闻传播（15）、体育科学（13）、教育（11）、数据科学（10）",
+    "新增 editions_v111.py：49 个真实 Edition，均带 S/A 官网来源与会期；4 个 Edition 写入官方学生事实（ECC poster & mentoring、EASM student/PhD seminar、ECER ERC、IEEE BigData Undergraduate & REU Consortium）",
+    "org_catalog.py：新增约 45 个国际学会/组委会组织（总数 151），全部 Series 组织引用在目录内",
+    "builder 新增 recognition evidence 校验、primary/secondary discipline 校验、SchoolConference 证据校验",
+    "conference_authority_service.py：新增 student opportunity tags、actionable 判定与 Edition 日期状态计算（open/upcoming/closed/unknown）",
+    "只读 API 扩展：Series/Edition 支持 primary_discipline、has_submission、has_student_track、has_poster、has_registration、actionable 过滤，不改变默认返回",
+    "新增 test_conference_v111.py：10 项行为测试全部通过"
+  ],
+  "remaining_risks": [
+    "少量官网对自动访问受限（BEA/SCMS/IRE/ECSS 等），日期经官方站内检索片段核对并已写入 source notes，未升级为‘全页直读’的 fully_verified",
+    "SC26 会期仍因官网模板问题保持 NULL；第 14 届全国体育科学大会等既有差异维持 notes 隔离",
+    "Edition 学生机会字段仍偏少：多数 2026 Edition 官方页未写明面向学生的 deadline/学生分轨，按要求保持 NULL/unknown",
+    "student_value_tags 语义补全需要逐 Edition 官方页再采集；Series 级无标签（防止无证据传播）",
+    "数据库 JSON 列在种子导入时会写入字面量 'null'（SQLAlchemy JSON 行为），报告按语义空值统计；后续可统一清理为 SQL NULL（不改 schema）"
+  ],
+  "files_modified": [
+    "backend/scripts/conference_v1_seeds/org_catalog.py（新增约 45 个组织）",
+    "backend/scripts/conference_v1_seeds/v111_series.py（新增 49 Series）",
+    "backend/scripts/conference_v1_seeds/editions_v111.py（新增 49 Editions）",
+    "backend/scripts/build_conference_v1_seeds.py（接入 V1.1.1 + 校验）",
+    "backend/app/services/conference_authority_service.py（actionable/student opportunity 规则）",
+    "backend/app/services/conference_service.py（只读过滤）",
+    "backend/app/api/routes/conferences.py（只读过滤参数）",
+    "backend/tests/test_conference_v111.py（10 项新测试）",
+    "backend/scripts/report_conference_v111.py",
+    "data/seeds/conference_v1/*.json（重新生成）",
+    "data/reports/conference_v111_quality_report.{md,json}"
+  ],
+  "v12_recommendation": {
+    "suggested": true,
+    "scope": [
+      "按 CCF 官方目录逐会议行核对 recognition（legacy -> fully_verified）",
+      "官网恢复后可逐条回补 BEA/SCMS/IRE/ECSS 等 Edition 的深层官方页与日期",
+      "为已核实的高校承办 Edition（如 ICDM 2026 东北大学）补充校方通知后建 SchoolConference",
+      "继续为 2026/2027 Edition 采集官方学生 deadline/student registration/volunteer/travel grant 证据",
+      "清理 JSON 列的 'null' 字面量（不改 schema）"
+    ],
+    "blockers": [
+      "不因 KPI 灌入无官网证据的会议/Edition；未核验的日期与学生机会保持 NULL/unknown。"
+    ]
+  }
+}

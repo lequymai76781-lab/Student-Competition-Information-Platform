@@ -1,0 +1,361 @@
+{
+  "task": "SPECIALIZED_INSTITUTIONS_COVERAGE_01",
+  "generated_at": "2026-09-14T15:19:12.499850+00:00",
+  "summary": {
+    "PASS": 24,
+    "FAIL": 0
+  },
+  "research_coverage": {
+    "covered": 34,
+    "target": 34
+  },
+  "verified_data_coverage": {
+    "covered": 27,
+    "target": 34
+  },
+  "final_status_counts": {
+    "ACCESS_LIMITED": 2,
+    "AMBIGUOUS": 3,
+    "NEEDS_DEEPER_REVIEW": 0,
+    "VERIFIED_DATA": 27,
+    "VERIFIED_NO_PUBLIC_DATA": 2
+  },
+  "category_metrics": {
+    "sports": {
+      "target": 14,
+      "research": 14,
+      "verified": 11,
+      "verified_no_public_data": 2,
+      "access_limited": 1,
+      "ambiguous": 0
+    },
+    "dance": {
+      "target": 9,
+      "research": 9,
+      "verified": 7,
+      "verified_no_public_data": 0,
+      "access_limited": 0,
+      "ambiguous": 2
+    },
+    "film": {
+      "target": 17,
+      "research": 17,
+      "verified": 13,
+      "verified_no_public_data": 0,
+      "access_limited": 1,
+      "ambiguous": 3
+    },
+    "drama": {
+      "target": 16,
+      "research": 16,
+      "verified": 13,
+      "verified_no_public_data": 0,
+      "access_limited": 1,
+      "ambiguous": 2
+    },
+    "media": {
+      "target": 10,
+      "research": 10,
+      "verified": 9,
+      "verified_no_public_data": 0,
+      "access_limited": 1,
+      "ambiguous": 0
+    }
+  },
+  "database_additions": {
+    "competition": 20,
+    "recognition": 6,
+    "notification": 12,
+    "participation": 17,
+    "professional_reference": 22,
+    "college_scope_relations": 11,
+    "major_scope_relations": 1,
+    "source": 32
+  },
+  "checks": [
+    {
+      "name": "master_34_unique",
+      "status": "PASS",
+      "details": 34
+    },
+    {
+      "name": "priority_split_fixed",
+      "status": "PASS",
+      "details": {
+        "P0": 16,
+        "P1": 18
+      }
+    },
+    {
+      "name": "taxonomy_categories",
+      "status": "PASS",
+      "details": [
+        "dance",
+        "drama",
+        "film",
+        "media",
+        "sports"
+      ]
+    },
+    {
+      "name": "research_archives_34",
+      "status": "PASS",
+      "details": 34
+    },
+    {
+      "name": "archive_schema",
+      "status": "PASS",
+      "details": {}
+    },
+    {
+      "name": "all_final_statuses_valid",
+      "status": "PASS",
+      "details": {
+        "invalid": {},
+        "counts": {
+          "VERIFIED_DATA": 27,
+          "VERIFIED_NO_PUBLIC_DATA": 2,
+          "ACCESS_LIMITED": 2,
+          "AMBIGUOUS": 3
+        }
+      }
+    },
+    {
+      "name": "no_deeper_review",
+      "status": "PASS",
+      "details": 0
+    },
+    {
+      "name": "remaining_22_fixed_cohort",
+      "status": "PASS",
+      "details": 22
+    },
+    {
+      "name": "no_public_status_evidence",
+      "status": "PASS",
+      "details": {
+        "南京体育学院": [
+          5,
+          3
+        ],
+        "吉林体育学院": [
+          5,
+          3
+        ]
+      }
+    },
+    {
+      "name": "verified_data_matches_database",
+      "status": "PASS",
+      "details": {
+        "archive": 27,
+        "database": 27,
+        "difference": []
+      }
+    },
+    {
+      "name": "terminal_non_data_has_no_formal_relation",
+      "status": "PASS",
+      "details": []
+    },
+    {
+      "name": "round2_importer_materialization",
+      "status": "PASS",
+      "details": [
+        {
+          "school": "北京体育大学",
+          "competition": "中华经典诵写讲大赛",
+          "missing": []
+        },
+        {
+          "school": "成都体育学院",
+          "competition": "成都体育学院体育教育专业实习学生教学技能比赛",
+          "missing": []
+        },
+        {
+          "school": "天津体育学院",
+          "competition": "天津体育学院体育教育专业学生基本功大赛",
+          "missing": []
+        },
+        {
+          "school": "沈阳体育学院",
+          "competition": "中国国际大学生创新大赛",
+          "missing": []
+        },
+        {
+          "school": "山东体育学院",
+          "competition": "全国大学生体育产业创新创业大赛",
+          "missing": []
+        },
+        {
+          "school": "哈尔滨体育学院",
+          "competition": "全国大学生市场调查与分析大赛",
+          "missing": []
+        },
+        {
+          "school": "云南艺术学院",
+          "competition": "中国国际大学生创新大赛",
+          "missing": []
+        },
+        {
+          "school": "广西艺术学院",
+          "competition": "中国国际大学生创新大赛",
+          "missing": []
+        },
+        {
+          "school": "广西艺术学院",
+          "competition": "中国—东盟青年艺术品创作大赛",
+          "missing": []
+        },
+        {
+          "school": "内蒙古艺术学院",
+          "competition": "“挑战杯”中国大学生创业计划竞赛",
+          "missing": []
+        },
+        {
+          "school": "新疆艺术学院",
+          "competition": "新疆艺术学院“新艺杯”专业竞赛",
+          "missing": []
+        },
+        {
+          "school": "山西传媒学院",
+          "competition": "中国数据新闻大赛",
+          "missing": []
+        },
+        {
+          "school": "河北传媒学院",
+          "competition": "全国高校电子竞技解说主持大赛",
+          "missing": []
+        },
+        {
+          "school": "四川传媒学院",
+          "competition": "中国数据新闻大赛",
+          "missing": []
+        },
+        {
+          "school": "四川电影电视学院",
+          "competition": "川影杯“华年奖”",
+          "missing": []
+        },
+        {
+          "school": "吉林动画学院",
+          "competition": "吉林动画学院“力行杯”创新创业大赛",
+          "missing": []
+        }
+      ]
+    },
+    {
+      "name": "official_source_audit",
+      "status": "PASS",
+      "details": {
+        "sources": 32,
+        "invalid_urls": [],
+        "invalid_source_flags": [],
+        "invalid_policy_flags": []
+      }
+    },
+    {
+      "name": "event_type_audit",
+      "status": "PASS",
+      "details": {}
+    },
+    {
+      "name": "relation_audit",
+      "status": "PASS",
+      "details": {
+        "count": 29,
+        "invalid": []
+      }
+    },
+    {
+      "name": "recognition_scope_audit",
+      "status": "PASS",
+      "details": {
+        "recognitions": 6,
+        "invalid": []
+      }
+    },
+    {
+      "name": "college_scope_accounting",
+      "status": "PASS",
+      "details": {
+        "college": 11,
+        "major": 1
+      }
+    },
+    {
+      "name": "professional_reference_evidence",
+      "status": "PASS",
+      "details": {
+        "count": 22,
+        "missing": []
+      }
+    },
+    {
+      "name": "duplicate_competition_audit",
+      "status": "PASS",
+      "details": []
+    },
+    {
+      "name": "orphan_audit",
+      "status": "PASS",
+      "details": {
+        "editions_without_competition": 0,
+        "sources_without_competition": 0,
+        "sources_without_edition": 0,
+        "relations_without_university": 0,
+        "relations_without_edition": 0,
+        "recognitions_without_competition": 0,
+        "recognitions_without_policy": 0
+      }
+    },
+    {
+      "name": "previous_13_reverse_audit",
+      "status": "PASS",
+      "details": {
+        "reviewed": 13,
+        "corrected": 12,
+        "deleted": 1,
+        "errors": []
+      }
+    },
+    {
+      "name": "uncertain_resolutions",
+      "status": "PASS",
+      "details": {
+        "resolved": 2,
+        "errors": []
+      }
+    },
+    {
+      "name": "manual_qa",
+      "status": "PASS",
+      "details": {
+        "PASS": 27,
+        "FAIL": 0,
+        "UNCERTAIN": 0
+      }
+    },
+    {
+      "name": "round2_idempotency",
+      "status": "PASS",
+      "details": {
+        "task": "SPECIALIZED_INSTITUTIONS_COVERAGE_01",
+        "checked_at": "2026-09-14T15:09:19.721385+00:00",
+        "passed": true,
+        "semantic_digest_before": "bbb025459c8e0918b6ae4e677ec52bbdf31b2f8896158f932dec73624c570f8b",
+        "semantic_digest_after": "bbb025459c8e0918b6ae4e677ec52bbdf31b2f8896158f932dec73624c570f8b",
+        "importer_stats": {
+          "competition_created": 0,
+          "competition_updated": 0,
+          "edition_created": 0,
+          "relation_created": 0,
+          "recognition_created": 0,
+          "policy_created": 0,
+          "source_created": 0,
+          "fact_created": 0
+        }
+      }
+    }
+  ]
+}

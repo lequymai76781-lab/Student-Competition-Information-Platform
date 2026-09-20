@@ -1,0 +1,680 @@
+[
+  {
+    "name": "北京体育大学",
+    "official_name": "北京体育大学",
+    "official_url": "https://www.bsu.edu.cn/",
+    "category": [
+      "sports"
+    ],
+    "province": "北京",
+    "city": "北京",
+    "institution_type": "体育院校",
+    "existing_school_id": 52,
+    "already_covered": true,
+    "priority": "P0",
+    "coverage_state": "has_recognition",
+    "recognition": 1,
+    "notification": 0,
+    "participation": 0,
+    "professional_reference": 0
+  },
+  {
+    "name": "上海体育大学",
+    "official_name": "上海体育大学",
+    "official_url": "https://www.sus.edu.cn/",
+    "category": [
+      "sports"
+    ],
+    "province": "上海",
+    "city": "上海",
+    "institution_type": "体育院校",
+    "existing_school_id": 114,
+    "already_covered": true,
+    "priority": "P0",
+    "coverage_state": "notification_only",
+    "recognition": 0,
+    "notification": 1,
+    "participation": 0,
+    "professional_reference": 1
+  },
+  {
+    "name": "武汉体育学院",
+    "official_name": "武汉体育学院",
+    "official_url": "https://www.whsu.edu.cn/",
+    "category": [
+      "sports",
+      "media"
+    ],
+    "province": "湖北",
+    "city": "武汉",
+    "institution_type": "体育院校",
+    "existing_school_id": 40,
+    "already_covered": true,
+    "priority": "P0",
+    "coverage_state": "has_recognition",
+    "recognition": 97,
+    "notification": 1,
+    "participation": 1,
+    "professional_reference": 0
+  },
+  {
+    "name": "成都体育学院",
+    "official_name": "成都体育学院",
+    "official_url": "https://www.cdsu.edu.cn/",
+    "category": [
+      "sports"
+    ],
+    "province": "四川",
+    "city": "成都",
+    "institution_type": "体育院校",
+    "existing_school_id": 115,
+    "already_covered": true,
+    "priority": "P0",
+    "coverage_state": "participation_only",
+    "recognition": 0,
+    "notification": 0,
+    "participation": 1,
+    "professional_reference": 1
+  },
+  {
+    "name": "首都体育学院",
+    "official_name": "首都体育学院",
+    "official_url": "https://www.cupes.edu.cn/",
+    "category": [
+      "sports"
+    ],
+    "province": "北京",
+    "city": "北京",
+    "institution_type": "体育院校",
+    "existing_school_id": 116,
+    "already_covered": true,
+    "priority": "P0",
+    "coverage_state": "notification_only",
+    "recognition": 0,
+    "notification": 2,
+    "participation": 0,
+    "professional_reference": 0
+  },
+  {
+    "name": "西安体育学院",
+    "official_name": "西安体育学院",
+    "official_url": "https://www.xaipe.edu.cn/",
+    "category": [
+      "sports"
+    ],
+    "province": "陕西",
+    "city": "西安",
+    "institution_type": "体育院校",
+    "existing_school_id": 117,
+    "already_covered": true,
+    "priority": "P0",
+    "coverage_state": "participation_only",
+    "recognition": 0,
+    "notification": 0,
+    "participation": 1,
+    "professional_reference": 1
+  },
+  {
+    "name": "广州体育学院",
+    "official_name": "广州体育学院",
+    "official_url": "https://www.gzsport.edu.cn/",
+    "category": [
+      "sports"
+    ],
+    "province": "广东",
+    "city": "广州",
+    "institution_type": "体育院校",
+    "existing_school_id": 118,
+    "already_covered": true,
+    "priority": "P0",
+    "coverage_state": "notification_only",
+    "recognition": 0,
+    "notification": 1,
+    "participation": 1,
+    "professional_reference": 1
+  },
+  {
+    "name": "天津体育学院",
+    "official_name": "天津体育学院",
+    "official_url": "https://www.tjus.edu.cn/",
+    "category": [
+      "sports"
+    ],
+    "province": "天津",
+    "city": "天津",
+    "institution_type": "体育院校",
+    "existing_school_id": 119,
+    "already_covered": true,
+    "priority": "P0",
+    "coverage_state": "has_recognition",
+    "recognition": 1,
+    "notification": 0,
+    "participation": 0,
+    "professional_reference": 1
+  },
+  {
+    "name": "沈阳体育学院",
+    "official_name": "沈阳体育学院",
+    "official_url": "https://www.syty.edu.cn/",
+    "category": [
+      "sports"
+    ],
+    "province": "辽宁",
+    "city": "沈阳",
+    "institution_type": "体育院校",
+    "existing_school_id": 120,
+    "already_covered": true,
+    "priority": "P1",
+    "coverage_state": "has_recognition",
+    "recognition": 1,
+    "notification": 0,
+    "participation": 0,
+    "professional_reference": 0
+  },
+  {
+    "name": "南京体育学院",
+    "official_name": "南京体育学院",
+    "official_url": "https://www.nipes.cn/",
+    "category": [
+      "sports"
+    ],
+    "province": "江苏",
+    "city": "南京",
+    "institution_type": "体育院校",
+    "existing_school_id": 121,
+    "already_covered": true,
+    "priority": "P1",
+    "coverage_state": "no_relation_data",
+    "recognition": 0,
+    "notification": 0,
+    "participation": 0,
+    "professional_reference": 0
+  },
+  {
+    "name": "山东体育学院",
+    "official_name": "山东体育学院",
+    "official_url": "https://www.sdpei.edu.cn/",
+    "category": [
+      "sports"
+    ],
+    "province": "山东",
+    "city": "济南",
+    "institution_type": "体育院校",
+    "existing_school_id": 122,
+    "already_covered": true,
+    "priority": "P1",
+    "coverage_state": "participation_only",
+    "recognition": 0,
+    "notification": 0,
+    "participation": 1,
+    "professional_reference": 1
+  },
+  {
+    "name": "吉林体育学院",
+    "official_name": "吉林体育学院",
+    "official_url": "https://www.jlsu.edu.cn/",
+    "category": [
+      "sports"
+    ],
+    "province": "吉林",
+    "city": "长春",
+    "institution_type": "体育院校",
+    "existing_school_id": 123,
+    "already_covered": true,
+    "priority": "P1",
+    "coverage_state": "no_relation_data",
+    "recognition": 0,
+    "notification": 0,
+    "participation": 0,
+    "professional_reference": 0
+  },
+  {
+    "name": "哈尔滨体育学院",
+    "official_name": "哈尔滨体育学院",
+    "official_url": "https://www.hrbipe.edu.cn/",
+    "category": [
+      "sports"
+    ],
+    "province": "黑龙江",
+    "city": "哈尔滨",
+    "institution_type": "体育院校",
+    "existing_school_id": 124,
+    "already_covered": true,
+    "priority": "P1",
+    "coverage_state": "participation_only",
+    "recognition": 0,
+    "notification": 0,
+    "participation": 1,
+    "professional_reference": 1
+  },
+  {
+    "name": "河北体育学院",
+    "official_name": "河北体育学院",
+    "official_url": "https://www.hepec.edu.cn/",
+    "category": [
+      "sports"
+    ],
+    "province": "河北",
+    "city": "石家庄",
+    "institution_type": "体育院校",
+    "existing_school_id": 125,
+    "already_covered": true,
+    "priority": "P1",
+    "coverage_state": "no_relation_data",
+    "recognition": 0,
+    "notification": 0,
+    "participation": 0,
+    "professional_reference": 0
+  },
+  {
+    "name": "北京舞蹈学院",
+    "official_name": "北京舞蹈学院",
+    "official_url": "https://www.bda.edu.cn/",
+    "category": [
+      "dance"
+    ],
+    "province": "北京",
+    "city": "北京",
+    "institution_type": "舞蹈院校",
+    "existing_school_id": 126,
+    "already_covered": true,
+    "priority": "P0",
+    "coverage_state": "participation_only",
+    "recognition": 0,
+    "notification": 0,
+    "participation": 2,
+    "professional_reference": 2
+  },
+  {
+    "name": "北京电影学院",
+    "official_name": "北京电影学院",
+    "official_url": "https://www.bfa.edu.cn/",
+    "category": [
+      "film"
+    ],
+    "province": "北京",
+    "city": "北京",
+    "institution_type": "电影院校",
+    "existing_school_id": 127,
+    "already_covered": true,
+    "priority": "P0",
+    "coverage_state": "no_relation_data",
+    "recognition": 0,
+    "notification": 0,
+    "participation": 0,
+    "professional_reference": 0
+  },
+  {
+    "name": "中央戏剧学院",
+    "official_name": "中央戏剧学院",
+    "official_url": "https://www.chntheatre.edu.cn/",
+    "category": [
+      "drama"
+    ],
+    "province": "北京",
+    "city": "北京",
+    "institution_type": "戏剧院校",
+    "existing_school_id": 128,
+    "already_covered": true,
+    "priority": "P0",
+    "coverage_state": "notification_only",
+    "recognition": 0,
+    "notification": 1,
+    "participation": 1,
+    "professional_reference": 2
+  },
+  {
+    "name": "上海戏剧学院",
+    "official_name": "上海戏剧学院",
+    "official_url": "https://www.sta.edu.cn/",
+    "category": [
+      "drama",
+      "film",
+      "dance"
+    ],
+    "province": "上海",
+    "city": "上海",
+    "institution_type": "戏剧院校",
+    "existing_school_id": 129,
+    "already_covered": true,
+    "priority": "P0",
+    "coverage_state": "notification_only",
+    "recognition": 0,
+    "notification": 2,
+    "participation": 0,
+    "professional_reference": 1
+  },
+  {
+    "name": "中国戏曲学院",
+    "official_name": "中国戏曲学院",
+    "official_url": "https://www.nacta.edu.cn/",
+    "category": [
+      "drama"
+    ],
+    "province": "北京",
+    "city": "北京",
+    "institution_type": "戏曲院校",
+    "existing_school_id": 130,
+    "already_covered": true,
+    "priority": "P0",
+    "coverage_state": "notification_only",
+    "recognition": 0,
+    "notification": 1,
+    "participation": 0,
+    "professional_reference": 1
+  },
+  {
+    "name": "南京艺术学院",
+    "official_name": "南京艺术学院",
+    "official_url": "https://www.nua.edu.cn/",
+    "category": [
+      "dance",
+      "film",
+      "drama",
+      "media"
+    ],
+    "province": "江苏",
+    "city": "南京",
+    "institution_type": "艺术院校",
+    "existing_school_id": 131,
+    "already_covered": true,
+    "priority": "P0",
+    "coverage_state": "has_recognition",
+    "recognition": 1,
+    "notification": 1,
+    "participation": 0,
+    "professional_reference": 1
+  },
+  {
+    "name": "山东艺术学院",
+    "official_name": "山东艺术学院",
+    "official_url": "https://www.sdca.edu.cn/",
+    "category": [
+      "dance",
+      "film",
+      "drama"
+    ],
+    "province": "山东",
+    "city": "济南",
+    "institution_type": "艺术院校",
+    "existing_school_id": 132,
+    "already_covered": true,
+    "priority": "P1",
+    "coverage_state": "no_relation_data",
+    "recognition": 0,
+    "notification": 0,
+    "participation": 0,
+    "professional_reference": 0
+  },
+  {
+    "name": "云南艺术学院",
+    "official_name": "云南艺术学院",
+    "official_url": "https://www.ynart.edu.cn/",
+    "category": [
+      "dance",
+      "film",
+      "drama"
+    ],
+    "province": "云南",
+    "city": "昆明",
+    "institution_type": "艺术院校",
+    "existing_school_id": 133,
+    "already_covered": true,
+    "priority": "P1",
+    "coverage_state": "has_recognition",
+    "recognition": 1,
+    "notification": 0,
+    "participation": 0,
+    "professional_reference": 0
+  },
+  {
+    "name": "广西艺术学院",
+    "official_name": "广西艺术学院",
+    "official_url": "https://www.gxau.edu.cn/",
+    "category": [
+      "dance",
+      "film",
+      "drama"
+    ],
+    "province": "广西",
+    "city": "南宁",
+    "institution_type": "艺术院校",
+    "existing_school_id": 134,
+    "already_covered": true,
+    "priority": "P1",
+    "coverage_state": "has_recognition",
+    "recognition": 1,
+    "notification": 1,
+    "participation": 0,
+    "professional_reference": 1
+  },
+  {
+    "name": "吉林艺术学院",
+    "official_name": "吉林艺术学院",
+    "official_url": "https://www.jlart.edu.cn/",
+    "category": [
+      "dance",
+      "film",
+      "drama"
+    ],
+    "province": "吉林",
+    "city": "长春",
+    "institution_type": "艺术院校",
+    "existing_school_id": 135,
+    "already_covered": true,
+    "priority": "P1",
+    "coverage_state": "no_relation_data",
+    "recognition": 0,
+    "notification": 0,
+    "participation": 0,
+    "professional_reference": 0
+  },
+  {
+    "name": "内蒙古艺术学院",
+    "official_name": "内蒙古艺术学院",
+    "official_url": "https://www.imac.edu.cn/",
+    "category": [
+      "dance",
+      "film",
+      "drama"
+    ],
+    "province": "内蒙古",
+    "city": "呼和浩特",
+    "institution_type": "艺术院校",
+    "existing_school_id": 136,
+    "already_covered": true,
+    "priority": "P1",
+    "coverage_state": "participation_only",
+    "recognition": 0,
+    "notification": 0,
+    "participation": 1,
+    "professional_reference": 0
+  },
+  {
+    "name": "新疆艺术学院",
+    "official_name": "新疆艺术学院",
+    "official_url": "https://www.xjart.edu.cn/",
+    "category": [
+      "dance",
+      "film",
+      "drama"
+    ],
+    "province": "新疆",
+    "city": "乌鲁木齐",
+    "institution_type": "艺术院校",
+    "existing_school_id": 137,
+    "already_covered": true,
+    "priority": "P1",
+    "coverage_state": "participation_only",
+    "recognition": 0,
+    "notification": 0,
+    "participation": 1,
+    "professional_reference": 1
+  },
+  {
+    "name": "中国传媒大学",
+    "official_name": "中国传媒大学",
+    "official_url": "https://www.cuc.edu.cn/",
+    "category": [
+      "media",
+      "film",
+      "drama"
+    ],
+    "province": "北京",
+    "city": "北京",
+    "institution_type": "传媒院校",
+    "existing_school_id": 49,
+    "already_covered": true,
+    "priority": "P0",
+    "coverage_state": "participation_only",
+    "recognition": 0,
+    "notification": 0,
+    "participation": 1,
+    "professional_reference": 0
+  },
+  {
+    "name": "浙江传媒学院",
+    "official_name": "浙江传媒学院",
+    "official_url": "https://www.cuz.edu.cn/",
+    "category": [
+      "media",
+      "film",
+      "drama"
+    ],
+    "province": "浙江",
+    "city": "杭州",
+    "institution_type": "传媒院校",
+    "existing_school_id": 138,
+    "already_covered": true,
+    "priority": "P0",
+    "coverage_state": "participation_only",
+    "recognition": 0,
+    "notification": 0,
+    "participation": 1,
+    "professional_reference": 1
+  },
+  {
+    "name": "山西传媒学院",
+    "official_name": "山西传媒学院",
+    "official_url": "https://www.cusx.edu.cn/",
+    "category": [
+      "media",
+      "film"
+    ],
+    "province": "山西",
+    "city": "晋中",
+    "institution_type": "传媒院校",
+    "existing_school_id": 139,
+    "already_covered": true,
+    "priority": "P1",
+    "coverage_state": "participation_only",
+    "recognition": 0,
+    "notification": 0,
+    "participation": 1,
+    "professional_reference": 1
+  },
+  {
+    "name": "南京传媒学院",
+    "official_name": "南京传媒学院",
+    "official_url": "https://www.cucn.edu.cn/",
+    "category": [
+      "media",
+      "film",
+      "drama"
+    ],
+    "province": "江苏",
+    "city": "南京",
+    "institution_type": "传媒院校",
+    "existing_school_id": 140,
+    "already_covered": true,
+    "priority": "P1",
+    "coverage_state": "no_relation_data",
+    "recognition": 0,
+    "notification": 0,
+    "participation": 0,
+    "professional_reference": 0
+  },
+  {
+    "name": "河北传媒学院",
+    "official_name": "河北传媒学院",
+    "official_url": "https://www.hebic.cn/",
+    "category": [
+      "media",
+      "film",
+      "drama"
+    ],
+    "province": "河北",
+    "city": "石家庄",
+    "institution_type": "传媒院校",
+    "existing_school_id": 141,
+    "already_covered": true,
+    "priority": "P1",
+    "coverage_state": "participation_only",
+    "recognition": 0,
+    "notification": 0,
+    "participation": 1,
+    "professional_reference": 1
+  },
+  {
+    "name": "四川传媒学院",
+    "official_name": "四川传媒学院",
+    "official_url": "https://www.scmc.edu.cn/",
+    "category": [
+      "media",
+      "film",
+      "drama"
+    ],
+    "province": "四川",
+    "city": "成都",
+    "institution_type": "传媒院校",
+    "existing_school_id": 142,
+    "already_covered": true,
+    "priority": "P1",
+    "coverage_state": "participation_only",
+    "recognition": 0,
+    "notification": 0,
+    "participation": 1,
+    "professional_reference": 1
+  },
+  {
+    "name": "四川电影电视学院",
+    "official_name": "四川电影电视学院",
+    "official_url": "https://www.scftvc.com/",
+    "category": [
+      "film",
+      "media",
+      "drama"
+    ],
+    "province": "四川",
+    "city": "成都",
+    "institution_type": "影视院校",
+    "existing_school_id": 143,
+    "already_covered": true,
+    "priority": "P1",
+    "coverage_state": "notification_only",
+    "recognition": 0,
+    "notification": 1,
+    "participation": 0,
+    "professional_reference": 1
+  },
+  {
+    "name": "吉林动画学院",
+    "official_name": "吉林动画学院",
+    "official_url": "https://www.jlai.edu.cn/",
+    "category": [
+      "film",
+      "media"
+    ],
+    "province": "吉林",
+    "city": "长春",
+    "institution_type": "影视院校",
+    "existing_school_id": 144,
+    "already_covered": true,
+    "priority": "P1",
+    "coverage_state": "participation_only",
+    "recognition": 0,
+    "notification": 0,
+    "participation": 1,
+    "professional_reference": 1
+  }
+]

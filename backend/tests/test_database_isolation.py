@@ -1,0 +1,156 @@
+from __future__ import annotations
+
+from hashlib import sha256
+from pathlib import Path
+
+import pytest
+from sqlalchemy import select
+
+from app.api.deps import get_db
+from app.database.session import engine
+from app.main import app
+from app.models import (
+    CandidateCompetition,
+    Competition,
+    Notification,
+    PolicyDocument,
+    ReviewQueue,
+    University,
+    User,
+    UserCorrectionSubmission,
+)
+
+
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+PRODUCTION_DB = (PROJECT_ROOT / "data" / "v02.sqlite").resolve()
+
+
+def _sha256(path: Path) -> str:
+    digest = sha256()
+    with path.open("rb") as handle:
+        for chunk in iter(lambda: handle.read(1024 * 1024), b""):
+            digest.update(chunk)
+    return digest.hexdigest()
+
+
+def _engine_database_path() -> Path | None:
+    database = engine.url.database
+    if not database or database == ":memory:":
+        return None
+    path = Path(database)
+    if not path.is_absolute():
+        path = Path.cwd() / path
+    return path.resolve()
+
+
+def test_pytest_global_engine_never_targets_production_database() -> None:
+    assert _engine_database_path() != PRODUCTION_DB
+
+
+def test_test_runtime_guard_rejects_production_sqlite_target() -> None:
+    from app.database import safety
+
+    guard = getattr(safety, "assert_test_database_is_safe", None)
+    assert callable(guard), "test-runtime production database guard is missing"
+    with pytest.raises(RuntimeError, match="Tests are not allowed to use the production database"):
+        guard(
+            f"sqlite:///{PRODUCTION_DB.as_posix()}",
+            environment="test",
+            pytest_active=True,
+        )
+
+
+def test_committed_database_writes_stay_in_test_session(db_session) -> None:
+    production_hash_before = _sha256(PRODUCTION_DB)
+    university = db_session.execute(select(University).where(University.name == "测试大学")).scalar_one()
+    competition = db_session.execute(select(Competition).where(Competition.short_name == "测试大赛")).scalar_one()
+    user = User(
+        email="database-isolation@example.com",
+        username="database-isolation",
+        hashed_password="test-only",
+    )
+    document = PolicyDocument(
+        university_id=university.id,
+        title="测试数据库隔离政策",
+        source_url="https://example.edu.cn/isolation-policy",
+        document_hash="database-isolation-policy",
+        is_verified=True,
+        is_demo=False,
+    )
+    db_session.add_all([user, document])
+    db_session.flush()
+    candidate = CandidateCompetition(
+        policy_document_id=document.id,
+        university_id=university.id,
+        raw_name="测试数据库隔离竞赛",
+        evidence_text="仅写入测试数据库",
+        source_url=document.source_url,
+        confidence=1.0,
+        needs_manual_review=True,
+        is_demo=False,
+    )
+    review = ReviewQueue(
+        item_type="candidate_competition",
+        item_id=1,
+        university_id=university.id,
+        policy_document_id=document.id,
+        competition_id=competition.id,
+        reason="测试数据库隔离",
+        is_demo=False,
+    )
+    correction = UserCorrectionSubmission(
+        user_id=user.id,
+        competition_id=competition.id,
+        correction_type="测试隔离",
+        description="该记录必须只存在于测试数据库",
+    )
+    notification = Notification(
+        user_id=user.id,
+        type="test_isolation",
+        title="测试隔离通知",
+        dedup_key="database-isolation-notification",
+    )
+    db_session.add_all([candidate, review, correction, notification])
+    db_session.commit()
+
+    assert db_session.execute(select(User).where(User.email == user.email)).scalar_one().id == user.id
+    assert db_session.execute(select(CandidateCompetition).where(CandidateCompetition.id == candidate.id)).scalar_one()
+    assert db_session.execute(select(ReviewQueue).where(ReviewQueue.id == review.id)).scalar_one()
+    assert db_session.execute(
+        select(UserCorrectionSubmission).where(UserCorrectionSubmission.id == correction.id)
+    ).scalar_one()
+    assert db_session.execute(select(Notification).where(Notification.id == notification.id)).scalar_one()
+    assert _sha256(PRODUCTION_DB) == production_hash_before
+
+
+def test_api_integration_uses_the_pytest_session(client, db_session) -> None:
+    university = University(name="API测试库隔离大学", province="测试省", city="测试市", is_demo=False)
+    db_session.add(university)
+    db_session.commit()
+
+    response = client.get("/api/universities", params={"keyword": "API测试库隔离大学"})
+
+    assert response.status_code == 200
+    assert [row["id"] for row in response.json()["data"]] == [university.id]
+    assert _engine_database_path() != PRODUCTION_DB
+
+
+def test_dependency_override_helper_restores_previous_override() -> None:
+    import conftest
+
+    helper = getattr(conftest, "temporary_dependency_override", None)
+    assert callable(helper), "dependency override cleanup helper is missing"
+
+    def previous_override():
+        yield "previous"
+
+    def test_override():
+        yield "test"
+
+    app.dependency_overrides[get_db] = previous_override
+    try:
+        with helper(app, get_db, test_override):
+            assert app.dependency_overrides[get_db] is test_override
+        assert app.dependency_overrides[get_db] is previous_override
+    finally:
+        app.dependency_overrides.pop(get_db, None)

@@ -1,0 +1,14 @@
+{
+  "source_total": 2952,
+  "source_undergraduate": 1412,
+  "excluded_priority_or_specialized": 184,
+  "target_total": 1228,
+  "database_existing": 0,
+  "with_relation_data": 0,
+  "completely_blank": 1228,
+  "batch_a": 32,
+  "batch_b": 1196,
+  "states": {
+    "absent": 1228
+  }
+}

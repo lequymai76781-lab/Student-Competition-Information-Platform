@@ -1,0 +1,228 @@
+{
+  "generated_at": "2026-08-31T09:43:30.214924+00:00",
+  "counts": {
+    "985_directory": 39,
+    "985_policy_coverage": 1,
+    "universities": 40,
+    "policy_documents": 2,
+    "verified_policy_documents": 2,
+    "candidate_competitions": 102,
+    "competitions": 97,
+    "recognitions": 102
+  },
+  "acceptance": {
+    "one_real_985_policy_chain": true,
+    "wuhan_university_chain": {
+      "university": "武汉大学",
+      "is_985": true,
+      "crawl_status": "completed",
+      "policy_documents": 1,
+      "candidates": 5,
+      "competitions": 5,
+      "recognitions": 5,
+      "source_urls": [
+        "https://journal.whu.edu.cn/20250611use7"
+      ]
+    },
+    "non_985_hierarchy_sample": {
+      "university": "武汉体育学院",
+      "is_985": false,
+      "crawl_status": "completed",
+      "policy_documents": 1,
+      "candidates": 97,
+      "competitions": 97,
+      "recognitions": 97,
+      "source_urls": [
+        "local-source://wuhan-sports-university/journalism/2026/catalog.pdf"
+      ]
+    }
+  },
+  "top_10_competitions": [
+    {
+      "competition_id": 1,
+      "name": "中国国际大学生创新大赛",
+      "priority_score": 10.0,
+      "985_university_recognitions": 0,
+      "985_college_recognitions": 1,
+      "policy_references": 2,
+      "latest_policy_year": 2026,
+      "official_sources": 2
+    },
+    {
+      "competition_id": 2,
+      "name": "“挑战杯”全国大学生课外学术科技作品竞赛",
+      "priority_score": 10.0,
+      "985_university_recognitions": 0,
+      "985_college_recognitions": 1,
+      "policy_references": 2,
+      "latest_policy_year": 2026,
+      "official_sources": 2
+    },
+    {
+      "competition_id": 3,
+      "name": "“挑战杯”中国大学生创业计划竞赛",
+      "priority_score": 10.0,
+      "985_university_recognitions": 0,
+      "985_college_recognitions": 1,
+      "policy_references": 2,
+      "latest_policy_year": 2026,
+      "official_sources": 2
+    },
+    {
+      "competition_id": 4,
+      "name": "全国大学生数学建模竞赛",
+      "priority_score": 10.0,
+      "985_university_recognitions": 0,
+      "985_college_recognitions": 1,
+      "policy_references": 2,
+      "latest_policy_year": 2026,
+      "official_sources": 2
+    },
+    {
+      "competition_id": 5,
+      "name": "全国大学生电子设计竞赛",
+      "priority_score": 10.0,
+      "985_university_recognitions": 0,
+      "985_college_recognitions": 1,
+      "policy_references": 2,
+      "latest_policy_year": 2026,
+      "official_sources": 2
+    },
+    {
+      "competition_id": 6,
+      "name": "全国大学生职业规划大赛",
+      "priority_score": 3.0,
+      "985_university_recognitions": 0,
+      "985_college_recognitions": 0,
+      "policy_references": 1,
+      "latest_policy_year": 2026,
+      "official_sources": 1
+    },
+    {
+      "competition_id": 7,
+      "name": "中国新闻奖",
+      "priority_score": 3.0,
+      "985_university_recognitions": 0,
+      "985_college_recognitions": 0,
+      "policy_references": 1,
+      "latest_policy_year": 2026,
+      "official_sources": 1
+    },
+    {
+      "competition_id": 8,
+      "name": "ACM-ICPC国际大学生程序设计竞赛",
+      "priority_score": 3.0,
+      "985_university_recognitions": 0,
+      "985_college_recognitions": 0,
+      "policy_references": 1,
+      "latest_policy_year": 2026,
+      "official_sources": 1
+    },
+    {
+      "competition_id": 9,
+      "name": "中国大学生医学技术技能大赛",
+      "priority_score": 3.0,
+      "985_university_recognitions": 0,
+      "985_college_recognitions": 0,
+      "policy_references": 1,
+      "latest_policy_year": 2026,
+      "official_sources": 1
+    },
+    {
+      "competition_id": 10,
+      "name": "全国大学生机械创新设计大赛",
+      "priority_score": 3.0,
+      "985_university_recognitions": 0,
+      "985_college_recognitions": 0,
+      "policy_references": 1,
+      "latest_policy_year": 2026,
+      "official_sources": 1
+    }
+  ],
+  "first_batch": [
+    {
+      "university": "清华大学",
+      "status": "partial",
+      "last_crawl_at": "2026-08-31T09:41:15.686622",
+      "reason": "未找到可在本轮完成解析并核验的现行竞赛认定政策。"
+    },
+    {
+      "university": "北京大学",
+      "status": "partial",
+      "last_crawl_at": "2026-08-31T09:41:15.686622",
+      "reason": "已定位学院官方政策候选，附件结构仍待逐条解析，本轮不计入政策覆盖。"
+    },
+    {
+      "university": "浙江大学",
+      "status": "partial",
+      "last_crawl_at": "2026-08-31T09:41:15.686622",
+      "reason": "已定位官网历史竞赛目录，因年份较早，本轮不作为现行政策入库。"
+    },
+    {
+      "university": "武汉大学",
+      "status": "completed",
+      "last_crawl_at": "2026-08-31T09:41:15.632584",
+      "reason": null
+    },
+    {
+      "university": "华中科技大学",
+      "status": "partial",
+      "last_crawl_at": "2026-08-31T09:41:15.686622",
+      "reason": "未找到可在本轮完成解析并核验的现行竞赛认定政策。"
+    }
+  ],
+  "failures_or_partial": [
+    {
+      "university": "清华大学",
+      "status": "partial",
+      "last_crawl_at": "2026-08-31T09:41:15.686622",
+      "reason": "未找到可在本轮完成解析并核验的现行竞赛认定政策。"
+    },
+    {
+      "university": "北京大学",
+      "status": "partial",
+      "last_crawl_at": "2026-08-31T09:41:15.686622",
+      "reason": "已定位学院官方政策候选，附件结构仍待逐条解析，本轮不计入政策覆盖。"
+    },
+    {
+      "university": "浙江大学",
+      "status": "partial",
+      "last_crawl_at": "2026-08-31T09:41:15.686622",
+      "reason": "已定位官网历史竞赛目录，因年份较早，本轮不作为现行政策入库。"
+    },
+    {
+      "university": "华中科技大学",
+      "status": "partial",
+      "last_crawl_at": "2026-08-31T09:41:15.686622",
+      "reason": "未找到可在本轮完成解析并核验的现行竞赛认定政策。"
+    }
+  ],
+  "policy_sources": [
+    {
+      "policy_document_id": 1,
+      "title": "武汉大学新闻与传播学院本科学生素质综合测评实施细则（2025年修订版）",
+      "university": "武汉大学",
+      "college": "新闻与传播学院",
+      "scope_type": "college",
+      "source_url": "https://journal.whu.edu.cn/20250611use7",
+      "attachment_url": "https://journal.whu.edu.cn/uploadfiles/2025061120jgu.pdf",
+      "document_hash": "e5252821378ff1685cea216814aaac0d9bfa6789ae7e3fae5ebf9fad38b9c318",
+      "parser_type": "pymupdf",
+      "verification_status": "official_domain_verified",
+      "attachment_parse_status": "parsed"
+    },
+    {
+      "policy_document_id": 2,
+      "title": "武汉体育学院新闻传播学院大学生学科竞赛目录",
+      "university": "武汉体育学院",
+      "college": "新闻传播学院",
+      "scope_type": "college",
+      "source_url": "local-source://wuhan-sports-university/journalism/2026/catalog.pdf",
+      "attachment_url": "local-source://wuhan-sports-university/journalism/2026/catalog.pdf",
+      "document_hash": "44041c9886dcec9468f07d93ce0d3bd4b588d92b60af43ddf3cb4fcd8ce74ae9",
+      "parser_type": "manual_visual_transcription",
+      "verification_status": "user_confirmed_official_scan",
+      "attachment_parse_status": "manual_transcription"
+    }
+  ]
+}

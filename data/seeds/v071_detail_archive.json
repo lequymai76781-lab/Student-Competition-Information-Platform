@@ -1,0 +1,275 @@
+{
+  "version": "v0.7.1",
+  "competitions": [
+    {
+      "id": 1,
+      "name": "中国国际大学生创新大赛",
+      "fields": {
+        "description": "由教育部等部门联合主办的大学生创新赛事，围绕新工科、新医科、新农科、新文科建设成果和经济社会真实需求组织项目。赛事覆盖高等教育、职业教育、基础教育和留学生教育等类型，通过校级选拔、省级复赛和总决赛推进，强调创新成果转化、产教融合与团队实践。",
+        "organizer": "教育部、中央统战部、中央网信办、国家发展改革委、工业和信息化部、人力资源社会保障部、农业农村部、中国科学院、中国工程院、国家知识产权局、共青团中央、江苏省人民政府",
+        "undertakers": ["南京大学", "南京市人民政府"],
+        "target_students": "高等教育、职业教育、基础教育和留学生教育等学段参赛学生",
+        "competition_format": "项目申报、校级选拔、省级复赛与全国总决赛",
+        "competition_process": [
+          {"title": "项目报名", "description": "参赛项目按赛道要求完成注册和材料申报。"},
+          {"title": "校级选拔", "description": "高校组织校内遴选并形成推荐项目。"},
+          {"title": "省级复赛", "description": "省级教育行政部门组织评审和推荐。"},
+          {"title": "全国总决赛", "description": "入围项目参加全国总决赛评审。"}
+        ],
+        "participation_requirements": [
+          {"label": "项目方向", "value": "项目应结合经济社会现实需求，体现四新建设成果和创新实践。"}
+        ],
+        "history_timeline": [
+          {"year": 2025, "title": "2025届举办", "description": "赛事于2025年4月至10月举办。"},
+          {"year": 2026, "title": "2026届举办", "description": "赛事于2026年7月至11月举办，总决赛由南京大学和南京市人民政府共同承办。"}
+        ]
+      },
+      "source": {"url": "https://www.moe.gov.cn/srcsite/A08/s5672/202607/t20260731_1445670.html", "name": "教育部关于举办中国国际大学生创新大赛（2026）的通知", "type": "government_official_notice", "level": "LEVEL_1", "tier": 1}
+    },
+    {
+      "id": 4,
+      "name": "全国大学生数学建模竞赛",
+      "fields": {
+        "description": "由中国工业与应用数学学会主办、面向全国高校学生的数学建模竞赛。赛题取材于科学工程、经济管理和社会领域的实际问题，参赛队需要在限定时间内完成问题分析、模型建立、计算求解、结果检验和论文写作，重点考察数学应用、计算实现、团队协作与书面表达能力。",
+        "founded_year": 1992,
+        "first_held_year": 1992,
+        "frequency": "每年一届",
+        "target_students": "全国普通高校全日制在校学生",
+        "competition_format": "三人组队，在规定时间内完成数学模型、计算结果和竞赛论文",
+        "history_timeline": [
+          {"year": 1992, "title": "首届全国性竞赛", "description": "10个省市74所院校的314支队伍参加首届全国性竞赛。"},
+          {"year": 1994, "title": "形成联合主办机制", "description": "自1994年起由教育部高教司和中国工业与应用数学学会共同主办。"},
+          {"year": 2026, "title": "2026届举办", "description": "2026年赛题于9月10日发布，报名和论文提交通过中国知网系统进行。"}
+        ],
+        "participation_requirements": [
+          {"label": "团队组成", "value": "每队由同一所学校的3名学生组成。"},
+          {"label": "知识基础", "value": "赛题不要求预先掌握深入专门知识，参赛者应学过高校数学基础课程。"}
+        ],
+        "competition_process": [
+          {"title": "学校报名", "description": "参赛学校按赛区要求组织队伍报名。"},
+          {"title": "统一开赛", "description": "参赛队在统一时间获取赛题并选择一道实际问题。"},
+          {"title": "建模与论文", "description": "团队完成模型假设、建立求解、计算实现、分析检验和论文。"},
+          {"title": "赛区与全国评阅", "description": "答卷经赛区评阅后推荐参加全国复审。"}
+        ],
+        "submission_requirements": [
+          {"label": "核心作品", "value": "提交包含模型假设、建立与求解、计算方法、结果分析检验和模型改进的竞赛论文。"}
+        ]
+      },
+      "source": {"url": "https://www.mcm.edu.cn/", "name": "全国大学生数学建模竞赛官网", "type": "organizer_official", "level": "LEVEL_1", "tier": 1}
+    },
+    {
+      "id": 8,
+      "name": "ACM-ICPC国际大学生程序设计竞赛",
+      "fields": {
+        "short_name": "ICPC",
+        "english_name": "International Collegiate Programming Contest",
+        "former_names": ["ACM-ICPC国际大学生程序设计竞赛"],
+        "description": "ICPC是面向全球高校学生的多级程序设计竞赛，参赛队通过校内活动、资格赛、区域赛和区域冠军赛争取进入全球总决赛。比赛以团队协作、算法设计、程序实现和限时解题为核心，参赛者需要在压力环境中共同分析问题并提交可运行程序。",
+        "organizer": "ICPC Foundation",
+        "founded_year": 1970,
+        "first_held_year": 1970,
+        "frequency": "每年一届",
+        "target_students": "符合当季资格规则的高等院校在校学生",
+        "competition_format": "三人团队使用一台计算机参加限时程序设计竞赛",
+        "history_timeline": [
+          {"year": 1970, "title": "赛事起源", "description": "首场竞赛由UPE计算机科学荣誉学会Texas A&M分会成员组织。"},
+          {"year": 1977, "title": "首个冠军轮次", "description": "赛事形成首个冠军轮次，随后逐步发展为全球多级竞赛。"},
+          {"year": 2026, "title": "2026全球总决赛", "description": "2026全球总决赛在迪拜举办。"}
+        ],
+        "participation_requirements": [
+          {"label": "团队组成", "value": "每队3名符合资格规则的学生。"},
+          {"label": "比赛设备", "value": "区域赛规则要求每队使用一台计算机。"}
+        ],
+        "competition_process": [
+          {"title": "校内活动与资格赛"},
+          {"title": "区域赛"},
+          {"title": "区域冠军赛"},
+          {"title": "全球总决赛"}
+        ],
+        "submission_requirements": [
+          {"label": "提交内容", "value": "针对赛题提交可由裁判系统编译和运行的程序代码。"}
+        ]
+      },
+      "source": {"url": "https://icpc.global/regionals/abouticpc", "name": "ICPC About", "type": "organizer_official", "level": "LEVEL_1", "tier": 1}
+    },
+    {
+      "id": 22,
+      "name": "中国大学生工程实践与创新能力大赛",
+      "fields": {
+        "description": "面向普通高等教育本科院校学生的工程实践与创新赛事，围绕真实工程场景、交叉学科协作和校企协同育人设置竞赛任务。赛事设置工程实践、智能工程创新和虚拟仿真等赛道，参赛团队通过校级初赛、省级复赛和全国总决赛完成设计、制作、调试或仿真任务。",
+        "official_website": "https://www.gcxl.edu.cn/",
+        "competition_scope": "全国",
+        "target_students": "普通高等教育本科院校全日制在校本科生",
+        "min_team_size": 1,
+        "max_team_size": 4,
+        "competition_format": "工程设计与制作、现场任务或虚拟仿真，按赛项规则参加校赛、省赛和全国总决赛",
+        "participation_requirements": [
+          {"label": "学生身份", "value": "普通高等教育本科院校全日制在校本科生。"},
+          {"label": "团队人数", "value": "每支参赛队不超过4名学生。"},
+          {"label": "指导教师", "value": "每支参赛队指导教师不超过2名。"},
+          {"label": "参赛限制", "value": "每名学生仅限参加一个赛项并加入一支参赛队。"}
+        ],
+        "competition_process": [
+          {"title": "校级初赛"},
+          {"title": "省级复赛"},
+          {"title": "全国总决赛"}
+        ],
+        "award_settings": [
+          {"label": "全国总决赛奖项", "value": "设置不同等级奖项和优秀组织奖，具体等级、比例和数量另行通知。"}
+        ]
+      },
+      "source": {"url": "https://www.gcxl.edu.cn/new/index.html", "name": "中国大学生工程实践与创新能力大赛官网", "type": "organizer_official", "level": "LEVEL_1", "tier": 1}
+    },
+    {
+      "id": 99,
+      "name": "全国大学生数学竞赛",
+      "fields": {
+        "short_name": "CMC",
+        "description": "由中国数学会主办、面向全日制在校大学生的数学学科竞赛，设置数学专业类、非数学专业类和高职高专类。比赛通过全国统一初赛和后续决赛考查数学基础、数学思维以及分析和解决问题的能力，不同专业类别使用相应考试内容。",
+        "official_website": "https://www.cmathc.org.cn/",
+        "target_students": "全日制在校大学生",
+        "competition_format": "个人笔试，先参加全国统一初赛，入围后参加决赛",
+        "participation_requirements": [
+          {"label": "参赛对象", "value": "所有全日制在校大学生。"},
+          {"label": "专业分类", "value": "分数学专业类、非数学专业类和高职高专类，并按专业背景执行报考限制。"}
+        ],
+        "competition_process": [
+          {"title": "赛区报名"},
+          {"title": "全国统一初赛", "description": "各赛区使用全国统一试题并在同一时间组织考试。"},
+          {"title": "全国决赛", "description": "初赛入围学生参加全国决赛。"}
+        ],
+        "award_settings": [
+          {"label": "奖项类型", "value": "初赛和决赛均设置一、二、三等奖，具体评定按竞赛通知和章程执行。"}
+        ]
+      },
+      "edition_updates": {"registration_fee": 100, "fee_notes": "第十八届竞赛报名费为100元/人。"},
+      "source": {"url": "https://www.cmathc.org.cn/tzgg/545.html", "name": "关于举办第十八届全国大学生数学竞赛的通知", "type": "organizer_official_notice", "level": "LEVEL_1", "tier": 1}
+    },
+    {
+      "id": 107,
+      "name": "外研社·国才杯国际传播综合能力赛项",
+      "fields": {
+        "description": "由北京外国语大学和外语教学与研究出版社组织的全国大学生外语能力赛事赛项，面向高校学生开展国际传播综合能力考查。当前届设置学校组织报名和初赛环节，参赛者通过赛事平台完成注册，具体校内截止和组织方式以所在学校正式通知为准。",
+        "target_students": "高校在校学生，具体资格以当前届官方规则和学校通知为准",
+        "competition_format": "个人赛，按学校初赛及后续赛程参加综合外语能力考查",
+        "competition_process": [
+          {"title": "赛事平台注册"},
+          {"title": "学校初赛"},
+          {"title": "后续赛程", "description": "按赛事官方安排晋级后续阶段。"}
+        ]
+      },
+      "source": {"url": "https://ucc.fltrp.com/c/2023-05-30/519108.shtml", "name": "外研社·国才杯官方通知与校赛指南", "type": "organizer_official_notice", "level": "LEVEL_1", "tier": 1}
+    },
+    {
+      "id": 109,
+      "name": "外研社·国才杯短视频赛项",
+      "fields": {
+        "description": "外研社·国才杯全国大学生外语能力大赛中的短视频赛项，参赛团队围绕当届主题完成外语短视频策划与制作。学校或学院可组织校内报名和作品遴选，具体团队要求、作品格式、提交方式和时间以当届官方文件及校内正式通知为准。",
+        "competition_format": "团队短视频策划、制作与作品提交",
+        "competition_process": [
+          {"title": "校内报名"},
+          {"title": "短视频制作与提交"},
+          {"title": "校内遴选与后续赛程"}
+        ],
+        "submission_requirements": [
+          {"label": "核心作品", "value": "围绕当届主题制作并提交外语短视频，详细格式以当届通知为准。"}
+        ]
+      },
+      "source": {"url": "https://sfl.seu.edu.cn/2026/0730/c10307a537690/page.htm", "name": "东南大学外国语学院2026短视频赛项通知", "type": "college_official_notice", "level": "LEVEL_3", "tier": 3}
+    },
+    {
+      "id": 122,
+      "name": "清华大学中国公共政策案例分析大赛",
+      "fields": {
+        "description": "由清华大学公共管理学院创办的公共政策案例分析赛事，参赛团队围绕真实治理实践开展选题、资料搜集、实地调研和案例分析，形成具有问题意识和政策价值的原创案例。2026届聚焦智能社会治理，并设置案例分析报告、现场成果展示答辩和可选创新作品。",
+        "founded_year": 2012,
+        "first_held_year": 2012,
+        "history_timeline": [
+          {"year": 2012, "title": "赛事创始", "description": "清华大学中国公共政策案例分析大赛创始于2012年。"},
+          {"year": 2016, "title": "面向全国高校", "description": "赛事于2016年首次面向全国高校本科生举办。"},
+          {"year": 2026, "title": "聚焦智能社会治理", "description": "2026届以智能社会治理为主题，并增设案例创新奖。"}
+        ],
+        "participation_requirements": [
+          {"label": "参赛对象", "value": "全国高校在读本科生、硕士生、博士生及社会各界人员。"},
+          {"label": "团队人数", "value": "每队1至4人，每位选手仅可加入一支队伍。"},
+          {"label": "原创要求", "value": "提交案例必须为原创调研案例，不得使用已获其他竞赛奖项、已入库或同期参加其他学术竞赛的案例。"}
+        ],
+        "competition_process": [
+          {"title": "组队报名与选题报告"},
+          {"title": "选题报告评审"},
+          {"title": "调研与案例分析报告"},
+          {"title": "报告和创新作品评审"},
+          {"title": "决赛展示与答辩"}
+        ],
+        "submission_requirements": [
+          {"label": "选题报告", "value": "建议1500至3000字，包括背景、意义、案例摘要、研究问题、方法和调研计划等。"},
+          {"label": "案例分析报告", "value": "全文以15000字以内为宜，包含案例正文和案例分析。"},
+          {"label": "创新作品（可选）", "value": "可提交视频案例、VR/3D场景、交互网页、案例智能体、数据看板或决策模型，并附约2000字说明。"}
+        ],
+        "award_settings": [
+          {"label": "一等奖", "value": "1个，5000元/队并颁发证书。"},
+          {"label": "二等奖", "value": "3个，3000元/队并颁发证书。"},
+          {"label": "三等奖", "value": "5个，1000元/队并颁发证书。"},
+          {"label": "优秀奖", "value": "其余入围决赛团队获得优秀奖证书。"},
+          {"label": "案例创新奖", "value": "5000元/队，数量根据当届参赛情况设置。"}
+        ]
+      },
+      "source": {"url": "https://case.sppm.tsinghua.edu.cn/info/1101/2299.htm", "name": "清华大学2026年智能社会治理公共政策案例分析大赛通知", "type": "organizer_official_notice", "level": "LEVEL_1", "tier": 1}
+    },
+    {
+      "id": 123,
+      "name": "大学生“AI+信息素养”大赛",
+      "fields": {
+        "description": "面向高校本科生和研究生的信息素养赛事，围绕信息检索、数据素养、人工智能应用和团队协作设置竞赛任务。本科生与研究生分赛道参赛，赛事通常经过学校选拔、省级赛事和联赛阶段，个人答题与三人团队作品或现场环节相结合。",
+        "frequency": "每年一届",
+        "target_students": "竞赛期间为全日制在籍的本科生或研究生，本研分赛道参赛",
+        "competition_format": "个人线上答题、三人团队省赛和联赛现场环节",
+        "participation_requirements": [
+          {"label": "学生身份", "value": "竞赛期间为全日制在籍在校生。"},
+          {"label": "赛道", "value": "设置本科生和研究生两个赛道，本研不混合比赛。"},
+          {"label": "团队阶段", "value": "省赛团队阶段通常由3名学生组队。"}
+        ],
+        "competition_process": [
+          {"title": "校级选拔", "description": "个人在统一网络平台参加信息素养答题。"},
+          {"title": "省赛淘汰赛", "description": "团队参加线上限时闯关答题。"},
+          {"title": "省赛决赛", "description": "团队提交开放主题作品及成果展示视频。"},
+          {"title": "全国联赛", "description": "省赛推荐团队参加极速对抗和现场答辩。"}
+        ],
+        "submission_requirements": [
+          {"label": "省赛决赛作品", "value": "提交开放主题作品及配套成果展示视频。"}
+        ],
+        "award_settings": [
+          {"label": "省赛奖项", "value": "按省赛总成绩评选一、二、三等奖。"},
+          {"label": "联赛奖项", "value": "依据极速对抗和现场答辩总成绩评选一、二、三等奖。"}
+        ]
+      },
+      "source": {"url": "https://xgb.uestc.edu.cn/notice/detail/2b892f75f71840238e2352e016089c4f", "name": "电子科技大学2026年AI+信息素养大赛通知", "type": "university_official_notice", "level": "LEVEL_3", "tier": 3}
+    },
+    {
+      "id": 138,
+      "name": "华为软件精英挑战赛",
+      "fields": {
+        "description": "由华为面向在校大学生组织的软件编程竞赛，参赛团队围绕真实或抽象化的软件工程问题设计算法并实现程序，通过在线评测和赛区选拔争取进入后续轮次。赛事强调算法能力、工程实现、性能优化和团队协作，不同届次的命题、赛区和晋级规则以当届官方页面为准。",
+        "founded_year": 2015,
+        "first_held_year": 2015,
+        "target_students": "在校大学生，具体资格和赛区要求以当届规则为准",
+        "competition_format": "团队软件编程、在线评测、赛区初赛复赛与总决赛",
+        "history_timeline": [
+          {"year": 2015, "title": "赛事开始举办", "description": "华为软件精英挑战赛自2015年开始举办。"},
+          {"year": 2024, "title": "普朗克计划", "description": "2024届以“普朗克计划”为主题组织八大赛区竞赛。"},
+          {"year": 2026, "title": "高校继续组织校赛", "description": "中南大学计算机学院发布2026校赛通知。"}
+        ],
+        "competition_process": [
+          {"title": "报名与组队"},
+          {"title": "区域初赛"},
+          {"title": "区域复赛"},
+          {"title": "全球总决赛"}
+        ],
+        "submission_requirements": [
+          {"label": "核心提交", "value": "根据当届赛题实现程序，并通过赛事评测系统提交和验证。"}
+        ]
+      },
+      "source": {"url": "https://res-static.hc-cdn.cn/cloudbu-site/china/zh-cn/cloudplus/thirteenth/CLOUD_thirteenthphase.pdf", "name": "华为云软件精英挑战赛回顾资料", "type": "organizer_official", "level": "LEVEL_1", "tier": 1}
+    }
+  ]
+}

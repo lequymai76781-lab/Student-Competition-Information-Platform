@@ -1,0 +1,124 @@
+<!DOCTYPE html><html lang=en><head><title>&zwnj;</title><link rel="shortcut icon" href=/favicon.ico type=image/x-icon data-rh=true><link rel=stylesheet href=/icon/iconfont.css><script>window.__global_env="ncet-xedu";window.__global_config={}</script><meta charset=utf-8><meta http-equiv=x-ua-compatible content="ie=edge"><meta name=viewport content="width=1368" id=viewport-meta><meta name=theme-color content=red><meta name=description content=""><script>(function () {
+      var _host = location.host
+      var _map = {
+        'jdsxj.eduyun.cn': 'h5-jdsxj.eduyun.cn',
+        'b.jdsxj.eduyun.cn': 'h5-b.jdsxj.eduyun.cn',
+        'c.jdsxj.eduyun.cn': 'h5-c.jdsxj.eduyun.cn',
+        'yszy.eduyun.cn' : 'h5-yszy.eduyun.cn',
+        'huodong.ncet.edu.cn':'h5-huodong.ncet.edu.cn',
+        'diaa.ncet.edu.cn':'h5-diaa.ncet.edu.cn',
+        'tjjxj.basic.smartedu.cn':'h5.basic.smartedu.cn',
+        'gfzj.gt.eduyun.cn':'h5-gfzj.gt.eduyun.cn',
+        'tyzj.gt.eduyun.cn':'h5-tyzj.gt.eduyun.cn',
+      }
+      var userAgent = navigator.userAgent.toLowerCase()
+      var isMobile = /mobile|android|iphone|ipod|phone|ipad/.test(userAgent)
+      // mobile && 屏幕宽度 < 1024 使用 h5
+      const host = _map[_host]
+      if (isMobile && screen.width < 1024 && host) {
+        if (_host === 'tjjxj.basic.smartedu.cn') {
+          location.href = 'https://h5.basic.smartedu.cn/hd/tjjxj'
+          return
+        }
+        location.host = host
+      }
+    })()</script><script>(function () {
+        var smartcan = navigator.userAgent.indexOf("SmartCanWebView") > -1;
+        if (smartcan && !window.Bridge) {
+          document.writeln(
+            '<script type="text/javascript" src="/JsBridge.js"><\/script>'
+          );
+        }
+      })();</script><script>/*@cc_on window.location.href="/upgrade.html" @*/</script><script>(function () {
+      var shouldJump = false;
+      var userAgent = navigator.userAgent.toLowerCase();
+      var isSafari =
+        userAgent.indexOf("safari") > -1 &&
+        userAgent.indexOf("chrome") === -1;
+      if (isSafari) {
+        var version = userAgent.match(/version\/([\d.]+)/)[1];
+        var macOS = userAgent.indexOf("mac os x") > -1;
+        if (macOS && parseInt(version, 10) < 13) {
+          shouldJump = true;
+        }
+      }
+      var isIE11 = !!userAgent.match(/trident.*rv\:11\./);
+      if (isIE11) {
+        shouldJump = true;
+      }
+      if (shouldJump) {
+        location.href = "/upgrade.html";
+      }
+    })();</script><script>const isSunShinePage = ['/sunshine/', '/ygxx/'].some((t) => new RegExp(t, 'i').test(window.location.pathname)) || ['sun.ykt.eduyun.cn', 'zhyg.eduyun.cn'].includes(window.location.host)
+    const inApp = window.Bridge && window.navigator.userAgent.indexOf('SmartCanWebView') !== -1
+    if(isSunShinePage){
+      var _map = {
+        'zhyg.eduyun.cn': 'h5-zhyg.eduyun.cn',
+        'sun.ykt.eduyun.cn': 'h5-sun.ykt.eduyun.cn'
+      }
+      var userAgent = navigator.userAgent.toLowerCase()
+      var isMobile = /mobile|android|iphone|ipod|phone|ipad/.test(userAgent)
+      const host = _map[window.location.host]
+      if ((isMobile || inApp) && host) {
+        window.location.host = host
+      }
+    }
+    if (!isSunShinePage) {
+      // 检测设备类型
+      const isPad = /Pad|Android/.test(navigator.userAgent);
+      const isPhone = /Android|Phone/.test(navigator.userAgent);
+      if (isPad) {
+        // 如果是 Pad 设备，则禁用缩放功能
+        document
+          .getElementById("viewport-meta")
+          .setAttribute(
+            "content",
+            "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+          );
+      } else if (isPhone) {
+        document
+          .getElementById("viewport-meta")
+          .setAttribute(
+            "content",
+            "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no,viewport-fit=cover"
+          );
+
+        // 如果是 PC 设备，则使用默认的 viewport 属性
+        // document.getElementById('viewport-meta').setAttribute('content', 'width=device-width, initial-scale=1, maximum-scale=1');
+      } else { }
+    }</script><style>.video-js .vjs-audio-bg .vjs-audio-bg-logo-background,
+    .vjs-default-skin .vjs-audio-bg .vjs-audio-bg-logo-background {
+      background-image: url(/fish/video/icon_active.gif) !important;
+    }</style></head><body><div id=root><style>@keyframes spin {
+        0% {
+          transform: rotateZ(0deg);
+        }
+
+        100% {
+          transform: rotateZ(360deg);
+        }
+      }
+
+      .tch-loading {
+        position: absolute;
+        top: 80px;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+      }
+
+      .tch-loading img {
+        height: 48px;
+        width: 48px;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+      }
+
+      .tch-loading p {
+        color: #666;
+        font-size: 14px;
+        line-height: 22px;
+        margin: 24px 0 0;
+      }</style><div class=tch-loading><img src=data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIHZpZXdCb3g9IjAgMCA0OCA0OCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBvcGFjaXR5PSIwLjIiIGN4PSIyNCIgY3k9IjI0IiByPSIyMSIgc3Ryb2tlPSIjMUU2MkVDIiBzdHJva2Utd2lkdGg9IjYiLz4KPG1hc2sgaWQ9InBhdGgtMi1pbnNpZGUtMV8yMDA3XzUzNDg3IiBmaWxsPSJ3aGl0ZSI+CjxwYXRoIGQ9Ik00Mi4zODUxIDguNTczMUM0NS42NDI5IDEyLjQ1NTYgNDcuNTg4IDE3LjI2OTkgNDcuOTQxNSAyMi4zMjU5QzQ4LjI5NTEgMjcuMzgxOCA0Ny4wMzg5IDMyLjQxOTkgNDQuMzUzMSAzNi43MTgxTDM5LjI2NDkgMzMuNTM4NkM0MS4yNzkyIDMwLjMxNDkgNDIuMjIxMyAyNi41MzY0IDQxLjk1NjIgMjIuNzQ0NEM0MS42OTEgMTguOTUyNCA0MC4yMzIyIDE1LjM0MTcgMzcuNzg4OCAxMi40Mjk4TDQyLjM4NTEgOC41NzMxWiIvPgo8L21hc2s+CjxwYXRoIGQ9Ik00Mi4zODUxIDguNTczMUM0NS42NDI5IDEyLjQ1NTYgNDcuNTg4IDE3LjI2OTkgNDcuOTQxNSAyMi4zMjU5QzQ4LjI5NTEgMjcuMzgxOCA0Ny4wMzg5IDMyLjQxOTkgNDQuMzUzMSAzNi43MTgxTDM5LjI2NDkgMzMuNTM4NkM0MS4yNzkyIDMwLjMxNDkgNDIuMjIxMyAyNi41MzY0IDQxLjk1NjIgMjIuNzQ0NEM0MS42OTEgMTguOTUyNCA0MC4yMzIyIDE1LjM0MTcgMzcuNzg4OCAxMi40Mjk4TDQyLjM4NTEgOC41NzMxWiIgc3Ryb2tlPSIjMUU2MkVDIiBzdHJva2Utd2lkdGg9IjEyIiBtYXNrPSJ1cmwoI3BhdGgtMi1pbnNpZGUtMV8yMDA3XzUzNDg3KSIvPgo8L3N2Zz4K alt=""><p>正在努力加载中…</p></div></div><script>if ((window.location.host === 'teacher.ykt.eduyun.cn') && window.location.pathname === '/') {
+      document.getElementById('root').remove()
+    }</script><script src=/js/chunk-fish-a5e223c2.js></script><script src=/js/chunk-uc-a552318b.js></script><script src=/js/chunk-react-71da24b9.js></script><script src=/js/chunk-vendors-6a53c379.js></script><script src=/js/app-b7724831.js></script></body></html>

@@ -1,0 +1,247 @@
+{
+  "pipeline": "v12-fact-enrichment",
+  "dry_run": false,
+  "generated_at": "2026-09-05T14:47:43.251501+00:00",
+  "registry_dir": "D:\\Python\\xuesheng\\data\\seeds\\v13_fact_registry",
+  "entries": [
+    {
+      "competition_id": 29,
+      "name": "全国大学生市场调查与分析大赛",
+      "notes": "暨南大学本科生院官方新闻明确引述全国主办方与赛事沿革。",
+      "actions": [
+        {
+          "type": "change",
+          "field": "organizer",
+          "old": null,
+          "new": "中国商业统计学会",
+          "reason": null,
+          "source_url": "https://jwc.jnu.edu.cn/2026/0714/c24745a860169/page.htm"
+        },
+        {
+          "type": "change",
+          "field": "founded_year",
+          "old": null,
+          "new": 2010,
+          "reason": null,
+          "source_url": "https://jwc.jnu.edu.cn/2026/0714/c24745a860169/page.htm"
+        },
+        {
+          "type": "edition",
+          "year": 2026,
+          "mode": "created"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "competition_id": 40,
+      "name": "全国大学生集成电路创新创业大赛",
+      "notes": "江南大学新闻网明确表述全国主办方。",
+      "actions": [
+        {
+          "type": "change",
+          "field": "organizer",
+          "old": null,
+          "new": "工业和信息化部人才交流中心",
+          "reason": null,
+          "source_url": "https://news.jiangnan.edu.cn/info/1284/110032.htm"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "competition_id": 42,
+      "name": "全国大学生信息安全竞赛",
+      "notes": "北工大新闻网明确表述指导与主办方。",
+      "actions": [
+        {
+          "type": "change",
+          "field": "organizer",
+          "old": null,
+          "new": "教育部高等学校网络空间安全专业教学指导委员会",
+          "reason": null,
+          "source_url": "https://news.bjut.edu.cn/info/1003/13960.htm"
+        },
+        {
+          "type": "change",
+          "field": "guiding_organizations",
+          "old": null,
+          "new": [
+            "中央网信办网络安全协调局",
+            "教育部高教司"
+          ],
+          "reason": null,
+          "source_url": "https://news.bjut.edu.cn/info/1003/13960.htm"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "competition_id": 45,
+      "name": "中国大学生机械工程创新创意大赛",
+      "notes": "安徽大学官方新闻明确表述全国主办方。",
+      "actions": [
+        {
+          "type": "change",
+          "field": "organizer",
+          "old": null,
+          "new": "中国机械工程学会",
+          "reason": null,
+          "source_url": "https://www.ahu.edu.cn/2026/0831/c15129a399353/page.htm"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "competition_id": 70,
+      "name": "全国大学生化工实验大赛",
+      "notes": "西南大学本科生院官方新闻明确表述主办方。",
+      "actions": [
+        {
+          "type": "change",
+          "field": "organizer",
+          "old": null,
+          "new": "中国化工教育协会",
+          "reason": null,
+          "source_url": "http://ugs.swu.edu.cn/info/1074/4530.htm"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "competition_id": 77,
+      "name": "全国大学生统计建模大赛",
+      "notes": "湖南师范大学新闻网明确表述主办方与2026年总决赛地点。",
+      "actions": [
+        {
+          "type": "change",
+          "field": "organizer",
+          "old": null,
+          "new": "中国统计教育学会",
+          "reason": null,
+          "source_url": "https://news.hunnu.edu.cn/info/1005/101394.htm"
+        },
+        {
+          "type": "edition",
+          "year": 2026,
+          "mode": "updated"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "competition_id": 68,
+      "name": "全国大学生工业设计大赛",
+      "notes": "湖南师范大学官方通知明确给出大赛官方报名网站（独立官方域名，非第三方平台）。",
+      "actions": [
+        {
+          "type": "change",
+          "field": "official_website",
+          "old": null,
+          "new": "https://www.cuidc.net/",
+          "reason": null,
+          "source_url": "https://jwc.hunnu.edu.cn/info/1093/10932.htm"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "competition_id": 20,
+      "name": "全国大学生智能汽车竞赛",
+      "notes": "安徽大学官方新闻确认2026年第二十一届总决赛在其校内举办（举办事实）。",
+      "actions": [
+        {
+          "type": "edition",
+          "year": 2026,
+          "mode": "created"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "competition_id": 51,
+      "name": "华为ICT大赛",
+      "notes": "长安大学官方通知确认2026年第十届中国总决赛举办地点与日期。",
+      "actions": [
+        {
+          "type": "edition",
+          "year": 2026,
+          "mode": "created"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "competition_id": 58,
+      "name": "中国高校智能机器人创意大赛",
+      "notes": "华南师范大学官方新闻确认2026年第九届全国总决赛赛期（举办事实）。",
+      "actions": [
+        {
+          "type": "edition",
+          "year": 2026,
+          "mode": "created"
+        }
+      ],
+      "errors": []
+    }
+  ],
+  "counters": {
+    "audit_rows": 14,
+    "competition_fields_changed": 9,
+    "competition_fields_conflict": 0,
+    "edition_fields_changed": 23,
+    "editions_created": 4,
+    "editions_updated": 1,
+    "entries": 10,
+    "fact_rows_added": 0,
+    "organization_links_added": 0,
+    "organization_links_removed": 0,
+    "organization_links_updated": 0,
+    "organizations_created": 0,
+    "skipped_competition_missing": 0,
+    "skipped_evidence_missing": 0,
+    "source_links_added": 4,
+    "sources_added": 5,
+    "sources_existing": 9
+  },
+  "status_before": {
+    "competitions": {
+      "verified_official": 31,
+      "pending_verification": 24,
+      "suspected": 7,
+      "authority_confirmed": 69,
+      "duplicate": 2,
+      "unverified": 1,
+      "school_confirmed": 9
+    },
+    "editions": {
+      "verified_official": 23,
+      "school_confirmed": 31,
+      "pending_verification": 8
+    }
+  },
+  "status_after": {
+    "competitions": {
+      "verified_official": 31,
+      "pending_verification": 24,
+      "suspected": 7,
+      "authority_confirmed": 69,
+      "duplicate": 2,
+      "unverified": 1,
+      "school_confirmed": 9
+    },
+    "editions": {
+      "verified_official": 23,
+      "school_confirmed": 31,
+      "pending_verification": 11,
+      "unverified": 1
+    }
+  },
+  "status_deltas": {
+    "competitions": {},
+    "editions": {
+      "pending_verification": 3,
+      "unverified": 1
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "task": "SPECIALIZED_INSTITUTIONS_COVERAGE_02",
+  "categories": ["music", "fine_arts"],
+  "music": ["音乐表演", "声乐", "器乐", "作曲", "指挥", "音乐教育", "音乐学", "艺术管理", "录音艺术", "电子音乐", "音乐科技", "民族音乐", "钢琴", "管弦乐", "民乐", "合唱", "室内乐"],
+  "fine_arts": ["绘画", "中国画", "油画", "版画", "雕塑", "书法", "设计", "视觉传达", "工业设计", "环境设计", "数字艺术", "动画", "摄影", "公共艺术", "艺术理论", "建筑艺术", "实验艺术", "文物保护", "文物修复"],
+  "discovery_terms": {
+    "music": ["比赛", "大赛", "展演", "音乐节", "艺术节", "评选", "作品征集", "演奏比赛", "声乐比赛", "作曲比赛", "合唱比赛", "器乐比赛", "音乐教育技能", "艺术实践", "学生实践", "教学成果", "创新创业", "专业竞赛", "人才培养", "学校认定目录", "奖励办法", "实践学分"],
+    "fine_arts": ["设计大赛", "美术作品展", "艺术设计竞赛", "绘画比赛", "书法比赛", "雕塑", "动画", "视觉传达", "数字艺术", "摄影", "创意设计", "作品征集", "艺术节", "毕业作品", "学生创作", "专业实践", "教学成果", "竞赛目录", "创新创业", "奖励办法"]
+  },
+  "allowed_event_types": ["competition", "festival", "showcase", "exhibition", "call_for_works", "award", "forum", "conference"],
+  "allowed_relation_types": ["recognition", "notification", "participation"],
+  "allowed_scopes": ["university", "college", "department", "major"],
+  "rules": [
+    "taxonomy only assists discovery and never determines event_type",
+    "competition requires an official competitive mechanism plus judging, awards, ranking, or published winners",
+    "a festival may have a separately modeled competition component",
+    "call_for_works plus exhibition without judging or awards is not a competition",
+    "professional_reference requires a verifiable official professional-institution or long-running-organizer source",
+    "do not assign subjective prestige, star, tier, value, or recommendation rankings"
+  ]
+}

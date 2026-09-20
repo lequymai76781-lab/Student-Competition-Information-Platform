@@ -1,0 +1,439 @@
+{
+  "batch": "RECOGNITION_BATCH_01",
+  "generated_at": "2026-09-13T17:41:51.081554+00:00",
+  "targets": {
+    "success": 7,
+    "completed_with_gaps": 3
+  },
+  "before": {
+    "competitions": 145,
+    "policy_documents": 2,
+    "policy_attachments": 2,
+    "recognitions": 102,
+    "recognized_current": 102,
+    "recognized_historical": 0,
+    "recognized_unknown": 0,
+    "candidate_competitions": 102,
+    "sources": 389,
+    "edition_relations": 93,
+    "school_competitions": 188
+  },
+  "after": {
+    "competitions": 145,
+    "policy_documents": 7,
+    "policy_attachments": 7,
+    "recognitions": 144,
+    "recognized_current": 111,
+    "recognized_historical": 33,
+    "recognized_unknown": 0,
+    "candidate_competitions": 150,
+    "sources": 431,
+    "edition_relations": 93,
+    "school_competitions": 227
+  },
+  "delta": {
+    "competitions": 0,
+    "policy_documents": 5,
+    "policy_attachments": 5,
+    "recognitions": 42,
+    "recognized_current": 9,
+    "recognized_historical": 33,
+    "recognized_unknown": 0,
+    "candidate_competitions": 48,
+    "sources": 42,
+    "edition_relations": 0,
+    "school_competitions": 39
+  },
+  "documents": [
+    {
+      "key": "swufe-2026",
+      "school": "西南财经大学",
+      "college": null,
+      "title": "西南财经大学学生竞赛认定目录（2026版）",
+      "year": 2026,
+      "effective_year": 2026,
+      "validity_status": "current_recognition",
+      "evidence_type": "competition_catalog",
+      "source_page_url": "https://kj.swufe.edu.cn/info/1073/70322.htm",
+      "evidence_url": "https://kj.swufe.edu.cn/__local/E/F2/28/4A9B8C8E53BB147C41AF64F55AC_758041F7_304C0.pdf",
+      "local_path": "data/raw/policy_documents/recognition_batch_01/swufe-2026-catalog.pdf",
+      "recognition_rows": 9,
+      "unresolved_rows": 1
+    },
+    {
+      "key": "nuaa-2024",
+      "school": "南京航空航天大学",
+      "college": null,
+      "title": "南京航空航天大学大学生竞赛级别认定表（2024年度）",
+      "year": 2024,
+      "effective_year": 2024,
+      "validity_status": "historical_recognition",
+      "evidence_type": "competition_classification",
+      "source_page_url": "https://aao.nuaa.edu.cn/8010/list.htm",
+      "evidence_url": "https://astro.nuaa.edu.cn/_upload/article/files/22/c7/ba45de0c4bfcb38b7479cf3d266a/8294ea14-1c12-4a42-9010-a9a47b692cf3.pdf",
+      "local_path": "data/raw/policy_documents/recognition_batch_01/nuaa-2024-catalog.pdf",
+      "recognition_rows": 8,
+      "unresolved_rows": 1
+    },
+    {
+      "key": "bjtu-2025",
+      "school": "北京交通大学",
+      "college": null,
+      "title": "关于公布2025年度本科生学科竞赛项目列表的通知（含附件）",
+      "year": 2025,
+      "effective_year": 2025,
+      "validity_status": "historical_recognition",
+      "evidence_type": "competition_classification",
+      "source_page_url": "https://civil.bjtu.edu.cn/cms/item/23766.html",
+      "evidence_url": "https://civil.bjtu.edu.cn/media/attachments/2025/05/20250522092833_611.pdf",
+      "local_path": "data/raw/policy_documents/recognition_batch_01/bjtu-2025-catalog.pdf",
+      "recognition_rows": 9,
+      "unresolved_rows": 1
+    },
+    {
+      "key": "scnu-2018",
+      "school": "华南师范大学",
+      "college": "物理与电信工程学院",
+      "title": "物理与电信工程学院本科生学科竞赛级别认定表",
+      "year": 2018,
+      "effective_year": 2018,
+      "validity_status": "historical_recognition",
+      "evidence_type": "competition_classification",
+      "source_page_url": "https://statics.scnu.edu.cn/pics/physics/2020/1220/1608470828120820.pdf",
+      "evidence_url": "https://statics.scnu.edu.cn/pics/physics/2020/1220/1608470828120820.pdf",
+      "local_path": "data/raw/policy_documents/recognition_batch_01/scnu-2018-catalog.pdf",
+      "recognition_rows": 8,
+      "unresolved_rows": 1
+    },
+    {
+      "key": "swjtu-2025",
+      "school": "西南交通大学",
+      "college": null,
+      "title": "西南交通大学2025年推荐免试研究生A类学科竞赛目录",
+      "year": 2025,
+      "effective_year": 2025,
+      "validity_status": "historical_recognition",
+      "evidence_type": "recommendation_catalog",
+      "source_page_url": "https://ctten.swjtu.edu.cn/info/4411/148101.htm",
+      "evidence_url": "https://ctten.swjtu.edu.cn/__local/5/49/6B/A3655CEEE769DE4470360DDB0B9_2431A58F_4BECE.pdf?e=.pdf",
+      "local_path": "data/raw/policy_documents/recognition_batch_01/swjtu-2025-catalog.pdf",
+      "recognition_rows": 9,
+      "unresolved_rows": 1
+    }
+  ],
+  "import": {
+    "attempted": 43,
+    "imported": 42,
+    "unresolved": 6,
+    "new_competitions": 0,
+    "normalization_methods": {
+      "exact_name": 36,
+      "fuzzy_name": 2,
+      "historical_name": 4,
+      "exact_alias": 1
+    }
+  },
+  "validity": {
+    "current_recognition": 9,
+    "historical_recognition": 33
+  },
+  "levels": {
+    "A+": 3,
+    "A": 6,
+    "Ⅰ级甲等": 7,
+    "Ⅰ级乙等": 1,
+    "A/B/C": 7,
+    "A/B": 1,
+    "一级": 6,
+    "二级": 2,
+    "A类": 9
+  },
+  "deadline_fix": {
+    "status": "repaired",
+    "competition_id": 137,
+    "edition_id": 22,
+    "root_cause": "年份混淆 + 高校来源字段误映射为全国截止；不是实际校内截止晚于全国截止。",
+    "changes": [
+      {
+        "scope": "edition",
+        "field": "registration_deadline",
+        "old_value": "2026-09-15T23:59:59",
+        "new_value": null
+      },
+      {
+        "scope": "edition",
+        "field": "official_registration_deadline",
+        "old_value": "2026-09-15T23:59:59",
+        "new_value": null
+      },
+      {
+        "scope": "edition",
+        "field": "university_registration_deadline",
+        "old_value": "2026-09-30T23:59:59",
+        "new_value": null
+      },
+      {
+        "scope": "university_relation",
+        "relation_id": 39,
+        "previous": {
+          "internal_registration_deadline": "2026-09-30T23:59:59",
+          "official_registration_deadline": "2026-09-15T23:59:59"
+        }
+      }
+    ]
+  },
+  "quality_refresh": {
+    "competitions_scored": 138
+  },
+  "school_read_model": {
+    "recognition_input_rows": 144,
+    "relation_input_rows": 93,
+    "recognition_pairs": 144,
+    "relation_pairs": 86,
+    "school_competition_rows": 227,
+    "merged_rows": 3,
+    "recognition_only_rows": 141,
+    "relation_only_rows": 83,
+    "recognition_ids_attached": 144,
+    "relation_ids_attached": 93,
+    "conflicts": [
+      {
+        "school_id": 40,
+        "competition_id": 7,
+        "competition_name": "中国新闻奖",
+        "notes": "实体类型异常: award"
+      },
+      {
+        "school_id": 40,
+        "competition_id": 12,
+        "competition_name": "全国大学生艺术节",
+        "notes": "实体类型异常: festival"
+      },
+      {
+        "school_id": 40,
+        "competition_id": 14,
+        "competition_name": "中国舞蹈荷花奖",
+        "notes": "实体类型异常: award"
+      },
+      {
+        "school_id": 40,
+        "competition_id": 16,
+        "competition_name": "省级新闻奖",
+        "notes": "实体类型异常: award"
+      },
+      {
+        "school_id": 40,
+        "competition_id": 26,
+        "competition_name": "全国大学生创新创业训练计划年会展示",
+        "notes": "实体类型异常: exhibition"
+      },
+      {
+        "school_id": 40,
+        "competition_id": 89,
+        "competition_name": "AIGC应用大赛",
+        "notes": "实体类型异常: unknown"
+      },
+      {
+        "school_id": 40,
+        "competition_id": 90,
+        "competition_name": "市级新闻奖",
+        "notes": "实体类型异常: award"
+      }
+    ],
+    "conflict_count": 7,
+    "needs_human_review_count": 7
+  },
+  "audit": {
+    "persisted_recognitions": 42,
+    "sample_size": 15,
+    "sample_counts": {
+      "PASS": 14,
+      "FAIL": 1
+    },
+    "notification_or_participation_promoted": 0,
+    "sample": [
+      {
+        "status": "PASS",
+        "school": "华南师范大学",
+        "competition": "“挑战杯”全国大学生课外学术科技作品竞赛",
+        "recognition_level": "一级",
+        "evidence_title": "物理与电信工程学院本科生学科竞赛级别认定表",
+        "evidence_url": "https://statics.scnu.edu.cn/pics/physics/2020/1220/1608470828120820.pdf",
+        "file_year": 2018,
+        "validity_status": "historical_recognition",
+        "evidence_page": 79,
+        "errors": []
+      },
+      {
+        "status": "PASS",
+        "school": "西南交通大学",
+        "competition": "全国大学生机械创新设计大赛",
+        "recognition_level": "A类",
+        "evidence_title": "西南交通大学2025年推荐免试研究生A类学科竞赛目录",
+        "evidence_url": "https://ctten.swjtu.edu.cn/__local/5/49/6B/A3655CEEE769DE4470360DDB0B9_2431A58F_4BECE.pdf?e=.pdf",
+        "file_year": 2025,
+        "validity_status": "historical_recognition",
+        "evidence_page": 1,
+        "errors": []
+      },
+      {
+        "status": "PASS",
+        "school": "华南师范大学",
+        "competition": "ACM-ICPC国际大学生程序设计竞赛",
+        "recognition_level": "一级",
+        "evidence_title": "物理与电信工程学院本科生学科竞赛级别认定表",
+        "evidence_url": "https://statics.scnu.edu.cn/pics/physics/2020/1220/1608470828120820.pdf",
+        "file_year": 2018,
+        "validity_status": "historical_recognition",
+        "evidence_page": 79,
+        "errors": []
+      },
+      {
+        "status": "PASS",
+        "school": "北京交通大学",
+        "competition": "全国大学生市场调查与分析大赛",
+        "recognition_level": "A/B/C",
+        "evidence_title": "关于公布2025年度本科生学科竞赛项目列表的通知（含附件）",
+        "evidence_url": "https://civil.bjtu.edu.cn/media/attachments/2025/05/20250522092833_611.pdf",
+        "file_year": 2025,
+        "validity_status": "historical_recognition",
+        "evidence_page": 4,
+        "errors": []
+      },
+      {
+        "status": "PASS",
+        "school": "西南交通大学",
+        "competition": "ACM-ICPC国际大学生程序设计竞赛",
+        "recognition_level": "A类",
+        "evidence_title": "西南交通大学2025年推荐免试研究生A类学科竞赛目录",
+        "evidence_url": "https://ctten.swjtu.edu.cn/__local/5/49/6B/A3655CEEE769DE4470360DDB0B9_2431A58F_4BECE.pdf?e=.pdf",
+        "file_year": 2025,
+        "validity_status": "historical_recognition",
+        "evidence_page": 1,
+        "errors": []
+      },
+      {
+        "status": "PASS",
+        "school": "西南财经大学",
+        "competition": "中国国际大学生创新大赛",
+        "recognition_level": "A+",
+        "evidence_title": "西南财经大学学生竞赛认定目录（2026版）",
+        "evidence_url": "https://kj.swufe.edu.cn/__local/E/F2/28/4A9B8C8E53BB147C41AF64F55AC_758041F7_304C0.pdf",
+        "file_year": 2026,
+        "validity_status": "current_recognition",
+        "evidence_page": 1,
+        "errors": []
+      },
+      {
+        "status": "PASS",
+        "school": "西南交通大学",
+        "competition": "全国大学生电子设计竞赛",
+        "recognition_level": "A类",
+        "evidence_title": "西南交通大学2025年推荐免试研究生A类学科竞赛目录",
+        "evidence_url": "https://ctten.swjtu.edu.cn/__local/5/49/6B/A3655CEEE769DE4470360DDB0B9_2431A58F_4BECE.pdf?e=.pdf",
+        "file_year": 2025,
+        "validity_status": "historical_recognition",
+        "evidence_page": 1,
+        "errors": []
+      },
+      {
+        "status": "PASS",
+        "school": "北京交通大学",
+        "competition": "全国大学生电子设计竞赛",
+        "recognition_level": "A/B/C",
+        "evidence_title": "关于公布2025年度本科生学科竞赛项目列表的通知（含附件）",
+        "evidence_url": "https://civil.bjtu.edu.cn/media/attachments/2025/05/20250522092833_611.pdf",
+        "file_year": 2025,
+        "validity_status": "historical_recognition",
+        "evidence_page": 2,
+        "errors": []
+      },
+      {
+        "status": "PASS",
+        "school": "西南交通大学",
+        "competition": "中国国际大学生创新大赛",
+        "recognition_level": "A类",
+        "evidence_title": "西南交通大学2025年推荐免试研究生A类学科竞赛目录",
+        "evidence_url": "https://ctten.swjtu.edu.cn/__local/5/49/6B/A3655CEEE769DE4470360DDB0B9_2431A58F_4BECE.pdf?e=.pdf",
+        "file_year": 2025,
+        "validity_status": "historical_recognition",
+        "evidence_page": 1,
+        "errors": []
+      },
+      {
+        "status": "PASS",
+        "school": "南京航空航天大学",
+        "competition": "全国大学生节能减排社会实践与科技竞赛",
+        "recognition_level": "Ⅰ级甲等",
+        "evidence_title": "南京航空航天大学大学生竞赛级别认定表（2024年度）",
+        "evidence_url": "https://astro.nuaa.edu.cn/_upload/article/files/22/c7/ba45de0c4bfcb38b7479cf3d266a/8294ea14-1c12-4a42-9010-a9a47b692cf3.pdf",
+        "file_year": 2024,
+        "validity_status": "historical_recognition",
+        "evidence_page": 2,
+        "errors": []
+      },
+      {
+        "status": "PASS",
+        "school": "西南交通大学",
+        "competition": "“挑战杯”全国大学生课外学术科技作品竞赛",
+        "recognition_level": "A类",
+        "evidence_title": "西南交通大学2025年推荐免试研究生A类学科竞赛目录",
+        "evidence_url": "https://ctten.swjtu.edu.cn/__local/5/49/6B/A3655CEEE769DE4470360DDB0B9_2431A58F_4BECE.pdf?e=.pdf",
+        "file_year": 2025,
+        "validity_status": "historical_recognition",
+        "evidence_page": 1,
+        "errors": []
+      },
+      {
+        "status": "FAIL",
+        "school": "西南财经大学",
+        "competition": "“挑战杯”全国大学生课外学术科技作品竞赛",
+        "recognition_level": "A+",
+        "evidence_title": "西南财经大学学生竞赛认定目录（2026版）",
+        "evidence_url": "https://kj.swufe.edu.cn/__local/E/F2/28/4A9B8C8E53BB147C41AF64F55AC_758041F7_304C0.pdf",
+        "file_year": 2026,
+        "validity_status": "current_recognition",
+        "evidence_page": 1,
+        "errors": [
+          "competition_name_not_found_in_document"
+        ]
+      },
+      {
+        "status": "PASS",
+        "school": "南京航空航天大学",
+        "competition": "全国大学生机械创新设计大赛",
+        "recognition_level": "Ⅰ级甲等",
+        "evidence_title": "南京航空航天大学大学生竞赛级别认定表（2024年度）",
+        "evidence_url": "https://astro.nuaa.edu.cn/_upload/article/files/22/c7/ba45de0c4bfcb38b7479cf3d266a/8294ea14-1c12-4a42-9010-a9a47b692cf3.pdf",
+        "file_year": 2024,
+        "validity_status": "historical_recognition",
+        "evidence_page": 1,
+        "errors": []
+      },
+      {
+        "status": "PASS",
+        "school": "北京交通大学",
+        "competition": "全国大学生电子商务“创新、创意及创业”挑战赛",
+        "recognition_level": "A/B/C",
+        "evidence_title": "关于公布2025年度本科生学科竞赛项目列表的通知（含附件）",
+        "evidence_url": "https://civil.bjtu.edu.cn/media/attachments/2025/05/20250522092833_611.pdf",
+        "file_year": 2025,
+        "validity_status": "historical_recognition",
+        "evidence_page": 4,
+        "errors": []
+      },
+      {
+        "status": "PASS",
+        "school": "华南师范大学",
+        "competition": "中国国际大学生创新大赛",
+        "recognition_level": "一级",
+        "evidence_title": "物理与电信工程学院本科生学科竞赛级别认定表",
+        "evidence_url": "https://statics.scnu.edu.cn/pics/physics/2020/1220/1608470828120820.pdf",
+        "file_year": 2018,
+        "validity_status": "historical_recognition",
+        "evidence_page": 79,
+        "errors": []
+      }
+    ]
+  }
+}

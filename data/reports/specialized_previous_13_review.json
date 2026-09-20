@@ -1,0 +1,19 @@
+{
+  "task": "SPECIALIZED_INSTITUTIONS_COVERAGE_01",
+  "reviewed_at": "2026-09-14T22:50:00+08:00",
+  "items": [
+    {"competition": "上海体育人工智能创新大赛", "action": "CORRECT", "organizer": "上海体育大学", "event_type": "competition", "source_url": "https://sise.sus.edu.cn/info/1080/1287.htm", "source_name": "上海体育大学智慧体育工程学院", "reason": "详情页明确上海市教委支持、上海体育大学主办、分组评审与设奖。"},
+    {"competition": "首都体育学院“星星之火”学生创新创业大赛", "action": "CORRECT", "organizer": "首都体育学院", "event_type": "competition", "source_url": "https://sao.cupes.edu.cn/docs/2023-11/6c080dbea3184eeeb9a1aad5ba0d31c0.doc", "source_name": "首都体育学院创新创业中心", "reason": "校方正式通知附件及历届复赛、决赛、评审结果构成完整竞赛链。"},
+    {"competition": "全国大学生跆拳道锦标赛", "action": "CORRECT", "organizer": "中国学生体育联合会", "event_type": "competition", "source_url": "https://www.xaipe.edu.cn/jsxlc/info/1004/3340.htm", "source_name": "西安体育学院竞赛训练处", "reason": "校方详情页确认全国百余所高校参赛、总决赛与竞赛仲裁。"},
+    {"competition": "中国大学生攀岩锦标赛", "action": "CORRECT", "organizer": "中国学生体育联合会", "event_type": "competition", "source_url": "https://mp.weixin.qq.com/s/kXh8RIHQKzthNhrRWYwJVg", "source_name": "广州体育学院训练竞赛部", "reason": "学校训练竞赛部官网链接的官方账号报道明确赛事届次和学生获奖。"},
+    {"competition": "北京舞蹈大赛", "action": "CORRECT", "organizer": "北京舞蹈大赛组委会", "event_type": "competition", "source_url": "https://jwc.bda.edu.cn/docs/2022-12/20221229093440408687.pdf", "source_name": "北京舞蹈学院教务处", "reason": "学校本科教学质量报告明确第十七届赛事及学生获奖，保留 competition。"},
+    {"competition": "华北五省（区）市舞蹈大赛", "action": "CORRECT", "organizer": "华北五省（区）市舞蹈家协会", "event_type": "competition", "source_url": "https://jwc.bda.edu.cn/docs/2022-12/20221229093440408687.pdf", "source_name": "北京舞蹈学院教务处", "reason": "学校本科教学质量报告明确第十届赛事及学生获奖，保留 competition。"},
+    {"competition": "中央戏剧学院5·23青年戏剧节", "action": "CORRECT", "organizer": "共青团中央戏剧学院委员会", "event_type": "competition_festival", "source_url": "https://chntheatre.edu.cn/cn/xiao/detail/23094.html", "source_name": "中央戏剧学院", "reason": "官方方案明确初赛、复赛、决赛、评审委员会和多项奖项，属于 competition_festival。"},
+    {"competition": "中央戏剧学院学生专业基本功（表演类）大赛", "action": "CORRECT", "organizer": "中央戏剧学院", "event_type": "competition", "source_url": "https://www.chntheatre.edu.cn/cn/xue/detail/23962.html", "source_name": "中央戏剧学院", "reason": "官方报道明确七赛道、一二三等奖、晨功奖及获奖人数。"},
+    {"competition": "上海市大学生红色文化创意大赛", "action": "CORRECT", "organizer": "上海市教育委员会", "event_type": "competition", "source_url": "https://mp.weixin.qq.com/s/-ffRKHZM3U3GLONxHNktsA", "source_name": "上海戏剧学院", "reason": "学校官网直接链接官方通知，赛事名称与组织开展通知一致。"},
+    {"competition": "国戏杯学生戏曲大赛", "action": "CORRECT", "organizer": "北京市教育委员会、中国戏曲学院", "event_type": "competition", "source_url": "https://www.nacta.edu.cn/xwgg/xygg/index9.htm", "source_name": "中国戏曲学院", "reason": "校方历史归档给出决赛入围、获奖名单并明确按北京市教委和学校组织方案执行。"},
+    {"competition": "南京艺术学院毕业展演优秀奖", "action": "CORRECT", "organizer": "南京艺术学院", "event_type": "competition_showcase", "source_url": "https://www.nua.edu.cn/_upload/article/files/41/40/a87c2cfc4877b63b950a4eb5c4b0/a7531b18-f15b-4592-b9b7-6c9806e1b60d.pdf", "source_name": "南京艺术学院", "reason": "正式评选办法具有评审与优秀奖，但载体仍是毕业展演，保留复合类型 competition_showcase。"},
+    {"competition": "海峡两岸大学生视听影像创新大赛", "action": "DELETE", "organizer": null, "event_type": "competition", "source_url": "https://www.cuz.edu.cn/", "source_name": "浙江传媒学院", "reason": "上一轮仅保存官网根页，反向复核未能恢复对应详情页；按可靠 Source 门槛删除本批关系及孤立赛事。"},
+    {"competition": "中国国际动漫节动漫声优大赛", "action": "CORRECT", "organizer": "中国国际动漫节执委会办公室", "event_type": "competition", "source_url": "https://news.cuz.edu.cn/__local/8/F4/E7/9DA8F43149A9DFAF1F316C83EA6_73EC9C39_1A70DF.pdf?e=.pdf", "source_name": "浙江传媒学院", "reason": "学校官方学科材料明确连续承办及赛事名称，来源为稳定校方PDF。"}
+  ]
+}

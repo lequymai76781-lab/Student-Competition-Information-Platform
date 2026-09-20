@@ -1,0 +1,964 @@
+{
+  "batch": "DATA_READINESS_SPRINT_01",
+  "verified_at": "2026-09-14T00:00:00+08:00",
+  "documents": [
+    {
+      "key": "swjtu-2027",
+      "school": "西南交通大学",
+      "title": "西南交通大学2027年推荐免试研究生A类学科竞赛目录",
+      "policy_type": "recommendation",
+      "evidence_type": "recommendation_catalog",
+      "year": 2027,
+      "effective_year": 2027,
+      "published_at": "2026-06-26T11:14:27+08:00",
+      "source_page_url": "https://jwc.swjtu.edu.cn/vatuu/WebAction?newsId=4B4FD7C7197B57B2&setAction=newsDetail&viewType=web",
+      "evidence_url": "http://jwc.swjtu.edu.cn/download/ueditor/jsp/upload/file/20260626/1782461237629064508.pdf",
+      "local_path": "data/raw/policy_documents/data_readiness_sprint_01/swjtu-2027-catalog.pdf",
+      "official_domain": "swjtu.edu.cn",
+      "parser_type": "pypdf",
+      "rows": [
+        {
+          "row": "1",
+          "page": 1,
+          "raw_name": "中国国际大学生创新大赛",
+          "school_specific_level": "国家级、省级",
+          "raw_category": null,
+          "usage_type": "recommendation"
+        },
+        {
+          "row": "2",
+          "page": 1,
+          "raw_name": "“挑战杯”全国大学生课外学术科技作品竞赛",
+          "school_specific_level": "国家级、省级",
+          "raw_category": null,
+          "usage_type": "recommendation"
+        },
+        {
+          "row": "3",
+          "page": 1,
+          "raw_name": "“挑战杯”中国大学生创业计划大赛",
+          "school_specific_level": "国家级、省级",
+          "raw_category": null,
+          "usage_type": "recommendation"
+        },
+        {
+          "row": "4",
+          "page": 1,
+          "raw_name": "ACM-ICPC国际大学生程序设计竞赛",
+          "school_specific_level": "国家级、省级",
+          "raw_category": null,
+          "usage_type": "recommendation"
+        },
+        {
+          "row": "5",
+          "page": 1,
+          "raw_name": "全国大学生数学建模竞赛",
+          "school_specific_level": "国家级、省级",
+          "raw_category": null,
+          "usage_type": "recommendation"
+        },
+        {
+          "row": "6",
+          "page": 1,
+          "raw_name": "全国大学生电子设计竞赛",
+          "school_specific_level": "国家级、省级",
+          "raw_category": null,
+          "usage_type": "recommendation"
+        },
+        {
+          "row": "7",
+          "page": 1,
+          "raw_name": "全国大学生机械创新设计大赛",
+          "school_specific_level": "国家级、省级",
+          "raw_category": null,
+          "usage_type": "recommendation"
+        },
+        {
+          "row": "8",
+          "page": 1,
+          "raw_name": "全国大学生结构设计竞赛",
+          "school_specific_level": "国家级、省级",
+          "raw_category": null,
+          "usage_type": "recommendation"
+        },
+        {
+          "row": "9",
+          "page": 1,
+          "raw_name": "全国大学生广告艺术大赛",
+          "school_specific_level": "国家级、省级",
+          "raw_category": null,
+          "usage_type": "recommendation"
+        },
+        {
+          "row": "10",
+          "page": 1,
+          "raw_name": "全国大学生智能汽车竞赛",
+          "school_specific_level": "国家级、省级",
+          "raw_category": null,
+          "usage_type": "recommendation"
+        },
+        {
+          "row": "11",
+          "page": 1,
+          "raw_name": "全国大学生交通运输科技大赛",
+          "school_specific_level": "国家级",
+          "raw_category": null,
+          "usage_type": "recommendation"
+        },
+        {
+          "row": "12",
+          "page": 1,
+          "raw_name": "全国大学生电子商务“创新、创意及创业”挑战赛",
+          "school_specific_level": "国家级、省级",
+          "raw_category": null,
+          "usage_type": "recommendation"
+        },
+        {
+          "row": "13",
+          "page": 1,
+          "raw_name": "全国大学生节能减排社会实践与科技竞赛",
+          "school_specific_level": "国家级、省级",
+          "raw_category": null,
+          "usage_type": "recommendation"
+        },
+        {
+          "row": "14",
+          "page": 1,
+          "raw_name": "中国大学生工程实践与创新能力大赛",
+          "school_specific_level": "国家级、省级",
+          "raw_category": null,
+          "usage_type": "recommendation"
+        },
+        {
+          "row": "15",
+          "page": 1,
+          "raw_name": "全国大学生物流设计大赛",
+          "school_specific_level": "国家级、省级",
+          "raw_category": null,
+          "usage_type": "recommendation"
+        },
+        {
+          "row": "16",
+          "page": 1,
+          "raw_name": "“外研社·国才杯”“理解当代中国”全国大学生外语能力 大赛",
+          "school_specific_level": "国家级、省级",
+          "raw_category": null,
+          "usage_type": "recommendation"
+        },
+        {
+          "row": "19",
+          "page": 1,
+          "raw_name": "“西门子杯”中国智能制造挑战赛",
+          "school_specific_level": "国家级、省级",
+          "raw_category": null,
+          "usage_type": "recommendation"
+        },
+        {
+          "row": "20",
+          "page": 1,
+          "raw_name": "全国大学生化工设计竞赛",
+          "school_specific_level": "国家级、省级",
+          "raw_category": null,
+          "usage_type": "recommendation"
+        },
+        {
+          "row": "21",
+          "page": 1,
+          "raw_name": "全国大学生先进成图技术与产品信息建模创新大赛",
+          "school_specific_level": "国家级、省级",
+          "raw_category": null,
+          "usage_type": "recommendation"
+        },
+        {
+          "row": "22",
+          "page": 1,
+          "raw_name": "中国大学生计算机设计大赛",
+          "school_specific_level": "国家级、省级",
+          "raw_category": null,
+          "usage_type": "recommendation"
+        },
+        {
+          "row": "23",
+          "page": 1,
+          "raw_name": "全国大学生市场调查与分析大赛",
+          "school_specific_level": "国家级、省级",
+          "raw_category": null,
+          "usage_type": "recommendation"
+        },
+        {
+          "row": "24",
+          "page": 1,
+          "raw_name": "中国大学生服务外包创新创业大赛",
+          "school_specific_level": "国家级、省级",
+          "raw_category": null,
+          "usage_type": "recommendation"
+        },
+        {
+          "row": "25",
+          "page": 1,
+          "raw_name": "两岸新锐设计竞赛･华灿奖",
+          "school_specific_level": "国家级",
+          "raw_category": null,
+          "usage_type": "recommendation"
+        },
+        {
+          "row": "27",
+          "page": 2,
+          "raw_name": "中国机器人大赛暨RoboCup机器人世界杯中国赛",
+          "school_specific_level": "国家级",
+          "raw_category": null,
+          "usage_type": "recommendation"
+        },
+        {
+          "row": "28",
+          "page": 2,
+          "raw_name": "全国大学生信息安全竞赛",
+          "school_specific_level": "国家级、省级",
+          "raw_category": null,
+          "usage_type": "recommendation"
+        },
+        {
+          "row": "29",
+          "page": 2,
+          "raw_name": "全国周培源大学生力学竞赛",
+          "school_specific_level": "国家级、省级",
+          "raw_category": null,
+          "usage_type": "recommendation"
+        },
+        {
+          "row": "30",
+          "page": 2,
+          "raw_name": "中国大学生机械工程创新创意大赛",
+          "school_specific_level": "国家级、省级",
+          "raw_category": null,
+          "usage_type": "recommendation"
+        },
+        {
+          "row": "31",
+          "page": 2,
+          "raw_name": "蓝桥杯全国软件和信息技术专业人才大赛",
+          "school_specific_level": "国家级、省级",
+          "raw_category": null,
+          "usage_type": "recommendation"
+        },
+        {
+          "row": "32",
+          "page": 2,
+          "raw_name": "全国大学生金相技能大赛",
+          "school_specific_level": "国家级、省级",
+          "raw_category": null,
+          "usage_type": "recommendation"
+        },
+        {
+          "row": "33",
+          "page": 2,
+          "raw_name": "“中国软件杯”大学生软件设计大赛",
+          "school_specific_level": "国家级",
+          "raw_category": null,
+          "usage_type": "recommendation"
+        },
+        {
+          "row": "34",
+          "page": 2,
+          "raw_name": "全国大学生光电设计竞赛",
+          "school_specific_level": "国家级、省级",
+          "raw_category": null,
+          "usage_type": "recommendation"
+        },
+        {
+          "row": "35",
+          "page": 2,
+          "raw_name": "未来设计师･全国髙校数字艺术设计大赛",
+          "school_specific_level": "国家级、省级",
+          "raw_category": null,
+          "usage_type": "recommendation"
+        },
+        {
+          "row": "36",
+          "page": 2,
+          "raw_name": "中美青年创客大赛",
+          "school_specific_level": "国家级、省级",
+          "raw_category": null,
+          "usage_type": "recommendation"
+        },
+        {
+          "row": "37",
+          "page": 2,
+          "raw_name": "全国大学生地质技能竞赛",
+          "school_specific_level": "国家级、省级",
+          "raw_category": null,
+          "usage_type": "recommendation"
+        },
+        {
+          "row": "38",
+          "page": 2,
+          "raw_name": "米兰设计周-中国高校设计学科师生优秀作品展",
+          "school_specific_level": "国家级",
+          "raw_category": null,
+          "usage_type": "recommendation"
+        },
+        {
+          "row": "39",
+          "page": 2,
+          "raw_name": "全国大学生集成电路创新创业大赛",
+          "school_specific_level": "国家级、省级",
+          "raw_category": null,
+          "usage_type": "recommendation"
+        },
+        {
+          "row": "40",
+          "page": 2,
+          "raw_name": "中国机器人及人工智能大赛",
+          "school_specific_level": "国家级、省级",
+          "raw_category": null,
+          "usage_type": "recommendation"
+        },
+        {
+          "row": "42",
+          "page": 2,
+          "raw_name": "中国好创意暨全国数字艺术设计大赛",
+          "school_specific_level": "国家级、省级",
+          "raw_category": null,
+          "usage_type": "recommendation"
+        },
+        {
+          "row": "43",
+          "page": 2,
+          "raw_name": "全国三维数字化创新设计大赛",
+          "school_specific_level": "国家级、省级",
+          "raw_category": null,
+          "usage_type": "recommendation"
+        },
+        {
+          "row": "44",
+          "page": 2,
+          "raw_name": "“学创杯”全国大学生创业综合模拟大赛",
+          "school_specific_level": "国家级、省级",
+          "raw_category": null,
+          "usage_type": "recommendation"
+        },
+        {
+          "row": "45",
+          "page": 2,
+          "raw_name": "“大唐杯”全国大学生新一代信息通信技术大赛",
+          "school_specific_level": "国家级、省级",
+          "raw_category": null,
+          "usage_type": "recommendation"
+        },
+        {
+          "row": "46",
+          "page": 2,
+          "raw_name": "全国大学生物理实验竞赛",
+          "school_specific_level": "国家级、省级",
+          "raw_category": null,
+          "usage_type": "recommendation"
+        },
+        {
+          "row": "47",
+          "page": 2,
+          "raw_name": "全国高校BIM毕业设计创新大赛",
+          "school_specific_level": "国家级、省级",
+          "raw_category": null,
+          "usage_type": "recommendation"
+        },
+        {
+          "row": "48",
+          "page": 2,
+          "raw_name": "睿抗机器人开发者大赛（RAICOM）",
+          "school_specific_level": "国家级、省级",
+          "raw_category": null,
+          "usage_type": "recommendation"
+        },
+        {
+          "row": "49",
+          "page": 2,
+          "raw_name": "全国大学生生命科学竞赛（CULSC）",
+          "school_specific_level": "国家级、省级",
+          "raw_category": null,
+          "usage_type": "recommendation"
+        },
+        {
+          "row": "50",
+          "page": 2,
+          "raw_name": "华为ICT大赛",
+          "school_specific_level": "国家级、省级",
+          "raw_category": null,
+          "usage_type": "recommendation"
+        },
+        {
+          "row": "51",
+          "page": 2,
+          "raw_name": "全国大学生嵌入式芯片与系统设计竞赛",
+          "school_specific_level": "国家级、省级",
+          "raw_category": null,
+          "usage_type": "recommendation"
+        },
+        {
+          "row": "52",
+          "page": 2,
+          "raw_name": "中国高校智能机器人创意大赛",
+          "school_specific_level": "国家级、省级",
+          "raw_category": null,
+          "usage_type": "recommendation"
+        },
+        {
+          "row": "53",
+          "page": 3,
+          "raw_name": "全国大学生数学竞赛",
+          "school_specific_level": "国家级、省级",
+          "raw_category": null,
+          "usage_type": "recommendation"
+        }
+      ]
+    },
+    {
+      "key": "seu-2025-current-in-2026",
+      "school": "东南大学",
+      "title": "2025年东南大学本科生学科竞赛认定名录（2026年度申报继续采用）",
+      "policy_type": "competition_catalog",
+      "evidence_type": "competition_catalog",
+      "year": 2025,
+      "effective_year": 2026,
+      "published_at": "2026-03-12T00:00:00+08:00",
+      "source_page_url": "https://jwc.seu.edu.cn/2026/0316/c69797a558235/page.htm",
+      "evidence_url": "https://jwc.seu.edu.cn/_upload/article/files/09/21/9064b1f14953890e73cd1cb011bf/d6192d3c-1e87-445d-8c31-6c478d94e16f.xls",
+      "local_path": "data/raw/policy_documents/data_readiness_sprint_01/seu-2025-catalog.xls",
+      "official_domain": "seu.edu.cn",
+      "parser_type": "xlrd",
+      "rows": [
+        {
+          "row": "1",
+          "page": null,
+          "raw_name": "中国国际大学生创新大赛",
+          "school_specific_level": "A+类",
+          "raw_category": null,
+          "usage_type": "competition_catalog"
+        },
+        {
+          "row": "2",
+          "page": null,
+          "raw_name": "“挑战杯”全国大学生课外学术科技作品竞赛",
+          "school_specific_level": "A+类",
+          "raw_category": null,
+          "usage_type": "competition_catalog"
+        },
+        {
+          "row": "3",
+          "page": null,
+          "raw_name": "“挑战杯”中国大学生创业计划大赛",
+          "school_specific_level": "A+类",
+          "raw_category": null,
+          "usage_type": "competition_catalog"
+        },
+        {
+          "row": "8",
+          "page": null,
+          "raw_name": "全国大学生机械创新设计大赛",
+          "school_specific_level": "A类",
+          "raw_category": null,
+          "usage_type": "competition_catalog"
+        },
+        {
+          "row": "10",
+          "page": null,
+          "raw_name": "中国大学生工程实践与创新能力大赛",
+          "school_specific_level": "A类",
+          "raw_category": null,
+          "usage_type": "competition_catalog"
+        },
+        {
+          "row": "11",
+          "page": null,
+          "raw_name": "全国大学生节能减排社会实践与科技竞赛",
+          "school_specific_level": "A类",
+          "raw_category": null,
+          "usage_type": "competition_catalog"
+        },
+        {
+          "row": "12",
+          "page": null,
+          "raw_name": "全国大学生物联网设计竞赛",
+          "school_specific_level": "A类",
+          "raw_category": null,
+          "usage_type": "competition_catalog"
+        },
+        {
+          "row": "13",
+          "page": null,
+          "raw_name": "全国大学生结构设计竞赛",
+          "school_specific_level": "A类",
+          "raw_category": null,
+          "usage_type": "competition_catalog"
+        },
+        {
+          "row": "14",
+          "page": null,
+          "raw_name": "全国周培源大学生力学竞赛",
+          "school_specific_level": "A类",
+          "raw_category": null,
+          "usage_type": "competition_catalog"
+        },
+        {
+          "row": "15",
+          "page": null,
+          "raw_name": "全国大学生数学建模竞赛",
+          "school_specific_level": "A类",
+          "raw_category": null,
+          "usage_type": "competition_catalog"
+        },
+        {
+          "row": "16",
+          "page": null,
+          "raw_name": "全国大学生智能汽车竞赛",
+          "school_specific_level": "A类",
+          "raw_category": null,
+          "usage_type": "competition_catalog"
+        },
+        {
+          "row": "17",
+          "page": null,
+          "raw_name": "中国机器人大赛暨RoboCup机器人世界杯中国赛",
+          "school_specific_level": "A类",
+          "raw_category": null,
+          "usage_type": "competition_catalog"
+        },
+        {
+          "row": "18",
+          "page": null,
+          "raw_name": "ACM-ICPC国际大学生程序设计竞赛",
+          "school_specific_level": "A类",
+          "raw_category": null,
+          "usage_type": "competition_catalog"
+        },
+        {
+          "row": "19",
+          "page": null,
+          "raw_name": "中国大学生计算机设计大赛",
+          "school_specific_level": "A类",
+          "raw_category": null,
+          "usage_type": "competition_catalog"
+        },
+        {
+          "row": "20",
+          "page": null,
+          "raw_name": "全国大学生物理实验竞赛",
+          "school_specific_level": "A类",
+          "raw_category": null,
+          "usage_type": "competition_catalog"
+        },
+        {
+          "row": "21",
+          "page": null,
+          "raw_name": "全国大学生金相技能大赛",
+          "school_specific_level": "A类",
+          "raw_category": null,
+          "usage_type": "competition_catalog"
+        },
+        {
+          "row": "22",
+          "page": null,
+          "raw_name": "全国大学生电子商务“创新、创意及创业”挑战赛",
+          "school_specific_level": "A类",
+          "raw_category": null,
+          "usage_type": "competition_catalog"
+        },
+        {
+          "row": "24",
+          "page": null,
+          "raw_name": "全国大学生化学实验创新设计大赛",
+          "school_specific_level": "A类",
+          "raw_category": null,
+          "usage_type": "competition_catalog"
+        },
+        {
+          "row": "25",
+          "page": null,
+          "raw_name": "全国大学生化工设计竞赛",
+          "school_specific_level": "A类",
+          "raw_category": null,
+          "usage_type": "competition_catalog"
+        },
+        {
+          "row": "26",
+          "page": null,
+          "raw_name": "全国大学生交通运输科技大赛",
+          "school_specific_level": "A类",
+          "raw_category": null,
+          "usage_type": "competition_catalog"
+        },
+        {
+          "row": "27",
+          "page": null,
+          "raw_name": "全国大学生广告艺术大赛",
+          "school_specific_level": "A类",
+          "raw_category": null,
+          "usage_type": "competition_catalog"
+        },
+        {
+          "row": "29",
+          "page": null,
+          "raw_name": "全国大学生信息安全竞赛",
+          "school_specific_level": "A类",
+          "raw_category": null,
+          "usage_type": "competition_catalog"
+        },
+        {
+          "row": "30",
+          "page": null,
+          "raw_name": "全国大学生生命科学竞赛",
+          "school_specific_level": "A类",
+          "raw_category": null,
+          "usage_type": "competition_catalog"
+        },
+        {
+          "row": "31",
+          "page": null,
+          "raw_name": "全国大学生嵌入式芯片与系统设计竞赛",
+          "school_specific_level": "A类",
+          "raw_category": null,
+          "usage_type": "competition_catalog"
+        },
+        {
+          "row": "36",
+          "page": null,
+          "raw_name": "全国大学生先进成图技术与产品信息建模创新大赛",
+          "school_specific_level": "B类",
+          "raw_category": null,
+          "usage_type": "competition_catalog"
+        },
+        {
+          "row": "37",
+          "page": null,
+          "raw_name": "中国大学生机械工程创新创意大赛",
+          "school_specific_level": "B类",
+          "raw_category": null,
+          "usage_type": "competition_catalog"
+        },
+        {
+          "row": "39",
+          "page": null,
+          "raw_name": "全国数字建筑创新应用大赛",
+          "school_specific_level": "B类",
+          "raw_category": null,
+          "usage_type": "competition_catalog"
+        },
+        {
+          "row": "41",
+          "page": null,
+          "raw_name": "全国大学生光电设计竞赛",
+          "school_specific_level": "B类",
+          "raw_category": null,
+          "usage_type": "competition_catalog"
+        },
+        {
+          "row": "42",
+          "page": null,
+          "raw_name": "中国大学生程序设计竞赛",
+          "school_specific_level": "B类",
+          "raw_category": null,
+          "usage_type": "competition_catalog"
+        },
+        {
+          "row": "43",
+          "page": null,
+          "raw_name": "全球校园人工智能算法精英大赛",
+          "school_specific_level": "B类",
+          "raw_category": null,
+          "usage_type": "competition_catalog"
+        },
+        {
+          "row": "44",
+          "page": null,
+          "raw_name": "中国高校计算机大赛",
+          "school_specific_level": "B类",
+          "raw_category": null,
+          "usage_type": "competition_catalog"
+        },
+        {
+          "row": "45",
+          "page": null,
+          "raw_name": "全国大学生计算机系统能力大赛",
+          "school_specific_level": "B类",
+          "raw_category": null,
+          "usage_type": "competition_catalog"
+        },
+        {
+          "row": "48",
+          "page": null,
+          "raw_name": "中华经典诵写讲大赛",
+          "school_specific_level": "B类",
+          "raw_category": null,
+          "usage_type": "competition_catalog"
+        },
+        {
+          "row": "49",
+          "page": null,
+          "raw_name": "全国大学生物流设计大赛",
+          "school_specific_level": "B类",
+          "raw_category": null,
+          "usage_type": "competition_catalog"
+        },
+        {
+          "row": "50",
+          "page": null,
+          "raw_name": "“正大杯”全国大学生市场调查与分析大赛",
+          "school_specific_level": "B类",
+          "raw_category": null,
+          "usage_type": "competition_catalog"
+        },
+        {
+          "row": "54",
+          "page": null,
+          "raw_name": "“外教社杯”全国高校学生跨文化能力大赛",
+          "school_specific_level": "B类",
+          "raw_category": null,
+          "usage_type": "competition_catalog"
+        },
+        {
+          "row": "55",
+          "page": null,
+          "raw_name": "全国大学生化工实验大赛",
+          "school_specific_level": "B类",
+          "raw_category": null,
+          "usage_type": "competition_catalog"
+        },
+        {
+          "row": "57",
+          "page": null,
+          "raw_name": "全国大学生测绘学科创新创业智能大赛",
+          "school_specific_level": "B类",
+          "raw_category": null,
+          "usage_type": "competition_catalog"
+        },
+        {
+          "row": "60",
+          "page": null,
+          "raw_name": "中国机器人及人工智能大赛",
+          "school_specific_level": "B类",
+          "raw_category": null,
+          "usage_type": "competition_catalog"
+        },
+        {
+          "row": "61",
+          "page": null,
+          "raw_name": "两岸新锐设计竞赛·华灿奖",
+          "school_specific_level": "B类",
+          "raw_category": null,
+          "usage_type": "competition_catalog"
+        },
+        {
+          "row": "62",
+          "page": null,
+          "raw_name": "未来设计师·全国高校数字艺术设计大赛",
+          "school_specific_level": "B类",
+          "raw_category": null,
+          "usage_type": "competition_catalog"
+        },
+        {
+          "row": "63",
+          "page": null,
+          "raw_name": "中国好创意暨全国数字艺术设计大赛",
+          "school_specific_level": "B类",
+          "raw_category": null,
+          "usage_type": "competition_catalog"
+        },
+        {
+          "row": "65",
+          "page": null,
+          "raw_name": "全国大学生统计建模大赛",
+          "school_specific_level": "B类",
+          "raw_category": null,
+          "usage_type": "competition_catalog"
+        },
+        {
+          "row": "66",
+          "page": null,
+          "raw_name": "全国大学生信息安全与对抗技术竞赛",
+          "school_specific_level": "B类",
+          "raw_category": null,
+          "usage_type": "competition_catalog"
+        },
+        {
+          "row": "67",
+          "page": null,
+          "raw_name": "“大唐杯”全国大学生新一代信息通信技术大赛",
+          "school_specific_level": "B类",
+          "raw_category": null,
+          "usage_type": "competition_catalog"
+        },
+        {
+          "row": "68",
+          "page": null,
+          "raw_name": "华为ICT大赛",
+          "school_specific_level": "B类",
+          "raw_category": null,
+          "usage_type": "competition_catalog"
+        },
+        {
+          "row": "69",
+          "page": null,
+          "raw_name": "“中国软件杯”大学生软件设计大赛",
+          "school_specific_level": "B类",
+          "raw_category": null,
+          "usage_type": "competition_catalog"
+        },
+        {
+          "row": "70",
+          "page": null,
+          "raw_name": "全国大学生花园设计建造竞赛",
+          "school_specific_level": "C类",
+          "raw_category": null,
+          "usage_type": "competition_catalog"
+        },
+        {
+          "row": "75",
+          "page": null,
+          "raw_name": "“西门子杯”中国智能制造挑战赛",
+          "school_specific_level": "C类",
+          "raw_category": null,
+          "usage_type": "competition_catalog"
+        },
+        {
+          "row": "76",
+          "page": null,
+          "raw_name": "中美青年创客大赛",
+          "school_specific_level": "C类",
+          "raw_category": null,
+          "usage_type": "competition_catalog"
+        },
+        {
+          "row": "92",
+          "page": null,
+          "raw_name": "美国大学生数学建模竞赛",
+          "school_specific_level": "C类",
+          "raw_category": null,
+          "usage_type": "competition_catalog"
+        },
+        {
+          "row": "93",
+          "page": null,
+          "raw_name": "全国大学生数学竞赛",
+          "school_specific_level": "C类",
+          "raw_category": null,
+          "usage_type": "competition_catalog"
+        },
+        {
+          "row": "96",
+          "page": null,
+          "raw_name": "中国高校智能机器人创意大赛",
+          "school_specific_level": "C类",
+          "raw_category": null,
+          "usage_type": "competition_catalog"
+        },
+        {
+          "row": "99",
+          "page": null,
+          "raw_name": "百度之星·程序设计大赛",
+          "school_specific_level": "C类",
+          "raw_category": null,
+          "usage_type": "competition_catalog"
+        },
+        {
+          "row": "100",
+          "page": null,
+          "raw_name": "蓝桥杯全国软件和信息技术专业人才大赛",
+          "school_specific_level": "C类",
+          "raw_category": null,
+          "usage_type": "competition_catalog"
+        },
+        {
+          "row": "101",
+          "page": null,
+          "raw_name": "中国大学生服务外包创新创业大赛",
+          "school_specific_level": "C类",
+          "raw_category": null,
+          "usage_type": "competition_catalog"
+        },
+        {
+          "row": "110",
+          "page": null,
+          "raw_name": "全国高校商业精英挑战赛",
+          "school_specific_level": "C类",
+          "raw_category": null,
+          "usage_type": "competition_catalog"
+        },
+        {
+          "row": "113",
+          "page": null,
+          "raw_name": "全国大学生英语竞赛",
+          "school_specific_level": "C类",
+          "raw_category": null,
+          "usage_type": "competition_catalog"
+        },
+        {
+          "row": "129",
+          "page": null,
+          "raw_name": "全国大学生数字媒体科技作品及创意竞赛",
+          "school_specific_level": "C类",
+          "raw_category": null,
+          "usage_type": "competition_catalog"
+        },
+        {
+          "row": "130",
+          "page": null,
+          "raw_name": "全国三维数字化创新设计大赛",
+          "school_specific_level": "C类",
+          "raw_category": null,
+          "usage_type": "competition_catalog"
+        }
+      ]
+    },
+    {
+      "key": "hzau-2026-html",
+      "school": "华中农业大学",
+      "title": "关于公布2026年本科生创新创业“111”赛事指导性目录的通知",
+      "policy_type": "competition_catalog",
+      "evidence_type": "competition_catalog",
+      "year": 2026,
+      "effective_year": 2026,
+      "published_at": "2026-04-20T00:00:00+08:00",
+      "source_page_url": "https://bksy.hzau.edu.cn/info/1070/16284.htm",
+      "evidence_url": null,
+      "local_path": null,
+      "official_domain": "hzau.edu.cn",
+      "parser_type": "verified_html",
+      "content_text": "官方正文：统计‘中国国际大学生创新大赛’等113项赛事为省级及以上学科竞赛、创新创业竞赛项目，其中包含一类赛事5项、二类赛事43项。",
+      "rows": [
+        {
+          "row": "正文-竞赛项目",
+          "page": null,
+          "raw_name": "中国国际大学生创新大赛",
+          "school_specific_level": null,
+          "raw_category": "省级及以上（正文未指明具体一/二类）",
+          "usage_type": "competition_catalog"
+        }
+      ]
+    },
+    {
+      "key": "nwpu-2026-keyun-html",
+      "school": "西北工业大学",
+      "title": "关于举办2026年第十一届‘科云杯’全国大学生财会职业能力大赛校内选拔赛的通知",
+      "policy_type": "competition_classification",
+      "evidence_type": "competition_classification",
+      "year": 2026,
+      "effective_year": 2026,
+      "published_at": "2026-09-01T00:00:00+08:00",
+      "source_page_url": "https://jiaowu.nwpu.edu.cn/info/1160/29588.htm",
+      "evidence_url": null,
+      "local_path": null,
+      "official_domain": "nwpu.edu.cn",
+      "parser_type": "verified_html",
+      "content_text": "官方正文：‘科云杯’全国大学生财会职业能力大赛也是我校认定的A1类竞赛项目。",
+      "rows": [
+        {
+          "row": "正文-竞赛简介",
+          "page": null,
+          "raw_name": "“科云杯”全国大学生财会职业能力大赛",
+          "school_specific_level": "A1类",
+          "raw_category": "校级认定",
+          "usage_type": "competition_classification"
+        }
+      ]
+    }
+  ]
+}

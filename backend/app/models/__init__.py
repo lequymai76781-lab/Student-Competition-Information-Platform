@@ -1,0 +1,97 @@
+from app.models.base import Base
+from app.models.architecture import (
+    CompetitionOrganization,
+    ConferenceEdition,
+    ConferenceSeries,
+    Organization,
+    SchoolCompetition,
+    SchoolConference,
+)
+from app.models.conference import (
+    ConferenceDisciplineMapping,
+    ConferenceDiscoveryCandidate,
+    ConferenceOpportunity,
+    ConferenceOrganization,
+    ConferenceSource,
+)
+from app.models.competition import Competition, CompetitionEdition, CompetitionSource, CompetitionTag, CompetitionTrack, Tag
+from app.models.intelligence import (
+    CandidateFact,
+    CompetitionFactRevision,
+    CompetitionFactSource,
+    CompetitionLead,
+    UniversityCompetitionDiscoveryReport,
+    UniversityCompetitionEditionRelation,
+)
+from app.models.policy import (
+    CandidateCompetition,
+    CompetitionAlias,
+    CompetitionPolicyRecognition,
+    CompetitionStatistics,
+    CrawlerJob,
+    PolicyAttachment,
+    PolicyDocument,
+    PolicyRawItem,
+    ReviewQueue,
+)
+from app.models.product import (
+    AdminAuditLog,
+    BetaMetric,
+    CompetitionUpdateEvent,
+    UserCorrectionSubmission,
+)
+from app.models.recommendation import Recommendation
+from app.models.university import College, Major, University, UniversityCompetitionPolicy, UniversityPolicy
+from app.models.user import BetaFeedback, Favorite, Notification, User, UserCompetitionStatus, UserProfile
+
+__all__ = [
+    "Base",
+    "CandidateCompetition",
+    "CandidateFact",
+    "BetaFeedback",
+    "BetaMetric",
+    "College",
+    "CompetitionOrganization",
+    "Competition",
+    "CompetitionAlias",
+    "CompetitionEdition",
+    "CompetitionFactSource",
+    "CompetitionFactRevision",
+    "CompetitionLead",
+    "CompetitionPolicyRecognition",
+    "CompetitionSource",
+    "CompetitionUpdateEvent",
+    "AdminAuditLog",
+    "CompetitionStatistics",
+    "CompetitionTag",
+    "CompetitionTrack",
+    "ConferenceDiscoveryCandidate",
+    "ConferenceDisciplineMapping",
+    "ConferenceEdition",
+    "ConferenceOpportunity",
+    "ConferenceOrganization",
+    "ConferenceSeries",
+    "ConferenceSource",
+    "CrawlerJob",
+    "Favorite",
+    "Notification",
+    "Organization",
+    "Major",
+    "PolicyAttachment",
+    "PolicyDocument",
+    "PolicyRawItem",
+    "Recommendation",
+    "ReviewQueue",
+    "SchoolConference",
+    "SchoolCompetition",
+    "Tag",
+    "University",
+    "UniversityCompetitionPolicy",
+    "UniversityCompetitionDiscoveryReport",
+    "UniversityCompetitionEditionRelation",
+    "UniversityPolicy",
+    "User",
+    "UserCorrectionSubmission",
+    "UserCompetitionStatus",
+    "UserProfile",
+]

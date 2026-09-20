@@ -1,0 +1,84 @@
+{
+  "batch": "RECOGNITION_BATCH_01",
+  "generated_at": "2026-09-13T17:43:24.865553+00:00",
+  "items": [
+    {
+      "document_key": "swufe-2026",
+      "school": "西南财经大学",
+      "raw_name": "全国大学生红色旅游创意策划大赛（简称“红旅大赛”）",
+      "canonical_name": null,
+      "school_specific_level": "A",
+      "validity_status": "current_recognition",
+      "normalization_method": "none",
+      "confidence": 0.0,
+      "candidate_id": 112,
+      "status": "unresolved",
+      "reason": "主库无可安全确认的 canonical 实体"
+    },
+    {
+      "document_key": "nuaa-2024",
+      "school": "南京航空航天大学",
+      "raw_name": "“中航工业杯”国际无人飞行器创新大奖赛",
+      "canonical_name": null,
+      "school_specific_level": "Ⅰ级甲等",
+      "validity_status": "historical_recognition",
+      "normalization_method": "none",
+      "confidence": 0.0,
+      "candidate_id": 121,
+      "status": "unresolved",
+      "reason": "主库无可安全确认的 canonical 实体"
+    },
+    {
+      "document_key": "bjtu-2025",
+      "school": "北京交通大学",
+      "raw_name": "ACM国际大学生程序设计竞赛",
+      "canonical_name": "ACM-ICPC国际大学生程序设计竞赛",
+      "school_specific_level": "S/A/C",
+      "validity_status": "historical_recognition",
+      "normalization_method": "fuzzy_name",
+      "confidence": 0.8484848484848485,
+      "candidate_id": 124,
+      "status": "unresolved",
+      "reason": "low-confidence fuzzy match"
+    },
+    {
+      "document_key": "bjtu-2025",
+      "school": "北京交通大学",
+      "raw_name": "全国“电脑鼠走迷宫”竞赛",
+      "canonical_name": null,
+      "school_specific_level": "A/B/C",
+      "validity_status": "historical_recognition",
+      "normalization_method": "none",
+      "confidence": 0.0,
+      "candidate_id": 131,
+      "status": "unresolved",
+      "reason": "主库无可安全确认的 canonical 实体"
+    },
+    {
+      "document_key": "scnu-2018",
+      "school": "华南师范大学",
+      "raw_name": "东芝杯·中国师范大学师范专业理科大学生教学技能创新实践大赛",
+      "canonical_name": null,
+      "school_specific_level": "一级",
+      "validity_status": "historical_recognition",
+      "normalization_method": "none",
+      "confidence": 0.0,
+      "candidate_id": 140,
+      "status": "unresolved",
+      "reason": "主库无可安全确认的 canonical 实体"
+    },
+    {
+      "document_key": "swjtu-2025",
+      "school": "西南交通大学",
+      "raw_name": "全国大学生交通运输科技大赛",
+      "canonical_name": "北京市大学生交通科技大赛",
+      "school_specific_level": "A类",
+      "validity_status": "historical_recognition",
+      "normalization_method": "fuzzy_name",
+      "confidence": 0.72,
+      "candidate_id": 150,
+      "status": "unresolved",
+      "reason": "主库无同名实体，且不能与北京市大学生交通科技大赛模糊合并"
+    }
+  ]
+}

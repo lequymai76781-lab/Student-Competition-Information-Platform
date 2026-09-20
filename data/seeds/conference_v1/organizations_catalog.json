@@ -1,0 +1,1066 @@
+{
+  "entries": [
+    {
+      "name": "AAAI",
+      "org_type": "international_professional_org",
+      "country_or_region": "美国",
+      "official_website": "https://aaai.org/",
+      "official_domain": "aaai.org"
+    },
+    {
+      "name": "ACCV",
+      "org_type": "international_professional_org",
+      "country_or_region": "国际",
+      "official_website": "https://accv.org/",
+      "official_domain": "accv.org"
+    },
+    {
+      "name": "ACM",
+      "org_type": "international_professional_org",
+      "country_or_region": "美国",
+      "official_website": "https://www.acm.org/",
+      "official_domain": "acm.org"
+    },
+    {
+      "name": "ACM SIGACT",
+      "org_type": "international_professional_org",
+      "country_or_region": "美国",
+      "official_website": "https://www.sigact.org/",
+      "official_domain": "sigact.org"
+    },
+    {
+      "name": "ACM SIGBio",
+      "org_type": "international_professional_org",
+      "country_or_region": "美国",
+      "official_website": "https://sigbio.acm.org/",
+      "official_domain": "sigbio.acm.org"
+    },
+    {
+      "name": "ACM SIGCHI",
+      "org_type": "international_professional_org",
+      "country_or_region": "美国",
+      "official_website": "https://sigchi.org/",
+      "official_domain": "sigchi.org"
+    },
+    {
+      "name": "ACM SIGCOMM",
+      "org_type": "international_professional_org",
+      "country_or_region": "美国",
+      "official_website": "https://www.sigcomm.org/",
+      "official_domain": "sigcomm.org"
+    },
+    {
+      "name": "ACM SIGGRAPH",
+      "org_type": "international_professional_org",
+      "country_or_region": "美国",
+      "official_website": "https://www.siggraph.org/",
+      "official_domain": "siggraph.org"
+    },
+    {
+      "name": "ACM SIGIR",
+      "org_type": "international_professional_org",
+      "country_or_region": "美国",
+      "official_website": "https://sigir.org/",
+      "official_domain": "sigir.org"
+    },
+    {
+      "name": "ACM SIGKDD",
+      "org_type": "international_professional_org",
+      "country_or_region": "美国",
+      "official_website": "https://kdd.org/",
+      "official_domain": "kdd.org"
+    },
+    {
+      "name": "ACM SIGMETRICS",
+      "org_type": "international_professional_org",
+      "country_or_region": "美国",
+      "official_website": "https://www.sigmetrics.org/",
+      "official_domain": "sigmetrics.org"
+    },
+    {
+      "name": "ACM SIGMM",
+      "org_type": "international_professional_org",
+      "country_or_region": "美国",
+      "official_website": "https://www.sigmm.org/",
+      "official_domain": "sigmm.org"
+    },
+    {
+      "name": "ACM SIGMOBILE",
+      "org_type": "international_professional_org",
+      "country_or_region": "美国",
+      "official_website": "https://www.sigmobile.org/",
+      "official_domain": "sigmobile.org"
+    },
+    {
+      "name": "ACM SIGMOD",
+      "org_type": "international_professional_org",
+      "country_or_region": "美国",
+      "official_website": "https://sigmod.org/",
+      "official_domain": "sigmod.org"
+    },
+    {
+      "name": "ACM SIGOPS",
+      "org_type": "international_professional_org",
+      "country_or_region": "美国",
+      "official_website": "https://www.sigops.org/",
+      "official_domain": "sigops.org"
+    },
+    {
+      "name": "ACM SIGPLAN",
+      "org_type": "international_professional_org",
+      "country_or_region": "美国",
+      "official_website": "https://www.sigplan.org/",
+      "official_domain": "sigplan.org"
+    },
+    {
+      "name": "ACM SIGSAC",
+      "org_type": "international_professional_org",
+      "country_or_region": "美国",
+      "official_website": "https://www.sigsac.org/",
+      "official_domain": "sigsac.org"
+    },
+    {
+      "name": "ACM SIGSOFT",
+      "org_type": "international_professional_org",
+      "country_or_region": "美国",
+      "official_website": "https://www.sigsoft.org/",
+      "official_domain": "sigsoft.org"
+    },
+    {
+      "name": "ACM SIGSPATIAL",
+      "org_type": "international_professional_org",
+      "country_or_region": "美国",
+      "official_website": "https://sigspatial.org/",
+      "official_domain": "sigspatial.org"
+    },
+    {
+      "name": "ACM SIGecom",
+      "org_type": "international_professional_org",
+      "country_or_region": "美国",
+      "official_website": "https://www.sigecom.org/",
+      "official_domain": "sigecom.org"
+    },
+    {
+      "name": "ACSAC",
+      "org_type": "international_professional_org",
+      "country_or_region": "美国",
+      "official_website": "https://acsac.org/",
+      "official_domain": "acsac.org"
+    },
+    {
+      "name": "AEJMC",
+      "org_type": "international_professional_org",
+      "country_or_region": "美国",
+      "official_website": "https://www.aejmc.org/",
+      "official_domain": "aejmc.org"
+    },
+    {
+      "name": "AIESEP",
+      "org_type": "international_professional_org",
+      "country_or_region": "国际",
+      "official_website": "https://aiesep.org/",
+      "official_domain": "aiesep.org"
+    },
+    {
+      "name": "AISTATS",
+      "org_type": "international_professional_org",
+      "country_or_region": "国际",
+      "official_website": "https://aistats.org/",
+      "official_domain": "aistats.org"
+    },
+    {
+      "name": "ASP-DAC",
+      "org_type": "international_professional_org",
+      "country_or_region": "国际",
+      "official_website": "https://www.aspdac.com/",
+      "official_domain": "aspdac.com"
+    },
+    {
+      "name": "AUAI",
+      "org_type": "international_professional_org",
+      "country_or_region": "国际",
+      "official_website": "https://www.auai.org/",
+      "official_domain": "auai.org"
+    },
+    {
+      "name": "American College of Sports Medicine",
+      "org_type": "international_professional_org",
+      "country_or_region": "美国",
+      "official_website": "https://www.acsm.org/",
+      "official_domain": "acsm.org"
+    },
+    {
+      "name": "American Educational Research Association",
+      "org_type": "international_professional_org",
+      "country_or_region": "美国",
+      "official_website": "https://www.aera.net/",
+      "official_domain": "aera.net"
+    },
+    {
+      "name": "American Society for Engineering Education",
+      "org_type": "international_professional_org",
+      "country_or_region": "美国",
+      "official_website": "https://www.asee.org/",
+      "official_domain": "asee.org"
+    },
+    {
+      "name": "American Statistical Association",
+      "org_type": "international_professional_org",
+      "country_or_region": "美国",
+      "official_website": "https://www.amstat.org/",
+      "official_domain": "amstat.org"
+    },
+    {
+      "name": "Asian American Journalists Association",
+      "org_type": "international_professional_org",
+      "country_or_region": "美国",
+      "official_website": "https://www.aaja.org/",
+      "official_domain": "aaja.org"
+    },
+    {
+      "name": "Association for Applied Sport Psychology",
+      "org_type": "international_professional_org",
+      "country_or_region": "美国",
+      "official_website": "https://appliedsportpsych.org/",
+      "official_domain": "appliedsportpsych.org"
+    },
+    {
+      "name": "Association for Computational Linguistics",
+      "org_type": "international_professional_org",
+      "country_or_region": "美国",
+      "official_website": "https://www.aclweb.org/",
+      "official_domain": "aclweb.org"
+    },
+    {
+      "name": "Association for Educational Communications and Technology",
+      "org_type": "international_professional_org",
+      "country_or_region": "美国",
+      "official_website": "https://www.aect.org/",
+      "official_domain": "aect.org"
+    },
+    {
+      "name": "Association for the Study of Higher Education",
+      "org_type": "international_professional_org",
+      "country_or_region": "美国",
+      "official_website": "https://www.ashe.ws/",
+      "official_domain": "ashe.ws"
+    },
+    {
+      "name": "Association of Internet Researchers",
+      "org_type": "international_professional_org",
+      "country_or_region": "国际",
+      "official_website": "https://aoir.org/",
+      "official_domain": "aoir.org"
+    },
+    {
+      "name": "British Association of Sport and Exercise Sciences",
+      "org_type": "international_professional_org",
+      "country_or_region": "英国",
+      "official_website": "https://www.bases.org.uk/",
+      "official_domain": "bases.org.uk"
+    },
+    {
+      "name": "British Educational Research Association",
+      "org_type": "international_professional_org",
+      "country_or_region": "英国",
+      "official_website": "https://www.bera.ac.uk/",
+      "official_domain": "bera.ac.uk"
+    },
+    {
+      "name": "Broadcast Education Association",
+      "org_type": "international_professional_org",
+      "country_or_region": "美国",
+      "official_website": "https://www.beaweb.org/",
+      "official_domain": "beaweb.org"
+    },
+    {
+      "name": "CAV",
+      "org_type": "international_professional_org",
+      "country_or_region": "国际",
+      "official_website": "https://cavconference.org/",
+      "official_domain": "cavconference.org"
+    },
+    {
+      "name": "COLT",
+      "org_type": "international_professional_org",
+      "country_or_region": "国际",
+      "official_website": "https://learningtheory.org/",
+      "official_domain": "learningtheory.org"
+    },
+    {
+      "name": "CoRL",
+      "org_type": "international_professional_org",
+      "country_or_region": "国际",
+      "official_website": "https://www.corl.org/",
+      "official_domain": "corl.org"
+    },
+    {
+      "name": "Comparative and International Education Society",
+      "org_type": "international_professional_org",
+      "country_or_region": "美国",
+      "official_website": "https://www.cies.us/",
+      "official_domain": "cies.us"
+    },
+    {
+      "name": "DATE",
+      "org_type": "international_professional_org",
+      "country_or_region": "欧洲",
+      "official_website": "https://www.date-conference.com/",
+      "official_domain": "date-conference.com"
+    },
+    {
+      "name": "DIMVA",
+      "org_type": "international_professional_org",
+      "country_or_region": "欧洲",
+      "official_website": "https://dimva.org/",
+      "official_domain": "dimva.org"
+    },
+    {
+      "name": "DSAA Steering Committee",
+      "org_type": "international_professional_org",
+      "country_or_region": "国际",
+      "official_website": "https://dsaa.co/",
+      "official_domain": "dsaa.co"
+    },
+    {
+      "name": "ECML-PKDD",
+      "org_type": "international_professional_org",
+      "country_or_region": "欧洲",
+      "official_website": "https://ecmlpkdd.org/",
+      "official_domain": "ecmlpkdd.org"
+    },
+    {
+      "name": "ECREA",
+      "org_type": "international_professional_org",
+      "country_or_region": "欧洲",
+      "official_website": "https://ecrea.eu/",
+      "official_domain": "ecrea.eu"
+    },
+    {
+      "name": "EDBT",
+      "org_type": "international_professional_org",
+      "country_or_region": "国际",
+      "official_website": "https://edbt.org/",
+      "official_domain": "edbt.org"
+    },
+    {
+      "name": "ESORICS",
+      "org_type": "international_professional_org",
+      "country_or_region": "国际",
+      "official_website": "https://esorics.org/",
+      "official_domain": "esorics.org"
+    },
+    {
+      "name": "ESWC",
+      "org_type": "international_professional_org",
+      "country_or_region": "欧洲",
+      "official_website": "https://eswc-conferences.org/",
+      "official_domain": "eswc-conferences.org"
+    },
+    {
+      "name": "European Association for International Education",
+      "org_type": "international_professional_org",
+      "country_or_region": "欧洲",
+      "official_website": "https://www.eaie.org/",
+      "official_domain": "eaie.org"
+    },
+    {
+      "name": "European Association for Sport Management",
+      "org_type": "international_professional_org",
+      "country_or_region": "欧洲",
+      "official_website": "https://easm.net/",
+      "official_domain": "easm.net"
+    },
+    {
+      "name": "European College of Sport Science",
+      "org_type": "international_professional_org",
+      "country_or_region": "欧洲",
+      "official_website": "https://www.sport-science.org/",
+      "official_domain": "sport-science.org"
+    },
+    {
+      "name": "European Computer Vision Association",
+      "org_type": "international_professional_org",
+      "country_or_region": "欧洲",
+      "official_website": "https://eccv.ecva.net/",
+      "official_domain": "ecva.net"
+    },
+    {
+      "name": "European Educational Research Association",
+      "org_type": "international_professional_org",
+      "country_or_region": "欧洲",
+      "official_website": "https://eera-ecer.de/",
+      "official_domain": "eera-ecer.de"
+    },
+    {
+      "name": "European Journalism Training Association",
+      "org_type": "international_professional_org",
+      "country_or_region": "欧洲",
+      "official_website": "https://ejta.eu/",
+      "official_domain": "ejta.eu"
+    },
+    {
+      "name": "IACR",
+      "org_type": "international_professional_org",
+      "country_or_region": "国际",
+      "official_website": "https://www.iacr.org/",
+      "official_domain": "iacr.org"
+    },
+    {
+      "name": "IAMCR",
+      "org_type": "international_professional_org",
+      "country_or_region": "国际",
+      "official_website": "https://iamcr.org/",
+      "official_domain": "iamcr.org"
+    },
+    {
+      "name": "ICAPS",
+      "org_type": "international_professional_org",
+      "country_or_region": "国际",
+      "official_website": "https://icaps-conference.org/",
+      "official_domain": "icaps-conference.org"
+    },
+    {
+      "name": "ICCS Steering Committee",
+      "org_type": "international_professional_org",
+      "country_or_region": "国际",
+      "official_website": "https://www.iccs-meeting.org/",
+      "official_domain": "iccs-meeting.org"
+    },
+    {
+      "name": "ICLR",
+      "org_type": "international_professional_org",
+      "country_or_region": "国际",
+      "official_website": "https://iclr.cc/",
+      "official_domain": "iclr.cc"
+    },
+    {
+      "name": "ICML",
+      "org_type": "international_professional_org",
+      "country_or_region": "国际",
+      "official_website": "https://icml.cc/",
+      "official_domain": "icml.cc"
+    },
+    {
+      "name": "ICPP",
+      "org_type": "international_professional_org",
+      "country_or_region": "国际",
+      "official_website": "https://icpp-conf.org/",
+      "official_domain": "icpp-conf.org"
+    },
+    {
+      "name": "IEEE",
+      "org_type": "international_professional_org",
+      "country_or_region": "美国",
+      "official_website": "https://www.ieee.org/",
+      "official_domain": "ieee.org"
+    },
+    {
+      "name": "IEEE Communications Society",
+      "org_type": "international_professional_org",
+      "country_or_region": "美国",
+      "official_website": "https://www.comsoc.org/",
+      "official_domain": "comsoc.org"
+    },
+    {
+      "name": "IEEE Computer Society",
+      "org_type": "international_professional_org",
+      "country_or_region": "美国",
+      "official_website": "https://www.computer.org/",
+      "official_domain": "computer.org"
+    },
+    {
+      "name": "IEEE EMBS",
+      "org_type": "international_professional_org",
+      "country_or_region": "美国",
+      "official_website": "https://www.embs.org/",
+      "official_domain": "embs.org"
+    },
+    {
+      "name": "IEEE ICDM Steering Committee",
+      "org_type": "international_professional_org",
+      "country_or_region": "国际",
+      "official_website": null,
+      "official_domain": null
+    },
+    {
+      "name": "IEEE Robotics and Automation Society",
+      "org_type": "international_professional_org",
+      "country_or_region": "美国",
+      "official_website": "https://www.ieee-ras.org/",
+      "official_domain": "ieee-ras.org"
+    },
+    {
+      "name": "IEEE Signal Processing Society",
+      "org_type": "international_professional_org",
+      "country_or_region": "美国",
+      "official_website": "https://signalprocessingsociety.org/",
+      "official_domain": "signalprocessingsociety.org"
+    },
+    {
+      "name": "IFAAMAS",
+      "org_type": "international_professional_org",
+      "country_or_region": "国际",
+      "official_website": "https://www.ifaamas.org/",
+      "official_domain": "ifaamas.org"
+    },
+    {
+      "name": "IFIP",
+      "org_type": "international_professional_org",
+      "country_or_region": "国际",
+      "official_website": "https://www.ifip.org/",
+      "official_domain": "ifip.org"
+    },
+    {
+      "name": "IJCAI",
+      "org_type": "international_professional_org",
+      "country_or_region": "国际",
+      "official_website": "https://www.ijcai.org/",
+      "official_domain": "ijcai.org"
+    },
+    {
+      "name": "ISC",
+      "org_type": "international_professional_org",
+      "country_or_region": "欧洲",
+      "official_website": "https://www.isc-hpc.com/",
+      "official_domain": "isc-hpc.com"
+    },
+    {
+      "name": "ISCB",
+      "org_type": "international_professional_org",
+      "country_or_region": "国际",
+      "official_website": "https://www.iscb.org/",
+      "official_domain": "iscb.org"
+    },
+    {
+      "name": "ISWC",
+      "org_type": "international_professional_org",
+      "country_or_region": "国际",
+      "official_website": "https://iswc.semanticweb.org/",
+      "official_domain": "semanticweb.org"
+    },
+    {
+      "name": "International Association for Dance Medicine and Science",
+      "org_type": "international_professional_org",
+      "country_or_region": "国际",
+      "official_website": "https://iadms.org/",
+      "official_domain": "iadms.org"
+    },
+    {
+      "name": "International Biometric Society",
+      "org_type": "international_professional_org",
+      "country_or_region": "国际",
+      "official_website": "https://www.biometricsociety.org/",
+      "official_domain": "biometricsociety.org"
+    },
+    {
+      "name": "International Communication Association",
+      "org_type": "international_professional_org",
+      "country_or_region": "美国",
+      "official_website": "https://www.icahdq.org/",
+      "official_domain": "icahdq.org"
+    },
+    {
+      "name": "International Federation of Sports Medicine",
+      "org_type": "international_professional_org",
+      "country_or_region": "国际",
+      "official_website": "https://www.fims.org/",
+      "official_domain": "fims.org"
+    },
+    {
+      "name": "International Society of Biomechanics in Sports",
+      "org_type": "international_professional_org",
+      "country_or_region": "国际",
+      "official_website": "https://isbs.org/",
+      "official_domain": "isbs.org"
+    },
+    {
+      "name": "International Society of Sport Psychology",
+      "org_type": "international_professional_org",
+      "country_or_region": "国际",
+      "official_website": "https://www.issponline.org/",
+      "official_domain": "issponline.org"
+    },
+    {
+      "name": "International Society of the Learning Sciences",
+      "org_type": "international_professional_org",
+      "country_or_region": "国际",
+      "official_website": "https://www.isls.org/",
+      "official_domain": "isls.org"
+    },
+    {
+      "name": "International Speech Communication Association",
+      "org_type": "international_professional_org",
+      "country_or_region": "国际",
+      "official_website": "https://www.isca-speech.org/",
+      "official_domain": "isca-speech.org"
+    },
+    {
+      "name": "Internet Society",
+      "org_type": "international_professional_org",
+      "country_or_region": "国际",
+      "official_website": "https://www.internetsociety.org/",
+      "official_domain": "internetsociety.org"
+    },
+    {
+      "name": "Investigative Reporters and Editors",
+      "org_type": "international_professional_org",
+      "country_or_region": "美国",
+      "official_website": "https://www.ire.org/",
+      "official_domain": "ire.org"
+    },
+    {
+      "name": "KR",
+      "org_type": "international_professional_org",
+      "country_or_region": "国际",
+      "official_website": "https://kr.org/",
+      "official_domain": "kr.org"
+    },
+    {
+      "name": "MeCCSA",
+      "org_type": "international_professional_org",
+      "country_or_region": "英国",
+      "official_website": "https://www.meccsa.org.uk/",
+      "official_domain": "meccsa.org.uk"
+    },
+    {
+      "name": "National Association of Black Journalists",
+      "org_type": "international_professional_org",
+      "country_or_region": "美国",
+      "official_website": "https://nabjonline.org/",
+      "official_domain": "nabjonline.org"
+    },
+    {
+      "name": "National Association of Hispanic Journalists",
+      "org_type": "international_professional_org",
+      "country_or_region": "美国",
+      "official_website": "https://nahj.org/",
+      "official_domain": "nahj.org"
+    },
+    {
+      "name": "National Communication Association",
+      "org_type": "international_professional_org",
+      "country_or_region": "美国",
+      "official_website": "https://www.natcom.org/",
+      "official_domain": "natcom.org"
+    },
+    {
+      "name": "National Council on Measurement in Education",
+      "org_type": "international_professional_org",
+      "country_or_region": "美国",
+      "official_website": "https://ncme.org/",
+      "official_domain": "ncme.org"
+    },
+    {
+      "name": "National Strength and Conditioning Association",
+      "org_type": "international_professional_org",
+      "country_or_region": "美国",
+      "official_website": "https://www.nsca.com/",
+      "official_domain": "nsca.com"
+    },
+    {
+      "name": "NeurIPS Foundation",
+      "org_type": "international_professional_org",
+      "country_or_region": "美国",
+      "official_website": "https://neurips.cc/",
+      "official_domain": "neurips.cc"
+    },
+    {
+      "name": "North American Society for the Psychology of Sport and Physical Activity",
+      "org_type": "international_professional_org",
+      "country_or_region": "美国",
+      "official_website": "https://www.naspspa.com/",
+      "official_domain": "naspspa.com"
+    },
+    {
+      "name": "North American Society for the Sociology of Sport",
+      "org_type": "international_professional_org",
+      "country_or_region": "美国",
+      "official_website": "https://nasss.org/",
+      "official_domain": "nasss.org"
+    },
+    {
+      "name": "Online News Association",
+      "org_type": "international_professional_org",
+      "country_or_region": "美国",
+      "official_website": "https://journalists.org/",
+      "official_domain": "journalists.org"
+    },
+    {
+      "name": "PACT",
+      "org_type": "international_professional_org",
+      "country_or_region": "国际",
+      "official_website": "https://pactconf.org/",
+      "official_domain": "pactconf.org"
+    },
+    {
+      "name": "PAKDD Steering Committee",
+      "org_type": "international_professional_org",
+      "country_or_region": "亚太",
+      "official_website": "https://pakdd.org/",
+      "official_domain": "pakdd.org"
+    },
+    {
+      "name": "PETS",
+      "org_type": "international_professional_org",
+      "country_or_region": "国际",
+      "official_website": "https://petsymposium.org/",
+      "official_domain": "petsymposium.org"
+    },
+    {
+      "name": "RAID",
+      "org_type": "international_professional_org",
+      "country_or_region": "国际",
+      "official_website": "https://raid2026.org/",
+      "official_domain": "raid2026.org"
+    },
+    {
+      "name": "RECOMB",
+      "org_type": "international_professional_org",
+      "country_or_region": "国际",
+      "official_website": "https://recomb.org/",
+      "official_domain": "recomb.org"
+    },
+    {
+      "name": "Robotics: Science and Systems Foundation",
+      "org_type": "international_professional_org",
+      "country_or_region": "国际",
+      "official_website": "https://roboticsconference.org/",
+      "official_domain": "roboticsconference.org"
+    },
+    {
+      "name": "SHAPE America",
+      "org_type": "international_professional_org",
+      "country_or_region": "美国",
+      "official_website": "https://www.shapeamerica.org/",
+      "official_domain": "shapeamerica.org"
+    },
+    {
+      "name": "SIAM",
+      "org_type": "international_professional_org",
+      "country_or_region": "美国",
+      "official_website": "https://www.siam.org/",
+      "official_domain": "siam.org"
+    },
+    {
+      "name": "Society for Cinema and Media Studies",
+      "org_type": "international_professional_org",
+      "country_or_region": "美国",
+      "official_website": "https://www.cmstudies.org/",
+      "official_domain": "cmstudies.org"
+    },
+    {
+      "name": "Society for Learning Analytics Research",
+      "org_type": "international_professional_org",
+      "country_or_region": "国际",
+      "official_website": "https://www.solaresearch.org/",
+      "official_domain": "solaresearch.org"
+    },
+    {
+      "name": "Society for Research into Higher Education",
+      "org_type": "international_professional_org",
+      "country_or_region": "英国",
+      "official_website": "https://srhe.ac.uk/",
+      "official_domain": "srhe.ac.uk"
+    },
+    {
+      "name": "USENIX Association",
+      "org_type": "international_professional_org",
+      "country_or_region": "美国",
+      "official_website": "https://www.usenix.org/",
+      "official_domain": "usenix.org"
+    },
+    {
+      "name": "University of Texas at Austin",
+      "org_type": "university",
+      "country_or_region": "美国",
+      "official_website": "https://www.utexas.edu/",
+      "official_domain": "utexas.edu"
+    },
+    {
+      "name": "VLDB Endowment",
+      "org_type": "international_professional_org",
+      "country_or_region": "国际",
+      "official_website": "https://vldb.org/",
+      "official_domain": "vldb.org"
+    },
+    {
+      "name": "World Association for Public Opinion Research",
+      "org_type": "international_professional_org",
+      "country_or_region": "国际",
+      "official_website": "https://wapor.org/",
+      "official_domain": "wapor.org"
+    },
+    {
+      "name": "World Education Research Association",
+      "org_type": "international_professional_org",
+      "country_or_region": "国际",
+      "official_website": "https://weraonline.org/",
+      "official_domain": "weraonline.org"
+    },
+    {
+      "name": "上海交通大学",
+      "org_type": "university",
+      "country_or_region": "中国",
+      "official_website": "https://www.sjtu.edu.cn/",
+      "official_domain": "sjtu.edu.cn"
+    },
+    {
+      "name": "中国中文信息学会",
+      "org_type": "academic_association",
+      "country_or_region": "中国",
+      "official_website": "http://www.cips.org.cn/",
+      "official_domain": "cips.org.cn"
+    },
+    {
+      "name": "中国人工智能学会",
+      "org_type": "academic_association",
+      "country_or_region": "中国",
+      "official_website": "https://www.caai.cn/",
+      "official_domain": "caai.cn"
+    },
+    {
+      "name": "中国体育科学学会",
+      "org_type": "academic_association",
+      "country_or_region": "中国",
+      "official_website": "https://www.csss.cn/",
+      "official_domain": "csss.cn"
+    },
+    {
+      "name": "中国力学学会",
+      "org_type": "academic_association",
+      "country_or_region": "中国",
+      "official_website": "https://www.cstam.org.cn/",
+      "official_domain": "cstam.org.cn"
+    },
+    {
+      "name": "中国化学会",
+      "org_type": "academic_association",
+      "country_or_region": "中国",
+      "official_website": "https://www.chemsoc.org.cn/",
+      "official_domain": "chemsoc.org.cn"
+    },
+    {
+      "name": "中国图象图形学学会",
+      "org_type": "academic_association",
+      "country_or_region": "中国",
+      "official_website": "https://www.csig.org.cn/",
+      "official_domain": "csig.org.cn"
+    },
+    {
+      "name": "中国地球物理学会",
+      "org_type": "academic_association",
+      "country_or_region": "中国",
+      "official_website": "http://www.cgs.org.cn/",
+      "official_domain": "cgs.org.cn"
+    },
+    {
+      "name": "中国天文学会",
+      "org_type": "academic_association",
+      "country_or_region": "中国",
+      "official_website": null,
+      "official_domain": null
+    },
+    {
+      "name": "中国教育学会",
+      "org_type": "academic_association",
+      "country_or_region": "中国",
+      "official_website": "https://www.cse.edu.cn/",
+      "official_domain": "cse.edu.cn"
+    },
+    {
+      "name": "中国数学会",
+      "org_type": "academic_association",
+      "country_or_region": "中国",
+      "official_website": "https://www.cms.org.cn/",
+      "official_domain": "cms.org.cn"
+    },
+    {
+      "name": "中国新闻史学会",
+      "org_type": "academic_association",
+      "country_or_region": "中国",
+      "official_website": null,
+      "official_domain": null
+    },
+    {
+      "name": "中国材料研究学会",
+      "org_type": "academic_association",
+      "country_or_region": "中国",
+      "official_website": "https://www.cts-cmrs.org/",
+      "official_domain": "cts-cmrs.org"
+    },
+    {
+      "name": "中国气象学会",
+      "org_type": "academic_association",
+      "country_or_region": "中国",
+      "official_website": "http://www.cms1924.org/",
+      "official_domain": "cms1924.org"
+    },
+    {
+      "name": "中国物理学会",
+      "org_type": "academic_association",
+      "country_or_region": "中国",
+      "official_website": "http://www.cps-net.org.cn/",
+      "official_domain": "cps-net.org.cn"
+    },
+    {
+      "name": "中国电子学会",
+      "org_type": "academic_association",
+      "country_or_region": "中国",
+      "official_website": "https://www.cie-info.org.cn/",
+      "official_domain": "cie-info.org.cn"
+    },
+    {
+      "name": "中国管理现代化研究会",
+      "org_type": "academic_association",
+      "country_or_region": "中国",
+      "official_website": "http://www.camchina.org.cn/",
+      "official_domain": "camchina.org.cn"
+    },
+    {
+      "name": "中国系统工程学会信息系统工程专业委员会",
+      "org_type": "academic_association",
+      "country_or_region": "中国",
+      "official_website": "https://cnais.sem.tsinghua.edu.cn/",
+      "official_domain": "tsinghua.edu.cn"
+    },
+    {
+      "name": "中国经济学年会秘书处",
+      "org_type": "association",
+      "country_or_region": "中国",
+      "official_website": "http://www.efnchina.com/",
+      "official_domain": "efnchina.com"
+    },
+    {
+      "name": "中国统计学会",
+      "org_type": "academic_association",
+      "country_or_region": "中国",
+      "official_website": null,
+      "official_domain": null
+    },
+    {
+      "name": "中国自动化学会",
+      "org_type": "academic_association",
+      "country_or_region": "中国",
+      "official_website": "http://www.caa.org.cn/",
+      "official_domain": "caa.org.cn"
+    },
+    {
+      "name": "中国计算机学会",
+      "org_type": "academic_association",
+      "country_or_region": "中国",
+      "official_website": "https://www.ccf.org.cn/",
+      "official_domain": "ccf.org.cn"
+    },
+    {
+      "name": "中国计算机学会多媒体专业委员会",
+      "org_type": "subcommittee",
+      "country_or_region": "中国",
+      "official_website": "https://tc.ccf.org.cn/tcmm/",
+      "official_domain": "ccf.org.cn"
+    },
+    {
+      "name": "中国计算机学会数据库专业委员会",
+      "org_type": "subcommittee",
+      "country_or_region": "中国",
+      "official_website": "https://tc.ccf.org.cn/tcdb/",
+      "official_domain": "ccf.org.cn"
+    },
+    {
+      "name": "中国计算机学会高性能计算专业委员会",
+      "org_type": "subcommittee",
+      "country_or_region": "中国",
+      "official_website": "https://tc.ccf.org.cn/tchpc/",
+      "official_domain": "ccf.org.cn"
+    },
+    {
+      "name": "中国金融学年会理事会",
+      "org_type": "association",
+      "country_or_region": "中国",
+      "official_website": "https://www.cfrn.com.cn/",
+      "official_domain": "cfrn.com.cn"
+    },
+    {
+      "name": "中国高等教育学会",
+      "org_type": "academic_association",
+      "country_or_region": "中国",
+      "official_website": "https://www.cahe.edu.cn/",
+      "official_domain": "cahe.edu.cn"
+    },
+    {
+      "name": "中央财经大学",
+      "org_type": "university",
+      "country_or_region": "中国",
+      "official_website": "https://www.cufe.edu.cn/",
+      "official_domain": "cufe.edu.cn"
+    },
+    {
+      "name": "北京理工大学",
+      "org_type": "university",
+      "country_or_region": "中国",
+      "official_website": "https://www.bit.edu.cn/",
+      "official_domain": "bit.edu.cn"
+    },
+    {
+      "name": "南开大学",
+      "org_type": "university",
+      "country_or_region": "中国",
+      "official_website": "https://www.nankai.edu.cn/",
+      "official_domain": "nankai.edu.cn"
+    },
+    {
+      "name": "吉林大学",
+      "org_type": "university",
+      "country_or_region": "中国",
+      "official_website": "https://www.jlu.edu.cn/",
+      "official_domain": "jlu.edu.cn"
+    },
+    {
+      "name": "哈尔滨工业大学",
+      "org_type": "university",
+      "country_or_region": "中国",
+      "official_website": "https://www.hit.edu.cn/",
+      "official_domain": "hit.edu.cn"
+    },
+    {
+      "name": "哈尔滨工程大学",
+      "org_type": "university",
+      "country_or_region": "中国",
+      "official_website": "http://www.hrbeu.edu.cn/",
+      "official_domain": "hrbeu.edu.cn"
+    },
+    {
+      "name": "哈尔滨理工大学",
+      "org_type": "university",
+      "country_or_region": "中国",
+      "official_website": "http://www.hrbust.edu.cn/",
+      "official_domain": "hrbust.edu.cn"
+    },
+    {
+      "name": "四川外国语大学",
+      "org_type": "university",
+      "country_or_region": "中国",
+      "official_website": "https://www.sisu.edu.cn/",
+      "official_domain": "sisu.edu.cn"
+    },
+    {
+      "name": "国防科技大学",
+      "org_type": "university",
+      "country_or_region": "中国",
+      "official_website": "https://www.nudt.edu.cn/",
+      "official_domain": "nudt.edu.cn"
+    },
+    {
+      "name": "山东航空学院",
+      "org_type": "university",
+      "country_or_region": "中国",
+      "official_website": "https://www.sdua.edu.cn/",
+      "official_domain": "sdua.edu.cn"
+    }
+  ],
+  "meta": {
+    "schema_version": "1",
+    "generated_at": "2026-09-06T11:38:07+00:00",
+    "count": 151
+  }
+}

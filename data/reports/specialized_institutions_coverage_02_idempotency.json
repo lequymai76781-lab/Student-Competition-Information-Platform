@@ -1,0 +1,22 @@
+{
+  "task": "SPECIALIZED_INSTITUTIONS_COVERAGE_02",
+  "generated_at": "2026-09-15T00:56:48.931208+00:00",
+  "passed": true,
+  "before": {
+    "counts": {
+      "relations": 19,
+      "policies": 2,
+      "sources": 21
+    },
+    "digest": "35176d782dd3a7b247ace59aa467f281c6e2923fdcaba1a9cb9c45120741dddf"
+  },
+  "after": {
+    "counts": {
+      "relations": 19,
+      "policies": 2,
+      "sources": 21
+    },
+    "digest": "35176d782dd3a7b247ace59aa467f281c6e2923fdcaba1a9cb9c45120741dddf"
+  },
+  "second_run_stats": {}
+}

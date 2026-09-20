@@ -1,0 +1,413 @@
+{
+  "task": "GENERAL_UNDERGRADUATE_DISCOVERY_FIX_01_BASELINE_AUDIT",
+  "generated_at": "2026-09-15T10:25:12.176167+00:00",
+  "original_status": {
+    "ACCESS_LIMITED": 32
+  },
+  "mutually_exclusive_primary_root_causes": {
+    "one_hop_discovery_strategy_failure": 25,
+    "classifier_false_positive_path": 4,
+    "technical_access_restriction": 3
+  },
+  "observed_failure_mechanisms": {
+    "official_homepage_unreachable": {
+      "count": 3,
+      "instrumented": true
+    },
+    "internal_search_failed": {
+      "count": 0,
+      "instrumented": false
+    },
+    "search_engine_summary_only": {
+      "count": 0,
+      "instrumented": false
+    },
+    "page_found_but_classifier_filtered": {
+      "count": 0,
+      "instrumented": false
+    },
+    "policy_page_found_but_attachment_missed": {
+      "count": 0,
+      "instrumented": false
+    },
+    "attachment_found_but_download_failed": {
+      "count": 0,
+      "instrumented": true
+    },
+    "competition_notice_found_without_policy": {
+      "count": 0,
+      "instrumented": false
+    },
+    "redirect_failure": {
+      "count": 0,
+      "instrumented": true
+    },
+    "http_403": {
+      "count": 0,
+      "instrumented": true
+    },
+    "http_412": {
+      "count": 0,
+      "instrumented": true
+    },
+    "javascript_rendering_failure": {
+      "count": 0,
+      "instrumented": false
+    },
+    "classifier_false_positive_schools": {
+      "count": 4,
+      "instrumented": true
+    },
+    "classifier_false_positive_documents": {
+      "count": 5,
+      "instrumented": true
+    },
+    "secondary_radar_timeout": {
+      "count": 32,
+      "instrumented": true
+    }
+  },
+  "telemetry_caveat": "A zero with instrumented=false means no observable event was recorded because the old run did not execute or persist that discovery stage; it is not proof the mechanism never occurred.",
+  "batch_a_selection_audit": {
+    "source_undergraduate": 1412,
+    "excluded_priority_or_specialized": 184,
+    "master_total": 1228,
+    "batch_a": 32,
+    "batch_b": 1196,
+    "basis": "explicit hard-coded BATCH_A_SCHOOLS pilot map",
+    "not_based_on": [
+      "historical admissions batch",
+      "public university tier",
+      "score or rank"
+    ],
+    "conclusion": "artificially narrow pilot; not a complete natural stratum"
+  },
+  "schools": [
+    {
+      "school": "上海理工大学",
+      "primary_root_cause": "one_hop_discovery_strategy_failure",
+      "pages_discovered": 305,
+      "pages_fetched": 1,
+      "documents_found": 0,
+      "policies_found_before_qa": 0,
+      "policy_errors": [],
+      "radar_status": "school timeout after 60s"
+    },
+    {
+      "school": "新疆师范大学",
+      "primary_root_cause": "one_hop_discovery_strategy_failure",
+      "pages_discovered": 244,
+      "pages_fetched": 1,
+      "documents_found": 0,
+      "policies_found_before_qa": 0,
+      "policy_errors": [],
+      "radar_status": "school timeout after 25s"
+    },
+    {
+      "school": "河北大学",
+      "primary_root_cause": "one_hop_discovery_strategy_failure",
+      "pages_discovered": 181,
+      "pages_fetched": 2,
+      "documents_found": 0,
+      "policies_found_before_qa": 0,
+      "policy_errors": [],
+      "radar_status": "school timeout after 25s"
+    },
+    {
+      "school": "西北师范大学",
+      "primary_root_cause": "one_hop_discovery_strategy_failure",
+      "pages_discovered": 79,
+      "pages_fetched": 1,
+      "documents_found": 0,
+      "policies_found_before_qa": 0,
+      "policy_errors": [],
+      "radar_status": "school timeout after 25s"
+    },
+    {
+      "school": "北京工商大学",
+      "primary_root_cause": "classifier_false_positive_path",
+      "pages_discovered": 786,
+      "pages_fetched": 3,
+      "documents_found": 0,
+      "policies_found_before_qa": 2,
+      "policy_errors": [],
+      "radar_status": "school timeout after 25s"
+    },
+    {
+      "school": "江西师范大学",
+      "primary_root_cause": "one_hop_discovery_strategy_failure",
+      "pages_discovered": 254,
+      "pages_fetched": 1,
+      "documents_found": 0,
+      "policies_found_before_qa": 0,
+      "policy_errors": [],
+      "radar_status": "school timeout after 25s"
+    },
+    {
+      "school": "内蒙古师范大学",
+      "primary_root_cause": "one_hop_discovery_strategy_failure",
+      "pages_discovered": 157,
+      "pages_fetched": 1,
+      "documents_found": 0,
+      "policies_found_before_qa": 0,
+      "policy_errors": [],
+      "radar_status": "school timeout after 25s"
+    },
+    {
+      "school": "西藏民族大学",
+      "primary_root_cause": "one_hop_discovery_strategy_failure",
+      "pages_discovered": 177,
+      "pages_fetched": 1,
+      "documents_found": 0,
+      "policies_found_before_qa": 0,
+      "policy_errors": [],
+      "radar_status": "school timeout after 25s"
+    },
+    {
+      "school": "黑龙江大学",
+      "primary_root_cause": "one_hop_discovery_strategy_failure",
+      "pages_discovered": 222,
+      "pages_fetched": 1,
+      "documents_found": 0,
+      "policies_found_before_qa": 0,
+      "policy_errors": [],
+      "radar_status": "school timeout after 25s"
+    },
+    {
+      "school": "东北财经大学",
+      "primary_root_cause": "one_hop_discovery_strategy_failure",
+      "pages_discovered": 170,
+      "pages_fetched": 1,
+      "documents_found": 0,
+      "policies_found_before_qa": 0,
+      "policy_errors": [],
+      "radar_status": "school timeout after 25s"
+    },
+    {
+      "school": "天津师范大学",
+      "primary_root_cause": "one_hop_discovery_strategy_failure",
+      "pages_discovered": 274,
+      "pages_fetched": 1,
+      "documents_found": 0,
+      "policies_found_before_qa": 0,
+      "policy_errors": [],
+      "radar_status": "school timeout after 25s"
+    },
+    {
+      "school": "山西师范大学",
+      "primary_root_cause": "one_hop_discovery_strategy_failure",
+      "pages_discovered": 248,
+      "pages_fetched": 1,
+      "documents_found": 0,
+      "policies_found_before_qa": 0,
+      "policy_errors": [],
+      "radar_status": "school timeout after 25s"
+    },
+    {
+      "school": "四川师范大学",
+      "primary_root_cause": "one_hop_discovery_strategy_failure",
+      "pages_discovered": 345,
+      "pages_fetched": 1,
+      "documents_found": 0,
+      "policies_found_before_qa": 0,
+      "policy_errors": [],
+      "radar_status": "school timeout after 25s"
+    },
+    {
+      "school": "河南师范大学",
+      "primary_root_cause": "one_hop_discovery_strategy_failure",
+      "pages_discovered": 224,
+      "pages_fetched": 1,
+      "documents_found": 0,
+      "policies_found_before_qa": 0,
+      "policy_errors": [],
+      "radar_status": "school timeout after 25s"
+    },
+    {
+      "school": "昆明理工大学",
+      "primary_root_cause": "one_hop_discovery_strategy_failure",
+      "pages_discovered": 211,
+      "pages_fetched": 1,
+      "documents_found": 0,
+      "policies_found_before_qa": 0,
+      "policy_errors": [],
+      "radar_status": "school timeout after 25s"
+    },
+    {
+      "school": "浙江工业大学",
+      "primary_root_cause": "technical_access_restriction",
+      "pages_discovered": 0,
+      "pages_fetched": 0,
+      "documents_found": 0,
+      "policies_found_before_qa": 0,
+      "policy_errors": [
+        "Blocked by robots.txt"
+      ],
+      "radar_status": "school timeout after 25s"
+    },
+    {
+      "school": "广西师范大学",
+      "primary_root_cause": "classifier_false_positive_path",
+      "pages_discovered": 157,
+      "pages_fetched": 2,
+      "documents_found": 1,
+      "policies_found_before_qa": 1,
+      "policy_errors": [],
+      "radar_status": "school timeout after 25s"
+    },
+    {
+      "school": "湖北大学",
+      "primary_root_cause": "one_hop_discovery_strategy_failure",
+      "pages_discovered": 284,
+      "pages_fetched": 1,
+      "documents_found": 0,
+      "policies_found_before_qa": 0,
+      "policy_errors": [],
+      "radar_status": "school timeout after 25s"
+    },
+    {
+      "school": "山东师范大学",
+      "primary_root_cause": "one_hop_discovery_strategy_failure",
+      "pages_discovered": 213,
+      "pages_fetched": 1,
+      "documents_found": 0,
+      "policies_found_before_qa": 0,
+      "policy_errors": [],
+      "radar_status": "school timeout after 25s"
+    },
+    {
+      "school": "海南师范大学",
+      "primary_root_cause": "classifier_false_positive_path",
+      "pages_discovered": 263,
+      "pages_fetched": 2,
+      "documents_found": 0,
+      "policies_found_before_qa": 1,
+      "policy_errors": [],
+      "radar_status": "school timeout after 25s"
+    },
+    {
+      "school": "深圳大学",
+      "primary_root_cause": "one_hop_discovery_strategy_failure",
+      "pages_discovered": 185,
+      "pages_fetched": 1,
+      "documents_found": 0,
+      "policies_found_before_qa": 0,
+      "policy_errors": [],
+      "radar_status": "school timeout after 25s"
+    },
+    {
+      "school": "福建师范大学",
+      "primary_root_cause": "one_hop_discovery_strategy_failure",
+      "pages_discovered": 169,
+      "pages_fetched": 1,
+      "documents_found": 0,
+      "policies_found_before_qa": 0,
+      "policy_errors": [],
+      "radar_status": "school timeout after 25s"
+    },
+    {
+      "school": "安徽师范大学",
+      "primary_root_cause": "classifier_false_positive_path",
+      "pages_discovered": 258,
+      "pages_fetched": 2,
+      "documents_found": 0,
+      "policies_found_before_qa": 1,
+      "policy_errors": [],
+      "radar_status": "school timeout after 25s"
+    },
+    {
+      "school": "青海师范大学",
+      "primary_root_cause": "one_hop_discovery_strategy_failure",
+      "pages_discovered": 157,
+      "pages_fetched": 1,
+      "documents_found": 0,
+      "policies_found_before_qa": 0,
+      "policy_errors": [],
+      "radar_status": "school timeout after 25s"
+    },
+    {
+      "school": "西安理工大学",
+      "primary_root_cause": "one_hop_discovery_strategy_failure",
+      "pages_discovered": 313,
+      "pages_fetched": 1,
+      "documents_found": 0,
+      "policies_found_before_qa": 0,
+      "policy_errors": [],
+      "radar_status": "school timeout after 25s"
+    },
+    {
+      "school": "贵州师范大学",
+      "primary_root_cause": "one_hop_discovery_strategy_failure",
+      "pages_discovered": 143,
+      "pages_fetched": 2,
+      "documents_found": 0,
+      "policies_found_before_qa": 0,
+      "policy_errors": [],
+      "radar_status": "school timeout after 25s"
+    },
+    {
+      "school": "重庆邮电大学",
+      "primary_root_cause": "one_hop_discovery_strategy_failure",
+      "pages_discovered": 251,
+      "pages_fetched": 1,
+      "documents_found": 0,
+      "policies_found_before_qa": 0,
+      "policy_errors": [],
+      "radar_status": "school timeout after 25s"
+    },
+    {
+      "school": "宁夏医科大学",
+      "primary_root_cause": "one_hop_discovery_strategy_failure",
+      "pages_discovered": 180,
+      "pages_fetched": 1,
+      "documents_found": 0,
+      "policies_found_before_qa": 0,
+      "policy_errors": [],
+      "radar_status": "school timeout after 25s"
+    },
+    {
+      "school": "江苏大学",
+      "primary_root_cause": "technical_access_restriction",
+      "pages_discovered": 0,
+      "pages_fetched": 0,
+      "documents_found": 0,
+      "policies_found_before_qa": 0,
+      "policy_errors": [
+        "_ssl.c:993: The handshake operation timed out"
+      ],
+      "radar_status": "school timeout after 25s"
+    },
+    {
+      "school": "长春理工大学",
+      "primary_root_cause": "one_hop_discovery_strategy_failure",
+      "pages_discovered": 190,
+      "pages_fetched": 1,
+      "documents_found": 0,
+      "policies_found_before_qa": 0,
+      "policy_errors": [],
+      "radar_status": "school timeout after 25s"
+    },
+    {
+      "school": "长沙理工大学",
+      "primary_root_cause": "one_hop_discovery_strategy_failure",
+      "pages_discovered": 133,
+      "pages_fetched": 1,
+      "documents_found": 0,
+      "policies_found_before_qa": 0,
+      "policy_errors": [],
+      "radar_status": "school timeout after 25s"
+    },
+    {
+      "school": "塔里木大学",
+      "primary_root_cause": "technical_access_restriction",
+      "pages_discovered": 0,
+      "pages_fetched": 0,
+      "documents_found": 0,
+      "policies_found_before_qa": 0,
+      "policy_errors": [
+        "_ssl.c:993: The handshake operation timed out"
+      ],
+      "radar_status": "school timeout after 25s"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+services:
+  db:
+    image: postgres:16-alpine
+    container_name: competition-intelligence-db
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-competition_intelligence}
+      POSTGRES_USER: ${POSTGRES_USER:-competition}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-competition}
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-competition} -d ${POSTGRES_DB:-competition_intelligence}"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  backend:
+    build:
+      context: ./backend
+    container_name: competition-intelligence-backend
+    environment:
+      DATABASE_URL: postgresql+psycopg://competition:competition@db:5432/competition_intelligence
+      BACKEND_CORS_ORIGINS: http://localhost:3000,http://127.0.0.1:3000
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend:/app
+    depends_on:
+      db:
+        condition: service_healthy
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+
+  frontend:
+    build:
+      context: ./frontend
+    container_name: competition-intelligence-frontend
+    environment:
+      NEXT_PUBLIC_API_BASE_URL: http://localhost:8000/api
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+    depends_on:
+      - backend
+    command: npm run dev -- --hostname 0.0.0.0 --port 3000
+
+volumes:
+  postgres_data:
+

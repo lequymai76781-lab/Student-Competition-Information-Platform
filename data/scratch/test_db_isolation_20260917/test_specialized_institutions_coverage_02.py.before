@@ -1,0 +1,63 @@
+import importlib.util
+import json
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[2]
+SCRIPT = ROOT / "backend/scripts/audit_specialized_institutions_coverage_02.py"
+SPEC = importlib.util.spec_from_file_location("specialized_coverage_02_audit", SCRIPT)
+AUDIT = importlib.util.module_from_spec(SPEC)
+assert SPEC.loader is not None
+SPEC.loader.exec_module(AUDIT)
+
+
+def load(path: str):
+    return json.loads((ROOT / path).read_text(encoding="utf-8"))
+
+
+def test_master_and_research_coverage_are_complete():
+    result = AUDIT.run_audit(write_reports=False)
+    assert result["research_coverage"] == {"covered": 20, "target": 20}
+    assert result["category_metrics"]["music"]["research"] == 11
+    assert result["category_metrics"]["fine_arts"]["research"] == 9
+
+
+def test_verified_data_is_reported_separately():
+    result = AUDIT.run_audit(write_reports=False)
+    assert result["verified_data_coverage"] == {"covered": 17, "target": 20}
+    assert result["category_metrics"]["music"]["verified_data"] == 8
+    assert result["category_metrics"]["fine_arts"]["verified_data"] == 9
+
+
+def test_every_unit_has_terminal_status_and_no_deeper_review():
+    research = load("data/checkpoints/specialized_institutions_coverage_02_research.json")
+    assert len(research["institutions"]) == 20
+    assert all(row["final_status"] in AUDIT.FINAL_STATUSES for row in research["institutions"])
+    assert research["status_counts"]["NEEDS_DEEPER_REVIEW"] == 0
+
+
+def test_taxonomy_contains_required_music_and_fine_arts_terms():
+    taxonomy = load("data/seeds/specialized_competition_taxonomy_02.json")
+    assert AUDIT.REQUIRED_MUSIC_TAXONOMY <= set(taxonomy["music"])
+    assert AUDIT.REQUIRED_FINE_ARTS_TAXONOMY <= set(taxonomy["fine_arts"])
+    assert set(taxonomy["allowed_event_types"]) == AUDIT.ALLOWED_EVENT_TYPES
+
+
+def test_final_audit_has_no_failures():
+    result = AUDIT.run_audit(write_reports=False)
+    assert result["summary"]["FAIL"] == 0
+    assert result["summary"]["PASS"] >= 20
+
+
+def test_manual_qa_meets_both_category_thresholds():
+    qa = load("data/reports/specialized_institutions_coverage_02_qa.json")
+    assert qa["sample_size"] >= 20
+    assert qa["category_counts"]["music"] >= 10
+    assert qa["category_counts"]["fine_arts"] >= 10
+    assert qa["summary"] == {"PASS": qa["sample_size"], "FAIL": 0, "UNCERTAIN": 0}
+
+
+def test_importer_is_idempotent():
+    result = load("data/reports/specialized_institutions_coverage_02_idempotency.json")
+    assert result["passed"] is True
+    assert result["before"] == result["after"]
+    assert result["second_run_stats"] == {}

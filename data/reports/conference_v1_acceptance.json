@@ -1,0 +1,478 @@
+{
+  "generated_at": "2026-09-06T04:54:28+00:00",
+  "database": "data/v02.sqlite",
+  "stage": "Academic Conference V1",
+  "A_source_map": {
+    "entries": [
+      {
+        "name": "中国科协年度重要学术会议指南/目录",
+        "category": "中国科协来源",
+        "type": "cast_official_directory",
+        "collectable": true,
+        "structured_list": "按年发布目录/附件（PDF/Excel/HTML 因年而异）",
+        "needs_manual": true,
+        "authority_level": "S",
+        "url": "https://www.cast.org.cn/",
+        "notes": "可作为国内学术会议 Series 名单的权威种子来源；附件需逐年核对。"
+      },
+      {
+        "name": "中国科协官网学会学术活动信息",
+        "category": "中国科协来源",
+        "type": "association_official_notice",
+        "collectable": true,
+        "structured_list": false,
+        "needs_manual": true,
+        "authority_level": "A",
+        "url": "https://cms.cast.org.cn/",
+        "notes": "发布全国学会年会动态，可作交叉佐证，不替代学会官方会议页。"
+      },
+      {
+        "name": "中国计算机学会（CCF）",
+        "category": "全国学会来源",
+        "type": "national_society_official_meeting_page",
+        "collectable": true,
+        "structured_list": "CNCC/HPC China 等官方页面为 HTML；部分新闻页结构不稳定",
+        "needs_manual": true,
+        "authority_level": "S",
+        "url": "https://www.ccf.org.cn/",
+        "notes": "CCF 及专委会页面是 CS/AI/数据库/多媒体方向首选来源。"
+      },
+      {
+        "name": "CCF 专业委员会会议专题页",
+        "category": "专业委员会来源",
+        "type": "subcommittee_official",
+        "collectable": true,
+        "structured_list": false,
+        "needs_manual": true,
+        "authority_level": "S",
+        "url": "https://tc.ccf.org.cn/",
+        "notes": "例如数据库专委会 tcdb、多媒体专委会 tcmt/tcmm 等页面。"
+      },
+      {
+        "name": "中国人工智能学会（CAAI）",
+        "category": "全国学会来源",
+        "type": "national_society_official_meeting_page",
+        "collectable": true,
+        "structured_list": false,
+        "needs_manual": true,
+        "authority_level": "S",
+        "url": "https://www.caai.cn/",
+        "notes": "CIIS/GAITC/CCAI 等会议官方页均托管于 caai.cn。"
+      },
+      {
+        "name": "中国自动化学会（CAA）/ 中国自动化大会",
+        "category": "全国学会来源",
+        "type": "national_society_official_meeting_page",
+        "collectable": true,
+        "structured_list": false,
+        "needs_manual": true,
+        "authority_level": "S",
+        "url": "http://www.cac.org.cn/",
+        "notes": "CAC 官网承载历届大会信息。"
+      },
+      {
+        "name": "中国图象图形学学会（CSIG）",
+        "category": "全国学会来源",
+        "type": "national_society_official_meeting_page",
+        "collectable": true,
+        "structured_list": false,
+        "needs_manual": true,
+        "authority_level": "S",
+        "url": "https://www.csig.org.cn/",
+        "notes": "PRCV/ChinaMM 等会议常由 CSIG 与 CCF/CAAI 联合主办。"
+      },
+      {
+        "name": "中国数学会",
+        "category": "全国学会来源",
+        "type": "national_society_official_meeting_page",
+        "collectable": true,
+        "structured_list": false,
+        "needs_manual": true,
+        "authority_level": "S",
+        "url": "https://www.cms.org.cn/",
+        "notes": "学术年会通知页含时间地点承办方。"
+      },
+      {
+        "name": "中国物理学会",
+        "category": "全国学会来源",
+        "type": "national_society_official_meeting_page",
+        "collectable": true,
+        "structured_list": false,
+        "needs_manual": true,
+        "authority_level": "S",
+        "url": "http://www.cps-net.org.cn/",
+        "notes": "秋季学术会议每年独立官网（scimeeting 等）。"
+      },
+      {
+        "name": "中国化学会",
+        "category": "全国学会来源",
+        "type": "national_society_official_meeting_page",
+        "collectable": true,
+        "structured_list": "年会页面集中管理分会信息",
+        "needs_manual": true,
+        "authority_level": "S",
+        "url": "https://www.chemsoc.org.cn/",
+        "notes": "学术年会（annual meeting）页面为权威入口。"
+      },
+      {
+        "name": "中国电子学会（CIE）",
+        "category": "全国学会来源",
+        "type": "national_society_official_meeting_page",
+        "collectable": true,
+        "structured_list": false,
+        "needs_manual": true,
+        "authority_level": "S",
+        "url": "https://www.cie.org.cn/",
+        "notes": "中国电子信息年会官网 ceic.cie.org.cn。"
+      },
+      {
+        "name": "中国材料研究学会",
+        "category": "全国学会来源",
+        "type": "national_society_official_meeting_page",
+        "collectable": true,
+        "structured_list": false,
+        "needs_manual": true,
+        "authority_level": "S",
+        "url": "https://www.cts-cmrs.org/",
+        "notes": "中国材料大会官网信息发布；第三方日期不一致时以学会官网为准并留痕。"
+      },
+      {
+        "name": "中国力学学会",
+        "category": "全国学会来源",
+        "type": "national_society_official_meeting_page",
+        "collectable": true,
+        "structured_list": false,
+        "needs_manual": true,
+        "authority_level": "S",
+        "url": "https://www.cstam.org.cn/",
+        "notes": "中国力学大会每届独立会议站。"
+      },
+      {
+        "name": "中国天文学会",
+        "category": "全国学会来源",
+        "type": "national_society_official_meeting_page",
+        "collectable": true,
+        "structured_list": false,
+        "needs_manual": true,
+        "authority_level": "S",
+        "url": "https://2025casmeeting.casconf.cn",
+        "notes": "学术年会独立会议站（casconf.cn）。"
+      },
+      {
+        "name": "中国管理现代化研究会",
+        "category": "全国学会来源",
+        "type": "national_society_official_meeting_page",
+        "collectable": true,
+        "structured_list": false,
+        "needs_manual": true,
+        "authority_level": "S",
+        "url": "http://www.camchina.org.cn/",
+        "notes": "中国管理学年会官方动态发布页。"
+      },
+      {
+        "name": "中国系统工程学会信息系统工程专业委员会（CNAIS）",
+        "category": "专业委员会来源",
+        "type": "subcommittee_official",
+        "collectable": true,
+        "structured_list": false,
+        "needs_manual": true,
+        "authority_level": "S",
+        "url": "https://cnais.sem.tsinghua.edu.cn/",
+        "notes": "网站由清华经管承载，发布年会通知与议程。"
+      },
+      {
+        "name": "中国经济学年会（秘书处/中国经济学教育科研网）",
+        "category": "全国学会来源",
+        "type": "organizer_official",
+        "collectable": true,
+        "structured_list": false,
+        "needs_manual": true,
+        "authority_level": "A",
+        "url": "http://www.efnchina.com/",
+        "notes": "年会动态官方发布渠道。"
+      },
+      {
+        "name": "中国金融学年会（理事会/中国金融研究网）",
+        "category": "全国学会来源",
+        "type": "organizer_official",
+        "collectable": true,
+        "structured_list": false,
+        "needs_manual": true,
+        "authority_level": "A",
+        "url": "https://www.cfrn.com.cn/",
+        "notes": "年会公告官方转载渠道；承办高校页面为 B 级补充。"
+      },
+      {
+        "name": "中国新闻史学会",
+        "category": "全国学会来源",
+        "type": "university_official",
+        "collectable": false,
+        "structured_list": false,
+        "needs_manual": true,
+        "authority_level": "B",
+        "url": null,
+        "notes": "暂未发现长期可采集的学会会议专题页；承办高校页面（B）+ 媒体（C）仅可发现/佐证，会议身份待补 S/A 来源。"
+      },
+      {
+        "name": "IEEE / IEEE Computer Society / IEEE RAS / IEEE SPS",
+        "category": "国际组织来源",
+        "type": "international_professional_org",
+        "collectable": true,
+        "structured_list": "conference calendar 结构较好；每届独立站",
+        "needs_manual": false,
+        "authority_level": "S",
+        "url": "https://www.ieee.org/",
+        "notes": "CVPR/ICRA/ICASSP/ISCA(S&P)/MICRO 等 IEEE 会议官方入口。"
+      },
+      {
+        "name": "ACM 及各 SIG",
+        "category": "国际组织来源",
+        "type": "international_professional_org",
+        "collectable": true,
+        "structured_list": "SIG 会议页面较稳定；每届独立站",
+        "needs_manual": false,
+        "authority_level": "S",
+        "url": "https://www.acm.org/",
+        "notes": "KDD/SIGIR/SIGMOD/SIGCOMM/CHI/CCS 等官方来源。"
+      },
+      {
+        "name": "USENIX Association",
+        "category": "国际组织来源",
+        "type": "international_professional_org",
+        "collectable": true,
+        "structured_list": "会议/CFP 页面结构良好",
+        "needs_manual": false,
+        "authority_level": "S",
+        "url": "https://www.usenix.org/",
+        "notes": "USENIX Security/OSDI 等官方来源。"
+      },
+      {
+        "name": "会议官方独立站（NeurIPS/ICML/ICLR/ECCV/NDSS 等）",
+        "category": "国际组织来源",
+        "type": "conference_official_site",
+        "collectable": true,
+        "structured_list": false,
+        "needs_manual": false,
+        "authority_level": "S",
+        "url": "https://neurips.cc/",
+        "notes": "各届 Dates/CFP/Registration 页面是 Edition 生命周期字段主来源。"
+      },
+      {
+        "name": "Association for Computational Linguistics / ISCA(语音)",
+        "category": "国际组织来源",
+        "type": "international_professional_org",
+        "collectable": true,
+        "structured_list": false,
+        "needs_manual": false,
+        "authority_level": "S",
+        "url": "https://www.aclweb.org/",
+        "notes": "ACL/EMNLP/NAACL/Interspeech 等语言与语音会议。"
+      },
+      {
+        "name": "AAAI / IJCAI",
+        "category": "国际组织来源",
+        "type": "international_professional_org",
+        "collectable": true,
+        "structured_list": false,
+        "needs_manual": false,
+        "authority_level": "S",
+        "url": "https://aaai.org/",
+        "notes": "AAAI/IJCAI 官方会议页。"
+      },
+      {
+        "name": "The CVF / ECVA（视觉会议体系）",
+        "category": "国际组织来源",
+        "type": "international_professional_org",
+        "collectable": true,
+        "structured_list": false,
+        "needs_manual": false,
+        "authority_level": "S",
+        "url": "https://cvpr.thecvf.com/",
+        "notes": "CVPR/ICCV/ECCV 官方站点。"
+      },
+      {
+        "name": "Internet Society / NDSS Symposium",
+        "category": "国际组织来源",
+        "type": "conference_official_site",
+        "collectable": true,
+        "structured_list": false,
+        "needs_manual": false,
+        "authority_level": "S",
+        "url": "https://www.ndss-symposium.org/",
+        "notes": "NDSS 官方站。"
+      },
+      {
+        "name": "985/211 高校及学院官网会议通知",
+        "category": "高校补充来源",
+        "type": "university_official",
+        "collectable": true,
+        "structured_list": false,
+        "needs_manual": true,
+        "authority_level": "B",
+        "url": null,
+        "notes": "可证明承办/协办/校内通知，不能单独验证会议身份；示范：nankai.edu.cn、hit.edu.cn、hrbeu.edu.cn、bit.edu.cn、cufe.edu.cn。"
+      },
+      {
+        "name": "权威媒体转载（人民网/新华社/科学网等）",
+        "category": "第三方Discovery来源",
+        "type": "third_party_directory",
+        "collectable": true,
+        "structured_list": false,
+        "needs_manual": true,
+        "authority_level": "C",
+        "url": "http://cq.people.com.cn/",
+        "notes": "仅作发现线索与交叉佐证，不能作为身份来源。"
+      },
+      {
+        "name": "商业会议平台 / EI 会议推荐站",
+        "category": "第三方Discovery来源",
+        "type": "commercial_conference_platform",
+        "collectable": true,
+        "structured_list": true,
+        "needs_manual": true,
+        "authority_level": "C",
+        "url": null,
+        "notes": "只允许进入 conference_discovery_candidates；内容须与官方交叉核验，高风险“EI 检索”声明一律按 organizer_claimed 处理。"
+      },
+      {
+        "name": "社区会议日历（CCFDDL / AI Conference Deadlines 等）",
+        "category": "第三方Discovery来源",
+        "type": "conference_aggregator",
+        "collectable": true,
+        "structured_list": true,
+        "needs_manual": false,
+        "authority_level": "C",
+        "url": "https://github.com/ccfddl/ccf-deadlines",
+        "notes": "可用作候选召回与截止提醒参考，但身份与截止必须以官方站为准。"
+      }
+    ]
+  },
+  "B_conference_series": {
+    "total": 65,
+    "china": 20,
+    "international": 45,
+    "by_discipline": {
+      "computer_science": {
+        "name_en": "Computer Science",
+        "name_zh": "计算机科学",
+        "count": 35
+      },
+      "artificial_intelligence": {
+        "name_en": "Artificial Intelligence",
+        "name_zh": "人工智能",
+        "count": 10
+      },
+      "data_science": {
+        "name_en": "Data Science",
+        "name_zh": "数据科学",
+        "count": 3
+      },
+      "engineering": {
+        "name_en": "Engineering",
+        "name_zh": "工程技术",
+        "count": 8
+      },
+      "journalism_communication": {
+        "name_en": "Journalism & Communication",
+        "name_zh": "新闻传播学",
+        "count": 1
+      },
+      "management": {
+        "name_en": "Management Science",
+        "name_zh": "管理科学",
+        "count": 2
+      },
+      "economics": {
+        "name_en": "Economics",
+        "name_zh": "经济学",
+        "count": 2
+      },
+      "natural_sciences": {
+        "name_en": "Natural Sciences",
+        "name_zh": "自然科学",
+        "count": 4
+      }
+    },
+    "with_official_source": 64,
+    "without_official_source": 1,
+    "duplicate": 0,
+    "pending": 1,
+    "authority_status": {
+      "authority_confirmed": 2,
+      "pending_verification": 1,
+      "verified_official": 62
+    },
+    "needs_review": 1
+  },
+  "C_conference_editions": {
+    "total": 32,
+    "year_2026": 27,
+    "year_2025": 5,
+    "has_cfp": 3,
+    "has_paper_deadline": 1,
+    "has_registration_deadline": 1,
+    "has_dates": 32,
+    "has_location": 32,
+    "authority_status": {
+      "authority_confirmed": 3,
+      "verified_official": 29
+    },
+    "indexing_claim_status": {
+      "unknown": 32
+    },
+    "publication_status": {
+      "unknown": 32
+    }
+  },
+  "D_source_quality": {
+    "S": 85,
+    "A": 5,
+    "university_secondary_B": 5,
+    "third_party_discovery_C": 1,
+    "registry_entries": 31
+  },
+  "E_risk_and_review": {
+    "series_risk_flags": {
+      "official_site_missing": 1
+    },
+    "edition_risk_flags": {},
+    "candidate_risk_flags": {},
+    "candidates_total": 0,
+    "no_forced_deletion": true
+  },
+  "provenance_and_relations": {
+    "conference_sources_total": 96,
+    "conference_organizations_links": 79,
+    "school_conferences_total": 6,
+    "controlled_indexing_statuses": [
+      "organizer_claimed",
+      "publisher_confirmed",
+      "database_confirmed",
+      "historical_indexed",
+      "unknown"
+    ],
+    "controlled_publication_statuses": [
+      "planned",
+      "confirmed",
+      "published",
+      "indexed",
+      "unknown"
+    ],
+    "indexing_claim_unverified_handling": "官网/第三方声明仅按 organizer_claimed 保存，不升级为 database_confirmed/indexed。"
+  },
+  "completion_criteria": {
+    "source_map_done": true,
+    "conference_series_models_usable": true,
+    "conference_edition_models_usable": true,
+    "school_conference_usable": true,
+    "series_seed_count_in_range": true,
+    "real_editions_target_met": true,
+    "real_editions_total": 32,
+    "source_provenance_traceable": true,
+    "ei_claim_not_shown_as_confirmed": true,
+    "university_source_does_not_verify_identity": true,
+    "no_frontend_built": true,
+    "no_low_quality_bulk_import": true,
+    "tests_passed": true
+  }
+}

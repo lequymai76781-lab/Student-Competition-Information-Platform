@@ -1,0 +1,65 @@
+from __future__ import annotations
+
+import sys
+from datetime import datetime, timezone
+
+from sqlalchemy import select
+
+from app.database.session import SessionLocal
+from app.models import Competition, University
+from app.services.university_radar_discovery_service import UniversityRadarDiscoveryService
+
+
+log = open(r"D:\Python\xuesheng\tmp\v082_diag.log", "a", encoding="utf-8")
+
+
+def p(value: object) -> None:
+    print(value, flush=True)
+    log.write(f"{value}\n")
+    log.flush()
+
+
+p("starting")
+db = SessionLocal()
+u = db.get(University, 100)
+p(f"university={u.name}")
+comps = list(db.execute(select(Competition).where(Competition.is_demo.is_(False), Competition.is_competition.is_(True))).scalars())
+service = UniversityRadarDiscoveryService()
+service._search_multi = lambda *args, **kwargs: ([], None)
+service._search_sogou = lambda *args, **kwargs: ([], None)
+
+orig_fetch = service._fetch
+counter = [0]
+
+
+def tracked_fetch(url: str, funnel):
+    counter[0] += 1
+    p(f"FETCH {counter[0]} {url}")
+    return orig_fetch(url, funnel)
+
+
+service._fetch = tracked_fetch
+row = {
+    "name": u.name,
+    "short_name": u.short_name,
+    "aliases": u.aliases or [],
+    "official_domain": u.official_domain,
+    "official_website": u.official_website,
+}
+p("building matcher")
+matcher = service._build_matcher(db, comps)
+p(f"matcher={len(matcher)}")
+reverse_names = service._reverse_search_names(db)
+p(f"reverse={len(reverse_names)}")
+p("calling discover_university")
+result = service._discover_university(
+    row,
+    "diag",
+    matcher,
+    reverse_names,
+    datetime.now(timezone.utc),
+)
+p(f"done status={result['report']['status']} leads={len(result['leads'])}")
+service.close()
+db.close()
+p("finished")

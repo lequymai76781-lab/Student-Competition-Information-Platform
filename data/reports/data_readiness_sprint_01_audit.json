@@ -1,0 +1,255 @@
+{
+  "batch": "DATA_READINESS_SPRINT_01",
+  "generated_at": "2026-09-14T04:34:02.000179+00:00",
+  "decision": "FRONTEND_READY",
+  "frontend_ready": true,
+  "blockers": [],
+  "recognition": {
+    "current": 223,
+    "current_schools": 7,
+    "current_documents": 7,
+    "historical": 38,
+    "historical_schools": 4,
+    "carry_over_candidates": 48,
+    "unresolved": 0,
+    "status": "PARTIAL",
+    "shippable": true,
+    "latest": "2026-09-01T00:00:00+00:00"
+  },
+  "deadlines": {
+    "actionable_future": 21,
+    "registration": 20,
+    "submission": 1,
+    "official": 7,
+    "school_or_college": 14,
+    "open_registration": 15,
+    "open_registration_source_urls": 14,
+    "trusted_source_urls": 20,
+    "within_days": {
+      "30": 18,
+      "60": 21,
+      "90": 21
+    },
+    "latest": "2026-09-13T14:12:54.626158+00:00"
+  },
+  "recent_updates": {
+    "count_30_days": 48,
+    "trusted_source_urls": 26,
+    "derivation": "competition_fact_revisions",
+    "latest": "2026-09-05T14:47:43.059830+00:00"
+  },
+  "conferences": {
+    "series_total": 206,
+    "series_with_website": 205,
+    "future_verified": 38,
+    "cfp_url_count": 3,
+    "edition_submission_deadlines": 2,
+    "opportunity_deadlines": 4,
+    "future_submission_deadlines": 1,
+    "future_submission_within_days": {
+      "30": 1,
+      "60": 1,
+      "90": 1
+    },
+    "ccf_classified_series": 36,
+    "trusted_source_urls": 38,
+    "latest": "2026-09-06T11:42:55.961731+00:00"
+  },
+  "homepage_sections": {
+    "current_recognitions": {
+      "status": "PARTIAL",
+      "shippable": true,
+      "record_count": 223,
+      "verified_count": 223,
+      "threshold": 10,
+      "reason": "7 所高校、223 条当前认定；达到可上线下限，未达到 10 所 READY 目标。",
+      "last_updated_at": "2026-09-01T00:00:00Z",
+      "metrics": {
+        "school_count": 7,
+        "shippable_school_threshold": 7
+      }
+    },
+    "open_registrations": {
+      "status": "READY",
+      "shippable": true,
+      "record_count": 15,
+      "verified_count": 15,
+      "threshold": 10,
+      "reason": "只计 current_status=registration_open 且截止时间仍在未来的已核验节点。",
+      "last_updated_at": "2026-09-13T14:12:54.626158Z",
+      "metrics": {
+        "unique_competitions": 11
+      }
+    },
+    "upcoming_deadlines": {
+      "status": "READY",
+      "shippable": true,
+      "record_count": 21,
+      "verified_count": 21,
+      "threshold": 20,
+      "reason": "7 条官方节点、14 条校级/院级节点，均保留来源层级。",
+      "last_updated_at": "2026-09-13T14:12:54.626158Z",
+      "metrics": {
+        "official_nodes": 7,
+        "school_nodes": 14
+      }
+    },
+    "recent_updates": {
+      "status": "READY",
+      "shippable": true,
+      "record_count": 48,
+      "verified_count": 48,
+      "threshold": 10,
+      "reason": "由已核验事实修订记录实时派生；同一赛事、届次、字段只保留最新一条。",
+      "last_updated_at": "2026-09-05T14:47:43.059830Z",
+      "metrics": {
+        "window_days": 30,
+        "dedupe_key": "competition+edition+field"
+      }
+    },
+    "conferences": {
+      "status": "READY",
+      "shippable": true,
+      "record_count": 38,
+      "verified_count": 38,
+      "threshold": 10,
+      "reason": "基础近期会议浏览已可用；投稿机会单独计数，不把会议日期冒充投稿截止。",
+      "last_updated_at": "2026-09-06T11:42:55.961731Z",
+      "metrics": {
+        "future_submission_opportunities": 1
+      }
+    }
+  },
+  "quality_summary": {
+    "pass": 18,
+    "warn": 2,
+    "fail": 0
+  },
+  "checks": [
+    {
+      "rule_id": "recognition_shippable_coverage",
+      "description": "Current Recognition 至少覆盖 7 所高校",
+      "status": "pass",
+      "detail": {
+        "schools": 7,
+        "recognitions": 223
+      }
+    },
+    {
+      "rule_id": "recognition_ready_target",
+      "description": "Current Recognition 达到 10 所 READY 目标",
+      "status": "warn",
+      "detail": {
+        "schools": 7
+      }
+    },
+    {
+      "rule_id": "recognition_unresolved",
+      "description": "Recognition Batch 01 遗留候选已逐条处置",
+      "status": "pass",
+      "detail": 0
+    },
+    {
+      "rule_id": "open_registration_gate",
+      "description": "开放报名已核验节点至少 10 条",
+      "status": "pass",
+      "detail": 15
+    },
+    {
+      "rule_id": "future_deadline_gate",
+      "description": "未来可行动截止节点至少 20 条",
+      "status": "pass",
+      "detail": 21
+    },
+    {
+      "rule_id": "recent_update_gate",
+      "description": "近 30 天真实变更至少 10 条",
+      "status": "pass",
+      "detail": 48
+    },
+    {
+      "rule_id": "conference_browse_gate",
+      "description": "未来已核验会议至少 3 场",
+      "status": "pass",
+      "detail": 38
+    },
+    {
+      "rule_id": "conference_submission_depth",
+      "description": "未来会议投稿截止足以形成复杂截稿模块",
+      "status": "warn",
+      "detail": 1
+    },
+    {
+      "rule_id": "orphan_relations",
+      "description": "首页相关核心关系不存在孤儿记录",
+      "status": "pass",
+      "detail": 0
+    },
+    {
+      "rule_id": "duplicate_competitions",
+      "description": "无精确同名重复赛事实体",
+      "status": "pass",
+      "detail": 0
+    },
+    {
+      "rule_id": "duplicate_recognitions",
+      "description": "无重复 Recognition 证据键",
+      "status": "pass",
+      "detail": 0
+    },
+    {
+      "rule_id": "recognition_document_school_match",
+      "description": "Recognition 高校与证据文件高校一致",
+      "status": "pass",
+      "detail": 0
+    },
+    {
+      "rule_id": "current_recognition_source_urls",
+      "description": "Current Recognition 均有证据 URL",
+      "status": "pass",
+      "detail": 0
+    },
+    {
+      "rule_id": "deadline_source_urls",
+      "description": "未来截止节点均有证据 URL",
+      "status": "pass",
+      "detail": 20
+    },
+    {
+      "rule_id": "recent_update_source_urls",
+      "description": "最近更新均有证据 URL",
+      "status": "pass",
+      "detail": 26
+    },
+    {
+      "rule_id": "conference_source_urls",
+      "description": "近期会议均有官网或证据 URL",
+      "status": "pass",
+      "detail": 38
+    },
+    {
+      "rule_id": "campus_later_than_national",
+      "description": "校内截止不晚于全国截止",
+      "status": "pass",
+      "detail": 0
+    },
+    {
+      "rule_id": "stale_cross_year_deadlines",
+      "description": "历史届次未复制 2026 截止时间",
+      "status": "pass",
+      "detail": 0
+    },
+    {
+      "rule_id": "recognition_evidence_semantics",
+      "description": "通知/参赛新闻未误升为 Recognition",
+      "status": "pass",
+      "detail": 0
+    },
+    {
+      "rule_id": "frontend_ready",
+      "description": "首页最低数据产品条件全部满足",
+      "status": "pass",
+      "detail": []
+    }
+  ]
+}

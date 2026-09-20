@@ -1,0 +1,45 @@
+{
+  "task": "GENERAL_UNDERGRADUATE_DISCOVERY_FIX_01_REAL_RETEST",
+  "captured_at": "2026-09-15",
+  "note": "Twelve non-Gold schools from the original Batch A; live search URLs, no expected-answer labels.",
+  "schools": [
+    {"school": "上海理工大学", "official_domain": "usst.edu.cn", "results": [
+      {"title": "上海理工大学学生创新创业竞赛资助与奖励办法（试行）", "url": "https://cxcy.usst.edu.cn/_upload/article/files/92/5b/3c0149384370b073e0f71307f9c2/9c234a05-49e1-41b3-b6d8-82288250e525.pdf"}
+    ]},
+    {"school": "新疆师范大学", "official_domain": "xjnu.edu.cn", "results": [
+      {"title": "新疆师范大学教务处2023-2024学年第二学期第8周工作日程安排表", "url": "https://www.xjnu.edu.cn/_mediafile/jxsf/_upload/article/files/61/cb/7c08952b4b62a8b5d1880a2280f4/a6ceb0aa-8ee5-4e42-a00b-66f8302019f5.pdf"}
+    ]},
+    {"school": "天津师范大学", "official_domain": "tjnu.edu.cn", "results": [
+      {"title": "天津师范大学本科生学科竞赛资助管理办法", "url": "https://tykx.tjnu.edu.cn/__local/F/0F/B4/9FBDCFD245FC5A28DF79E94CEBF_48D8F772_B1E92.pdf?e=.pdf"}
+    ]},
+    {"school": "山西师范大学", "official_domain": "sxnu.edu.cn", "results": [
+      {"title": "山西师范大学本科生学科竞赛实施办法", "url": "https://sjxy.sxnu.edu.cn/info/1070/1713.htm"}
+    ]},
+    {"school": "内蒙古师范大学", "official_domain": "imnu.edu.cn", "results": [
+      {"title": "计算机科学与技术专业人才培养方案", "url": "https://cs.imnu.edu.cn/__local/C/B3/77/711FFC8B12A0858C80CBA8246B2_EA206052_C2D31.pdf?e=.pdf"}
+    ]},
+    {"school": "东北财经大学", "official_domain": "dufe.edu.cn", "results": [
+      {"title": "东北财经大学大学生创新创业竞赛管理办法", "url": "https://xxgk.dufe.edu.cn/content_83943.html"},
+      {"title": "东财学子高频参与赛事名录", "url": "https://ies.dufe.edu.cn/content_86927.html"}
+    ]},
+    {"school": "长春理工大学", "official_domain": "cust.edu.cn", "results": [
+      {"title": "长春理工大学本科生学科竞赛管理办法", "url": "https://sls.cust.edu.cn/docs/2020-04/20200413162614115837.pdf"}
+    ]},
+    {"school": "黑龙江大学", "official_domain": "hlju.edu.cn", "results": [
+      {"title": "黑龙江大学大学生创新创业竞赛管理办法", "url": "https://wkzx.hlju.edu.cn/nr.jsp?urltype=news.NewsContentUrl&wbnewsid=2648&wbtreeid=1524"}
+    ]},
+    {"school": "安徽师范大学", "official_domain": "ahnu.edu.cn", "results": [
+      {"title": "关于更新《安徽师范大学学科竞赛分类导向型项目库》的通知", "url": "https://gs.ahnu.edu.cn/info/1010/15489.htm"},
+      {"title": "安徽师范大学教学业绩认定和奖励办法", "url": "https://tao.ahnu.edu.cn/__local/6/38/EA/01315916D8AA8EE6ADEF298945E_0010CDA7_1E23F50.pdf"}
+    ]},
+    {"school": "福建师范大学", "official_domain": "fjnu.edu.cn", "results": [
+      {"title": "关于举办2026年福建省大学生环境与资源创新创意大赛的通知", "url": "https://jwc.fjnu.edu.cn/c1/67/c9107a442727/page.htm"}
+    ]},
+    {"school": "江西师范大学", "official_domain": "jxnu.edu.cn", "results": [
+      {"title": "学位授予和人才培养学科目录设置与管理办法", "url": "https://graduate.jxnu.edu.cn/2012/1120/c5827a141690/page.htm"}
+    ]},
+    {"school": "山东师范大学", "official_domain": "sdnu.edu.cn", "results": [
+      {"title": "山东师范大学学生创新创业实践成果奖励办法及高水平学科竞赛名单", "url": "https://www.xiaoban.sdnu.edu.cn/__local/F/11/80/93CACF810AF13DFBF29AD9B5B0B_52670459_3740F.pdf"}
+    ]}
+  ]
+}

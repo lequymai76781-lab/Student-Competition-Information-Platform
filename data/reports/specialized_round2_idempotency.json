@@ -1,0 +1,17 @@
+{
+  "task": "SPECIALIZED_INSTITUTIONS_COVERAGE_01",
+  "checked_at": "2026-09-14T15:09:19.721385+00:00",
+  "passed": true,
+  "semantic_digest_before": "bbb025459c8e0918b6ae4e677ec52bbdf31b2f8896158f932dec73624c570f8b",
+  "semantic_digest_after": "bbb025459c8e0918b6ae4e677ec52bbdf31b2f8896158f932dec73624c570f8b",
+  "importer_stats": {
+    "competition_created": 0,
+    "competition_updated": 0,
+    "edition_created": 0,
+    "relation_created": 0,
+    "recognition_created": 0,
+    "policy_created": 0,
+    "source_created": 0,
+    "fact_created": 0
+  }
+}

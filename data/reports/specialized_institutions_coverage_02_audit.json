@@ -1,0 +1,591 @@
+{
+  "task": "SPECIALIZED_INSTITUTIONS_COVERAGE_02",
+  "generated_at": "2026-09-15T00:59:46.813223+00:00",
+  "summary": {
+    "PASS": 27,
+    "FAIL": 0
+  },
+  "research_coverage": {
+    "covered": 20,
+    "target": 20
+  },
+  "verified_data_coverage": {
+    "covered": 17,
+    "target": 20
+  },
+  "final_status_counts": {
+    "ACCESS_LIMITED": 3,
+    "AMBIGUOUS": 0,
+    "NEEDS_DEEPER_REVIEW": 0,
+    "VERIFIED_DATA": 17,
+    "VERIFIED_NO_PUBLIC_DATA": 0
+  },
+  "category_metrics": {
+    "music": {
+      "target": 11,
+      "research": 11,
+      "verified_data": 8,
+      "verified_no_public_data": 0,
+      "access_limited": 3,
+      "ambiguous": 0,
+      "needs_deeper_review": 0
+    },
+    "fine_arts": {
+      "target": 9,
+      "research": 9,
+      "verified_data": 9,
+      "verified_no_public_data": 0,
+      "access_limited": 0,
+      "ambiguous": 0,
+      "needs_deeper_review": 0
+    }
+  },
+  "database_additions": {
+    "universities": 18,
+    "colleges": 4,
+    "competitions": 6,
+    "recognition": 2,
+    "notification": 5,
+    "participation": 14,
+    "professional_reference": 17,
+    "college_scope": 5,
+    "sources": 21
+  },
+  "new_competitions": [
+    "Young·绒—中国创新创意设计大赛",
+    "“到延安去·三秦学子圣地行”主题文创设计大赛",
+    "“学院杯”中国室内与环境设计大赛",
+    "中国音乐金钟奖",
+    "天津市大学生民族文创设计大赛",
+    "比亚迪全球汽车设计大赛"
+  ],
+  "qa": {
+    "sample_size": 21,
+    "category_counts": {
+      "music": 10,
+      "fine_arts": 11
+    },
+    "summary": {
+      "PASS": 21,
+      "FAIL": 0,
+      "UNCERTAIN": 0
+    }
+  },
+  "checks": [
+    {
+      "name": "master_20_unique",
+      "status": "PASS",
+      "details": 20
+    },
+    {
+      "name": "master_category_split",
+      "status": "PASS",
+      "details": {
+        "music": 11,
+        "fine_arts": 9
+      }
+    },
+    {
+      "name": "all_master_units_p0",
+      "status": "PASS",
+      "details": {
+        "P0": 20
+      }
+    },
+    {
+      "name": "tsinghua_college_scope",
+      "status": "PASS",
+      "details": [
+        {
+          "name": "清华大学美术学院",
+          "official_name": "清华大学美术学院",
+          "university_name": "清华大学",
+          "entity_level": "college",
+          "college_name": "美术学院",
+          "official_url": "https://www.ad.tsinghua.edu.cn/",
+          "category": [
+            "fine_arts"
+          ],
+          "province": "北京",
+          "city": "北京",
+          "institution_type": "综合类高校学院",
+          "priority": "P0",
+          "selection_basis": "综合大学内的学院级核心覆盖单元；不得重复创建大学实体"
+        }
+      ]
+    },
+    {
+      "name": "taxonomy_categories",
+      "status": "PASS",
+      "details": [
+        "music",
+        "fine_arts"
+      ]
+    },
+    {
+      "name": "music_taxonomy_complete",
+      "status": "PASS",
+      "details": 17
+    },
+    {
+      "name": "fine_arts_taxonomy_complete",
+      "status": "PASS",
+      "details": 19
+    },
+    {
+      "name": "taxonomy_event_types",
+      "status": "PASS",
+      "details": [
+        "competition",
+        "festival",
+        "showcase",
+        "exhibition",
+        "call_for_works",
+        "award",
+        "forum",
+        "conference"
+      ]
+    },
+    {
+      "name": "research_coverage_100",
+      "status": "PASS",
+      "details": 20
+    },
+    {
+      "name": "terminal_status_complete",
+      "status": "PASS",
+      "details": {
+        "invalid": {},
+        "counts": {
+          "VERIFIED_DATA": 17,
+          "ACCESS_LIMITED": 3
+        }
+      }
+    },
+    {
+      "name": "no_not_started_or_deeper_review",
+      "status": "PASS",
+      "details": {
+        "VERIFIED_DATA": 17,
+        "ACCESS_LIMITED": 3
+      }
+    },
+    {
+      "name": "access_limited_has_audit_trail",
+      "status": "PASS",
+      "details": {
+        "中国音乐学院": [
+          5,
+          3
+        ],
+        "武汉音乐学院": [
+          2,
+          4
+        ],
+        "星海音乐学院": [
+          2,
+          4
+        ]
+      }
+    },
+    {
+      "name": "seed_materialization",
+      "status": "PASS",
+      "details": [
+        {
+          "school": "中央音乐学院",
+          "competition": "中国音乐金钟奖",
+          "missing": []
+        },
+        {
+          "school": "上海音乐学院",
+          "competition": "中国音乐金钟奖",
+          "missing": []
+        },
+        {
+          "school": "天津音乐学院",
+          "competition": "中国音乐金钟奖",
+          "missing": []
+        },
+        {
+          "school": "沈阳音乐学院",
+          "competition": "中国音乐金钟奖",
+          "missing": []
+        },
+        {
+          "school": "沈阳音乐学院",
+          "competition": "中国音乐金钟奖",
+          "missing": []
+        },
+        {
+          "school": "四川音乐学院",
+          "competition": "中国音乐金钟奖",
+          "missing": []
+        },
+        {
+          "school": "四川音乐学院",
+          "competition": "中国音乐金钟奖",
+          "missing": []
+        },
+        {
+          "school": "西安音乐学院",
+          "competition": "中国音乐金钟奖",
+          "missing": []
+        },
+        {
+          "school": "浙江音乐学院",
+          "competition": "中国音乐金钟奖",
+          "missing": []
+        },
+        {
+          "school": "哈尔滨音乐学院",
+          "competition": "中国音乐金钟奖",
+          "missing": []
+        },
+        {
+          "school": "中央美术学院",
+          "competition": "中国国际大学生创新大赛",
+          "missing": []
+        },
+        {
+          "school": "中国美术学院",
+          "competition": "“挑战杯”全国大学生课外学术科技作品竞赛",
+          "missing": []
+        },
+        {
+          "school": "清华大学",
+          "competition": "Young·绒—中国创新创意设计大赛",
+          "missing": []
+        },
+        {
+          "school": "清华大学",
+          "competition": "比亚迪全球汽车设计大赛",
+          "missing": []
+        },
+        {
+          "school": "广州美术学院",
+          "competition": "中国国际大学生创新大赛",
+          "missing": []
+        },
+        {
+          "school": "四川美术学院",
+          "competition": "全国大学生工业设计大赛",
+          "missing": []
+        },
+        {
+          "school": "四川美术学院",
+          "competition": "未来设计师·全国高校数字艺术设计大赛",
+          "missing": []
+        },
+        {
+          "school": "西安美术学院",
+          "competition": "“到延安去·三秦学子圣地行”主题文创设计大赛",
+          "missing": []
+        },
+        {
+          "school": "鲁迅美术学院",
+          "competition": "“学院杯”中国室内与环境设计大赛",
+          "missing": []
+        },
+        {
+          "school": "天津美术学院",
+          "competition": "天津市大学生民族文创设计大赛",
+          "missing": []
+        },
+        {
+          "school": "湖北美术学院",
+          "competition": "未来设计师·全国高校数字艺术设计大赛",
+          "missing": []
+        }
+      ]
+    },
+    {
+      "name": "master_entities_materialized",
+      "status": "PASS",
+      "details": [
+        {
+          "name": "中央音乐学院",
+          "university": true,
+          "college": true
+        },
+        {
+          "name": "中国音乐学院",
+          "university": true,
+          "college": true
+        },
+        {
+          "name": "上海音乐学院",
+          "university": true,
+          "college": true
+        },
+        {
+          "name": "天津音乐学院",
+          "university": true,
+          "college": true
+        },
+        {
+          "name": "沈阳音乐学院",
+          "university": true,
+          "college": true
+        },
+        {
+          "name": "武汉音乐学院",
+          "university": true,
+          "college": true
+        },
+        {
+          "name": "四川音乐学院",
+          "university": true,
+          "college": true
+        },
+        {
+          "name": "西安音乐学院",
+          "university": true,
+          "college": true
+        },
+        {
+          "name": "星海音乐学院",
+          "university": true,
+          "college": true
+        },
+        {
+          "name": "浙江音乐学院",
+          "university": true,
+          "college": true
+        },
+        {
+          "name": "哈尔滨音乐学院",
+          "university": true,
+          "college": true
+        },
+        {
+          "name": "中央美术学院",
+          "university": true,
+          "college": true
+        },
+        {
+          "name": "中国美术学院",
+          "university": true,
+          "college": true
+        },
+        {
+          "name": "清华大学美术学院",
+          "university": true,
+          "college": true
+        },
+        {
+          "name": "广州美术学院",
+          "university": true,
+          "college": true
+        },
+        {
+          "name": "四川美术学院",
+          "university": true,
+          "college": true
+        },
+        {
+          "name": "西安美术学院",
+          "university": true,
+          "college": true
+        },
+        {
+          "name": "鲁迅美术学院",
+          "university": true,
+          "college": true
+        },
+        {
+          "name": "天津美术学院",
+          "university": true,
+          "college": true
+        },
+        {
+          "name": "湖北美术学院",
+          "university": true,
+          "college": true
+        }
+      ]
+    },
+    {
+      "name": "no_duplicate_tsinghua_university",
+      "status": "PASS",
+      "details": {
+        "清华大学": 1,
+        "清华大学美术学院": 0
+      }
+    },
+    {
+      "name": "relation_audit",
+      "status": "PASS",
+      "details": {
+        "edition_relations": 19,
+        "recognitions": 2
+      }
+    },
+    {
+      "name": "source_audit",
+      "status": "PASS",
+      "details": 21
+    },
+    {
+      "name": "event_type_audit",
+      "status": "PASS",
+      "details": {
+        "Young·绒—中国创新创意设计大赛": "competition",
+        "“到延安去·三秦学子圣地行”主题文创设计大赛": "competition",
+        "“学院杯”中国室内与环境设计大赛": "competition",
+        "“挑战杯”全国大学生课外学术科技作品竞赛": "competition",
+        "中国国际大学生创新大赛": "competition",
+        "中国音乐金钟奖": "competition",
+        "全国大学生工业设计大赛": "competition",
+        "天津市大学生民族文创设计大赛": "competition",
+        "未来设计师·全国高校数字艺术设计大赛": "competition",
+        "比亚迪全球汽车设计大赛": "competition"
+      }
+    },
+    {
+      "name": "recognition_scope_audit",
+      "status": "PASS",
+      "details": [
+        {
+          "id": 18,
+          "scope": "university"
+        },
+        {
+          "id": 19,
+          "scope": "university"
+        }
+      ]
+    },
+    {
+      "name": "duplicate_competition_audit",
+      "status": "PASS",
+      "details": []
+    },
+    {
+      "name": "edition_dedupe_audit",
+      "status": "PASS",
+      "details": []
+    },
+    {
+      "name": "orphan_audit",
+      "status": "PASS",
+      "details": {
+        "editions_without_competition": 0,
+        "sources_without_competition": 0,
+        "sources_without_edition": 0,
+        "relations_without_university": 0,
+        "relations_without_edition": 0,
+        "recognitions_without_competition": 0,
+        "recognitions_without_policy": 0
+      }
+    },
+    {
+      "name": "previous_34_untouched_by_task",
+      "status": "PASS",
+      "details": []
+    },
+    {
+      "name": "verified_data_matches_database",
+      "status": "PASS",
+      "details": {
+        "archive": [
+          "上海音乐学院",
+          "中国美术学院",
+          "中央美术学院",
+          "中央音乐学院",
+          "哈尔滨音乐学院",
+          "四川美术学院",
+          "四川音乐学院",
+          "天津美术学院",
+          "天津音乐学院",
+          "广州美术学院",
+          "沈阳音乐学院",
+          "浙江音乐学院",
+          "清华大学美术学院",
+          "湖北美术学院",
+          "西安美术学院",
+          "西安音乐学院",
+          "鲁迅美术学院"
+        ],
+        "database": [
+          "上海音乐学院",
+          "中国美术学院",
+          "中央美术学院",
+          "中央音乐学院",
+          "哈尔滨音乐学院",
+          "四川美术学院",
+          "四川音乐学院",
+          "天津美术学院",
+          "天津音乐学院",
+          "广州美术学院",
+          "沈阳音乐学院",
+          "浙江音乐学院",
+          "清华大学美术学院",
+          "湖北美术学院",
+          "西安美术学院",
+          "西安音乐学院",
+          "鲁迅美术学院"
+        ],
+        "difference": []
+      }
+    },
+    {
+      "name": "manual_qa_threshold",
+      "status": "PASS",
+      "details": {
+        "sample_size": 21,
+        "category_counts": {
+          "music": 10,
+          "fine_arts": 11
+        },
+        "summary": {
+          "PASS": 21,
+          "FAIL": 0,
+          "UNCERTAIN": 0
+        }
+      }
+    },
+    {
+      "name": "idempotency",
+      "status": "PASS",
+      "details": {
+        "task": "SPECIALIZED_INSTITUTIONS_COVERAGE_02",
+        "generated_at": "2026-09-15T00:56:48.931208+00:00",
+        "passed": true,
+        "before": {
+          "counts": {
+            "relations": 19,
+            "policies": 2,
+            "sources": 21
+          },
+          "digest": "35176d782dd3a7b247ace59aa467f281c6e2923fdcaba1a9cb9c45120741dddf"
+        },
+        "after": {
+          "counts": {
+            "relations": 19,
+            "policies": 2,
+            "sources": 21
+          },
+          "digest": "35176d782dd3a7b247ace59aa467f281c6e2923fdcaba1a9cb9c45120741dddf"
+        },
+        "second_run_stats": {}
+      }
+    },
+    {
+      "name": "first_import_recorded",
+      "status": "PASS",
+      "details": {
+        "college_created": 4,
+        "competition_created": 6,
+        "competition_filled": 3,
+        "edition_created": 14,
+        "fact_created": 59,
+        "policy_created": 2,
+        "recognition_created": 2,
+        "relation_created": 19,
+        "source_created": 21,
+        "university_created": 18
+      }
+    }
+  ]
+}

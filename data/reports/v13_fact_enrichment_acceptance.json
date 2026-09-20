@@ -1,0 +1,84 @@
+{
+  "round": "v13 field-evidence gradients + batch2 secondary facts",
+  "generated_at": "2026-09-05T14:51:37.463936+00:00",
+  "completeness_deltas": {
+    "has_organizer_pct": {
+      "before": 29.0,
+      "after": 35.0,
+      "delta": 6.0
+    },
+    "has_official_website_pct": {
+      "before": 30.0,
+      "after": 31.0,
+      "delta": 1.0
+    },
+    "has_target_students_pct": {
+      "before": 13.0,
+      "after": 13.0,
+      "delta": 0.0
+    },
+    "has_structured_edition_pct": {
+      "before": 36.0,
+      "after": 39.0,
+      "delta": 3.0
+    },
+    "has_two_recent_pct": {
+      "before": 4.0,
+      "after": 5.0,
+      "delta": 1.0
+    },
+    "has_three_recent_pct": {
+      "before": 3.0,
+      "after": 3.0,
+      "delta": 0.0
+    },
+    "has_current_edition_info_pct": {
+      "before": 18.0,
+      "after": 18.0,
+      "delta": 0.0
+    }
+  },
+  "competition_statuses": {
+    "authority_confirmed": 69,
+    "duplicate": 2,
+    "pending_verification": 24,
+    "school_confirmed": 9,
+    "suspected": 7,
+    "unverified": 1,
+    "verified_official": 31
+  },
+  "edition_statuses": {
+    "pending_verification": 11,
+    "school_confirmed": 31,
+    "unverified": 1,
+    "verified_official": 23
+  },
+  "edition_total": 66,
+  "edition_year_distribution": {
+    "2024": 3,
+    "2025": 7,
+    "2026": 56
+  },
+  "evidence_level_fact_counts": {
+    "null": 109,
+    "D": 44,
+    "LEVEL_1": 85,
+    "LEVEL_2": 45,
+    "LEVEL_3": 330,
+    "LEVEL_5": 67,
+    "S": 128
+  },
+  "secondary_sources_added": 5,
+  "secondary_source_edition_links": 3,
+  "v13_fact_rows": 16,
+  "batch2_summary": {
+    "competitions_touched": 10,
+    "organizer_filled": 6,
+    "official_website_filled_secondary": 1,
+    "editions_created": 4,
+    "editions_updated": 1,
+    "level3_fact_rows_this_round": 16
+  },
+  "evidence_level_note": "CompetitionFactSource.source_level 历史取值混杂（null/S/D/LEVEL_1/LEVEL_2/LEVEL_3/LEVEL_5），仅 v13 本轮写入按 LEVEL_1-4 规范化；历史行保留原值不做批量改写。",
+  "identity_rule_note": "Competition 层 verified_official/authority_confirmed 状态零变化：Level 3 高校来源从未参与赛事身份判定。"
+}

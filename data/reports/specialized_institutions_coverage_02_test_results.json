@@ -1,0 +1,16 @@
+{
+  "task": "SPECIALIZED_INSTITUTIONS_COVERAGE_02",
+  "generated_at": "2026-09-15T09:10:00+08:00",
+  "database_url": "sqlite:///D:/Python/xuesheng/data/v02.sqlite",
+  "targeted_tests": {"collected": 18, "passed": 18, "failed": 0},
+  "backend_pytest": {"collected": 190, "passed": 190, "failed": 0},
+  "data_audit": {"checks": 27, "passed": 27, "failed": 0},
+  "manual_qa": {"samples": 21, "pass": 21, "fail": 0, "uncertain": 0},
+  "idempotency": {
+    "passed": true,
+    "before_digest": "35176d782dd3a7b247ace59aa467f281c6e2923fdcaba1a9cb9c45120741dddf",
+    "after_digest": "35176d782dd3a7b247ace59aa467f281c6e2923fdcaba1a9cb9c45120741dddf",
+    "second_run_stats": {}
+  },
+  "note": "一次从仓库根目录、未显式 DATABASE_URL 的诊断运行误连默认 PostgreSQL，9 项连接型测试失败；显式绑定项目 SQLite 后，同一全量套件 190/190 通过。"
+}

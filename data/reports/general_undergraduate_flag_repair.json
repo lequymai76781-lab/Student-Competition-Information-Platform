@@ -1,0 +1,30 @@
+{
+  "task": "GENERAL_UNDERGRADUATE_DISCOVERY_FIX_01_FLAG_REPAIR",
+  "generated_at": "2026-09-15T10:22:40.558190+00:00",
+  "scope": "general_a only; no Batch B rows",
+  "batch_a_count": 32,
+  "affected_before": 19,
+  "affected_names": [
+    "塔里木大学",
+    "宁夏医科大学",
+    "安徽师范大学",
+    "山东师范大学",
+    "广西师范大学",
+    "昆明理工大学",
+    "江苏大学",
+    "河南师范大学",
+    "浙江工业大学",
+    "海南师范大学",
+    "深圳大学",
+    "湖北大学",
+    "福建师范大学",
+    "西安理工大学",
+    "贵州师范大学",
+    "重庆邮电大学",
+    "长春理工大学",
+    "长沙理工大学",
+    "青海师范大学"
+  ],
+  "double_first_class_true_after": 0,
+  "passed": true
+}

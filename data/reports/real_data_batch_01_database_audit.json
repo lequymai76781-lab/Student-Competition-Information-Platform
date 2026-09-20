@@ -1,0 +1,125 @@
+{
+  "database": "D:\\Python\\xuesheng\\data\\v02.sqlite",
+  "database_bytes": 7839744,
+  "tables": {
+    "_alembic_tmp_competition_leads": 0,
+    "admin_audit_logs": 0,
+    "alembic_version": 1,
+    "beta_feedback": 0,
+    "beta_metrics": 0,
+    "candidate_competitions": 102,
+    "candidate_facts": 593,
+    "colleges": 34,
+    "competition_aliases": 154,
+    "competition_editions": 68,
+    "competition_fact_revisions": 71,
+    "competition_fact_sources": 808,
+    "competition_leads": 543,
+    "competition_organizations": 85,
+    "competition_policy_recognitions": 102,
+    "competition_sources": 390,
+    "competition_statistics": 145,
+    "competition_tags": 370,
+    "competition_tracks": 1,
+    "competition_update_events": 1,
+    "competitions": 145,
+    "conference_discipline_mappings": 54,
+    "conference_discovery_candidates": 3,
+    "conference_editions": 132,
+    "conference_opportunities": 15,
+    "conference_organizations": 242,
+    "conference_series": 206,
+    "conference_sources": 289,
+    "crawler_jobs": 5,
+    "favorites": 2,
+    "majors": 10,
+    "notifications": 1,
+    "organizations": 206,
+    "policy_attachments": 2,
+    "policy_documents": 2,
+    "policy_raw_items": 97,
+    "recommendations": 0,
+    "review_queue": 28,
+    "school_competitions": 188,
+    "school_conferences": 8,
+    "tags": 24,
+    "universities": 113,
+    "university_competition_discovery_reports": 177,
+    "university_competition_edition_relations": 93,
+    "university_competition_policies": 0,
+    "university_policies": 0,
+    "user_competition_statuses": 0,
+    "user_correction_submissions": 33,
+    "user_profiles": 2,
+    "users": 5
+  },
+  "competitions": {
+    "total": 145,
+    "non_demo": 145,
+    "demo": 0,
+    "official_website": 36,
+    "organizer": 58,
+    "description": 129,
+    "founded_or_first_year": 7,
+    "history_text": 0,
+    "history_timeline": 5,
+    "official_verified": 121,
+    "detail_ready": 19,
+    "exact_duplicate_names": 0
+  },
+  "competition_editions": {
+    "total": 68,
+    "with_any_deadline": 20,
+    "with_official_url": 48,
+    "verified": 67
+  },
+  "competition_sources": {
+    "total": 390,
+    "official": 346,
+    "verified": 366,
+    "valid_http_url": 293
+  },
+  "universities": {
+    "total": 113,
+    "non_demo": 113,
+    "is_985": 39,
+    "is_211": 112,
+    "with_official_website": 113,
+    "exact_duplicate_names": 0
+  },
+  "university_competition_relations": {
+    "university_competition_policies": 0,
+    "competition_policy_recognitions": 102,
+    "university_competition_edition_relations": 93
+  },
+  "conference_series": {
+    "total": 206,
+    "with_official_website": 205,
+    "with_acronym": 0,
+    "with_history": 0,
+    "exact_duplicate_names": 0
+  },
+  "conference_editions": {
+    "total": 132,
+    "with_dates": 130,
+    "with_submission_deadline": 0,
+    "with_cfp": 0,
+    "with_location": 0,
+    "verified": 132
+  },
+  "conference_sources": {
+    "total": 289,
+    "official": 281,
+    "verified": 281,
+    "valid_http_url": 289
+  },
+  "conference_opportunities": {
+    "total": 15,
+    "with_deadline": 4,
+    "verified": 15
+  },
+  "conference_candidates_by_status": {
+    "pending": 2,
+    "rejected": 1
+  }
+}

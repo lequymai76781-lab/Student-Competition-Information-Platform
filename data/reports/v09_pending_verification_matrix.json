@@ -1,0 +1,1651 @@
+[
+  {
+    "competition_id": 2,
+    "name": "“挑战杯”全国大学生课外学术科技作品竞赛",
+    "current_sources": [
+      {
+        "source_type": "university_policy",
+        "authority_level": "B",
+        "source_name": "武汉大学新闻与传播学院",
+        "source_url": "https://journal.whu.edu.cn/uploadfiles/2025061120jgu.pdf",
+        "is_verified": true
+      },
+      {
+        "source_type": "university_policy",
+        "authority_level": "B",
+        "source_name": "武汉体育学院新闻传播学院",
+        "source_url": "local-source://wuhan-sports-university/journalism/2026/catalog.pdf",
+        "is_verified": true
+      },
+      {
+        "source_type": "github_seed",
+        "authority_level": "D",
+        "source_name": "大学生竞赛生存手册竞赛图鉴",
+        "source_url": "https://github.com/Tomzkl/college-competitions-skill/blob/main/competition-catalog.md",
+        "is_verified": false
+      }
+    ],
+    "has_official_website": true,
+    "matched_ministry_source": false,
+    "matched_association_source": false,
+    "matched_official_source": false,
+    "confidence": 0.0,
+    "result_status": "pending_verification"
+  },
+  {
+    "competition_id": 6,
+    "name": "全国大学生职业规划大赛",
+    "current_sources": [
+      {
+        "source_type": "university_policy",
+        "authority_level": "B",
+        "source_name": "武汉体育学院新闻传播学院",
+        "source_url": "local-source://wuhan-sports-university/journalism/2026/catalog.pdf",
+        "is_verified": true
+      }
+    ],
+    "has_official_website": false,
+    "matched_ministry_source": false,
+    "matched_association_source": false,
+    "matched_official_source": false,
+    "confidence": 0.0,
+    "result_status": "pending_verification"
+  },
+  {
+    "competition_id": 9,
+    "name": "中国大学生医学技术技能大赛",
+    "current_sources": [
+      {
+        "source_type": "university_policy",
+        "authority_level": "B",
+        "source_name": "武汉体育学院新闻传播学院",
+        "source_url": "local-source://wuhan-sports-university/journalism/2026/catalog.pdf",
+        "is_verified": true
+      }
+    ],
+    "has_official_website": false,
+    "matched_ministry_source": false,
+    "matched_association_source": false,
+    "matched_official_source": false,
+    "confidence": 0.0,
+    "result_status": "pending_verification"
+  },
+  {
+    "competition_id": 10,
+    "name": "全国大学生机械创新设计大赛",
+    "current_sources": [
+      {
+        "source_type": "university_policy",
+        "authority_level": "B",
+        "source_name": "武汉体育学院新闻传播学院",
+        "source_url": "local-source://wuhan-sports-university/journalism/2026/catalog.pdf",
+        "is_verified": true
+      },
+      {
+        "source_type": "github_seed",
+        "authority_level": "D",
+        "source_name": "大学生竞赛生存手册竞赛图鉴",
+        "source_url": "https://github.com/Tomzkl/college-competitions-skill/blob/main/competition-catalog.md",
+        "is_verified": false
+      }
+    ],
+    "has_official_website": false,
+    "matched_ministry_source": false,
+    "matched_association_source": false,
+    "matched_official_source": false,
+    "confidence": 0.0,
+    "result_status": "pending_verification"
+  },
+  {
+    "competition_id": 11,
+    "name": "全国大学生结构设计竞赛",
+    "current_sources": [
+      {
+        "source_type": "university_policy",
+        "authority_level": "B",
+        "source_name": "武汉体育学院新闻传播学院",
+        "source_url": "local-source://wuhan-sports-university/journalism/2026/catalog.pdf",
+        "is_verified": true
+      },
+      {
+        "source_type": "github_seed",
+        "authority_level": "D",
+        "source_name": "大学生竞赛生存手册竞赛图鉴",
+        "source_url": "https://github.com/Tomzkl/college-competitions-skill/blob/main/competition-catalog.md",
+        "is_verified": false
+      }
+    ],
+    "has_official_website": false,
+    "matched_ministry_source": false,
+    "matched_association_source": false,
+    "matched_official_source": false,
+    "confidence": 0.0,
+    "result_status": "pending_verification"
+  },
+  {
+    "competition_id": 13,
+    "name": "“桃李杯”舞蹈大赛",
+    "current_sources": [
+      {
+        "source_type": "university_policy",
+        "authority_level": "B",
+        "source_name": "武汉体育学院新闻传播学院",
+        "source_url": "local-source://wuhan-sports-university/journalism/2026/catalog.pdf",
+        "is_verified": true
+      }
+    ],
+    "has_official_website": false,
+    "matched_ministry_source": false,
+    "matched_association_source": false,
+    "matched_official_source": false,
+    "confidence": 0.0,
+    "result_status": "pending_verification"
+  },
+  {
+    "competition_id": 15,
+    "name": "全国科普讲解大赛",
+    "current_sources": [
+      {
+        "source_type": "university_policy",
+        "authority_level": "B",
+        "source_name": "武汉体育学院新闻传播学院",
+        "source_url": "local-source://wuhan-sports-university/journalism/2026/catalog.pdf",
+        "is_verified": true
+      }
+    ],
+    "has_official_website": false,
+    "matched_ministry_source": false,
+    "matched_association_source": false,
+    "matched_official_source": false,
+    "confidence": 0.0,
+    "result_status": "pending_verification"
+  },
+  {
+    "competition_id": 17,
+    "name": "中国数据新闻大赛",
+    "current_sources": [
+      {
+        "source_type": "university_policy",
+        "authority_level": "B",
+        "source_name": "武汉体育学院新闻传播学院",
+        "source_url": "local-source://wuhan-sports-university/journalism/2026/catalog.pdf",
+        "is_verified": true
+      }
+    ],
+    "has_official_website": false,
+    "matched_ministry_source": false,
+    "matched_association_source": false,
+    "matched_official_source": false,
+    "confidence": 0.0,
+    "result_status": "pending_verification"
+  },
+  {
+    "competition_id": 18,
+    "name": "全国体育科普讲解大赛",
+    "current_sources": [
+      {
+        "source_type": "university_policy",
+        "authority_level": "B",
+        "source_name": "武汉体育学院新闻传播学院",
+        "source_url": "local-source://wuhan-sports-university/journalism/2026/catalog.pdf",
+        "is_verified": true
+      }
+    ],
+    "has_official_website": false,
+    "matched_ministry_source": false,
+    "matched_association_source": false,
+    "matched_official_source": false,
+    "confidence": 0.0,
+    "result_status": "pending_verification"
+  },
+  {
+    "competition_id": 20,
+    "name": "全国大学生智能汽车竞赛",
+    "current_sources": [
+      {
+        "source_type": "university_policy",
+        "authority_level": "B",
+        "source_name": "武汉体育学院新闻传播学院",
+        "source_url": "local-source://wuhan-sports-university/journalism/2026/catalog.pdf",
+        "is_verified": true
+      },
+      {
+        "source_type": "github_seed",
+        "authority_level": "D",
+        "source_name": "大学生竞赛生存手册竞赛图鉴",
+        "source_url": "https://github.com/Tomzkl/college-competitions-skill/blob/main/competition-catalog.md",
+        "is_verified": false
+      }
+    ],
+    "has_official_website": false,
+    "matched_ministry_source": false,
+    "matched_association_source": false,
+    "matched_official_source": false,
+    "confidence": 0.0,
+    "result_status": "pending_verification"
+  },
+  {
+    "competition_id": 21,
+    "name": "全国大学生电子商务“创新、创意及创业”挑战赛",
+    "current_sources": [
+      {
+        "source_type": "university_policy",
+        "authority_level": "B",
+        "source_name": "武汉体育学院新闻传播学院",
+        "source_url": "local-source://wuhan-sports-university/journalism/2026/catalog.pdf",
+        "is_verified": true
+      },
+      {
+        "source_type": "github_seed",
+        "authority_level": "D",
+        "source_name": "大学生竞赛生存手册竞赛图鉴",
+        "source_url": "https://github.com/Tomzkl/college-competitions-skill/blob/main/competition-catalog.md",
+        "is_verified": false
+      }
+    ],
+    "has_official_website": true,
+    "matched_ministry_source": false,
+    "matched_association_source": false,
+    "matched_official_source": false,
+    "confidence": 0.0,
+    "result_status": "pending_verification"
+  },
+  {
+    "competition_id": 23,
+    "name": "全国大学生物流设计大赛",
+    "current_sources": [
+      {
+        "source_type": "university_policy",
+        "authority_level": "B",
+        "source_name": "武汉体育学院新闻传播学院",
+        "source_url": "local-source://wuhan-sports-university/journalism/2026/catalog.pdf",
+        "is_verified": true
+      }
+    ],
+    "has_official_website": false,
+    "matched_ministry_source": false,
+    "matched_association_source": false,
+    "matched_official_source": false,
+    "confidence": 0.0,
+    "result_status": "pending_verification"
+  },
+  {
+    "competition_id": 25,
+    "name": "两岸新锐设计竞赛·华灿奖",
+    "current_sources": [
+      {
+        "source_type": "university_policy",
+        "authority_level": "B",
+        "source_name": "武汉体育学院新闻传播学院",
+        "source_url": "local-source://wuhan-sports-university/journalism/2026/catalog.pdf",
+        "is_verified": true
+      }
+    ],
+    "has_official_website": false,
+    "matched_ministry_source": false,
+    "matched_association_source": false,
+    "matched_official_source": false,
+    "confidence": 0.0,
+    "result_status": "pending_verification"
+  },
+  {
+    "competition_id": 27,
+    "name": "全国大学生化工设计竞赛",
+    "current_sources": [
+      {
+        "source_type": "university_policy",
+        "authority_level": "B",
+        "source_name": "武汉体育学院新闻传播学院",
+        "source_url": "local-source://wuhan-sports-university/journalism/2026/catalog.pdf",
+        "is_verified": true
+      }
+    ],
+    "has_official_website": false,
+    "matched_ministry_source": false,
+    "matched_association_source": false,
+    "matched_official_source": false,
+    "confidence": 0.0,
+    "result_status": "pending_verification"
+  },
+  {
+    "competition_id": 28,
+    "name": "全国大学生机器人大赛",
+    "current_sources": [
+      {
+        "source_type": "university_policy",
+        "authority_level": "B",
+        "source_name": "武汉体育学院新闻传播学院",
+        "source_url": "local-source://wuhan-sports-university/journalism/2026/catalog.pdf",
+        "is_verified": true
+      }
+    ],
+    "has_official_website": false,
+    "matched_ministry_source": false,
+    "matched_association_source": false,
+    "matched_official_source": false,
+    "confidence": 0.0,
+    "result_status": "pending_verification"
+  },
+  {
+    "competition_id": 30,
+    "name": "全国大学生先进成图技术与产品信息建模创新大赛",
+    "current_sources": [
+      {
+        "source_type": "university_policy",
+        "authority_level": "B",
+        "source_name": "武汉体育学院新闻传播学院",
+        "source_url": "local-source://wuhan-sports-university/journalism/2026/catalog.pdf",
+        "is_verified": true
+      }
+    ],
+    "has_official_website": false,
+    "matched_ministry_source": false,
+    "matched_association_source": false,
+    "matched_official_source": false,
+    "confidence": 0.0,
+    "result_status": "pending_verification"
+  },
+  {
+    "competition_id": 31,
+    "name": "全国三维数字化创新设计大赛",
+    "current_sources": [
+      {
+        "source_type": "university_policy",
+        "authority_level": "B",
+        "source_name": "武汉体育学院新闻传播学院",
+        "source_url": "local-source://wuhan-sports-university/journalism/2026/catalog.pdf",
+        "is_verified": true
+      }
+    ],
+    "has_official_website": false,
+    "matched_ministry_source": false,
+    "matched_association_source": false,
+    "matched_official_source": false,
+    "confidence": 0.0,
+    "result_status": "pending_verification"
+  },
+  {
+    "competition_id": 32,
+    "name": "“西门子杯”中国智能制造挑战赛",
+    "current_sources": [
+      {
+        "source_type": "university_policy",
+        "authority_level": "B",
+        "source_name": "武汉体育学院新闻传播学院",
+        "source_url": "local-source://wuhan-sports-university/journalism/2026/catalog.pdf",
+        "is_verified": true
+      },
+      {
+        "source_type": "github_seed",
+        "authority_level": "D",
+        "source_name": "大学生竞赛生存手册竞赛图鉴",
+        "source_url": "https://github.com/Tomzkl/college-competitions-skill/blob/main/competition-catalog.md",
+        "is_verified": false
+      }
+    ],
+    "has_official_website": true,
+    "matched_ministry_source": false,
+    "matched_association_source": false,
+    "matched_official_source": false,
+    "confidence": 0.0,
+    "result_status": "pending_verification"
+  },
+  {
+    "competition_id": 33,
+    "name": "中国大学生服务外包创新创业大赛",
+    "current_sources": [
+      {
+        "source_type": "university_policy",
+        "authority_level": "B",
+        "source_name": "武汉体育学院新闻传播学院",
+        "source_url": "local-source://wuhan-sports-university/journalism/2026/catalog.pdf",
+        "is_verified": true
+      }
+    ],
+    "has_official_website": false,
+    "matched_ministry_source": false,
+    "matched_association_source": false,
+    "matched_official_source": false,
+    "confidence": 0.0,
+    "result_status": "pending_verification"
+  },
+  {
+    "competition_id": 35,
+    "name": "中国高校计算机大赛",
+    "current_sources": [
+      {
+        "source_type": "university_policy",
+        "authority_level": "B",
+        "source_name": "武汉体育学院新闻传播学院",
+        "source_url": "local-source://wuhan-sports-university/journalism/2026/catalog.pdf",
+        "is_verified": true
+      },
+      {
+        "source_type": "github_seed",
+        "authority_level": "D",
+        "source_name": "大学生竞赛生存手册竞赛图鉴",
+        "source_url": "https://github.com/Tomzkl/college-competitions-skill/blob/main/competition-catalog.md",
+        "is_verified": false
+      }
+    ],
+    "has_official_website": false,
+    "matched_ministry_source": false,
+    "matched_association_source": false,
+    "matched_official_source": false,
+    "confidence": 0.0,
+    "result_status": "pending_verification"
+  },
+  {
+    "competition_id": 36,
+    "name": "蓝桥杯全国软件和信息技术专业人才大赛",
+    "current_sources": [
+      {
+        "source_type": "university_policy",
+        "authority_level": "B",
+        "source_name": "武汉体育学院新闻传播学院",
+        "source_url": "local-source://wuhan-sports-university/journalism/2026/catalog.pdf",
+        "is_verified": true
+      },
+      {
+        "source_type": "github_seed",
+        "authority_level": "D",
+        "source_name": "大学生竞赛生存手册竞赛图鉴",
+        "source_url": "https://github.com/Tomzkl/college-competitions-skill/blob/main/competition-catalog.md",
+        "is_verified": false
+      }
+    ],
+    "has_official_website": true,
+    "matched_ministry_source": false,
+    "matched_association_source": false,
+    "matched_official_source": false,
+    "confidence": 0.0,
+    "result_status": "pending_verification"
+  },
+  {
+    "competition_id": 37,
+    "name": "米兰设计周—中国高校设计学科师生优秀作品展",
+    "current_sources": [
+      {
+        "source_type": "university_policy",
+        "authority_level": "B",
+        "source_name": "武汉体育学院新闻传播学院",
+        "source_url": "local-source://wuhan-sports-university/journalism/2026/catalog.pdf",
+        "is_verified": true
+      }
+    ],
+    "has_official_website": false,
+    "matched_ministry_source": false,
+    "matched_association_source": false,
+    "matched_official_source": false,
+    "confidence": 0.0,
+    "result_status": "pending_verification"
+  },
+  {
+    "competition_id": 38,
+    "name": "全国大学生地质技能竞赛",
+    "current_sources": [
+      {
+        "source_type": "university_policy",
+        "authority_level": "B",
+        "source_name": "武汉体育学院新闻传播学院",
+        "source_url": "local-source://wuhan-sports-university/journalism/2026/catalog.pdf",
+        "is_verified": true
+      }
+    ],
+    "has_official_website": false,
+    "matched_ministry_source": false,
+    "matched_association_source": false,
+    "matched_official_source": false,
+    "confidence": 0.0,
+    "result_status": "pending_verification"
+  },
+  {
+    "competition_id": 40,
+    "name": "全国大学生集成电路创新创业大赛",
+    "current_sources": [
+      {
+        "source_type": "university_policy",
+        "authority_level": "B",
+        "source_name": "武汉体育学院新闻传播学院",
+        "source_url": "local-source://wuhan-sports-university/journalism/2026/catalog.pdf",
+        "is_verified": true
+      }
+    ],
+    "has_official_website": false,
+    "matched_ministry_source": false,
+    "matched_association_source": false,
+    "matched_official_source": false,
+    "confidence": 0.0,
+    "result_status": "pending_verification"
+  },
+  {
+    "competition_id": 41,
+    "name": "全国大学生金相技能大赛",
+    "current_sources": [
+      {
+        "source_type": "university_policy",
+        "authority_level": "B",
+        "source_name": "武汉体育学院新闻传播学院",
+        "source_url": "local-source://wuhan-sports-university/journalism/2026/catalog.pdf",
+        "is_verified": true
+      }
+    ],
+    "has_official_website": false,
+    "matched_ministry_source": false,
+    "matched_association_source": false,
+    "matched_official_source": false,
+    "confidence": 0.0,
+    "result_status": "pending_verification"
+  },
+  {
+    "competition_id": 43,
+    "name": "未来设计师·全国高校数字艺术设计大赛",
+    "current_sources": [
+      {
+        "source_type": "university_policy",
+        "authority_level": "B",
+        "source_name": "武汉体育学院新闻传播学院",
+        "source_url": "local-source://wuhan-sports-university/journalism/2026/catalog.pdf",
+        "is_verified": true
+      }
+    ],
+    "has_official_website": false,
+    "matched_ministry_source": false,
+    "matched_association_source": false,
+    "matched_official_source": false,
+    "confidence": 0.0,
+    "result_status": "pending_verification"
+  },
+  {
+    "competition_id": 44,
+    "name": "全国周培源大学生力学竞赛",
+    "current_sources": [
+      {
+        "source_type": "university_policy",
+        "authority_level": "B",
+        "source_name": "武汉体育学院新闻传播学院",
+        "source_url": "local-source://wuhan-sports-university/journalism/2026/catalog.pdf",
+        "is_verified": true
+      }
+    ],
+    "has_official_website": false,
+    "matched_ministry_source": false,
+    "matched_association_source": false,
+    "matched_official_source": false,
+    "confidence": 0.0,
+    "result_status": "pending_verification"
+  },
+  {
+    "competition_id": 47,
+    "name": "“中国软件杯”大学生软件设计大赛",
+    "current_sources": [
+      {
+        "source_type": "university_policy",
+        "authority_level": "B",
+        "source_name": "武汉体育学院新闻传播学院",
+        "source_url": "local-source://wuhan-sports-university/journalism/2026/catalog.pdf",
+        "is_verified": true
+      },
+      {
+        "source_type": "github_seed",
+        "authority_level": "D",
+        "source_name": "大学生竞赛生存手册竞赛图鉴",
+        "source_url": "https://github.com/Tomzkl/college-competitions-skill/blob/main/competition-catalog.md",
+        "is_verified": false
+      }
+    ],
+    "has_official_website": true,
+    "matched_ministry_source": false,
+    "matched_association_source": false,
+    "matched_official_source": false,
+    "confidence": 0.0,
+    "result_status": "pending_verification"
+  },
+  {
+    "competition_id": 48,
+    "name": "中美青年创客大赛",
+    "current_sources": [
+      {
+        "source_type": "university_policy",
+        "authority_level": "B",
+        "source_name": "武汉体育学院新闻传播学院",
+        "source_url": "local-source://wuhan-sports-university/journalism/2026/catalog.pdf",
+        "is_verified": true
+      },
+      {
+        "source_type": "github_seed",
+        "authority_level": "D",
+        "source_name": "大学生竞赛生存手册竞赛图鉴",
+        "source_url": "https://github.com/Tomzkl/college-competitions-skill/blob/main/competition-catalog.md",
+        "is_verified": false
+      }
+    ],
+    "has_official_website": false,
+    "matched_ministry_source": false,
+    "matched_association_source": false,
+    "matched_official_source": false,
+    "confidence": 0.0,
+    "result_status": "pending_verification"
+  },
+  {
+    "competition_id": 49,
+    "name": "睿抗机器人开发者大赛（RAICOM）",
+    "current_sources": [
+      {
+        "source_type": "university_policy",
+        "authority_level": "B",
+        "source_name": "武汉体育学院新闻传播学院",
+        "source_url": "local-source://wuhan-sports-university/journalism/2026/catalog.pdf",
+        "is_verified": true
+      }
+    ],
+    "has_official_website": false,
+    "matched_ministry_source": false,
+    "matched_association_source": false,
+    "matched_official_source": false,
+    "confidence": 0.0,
+    "result_status": "pending_verification"
+  },
+  {
+    "competition_id": 50,
+    "name": "“大唐杯”全国大学生新一代信息通信技术大赛",
+    "current_sources": [
+      {
+        "source_type": "university_policy",
+        "authority_level": "B",
+        "source_name": "武汉体育学院新闻传播学院",
+        "source_url": "local-source://wuhan-sports-university/journalism/2026/catalog.pdf",
+        "is_verified": true
+      }
+    ],
+    "has_official_website": false,
+    "matched_ministry_source": false,
+    "matched_association_source": false,
+    "matched_official_source": false,
+    "confidence": 0.0,
+    "result_status": "pending_verification"
+  },
+  {
+    "competition_id": 51,
+    "name": "华为ICT大赛",
+    "current_sources": [
+      {
+        "source_type": "university_policy",
+        "authority_level": "B",
+        "source_name": "武汉体育学院新闻传播学院",
+        "source_url": "local-source://wuhan-sports-university/journalism/2026/catalog.pdf",
+        "is_verified": true
+      },
+      {
+        "source_type": "github_seed",
+        "authority_level": "D",
+        "source_name": "大学生竞赛生存手册竞赛图鉴",
+        "source_url": "https://github.com/Tomzkl/college-competitions-skill/blob/main/competition-catalog.md",
+        "is_verified": false
+      }
+    ],
+    "has_official_website": false,
+    "matched_ministry_source": false,
+    "matched_association_source": false,
+    "matched_official_source": false,
+    "confidence": 0.0,
+    "result_status": "pending_verification"
+  },
+  {
+    "competition_id": 52,
+    "name": "全国大学生嵌入式芯片与系统设计竞赛",
+    "current_sources": [
+      {
+        "source_type": "university_policy",
+        "authority_level": "B",
+        "source_name": "武汉体育学院新闻传播学院",
+        "source_url": "local-source://wuhan-sports-university/journalism/2026/catalog.pdf",
+        "is_verified": true
+      }
+    ],
+    "has_official_website": false,
+    "matched_ministry_source": false,
+    "matched_association_source": false,
+    "matched_official_source": false,
+    "confidence": 0.0,
+    "result_status": "pending_verification"
+  },
+  {
+    "competition_id": 53,
+    "name": "全国大学生生命科学竞赛（CULSC）",
+    "current_sources": [
+      {
+        "source_type": "university_policy",
+        "authority_level": "B",
+        "source_name": "武汉体育学院新闻传播学院",
+        "source_url": "local-source://wuhan-sports-university/journalism/2026/catalog.pdf",
+        "is_verified": true
+      }
+    ],
+    "has_official_website": false,
+    "matched_ministry_source": false,
+    "matched_association_source": false,
+    "matched_official_source": false,
+    "confidence": 0.0,
+    "result_status": "pending_verification"
+  },
+  {
+    "competition_id": 55,
+    "name": "全国高校BIM毕业设计创新大赛",
+    "current_sources": [
+      {
+        "source_type": "university_policy",
+        "authority_level": "B",
+        "source_name": "武汉体育学院新闻传播学院",
+        "source_url": "local-source://wuhan-sports-university/journalism/2026/catalog.pdf",
+        "is_verified": true
+      }
+    ],
+    "has_official_website": false,
+    "matched_ministry_source": false,
+    "matched_association_source": false,
+    "matched_official_source": false,
+    "confidence": 0.0,
+    "result_status": "pending_verification"
+  },
+  {
+    "competition_id": 56,
+    "name": "全国高校商业精英挑战赛",
+    "current_sources": [
+      {
+        "source_type": "university_policy",
+        "authority_level": "B",
+        "source_name": "武汉体育学院新闻传播学院",
+        "source_url": "local-source://wuhan-sports-university/journalism/2026/catalog.pdf",
+        "is_verified": true
+      }
+    ],
+    "has_official_website": false,
+    "matched_ministry_source": false,
+    "matched_association_source": false,
+    "matched_official_source": false,
+    "confidence": 0.0,
+    "result_status": "pending_verification"
+  },
+  {
+    "competition_id": 57,
+    "name": "“学创杯”全国大学生创业综合模拟大赛",
+    "current_sources": [
+      {
+        "source_type": "university_policy",
+        "authority_level": "B",
+        "source_name": "武汉体育学院新闻传播学院",
+        "source_url": "local-source://wuhan-sports-university/journalism/2026/catalog.pdf",
+        "is_verified": true
+      }
+    ],
+    "has_official_website": false,
+    "matched_ministry_source": false,
+    "matched_association_source": false,
+    "matched_official_source": false,
+    "confidence": 0.0,
+    "result_status": "pending_verification"
+  },
+  {
+    "competition_id": 58,
+    "name": "中国高校智能机器人创意大赛",
+    "current_sources": [
+      {
+        "source_type": "university_policy",
+        "authority_level": "B",
+        "source_name": "武汉体育学院新闻传播学院",
+        "source_url": "local-source://wuhan-sports-university/journalism/2026/catalog.pdf",
+        "is_verified": true
+      }
+    ],
+    "has_official_website": false,
+    "matched_ministry_source": false,
+    "matched_association_source": false,
+    "matched_official_source": false,
+    "confidence": 0.0,
+    "result_status": "pending_verification"
+  },
+  {
+    "competition_id": 60,
+    "name": "中国机器人及人工智能大赛",
+    "current_sources": [
+      {
+        "source_type": "university_policy",
+        "authority_level": "B",
+        "source_name": "武汉体育学院新闻传播学院",
+        "source_url": "local-source://wuhan-sports-university/journalism/2026/catalog.pdf",
+        "is_verified": true
+      }
+    ],
+    "has_official_website": false,
+    "matched_ministry_source": false,
+    "matched_association_source": false,
+    "matched_official_source": false,
+    "confidence": 0.0,
+    "result_status": "pending_verification"
+  },
+  {
+    "competition_id": 61,
+    "name": "全国大学生节能减排社会实践与科技竞赛",
+    "current_sources": [
+      {
+        "source_type": "university_policy",
+        "authority_level": "B",
+        "source_name": "武汉体育学院新闻传播学院",
+        "source_url": "local-source://wuhan-sports-university/journalism/2026/catalog.pdf",
+        "is_verified": true
+      }
+    ],
+    "has_official_website": false,
+    "matched_ministry_source": false,
+    "matched_association_source": false,
+    "matched_official_source": false,
+    "confidence": 0.0,
+    "result_status": "pending_verification"
+  },
+  {
+    "competition_id": 62,
+    "name": "“21世纪杯”全国英语演讲比赛",
+    "current_sources": [
+      {
+        "source_type": "university_policy",
+        "authority_level": "B",
+        "source_name": "武汉体育学院新闻传播学院",
+        "source_url": "local-source://wuhan-sports-university/journalism/2026/catalog.pdf",
+        "is_verified": true
+      }
+    ],
+    "has_official_website": false,
+    "matched_ministry_source": false,
+    "matched_association_source": false,
+    "matched_official_source": false,
+    "confidence": 0.0,
+    "result_status": "pending_verification"
+  },
+  {
+    "competition_id": 64,
+    "name": "“工行杯”全国大学生金融科技创新大赛",
+    "current_sources": [
+      {
+        "source_type": "university_policy",
+        "authority_level": "B",
+        "source_name": "武汉体育学院新闻传播学院",
+        "source_url": "local-source://wuhan-sports-university/journalism/2026/catalog.pdf",
+        "is_verified": true
+      }
+    ],
+    "has_official_website": false,
+    "matched_ministry_source": false,
+    "matched_association_source": false,
+    "matched_official_source": false,
+    "confidence": 0.0,
+    "result_status": "pending_verification"
+  },
+  {
+    "competition_id": 67,
+    "name": "百度之星·程序设计大赛",
+    "current_sources": [
+      {
+        "source_type": "university_policy",
+        "authority_level": "B",
+        "source_name": "武汉体育学院新闻传播学院",
+        "source_url": "local-source://wuhan-sports-university/journalism/2026/catalog.pdf",
+        "is_verified": true
+      }
+    ],
+    "has_official_website": false,
+    "matched_ministry_source": false,
+    "matched_association_source": false,
+    "matched_official_source": false,
+    "confidence": 0.0,
+    "result_status": "pending_verification"
+  },
+  {
+    "competition_id": 69,
+    "name": "全国大学生水利创新设计大赛",
+    "current_sources": [
+      {
+        "source_type": "university_policy",
+        "authority_level": "B",
+        "source_name": "武汉体育学院新闻传播学院",
+        "source_url": "local-source://wuhan-sports-university/journalism/2026/catalog.pdf",
+        "is_verified": true
+      }
+    ],
+    "has_official_website": false,
+    "matched_ministry_source": false,
+    "matched_association_source": false,
+    "matched_official_source": false,
+    "confidence": 0.0,
+    "result_status": "pending_verification"
+  },
+  {
+    "competition_id": 70,
+    "name": "全国大学生化工实验大赛",
+    "current_sources": [
+      {
+        "source_type": "university_policy",
+        "authority_level": "B",
+        "source_name": "武汉体育学院新闻传播学院",
+        "source_url": "local-source://wuhan-sports-university/journalism/2026/catalog.pdf",
+        "is_verified": true
+      }
+    ],
+    "has_official_website": false,
+    "matched_ministry_source": false,
+    "matched_association_source": false,
+    "matched_official_source": false,
+    "confidence": 0.0,
+    "result_status": "pending_verification"
+  },
+  {
+    "competition_id": 71,
+    "name": "全国大学生化学实验创新设计大赛",
+    "current_sources": [
+      {
+        "source_type": "university_policy",
+        "authority_level": "B",
+        "source_name": "武汉体育学院新闻传播学院",
+        "source_url": "local-source://wuhan-sports-university/journalism/2026/catalog.pdf",
+        "is_verified": true
+      },
+      {
+        "source_type": "github_seed",
+        "authority_level": "D",
+        "source_name": "大学生竞赛生存手册竞赛图鉴",
+        "source_url": "https://github.com/Tomzkl/college-competitions-skill/blob/main/competition-catalog.md",
+        "is_verified": false
+      }
+    ],
+    "has_official_website": false,
+    "matched_ministry_source": false,
+    "matched_association_source": false,
+    "matched_official_source": false,
+    "confidence": 0.0,
+    "result_status": "pending_verification"
+  },
+  {
+    "competition_id": 72,
+    "name": "全国大学生计算机系统能力大赛",
+    "current_sources": [
+      {
+        "source_type": "university_policy",
+        "authority_level": "B",
+        "source_name": "武汉体育学院新闻传播学院",
+        "source_url": "local-source://wuhan-sports-university/journalism/2026/catalog.pdf",
+        "is_verified": true
+      }
+    ],
+    "has_official_website": false,
+    "matched_ministry_source": false,
+    "matched_association_source": false,
+    "matched_official_source": false,
+    "confidence": 0.0,
+    "result_status": "pending_verification"
+  },
+  {
+    "competition_id": 73,
+    "name": "全国大学生花园设计建造竞赛",
+    "current_sources": [
+      {
+        "source_type": "university_policy",
+        "authority_level": "B",
+        "source_name": "武汉体育学院新闻传播学院",
+        "source_url": "local-source://wuhan-sports-university/journalism/2026/catalog.pdf",
+        "is_verified": true
+      }
+    ],
+    "has_official_website": false,
+    "matched_ministry_source": false,
+    "matched_association_source": false,
+    "matched_official_source": false,
+    "confidence": 0.0,
+    "result_status": "pending_verification"
+  },
+  {
+    "competition_id": 74,
+    "name": "全国大学生物联网设计竞赛",
+    "current_sources": [
+      {
+        "source_type": "university_policy",
+        "authority_level": "B",
+        "source_name": "武汉体育学院新闻传播学院",
+        "source_url": "local-source://wuhan-sports-university/journalism/2026/catalog.pdf",
+        "is_verified": true
+      }
+    ],
+    "has_official_website": false,
+    "matched_ministry_source": false,
+    "matched_association_source": false,
+    "matched_official_source": false,
+    "confidence": 0.0,
+    "result_status": "pending_verification"
+  },
+  {
+    "competition_id": 75,
+    "name": "全国大学生信息安全与对抗技术竞赛",
+    "current_sources": [
+      {
+        "source_type": "university_policy",
+        "authority_level": "B",
+        "source_name": "武汉体育学院新闻传播学院",
+        "source_url": "local-source://wuhan-sports-university/journalism/2026/catalog.pdf",
+        "is_verified": true
+      }
+    ],
+    "has_official_website": false,
+    "matched_ministry_source": false,
+    "matched_association_source": false,
+    "matched_official_source": false,
+    "confidence": 0.0,
+    "result_status": "pending_verification"
+  },
+  {
+    "competition_id": 76,
+    "name": "全国大学生测绘学科创新创业智能大赛",
+    "current_sources": [
+      {
+        "source_type": "university_policy",
+        "authority_level": "B",
+        "source_name": "武汉体育学院新闻传播学院",
+        "source_url": "local-source://wuhan-sports-university/journalism/2026/catalog.pdf",
+        "is_verified": true
+      }
+    ],
+    "has_official_website": false,
+    "matched_ministry_source": false,
+    "matched_association_source": false,
+    "matched_official_source": false,
+    "confidence": 0.0,
+    "result_status": "pending_verification"
+  },
+  {
+    "competition_id": 78,
+    "name": "全国大学生能源经济学术创意大赛",
+    "current_sources": [
+      {
+        "source_type": "university_policy",
+        "authority_level": "B",
+        "source_name": "武汉体育学院新闻传播学院",
+        "source_url": "local-source://wuhan-sports-university/journalism/2026/catalog.pdf",
+        "is_verified": true
+      }
+    ],
+    "has_official_website": false,
+    "matched_ministry_source": false,
+    "matched_association_source": false,
+    "matched_official_source": false,
+    "confidence": 0.0,
+    "result_status": "pending_verification"
+  },
+  {
+    "competition_id": 79,
+    "name": "全国大学生基础医学创新研究暨实验设计论坛（大赛）",
+    "current_sources": [
+      {
+        "source_type": "university_policy",
+        "authority_level": "B",
+        "source_name": "武汉体育学院新闻传播学院",
+        "source_url": "local-source://wuhan-sports-university/journalism/2026/catalog.pdf",
+        "is_verified": true
+      }
+    ],
+    "has_official_website": false,
+    "matched_ministry_source": false,
+    "matched_association_source": false,
+    "matched_official_source": false,
+    "confidence": 0.0,
+    "result_status": "pending_verification"
+  },
+  {
+    "competition_id": 80,
+    "name": "全国大学生数字媒体科技作品及创意竞赛",
+    "current_sources": [
+      {
+        "source_type": "university_policy",
+        "authority_level": "B",
+        "source_name": "武汉体育学院新闻传播学院",
+        "source_url": "local-source://wuhan-sports-university/journalism/2026/catalog.pdf",
+        "is_verified": true
+      }
+    ],
+    "has_official_website": false,
+    "matched_ministry_source": false,
+    "matched_association_source": false,
+    "matched_official_source": false,
+    "confidence": 0.0,
+    "result_status": "pending_verification"
+  },
+  {
+    "competition_id": 82,
+    "name": "全国企业竞争模拟大赛",
+    "current_sources": [
+      {
+        "source_type": "university_policy",
+        "authority_level": "B",
+        "source_name": "武汉体育学院新闻传播学院",
+        "source_url": "local-source://wuhan-sports-university/journalism/2026/catalog.pdf",
+        "is_verified": true
+      }
+    ],
+    "has_official_website": false,
+    "matched_ministry_source": false,
+    "matched_association_source": false,
+    "matched_official_source": false,
+    "confidence": 0.0,
+    "result_status": "pending_verification"
+  },
+  {
+    "competition_id": 83,
+    "name": "全国高等院校数智化企业经营沙盘大赛",
+    "current_sources": [
+      {
+        "source_type": "university_policy",
+        "authority_level": "B",
+        "source_name": "武汉体育学院新闻传播学院",
+        "source_url": "local-source://wuhan-sports-university/journalism/2026/catalog.pdf",
+        "is_verified": true
+      }
+    ],
+    "has_official_website": false,
+    "matched_ministry_source": false,
+    "matched_association_source": false,
+    "matched_official_source": false,
+    "confidence": 0.0,
+    "result_status": "pending_verification"
+  },
+  {
+    "competition_id": 84,
+    "name": "全国数字建筑创新应用大赛",
+    "current_sources": [
+      {
+        "source_type": "university_policy",
+        "authority_level": "B",
+        "source_name": "武汉体育学院新闻传播学院",
+        "source_url": "local-source://wuhan-sports-university/journalism/2026/catalog.pdf",
+        "is_verified": true
+      }
+    ],
+    "has_official_website": false,
+    "matched_ministry_source": false,
+    "matched_association_source": false,
+    "matched_official_source": false,
+    "confidence": 0.0,
+    "result_status": "pending_verification"
+  },
+  {
+    "competition_id": 85,
+    "name": "全球校园人工智能算法精英大赛",
+    "current_sources": [
+      {
+        "source_type": "university_policy",
+        "authority_level": "B",
+        "source_name": "武汉体育学院新闻传播学院",
+        "source_url": "local-source://wuhan-sports-university/journalism/2026/catalog.pdf",
+        "is_verified": true
+      }
+    ],
+    "has_official_website": false,
+    "matched_ministry_source": false,
+    "matched_association_source": false,
+    "matched_official_source": false,
+    "confidence": 0.0,
+    "result_status": "pending_verification"
+  },
+  {
+    "competition_id": 86,
+    "name": "国际大学生智能农业装备创新大赛",
+    "current_sources": [
+      {
+        "source_type": "university_policy",
+        "authority_level": "B",
+        "source_name": "武汉体育学院新闻传播学院",
+        "source_url": "local-source://wuhan-sports-university/journalism/2026/catalog.pdf",
+        "is_verified": true
+      }
+    ],
+    "has_official_website": false,
+    "matched_ministry_source": false,
+    "matched_association_source": false,
+    "matched_official_source": false,
+    "confidence": 0.0,
+    "result_status": "pending_verification"
+  },
+  {
+    "competition_id": 87,
+    "name": "“科云杯”全国大学生财会职业能力大赛",
+    "current_sources": [
+      {
+        "source_type": "university_policy",
+        "authority_level": "B",
+        "source_name": "武汉体育学院新闻传播学院",
+        "source_url": "local-source://wuhan-sports-university/journalism/2026/catalog.pdf",
+        "is_verified": true
+      }
+    ],
+    "has_official_website": false,
+    "matched_ministry_source": false,
+    "matched_association_source": false,
+    "matched_official_source": false,
+    "confidence": 0.0,
+    "result_status": "pending_verification"
+  },
+  {
+    "competition_id": 88,
+    "name": "齐越朗诵艺术节暨全国大学生朗诵大会",
+    "current_sources": [
+      {
+        "source_type": "university_policy",
+        "authority_level": "B",
+        "source_name": "武汉体育学院新闻传播学院",
+        "source_url": "local-source://wuhan-sports-university/journalism/2026/catalog.pdf",
+        "is_verified": true
+      }
+    ],
+    "has_official_website": false,
+    "matched_ministry_source": false,
+    "matched_association_source": false,
+    "matched_official_source": false,
+    "confidence": 0.0,
+    "result_status": "pending_verification"
+  },
+  {
+    "competition_id": 91,
+    "name": "湖北省普通高校师范专业大学生教学技能竞赛",
+    "current_sources": [
+      {
+        "source_type": "university_policy",
+        "authority_level": "B",
+        "source_name": "武汉体育学院新闻传播学院",
+        "source_url": "local-source://wuhan-sports-university/journalism/2026/catalog.pdf",
+        "is_verified": true
+      }
+    ],
+    "has_official_website": false,
+    "matched_ministry_source": false,
+    "matched_association_source": false,
+    "matched_official_source": false,
+    "confidence": 0.0,
+    "result_status": "pending_verification"
+  },
+  {
+    "competition_id": 92,
+    "name": "湖北省大学生营销策划挑战赛",
+    "current_sources": [
+      {
+        "source_type": "university_policy",
+        "authority_level": "B",
+        "source_name": "武汉体育学院新闻传播学院",
+        "source_url": "local-source://wuhan-sports-university/journalism/2026/catalog.pdf",
+        "is_verified": true
+      }
+    ],
+    "has_official_website": false,
+    "matched_ministry_source": false,
+    "matched_association_source": false,
+    "matched_official_source": false,
+    "confidence": 0.0,
+    "result_status": "pending_verification"
+  },
+  {
+    "competition_id": 93,
+    "name": "湖北省金凤奖舞蹈比赛",
+    "current_sources": [
+      {
+        "source_type": "university_policy",
+        "authority_level": "B",
+        "source_name": "武汉体育学院新闻传播学院",
+        "source_url": "local-source://wuhan-sports-university/journalism/2026/catalog.pdf",
+        "is_verified": true
+      }
+    ],
+    "has_official_website": false,
+    "matched_ministry_source": false,
+    "matched_association_source": false,
+    "matched_official_source": false,
+    "confidence": 0.0,
+    "result_status": "pending_verification"
+  },
+  {
+    "competition_id": 94,
+    "name": "湖北省大学生新闻传播教育创新实践技能竞赛",
+    "current_sources": [
+      {
+        "source_type": "university_policy",
+        "authority_level": "B",
+        "source_name": "武汉体育学院新闻传播学院",
+        "source_url": "local-source://wuhan-sports-university/journalism/2026/catalog.pdf",
+        "is_verified": true
+      }
+    ],
+    "has_official_website": false,
+    "matched_ministry_source": false,
+    "matched_association_source": false,
+    "matched_official_source": false,
+    "confidence": 0.0,
+    "result_status": "pending_verification"
+  },
+  {
+    "competition_id": 95,
+    "name": "“讲好中国故事”创意传播国际大赛",
+    "current_sources": [
+      {
+        "source_type": "university_policy",
+        "authority_level": "B",
+        "source_name": "武汉体育学院新闻传播学院",
+        "source_url": "local-source://wuhan-sports-university/journalism/2026/catalog.pdf",
+        "is_verified": true
+      }
+    ],
+    "has_official_website": false,
+    "matched_ministry_source": false,
+    "matched_association_source": false,
+    "matched_official_source": false,
+    "confidence": 0.0,
+    "result_status": "pending_verification"
+  },
+  {
+    "competition_id": 96,
+    "name": "湖北省科普讲解大赛",
+    "current_sources": [
+      {
+        "source_type": "university_policy",
+        "authority_level": "B",
+        "source_name": "武汉体育学院新闻传播学院",
+        "source_url": "local-source://wuhan-sports-university/journalism/2026/catalog.pdf",
+        "is_verified": true
+      }
+    ],
+    "has_official_website": false,
+    "matched_ministry_source": false,
+    "matched_association_source": false,
+    "matched_official_source": false,
+    "confidence": 0.0,
+    "result_status": "pending_verification"
+  },
+  {
+    "competition_id": 97,
+    "name": "新闻传播学院数智传播技能大赛",
+    "current_sources": [
+      {
+        "source_type": "university_policy",
+        "authority_level": "B",
+        "source_name": "武汉体育学院新闻传播学院",
+        "source_url": "local-source://wuhan-sports-university/journalism/2026/catalog.pdf",
+        "is_verified": true
+      }
+    ],
+    "has_official_website": false,
+    "matched_ministry_source": false,
+    "matched_association_source": false,
+    "matched_official_source": false,
+    "confidence": 0.0,
+    "result_status": "pending_verification"
+  },
+  {
+    "competition_id": 98,
+    "name": "美国大学生数学建模竞赛",
+    "current_sources": [
+      {
+        "source_type": "github_seed",
+        "authority_level": "D",
+        "source_name": "大学生竞赛生存手册竞赛图鉴",
+        "source_url": "https://github.com/Tomzkl/college-competitions-skill/blob/main/competition-catalog.md",
+        "is_verified": false
+      }
+    ],
+    "has_official_website": true,
+    "matched_ministry_source": false,
+    "matched_association_source": false,
+    "matched_official_source": false,
+    "confidence": 0.0,
+    "result_status": "pending_verification"
+  },
+  {
+    "competition_id": 100,
+    "name": "RoboMaster机甲大师赛",
+    "current_sources": [
+      {
+        "source_type": "github_seed",
+        "authority_level": "D",
+        "source_name": "大学生竞赛生存手册竞赛图鉴",
+        "source_url": "https://github.com/Tomzkl/college-competitions-skill/blob/main/competition-catalog.md",
+        "is_verified": false
+      }
+    ],
+    "has_official_website": true,
+    "matched_ministry_source": false,
+    "matched_association_source": false,
+    "matched_official_source": false,
+    "confidence": 0.0,
+    "result_status": "pending_verification"
+  },
+  {
+    "competition_id": 102,
+    "name": "全国大学生生命科学竞赛",
+    "current_sources": [
+      {
+        "source_type": "github_seed",
+        "authority_level": "D",
+        "source_name": "大学生竞赛生存手册竞赛图鉴",
+        "source_url": "https://github.com/Tomzkl/college-competitions-skill/blob/main/competition-catalog.md",
+        "is_verified": false
+      }
+    ],
+    "has_official_website": false,
+    "matched_ministry_source": false,
+    "matched_association_source": false,
+    "matched_official_source": false,
+    "confidence": 0.0,
+    "result_status": "pending_verification"
+  },
+  {
+    "competition_id": 109,
+    "name": "外研社·国才杯短视频赛项",
+    "current_sources": [
+      {
+        "source_type": "college_official_notice",
+        "authority_level": "C",
+        "source_name": "东南大学外国语学院2026短视频赛项通知",
+        "source_url": "https://sfl.seu.edu.cn/2026/0730/c10307a537690/page.htm",
+        "is_verified": true
+      }
+    ],
+    "has_official_website": false,
+    "matched_ministry_source": false,
+    "matched_association_source": false,
+    "matched_official_source": false,
+    "confidence": 0.0,
+    "result_status": "pending_verification"
+  },
+  {
+    "competition_id": 124,
+    "name": "华中科技大学“环球之星”国际学生才艺与中文演讲大赛",
+    "current_sources": [
+      {
+        "source_type": "college_official_notice",
+        "authority_level": "C",
+        "source_name": "华中科技大学国际教育学院",
+        "source_url": "https://iso.hust.edu.cn/info/1195/5029.htm",
+        "is_verified": true
+      }
+    ],
+    "has_official_website": true,
+    "matched_ministry_source": false,
+    "matched_association_source": false,
+    "matched_official_source": false,
+    "confidence": 0.0,
+    "result_status": "pending_verification"
+  },
+  {
+    "competition_id": 125,
+    "name": "中国研究生企业管理创新大赛",
+    "current_sources": [
+      {
+        "source_type": "college_official_notice",
+        "authority_level": "C",
+        "source_name": "浙江大学管理学院",
+        "source_url": "https://stusom.zju.edu.cn/api/cms/artView/807731820153147392/819983666901028864/499461348524033",
+        "is_verified": true
+      }
+    ],
+    "has_official_website": true,
+    "matched_ministry_source": false,
+    "matched_association_source": false,
+    "matched_official_source": false,
+    "confidence": 0.0,
+    "result_status": "pending_verification"
+  },
+  {
+    "competition_id": 126,
+    "name": "“理律杯”全国高校模拟法庭竞赛",
+    "current_sources": [
+      {
+        "source_type": "college_official_notice",
+        "authority_level": "C",
+        "source_name": "清华大学法学院",
+        "source_url": "https://www.law.tsinghua.edu.cn/info/1129/20595.htm",
+        "is_verified": true
+      }
+    ],
+    "has_official_website": false,
+    "matched_ministry_source": false,
+    "matched_association_source": false,
+    "matched_official_source": false,
+    "confidence": 0.0,
+    "result_status": "pending_verification"
+  },
+  {
+    "competition_id": 127,
+    "name": "中国人民大学计算机综合能力竞赛",
+    "current_sources": [
+      {
+        "source_type": "college_official_notice",
+        "authority_level": "C",
+        "source_name": "中国人民大学信息学院",
+        "source_url": "https://info.ruc.edu.cn/Academic/Notice/0dd7fd0c124f4feeb3d582a71c6278f1.htm",
+        "is_verified": true
+      }
+    ],
+    "has_official_website": false,
+    "matched_ministry_source": false,
+    "matched_association_source": false,
+    "matched_official_source": false,
+    "confidence": 0.0,
+    "result_status": "pending_verification"
+  },
+  {
+    "competition_id": 128,
+    "name": "全国大学生嵌入式芯片与系统设计竞赛FPGA创新设计竞赛",
+    "current_sources": [
+      {
+        "source_type": "college_official_notice",
+        "authority_level": "C",
+        "source_name": "北京航空航天大学软件学院",
+        "source_url": "https://soft.buaa.edu.cn/news_nry.jsp?urltype=news.NewsContentUrl&wbtreeid=1117&wbnewsid=11876",
+        "is_verified": true
+      }
+    ],
+    "has_official_website": false,
+    "matched_ministry_source": false,
+    "matched_association_source": false,
+    "matched_official_source": false,
+    "confidence": 0.0,
+    "result_status": "pending_verification"
+  },
+  {
+    "competition_id": 129,
+    "name": "交替生活国际设计竞赛",
+    "current_sources": [
+      {
+        "source_type": "college_official_notice",
+        "authority_level": "C",
+        "source_name": "北京理工大学国际设计与创新学院",
+        "source_url": "https://design.bit.edu.cn/tzgg2/525c056403e64c918d762135192561bf.htm",
+        "is_verified": true
+      }
+    ],
+    "has_official_website": false,
+    "matched_ministry_source": false,
+    "matched_association_source": false,
+    "matched_official_source": false,
+    "confidence": 0.0,
+    "result_status": "pending_verification"
+  },
+  {
+    "competition_id": 132,
+    "name": "中央民族大学智能体应用创新创意设计大赛",
+    "current_sources": [
+      {
+        "source_type": "college_official_notice",
+        "authority_level": "C",
+        "source_name": "中央民族大学人工智能学院",
+        "source_url": "https://aie.muc.edu.cn/info/1122/2830.htm",
+        "is_verified": true
+      }
+    ],
+    "has_official_website": false,
+    "matched_ministry_source": false,
+    "matched_association_source": false,
+    "matched_official_source": false,
+    "confidence": 0.0,
+    "result_status": "pending_verification"
+  },
+  {
+    "competition_id": 133,
+    "name": "天津大学大学生创新创业年会暨创新创业类竞赛",
+    "current_sources": [
+      {
+        "source_type": "college_official_notice",
+        "authority_level": "C",
+        "source_name": "天津大学材料科学与工程学院",
+        "source_url": "https://smse.tju.edu.cn/info/1100/2926.htm",
+        "is_verified": true
+      }
+    ],
+    "has_official_website": false,
+    "matched_ministry_source": false,
+    "matched_association_source": false,
+    "matched_official_source": false,
+    "confidence": 0.0,
+    "result_status": "pending_verification"
+  },
+  {
+    "competition_id": 134,
+    "name": "全国大学生生命科学创新实践大赛",
+    "current_sources": [
+      {
+        "source_type": "college_official_notice",
+        "authority_level": "C",
+        "source_name": "吉林大学生命科学学院",
+        "source_url": "https://life.jlu.edu.cn/info/1060/7780.htm",
+        "is_verified": true
+      }
+    ],
+    "has_official_website": false,
+    "matched_ministry_source": false,
+    "matched_association_source": false,
+    "matched_official_source": false,
+    "confidence": 0.0,
+    "result_status": "pending_verification"
+  },
+  {
+    "competition_id": 136,
+    "name": "卓越杯全球治理案例挑战大赛",
+    "current_sources": [
+      {
+        "source_type": "college_official_notice",
+        "authority_level": "C",
+        "source_name": "复旦大学国际问题研究院",
+        "source_url": "https://iis.fudan.edu.cn/60/7f/c6840a745599/page.htm",
+        "is_verified": true
+      }
+    ],
+    "has_official_website": false,
+    "matched_ministry_source": false,
+    "matched_association_source": false,
+    "matched_official_source": false,
+    "confidence": 0.0,
+    "result_status": "pending_verification"
+  }
+]

@@ -1,0 +1,277 @@
+{
+  "task": "SPECIALIZED_INSTITUTIONS_COVERAGE_01",
+  "round": 2,
+  "checked_at": "2026-09-14T22:40:00+08:00",
+  "institutions": [
+    {
+      "name": "北京体育大学",
+      "discovery_queries": ["site:bsu.edu.cn 竞赛认定 创新学分 体育教育技能", "site:bsu.edu.cn 培养方案 大赛 获奖"],
+      "candidate_count": 2,
+      "checked_sources": [
+        {"url": "https://www.bsu.edu.cn/", "source_type": "official_root", "result": "checked"},
+        {"url": "https://jwc.bsu.edu.cn/docs/2022-03/4a0e98a48efd4837beed7daa99a39364.pdf", "source_type": "university_policy_pdf", "result": "competition-credit-framework"},
+        {"url": "https://fld.bsu.edu.cn/rcpy/bkspy/f34377cd24f7462cabced15018f8937c.htm", "source_type": "college_program", "result": "named-recognition"}
+      ],
+      "final_status": "VERIFIED_DATA",
+      "status_reason": "外国语学院培养方案明确将中华经典诵写讲大赛等具名竞赛纳入创新实践学分；按 college scope 建立 Recognition，未上提为全校认定。"
+    },
+    {
+      "name": "成都体育学院",
+      "discovery_queries": ["site:cdsu.edu.cn 体育教育 教学技能 比赛 学生", "site:cdsu.edu.cn 体育 艺术 科普讲解 大赛"],
+      "candidate_count": 2,
+      "checked_sources": [
+        {"url": "https://www.cdsu.edu.cn/", "source_type": "official_root", "result": "checked"},
+        {"url": "https://ysx.cdsu.edu.cn/info/1053/3877.htm", "source_type": "college_notice", "result": "competition-mechanism"},
+        {"url": "https://yjs.cdsu.edu.cn/info/1044/39672.htm", "source_type": "college_news", "result": "verified-participation"}
+      ],
+      "final_status": "VERIFIED_DATA",
+      "status_reason": "体育教育学院官方报道给出预赛、择优推荐、决赛和主承办单位，足以核验专业教学技能比赛。"
+    },
+    {
+      "name": "天津体育学院",
+      "discovery_queries": ["site:tjus.edu.cn 体育教育 学生基本功大赛 培养方案", "site:tjus.edu.cn 第二课堂 竞赛 学分"],
+      "candidate_count": 2,
+      "checked_sources": [
+        {"url": "https://www.tjus.edu.cn/", "source_type": "official_root", "result": "checked"},
+        {"url": "https://tyjyxy.tjus.edu.cn/__local/8/C3/E0/A26EE683AEBB988C8F73E93302B_85AFAD82_DADF8.pdf", "source_type": "major_program_pdf", "result": "named-recognition"},
+        {"url": "https://kcsz.tjus.edu.cn/__local/3/1D/C4/DD9077DB22F3AE7CB7485007564_6E97E758_1148CA.pdf", "source_type": "university_policy_pdf", "result": "competition-credit-framework"}
+      ],
+      "final_status": "VERIFIED_DATA",
+      "status_reason": "2020版体育教育专业培养方案将学生基本功大赛列为三年级必须参加的培养环节；按 major scope 建立 Recognition。"
+    },
+    {
+      "name": "沈阳体育学院",
+      "discovery_queries": ["site:syty.edu.cn 推免 竞赛 获奖 认定", "site:syty.edu.cn 体育竞赛 学生 加分"],
+      "candidate_count": 3,
+      "checked_sources": [
+        {"url": "https://www.syty.edu.cn/", "source_type": "official_root", "result": "checked"},
+        {"url": "https://jxc.syty.edu.cn/index.htm", "source_type": "teaching_center", "result": "competition-scholarship-entry"},
+        {"url": "https://iedu.syty.edu.cn/info/1024/1952.htm", "source_type": "college_policy", "result": "named-recognition"}
+      ],
+      "final_status": "VERIFIED_DATA",
+      "status_reason": "国际教育学院2027届推免细则具名列出中国国际大学生创新大赛、挑战杯及体育竞赛计分标准；scope 保持 college。"
+    },
+    {
+      "name": "南京体育学院",
+      "discovery_queries": ["site:nipes.cn 教学技能 大赛 学生", "site:nsi.edu.cn 竞赛认定 创新学分 专业实践", "site:nsi.edu.cn filetype:pdf 竞赛 培养方案"],
+      "candidate_count": 0,
+      "checked_sources": [
+        {"url": "https://www.nipes.cn/", "source_type": "official_root", "result": "checked"},
+        {"url": "https://www.nsi.edu.cn/jw/", "source_type": "teaching_department", "result": "checked-no-safe-match"},
+        {"url": "https://www.nsi.edu.cn/ntzqxy/", "source_type": "core_college", "result": "checked-no-safe-match"},
+        {"url": "https://www.nsi.edu.cn/jx/", "source_type": "training_department", "result": "checked-no-safe-match"},
+        {"url": "https://www.nipes.cn/xljs/list.htm", "source_type": "competition_archive", "result": "only-ordinary-team-sports-filtered"}
+      ],
+      "final_status": "VERIFIED_NO_PUBLIC_DATA",
+      "status_reason": "已检查官网、教务处、运动训练学院、训练处、竞赛归档及附件检索；命中内容主要为运动队竞技新闻，不满足学生学术/专业发展平台收录边界。"
+    },
+    {
+      "name": "山东体育学院",
+      "discovery_queries": ["site:sdpei.edu.cn 体育产业 创新创业 大赛 学生", "site:sdpei.edu.cn 本科教学质量报告 竞赛 获奖"],
+      "candidate_count": 3,
+      "checked_sources": [
+        {"url": "https://www.sdpei.edu.cn/", "source_type": "official_root", "result": "checked"},
+        {"url": "https://xxgk.sdpei.edu.cn/", "source_type": "information_disclosure", "result": "checked"},
+        {"url": "https://xxgk.sdpei.edu.cn/uploadfile/85/Attachment/0350cccb78.pdf", "source_type": "official_quality_report_pdf", "result": "verified-participation"}
+      ],
+      "final_status": "VERIFIED_DATA",
+      "status_reason": "官方质量报告记录学生在全国大学生体育产业创新创业大赛获奖，并说明该类赛事纳入专业创新实践。"
+    },
+    {
+      "name": "吉林体育学院",
+      "discovery_queries": ["site:jlsu.edu.cn 教学技能 大赛 学生", "site:jlsu.edu.cn 竞赛认定 创新学分 专业实践", "site:jlsu.edu.cn filetype:pdf 培养方案 竞赛"],
+      "candidate_count": 1,
+      "checked_sources": [
+        {"url": "https://www.jlsu.edu.cn/", "source_type": "official_root", "result": "checked"},
+        {"url": "https://jlsu.jw.chaoxing.com/admin/login", "source_type": "teaching_system", "result": "login-only"},
+        {"url": "https://kyc.jlsu.edu.cn/kydt.htm", "source_type": "research_department", "result": "checked-no-safe-match"},
+        {"url": "https://www.jlsu.edu.cn/index/xsky.htm", "source_type": "academic_archive", "result": "conference-leads-only"},
+        {"url": "https://www.jlsu.edu.cn/info/1032/5649.htm", "source_type": "official_news", "result": "commercial-marketing-event-filtered"}
+      ],
+      "final_status": "VERIFIED_NO_PUBLIC_DATA",
+      "status_reason": "已检查官网、教务入口、科研处、学术归档和学院新闻；公开命中为普通运动队赛事、会议或商业表演赛，均按边界过滤。"
+    },
+    {
+      "name": "哈尔滨体育学院",
+      "discovery_queries": ["site:hrbipe.edu.cn 市场调查 大赛 学生", "site:hrbipe.edu.cn 挑战杯 校内选拔"],
+      "candidate_count": 3,
+      "checked_sources": [
+        {"url": "https://www.hrbipe.edu.cn/", "source_type": "official_root", "result": "checked"},
+        {"url": "https://www.hrbipe.edu.cn/jwc/info/1012/1171.htm", "source_type": "teaching_department_news", "result": "verified-participation"},
+        {"url": "https://www.hrbipe.edu.cn/tw/info/1012/1368.htm", "source_type": "youth_league_notice", "result": "competition-mechanism"}
+      ],
+      "final_status": "VERIFIED_DATA",
+      "status_reason": "教务处官方报道核验体育艺术学院学生在全国大学生市场调查与分析大赛获国家三等奖；另有挑战杯校内选拔完整规则。"
+    },
+    {
+      "name": "河北体育学院",
+      "discovery_queries": ["site:hepec.edu.cn 企业竞争模拟 大赛 报名", "site:hepec.edu.cn 教学技能 竞赛 学生", "site:hepec.edu.cn 创新学分 竞赛"],
+      "candidate_count": 1,
+      "checked_sources": [
+        {"url": "https://www.hepec.edu.cn/", "source_type": "official_root", "result": "checked"},
+        {"url": "https://www.hepec.edu.cn/columns/2079bbc6-12ae-4b22-931e-ddd6192bcdd0/index.html", "source_type": "competition_training", "result": "ordinary-team-sports-only"},
+        {"url": "https://www.hepec.edu.cn/col/1498528808703/index.html", "source_type": "legacy_official_page", "result": "404-after-prior-discovery"}
+      ],
+      "final_status": "ACCESS_LIMITED",
+      "status_reason": "第一轮命中的企业竞争模拟大赛校方旧页在复核时已返回404；现站竞赛训练栏仅有普通竞技信息，不能用第三方来源替代。"
+    },
+    {
+      "name": "北京电影学院",
+      "discovery_queries": ["site:bfa.edu.cn 学生 电影节 入围 获奖", "site:bfa.edu.cn 研究生 奖学金 电影节 计分", "site:bfa.edu.cn 创作 展映 评选 学生作品"],
+      "candidate_count": 2,
+      "checked_sources": [
+        {"url": "https://www.bfa.edu.cn/", "source_type": "official_root", "result": "checked"},
+        {"url": "https://www.bfa.edu.cn/xueshengchu/beijingdianyingxueyuanyanjiushengxueyejiangxuejinpingdingshishixize.pdf", "source_type": "graduate_policy_pdf", "result": "generic-film-festival-recognition"}
+      ],
+      "final_status": "AMBIGUOUS",
+      "status_reason": "奖学金细则确认国际/全国电影节入围与获奖可计分，但未列具名节展；无法安全映射到 canonical event，保留制度证据而不建关系。"
+    },
+    {
+      "name": "山东艺术学院",
+      "discovery_queries": ["site:sdca.edu.cn 专业比赛 展演 推免 加分", "site:sdca.edu.cn 学生作品 评选 大赛", "site:sdca.edu.cn filetype:pdf 艺术实践 获奖成果级别"],
+      "candidate_count": 3,
+      "checked_sources": [
+        {"url": "https://www.sdca.edu.cn/", "source_type": "official_root", "result": "checked"},
+        {"url": "https://graduate.sdca.edu.cn/__local/1/01/32/D6CE30FBE0BF9D5CE941FFD9BF0_A1936756_7DCA5.pdf", "source_type": "university_policy_pdf", "result": "generic-professional-award-recognition"},
+        {"url": "https://jwc.sdca.edu.cn/__local/B/EF/20/0E71A87A43BB130D766B2C78F3A_A99998AE_1ACDD50.pdf", "source_type": "teaching_project_pdf", "result": "showcase-not-competition"}
+      ],
+      "final_status": "AMBIGUOUS",
+      "status_reason": "推免办法认可专业比赛/展演奖项但未公开附件中的具名赛事清单；闳美山艺毕业展示属于评选展示，不能据此强建 Competition。"
+    },
+    {
+      "name": "云南艺术学院",
+      "discovery_queries": ["site:ynart.edu.cn 研究生 综合素质 竞赛 计分", "site:ynart.edu.cn 专业实践 比赛 展演 认定"],
+      "candidate_count": 4,
+      "checked_sources": [
+        {"url": "https://www.ynart.edu.cn/", "source_type": "official_root", "result": "checked"},
+        {"url": "https://xsc.ynart.edu.cn/info/1193/12370.htm", "source_type": "university_policy", "result": "named-recognition"},
+        {"url": "https://zbzx.ynart.edu.cn/info/1005/1521.htm", "source_type": "creation_center", "result": "showcase-not-competition"}
+      ],
+      "final_status": "VERIFIED_DATA",
+      "status_reason": "研究生综合素质测评办法具名列出互联网+、挑战杯等竞赛并规定国家/省/校级计分；Recognition scope 为 graduate/university policy。"
+    },
+    {
+      "name": "广西艺术学院",
+      "discovery_queries": ["site:gxau.edu.cn 专业竞赛 国家奖学金 认定", "site:gxau.edu.cn 青年艺术品 创作大赛 评审 奖项"],
+      "candidate_count": 3,
+      "checked_sources": [
+        {"url": "https://www.gxau.edu.cn/", "source_type": "official_root", "result": "checked"},
+        {"url": "https://zzzx.gxau.edu.cn/jzxj/content_277998", "source_type": "university_policy", "result": "named-recognition"},
+        {"url": "https://msxy.gxau.edu.cn/xzzx/xzzx1/content_202245", "source_type": "college_call", "result": "competition-mechanism"}
+      ],
+      "final_status": "VERIFIED_DATA",
+      "status_reason": "国家奖学金实施细则具名认可中国国际大学生创新大赛等竞赛；美术学院官方征稿页另给出中国—东盟青年艺术品创作大赛主办方、评审和奖项。"
+    },
+    {
+      "name": "吉林艺术学院",
+      "discovery_queries": ["site:jlart.edu.cn 学生 比赛 获奖 认定", "site:jlart.edu.cn 艺术展演 校内遴选 评审", "site:jlart.edu.cn filetype:pdf 竞赛 计分"],
+      "candidate_count": 2,
+      "checked_sources": [
+        {"url": "https://www.jlart.edu.cn/", "source_type": "official_root", "result": "checked"},
+        {"url": "https://xxgk.jlart.edu.cn/info/1019/1086.htm", "source_type": "student_policy", "result": "generic-award-threshold"},
+        {"url": "https://jiaowu.jlart.edu.cn/info/1009/7584.htm", "source_type": "teaching_notice", "result": "showcase-not-competition"}
+      ],
+      "final_status": "AMBIGUOUS",
+      "status_reason": "学生评优制度只给出省级展演/比赛铜奖以上门槛，未列具名赛事；大学生艺术展演按 showcase 保存，不能强建 Competition。"
+    },
+    {
+      "name": "内蒙古艺术学院",
+      "discovery_queries": ["site:imac.edu.cn 挑战杯 拟推报 公示", "site:imac.edu.cn 美术作品展 征稿 学生", "site:imac.edu.cn 获奖信息 大赛"],
+      "candidate_count": 4,
+      "checked_sources": [
+        {"url": "https://www.imac.edu.cn/", "source_type": "official_root", "result": "checked"},
+        {"url": "https://www.imac.edu.cn/tzgg/20260617/40917.shtml", "source_type": "university_notice", "result": "verified-participation"},
+        {"url": "https://msxy2.imac.edu.cn/html-msxy2/xyxw/20260420/39905.shtml", "source_type": "college_call", "result": "exhibition-call-not-competition"},
+        {"url": "https://www.imac.edu.cn/hjxx/", "source_type": "award_archive", "result": "checked"}
+      ],
+      "final_status": "VERIFIED_DATA",
+      "status_reason": "学校官网公示第十五届挑战杯拟推报国赛项目，形成可核验 Participation；全国大学生美术作品展仅作 exhibition lead。"
+    },
+    {
+      "name": "新疆艺术学院",
+      "discovery_queries": ["site:xjart.edu.cn 新艺杯 专业竞赛 获奖", "site:xjart.edu.cn 大学生艺术展演 校内遴选"],
+      "candidate_count": 3,
+      "checked_sources": [
+        {"url": "https://www.xjart.edu.cn/", "source_type": "official_root", "result": "checked"},
+        {"url": "https://www.xjart.edu.cn/info/1009/20431.htm", "source_type": "university_news", "result": "verified-participation"},
+        {"url": "https://msx.xjart.edu.cn/", "source_type": "core_college", "result": "competition-entry"}
+      ],
+      "final_status": "VERIFIED_DATA",
+      "status_reason": "学校官方表彰页面确认首届新艺杯专业竞赛、1300余名学生、659件作品和获奖决定，竞争机制明确。"
+    },
+    {
+      "name": "山西传媒学院",
+      "discovery_queries": ["site:cusx.edu.cn 数据新闻 大赛 获奖", "site:cusx.edu.cn 播音 主持 讲解 大会 总决选", "site:cusx.edu.cn 第二课堂 竞赛 认定"],
+      "candidate_count": 4,
+      "checked_sources": [
+        {"url": "https://www.cusx.edu.cn/", "source_type": "official_root", "result": "checked"},
+        {"url": "https://byzcxy.cusx.edu.cn/info/1096/4111.htm", "source_type": "college_notice", "result": "competition-ranking"},
+        {"url": "https://xwcbxy.cusx.edu.cn/info/1037/1272.htm", "source_type": "college_news", "result": "verified-participation"},
+        {"url": "https://ylc.cusx.edu.cn/info/1038/1934.htm", "source_type": "second_classroom_policy", "result": "recognition-framework"}
+      ],
+      "final_status": "VERIFIED_DATA",
+      "status_reason": "新闻传播学院官方报道核验中国数据新闻大赛三等奖；播音主持学院页面另有全国大学生讲解大会总决选排名和颁奖。"
+    },
+    {
+      "name": "南京传媒学院",
+      "discovery_queries": ["site:cucn.edu.cn 学生 获奖 大赛 电影节", "site:cucn.edu.cn 播音 主持 竞赛", "site:cucn.edu.cn filetype:pdf 学生获奖"],
+      "candidate_count": 1,
+      "checked_sources": [
+        {"url": "https://www.cucn.edu.cn/", "source_type": "official_root", "result": "js-or-access-limited"},
+        {"url": "https://zsb.cucn.edu.cn/uploads/ueditor/file/20240622/1719026286629592.pdf", "source_type": "official_admissions_pdf", "result": "scanned-or-no-extractable-text"}
+      ],
+      "final_status": "ACCESS_LIMITED",
+      "status_reason": "官方招生PDF搜索摘要含学生赛事记录，但文件正文不可提取且官网入口受JS/访问限制；不足以逐字段复核，不借第三方强行入库。"
+    },
+    {
+      "name": "河北传媒学院",
+      "discovery_queries": ["site:hebic.cn 电竞 解说 主持 大赛", "site:hebic.cn 播音 学生 获奖 赛事"],
+      "candidate_count": 3,
+      "checked_sources": [
+        {"url": "https://www.hebic.cn/", "source_type": "official_root", "result": "checked"},
+        {"url": "https://xwcb.hebic.cn/columns/74ea33a9-d352-4004-8c7f-b1343e4e5a71/202605/28/d8f5a3bd-05b1-43cf-ae63-36411317ab03.html", "source_type": "college_news", "result": "verified-participation"},
+        {"url": "https://xsc.hebic.cn/", "source_type": "student_department", "result": "second-classroom-entry"}
+      ],
+      "final_status": "VERIFIED_DATA",
+      "status_reason": "新闻传播学院官方报道核验学生在第六届全国高校电子竞技解说主持大赛获奖，赛事和学院关系明确。"
+    },
+    {
+      "name": "四川传媒学院",
+      "discovery_queries": ["site:scmc.edu.cn 数据新闻 AIGC 大赛 获奖", "site:scmc.edu.cn 大学生 配音 艺术节 决赛"],
+      "candidate_count": 3,
+      "checked_sources": [
+        {"url": "https://www.scmc.edu.cn/", "source_type": "official_root", "result": "checked"},
+        {"url": "https://znyxys.scmc.edu.cn/2025_10/29_10/content-50154.html", "source_type": "college_news", "result": "verified-participation"},
+        {"url": "https://zq.scmc.edu.cn/index.php/cms/item-view-id-4211-page-1", "source_type": "college_news", "result": "verified-participation"}
+      ],
+      "final_status": "VERIFIED_DATA",
+      "status_reason": "智能影像艺术学院官方报道给出中国数据新闻大赛省级决赛、奖项比例、评审及国赛入围；关系可安全核验。"
+    },
+    {
+      "name": "四川电影电视学院",
+      "discovery_queries": ["site:scftvc.com 川影杯 华年奖 评审", "site:scftvc.com 播音大赛 决赛 获奖", "site:scftvc.com 主持人思维大赛"],
+      "candidate_count": 4,
+      "checked_sources": [
+        {"url": "https://www.scftvc.com/", "source_type": "official_root", "result": "checked"},
+        {"url": "https://www.scftvc.com/info/1093/7065.htm", "source_type": "college_call", "result": "competition-mechanism"},
+        {"url": "https://www.scftvc.com/info/1085/8362.htm", "source_type": "college_news", "result": "competition-final"},
+        {"url": "https://www.scftvc.com/info/1085/6454.htm", "source_type": "college_news", "result": "competition-mechanism"}
+      ],
+      "final_status": "VERIFIED_DATA",
+      "status_reason": "川影杯华年奖官方征集页给出联合主办方、年度届次、评审时间和奖项证书，属于明确专业 Competition。"
+    },
+    {
+      "name": "吉林动画学院",
+      "discovery_queries": ["site:jlai.edu.cn 力行杯 创新创业 大赛 获奖", "site:jlai.edu.cn 专业展览 竞赛 奖学金"],
+      "candidate_count": 3,
+      "checked_sources": [
+        {"url": "https://www.jlai.edu.cn/", "source_type": "official_root", "result": "checked"},
+        {"url": "https://www.jlai.edu.cn/info/1028/9521.htm", "source_type": "university_news", "result": "verified-participation"},
+        {"url": "https://www.jlai.edu.cn/guanyujilindonghuaxueyuan2025niandulixingbeichuangxinchuangyedasaihuojiangdetongzhi-zuizhongban.pdf", "source_type": "official_award_pdf", "result": "award-list"},
+        {"url": "https://xxgk.jlai.edu.cn/info/1008/1190.htm", "source_type": "student_policy", "result": "competition-recognition-framework"}
+      ],
+      "final_status": "VERIFIED_DATA",
+      "status_reason": "学校创新创业学院官方报道与获奖PDF共同核验力行杯校级总决赛、多轮选拔、专家评审和获奖名单。"
+    }
+  ]
+}

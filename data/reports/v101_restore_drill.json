@@ -1,0 +1,25 @@
+{
+  "backup": "D:\\Python\\xuesheng\\data\\backups\\backup-20260903-011521.sqlite",
+  "restored_db": "D:\\Python\\xuesheng\\data\\backups\\restore-drill-011838.sqlite",
+  "table_counts_match": true,
+  "restored_counts": {
+    "competitions": 143,
+    "competition_editions": 53,
+    "competition_sources": 236,
+    "competition_fact_revisions": 6,
+    "universities": 113,
+    "colleges": 34,
+    "users": 15,
+    "user_profiles": 12,
+    "favorites": 31,
+    "notifications": 18,
+    "user_correction_submissions": 2,
+    "competition_update_events": 2,
+    "admin_audit_logs": 0,
+    "beta_feedback": 1
+  },
+  "count_errors": {},
+  "health_status": 200,
+  "competition_sample_count": 1,
+  "drill_at": "2026-09-03T01:18:39.745652"
+}

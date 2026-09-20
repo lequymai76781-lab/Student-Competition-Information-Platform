@@ -1,0 +1,85 @@
+{
+  "batch": "RECOGNITION_BATCH_01",
+  "verified_at": "2026-09-14T00:00:00+08:00",
+  "summary": {
+    "targets": 10,
+    "success": 7,
+    "completed_with_gaps": 3,
+    "blocked": 0,
+    "new_formal_files_verified": 7,
+    "recognition_documents_imported": 5,
+    "supporting_documents_only": 2
+  },
+  "targets": [
+    {
+      "school": "南京航空航天大学",
+      "status": "success",
+      "access": "公开页面与目录 PDF 均可访问；另留存 2024 年调整说明 PDF",
+      "url": "https://aao.nuaa.edu.cn/8010/list.htm",
+      "recognition_imported": true
+    },
+    {
+      "school": "中国地质大学（武汉）",
+      "status": "completed_with_gaps",
+      "access": "官方通知页可访问，但目录附件进入验证码，未形成可核验正文",
+      "url": "https://jgxy.cug.edu.cn/info/1135/19664.htm",
+      "recognition_imported": false
+    },
+    {
+      "school": "华南师范大学",
+      "status": "success",
+      "access": "官方静态域名 PDF 可访问；仅作为 2018 年学院级历史认可",
+      "url": "https://statics.scnu.edu.cn/pics/physics/2020/1220/1608470828120820.pdf",
+      "recognition_imported": true
+    },
+    {
+      "school": "西南财经大学",
+      "status": "success",
+      "access": "2026 官方发布页与目录 PDF 均可访问",
+      "url": "https://kj.swufe.edu.cn/info/1073/70322.htm",
+      "recognition_imported": true
+    },
+    {
+      "school": "武汉理工大学",
+      "status": "success",
+      "access": "二级站正式实施细则 PDF 可访问；文件没有可直接入库的赛事名称目录",
+      "url": "https://stle.whut.edu.cn/bks/jxwj/202412/P020241231652686468394.pdf",
+      "recognition_imported": false
+    },
+    {
+      "school": "北京交通大学",
+      "status": "success",
+      "access": "2025 官方发布页与项目列表 PDF 均可访问",
+      "url": "https://civil.bjtu.edu.cn/cms/item/23766.html",
+      "recognition_imported": true
+    },
+    {
+      "school": "北京科技大学",
+      "status": "completed_with_gaps",
+      "access": "教务处入口可访问，未找到可公开核验的现行校级完整认定目录",
+      "url": "https://jwc.ustb.edu.cn/",
+      "recognition_imported": false
+    },
+    {
+      "school": "华中农业大学",
+      "status": "completed_with_gaps",
+      "access": "2025 官方目录公告可访问，附件下载链路未获得稳定正文",
+      "url": "https://bksy.hzau.edu.cn/info/1070/6254.htm",
+      "recognition_imported": false
+    },
+    {
+      "school": "西南交通大学",
+      "status": "success",
+      "access": "官方二级站页面与 2025 A 类目录镜像 PDF 均可访问",
+      "url": "https://ctten.swjtu.edu.cn/info/4411/148101.htm",
+      "recognition_imported": true
+    },
+    {
+      "school": "武汉大学",
+      "status": "success",
+      "access": "复用上一批已核验的 2025 学院政策，验证当前认可与历史认可并存",
+      "url": "https://journal.whu.edu.cn/20250611use7",
+      "recognition_imported": false
+    }
+  ]
+}

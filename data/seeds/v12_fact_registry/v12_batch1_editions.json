@@ -1,0 +1,559 @@
+{
+  "round": "v12 batch1 official editions 2024-2026",
+  "entries": [
+    {
+      "competition_id": 1,
+      "name": "中国国际大学生创新大赛",
+      "notes": "教育部2024/2025/2026三年正式通知均已本地存档。",
+      "editions": [
+        {
+          "year": 2024,
+          "fields": {
+            "edition_name": "中国国际大学生创新大赛（2024）",
+            "official_notice_url": "https://www.moe.gov.cn/srcsite/A08/s5672/202405/t20240513_1130304.html",
+            "official_url": "https://cy.ncss.cn/",
+            "registration_start": "2024-05-15T00:00:00",
+            "host_location": "上海（总决赛，上海交通大学承办）",
+            "edition_status": "finished",
+            "current_status": "finished"
+          },
+          "source_url": "https://www.moe.gov.cn/srcsite/A08/s5672/202405/t20240513_1130304.html",
+          "source_type": "government_official_notice",
+          "authority_level": "S",
+          "raw_title": "教育部关于举办中国国际大学生创新大赛（2024）的通知",
+          "published_at": "2024-05-13T00:00:00",
+          "evidence_file": "data/raw/authority/moe_2024_innovation_notice.html",
+          "notes": "教高函〔2024〕9号；报名系统2024-05-15开放，报名截止由各地决定不得晚于2024-08-01；总决赛2024年10月",
+          "facts": {
+            "edition_schedule": "参赛报名2024年5—8月，报名系统2024-05-15开放，截止由各地根据复赛安排决定且不得晚于2024-08-01；初赛复赛6—8月；总决赛2024年10月",
+            "edition_organizer_note": "2024届由教育部、中央统战部、中央网信办、国家发展改革委、工业和信息化部、人力资源社会保障部、农业农村部、中国科学院、中国工程院、国家知识产权局、国家乡村振兴局、共青团中央和上海市人民政府联合主办；上海交通大学和闵行区人民政府共同承办",
+            "edition_rule_note": "参赛人员（不含产业命题赛道项目教师）年龄不超过35岁（1989年3月1日及以后出生）"
+          }
+        },
+        {
+          "year": 2025,
+          "allow_overwrite": ["official_notice_url"],
+          "nullify": ["official_registration_deadline"],
+          "fields": {
+            "edition_name": "中国国际大学生创新大赛（2025）",
+            "official_notice_url": "https://www.moe.gov.cn/srcsite/A08/s5672/202505/t20250509_1189810.html",
+            "edition_status": "finished",
+            "current_status": "finished"
+          },
+          "source_url": "https://www.moe.gov.cn/srcsite/A08/s5672/202505/t20250509_1189810.html",
+          "source_type": "government_official_notice",
+          "authority_level": "S",
+          "raw_title": "教育部关于举办中国国际大学生创新大赛（2025）的通知",
+          "published_at": "2025-05-12T00:00:00",
+          "evidence_file": "data/raw/authority/moe_2025_innovation_notice.md",
+          "notes": "教高函〔2025〕7号。原2025届官方截止时间误存为2026-09-25，已置空并记录修订；2025年全国统一截止不适用（各地自行决定，最迟2025-07-01）",
+          "facts": {
+            "edition_schedule": "参赛报名2025年4—7月，报名系统2025-05-09开放，报名截止由各地根据复赛安排决定且不得晚于2025-07-01；初赛复赛5—8月；总决赛2025年9月",
+            "edition_organizer_note": "2025届由教育部、中央统战部、中央网信办、国家发展改革委、工业和信息化部、人力资源社会保障部、农业农村部、中国科学院、中国工程院、国家知识产权局、共青团中央和河南省人民政府联合主办；郑州大学和郑州市人民政府共同承办",
+            "deadline_rule_note": "全国无统一报名截止日：报名截止时间由各地根据复赛安排自行决定，但不得晚于2025-07-01"
+          }
+        },
+        {
+          "year": 2026,
+          "allow_overwrite": ["official_registration_url"],
+          "fields": {
+            "official_registration_url": "https://cy.ncss.cn/",
+            "edition_status": "registration_open",
+            "current_status": "registration_open"
+          },
+          "source_url": "https://www.moe.gov.cn/srcsite/A08/s5672/202607/t20260731_1445670.html",
+          "source_type": "government_official_notice",
+          "authority_level": "S",
+          "raw_title": "教育部关于举办中国国际大学生创新大赛（2026）的通知",
+          "published_at": "2026-07-31T00:00:00",
+          "evidence_file": "data/raw/authority/moe_2026_innovation_notice.md",
+          "notes": "教高函〔2026〕26号；报名系统2026-08-10开放，2026-09-25 12时截止（结构化字段已存）；总决赛2026年11月",
+          "facts": {
+            "edition_schedule": "参赛报名2026年7—9月，报名系统2026-08-10开放，报名截止2026-09-25 12时；初赛复赛8—10月；总决赛2026年11月",
+            "edition_organizer_note": "2026届由教育部、中央统战部、中央网信办、国家发展改革委、工业和信息化部、人力资源社会保障部、农业农村部、中国科学院、中国工程院、国家知识产权局、共青团中央和江苏省人民政府联合主办；南京大学和南京市人民政府共同承办",
+            "edition_rule_note": "参赛人员年龄不超过35岁（1991年3月1日及以后出生），学校教师不得作为项目团队成员参赛"
+          }
+        }
+      ]
+    },
+    {
+      "competition_id": 2,
+      "name": "“挑战杯”全国大学生课外学术科技作品竞赛",
+      "notes": "第十九届（2025）官方通知正文已存档。",
+      "editions": [
+        {
+          "year": 2025,
+          "fields": {
+            "edition_name": "第十九届“挑战杯”全国大学生课外学术科技作品竞赛",
+            "official_notice_url": "https://www.tiaozhanbei.net/article/15795/",
+            "official_url": "https://www.tiaozhanbei.net/",
+            "host_location": "南京大学（全国终审决赛）",
+            "edition_status": "finished",
+            "current_status": "finished"
+          },
+          "source_url": "https://www.tiaozhanbei.net/article/15795/",
+          "source_type": "official_notice",
+          "authority_level": "S",
+          "raw_title": "第十九届“挑战杯”中国移动全国大学生课外学术科技作品竞赛通知（组委会2025-06-13发布）",
+          "published_at": "2025-06-13T00:00:00",
+          "evidence_file": "data/raw/authority/official_sites/tiaozhanbei_2025_19th_article.html",
+          "notes": "2025-06-30前各省级团委在官方平台完成全国决赛作品推报；全国终审决赛2025年下半年在南京大学举办，中国移动冠名支持",
+          "facts": {
+            "edition_schedule": "设校级初赛、省级复赛和全国决赛；2025-06-30前完成全国决赛推报；全国终审决赛2025年下半年在南京大学举办",
+            "edition_organizer_note": "2025届主办单位：共青团中央、中国科协、教育部、中国社会科学院、全国学联和江苏省人民政府；决赛由南京大学承办，中国移动冠名支持",
+            "edition_content_note": "主体赛事分科技发明制作、自然科学类学术论文、哲学社会科学类社会调查报告三类；另设“揭榜挂帅”专项赛与“人工智能+”专项赛"
+          }
+        }
+      ]
+    },
+    {
+      "competition_id": 3,
+      "name": "“挑战杯”中国大学生创业计划竞赛",
+      "notes": "第十五届（2026）官方通知正文已存档。",
+      "editions": [
+        {
+          "year": 2026,
+          "allow_overwrite": ["edition_name", "official_notice_url"],
+          "fields": {
+            "edition_name": "第十五届“挑战杯”中国大学生创业计划竞赛",
+            "official_notice_url": "https://www.tiaozhanbei.net/article/15842/",
+            "official_url": "https://2026.tiaozhanbei.net/",
+            "host_location": "大连理工大学（全国决赛）",
+            "edition_status": "ongoing",
+            "current_status": "unknown"
+          },
+          "source_url": "https://www.tiaozhanbei.net/article/15842/",
+          "source_type": "official_notice",
+          "authority_level": "S",
+          "raw_title": "关于举办第十五届“挑战杯”建设银行中国大学生创业计划竞赛的通知",
+          "published_at": "2026-05-23T00:00:00",
+          "evidence_file": "data/raw/authority/official_sites/tiaozhanbei_2026_15th_notice.html",
+          "notes": "组委会2026-05-23发布；校赛2026年5月底前、省赛6月底前、全国决赛11月前在大连理工大学举办",
+          "facts": {
+            "edition_schedule": "校级初赛2026年5月底前；省级复赛6月底前；全国终审决赛11月前在大连理工大学举办；约1900个项目进入全国决赛",
+            "edition_organizer_note": "2026届主办单位：共青团中央、教育部、人力资源社会保障部、中国科协、中国科学院、中国社会科学院、中国工程院、全国学联、辽宁省人民政府；承办单位：大连理工大学、共青团辽宁省委",
+            "edition_rule_note": "参赛对象为2026年6月1日以前正式注册的国内全日制普通高校在校专科生、本科生、硕士和博士研究生（不含在职研究生）及全日制职业教育本科、高职高专在校学生；设8个主体赛道及专项赛事"
+          }
+        }
+      ]
+    },
+    {
+      "competition_id": 4,
+      "name": "全国大学生数学建模竞赛",
+      "notes": "2025届《报名和参赛须知》（2025-04-02修订）PDF已存档，含报名/竞赛/提交时间节点。",
+      "editions": [
+        {
+          "year": 2025,
+          "fields": {
+            "edition_name": "2025高教社杯全国大学生数学建模竞赛",
+            "official_notice_url": "https://www.mcm.edu.cn/upload_cn/node/745/ogFWOgXVc36c27bb3ee3adf21e06f53146b03585.pdf",
+            "official_registration_url": "https://cumcm.cnki.net/",
+            "official_url": "https://www.mcm.edu.cn/",
+            "edition_rules_url": "https://www.mcm.edu.cn/upload_cn/node/745/ogFWOgXVc36c27bb3ee3adf21e06f53146b03585.pdf",
+            "registration_start": "2025-05-01T09:00:00",
+            "official_registration_deadline": "2025-09-01T20:00:00",
+            "competition_start": "2025-09-04T18:00:00",
+            "competition_end": "2025-09-07T20:00:00",
+            "submission_deadline": "2025-09-08T14:00:00",
+            "edition_status": "finished",
+            "current_status": "finished"
+          },
+          "source_url": "https://www.mcm.edu.cn/upload_cn/node/745/ogFWOgXVc36c27bb3ee3adf21e06f53146b03585.pdf",
+          "source_type": "official_notice",
+          "authority_level": "S",
+          "raw_title": "2025高教社杯全国大学生数学建模竞赛第一次通知（报名和参赛须知2025-04-02修订）",
+          "published_at": "2025-04-01T00:00:00",
+          "evidence_file": "data/raw/authority/mcm_2025_first_notice.pdf",
+          "notes": "学校账号注册与报名注册2025-05-01 09:00至09-01 20:00；竞赛09-04 18:00至09-07 20:00；MD5码提交截止09-07 20:00，作品上传09-07 20:30至09-08 14:00",
+          "facts": {
+            "edition_schedule": "参赛学校/参赛队报名注册2025-05-01 09:00至2025-09-01 20:00；竞赛2025-09-04 18:00至09-07 20:00；MD5码提交须于09-07 20:00前完成；电子作品09-07 20:30至09-08 14:00上传",
+            "edition_rule_note": "每队不超过3人且须属同一学校，专业不限；分本科组与高职高专组；研究生不得参赛",
+            "edition_system_note": "报名/下载赛题/提交作品均通过全国大学生数学建模竞赛管理系统 https://cumcm.cnki.net"
+          }
+        }
+      ]
+    },
+    {
+      "competition_id": 5,
+      "name": "全国大学生电子设计竞赛",
+      "notes": "2025国赛与2026专题赛官方通知已存档；2024为双数年赛区赛暨专题赛（偶数年非全国统赛年）。",
+      "editions": [
+        {
+          "year": 2024,
+          "fields": {
+            "edition_name": "2024年全国大学生电子设计竞赛赛区赛暨模拟电子系统设计专题赛（TI杯）",
+            "official_notice_url": "https://www.nuedc-training.com.cn/index/news/details/new_id/329",
+            "edition_rules_url": "https://www.nuedc-training.com.cn/index/news/details/new_id/329",
+            "official_url": "https://www.nuedc-training.com.cn/",
+            "edition_status": "finished",
+            "current_status": "finished"
+          },
+          "source_url": "https://www.nuedc-training.com.cn/index/news/details/new_id/329",
+          "source_type": "official_notice",
+          "authority_level": "S",
+          "raw_title": "2024年全国大学生电子设计竞赛赛区赛暨模拟电子系统设计专题赛（TI杯）初赛赛题",
+          "published_at": "2024-09-05T00:00:00",
+          "evidence_file": "data/raw/authority/official_sites/nuedc_2024_rules.html",
+          "notes": "2024为双数年：以赛区赛暨模拟电子系统设计专题赛形式举办；页面另见2024信息科技前沿专题赛决赛获奖名单（2024-08-26）",
+          "facts": {
+            "edition_format_note": "双数年举办赛区赛暨模拟电子系统设计专题赛（TI杯），初赛与省级大学生电子设计竞赛合并举行",
+            "edition_result_note": "2024年信息科技前沿专题赛决赛获奖名单（初评）于2024-08-26公布"
+          }
+        },
+        {
+          "year": 2025,
+          "fields": {
+            "edition_name": "2025年全国大学生电子设计竞赛",
+            "official_notice_url": "https://www.nuedc-training.com.cn/index/news/details/new_id/330",
+            "official_url": "https://www.nuedc-training.com.cn/",
+            "official_registration_deadline": "2025-05-31T23:59:59",
+            "competition_start": "2025-07-30T08:00:00",
+            "competition_end": "2025-08-02T20:00:00",
+            "edition_status": "finished",
+            "current_status": "result_announced"
+          },
+          "source_url": "https://www.nuedc-training.com.cn/index/news/details/new_id/330",
+          "source_type": "official_notice",
+          "authority_level": "S",
+          "raw_title": "关于组织2025年全国大学生电子设计竞赛的通知",
+          "published_at": "2025-01-20T00:00:00",
+          "evidence_file": "data/raw/authority/official_sites/nuedc_2025_org_notice.html",
+          "notes": "报名时间2025-05-31截止（各赛区汇总）；竞赛时间2025-07-30 8:00至08-02 20:00；3人一队，分本科组与高职高专组；获奖名单2025-08-29正式公布",
+          "additional_sources": [
+            {
+              "source_url": "https://www.nuedc-training.com.cn/index/news/details/new_id/340",
+              "source_type": "official_notice",
+              "authority_level": "S",
+              "raw_title": "关于公布2025年全国大学生电子设计竞赛获奖名单的通知",
+              "published_at": "2025-08-29T00:00:00",
+              "evidence_file": "data/raw/authority/official_sites/nuedc_2025_result.html",
+              "notes": "2025-08-29正式批准并公布获奖名单；异议期2025-08-22至08-28"
+            }
+          ],
+          "facts": {
+            "edition_schedule": "报名2025-05-31截止；竞赛2025-07-30 8:00至08-02 20:00；全国奖分赛区奖与全国奖两级",
+            "edition_rule_note": "参赛学生为普通高等学校正式学籍全日制在校本科或高职高专学生；3人一队；本科生组与高职高专学生组分别评奖",
+            "edition_result_url": {
+              "value": "https://www.nuedc-training.com.cn/index/news/details/new_id/340",
+              "source_url": "https://www.nuedc-training.com.cn/index/news/details/new_id/340",
+              "raw_title": "关于公布2025年全国大学生电子设计竞赛获奖名单的通知",
+              "published_at": "2025-08-29T00:00:00",
+              "evidence_file": "data/raw/authority/official_sites/nuedc_2025_result.html"
+            }
+          }
+        },
+        {
+          "year": 2026,
+          "allow_overwrite": ["edition_name", "official_notice_url", "official_registration_url"],
+          "fields": {
+            "edition_name": "2026年全国大学生电子设计竞赛（赛区赛暨模拟电子系统设计专题赛）",
+            "official_notice_url": "https://www.nuedc-training.com.cn/index/news/details/new_id/345",
+            "official_url": "https://www.nuedc-training.com.cn/",
+            "edition_status": "finished",
+            "current_status": "result_announced"
+          },
+          "source_url": "https://www.nuedc-training.com.cn/index/news/details/new_id/345",
+          "source_type": "official_notice",
+          "authority_level": "S",
+          "raw_title": "关于开展2026年全国大学生电子设计竞赛模拟电子系统设计专题赛的第一次通知",
+          "published_at": "2026-01-20T00:00:00",
+          "evidence_file": "data/raw/authority/official_sites/nuedc_2026_notice.html",
+          "notes": "2026年专题赛（TI杯）由全国组委会主办，东南大学、武汉大学承办，德州仪器协办；初赛与双数年省级竞赛合并（7月下旬），决赛2026-08-23至08-27在武汉大学举行",
+          "additional_sources": [
+            {
+              "source_url": "https://www.nuedc-training.com.cn/index/news/details/new_id/358",
+              "source_type": "official_notice",
+              "authority_level": "S",
+              "raw_title": "关于公布2026年全国大学生电子设计竞赛模拟电子系统设计专题赛决赛获奖名单（初评）的通知",
+              "published_at": "2026-09-02T00:00:00",
+              "evidence_file": "data/raw/authority/official_sites/nuedc_2026_result.html",
+              "notes": "2026-09-02官网发布决赛获奖名单（初评）"
+            }
+          ],
+          "facts": {
+            "edition_schedule": "专题赛初赛与双数年省级竞赛合并，2026年7月下旬进行；决赛2026-08-23至08-27在武汉大学举行",
+            "edition_organizer_note": "2026年专题赛由全国大学生电子设计竞赛组委会主办，东南大学、武汉大学承办，德州仪器（TI）协办",
+            "edition_result_url": {
+              "value": "https://www.nuedc-training.com.cn/index/news/details/new_id/358",
+              "source_url": "https://www.nuedc-training.com.cn/index/news/details/new_id/358",
+              "raw_title": "关于公布2026年全国大学生电子设计竞赛模拟电子系统设计专题赛决赛获奖名单（初评）的通知",
+              "published_at": "2026-09-02T00:00:00",
+              "evidence_file": "data/raw/authority/official_sites/nuedc_2026_result.html"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "competition_id": 24,
+      "name": "外研社·国才杯“理解当代中国”全国大学生外语能力大赛",
+      "notes": "2026年大赛官方通知（2026-04-16）已存档。",
+      "editions": [
+        {
+          "year": 2026,
+          "allow_overwrite": ["edition_name", "official_notice_url"],
+          "fields": {
+            "edition_name": "2026“外研社·国才杯”“理解当代中国”全国大学生外语能力大赛",
+            "official_notice_url": "https://ucc.fltrp.com/c/2026-04-15/541569.shtml",
+            "official_registration_url": "https://stu-ucc.fltrp.com/",
+            "official_url": "https://ucc.fltrp.com/",
+            "registration_start": "2026-06-02T00:00:00",
+            "edition_status": "registration_open",
+            "current_status": "registration_open"
+          },
+          "source_url": "https://ucc.fltrp.com/c/2026-04-15/541569.shtml",
+          "source_type": "official_notice",
+          "authority_level": "S",
+          "raw_title": "2026“外研社·国才杯”“理解当代中国”全国大学生外语能力大赛通知",
+          "published_at": "2026-04-16T00:00:00",
+          "evidence_file": "data/raw/authority/official_sites/fltrp_2026_notice.html",
+          "notes": "大赛2026年4月至12月举办；官网2026-06-02开放报名；校赛4—10月、省赛9—11月、国赛10—12月；英语组全国统一线上初赛2026-10-11",
+          "facts": {
+            "edition_schedule": "大赛2026年4月至12月；官网2026-06-02起开放报名；校赛4—10月、省赛9—11月、国赛10—12月；英语组全国统一线上初赛2026-10-11",
+            "edition_organizer_note": "2026年大赛由北京外国语大学主办、外语教学与研究出版社承办；英语组“四新”专项赛由浙江大学等协办",
+            "edition_rule_note": "英语组面向全国普通高校全日制在校本科生和硕士研究生（含来华留学生）；国际中文组面向全日制来华留学生；2025年国赛冠亚季军不得再参加该语种赛项"
+          }
+        }
+      ]
+    },
+    {
+      "competition_id": 32,
+      "name": "“西门子杯”中国智能制造挑战赛",
+      "notes": "2026年第二十届竞赛通知已存档。",
+      "editions": [
+        {
+          "year": 2026,
+          "fields": {
+            "edition_name": "2026年第二十届CIMC“西门子杯”中国智能制造挑战赛",
+            "official_notice_url": "http://www.siemenscup-cimc.org.cn/notice/NoticeDetail?id=2431",
+            "official_registration_url": "http://www.siemenscup-cimc.org.cn/",
+            "official_url": "http://www.siemenscup-cimc.org.cn/",
+            "registration_start": "2026-03-01T00:00:00",
+            "official_registration_deadline": "2026-05-31T23:59:59",
+            "edition_status": "registration_closed",
+            "current_status": "registration_closed"
+          },
+          "source_url": "http://www.siemenscup-cimc.org.cn/notice/NoticeDetail?id=2431",
+          "source_type": "official_notice",
+          "authority_level": "S",
+          "raw_title": "关于开展2026年第二十届CIMC“西门子杯”中国智能制造挑战赛的通知",
+          "published_at": "2026-02-25T00:00:00",
+          "evidence_file": "data/raw/authority/official_sites/siemenscup_2026_notice.html",
+          "notes": "官网通知2026-02-25发布；报名注册2026-03-01至05-31；决赛时间官网后续公布；大赛起源2006年，2026年为第二十届",
+          "facts": {
+            "edition_schedule": "2026-03-01至2026-05-31通过大赛官网注册组队报名；竞赛阶段与总决赛安排以官网后续通知为准",
+            "edition_organizer_note": "中国智能制造挑战赛全国竞赛组委会发布；赛事为教育部与西门子战略合作框架下项目，2006年由北京化工大学与西门子公司共同发起",
+            "edition_rule_note": "面向全国高校在校学生组队参赛（各赛项具体组队/对象规则见官网赛项说明）"
+          }
+        }
+      ]
+    },
+    {
+      "competition_id": 34,
+      "name": "中国大学生计算机设计大赛",
+      "notes": "2026年（第19届）官网赛事动态显示全国决赛与评审结果公示已于2026-08至09月完成。",
+      "editions": [
+        {
+          "year": 2026,
+          "allow_overwrite": ["edition_name", "official_notice_url", "current_status"],
+          "nullify": ["official_notice_url"],
+          "fields": {
+            "edition_name": "2026年（第19届）中国大学生计算机设计大赛",
+            "official_url": "https://jsjds.blcu.edu.cn/",
+            "edition_status": "finished",
+            "current_status": "result_announced"
+          },
+          "source_url": "https://jsjds.blcu.edu.cn/",
+          "source_type": "competition_official_website",
+          "authority_level": "S",
+          "raw_title": "中国大学生计算机设计大赛（官网）",
+          "published_at": "2026-09-01T00:00:00",
+          "evidence_file": "data/raw/authority/official_sites/jsjds_blcu_home.html",
+          "notes": "原official_notice_url为湖南大学高校初选通知，属校级来源；全国官网已显示2026-09-01评审结果公示，官方当届通知页待后续补录",
+          "facts": {
+            "edition_result_note": "2026-09-01官网发布“2026年（第19届）中国大学生计算机设计大赛评审结果公示”；多场国赛决赛于2026年8月在上海、杭州、济南、南京、长春等地赛区举办",
+            "edition_format_note": "按决赛区与作品类别组织（软件应用与开发、人工智能应用、大数据应用、物联网应用、数媒设计等）；第19届"
+          }
+        }
+      ]
+    },
+    {
+      "competition_id": 59,
+      "name": "中国好创意暨全国数字艺术设计大赛",
+      "notes": "官网赛事通道显示第20届常规赛道报名及作品提交至2026-07-01，最终获奖名单2026-08-15公布。",
+      "editions": [
+        {
+          "year": 2026,
+          "allow_overwrite": ["edition_name"],
+          "fields": {
+            "edition_name": "第20届中国好创意暨全国数字艺术设计大赛",
+            "official_url": "https://www.cdec.org.cn/",
+            "edition_status": "finished",
+            "current_status": "result_announced"
+          },
+          "source_url": "https://www.cdec.org.cn/",
+          "source_type": "competition_official_website",
+          "authority_level": "S",
+          "raw_title": "好创意大赛官网（中国好创意暨全国数字艺术设计大赛）",
+          "published_at": "2026-08-15T00:00:00",
+          "evidence_file": "data/raw/authority/official_sites/cdec_home.html",
+          "notes": "官网时间轴：常规赛道报名及作品提交至2026-07-01 12:00，评奖至2026-08-15，最终获奖名单公布2026-08-15",
+          "facts": {
+            "edition_schedule": "第20届常规赛道报名及作品提交至2026-07-01 12:00；评奖与最终获奖名单公布2026-08-15",
+            "edition_result_note": "第20届国赛颁奖暨数媒年会邀请函2026-08-10发布；国赛证书编号（学生组）2026-08-25起可查"
+          }
+        }
+      ]
+    },
+    {
+      "competition_id": 65,
+      "name": "中华经典诵写讲大赛",
+      "notes": "教育部、国家语委2026年正式通知（教语用函〔2026〕1号）已存档。",
+      "editions": [
+        {
+          "year": 2026,
+          "allow_overwrite": ["edition_name", "official_notice_url"],
+          "fields": {
+            "edition_name": "第八届中华经典诵写讲大赛",
+            "official_notice_url": "http://www.moe.gov.cn/srcsite/A18/s3137/202605/t20260528_1437956.html",
+            "official_url": "https://jdsxj.eduyun.cn/",
+            "edition_status": "unknown",
+            "current_status": "unknown"
+          },
+          "source_url": "http://www.moe.gov.cn/srcsite/A18/s3137/202605/t20260528_1437956.html",
+          "source_type": "government_official_notice",
+          "authority_level": "S",
+          "raw_title": "教育部 国家语委关于举办第八届中华经典诵写讲大赛的通知",
+          "published_at": "2026-05-28T00:00:00",
+          "evidence_file": "data/raw/authority/official_sites/moe_jdsxj_2026_notice.html",
+          "notes": "教语用函〔2026〕1号；分诵读、讲解、书写、篆刻四个赛项；官方平台 https://jdsxj.eduyun.cn",
+          "facts": {
+            "edition_schedule": "各赛项分初赛、复赛、决赛与交流展示，具体赛程见各赛项实施方案；参赛者在大赛官网注册报名并参加知识测评",
+            "edition_organizer_note": "教育部、国家语委主办；大赛组委会秘书处（教育部语言文字应用管理司）负责指导，大赛执委会（语文出版社）负责统筹协调",
+            "edition_result_note": "奖项包括一、二、三等奖和优秀奖，由大赛组委会统一颁发证书"
+          }
+        }
+      ]
+    },
+    {
+      "competition_id": 99,
+      "name": "全国大学生数学竞赛",
+      "notes": "cmathc.org.cn 为赛事信息发布平台，通知来源为中国数学会/全国大学生数学竞赛工作组；18届正文已存档，17/16届页面为通知标题与发布时间（正文页未全文存档）。",
+      "editions": [
+        {
+          "year": 2024,
+          "fields": {
+            "edition_name": "第十六届全国大学生数学竞赛",
+            "official_notice_url": "https://www.cmathc.org.cn/tzgg/88.html",
+            "edition_status": "finished",
+            "current_status": "finished"
+          },
+          "source_url": "https://www.cmathc.org.cn/tzgg/88.html",
+          "source_type": "official_notice",
+          "authority_level": "S",
+          "raw_title": "关于举办第十六届全国大学生数学竞赛的通知",
+          "published_at": "2024-06-06T00:00:00",
+          "evidence_file": "data/raw/authority/cmathc_16th_notice.html",
+          "notes": "官方公告页标题+发布时间2024-06-06（页面正文未公开存档，仅登记届次与通知入口）",
+          "facts": {
+            "edition_history_note": "第十六届（2024）：决赛获奖名单于2025-04-16公布；决赛三次通知发布于2025-03至05月"
+          }
+        },
+        {
+          "year": 2025,
+          "fields": {
+            "edition_name": "第十七届全国大学生数学竞赛",
+            "official_notice_url": "https://www.cmathc.org.cn/tzgg/201.html",
+            "edition_status": "finished",
+            "current_status": "finished"
+          },
+          "source_url": "https://www.cmathc.org.cn/tzgg/201.html",
+          "source_type": "official_notice",
+          "authority_level": "S",
+          "raw_title": "关于举办第十七届全国大学生数学竞赛的通知",
+          "published_at": "2025-06-11T00:00:00",
+          "evidence_file": "data/raw/authority/cmathc_17th_notice.html",
+          "notes": "官方公告页标题+发布时间2025-06-11；初赛获奖名单2025-12-22公布；决赛2026年4月举行",
+          "additional_sources": [
+            {
+              "source_url": "https://www.cmathc.org.cn/csmd/390.html",
+              "source_type": "official_notice",
+              "authority_level": "S",
+              "raw_title": "关于公布第十七届全国大学生数学竞赛初赛获奖名单的通知",
+              "published_at": "2025-12-22T00:00:00",
+              "evidence_file": "data/raw/authority/cmathc_17th_prelim_result.html",
+              "notes": "2025-12-22公布第十七届初赛获奖名单"
+            }
+          ],
+          "facts": {
+            "edition_history_note": "第十七届（2025-2026赛季）：初赛获奖名单2025-12-22公布；决赛2026年1-4月发布多轮通知并举行",
+            "edition_result_url": {
+              "value": "https://www.cmathc.org.cn/csmd/390.html",
+              "source_url": "https://www.cmathc.org.cn/csmd/390.html",
+              "raw_title": "关于公布第十七届全国大学生数学竞赛初赛获奖名单的通知",
+              "published_at": "2025-12-22T00:00:00",
+              "evidence_file": "data/raw/authority/cmathc_17th_prelim_result.html"
+            }
+          }
+        },
+        {
+          "year": 2026,
+          "allow_overwrite": ["edition_name", "official_notice_url", "official_registration_deadline"],
+          "fields": {
+            "edition_name": "第十八届全国大学生数学竞赛",
+            "official_notice_url": "https://www.cmathc.org.cn/tzgg/545.html",
+            "official_registration_deadline": "2026-10-19T23:59:59",
+            "official_competition_date": "2026-11-14T09:00:00",
+            "edition_status": "registration_open",
+            "current_status": "registration_open"
+          },
+          "source_url": "https://www.cmathc.org.cn/tzgg/545.html",
+          "source_type": "official_notice",
+          "authority_level": "S",
+          "raw_title": "关于举办第十八届全国大学生数学竞赛的通知",
+          "published_at": "2026-06-10T00:00:00",
+          "evidence_file": "data/raw/authority/cmathc_18th_notice.html",
+          "notes": "中国数学会决定举办；报名2026-10-19前按省数学会/委托承办单位要求完成；初赛2026-11-14 09:00-11:30；决赛预计2027年4月在大连理工大学举行；报名费100元",
+          "facts": {
+            "edition_schedule": "报名：2026-10-19前按所在省、自治区、直辖市数学会或军队院校数学教学联席会要求报名；初赛2026-11-14（周六）09:00-11:30；决赛预计2027年4月在大连理工大学举行",
+            "edition_organizer_note": "主办：中国数学会；本届由大连理工大学承办；决赛由全国大学生数学竞赛工作组、大连理工大学组织实施",
+            "edition_rule_note": "参赛对象为所有全日制在校大学生；分数学专业类、非数学专业类和高职高专类；报名费100元/人"
+          }
+        }
+      ]
+    },
+    {
+      "competition_id": 125,
+      "name": "中国研究生企业管理创新大赛",
+      "notes": "官方管理平台（cpipc.acge.org.cn）载明第四届赛程与参赛对象。",
+      "editions": [
+        {
+          "year": 2026,
+          "allow_overwrite": ["edition_name", "official_notice_url", "official_registration_url", "registration_start", "official_registration_deadline"],
+          "fields": {
+            "edition_name": "第四届中国研究生企业管理创新大赛",
+            "official_notice_url": "https://cpipc.acge.org.cn/cw/hp/2c90801786cfa2b60186de4143390279",
+            "official_registration_url": "https://cpipc.acge.org.cn/cw/hp/2c90801786cfa2b60186de4143390279",
+            "official_url": "https://cpipc.acge.org.cn/",
+            "registration_start": "2026-08-10T00:00:00",
+            "official_registration_deadline": "2026-09-22T23:59:59",
+            "edition_status": "registration_open",
+            "current_status": "registration_open"
+          },
+          "source_url": "https://cpipc.acge.org.cn/cw/hp/2c90801786cfa2b60186de4143390279",
+          "source_type": "competition_official_website",
+          "authority_level": "S",
+          "raw_title": "中国研究生创新实践系列大赛管理平台（第四届中国研究生企业管理创新大赛）",
+          "published_at": "2026-07-10T00:00:00",
+          "evidence_file": "data/raw/authority/official_sites/cpipc_2026_event.html",
+          "notes": "官方平台页：报名2026-08-10至09-22；资格审查至09-23；作品提交09-24至10-18；参赛对象为在校研究生及已获研究生入学资格的本科生和本研贯通学生",
+          "facts": {
+            "edition_schedule": "报名2026-08-10至2026-09-22；资格审查2026-08-10至09-23；提交作品2026-09-24至10-18",
+            "edition_organizer_note": "中国研究生创新实践系列大赛主题赛事；官方平台由中国学位与研究生教育学会等运行（教育部学位管理与研究生教育司指导）",
+            "edition_result_note": "当届大赛通知“关于举办第四届中国研究生企业管理创新大赛的通知”于2026-07-10发布"
+          }
+        }
+      ]
+    }
+  ]
+}

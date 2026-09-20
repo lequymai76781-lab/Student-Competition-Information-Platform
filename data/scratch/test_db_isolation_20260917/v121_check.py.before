@@ -1,0 +1,29 @@
+import sqlite3
+
+DB = r"D:\Python\xuesheng\data\v02.sqlite"
+con = sqlite3.connect(DB)
+cur = con.cursor()
+rows = cur.execute(
+    "select name from sqlite_master where type='table' "
+    "and (name like 'conference_%' or name='alembic_version') order by name"
+).fetchall()
+for (name,) in rows:
+    count = cur.execute(f"select count(*) from {name}").fetchone()[0]
+    print(f"{name}: {count}")
+print("alembic_version:", cur.execute("select version_num from alembic_version").fetchall())
+print("--- opportunity columns ---")
+print([r[1] for r in cur.execute("pragma table_info(conference_opportunities)")])
+print("--- candidate columns ---")
+print([r[1] for r in cur.execute("pragma table_info(conference_discovery_candidates)")])
+print("--- opportunities sample ---")
+for row in cur.execute(
+    "select id, conference_edition_id, opportunity_type, title, deadline, status_hint, "
+    "last_verified_at, evidence_status, is_verified, verification_status from conference_opportunities "
+    "order by id"
+):
+    print(row)
+print("--- edition years ---")
+for row in cur.execute(
+    "select year, count(*) from conference_editions group by year order by year"
+):
+    print(row)

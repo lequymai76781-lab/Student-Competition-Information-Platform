@@ -1,0 +1,352 @@
+{
+  "round": "v12 evidence-grounded fact enrichment",
+  "generated_at": "2026-09-05T14:29:46.160009+00:00",
+  "scope": "frozen core set only; no new Competition entities; no UI/API/architecture change",
+  "completeness_deltas": {
+    "has_organizer_pct": {
+      "before": 28.0,
+      "after": 29.0,
+      "delta": 1.0
+    },
+    "has_official_website_pct": {
+      "before": 16.0,
+      "after": 30.0,
+      "delta": 14.0
+    },
+    "has_target_students_pct": {
+      "before": 10.0,
+      "after": 13.0,
+      "delta": 3.0
+    },
+    "has_description_pct": {
+      "before": 86.0,
+      "after": 86.0,
+      "delta": 0.0
+    },
+    "has_structured_edition_pct": {
+      "before": 34.0,
+      "after": 36.0,
+      "delta": 2.0
+    },
+    "has_two_recent_pct": {
+      "before": 1.0,
+      "after": 4.0,
+      "delta": 3.0
+    },
+    "has_three_recent_pct": {
+      "before": 0.0,
+      "after": 3.0,
+      "delta": 3.0
+    },
+    "has_current_edition_info_pct": {
+      "before": 13.0,
+      "after": 18.0,
+      "delta": 5.0
+    }
+  },
+  "core_total": 100,
+  "batch1_detail": [
+    {
+      "competition_id": 1,
+      "name": "中国国际大学生创新大赛",
+      "website": "https://cy.ncss.cn",
+      "organizer": "教育部、中央统战部、中央网信办、国家发展改革委、工业和信息化部、人力资源社会保障部、农业农村部、中国科学院、中国工程院、国家知识产权局、共青团中央",
+      "target_students": "全日制在校本专科生、研究生及符合条件的高校毕业生；参赛人员年龄不超过35岁（以当届通知为准）；按高教主赛道、青年红色筑梦之旅、职教、产业命题、萌芽等赛道分别报名",
+      "edition_years": [
+        2026,
+        2025,
+        2024
+      ],
+      "official_edition_years": [
+        2026,
+        2025,
+        2024
+      ],
+      "sa_verified_sources": 4
+    },
+    {
+      "competition_id": 2,
+      "name": "“挑战杯”全国大学生课外学术科技作品竞赛",
+      "website": "https://tiaozhanbei.net",
+      "organizer": "共青团中央、中国科协、教育部、中国社会科学院、全国学联",
+      "target_students": null,
+      "edition_years": [
+        2025
+      ],
+      "official_edition_years": [
+        2025
+      ],
+      "sa_verified_sources": 3
+    },
+    {
+      "competition_id": 3,
+      "name": "“挑战杯”中国大学生创业计划竞赛",
+      "website": "https://www.tiaozhanbei.net/",
+      "organizer": "共青团中央、中国科协、教育部、中国社会科学院、全国学联",
+      "target_students": null,
+      "edition_years": [
+        2026
+      ],
+      "official_edition_years": [
+        2026
+      ],
+      "sa_verified_sources": 3
+    },
+    {
+      "competition_id": 4,
+      "name": "全国大学生数学建模竞赛",
+      "website": "https://mcm.edu.cn",
+      "organizer": "中国工业与应用数学学会",
+      "target_students": "普通高校全日制在校本专科学生（研究生不得参赛）；以队为单位，每队不超过3人且须属同一学校，专业不限；分本科组与高职高专组",
+      "edition_years": [
+        2026,
+        2025
+      ],
+      "official_edition_years": [
+        2026,
+        2025
+      ],
+      "sa_verified_sources": 4
+    },
+    {
+      "competition_id": 5,
+      "name": "全国大学生电子设计竞赛",
+      "website": "https://www.nuedc-training.com.cn/",
+      "organizer": "教育部、工业和信息化部",
+      "target_students": "普通高等学校具有正式学籍的全日制在校本科或高职高专学生；自愿组合、3人一队，由学校统一向赛区组委会报名；分本科生组与高职高专学生组",
+      "edition_years": [
+        2026,
+        2025,
+        2024
+      ],
+      "official_edition_years": [
+        2026,
+        2025,
+        2024
+      ],
+      "sa_verified_sources": 7
+    },
+    {
+      "competition_id": 21,
+      "name": "全国大学生电子商务“创新、创意及创业”挑战赛",
+      "website": "https://3chuang.net",
+      "organizer": "教育部高等学校电子商务类专业教学指导委员会",
+      "target_students": null,
+      "edition_years": [],
+      "official_edition_years": [],
+      "sa_verified_sources": 2
+    },
+    {
+      "competition_id": 24,
+      "name": "外研社·国才杯“理解当代中国”全国大学生外语能力大赛",
+      "website": "https://ucc.fltrp.com/",
+      "organizer": "北京外国语大学",
+      "target_students": "全国普通高等学校全日制在校本科生和硕士研究生（含来华留学生）；国际中文组面向全日制来华留学生（含专科、本科、研究生及进修生）；组别/赛项资格以当届通知为准",
+      "edition_years": [
+        2026
+      ],
+      "official_edition_years": [
+        2026
+      ],
+      "sa_verified_sources": 3
+    },
+    {
+      "competition_id": 32,
+      "name": "“西门子杯”中国智能制造挑战赛",
+      "website": "https://siemenscup-cimc.org.cn",
+      "organizer": "教育部高等学校自动化类专业教学指导委员会、西门子（中国）",
+      "target_students": null,
+      "edition_years": [
+        2026
+      ],
+      "official_edition_years": [
+        2026
+      ],
+      "sa_verified_sources": 2
+    },
+    {
+      "competition_id": 34,
+      "name": "中国大学生计算机设计大赛",
+      "website": "https://jsjds.blcu.edu.cn/",
+      "organizer": null,
+      "target_students": "在籍本科生",
+      "edition_years": [
+        2026
+      ],
+      "official_edition_years": [
+        2026
+      ],
+      "sa_verified_sources": 2
+    },
+    {
+      "competition_id": 35,
+      "name": "中国高校计算机大赛",
+      "website": "http://www.c4best.cn/",
+      "organizer": null,
+      "target_students": null,
+      "edition_years": [],
+      "official_edition_years": [],
+      "sa_verified_sources": 2
+    },
+    {
+      "competition_id": 36,
+      "name": "蓝桥杯全国软件和信息技术专业人才大赛",
+      "website": "https://dasai.lanqiao.cn",
+      "organizer": "工业和信息化部人才交流中心",
+      "target_students": null,
+      "edition_years": [],
+      "official_edition_years": [],
+      "sa_verified_sources": 2
+    },
+    {
+      "competition_id": 46,
+      "name": "中国机器人大赛暨RoboCup机器人世界杯中国赛",
+      "website": "https://rcccaa.drct-caa.org.cn/",
+      "organizer": null,
+      "target_students": null,
+      "edition_years": [
+        2026
+      ],
+      "official_edition_years": [],
+      "sa_verified_sources": 2
+    },
+    {
+      "competition_id": 47,
+      "name": "“中国软件杯”大学生软件设计大赛",
+      "website": "https://cnsoftbei.com",
+      "organizer": "工业和信息化部、教育部、江苏省人民政府",
+      "target_students": null,
+      "edition_years": [],
+      "official_edition_years": [],
+      "sa_verified_sources": 2
+    },
+    {
+      "competition_id": 56,
+      "name": "全国高校商业精英挑战赛",
+      "website": "http://www.cubec.org.cn/",
+      "organizer": null,
+      "target_students": null,
+      "edition_years": [],
+      "official_edition_years": [],
+      "sa_verified_sources": 2
+    },
+    {
+      "competition_id": 59,
+      "name": "中国好创意暨全国数字艺术设计大赛",
+      "website": "https://www.cdec.org.cn/",
+      "organizer": null,
+      "target_students": null,
+      "edition_years": [
+        2026
+      ],
+      "official_edition_years": [
+        2026
+      ],
+      "sa_verified_sources": 2
+    },
+    {
+      "competition_id": 63,
+      "name": "iCAN大学生创新创业大赛",
+      "website": "http://www.g-ican.com/",
+      "organizer": null,
+      "target_students": null,
+      "edition_years": [
+        2026
+      ],
+      "official_edition_years": [],
+      "sa_verified_sources": 2
+    },
+    {
+      "competition_id": 65,
+      "name": "中华经典诵写讲大赛",
+      "website": "https://jdsxj.eduyun.cn/",
+      "organizer": "教育部、国家语委",
+      "target_students": "面向大中小学在校学生、教师及社会公众（含港澳台与海外赛区；具体对象以各赛项实施方案为准），参赛者自愿参赛",
+      "edition_years": [
+        2026
+      ],
+      "official_edition_years": [
+        2026
+      ],
+      "sa_verified_sources": 3
+    },
+    {
+      "competition_id": 99,
+      "name": "全国大学生数学竞赛",
+      "website": "https://www.cmathc.org.cn/",
+      "organizer": "中国数学会",
+      "target_students": "所有全日制在校大学生；分数学专业类、非数学专业类与高职高专类（数学专业类再分A/B类，非数学专业类分理工A/经管文史B类）",
+      "edition_years": [
+        2026,
+        2025,
+        2024
+      ],
+      "official_edition_years": [
+        2026,
+        2025,
+        2024
+      ],
+      "sa_verified_sources": 4
+    },
+    {
+      "competition_id": 101,
+      "name": "全国大学生英语竞赛",
+      "website": "http://www.chinaneccs.cn/",
+      "organizer": "教育部高等学校大学外语教学指导委员会",
+      "target_students": null,
+      "edition_years": [
+        2026
+      ],
+      "official_edition_years": [],
+      "sa_verified_sources": 1
+    },
+    {
+      "competition_id": 125,
+      "name": "中国研究生企业管理创新大赛",
+      "website": "https://cpipc.acge.org.cn/",
+      "organizer": "中国学位与研究生教育学会、全国工商管理专业学位研究生教育指导委员会",
+      "target_students": "在校研究生及已获研究生入学资格的本科生和本研贯通学生",
+      "edition_years": [
+        2026
+      ],
+      "official_edition_years": [
+        2026
+      ],
+      "sa_verified_sources": 1
+    }
+  ],
+  "editions": {
+    "total": 62,
+    "by_status": {
+      "pending_verification": 8,
+      "school_confirmed": 31,
+      "verified_official": 23
+    },
+    "by_year_2023_2026": {
+      "2024": 3,
+      "2025": 7,
+      "2026": 52
+    },
+    "official_notice_competitions": 14,
+    "edition_result_fact_rows": 3
+  },
+  "competition_statuses": {
+    "authority_confirmed": 69,
+    "duplicate": 2,
+    "pending_verification": 24,
+    "school_confirmed": 9,
+    "suspected": 7,
+    "unverified": 1,
+    "verified_official": 31
+  },
+  "sources_v12": {
+    "added_rows": 13,
+    "by_level": {
+      "S": 13
+    }
+  },
+  "official_website_filled_total": 33,
+  "new_editions_rows": 8,
+  "verification_note": "Competition 层状态未变（无升降级）；Edition 层 verified_official 8→23，school_confirmed 38→31，均为高校占位届次被官方 S 级来源覆盖后的真实晋升。",
+  "removed_data_note": "本轮未删除 Competition/CompetitionEdition/CompetitionSource/通知/证据文件。仅清理 6 条错误的关系行：comp1 江苏省人民政府(organizer)、南京大学(undertaker)、南京市人民政府(undertaker)（2026届当届承办，写入届次事实层）；comp3 人社部(organizer)（旧缩写、当届名单按届次记录）；comp24 外语教学与研究出版社(organizer)（改为 undertaker）；comp5 全国大学生电子设计竞赛组织委员会(organizer)（组委会是组织机制而非独立主办机构）。另有 2 项字段级修正：comp1 2025届 official_registration_deadline 错误值置空、comp34 2026届 official_notice_url 由高校通知改为置空等待官网当届通知页。所有变更均写入 CompetitionFactRevision/AdminAuditLog。"
+}

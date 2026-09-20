@@ -1,0 +1,231 @@
+{
+  "round": "v12 batch1 competition permanent fields",
+  "entries": [
+    {
+      "competition_id": 1,
+      "name": "中国国际大学生创新大赛",
+      "notes": "永久主办方字段曾误含2026届承办省份江苏省人民政府；依据2024/2025/2026三年教育部通知取交集（不含当届承办省市）。",
+      "competition_fields": {
+        "organizer": {
+          "value": "教育部、中央统战部、中央网信办、国家发展改革委、工业和信息化部、人力资源社会保障部、农业农村部、中国科学院、中国工程院、国家知识产权局、共青团中央",
+          "source_url": "https://www.moe.gov.cn/srcsite/A08/s5672/202607/t20260731_1445670.html",
+          "allow_overwrite": true,
+          "overwrite_reason": "移除2026届当届共同主办单位（江苏省人民政府），保留跨届稳定主办清单",
+          "notes": "教育部2024/2025/2026通知均列此11家国家级主办单位；承办省份/高校写入对应届次事实层"
+        },
+        "undertakers": {
+          "value": [],
+          "source_url": "https://www.moe.gov.cn/srcsite/A08/s5672/202607/t20260731_1445670.html",
+          "allow_overwrite": true,
+          "overwrite_reason": "南京大学/南京市人民政府为2026届承办，2025届为郑州大学等；承办关系按届次存储，不写入永久字段"
+        },
+        "target_students": {
+          "value": "全日制在校本专科生、研究生及符合条件的高校毕业生；参赛人员年龄不超过35岁（以当届通知为准）；按高教主赛道、青年红色筑梦之旅、职教、产业命题、萌芽等赛道分别报名",
+          "source_url": "https://www.moe.gov.cn/srcsite/A08/s5672/202607/t20260731_1445670.html",
+          "allow_overwrite": true,
+          "overwrite_reason": "以教育部2024-2026年正式通知的参赛要求替代旧的泛化概括",
+          "notes": "2026通知：在校生以在读学籍报名，毕业生以最高学历报名；年龄不超35岁（1991-03-01后出生）"
+        }
+      },
+      "organizations": [
+        {"name": "教育部", "role": "organizer", "org_type": "government_agency", "source_url": "https://www.moe.gov.cn/srcsite/A08/s5672/202607/t20260731_1445670.html"},
+        {"name": "中央统战部", "role": "organizer", "org_type": "government_agency", "source_url": "https://www.moe.gov.cn/srcsite/A08/s5672/202607/t20260731_1445670.html"},
+        {"name": "中央网信办", "role": "organizer", "org_type": "government_agency", "source_url": "https://www.moe.gov.cn/srcsite/A08/s5672/202607/t20260731_1445670.html"},
+        {"name": "国家发展改革委", "role": "organizer", "org_type": "government_agency", "source_url": "https://www.moe.gov.cn/srcsite/A08/s5672/202607/t20260731_1445670.html"},
+        {"name": "工业和信息化部", "role": "organizer", "org_type": "government_agency", "source_url": "https://www.moe.gov.cn/srcsite/A08/s5672/202607/t20260731_1445670.html"},
+        {"name": "人力资源社会保障部", "role": "organizer", "org_type": "government_agency", "source_url": "https://www.moe.gov.cn/srcsite/A08/s5672/202607/t20260731_1445670.html"},
+        {"name": "农业农村部", "role": "organizer", "org_type": "government_agency", "source_url": "https://www.moe.gov.cn/srcsite/A08/s5672/202607/t20260731_1445670.html"},
+        {"name": "中国科学院", "role": "organizer", "org_type": "research_institute", "source_url": "https://www.moe.gov.cn/srcsite/A08/s5672/202607/t20260731_1445670.html"},
+        {"name": "中国工程院", "role": "organizer", "org_type": "research_institute", "source_url": "https://www.moe.gov.cn/srcsite/A08/s5672/202607/t20260731_1445670.html"},
+        {"name": "国家知识产权局", "role": "organizer", "org_type": "government_agency", "source_url": "https://www.moe.gov.cn/srcsite/A08/s5672/202607/t20260731_1445670.html"},
+        {"name": "共青团中央", "role": "organizer", "org_type": "association", "source_url": "https://www.moe.gov.cn/srcsite/A08/s5672/202607/t20260731_1445670.html"}
+      ],
+      "organization_removals": [
+        {"name": "江苏省人民政府", "role": "organizer", "reason": "2026届当届共同主办，非永久主办；当届信息存于CompetitionFactSource/届次事实"},
+        {"name": "南京大学", "role": "undertaker", "reason": "2026届承办单位，非永久承办；当届信息存于届次事实"},
+        {"name": "南京市人民政府", "role": "undertaker", "reason": "2026届承办单位，非永久承办；当届信息存于届次事实"}
+      ]
+    },
+    {
+      "competition_id": 2,
+      "name": "“挑战杯”全国大学生课外学术科技作品竞赛",
+      "notes": "官方简介与第十九届通知均载明共同主办：共青团中央、中国科协、教育部、中国社会科学院、全国学联（当届另含承办省份）。",
+      "competition_fields": {
+        "organizer": {
+          "value": "共青团中央、中国科协、教育部、中国社会科学院、全国学联",
+          "source_url": "https://www.tiaozhanbei.net/article/15795/",
+          "raw_title": "第十九届“挑战杯”中国移动全国大学生课外学术科技作品竞赛通知（组委会2025-06-13发布）",
+          "allow_overwrite": true,
+          "overwrite_reason": "依据官网简介及第十九届正式通知补齐稳定主办单位",
+          "notes": "2025年第十九届由共青团中央、中国科协、教育部、中国社会科学院、全国学联和江苏省人民政府联合主办（当届省份写入届次事实）"
+        }
+      },
+      "organizations": [
+        {"name": "共青团中央", "role": "organizer", "org_type": "association", "source_url": "https://www.tiaozhanbei.net/article/15795/"},
+        {"name": "中国科协", "role": "organizer", "org_type": "academic_association", "source_url": "https://www.tiaozhanbei.net/article/15795/"},
+        {"name": "教育部", "role": "organizer", "org_type": "government_agency", "source_url": "https://www.tiaozhanbei.net/article/15795/"},
+        {"name": "中国社会科学院", "role": "organizer", "org_type": "research_institute", "source_url": "https://www.tiaozhanbei.net/article/15795/"},
+        {"name": "全国学联", "role": "organizer", "org_type": "association", "source_url": "https://www.tiaozhanbei.net/article/15795/"}
+      ]
+    },
+    {
+      "competition_id": 3,
+      "name": "“挑战杯”中国大学生创业计划竞赛",
+      "notes": "与课外学术科技作品竞赛为并列项目，共用挑战杯官方网站。",
+      "competition_fields": {
+        "organizer": {
+          "value": "共青团中央、中国科协、教育部、中国社会科学院、全国学联",
+          "source_url": "https://www.tiaozhanbei.net/article/15842/",
+          "raw_title": "关于举办第十五届“挑战杯”建设银行中国大学生创业计划竞赛的通知",
+          "allow_overwrite": true,
+          "overwrite_reason": "官方简介口径统一两并列项目的稳定主办单位；2026届当届名单含人社部等写入届次事实",
+          "notes": "2026年第十五届当届主办单位：共青团中央、教育部、人力资源社会保障部、中国科协、中国科学院、中国社会科学院、中国工程院、全国学联、辽宁省人民政府"
+        }
+      },
+      "organizations": [
+        {"name": "共青团中央", "role": "organizer", "org_type": "association", "source_url": "https://www.tiaozhanbei.net/article/15842/"},
+        {"name": "中国科协", "role": "organizer", "org_type": "academic_association", "source_url": "https://www.tiaozhanbei.net/article/15842/"},
+        {"name": "教育部", "role": "organizer", "org_type": "government_agency", "source_url": "https://www.tiaozhanbei.net/article/15842/"},
+        {"name": "中国社会科学院", "role": "organizer", "org_type": "research_institute", "source_url": "https://www.tiaozhanbei.net/article/15842/"},
+        {"name": "全国学联", "role": "organizer", "org_type": "association", "source_url": "https://www.tiaozhanbei.net/article/15842/"}
+      ],
+      "organization_removals": [
+        {"name": "人社部", "role": "organizer", "reason": "旧字段缩写且为当届共同主办，永久层不保留；全称人力资源社会保障部按届次记录"}
+      ]
+    },
+    {
+      "competition_id": 4,
+      "name": "全国大学生数学建模竞赛",
+      "notes": "官方章程（2023年修订稿）载明由中国工业与应用数学学会主办；研究生不得参赛。",
+      "competition_fields": {
+        "target_students": {
+          "value": "普通高校全日制在校本专科学生（研究生不得参赛）；以队为单位，每队不超过3人且须属同一学校，专业不限；分本科组与高职高专组",
+          "source_url": "https://www.mcm.edu.cn/upload_cn/node/745/ogFWOgXVc36c27bb3ee3adf21e06f53146b03585.pdf",
+          "raw_title": "2025高教社杯全国大学生数学建模竞赛第一次通知（报名和参赛须知2025-04-02修订）",
+          "allow_overwrite": true,
+          "overwrite_reason": "以官方章程文本细化参赛对象与组队规则",
+          "notes": "《全国大学生数学建模竞赛章程》(2023修订稿)第三条；报名参赛须知2025-04-02修订"
+        }
+      },
+      "organizations": [
+        {"name": "中国工业与应用数学学会", "role": "organizer", "org_type": "academic_association", "official_website": "https://www.csiam.org.cn/", "source_url": "https://www.mcm.edu.cn/upload_cn/node/745/ogFWOgXVc36c27bb3ee3adf21e06f53146b03585.pdf"}
+      ]
+    },
+    {
+      "competition_id": 5,
+      "name": "全国大学生电子设计竞赛",
+      "notes": "参赛对象与组队规则出自2025年全国竞赛组委会正式通知。",
+      "competition_fields": {
+        "target_students": {
+          "value": "普通高等学校具有正式学籍的全日制在校本科或高职高专学生；自愿组合、3人一队，由学校统一向赛区组委会报名；分本科生组与高职高专学生组",
+          "source_url": "https://www.nuedc-training.com.cn/index/news/details/new_id/330",
+          "raw_title": "关于组织2025年全国大学生电子设计竞赛的通知",
+          "allow_overwrite": true,
+          "overwrite_reason": "以2025年全国竞赛组委会通知替换旧值/空值",
+          "notes": "《关于组织2025年全国大学生电子设计竞赛的通知》2025-01-20"
+        }
+      },
+      "organizations": [
+        {"name": "全国大学生电子设计竞赛组织委员会", "role": "organizer", "org_type": "competition_committee", "official_website": "https://www.nuedc-training.com.cn/", "source_url": "https://www.nuedc-training.com.cn/index/news/details/new_id/330"}
+      ],
+      "organization_removals": [
+        {"name": "全国大学生电子设计竞赛组织委员会", "role": "organizer", "reason": "全国组委会是组织机制而非独立主办机构（主办为教育部、工业和信息化部），不写入机构主办关系"}
+      ]
+    },
+    {
+      "competition_id": 24,
+      "name": "外研社·国才杯“理解当代中国”全国大学生外语能力大赛",
+      "notes": "2026年大赛官方通知载明：北京外国语大学主办、外语教学与研究出版社承办。",
+      "competition_fields": {
+        "organizer": {
+          "value": "北京外国语大学",
+          "source_url": "https://ucc.fltrp.com/c/2026-04-15/541569.shtml",
+          "raw_title": "2026“外研社·国才杯”“理解当代中国”全国大学生外语能力大赛通知",
+          "allow_overwrite": true,
+          "overwrite_reason": "原永久主办方误把承办方（外语教学与研究出版社）写为主办方；按官方通知区分主办/承办",
+          "notes": "大赛通知：大赛由北京外国语大学主办，外语教学与研究出版社承办"
+        },
+        "undertakers": {
+          "value": ["外语教学与研究出版社"],
+          "source_url": "https://ucc.fltrp.com/c/2026-04-15/541569.shtml",
+          "raw_title": "2026“外研社·国才杯”“理解当代中国”全国大学生外语能力大赛通知",
+          "allow_overwrite": true,
+          "overwrite_reason": "官方通知载明外研社为承办单位",
+          "notes": "2026年通知：外语教学与研究出版社（外研社）承办"
+        },
+        "target_students": {
+          "value": "全国普通高等学校全日制在校本科生和硕士研究生（含来华留学生）；国际中文组面向全日制来华留学生（含专科、本科、研究生及进修生）；组别/赛项资格以当届通知为准",
+          "source_url": "https://ucc.fltrp.com/c/2026-04-15/541569.shtml",
+          "raw_title": "2026“外研社·国才杯”“理解当代中国”全国大学生外语能力大赛通知",
+          "allow_overwrite": true,
+          "overwrite_reason": "以2026年大赛官方通知的三组别参赛资格为准",
+          "notes": "2026通知：英语组/多语种组/国际中文组覆盖11个语种；2025年国赛冠亚季军不得再参加该语种赛项"
+        }
+      },
+      "organization_removals": [
+        {"name": "外语教学与研究出版社", "role": "organizer", "reason": "外研社为承办单位而非主办单位，改为 undertaker 关系"}
+      ],
+      "organizations": [
+        {"name": "北京外国语大学", "role": "organizer", "org_type": "university", "official_website": "https://www.bfsu.edu.cn/", "source_url": "https://ucc.fltrp.com/c/2026-04-15/541569.shtml"},
+        {"name": "外语教学与研究出版社", "role": "undertaker", "org_type": "enterprise", "official_website": "https://www.fltrp.com/", "source_url": "https://ucc.fltrp.com/c/2026-04-15/541569.shtml"}
+      ]
+    },
+    {
+      "competition_id": 65,
+      "name": "中华经典诵写讲大赛",
+      "notes": "教育部、国家语委2026年正式通知（教语用函〔2026〕1号）。",
+      "competition_fields": {
+        "organizer": {
+          "value": "教育部、国家语委",
+          "source_url": "http://www.moe.gov.cn/srcsite/A18/s3137/202605/t20260528_1437956.html",
+          "notes": "通知：教育部、国家语委决定举办第八届中华经典诵写讲大赛"
+        },
+        "target_students": {
+          "value": "面向大中小学在校学生、教师及社会公众（含港澳台与海外赛区；具体对象以各赛项实施方案为准），参赛者自愿参赛",
+          "source_url": "http://www.moe.gov.cn/srcsite/A18/s3137/202605/t20260528_1437956.html",
+          "notes": "2026通知：鼓励民族地区、农村地区和边远地区师生、群众踊跃参赛；海外赛区由国家语言文字推广基地（华东师范大学）组织实施"
+        }
+      },
+      "organizations": [
+        {"name": "教育部", "role": "organizer", "org_type": "government_agency", "source_url": "http://www.moe.gov.cn/srcsite/A18/s3137/202605/t20260528_1437956.html"},
+        {"name": "国家语委", "role": "organizer", "org_type": "government_agency", "source_url": "http://www.moe.gov.cn/srcsite/A18/s3137/202605/t20260528_1437956.html"}
+      ]
+    },
+    {
+      "competition_id": 99,
+      "name": "全国大学生数学竞赛",
+      "notes": "第十八届（2026）通知由中国数学会青年工作与大学生数学竞赛委员会发布；cmathc.org.cn为赛事信息发布平台，来源沿用既有审核结论，另记录核验提示。",
+      "competition_fields": {
+        "target_students": {
+          "value": "所有全日制在校大学生；分数学专业类、非数学专业类与高职高专类（数学专业类再分A/B类，非数学专业类分理工A/经管文史B类）",
+          "source_url": "https://www.cmathc.org.cn/tzgg/545.html",
+          "allow_overwrite": true,
+          "overwrite_reason": "以中国数学会第十八届正式通知细化参赛对象与分类",
+          "notes": "普通高校数学类本科专业(0701)学生只能报考数学专业类；非数学类本科专业学生不能报考高职高专类"
+        }
+      },
+      "organizations": [
+        {"name": "中国数学会", "role": "organizer", "org_type": "academic_association", "official_website": "https://www.cms.org.cn/", "source_url": "https://www.cmathc.org.cn/tzgg/545.html"}
+      ]
+    },
+    {
+      "competition_id": 125,
+      "name": "中国研究生企业管理创新大赛",
+      "notes": "官方赛事管理平台（cpipc.acge.org.cn）载明参赛对象与当届赛程。",
+      "competition_fields": {
+        "target_students": {
+          "value": "在校研究生及已获研究生入学资格的本科生和本研贯通学生",
+          "source_url": "https://cpipc.acge.org.cn/cw/hp/2c90801786cfa2b60186de4143390279",
+          "allow_overwrite": true,
+          "overwrite_reason": "以官方平台“赛事规则-参赛对象”原文为准",
+          "notes": "中国研究生创新实践系列大赛官方平台页面（第四届）"
+        }
+      },
+      "organizations": [
+        {"name": "中国学位与研究生教育学会", "role": "organizer", "org_type": "academic_association", "official_website": "https://www.acge.org.cn/", "source_url": "https://cpipc.acge.org.cn/cw/hp/2c90801786cfa2b60186de4143390279"},
+        {"name": "全国工商管理专业学位研究生教育指导委员会", "role": "organizer", "org_type": "commission", "source_url": "https://cpipc.acge.org.cn/cw/hp/2c90801786cfa2b60186de4143390279"},
+        {"name": "教育部学位管理与研究生教育司", "role": "guiding", "org_type": "government_agency", "source_url": "https://cpipc.acge.org.cn/cw/hp/2c90801786cfa2b60186de4143390279"}
+      ]
+    }
+  ]
+}

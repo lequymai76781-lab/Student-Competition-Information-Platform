@@ -1,0 +1,57 @@
+{
+  "task": "GENERAL_UNDERGRADUATE_PRODUCTION_GOLD_VERIFY",
+  "generated_at": "2026-09-17T06:24:02.007101+00:00",
+  "method": "read-only DB reconciliation against the frozen gold set",
+  "database": "D:\\Python\\xuesheng\\data\\scratch\\policy_model_fix_20260917\\v02-policy-model-validation.sqlite",
+  "scope": "general_a",
+  "gold_school_count": 8,
+  "expected_documents": 11,
+  "found_documents": 10,
+  "document_recall": 0.9091,
+  "attachment_recall": 0.9,
+  "false_negatives": [
+    {
+      "school": "昆明理工大学",
+      "target": "昆明理工大学本科生学科竞赛管理办法（2019年修订）",
+      "expected_url": "https://fflc.kmust.edu.cn/__local/A/05/CC/C8077C7F483E8A60D25EAD5C9BB_E959710C_41EA1.pdf?e=.pdf"
+    }
+  ],
+  "jobs": {
+    "count": 8,
+    "by_school": [
+      {
+        "school": "北京工商大学",
+        "status": "completed"
+      },
+      {
+        "school": "河北大学",
+        "status": "completed"
+      },
+      {
+        "school": "江苏大学",
+        "status": "completed"
+      },
+      {
+        "school": "深圳大学",
+        "status": "completed"
+      },
+      {
+        "school": "湖北大学",
+        "status": "completed"
+      },
+      {
+        "school": "昆明理工大学",
+        "status": "completed"
+      },
+      {
+        "school": "西安理工大学",
+        "status": "completed"
+      },
+      {
+        "school": "西藏民族大学",
+        "status": "completed"
+      }
+    ]
+  },
+  "off_domain_documents": []
+}

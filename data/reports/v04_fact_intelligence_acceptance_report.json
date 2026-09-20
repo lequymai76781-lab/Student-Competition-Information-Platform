@@ -1,0 +1,116 @@
+{
+  "version": "V0.4",
+  "generated_at": "2026-08-31T19:11:28.524126+00:00",
+  "definitions": {
+    "competition_total": "is_demo=false and is_competition=true",
+    "activities": "activity and festival entities grouped for the requested 44-item report",
+    "ultimately_verified": "verified_official + verified_multi_source",
+    "github_discovery": "third-party data remains in CompetitionLead until independently verified"
+  },
+  "acceptance": {
+    "01_competition_total": 118,
+    "02_new_competitions": 4,
+    "03_cleaned_non_competition_entities": 7,
+    "04_awards": 4,
+    "05_activities": 1,
+    "06_exhibitions": 1,
+    "07_unknown": 1,
+    "08_aliases": 142,
+    "09_parents": 4,
+    "10_children": 20,
+    "11_tags": 24,
+    "12_source_distribution": {
+      "competition_sources": {
+        "github_seed": 24,
+        "official_notice": 3,
+        "organizer_official_notice": 2,
+        "university_official_notice": 2,
+        "university_policy": 102
+      },
+      "lead_sources": {
+        "source_repository_discovery": 68,
+        "third_party_platform": 79,
+        "university_official": 6
+      },
+      "fact_sources": {
+        "organizer_official_notice": 34,
+        "university_official_notice": 38
+      }
+    },
+    "13_wuhan_sports_only_sources": 78,
+    "14_github_sources": {
+      "existing_competition_source_records": 24,
+      "v04_discovery_leads": 147,
+      "accepted_projects": 2
+    },
+    "15_other_university_sources": 13,
+    "16_official_site_sources": 7,
+    "17_university_wechat_leads": 0,
+    "18_event_wechat_leads": 0,
+    "19_platform_leads": 79,
+    "20_social_leads": 0,
+    "21_multi_source_verified_competitions": 1,
+    "22_verified_official": 6,
+    "23_verified_multi_source": 1,
+    "24_secondary_source_only": 89,
+    "25_unverified": 22,
+    "26_suspected": 0,
+    "27_editions": 7,
+    "28_2026_editions": 7,
+    "29_registration_open": 5,
+    "30_deadlines_within_30_days": 4,
+    "31_openings_within_90_days": 0,
+    "32_organizer_present": 29,
+    "33_official_site_present": 16,
+    "34_founded_year_present": 1,
+    "35_description_present": 99,
+    "36_complete_detail_count": 5,
+    "37_policy_documents": 2,
+    "38_school_college_relations": 102,
+    "39_985_coverage": "1/39",
+    "40_universities_actually_crawled": {
+      "count": 5,
+      "names": [
+        "北京大学",
+        "华中科技大学",
+        "武汉大学",
+        "浙江大学",
+        "清华大学"
+      ]
+    },
+    "41_real_github_projects": {
+      "searched": 5,
+      "accepted": 2,
+      "projects": [
+        {
+          "repository": "Tomzkl/college-competitions-skill",
+          "license": "MIT",
+          "status": "imported_seed"
+        },
+        {
+          "repository": "Nemoyuzx/contest-ddl",
+          "license": "MIT",
+          "status": "imported_as_leads"
+        },
+        {
+          "repository": "xcg1125/college-competition-ddl",
+          "license": "not_confirmed",
+          "status": "not_imported"
+        },
+        {
+          "repository": "Freedomisgood/Competition-Yellow-Pages",
+          "license": "not_confirmed",
+          "status": "not_imported_stale"
+        },
+        {
+          "repository": "kelin-gpu/campus-competition-agent",
+          "license": "not_confirmed",
+          "status": "not_imported"
+        }
+      ]
+    },
+    "42_wechat_leads": 0,
+    "43_third_party_platform_leads": 79,
+    "44_ultimately_verified_competitions": 7
+  }
+}

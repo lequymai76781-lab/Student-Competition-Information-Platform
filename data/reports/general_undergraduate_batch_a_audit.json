@@ -1,0 +1,35 @@
+{
+  "generated_at": "2026-09-15T05:48:35.901024+00:00",
+  "checks": {
+    "master_unique": true,
+    "batch_partition": true,
+    "research_coverage_100": true,
+    "terminal_statuses": true,
+    "no_public_batch_schema": true,
+    "batch_a_entities": true,
+    "duplicate_competition_audit": true,
+    "source_audit": true,
+    "relation_audit": true,
+    "recognition_audit": true,
+    "orphan_audit": true,
+    "false_positive_cleanup": true,
+    "idempotency": true,
+    "checkpoint_resume": true
+  },
+  "summary": {
+    "PASS": 14
+  },
+  "cleanup": {
+    "policy_documents_removed": 0,
+    "recognitions_removed": 0
+  },
+  "duplicates": [],
+  "orphans": {
+    "editions_without_competition": 0,
+    "sources_without_competition": 0,
+    "relations_without_university": 0,
+    "relations_without_edition": 0,
+    "recognitions_without_policy": 0,
+    "recognitions_without_competition": 0
+  }
+}

@@ -1,0 +1,20 @@
+def test_pytest_can_append_log(tmp_path):
+    path = tmp_path / "app.log"
+    with path.open("a", encoding="utf-8") as handle:
+        handle.write("pytest probe\n")
+    assert path.read_text(encoding="utf-8") == "pytest probe\n"
+
+
+def test_pytest_can_write_sqlite(tmp_path):
+    import sqlite3
+
+    connection = sqlite3.connect(tmp_path / "probe.sqlite")
+    connection.execute("create table probe (id integer primary key, value text not null)")
+    connection.execute("insert into probe(value) values ('pytest')")
+    connection.commit()
+    assert connection.execute("select value from probe").fetchone() == ("pytest",)
+    connection.close()
+
+
+def test_pytest_import_app_main():
+    import app.main  # noqa: F401

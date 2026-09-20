@@ -1,0 +1,893 @@
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="renderer" content="webkit">
+  <meta name="referrer" content="webkit" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="viewport" content="width=1200, initial-scale=0.1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="format-detection" content="telephone=no">
+  <title>关于组织2025年全国大学生电子设计竞赛的通知-信息发布-全国大学生电子设计竞赛培训网</title>  <meta name="keywords" content="" />  <meta name="description" content="关于组织2025年全国大学生电子设计竞赛的通知" />  <link rel="shortcut icon"  href="https://www.nuedc-training.com.cn/logo.ico">
+  <link rel="stylesheet" href="https://static.nuedc-training.com.cn/css/style3.css?=24">
+  <link rel="stylesheet" href="https://static.nuedc-training.com.cn/css/styleNew.css?=56">
+  <!--<link rel="stylesheet" href="https://static.nuedc-training.com.cn/css/style.min.css?v=16">-->
+  <script src="https://static.nuedc-training.com.cn/js/jquery.min.js"></script>
+  <script src="https://static.nuedc-training.com.cn/js/Validform_v5.3.2_min.js"></script>
+  <link href="https://static.nuedc-training.com.cn/css/swiper.min.css" rel="stylesheet">
+  <script src="https://static.nuedc-training.com.cn/js/swiper.min.js"></script>
+  <!--<link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/css/swiper.min.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/js/swiper.min.js"></script>-->
+  <!--[if lt IE 9]>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script>
+    <style>
+      html {
+        overflow-x: hidden;
+      }
+      body {
+        overflow-x: visible
+      }
+    </style>
+	<![endif]-->
+	<style>
+		.nav-link{
+			padding: 0 17px;
+		}
+	</style>
+</head>
+<!-- <style>
+  *{
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+}
+.index-information-box img {
+    left: -220px;
+  }
+</style> -->
+<script>
+$(function(){
+	var a = "https://www.nuedc-training.com.cn/index/mall/sign";
+
+	$(".nav-user-sign").click(function(){
+		if(!$(this).hasClass("active")){
+			$.ajax({
+				type:"GET",
+				url:a,
+				dataType:"json",
+				data:'',
+				async:true,
+				success:function (e) {
+					if(e.status === 1){
+						$(".head-popup").show()
+						$(".popup-main-title").html(e.info)
+						$("#popupNum").html(e.data.sign_count)
+						$(".popup-main-li").each(function(index){
+							if(index < e.data.sign_count){
+								$(this).find(".popup-mainItem-bg").show()
+							}
+						})
+					}
+					if(e.status === 0){
+						$(".head-popup").show()
+						$(".popup-main-title").html(e.info)
+						$("#popupNum").html(e.data.sign_count)
+						$(".popup-main-li").each(function(index){
+							if(index < e.data.sign_count){
+								$(this).find(".popup-mainItem-bg").show()
+							}
+						})
+					}
+					if(e.status === 2){
+							window.location.href = e.data
+					}
+				}
+			})
+		}
+	})
+
+	$("#userBtn").click(function(){
+		$.ajax({
+				type:"GET",
+				url:a,
+				dataType:"json",
+				data:'',
+				async:true,
+				success:function (e) {
+					if(e.status === 1){
+						$(".head-popup").show()
+						$(".popup-main-title").html(e.info)
+						$("#popupNum").html(e.data.sign_count)
+						$(".popup-main-li").each(function(index){
+							if(index < e.data.sign_count){
+								$(this).find(".popup-mainItem-bg").show()
+							}
+						})
+					}
+					if(e.status === 0){
+						$(".head-popup").show()
+						$(".popup-main-title").html(e.info)
+						$("#popupNum").html(e.data.sign_count)
+						$(".popup-main-li").each(function(index){
+							if(index < e.data.sign_count){
+								$(this).find(".popup-mainItem-bg").show()
+							}
+						})
+					}
+					if(e.status === 2){
+							window.location.href = e.data
+					}
+				}
+			})
+	})
+
+	$(".popup-head-close").click(function(){
+		$(".head-popup").hide()
+		window.location.href = window.location.href
+	})
+
+	$(window).scroll(function() {
+		if ($(this).scrollTop() > 200) {
+			$(".nav").addClass("active")
+		} else {
+			$(".nav").removeClass("active")
+		}
+	})
+	  if ($("#searchForm").length) {
+        var $form = $("#searchForm").Validform({
+          tiptype: 4,
+          ignoreHidden: true,
+          ajaxPost: false,
+          beforeSumbmit: function () {
+
+          },
+          callback: function (data) {
+
+          }
+        })
+      }
+      if ($('#bannerWrap').length) {
+        var banner = new window.GZApp.Scroll({
+          mainWrap: '#bannerWrap',
+          auto: true,
+          speed: 0.5,
+          tagWrap: '#bannerTab2'
+        })
+        banner.showHide();
+      }
+})
+</script>
+<!-- 	<div class="tip-pop" style="position: fixed; top: 0px; left: 50%; transform: translate(-50%); width: 1200px; margin: 0px auto; padding: 3px 20px; background-color: #fff7db;color: #555555; text-align: left; font-size: 14px; border-radius: 4px; z-index: 9; border-radius: 6px;box-sizing: border-box;">
+		<p style="font-size: 13px;text-align: center;">全国大学生电子设计竞赛培训网将于2020年5月19日 21:00-23:00 进行升级维护，期间部分功能将会无法使用，给您带来的不便敬请谅解。 <a href="" style="color: #0070cf">查看详情</a>
+		<span class="colse-tip-pop" style="padding-left: 10px; cursor: pointer;">X</span>
+		</p>
+	</div> -->
+<script>
+	$('.colse-tip-pop').click(function () {
+		$('.tip-pop').hide()
+	})
+</script>
+<section class="head-popup">
+	<div class="popup-main">
+			<h2 class="popup-main-title">签到</h2>
+			<div class="popup-main-test">
+				已连续签到&nbsp; <span id="popupNum">0</span> &nbsp;天
+			</div>
+		<ul class="popup-main-ul clearfix">
+							<li class="popup-main-li leftCol" >
+					<p class="popup-main-date">第一天</p>
+					<div class="popup-main-item">
+												<img src="https://static.nuedc-training.com.cn/images/new/HZ-icon.png"/>
+												<p>1赫兹币</p>
+						<div class="popup-mainItem-bg">
+							<span>已签到</span>
+						</div>
+					</div>
+				</li>
+							<li class="popup-main-li leftCol" >
+					<p class="popup-main-date">第二天</p>
+					<div class="popup-main-item">
+												<img src="https://static.nuedc-training.com.cn/images/new/HZ-icon.png"/>
+												<p>1赫兹币</p>
+						<div class="popup-mainItem-bg">
+							<span>已签到</span>
+						</div>
+					</div>
+				</li>
+							<li class="popup-main-li leftCol" >
+					<p class="popup-main-date">第三天</p>
+					<div class="popup-main-item">
+												<img src="https://static.nuedc-training.com.cn/images/new/HZ-icon.png"/>
+												<p>1赫兹币</p>
+						<div class="popup-mainItem-bg">
+							<span>已签到</span>
+						</div>
+					</div>
+				</li>
+							<li class="popup-main-li leftCol" >
+					<p class="popup-main-date">第四天</p>
+					<div class="popup-main-item">
+												<img src="https://static.nuedc-training.com.cn/images/new/HZ-icon.png"/>
+												<p>1赫兹币</p>
+						<div class="popup-mainItem-bg">
+							<span>已签到</span>
+						</div>
+					</div>
+				</li>
+							<li class="popup-main-li leftCol" >
+					<p class="popup-main-date">第五天</p>
+					<div class="popup-main-item">
+												<img src="https://static.nuedc-training.com.cn/images/new/HZ-icon.png"/>
+												<p>1赫兹币</p>
+						<div class="popup-mainItem-bg">
+							<span>已签到</span>
+						</div>
+					</div>
+				</li>
+							<li class="popup-main-li leftCol" style="width:144px;">
+					<p class="popup-main-date">第六天</p>
+					<div class="popup-main-item">
+												<img src="https://static.nuedc-training.com.cn/images/new/HZ-icon2.png"/>
+						<img class="popup-mainItem-img" src="https://static.nuedc-training.com.cn/images/double-icon.png"/>						<p>2赫兹币</p>
+						<div class="popup-mainItem-bg">
+							<span>已签到</span>
+						</div>
+					</div>
+				</li>
+							<li class="popup-main-li leftCol" style="width:144px;">
+					<p class="popup-main-date">第七天</p>
+					<div class="popup-main-item">
+												<img src="https://static.nuedc-training.com.cn/images/new/HZ-icon2.png"/>
+						<img class="popup-mainItem-img" src="https://static.nuedc-training.com.cn/images/double-icon.png"/>						<p>2赫兹币</p>
+						<div class="popup-mainItem-bg">
+							<span>已签到</span>
+						</div>
+					</div>
+				</li>
+					</ul>
+		<a href="https://www.nuedc-training.com.cn/index/answer/index" target="_blank" class="popup-main-link">前往每周一练，赢取100赫兹币</a>
+		<div class="popup-head-close"></div>
+	</div>
+	<div class="popup-bg"></div>
+</section>
+
+<body style="-webkit-overflow-scrolling: touch;">
+	<!-- 新年样式 -->
+<!-- <div class="header-nav-group new-year-head"> -->
+<div class="header-nav-group">
+	<header class="header">
+	<div class="container clearfix">
+				<a class="logo" href="https://www.nuedc-training.com.cn/" title="全国大学生电子设计竞赛培训网">
+			<img src="https://res.nuedc-training.com.cn/s/png/2019/01/26/bbs_201901266708.png" alt="全国大学生电子设计竞赛培训网">
+		</a>
+				<div class="header-right">
+			<form id="searchForm" action="https://www.nuedc-training.com.cn/index/search/bbs" class="header-search" method="get" onsubmit="$(this).attr('action', $('#search_type').val());return true;">
+				<span>
+					<select class="header-sel" name="st" id="search_type">
+						<!-- <option value="https://www.nuedc-training.com.cn/index/search/bbs" >电赛论坛</option> -->
+						<option value="https://www.nuedc-training.com.cn/index/search/news" >信息发布</option>
+						<option value="https://www.nuedc-training.com.cn/index/search/training" >培训资源</option>
+					</select>
+				</span>
+				<span class="header-line"></span>
+				<input class="header-text" placeholder="输入您要搜索的关键词" type="search" name="w" id="" datatype="*" nullmsg="请输入搜索内容！" value="">
+				<button class="header-submit" type="submit">搜索</button>
+			</form>
+		</div>
+	</div>
+	</header>
+	<nav class="nav">
+		<div class="container clearfix">
+			<ul class="clearfix leftCol nav-ul">
+				<li class="leftCol">
+					<a href="https://www.nuedc-training.com.cn/" class="nav-link ">首页</a>
+				</li>
+				<li class="leftCol">
+					<a href="https://www.nuedc-training.com.cn/index/news" class="nav-link active">信息发布</a>
+				</li>
+				<li class="leftCol review-header-li" style="position: relative">
+					<a href="https://www.nuedc-training.com.cn/index/publicity/topic2026" class="nav-link ">2026电赛专区</a>
+					<img width="34" class="nav-ulIcon" src="https://static.nuedc-training.com.cn/images/new/new.png"/>
+					<ul class="header-review-list" style="width: 160px;">
+						<li class="header-review-li"><a href="https://www.nuedc-training.com.cn/index/news/details/new_id/323">历年赛题题目合集</a></li>
+					</ul>
+				</li>
+				<!-- <li class="leftCol" style="position: relative">
+					<a href="https://bbs.nuedc-training.com.cn"  class="nav-link">电赛论坛</a>
+					<img width="34" class="nav-ulIcon" src="https://static.nuedc-training.com.cn/images/new/new.png"/>
+				</li> -->
+				<li class="leftCol  review-header-li" style="position: relative">
+
+					<a href="https://www.nuedc-training.com.cn/index/activity" class="nav-link ">活动专区
+						<!-- <img width="34" class="nav-ulIcon" src="https://static.nuedc-training.com.cn/images/new/new.png"/> -->
+					</a>
+					<ul class="header-review-list" style="width: 160px;">
+						<!-- <li class="header-review-li">
+							<a href="https://www.nuedc-training.com.cn/index/card_advance/march2023_list" style="padding:18px 0 14px 0;">
+								答题赢板卡
+							</a>
+							<img width="34" class="nav-ulIcon" src="https://static.nuedc-training.com.cn/images/new/new.png"/>
+						</li> -->
+						<li class="header-review-li"><a href="https://www.nuedc-training.com.cn/index/huodong/vlog_2025">电赛作品Vlog分享</a></li>
+					</ul>
+
+					<!--<a href="https://www.nuedc-training.com.cn/index/activity" class="nav-link ">活动专区</a>-->
+				</li>
+				<li class="leftCol review-header-li" style="position: relative">
+					<a href="https://www.nuedc-training.com.cn/index/video" class="nav-link ">
+						培训资源
+					</a>
+					<img width="34" class="nav-ulIcon" src="https://static.nuedc-training.com.cn/images/new/new.png"/>
+					<ul class="header-review-list" style="width: 200px;">
+						<li class="header-review-li">
+							<a href="https://www.nuedc-training.com.cn/index/huodong/btq_course_2026" style="padding:18px 0 14px 0;">
+								2026年 TI 杯电赛集训营
+								<!--<img width="34" class="nav-ulIcon" src="https://static.nuedc-training.com.cn/images/new/new.png"/>-->
+							</a>
+							<!-- <img width="34" class="nav-ulIcon" src="https://static.nuedc-training.com.cn/images/new/new.png"/> -->
+						</li>
+						<li class="header-review-li">
+							<a href="https://www.nuedc-training.com.cn/index/huodong/btq_course_2025" style="padding:18px 0 14px 0;">
+								2025年 TI 杯电赛集训营
+								<!--<img width="34" class="nav-ulIcon" src="https://static.nuedc-training.com.cn/images/new/new.png"/>-->
+							</a>
+							<!-- <img width="34" class="nav-ulIcon" src="https://static.nuedc-training.com.cn/images/new/new.png"/> -->
+						</li>
+						<li class="header-review-li">
+							<a href="https://www.nuedc-training.com.cn/index/huodong/btq_course_2024" style="padding:18px 0 14px 0;">
+								2024年 TI 杯电赛集训营
+								<!--<img width="34" class="nav-ulIcon" src="https://static.nuedc-training.com.cn/images/new/new.png"/>-->
+							</a>
+							<!-- <img width="34" class="nav-ulIcon" src="https://static.nuedc-training.com.cn/images/new/new.png"/> -->
+						</li>
+						<li class="header-review-li">
+							<a href="https://www.nuedc-training.com.cn/index/huodong/btq_course" style="padding:18px 0 14px 0;">
+								2023年 TI 杯电赛精品课
+								<!--<img width="34" class="nav-ulIcon" src="https://static.nuedc-training.com.cn/images/new/new.png"/>-->
+							</a>
+							<!-- <img width="34" class="nav-ulIcon" src="https://static.nuedc-training.com.cn/images/new/new.png"/> -->
+						</li>
+						<li class="header-review-li">
+							<a href="https://www.nuedc-training.com.cn/mooc/index/index" style="padding:18px 0 14px 0;">慕课
+								<!--<img width="34" class="nav-ulIcon" src="https://static.nuedc-training.com.cn/images/new/new.png"/>-->
+							</a>
+							<!-- <img width="34" class="nav-ulIcon" src="https://static.nuedc-training.com.cn/images/new/new.png"/> -->
+						</li>
+						<li class="header-review-li">
+							<a href="https://www.nuedc-training.com.cn/index/news/details/new_id/323" style="padding:18px 0 14px 0;">历年赛题集合
+								<!--<img width="34" class="nav-ulIcon" src="https://static.nuedc-training.com.cn/images/new/new.png"/>-->
+							</a>
+							<!-- <img width="34" class="nav-ulIcon" src="https://static.nuedc-training.com.cn/images/new/new.png"/> -->
+						</li>
+					</ul>
+				</li>
+				<li class="leftCol review-header-li" style="position: relative">
+					<a href="https://www.nuedc-training.com.cn/index/huodong/mspm0_index" class="nav-link ">
+						TI MSPM0学习中心
+					</a>
+					<img width="34" class="nav-ulIcon" src="https://static.nuedc-training.com.cn/images/new/new.png"/>
+					<ul class="header-review-list" style="width: 200px;">
+						<li class="header-review-li">
+							<a href="https://www.nuedc-training.com.cn/index/huodong/mspm0_activity1" style="padding:18px 0 14px 0;">TI MSPM0 电赛系列活动
+								<!--<img width="34" class="nav-ulIcon" src="https://static.nuedc-training.com.cn/images/new/new.png"/>-->
+							</a>
+							<!-- <img width="34" class="nav-ulIcon" src="https://static.nuedc-training.com.cn/images/new/new.png"/> -->
+						</li>
+					</ul>
+					
+				</li>
+				<!--<li class="leftCol">-->
+					<!--<a href="https://www.nuedc-training.com.cn/index/review" class="nav-link ">往届回顾</a>-->
+				<!--</li>-->
+				<!-- <li class="leftCol">
+					<a href="https://www.nuedc-training.com.cn/index/mall" class="nav-link ">兑换商城
+						<img width="34" class="nav-ulIcon" src="https://static.nuedc-training.com.cn/images/new/new.png"/>
+					</a>
+				</li> -->
+								<li class="leftCol review-header-li" style="position: relative">
+					<a href="https://www.nuedc-training.com.cn/index/evm/index_2026" class="nav-link ">板卡申请
+						<img width="34" class="nav-ulIcon" src="https://static.nuedc-training.com.cn/images/new/new.png"/>
+					</a>
+					<ul class="header-review-list">
+						<li class="header-review-li"><a href="https://www.nuedc-training.com.cn/index/evm/index_2026">学生专区</a></li>
+						<li class="header-review-li"><a href="https://www.nuedc-training.com.cn/index/card/index">教师专区</a></li>
+					</ul>
+				</li>
+								<!-- <li class="leftCol review-header-li" style="position: relative">
+					<a href="https://bbs.nuedc-training.com.cn"  class="nav-link">电赛论坛</a>
+					<ul class="header-review-list">
+						<li class="header-review-li">
+							<a href="https://www.nuedc-training.com.cn/index/mall" style="padding:18px 0 14px 0;">兑换商城
+							</a>
+						</li>
+					</ul>
+				</li> -->
+				 <!-- <li class="leftCol">
+					<a href="https://www.nuedc-training.com.cn/mooc/index/index" class="nav-link ">慕课
+						<img width="34" class="nav-ulIcon" src="https://static.nuedc-training.com.cn/images/new/new.png"/>
+					</a>
+				</li> -->
+				<li class="leftCol">
+					<a href="https://www.nuedc-training.com.cn/index/huodong/cse" class="nav-link ">竞赛支持企业
+						<!--<img width="34" class="nav-ulIcon" src="https://static.nuedc-training.com.cn/images/new/new.png"/>-->
+					</a>
+				</li>
+			</ul>
+			<style>
+				.header-review-list {
+					position: absolute;
+					top: 60px;
+					left: 50%;
+					transform: translate(-50%, 0);
+					width: 110px;
+					background:rgba(255,255,255,1);
+					box-shadow:0px 2px 4px 0px rgba(0,0,0,0.3);
+					z-index: 9;
+					display: none;
+
+				}
+				.header-review-li {
+					padding: 0 0px;
+				}
+				.header-review-li a {
+					display: block;
+					padding: 14px 0;
+					text-align: center;
+					font-size: 14px;
+					border-bottom: 1px solid #D8D8D8;
+					color: #333333;
+				}
+
+				.header-review-li:last-child a {
+					border: 0;
+				}
+				.header-review-li:hover a {
+					color: #4583FF;
+					background-color: #fff;
+				}
+				.review-header-li:hover .header-review-list {
+					display: block;
+				}
+			</style>
+			<div class="nav-user rightCol clearfix">
+				<!-- <a href="http://tj.21dianyuan.com/KJVOXrPl" class="leftCol nav-user-buy" target="_blank" style="margin-right:5px;">
+					<div id="openNewBuy" class="nav-user-buy-wrap hide">
+						<div class="nav-user-buy-link">官方认证购买渠道</div>
+						<button id="closeNewBuy" class="nav-user-buy-btn"></button>
+					</div>
+				</a> -->
+						<div class="nav-nologin rightCol">
+				<a href="https://www.nuedc-training.com.cn/index/login?referer=https://www.nuedc-training.com.cn/index/news/details/new_id/330">登录</a>
+				<span>&nbsp;|&nbsp;</span>
+				<a href="https://www.nuedc-training.com.cn/index/register">注册</a>
+			</div>
+						</div>
+		</div>
+	</nav>
+</div>
+  <ul class="leader" style="display: block;bottom:40%;">
+    <li class="leader-item item4">
+      <div class="a">
+		<style>
+			.leader-item4-hide{
+				width: auto;
+				left: auto;
+				right: 70px;
+			}
+			.leader-item4-hide .leader-item4-li{
+				white-space:nowrap;
+			}
+        </style>
+		  <div class="leader-item4-hide">
+			  <p class="leader-item4-title">编辑推荐</p>
+			  			  <ul class="leader-item4-ul">
+				  <li class="leader-item4-li"><b>·</b><span><a href="https://www.nuedc-training.com.cn/index/news/details/new_id/351" target="_blank">关于2026年全国大学生电子设计竞赛模拟电子系统设计专题赛（TI杯)TI指定器件及免费获取板卡方式的说明</a></span></li>
+			  </ul>
+			  			  <ul class="leader-item4-ul">
+				  <li class="leader-item4-li"><b>·</b><span><a href="https://www.nuedc-training.com.cn/index/news/details/new_id/345" target="_blank">关于开展2026年全国大学生电子设计竞赛 模拟电子系统设计专题赛的第一次通知</a></span></li>
+			  </ul>
+			  			  <ul class="leader-item4-ul">
+				  <li class="leader-item4-li"><b>·</b><span><a href="https://www.nuedc-training.com.cn/index/news/details/new_id/343" target="_blank">关于组织2026年全国大学生电子设计竞赛专题竞赛的通知</a></span></li>
+			  </ul>
+			  			  <ul class="leader-item4-ul">
+				  <li class="leader-item4-li"><b>·</b><span><a href="https://www.nuedc-training.com.cn/index/huodong/live_topic2026" target="_blank">TI 杯2026年全国大学生电子设计竞赛 TI 培训系列直播</a></span></li>
+			  </ul>
+			  			  <ul class="leader-item4-ul">
+				  <li class="leader-item4-li"><b>·</b><span><a href="https://www.nuedc-training.com.cn/index/huodong/btq_course_2026" target="_blank">电赛集训营</a></span></li>
+			  </ul>
+			  		  </div>
+      </div>
+    </li>
+   </ul>
+   
+<script>
+	function get_cookie(Name) {
+		var search = Name + "="//查询检索的值
+		var returnvalue = "";//返回值
+		if (document.cookie.length > 0) {
+			sd = document.cookie.indexOf(search);
+			if (sd!= -1) {
+					sd += search.length;
+					end = document.cookie.indexOf(";", sd);
+					if (end == -1)
+					end = document.cookie.length;
+					//unescape() 函数可对通过 escape() 编码的字符串进行解码。
+					returnvalue=unescape(document.cookie.substring(sd, end))
+				}
+		}
+		return returnvalue;
+	}
+
+	if (get_cookie("buyClose")) {
+		$('#openNewBuy').parent().hover(function () {
+			$('#openNewBuy').show()
+		}, function () {
+			$('#openNewBuy').hide()
+		})
+	} else {
+		$('#openNewBuy').removeClass('hide')
+		$('#closeNewBuy,#openNewBuy').show()
+		$('#closeNewBuy').click(function (e) {
+			e.stopPropagation()
+			document.cookie="buyClose=1;domain=.nuedc-training.com.cn;expires=Fri, 31 Dec 9999 23:59:59 GMT";
+			$('#openNewBuy').hide().addClass('hide')
+			$('#closeNewBuy').hide()
+			$('#openNewBuy').parent().hover(function () {
+				$('#openNewBuy').show()
+			}, function () {
+				$('#openNewBuy').hide()
+			})
+			return false
+		})
+	}
+</script>
+
+<script>
+  news_id = '330';
+</script>
+<body onselectstart="return false">
+<section class="news-bg">
+  <section class="container">
+    <section class="clearfix">
+      <ul class="news-crumbs clearfix">
+        <li class="news-crumbs-item"><a href="https://www.nuedc-training.com.cn/index/news/index">全部</a></li>
+        <li class="video-crumbs-item"><em></em></li>
+        <li class="news-crumbs-item"><a href="https://www.nuedc-training.com.cn/index/news/index/id/1">官方通知</a></li>
+        <li class="video-crumbs-item"><em></em></li>
+        <li class="news-crumbs-item">关于组织2025年全国大学生电子设计竞赛的通知</li>
+      </ul>
+    </section>
+    <section class="news-main clearfix">
+      <div class="newsMain-left" style="width:800px">
+        <div class="newsMain-content">
+          <div class="clearfix">
+            <div class="newsHeader-left clearfix">
+                            <!-- <span class="newsHeader-a">大学生</span>
+              <span class="newsHeader-a">邀请赛</span> -->
+            </div>
+            <ul class="share-ul clearfix">
+              <li class="share-li">
+                <div class="bdsharebuttonbox">
+                  <a href="#" class="bds_more" data-cmd="more">分享</a>
+                  <div class="video-details-share">
+                    <a class="sina" href="javascript:share.weibo();"></a>
+                    <a class="qqzone" href="javascript:share.qzone();"></a>
+                    <a class="qq" class="sharetotqq" href="javascript:share.qq();"></a>
+<!--                    <a class="wechat-icon" href="javascript:share.weixin();"></a>-->
+                    <a class="wechat-icon" href="javascript:void(0)"></a>
+                  </div>
+                </div>
+              </li>
+              <!-- <li class="share-li">
+                <a href="" class="share-liA"></a>
+                <span>收藏</span>
+              </li> -->
+            </ul>
+          </div>
+          <h2 class="newsMain-content-title">关于组织2025年全国大学生电子设计竞赛的通知</h2>
+          <div class="newsMain-icon clearfix" style="margin:18px 0 32px 0;">
+            <div class="clearfix newsMain-icon-item"><i class="newsMain-i1"></i><span>2025-01-20 08:35</span></div>
+            <div class="clearfix newsMain-icon-item"><i class="newsMain-i3"></i>官方通知</div>
+          </div>
+          <div class="newsMain-content-zhaiyao">
+            摘要：关于组织2025年全国大学生电子设计竞赛的通知          </div>
+          <p><strong><span style="font-size: 14px;">各赛区组织委员会、各有关高等学校：</span></strong><span style="font-size: 14px;"> </span></p><p><span style="font-size: 14px;">全国大学生电子设计竞赛（以下简称全国竞赛）组委会在认真总结往届电子设计竞赛经验的基础上，经研究决定，启动2025年全国竞赛组织工作，现将有关事项通知如下： </span></p><p><span style="font-size: 14px;"><br/></span></p><p><strong><span style="font-size: 14px;">一、竞赛目的</span></strong></p><p><span style="font-size: 14px;">全国竞赛是全国性的大学生学科竞赛活动，竞赛按照紧密结合教学实际，着重基础、注重前沿的原则开展，目的在于促进电子信息类专业和课程的建设，引导高等学校在教学中注重培养大学生的创新能力、协作精神；加强学生动手能力和工程实践能力的培养，提高学生针对工程问题进行电子设计、制作的综合能力；吸引、鼓励广大学生踊跃参加课外科技活动，为优秀人才脱颖而出创造条件。 </span></p><p><span style="font-size: 14px;"><br/></span></p><p><strong><span style="font-size: 14px;">二、组织领导</span></strong><span style="font-size: 14px;"> </span></p><p><span style="font-size: 14px;">1. 全国竞赛组委会负责全国竞赛的组织领导、协调与宣传工作。全国竞赛专家组负责竞赛命题、评审工作。 </span></p><p><span style="font-size: 14px;">2. 原则上每个参赛的省（自治区）、直辖市组成一个赛区，各赛区竞赛组委会由省（自治区）教育厅、直辖市教委（局）、高校代表及电子信息类专家及相关人士组成，负责本赛区竞赛的组织领导、协调与宣传工作。各赛区专家组由本赛区的电子信息类专家及相关人士组成，负责本赛区竞赛的评审工作，同时负责组织、遴选本赛区内的征题并向全国专家组推荐。 </span></p><p><span style="font-size: 14px;">3. 暂无条件单独组成赛区的省、自治区的有关高等学校，可根据实际情况就近参与其他赛区的竞赛活动，或直接与全国竞赛组委会联系，由全国竞赛组委会统筹安排。</span></p><p><span style="font-size: 14px;"><br/></span></p><p><strong><span style="font-size: 14px;">三、竞赛题目及要求</span></strong><span style="font-size: 14px;"> </span></p><p><span style="font-size: 14px;">1. 竞赛题目分为本科生组题目和高职高专学生组题目。 </span></p><p><span style="font-size: 14px;">2. 竞赛题目包括“理论设计”和“实际制作”，</span><span style="font-size: 14px;">以电子电路和集成电路应用设计为基础，可以涉及嵌入式系统、可编程器件、射频及光电器件应用，以及支撑新质生产力的现代电子信息技术。</span></p><p><span style="font-size: 14px;">3.除题目特殊要求以外，参赛队的作品中不得包含个人计算机（如PC机、平板电脑、笔记本电脑以及通用键盘、鼠标等调试外设）、手机等，实际制作实物中凡需软件编程的芯片必须事先下载脱机工作封存在作品箱中。所有含存储器的器件、U盘、开发装置或仿真器等不在作品封箱中的物品不得携带进入评审测试现场，否则取消测试资格。</span></p><p><span style="font-size: 14px;">4. 竞赛题目应具有实际意义和应用背景，并考虑到目前教学的基本内容和新技术的应用趋势，力求对高校相关专业教学内容和课程体系改革，以及学生今后工作起到一定的引导作用。 </span></p><p><span style="font-size: 14px;">5. 竞赛题目着重考核参赛学生综合运用基础知识进行理论设计的能力、实践创新和独立工作的基本能力、实验综合技能（制作与调试），同时鼓励参赛学生发扬团队协作精神。 </span></p><p><span style="font-size: 14px;">6. 竞赛题目在难易程度上，既要考虑使参赛学生能在规定时间内完成基本要求，又能使优秀学生有充分发挥与创新的余地。 </span></p><p><span style="font-size: 14px;">7. 全国竞赛仍采用广泛征题、全国统一命题方式。请各赛区广泛发动本赛区高校师生、有关企业，组织好今年竞赛的征题工作，按照《2025年全国大学生电子设计竞赛命题原则及征题要求》（附件1），将征题汇总后于4月30日前报全国竞赛组委会秘书处。 </span></p><p><span style="font-size: 14px;"><br/></span></p><p><strong><span style="font-size: 14px;">四、竞赛时间与形式</span></strong><span style="font-size: 14px;"> </span></p><p><span style="font-size: 14px;">1. 报名时间：2025年5月31日截止。各赛区负责本赛区的报名与情况汇总工作，并填写全国统一格式的《2025年全国大学生电子设计竞赛赛区报名汇总表》。</span></p><p><span style="font-size: 14px;">2. 竞赛时间： 2025年全国竞赛时间为7月30日（周三）8:00至8月2日（周六）20:00。竞赛以赛区为单位统一组织报名、竞赛、评审和评奖工作，具体时间节点及相关竞赛工作进度安排请按照《2025年全国大学生电子设计竞赛进度安排》（附件2）执行。 </span></p><p><span style="font-size: 14px;">3. 学生采用自愿组合、3人一队的原则组成参赛队，由所在学校统一向赛区竞赛组委会报名。参赛队分本科生组和高职高专学生组，参赛队数由参赛学校自行确定。 </span></p><p><span style="font-size: 14px;">4. 全国竞赛专家组根据命题原则，分别为本科生组和高职高专学生组统一编制若干个竞赛题目，供参赛队选用。 </span></p><p><span style="font-size: 14px;">5. 各赛区竞赛所需场地及仪器设备、元器件或材料原则上由参赛学校提供。</span></p><p><span style="font-size: 14px;"><br/></span></p><p><strong><span style="font-size: 14px;">五、网上发题</span></strong><span style="font-size: 14px;"> </span></p><p><span style="font-size: 14px;">2025年全国竞赛继续采取网上发题方式。7月30日8:00开赛时，将依托全国大学生电子设计竞赛网站(http://nuedc.xjtu.edu.cn) 、全国大学生电子设计竞赛培训网（http://nuedc-training.com.cn）及其他有关赛区网站发布全国竞赛题目，具体网址赛前公布。 </span></p><p><span style="font-size: 14px;"><br/></span></p><p><strong><span style="font-size: 14px;">六、评奖</span></strong><span style="font-size: 14px;"> </span></p><p><span style="font-size: 14px;">2025年全国竞赛，仍采用“一次竞赛，两级评奖”方式，竞赛奖励分为“赛区奖”和“全国奖”两级。 </span></p><p><span style="font-size: 14px;">1. 各赛区竞赛组委会负责本赛区的评奖工作。原则上赛区一、二、三等奖总获奖比例不超过赛区总参赛队数的40%，其中一等奖不超过10%。</span></p><p><span style="font-size: 14px;">2. 赛区评奖结束后，赛区竞赛组委会将本赛区推荐参加全国评审的优秀参赛队设计报告及要求的有关材料报送全国竞赛组委会秘书处（报送的具体内容及报送时间另行通知），赛区报送的优秀参赛队数分别不得超过本赛区本科组和高职高专组实际参赛队总数的10%。</span></p><p><span style="font-size: 14px;">3. 全国竞赛专家组通过综合测评、复测等评审环节，产生全国竞赛获奖初评结果，报全国竞赛组委会审批。 </span></p><p><span style="font-size: 14px;">4. 全国竞赛设全国一等奖和二等奖，并从一等奖中推选出“TI杯”,获奖总数原则上不超过全国实际参赛队总数的8%。同一题目、同一所学校获得全国一、二等奖的总队数合计不超过4个，其中一等奖队数不超过2个。 </span></p><p><span style="font-size: 14px;">5. 本科组和高职高专组分别评奖。 </span></p><p><span style="font-size: 14px;">6. 全国竞赛设立“赛区优秀组织奖”，对竞赛组织中表现出色的赛区竞赛组委会给予表彰奖励；同时设立“优秀征题奖”，对竞赛征题工作中表现突出的个人给予表彰奖励。 </span></p><p><span style="font-size: 14px;">7. 建议各参赛学校结合本地区和本学校的实际，依照教育部高教司文件（教高司函〔2003〕165号）精神，对教师指导全国竞赛活动所付出的辛勤工作予以合理的认可与奖励，激励教师以课赛结合等方式积极指导大学生参加竞赛。</span></p><p><span style="font-size: 14px;"><br/></span></p><p><strong><span style="font-size: 14px;">七、竞赛规则</span></strong><span style="font-size: 14px;"> </span></p><p><span style="font-size: 14px;">1. 参赛学生应为普通高等学校具有正式学籍的全日制在校本科或高职高专学生。 </span></p><p><span style="font-size: 14px;">2. 参赛队3名学生必须全部按统一时间全程参加竞赛，按时开始和结束竞赛，如不能参加，将取消该队员的参赛资格。参赛的本科生只能选本科组题目；高职高专学生原则上选择高职高专组题目，但也可选择本科组题目。只要参赛队中有本科生，该队只能选择本科组题目。参赛队员必须全部全程参加评审，如不能参加，将取消该队员的评奖资格。 </span></p><p><span style="font-size: 14px;">3. 各赛区竞赛组委会按时收回学生的设计报告和制作实物后，应及时严格封存，贴赛区统一制作的封条，并按赛区竞赛组委会的具体规定交赛区专家组测试评审。 </span></p><p><span style="font-size: 14px;">4. 竞赛期间，参赛学生可以使用各种图书资料和网络资源，但不得以任何方式与队外人员进行讨论交流，教师和其他非参赛队员必须迴避。 </span></p><p><span style="font-size: 14px;">5. 竞赛期间，各赛区竞赛组委会要组织巡视检查，以保证竞赛活动公正进行。各赛区需设立赛区一级的网络在线监控，赛区组委会可对赛区内各个竞赛场地全景实施实时在线监控，作为对已有巡视检查制度的有效补充。</span></p><p><span style="font-size: 14px;">6. 全国竞赛初评结果在网上公布，接受社会监督。在竞赛中如发现有教师参与、他人代做、抄袭及被抄袭、队与队之间交流、不按规定时间发题和收交作品等现象，将取消获奖，并通报批评。</span></p><p><span style="font-size: 14px;"><br/></span></p><p><strong><span style="font-size: 14px;">八、经费</span></strong><span style="font-size: 14px;"> </span></p><p><span style="font-size: 14px;">各赛区竞赛组委会组织工作经费来源：采用争取政府支持、社会各界赞助，也可以适当收取每个参赛队报名费（由参赛学校支付）。报名费具体数额由各赛区竞赛组委会根据实际情况确定。经费的使用要公开、透明，并接受社会各界监督。 </span></p><p><span style="font-size: 14px;"><br/></span></p><p><strong><span style="font-size: 14px;">九、其他</span></strong><span style="font-size: 14px;"> </span></p><p><span style="font-size: 14px;">1. 有关竞赛组织工作中的具体事项，参照本通知附件和《全国大学生电子设计竞赛章程》执行。 </span></p><p><span style="font-size: 14px;">2. 请各赛区竞赛组委会及有关高等学校在当地教育厅（教委）的领导下，认真筹备、精心组织好今年本赛区的电子设计竞赛，鼓励各校积极参与，并正确理解竞赛的目的，处理好组织竞赛与不影响正常教学秩序之间的关系。 </span></p><p><span style="font-size: 14px;">3. 全国竞赛组委会秘书处设在西安交通大学，联系方式如下： </span></p><p><span style="font-size: 14px;">全国组委会秘书处： </span></p><p><span style="font-size: 14px;">符均（电话：18992858095） </span></p><p><span style="font-size: 14px;">电子邮件： nuedc@mail.xjtu.edu.cn</span></p><p><span style="font-size: 14px;">通信地址：陕西省西安市碑林区咸宁西路28号西安交通大学电子与信息学部，符均，710049</span></p><p><span style="font-size: 14px;">&nbsp;</span></p><p><span style="font-size: 14px;">附件1：2025年全国大学生电子设计竞赛命题原则及征题要求</span></p><p><span style="font-size: 14px;">附件2：2025年全国大学生电子设计竞赛进度安排</span></p><p><span style="font-size: 14px;"></span></p><p><span style="font-size: 14px;"><br/></span></p><p><img style="padding:5px;" src="https://res.nuedc-training.com.cn/s/png/2025/01/20/news_202501203032.png"/></p><p><span style="font-size: 14px;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;全国大学生电子设计竞赛网站&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 全国大学生电子设计竞赛培训网</span></p><p><span style="font-size: 14px;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (http://nuedc.xjtu.edu.cn)&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;（https://nuedc-training.com.cn） </span></p><p style="text-align: right;"><span style="font-size: 14px;"><br/></span></p><p style="text-align: right;"><span style="font-size: 14px;"><br/></span></p><p style="text-align: right;"><span style="font-size: 14px;"><br/></span></p><p style="text-align: right;"><span style="font-size: 14px;"><br/></span></p><p style="text-align: right;"><span style="font-size: 14px;">全国大学生电子设计竞赛组委会&nbsp;</span></p><p style="text-align: right;"><span style="font-size: 14px;">二〇二五年一月十七日&nbsp;</span></p><p><br/></p>          <!-- 新闻内容 -->
+          <!-- <div class="newsMain-btns clearfix">
+            <a href="" class="newsMain-btns-item" style="margin-right:30px;">收藏</a>
+            <a href="" class="newsMain-btns-item">分享</a>
+          </div> -->
+        </div>
+        
+        <div class="bbs-data">
+                    <div class="bbs-data-header">
+            资料下载
+          </div>
+          <ul class="bbs-data-list clearfix">
+                      <li>
+            	<!--<a href="https://res.nuedc-training.com.cn/s/pdf/2025/01/20/file202501205507.pdf" title="关于组织2025年全国大学生电子设计竞赛的通知" target="_blank">关于组织2025年全国大学生电子设计竞赛的通知</a>-->
+              <a href="https://www.nuedc-training.com.cn/index/download/uploadbook/id/704" title="关于组织2025年全国大学生电子设计竞赛的通知" target="_blank">关于组织2025年全国大学生电子设计竞赛的通知</a>
+            </li>
+                      <li>
+            	<!--<a href="https://res.nuedc-training.com.cn/s/pdf/2025/01/20/file202501206923.pdf" title="附件1 2025年全国大学生电子设计竞赛命题原则及征题要求" target="_blank">附件1 2025年全国大学生电子设计竞赛命题原则及征题要求</a>-->
+              <a href="https://www.nuedc-training.com.cn/index/download/uploadbook/id/705" title="附件1 2025年全国大学生电子设计竞赛命题原则及征题要求" target="_blank">附件1 2025年全国大学生电子设计竞赛命题原则及征题要求</a>
+            </li>
+                      <li>
+            	<!--<a href="https://res.nuedc-training.com.cn/s/pdf/2025/01/20/file202501206829.pdf" title="附件2 2025年全国大学生电子设计竞赛进度安排" target="_blank">附件2 2025年全国大学生电子设计竞赛进度安排</a>-->
+              <a href="https://www.nuedc-training.com.cn/index/download/uploadbook/id/706" title="附件2 2025年全国大学生电子设计竞赛进度安排" target="_blank">附件2 2025年全国大学生电子设计竞赛进度安排</a>
+            </li>
+                    </ul>
+                  </div>
+        
+        <div class="newsMain-footer clearfix">
+                    <a href="https://www.nuedc-training.com.cn/index/news/details/new_id/329" class="newsMain-footer-left" title="2024年全国大学生电子设计竞赛赛区赛暨 模拟电子系统设计专题赛(TI杯)初赛赛题">
+            << 上一篇<br>
+            <span>2024年全国大学生电子设计竞赛赛区赛暨 模拟电子系统设计专题赛(TI杯)初赛赛题</span>
+          </a>
+                    <a href="https://www.nuedc-training.com.cn/index/news/details/new_id/331" class="newsMain-footer-right" title="关于 2025 年 TI 杯全国大学生电子设计竞赛赞助商指定器件的通知">
+            下一篇 >><br>
+            <span>关于 2025 年 TI 杯全国大学生电子设计竞赛赞助商指定器件的通知</span>
+          </a>
+                  </div>
+      </div>
+      <div class="newsMain-right" style="width: 360px">
+        <div class="newsT1-right">
+            <div class="news-title">
+                <h2>热点推荐</h2>
+              </div>
+          <ul class="news-right-ul">
+                        <li class="news-right-li">
+              <div class="newsRight-liText">
+                <b class="leftCol">·</b>
+                <a href="https://www.nuedc-training.com.cn/index/news/details/new_id/358" title="关于公布2026年全国大学生电子设计竞赛模拟电子系统设计专题赛决赛获奖名单（初评）的通知"> 关于公布2026年全国大学生电子设计竞赛模拟电子系统设计专题赛决赛获奖名单（初评）的通知</a>
+              </div>
+            </li>
+                        <li class="news-right-li">
+              <div class="newsRight-liText">
+                <b class="leftCol">·</b>
+                <a href="https://www.nuedc-training.com.cn/index/news/details/new_id/354" title="关于举办2026年全国大学生电子设计竞赛赛区赛及 TI 杯模拟电子系统设计专题赛赛题解析与技术交流研讨会的通知"> 关于举办2026年全国大学生电子设计竞赛赛区赛及 TI 杯模拟电子系统设计专题赛赛题解析与技术交流研讨会的通知</a>
+              </div>
+            </li>
+                        <li class="news-right-li">
+              <div class="newsRight-liText">
+                <b class="leftCol">·</b>
+                <a href="https://www.nuedc-training.com.cn/index/news/details/new_id/353" title="关于开展2026年全国大学生电子设计竞赛模拟电子系统设计专题赛的第二次通知"> 关于开展2026年全国大学生电子设计竞赛模拟电子系统设计专题赛的第二次通知</a>
+              </div>
+            </li>
+                        <li class="news-right-li">
+              <div class="newsRight-liText">
+                <b class="leftCol">·</b>
+                <a href="https://www.nuedc-training.com.cn/index/news/details/new_id/352" title="2026年全国大学生电子设计竞赛赛区赛暨模拟电子系统设计专题赛选拔赛 仪器设备和主要元器件及器材清单"> 2026年全国大学生电子设计竞赛赛区赛暨模拟电子系统设计专题赛选拔赛 仪器设备和主要元器件及器材清单</a>
+              </div>
+            </li>
+                        <li class="news-right-li">
+              <div class="newsRight-liText">
+                <b class="leftCol">·</b>
+                <a href="https://www.nuedc-training.com.cn/index/news/details/new_id/351" title="关于2026年全国大学生电子设计竞赛模拟电子系统设计专题赛（TI杯）  TI指定器件及免费获取板卡方式的说明"> 关于2026年全国大学生电子设计竞赛模拟电子系统设计专题赛（TI杯）  TI指定器件及免费获取板卡方式的说明</a>
+              </div>
+            </li>
+                      </ul>
+        </div>
+        <div class="newsT1-right">
+          <div class="news-title">
+            培训资源
+            <a href="https://www.nuedc-training.com.cn/index/video/index" class="newsTitle-a rightCol">更多 ></a>
+          </div>
+          <ul class="">
+                        <li class="newsMainRight-li">
+              <a href="https://www.nuedc-training.com.cn/index/video/video_list" class="video02Right01-img" title="电赛集训营助你备战2026年TI杯全国大学生电子设计竞赛 系列培训课程">
+                <img width="320" height="180" src="https://res.nuedc-training.com.cn/s/png/2026/06/18/courser_202606185159.png" alt="电赛集训营助你备战2026年TI杯全国大学生电子设计竞赛 系列培训课程"/>
+                <p><i></i>电赛集训营助你备战2026年TI杯全国大学生电子设计竞赛 系列培训课程</p>
+              </a>
+            </li>
+                        <li class="newsMainRight-li">
+              <a href="https://www.nuedc-training.com.cn/index/video/video_list" class="video02Right01-img" title="2025年 TI 杯全国大学生电子设计竞赛 赛题解析与技术交流研讨会 视频回放">
+                <img width="320" height="180" src="https://res.nuedc-training.com.cn/s/png/2025/09/29/course_202509297268.png" alt="2025年 TI 杯全国大学生电子设计竞赛 赛题解析与技术交流研讨会 视频回放"/>
+                <p><i></i>2025年 TI 杯全国大学生电子设计竞赛 赛题解析与技术交流研讨会 视频回放</p>
+              </a>
+            </li>
+                      </ul>
+        </div>
+        <div class="news-huodong" style="width: 360px">
+          <div class="news-title clearfix" style="padding-left: 20px;padding-right: 20px;padding-top: 20px;">
+            <h2>活动专区</h2>
+            <a href="https://www.nuedc-training.com.cn/index/activity/index" class="newsTitle-a rightCol">更多 ></a>
+          </div>
+          <ul class="" style="padding-left: 20px;padding-right: 20px">
+                        <li class="newsMainRight-li">
+              <a href="https://www.nuedc-training.com.cn/index/activity/activity_detail/id/37" class="newsMainRight-img" title="TI杯电赛Vlog短视频大赛">
+                <img width="320" height="160" src="https://res.nuedc-training.com.cn/s/png/2025/08/29/activity_202508292873.png" alt="TI杯电赛Vlog短视频大赛"/>
+                <p>TI杯电赛Vlog短视频大赛</p>
+              </a>
+              <!-- <div class="newsMainRight-icon01"><i></i><span>2023年08月07日 - 2023年09月30日</span></div> -->
+            </li>
+                        <li class="newsMainRight-li">
+              <a href="https://www.nuedc-training.com.cn/index/activity/activity_detail/id/36" class="newsMainRight-img" title="关于举办 TI 杯 2023 年全国大学生电子设计竞赛赛题解析与技术交流研讨会的通知">
+                <img width="320" height="160" src="https://res.nuedc-training.com.cn/s/png/2025/08/29/activity_202508294900.png" alt="关于举办 TI 杯 2023 年全国大学生电子设计竞赛赛题解析与技术交流研讨会的通知"/>
+                <p>关于举办 TI 杯 2023 年全国大学生电子设计竞赛赛题解析与技术交流研讨会的通知</p>
+              </a>
+              <!-- <div class="newsMainRight-icon01"><i></i><span>2023年10月14日 - 2023年10月15日</span></div> -->
+            </li>
+                      </ul>
+        </div>
+      </div>
+    </section>
+  </section>
+</section>
+<footer class="footer">
+    <div class="container clearfix">
+      <div class="leftCol">
+        <nav class="footer-nav clearfix" style="padding-top: 57px;">
+          <a class="footer-link" href="https://www.nuedc-training.com.cn/index/common/site" target="_blank">网站介绍</a>
+          <a class="footer-link" href="https://www.nuedc-training.com.cn/index/common/about" target="_blank">联系我们</a>
+          <a class="footer-link" href="https://www.nuedc-training.com.cn/index/common/reg" target="_blank">注册协议</a>
+          <a class="footer-link" href="https://www.nuedc-training.com.cn/index/common/privacy" target="_blank">隐私条款</a>
+          <a class="footer-link" style="display: flex;" href="https://www.12377.cn/" target="_blank">
+            <img style="padding-right: 5px;" height="20px" src="https://static.nuedc-training.com.cn/images/icon-report.png" alt=""><span>中国互联网举报中心</span>
+          </a>
+        </nav>
+        <p class="footer-copyright">
+          Copyright 2018-2026 NUEDC All Rights Reserved. 全国大学生电子设计竞赛组织委员会 版权所有 <a class="footer-reference" href="https://beian.miit.gov.cn/" target="_blank">津ICP备18002217号-1</a>
+        </p>
+      </div>
+      <div class="footer-list rightCol clearfix">
+        <a href="https://www.nuedc-training.com.cn/index/index?form_model=1" class="leftCol footer-item">
+            <img width="50" src="https://static.nuedc-training.com.cn/images/new/foot-icon1.png"/>
+          <p>电脑版</p>
+        </a>
+        <a href="https://www.nuedc-training.com.cn/mobile/index?form_model=2" class="leftCol footer-item">
+            <img width="50" src="https://static.nuedc-training.com.cn/images/new/foot-icon2.png"/>
+            <p>触屏版</p>
+          </a>
+      </div>
+      <!--<div class="footer-wechat">
+        扫描二维码<br>
+        关注电赛微信
+        <img width="80" height="80" class="wechat" src="https://static.nuedc-training.com.cn/images/wechat.jpg" alt="">
+      </div>-->
+    </div>
+  </footer>
+  <div style="height: 20px;width: 100%;background-color: #3e3e3e;"></div>
+  <!-- <div style="display:none"><script src="//s22.cnzz.com/z_stat.php?id=1274193147&web_id=1274193147" language="JavaScript"></script> -->
+
+        <!-- 百度统计 -->
+    <script src="https://static.nuedc-training.com.cn/js/baidu-statistics.js?v=1"></script>
+        
+
+  <!-- <script src="https://res.nuedc-training.com.cn/cnzz_ext.min.js" language="JavaScript"></script>
+  <script>
+    var isuser_this = news_id;
+    if(isuser_this != ''){
+         window.onload = function() {
+        // console.log(_czc);
+        _czc.push(['_trackPageview', "https://www.nuedc-training.com.cn/index/news/details/new_id/'+isuser_this, ""]);
+      };
+    }
+  </script> -->
+</div>
+  <script async="async" src="//www.ti.com/assets/js/headerfooter/analytics.js"></script>
+  <script src="https://static.nuedc-training.com.cn/js/jquery.downCount.min.js"></script>
+ <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.downCount/1.0.0/jquery.downCount.min.js"></script>-->
+  <script src="https://static.nuedc-training.com.cn/js/player3.2.0/player/cyberplayer.js"></script>
+  <script src="https://static.nuedc-training.com.cn/js/select_area_zh-cn.js"></script>
+  <script src="https://static.nuedc-training.com.cn/js/simple-share.min.js"></script>
+  <script src="https://www.nuedc-training.com.cn/static/js/GZApp.min.js?v=5"></script>
+  <script>
+//  $(function () {
+//    if ($("#searchForm").length) {
+//      var $form = $("#searchForm").Validform({
+//        tiptype: 4,
+//        ignoreHidden: true,
+//        ajaxPost: false,
+//        beforeSumbmit: function () {
+//        
+//        },
+//        callback: function (data) {
+//
+//        }
+//      })
+//    }
+//    if ($('#bannerWrap').length) {
+//      var banner = new window.GZApp.Scroll({
+//        mainWrap: '#bannerWrap',
+//        auto: true,
+//        speed: 0.5,
+//        tagWrap: '#bannerTab2'
+//      })
+//      banner.showHide();
+//    }
+//  })
+  </script>
+  <script>
+(function(){
+var src = (document.location.protocol == "http:") ? "http://js.passport.qihucdn.com/11.0.1.js?602847cbdad9ab47a063c229686a77e3":"https://jspassport.ssl.qhimg.com/11.0.1.js?602847cbdad9ab47a063c229686a77e3";
+document.write('<script src="' + src + '" id="sozz"><\/script>');
+})();
+</script>
+  <script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<script type="text/javascript">
+  var share = new SimpleShare({
+    url: window.location.href,
+    title: "关于组织2025年全国大学生电子设计竞赛的通知",
+    content: '关于组织2025年全国大学生电子设计竞赛的通知',
+    pic: 'https://res.nuedc-training.com.cn/s/png/2025/01/20/news_202501205431.png'
+  });
+</script>
+<script>
+  var hide = '0';
+  if(hide == 1){
+    $('.nav-user').empty()
+    $(function(){
+      var a = "https://www.nuedc-training.com.cn/index/index/login_new";
+      var times = Math.floor(Math.random() * 3) + 1
+      setTimeout(function() {
+        $.ajax({
+          type:"GET",
+          url:a,
+          dataType:"json",
+          data:'',
+          async:true,
+          xhrFields:{
+              withCredentials:true
+          },
+          success:function (res) {
+           $('.nav-user').html(res.data)
+          }
+        })
+      }, times*1000)
+    }())
+
+  }
+</script>
+<script src="https://static.nuedc-training.com.cn/js/jquery.qrcode.min.js"></script>
+
+<!-- 微信分享弹框开始 -->
+<div class="wechat-alert">
+  <div class="wechat-text">
+    <span>分享到微信朋友圈</span>
+    <a href="javascript:void(0)">×</a>
+  </div>
+  <div class="wechat-code"></div>
+  <div class="wechat-desc">
+    打开微信，点击底部的“发现”，<br> 使用“扫一扫”即可将网页分享至朋友圈。
+  </div>
+</div>
+<!-- 微信分享弹框结束 -->
+<script>
+  $(function(){
+    //点击微信分享 展示微信二维码
+    $(".bdsharebuttonbox .video-details-share .wechat-icon").click(function(){
+      $(".wechat-alert .wechat-code").html("");
+      $(".wechat-alert .wechat-code").qrcode({
+        width: 185,
+        height: 185,
+        text:window.location.href
+      });
+      $(".wechat-alert").show();
+    })
+    $(".wechat-alert .wechat-text a").click(function(){
+      $(".wechat-alert").hide();
+    })
+  })
+</script>
+</body>
+</html>

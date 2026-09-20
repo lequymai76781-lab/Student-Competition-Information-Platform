@@ -1,0 +1,22 @@
+{
+  "task": "SPECIALIZED_INSTITUTIONS_COVERAGE_01",
+  "run_at": "2026-09-14T23:15:00+08:00",
+  "backend_pytest": {
+    "command": "python -m pytest -p no:cacheprovider -q",
+    "passed": 183,
+    "failed": 0
+  },
+  "specialized_pytest": {
+    "command": "python -m pytest -p no:cacheprovider -q tests/test_specialized_institutions_coverage.py tests/test_specialized_completion.py",
+    "passed": 11,
+    "failed": 0
+  },
+  "completion_audit": {
+    "passed": 24,
+    "failed": 0
+  },
+  "idempotency": {
+    "passed": true
+  },
+  "new_failures": 0
+}

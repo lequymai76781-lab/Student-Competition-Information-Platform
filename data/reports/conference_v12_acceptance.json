@@ -1,0 +1,436 @@
+{
+  "stage": "Academic Conference V1.2（学生学术机会关联层）",
+  "generated_at": "2026-09-06T11:41:53+00:00",
+  "reference_date": "2026-09-06",
+  "pytest": {
+    "passed": 142,
+    "total": 142
+  },
+  "1_opportunity_entity_introduced": true,
+  "1_reason": "现有 ConferenceEdition 只能保存一组会议级 deadline/student tags，无法表达同一届多个学生机会各自独立的 audience/deadline/official_url/evidence（如 EASM 的 bachelor/master Student Seminar 与 PhD Seminar 并存）；故引入轻量 ConferenceOpportunity，避免 Edition 字段爆炸为 has_xxx。",
+  "2_schema_changes": [
+    "新增 conference_opportunities（conference_edition_id, opportunity_type, title/official_label, audience, open_date, deadline, participation_mode, official_url, source_id, evidence, evidence_status, verification_status, is_verified, risk_flags, notes；唯一键 edition+type+official_url）",
+    "conference_series 新增 secondary_disciplines、discipline_evidence（JSON）",
+    "新增 conference_discipline_mappings（major_alias -> 受控 discipline；relationship_type=direct/related/interdisciplinary）",
+    "alembic 202609060004_v12_conference_opportunity.py"
+  ],
+  "3_conference_series_total": 206,
+  "4_conference_edition_total": 132,
+  "5_opportunity_total": 15,
+  "6_opportunity_2026": 15,
+  "7_opportunity_2027": 0,
+  "8_opportunity_type_distribution": {
+    "abstract_submission": 1,
+    "doctoral_consortium": 2,
+    "paper_submission": 6,
+    "poster": 3,
+    "student_forum": 1,
+    "undergraduate_forum": 1,
+    "young_scholar_forum": 1
+  },
+  "9_opportunity_audience_distribution": {
+    "early_career": 1,
+    "master": 2,
+    "phd": 4,
+    "undergraduate": 2,
+    "unknown_or_not_stated": 9
+  },
+  "10_opportunity_status_distribution": {
+    "open": 1,
+    "closing_soon": 0,
+    "upcoming": 0,
+    "closed": 3,
+    "held": 1,
+    "unknown": 10
+  },
+  "11_student_opportunity_coverage": {
+    "editions_total": 132,
+    "editions_with_opportunity": 11,
+    "coverage_ratio": 0.0833
+  },
+  "12_2026_2027_opportunity_coverage": {
+    "editions_2026_2027_total": 122,
+    "editions_2026_2027_with_opportunity": 11,
+    "coverage_ratio": 0.0902
+  },
+  "13_actionable_opportunity_by_discipline": {
+    "education": 1
+  },
+  "14_major_discipline_mapping_total": 54,
+  "14_major_discipline_mapping_by_discipline": {
+    "artificial_intelligence": 2,
+    "computer_science": 6,
+    "data_science": 10,
+    "economics": 2,
+    "education": 5,
+    "engineering": 3,
+    "interdisciplinary": 1,
+    "journalism_communication": 13,
+    "management": 3,
+    "natural_sciences": 3,
+    "sports_science": 6
+  },
+  "14_secondary_discipline_series": [
+    {
+      "series_id": 165,
+      "name": "International Symposium on Online Journalism (ISOJ)",
+      "primary_discipline": "journalism_communication",
+      "secondary_disciplines": [
+        "data_science"
+      ]
+    },
+    {
+      "series_id": 171,
+      "name": "WAPOR Annual Conference",
+      "primary_discipline": "journalism_communication",
+      "secondary_disciplines": [
+        "data_science"
+      ]
+    },
+    {
+      "series_id": 189,
+      "name": "Learning Analytics and Knowledge (LAK)",
+      "primary_discipline": "education",
+      "secondary_disciplines": [
+        "data_science"
+      ]
+    },
+    {
+      "series_id": 204,
+      "name": "ACM Web Science",
+      "primary_discipline": "data_science",
+      "secondary_disciplines": [
+        "computer_science"
+      ]
+    }
+  ],
+  "15_recognition_state": {
+    "recognition_records": 36,
+    "records_with_direct_source_url": 36,
+    "by_system_level": {
+      "CCF-A": 26,
+      "CCF-B": 9,
+      "CCF-C": 1
+    }
+  },
+  "16_evidence_state": {
+    "opportunities_total": 15,
+    "full_page_verified": 15,
+    "pending_or_limited": 0,
+    "verified_opportunities": 15
+  },
+  "17_unresolved_source_debt": [
+    "BEA/SCMS/IRE/ECSS/NASPSPA/SC26 等既有 Edition 来源仍为 access_limited/snippet_only 或会期 NULL；本轮未据此创建任何机会。",
+    "无新增机会证据债务：15/15 机会均 full_page_verified，来源为 S/A 官方页。"
+  ],
+  "18_api_changes": [
+    "GET /api/conferences/opportunities（edition_id/series_id/opportunity_type/audience/status/year/discipline/actionable/verified_only）",
+    "GET /api/conferences/discipline-mappings",
+    "GET /api/conferences/actionable（Series+Edition+Opportunity+Discipline+Recognition+Evidence 结构化只读）",
+    "GET /api/conferences/actionable-summary（current_actionable_editions/opportunities，按 status/type/audience/discipline 统计）",
+    "GET /api/conferences/summary 增加 opportunities_total 与 actionable",
+    "Series/Edition 列表新增 has_opportunity/opportunity_type/opportunity_audience/actionable 过滤（全部向后兼容）"
+  ],
+  "19_pytest": {
+    "passed": 142,
+    "total": 142
+  },
+  "20_files_modified": [
+    "backend/alembic/versions/202609060004_v12_conference_opportunity.py",
+    "backend/app/models/conference.py（ConferenceOpportunity / ConferenceDisciplineMapping）",
+    "backend/app/models/architecture.py（secondary_disciplines/discipline_evidence/opportunities relationship）",
+    "backend/app/models/__init__.py",
+    "backend/app/schemas/conference.py",
+    "backend/app/services/conference_authority_service.py（机会词汇、audience、closing_soon、状态规则）",
+    "backend/app/services/conference_seed_import_service.py（机会/映射幂等导入）",
+    "backend/app/services/conference_service.py（只读列表与聚合）",
+    "backend/app/api/routes/conferences.py",
+    "backend/scripts/conference_v1_seeds/opportunities_v12.py（15 条真实机会）",
+    "backend/scripts/conference_v1_seeds/disciplines_v12.py（4 个 Series 二级学科+证据）",
+    "backend/scripts/conference_v1_seeds/discipline_mapping_v12.py（54 条映射）",
+    "backend/scripts/build_conference_v1_seeds.py",
+    "backend/scripts/report_conference_v12.py",
+    "backend/tests/test_conference_v12.py（11 个测试函数覆盖 18 项验收点）",
+    "backend/tests/test_conference_v1.py（migration smoke 期望版本 003->004）",
+    "data/seeds/conference_v1/*.json（重新生成）",
+    "data/reports/conference_v12_acceptance.{md,json}",
+    "data/reports/conference_v12_quality_report.{md,json}"
+  ],
+  "21_ready_for_conference_frontend": {
+    "ready": true,
+    "basis": "已有 Series/Edition/Opportunity/Discipline/Recognition/Organization/Evidence结构化只读数据与 /actionable、/actionable-summary 聚合；前端可展示‘为什么相关/为什么对学生有价值’的事实与来源。",
+    "frontend_scope_note": "按任务要求，本轮不开始 Conference 前端开发。"
+  },
+  "opportunities": [
+    {
+      "id": 1,
+      "edition_id": 1,
+      "series_id": 1,
+      "series_name": "NeurIPS",
+      "year": 2026,
+      "opportunity_type": "paper_submission",
+      "title": "NeurIPS 2026 论文投稿",
+      "official_label": "Call for Papers",
+      "audience": null,
+      "deadline": "2026-05-06T00:00:00",
+      "status": "closed",
+      "official_url": "https://neurips.cc/Conferences/2026",
+      "evidence_status": "full_page_verified",
+      "verification_status": "verified_official",
+      "is_verified": true
+    },
+    {
+      "id": 2,
+      "edition_id": 39,
+      "series_id": 73,
+      "series_name": "SPLASH/OOPSLA",
+      "year": 2026,
+      "opportunity_type": "paper_submission",
+      "title": "OOPSLA 研究论文投稿",
+      "official_label": "OOPSLA Research Papers",
+      "audience": null,
+      "deadline": null,
+      "status": "unknown",
+      "official_url": "https://2026.splashcon.org/",
+      "evidence_status": "full_page_verified",
+      "verification_status": "verified_official",
+      "is_verified": true
+    },
+    {
+      "id": 3,
+      "edition_id": 39,
+      "series_id": 73,
+      "series_name": "SPLASH/OOPSLA",
+      "year": 2026,
+      "opportunity_type": "poster",
+      "title": "SPLASH 2026 海报",
+      "official_label": "Posters",
+      "audience": null,
+      "deadline": null,
+      "status": "unknown",
+      "official_url": "https://2026.splashcon.org/",
+      "evidence_status": "full_page_verified",
+      "verification_status": "verified_official",
+      "is_verified": true
+    },
+    {
+      "id": 4,
+      "edition_id": 39,
+      "series_id": 73,
+      "series_name": "SPLASH/OOPSLA",
+      "year": 2026,
+      "opportunity_type": "doctoral_consortium",
+      "title": "SPLASH 2026 博士生研讨会",
+      "official_label": "Doctoral Consortium",
+      "audience": [
+        "phd"
+      ],
+      "deadline": null,
+      "status": "unknown",
+      "official_url": "https://2026.splashcon.org/",
+      "evidence_status": "full_page_verified",
+      "verification_status": "verified_official",
+      "is_verified": true
+    },
+    {
+      "id": 5,
+      "edition_id": 40,
+      "series_id": 74,
+      "series_name": "ISSTA",
+      "year": 2026,
+      "opportunity_type": "paper_submission",
+      "title": "ISSTA 2026 论文投稿",
+      "official_label": "Call for Papers",
+      "audience": null,
+      "deadline": null,
+      "status": "unknown",
+      "official_url": "https://conf.researchr.org/home/issta-2026",
+      "evidence_status": "full_page_verified",
+      "verification_status": "verified_official",
+      "is_verified": true
+    },
+    {
+      "id": 6,
+      "edition_id": 62,
+      "series_id": 8,
+      "series_name": "EMNLP",
+      "year": 2026,
+      "opportunity_type": "paper_submission",
+      "title": "EMNLP 2026 论文投稿",
+      "official_label": "Call for Papers",
+      "audience": null,
+      "deadline": null,
+      "status": "unknown",
+      "official_url": "https://2026.emnlp.org/",
+      "evidence_status": "full_page_verified",
+      "verification_status": "verified_official",
+      "is_verified": true
+    },
+    {
+      "id": 7,
+      "edition_id": 63,
+      "series_id": 45,
+      "series_name": "UIST",
+      "year": 2026,
+      "opportunity_type": "paper_submission",
+      "title": "UIST 2026 论文投稿",
+      "official_label": "Call for Papers",
+      "audience": null,
+      "deadline": null,
+      "status": "unknown",
+      "official_url": "https://uist.acm.org/2026/",
+      "evidence_status": "full_page_verified",
+      "verification_status": "verified_official",
+      "is_verified": true
+    },
+    {
+      "id": 8,
+      "edition_id": 63,
+      "series_id": 45,
+      "series_name": "UIST",
+      "year": 2026,
+      "opportunity_type": "poster",
+      "title": "UIST 2026 海报",
+      "official_label": "Posters",
+      "audience": null,
+      "deadline": null,
+      "status": "unknown",
+      "official_url": "https://uist.acm.org/2026/",
+      "evidence_status": "full_page_verified",
+      "verification_status": "verified_official",
+      "is_verified": true
+    },
+    {
+      "id": 9,
+      "edition_id": 81,
+      "series_id": 154,
+      "series_name": "高等教育国际论坛年会",
+      "year": 2026,
+      "opportunity_type": "abstract_submission",
+      "title": "2026 高等教育国际论坛年会长摘要投稿",
+      "official_label": "大会预通知（长摘要/预报名）",
+      "audience": null,
+      "deadline": "2026-09-30T00:00:00",
+      "status": "open",
+      "official_url": "https://www.cahe.edu.cn/site/content/19528.html",
+      "evidence_status": "full_page_verified",
+      "verification_status": "authority_confirmed",
+      "is_verified": true
+    },
+    {
+      "id": 10,
+      "edition_id": 84,
+      "series_id": 158,
+      "series_name": "AEJMC Annual Conference",
+      "year": 2026,
+      "opportunity_type": "paper_submission",
+      "title": "AEJMC 2026 论文投稿",
+      "official_label": "Call for Papers",
+      "audience": null,
+      "deadline": "2026-04-01T00:00:00",
+      "status": "closed",
+      "official_url": "https://www.aejmc.org/aejmc-events/conference",
+      "evidence_status": "full_page_verified",
+      "verification_status": "verified_official",
+      "is_verified": true
+    },
+    {
+      "id": 11,
+      "edition_id": 86,
+      "series_id": 160,
+      "series_name": "European Communication Conference (ECC)",
+      "year": 2026,
+      "opportunity_type": "poster",
+      "title": "ECC 2026 Poster & Mentoring Programme",
+      "official_label": "Poster & Mentoring Programme",
+      "audience": [
+        "master",
+        "phd"
+      ],
+      "deadline": "2026-01-08T00:00:00",
+      "status": "closed",
+      "official_url": "https://ecrea2026brno.eu/",
+      "evidence_status": "full_page_verified",
+      "verification_status": "verified_official",
+      "is_verified": true
+    },
+    {
+      "id": 12,
+      "edition_id": 106,
+      "series_id": 180,
+      "series_name": "EASM European Sport Management Conference",
+      "year": 2026,
+      "opportunity_type": "student_forum",
+      "title": "EASM 2026 Student Seminar（学士/硕士）",
+      "official_label": "Student Seminar (bachelor/master)",
+      "audience": [
+        "undergraduate",
+        "master"
+      ],
+      "deadline": null,
+      "status": "unknown",
+      "official_url": "https://easm.net/easm-european-sport-management-conference/",
+      "evidence_status": "full_page_verified",
+      "verification_status": "verified_official",
+      "is_verified": true
+    },
+    {
+      "id": 13,
+      "edition_id": 106,
+      "series_id": 180,
+      "series_name": "EASM European Sport Management Conference",
+      "year": 2026,
+      "opportunity_type": "doctoral_consortium",
+      "title": "EASM 2026 PhD Seminar",
+      "official_label": "PhD Student Seminar",
+      "audience": [
+        "phd"
+      ],
+      "deadline": null,
+      "status": "unknown",
+      "official_url": "https://easm.net/easm-european-sport-management-conference/",
+      "evidence_status": "full_page_verified",
+      "verification_status": "verified_official",
+      "is_verified": true
+    },
+    {
+      "id": 14,
+      "edition_id": 112,
+      "series_id": 186,
+      "series_name": "ECER",
+      "year": 2026,
+      "opportunity_type": "young_scholar_forum",
+      "title": "ECER 2026 Emerging Researchers' Conference",
+      "official_label": "Emerging Researchers' Conference (ERC)",
+      "audience": [
+        "phd",
+        "early_career"
+      ],
+      "deadline": null,
+      "status": "held",
+      "official_url": "https://eera-ecer.de/conferences/ecer-2026-tampere",
+      "evidence_status": "full_page_verified",
+      "verification_status": "verified_official",
+      "is_verified": true
+    },
+    {
+      "id": 15,
+      "edition_id": 123,
+      "series_id": 197,
+      "series_name": "IEEE BigData",
+      "year": 2026,
+      "opportunity_type": "undergraduate_forum",
+      "title": "IEEE BigData 2026 Undergraduate and REU Consortium",
+      "official_label": "Undergraduate and REU Consortium",
+      "audience": [
+        "undergraduate"
+      ],
+      "deadline": null,
+      "status": "unknown",
+      "official_url": "https://bigdataieee.org/BigData2026",
+      "evidence_status": "full_page_verified",
+      "verification_status": "verified_official",
+      "is_verified": true
+    }
+  ]
+}

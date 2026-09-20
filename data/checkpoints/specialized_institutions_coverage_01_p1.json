@@ -1,0 +1,27 @@
+{
+  "task":"SPECIALIZED_INSTITUTIONS_COVERAGE_01",
+  "priority":"P1",
+  "updated_at":"2026-09-14T17:20:00+08:00",
+  "count_in_master":18,
+  "status_counts":{"SUCCESS":8,"COMPLETED_WITH_GAPS":10,"BLOCKED":0,"NOT_STARTED":0},
+  "schools":[
+    {"name":"沈阳体育学院","status":"SUCCESS","entries":["https://jwc.syty.edu.cn/","https://jxc.syty.edu.cn/index.htm","https://iedu.syty.edu.cn/info/1024/1952.htm"],"facts":["创新学分认定","竞赛奖学金","推免体育竞赛分值"]},
+    {"name":"南京体育学院","status":"COMPLETED_WITH_GAPS","entries":["https://www.nipes.cn/"],"facts":[],"failed_entries":["站内结果未返回可核验学生竞赛详情"]},
+    {"name":"山东体育学院","status":"COMPLETED_WITH_GAPS","entries":["https://www.sdpei.edu.cn/","https://xxgk.sdpei.edu.cn/"],"facts":["本科质量材料记录学生竞赛获奖","体育教育专业基本功大赛"]},
+    {"name":"吉林体育学院","status":"COMPLETED_WITH_GAPS","entries":["https://www.jlsu.edu.cn/"],"facts":[],"failed_entries":["站内结果未返回可核验详情"]},
+    {"name":"哈尔滨体育学院","status":"COMPLETED_WITH_GAPS","entries":["https://www.hrbipe.edu.cn/"],"facts":[],"failed_entries":["仅命中普通运动会/竞技新闻，按过滤规则未入关系"]},
+    {"name":"河北体育学院","status":"SUCCESS","entries":["https://www.hepec.edu.cn/col/1498528808703/index.html","https://kyc.hepec.edu.cn/"],"facts":["第二届企业竞争模拟大赛报名通知"]},
+    {"name":"山东艺术学院","status":"SUCCESS","entries":["https://jwc.sdca.edu.cn/tzgg/bstz.htm","https://jwc.sdca.edu.cn/tzgg/gsgg.htm","https://open.sdca.edu.cn/"],"facts":["师范类学生从业技能大赛通知及获奖名单","艺术实践成果奖励制度"]},
+    {"name":"云南艺术学院","status":"COMPLETED_WITH_GAPS","entries":["https://www.ynart.edu.cn/","https://www.ynart.edu.cn/__local/0/48/85/04CBF2595904BF826C136F3EA76_CA29CB77_6FEE5.pdf"],"facts":["预算绩效明确省级以上竞赛奖项目标","桃李杯成果展示参与"]},
+    {"name":"广西艺术学院","status":"COMPLETED_WITH_GAPS","entries":["https://www.gxau.edu.cn/","https://zzzx.gxau.edu.cn/zzzc"],"facts":["研究生奖学金制度入口"],"failed_entries":["未找到具名专业赛事认定目录"]},
+    {"name":"吉林艺术学院","status":"SUCCESS","entries":["https://jiaowu.jlart.edu.cn/info/1009/7584.htm","https://xxgk.jlart.edu.cn/info/1019/1086.htm","https://xinmt.jlart.edu.cn/__local/A/36/C9/6D8C45A814CB52DF190D98AFEFC_C56EA3B7_2AD2F.pdf"],"facts":["大学生艺术展演校级系列活动","省级展演/比赛优秀毕业生条件","艺术创作与实践成果认定标准"]},
+    {"name":"内蒙古艺术学院","status":"SUCCESS","entries":["https://www.imac.edu.cn/tzgg/","https://www.imac.edu.cn/hjxx/","https://www.imac.edu.cn/html-xxgk/ysjyfzndbg/20250509/34488.shtml"],"facts":["挑战杯推报公示","内蒙古舞蹈大赛参与","大学生专项艺术展演"]},
+    {"name":"新疆艺术学院","status":"SUCCESS","entries":["https://msx.xjart.edu.cn/","https://www.xjart.edu.cn/info/1009/20431.htm"],"facts":["新艺杯专业竞赛校级赛事及表彰","大学生艺术展演校级赛事"]},
+    {"name":"山西传媒学院","status":"SUCCESS","entries":["https://www.cusx.edu.cn/","https://ylc.cusx.edu.cn/info/1038/1934.htm","https://www.cusx.edu.cn/info/1053/4546.htm"],"facts":["第二课堂学分认定与创作成果名录","广播影视高校影视作品大赛通知","挑战杯推报"]},
+    {"name":"南京传媒学院","status":"COMPLETED_WITH_GAPS","entries":["https://www.cucn.edu.cn/"],"facts":[],"failed_entries":["未命中可核验学生专业赛事详情"]},
+    {"name":"河北传媒学院","status":"SUCCESS","entries":["https://xsc.hebic.cn/","https://xwcb.hebic.cn/"],"facts":["第二课堂学分认定办法","全国大学生乡村振兴短视频大赛通知"]},
+    {"name":"四川传媒学院","status":"COMPLETED_WITH_GAPS","entries":["https://www.scmc.edu.cn/","https://xgb.scmc.edu.cn/","https://xgb.scmc.edu.cn/2024_09/02_17/content-42354.html"],"facts":["优秀学生奖学金对学科竞赛和文体艺展赛加分"]},
+    {"name":"四川电影电视学院","status":"COMPLETED_WITH_GAPS","entries":["https://www.scftvc.com/index/tzgg.htm","https://www.scftvc.com/"],"facts":["挑战杯推报/跨校参赛公示","川影杯主持人思维大赛"]},
+    {"name":"吉林动画学院","status":"SUCCESS","entries":["https://xxgk.jlai.edu.cn/info/1008/1190.htm","https://www.jlai.edu.cn/info/1028/9521.htm","https://www.jlai.edu.cn/xxgk/lsyg/a2025.htm"],"facts":["参展参赛项目引导管理办法","力行杯创新创业大赛","艺委会杯创新大赛"]}
+  ]
+}

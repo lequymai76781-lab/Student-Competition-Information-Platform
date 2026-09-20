@@ -1,0 +1,456 @@
+{
+  "round": "v11 core-library integrity",
+  "generated_at": "2026-09-05T13:48:48.352331+00:00",
+  "directory_84_relations": {
+    "directory_total": 84,
+    "db_rows_bound": 93,
+    "one_to_one": 74,
+    "series_with_sub_events": [
+      15,
+      19,
+      26,
+      47
+    ],
+    "series_with_sub_events_count": 4,
+    "sub_event_bindings": 15,
+    "unmatched_not_in_db": [
+      {
+        "directory_rank": 79,
+        "directory_name": "全国职业院校技能大赛",
+        "reason": "数据库不存在该赛事实体（不自动创建）"
+      },
+      {
+        "directory_rank": 81,
+        "directory_name": "世界技能大赛",
+        "reason": "数据库不存在该赛事实体（不自动创建）"
+      },
+      {
+        "directory_rank": 82,
+        "directory_name": "世界技能大赛中国选拔赛",
+        "reason": "数据库不存在该赛事实体（不自动创建）"
+      },
+      {
+        "directory_rank": 83,
+        "directory_name": "一带一路暨金砖国家技能发展与技术创新大赛",
+        "reason": "数据库不存在该赛事实体（不自动创建）"
+      },
+      {
+        "directory_rank": 84,
+        "directory_name": "码蹄杯全国职业院校程序设计大赛",
+        "reason": "数据库不存在该赛事实体（不自动创建）"
+      }
+    ],
+    "manual_review": [
+      {
+        "directory_rank": 80,
+        "directory_name": "全国大学生机器人大赛-RoboTac",
+        "suggested_competition_id": 28,
+        "suggested_competition_name": "全国大学生机器人大赛",
+        "confidence": 0.7407407407407407,
+        "reason": "中置信匹配，需人工确认是否同一赛事"
+      }
+    ],
+    "duplicate_resolved_this_round": [
+      {
+        "dup": 102,
+        "keep": 53
+      },
+      {
+        "dup": 118,
+        "keep": 121
+      }
+    ]
+  },
+  "statuses": {
+    "authority_confirmed": 69,
+    "duplicate": 2,
+    "pending_verification": 24,
+    "school_confirmed": 9,
+    "suspected": 7,
+    "unverified": 1,
+    "verified_official": 31
+  },
+  "no_source_count": 2,
+  "completeness": {
+    "core_competitions": 100,
+    "has_organizer_pct": 28.0,
+    "has_official_website_pct": 16.0,
+    "has_official_source_pct": 100.0,
+    "has_target_students_pct": 10.0,
+    "has_description_pct": 86.0,
+    "has_structured_edition_pct": 34.0,
+    "has_three_recent_editions_pct": 0.0,
+    "has_current_2026_official_pct": 13.0
+  },
+  "audit": {
+    "competition_verification_statuses": {
+      "authority_confirmed": 69,
+      "duplicate": 2,
+      "pending_verification": 24,
+      "school_confirmed": 9,
+      "suspected": 7,
+      "unverified": 1,
+      "verified_official": 31
+    },
+    "edition_verification_statuses": {
+      "pending_verification": 8,
+      "school_confirmed": 38,
+      "verified_official": 8
+    },
+    "source_authority_levels": {
+      "A": 93,
+      "B": 178,
+      "C": 23,
+      "D": 24,
+      "S": 34
+    },
+    "competitions_with_s_source": 31,
+    "competitions_with_a_source": 93,
+    "competitions_only_university_college_sources": 38,
+    "competitions_without_any_source": 2,
+    "official_without_source": [],
+    "official_only_university_sources": [],
+    "school_copied_national_field_editions": [
+      {
+        "edition_id": 22,
+        "competition_id": 137,
+        "year": 2026,
+        "official_registration_deadline": "2026-09-15 23:59:59.000000"
+      },
+      {
+        "edition_id": 23,
+        "competition_id": 109,
+        "year": 2026,
+        "official_registration_deadline": "2026-10-06 23:59:59.000000"
+      }
+    ],
+    "duplicate_source_rows": [],
+    "shared_source_urls": [
+      {
+        "source_url": "http://www.cnrobocon.net/",
+        "comp_cnt": 2
+      },
+      {
+        "source_url": "https://github.com/Tomzkl/college-competitions-skill/blob/main/competition-catalog.md",
+        "comp_cnt": 24
+      },
+      {
+        "source_url": "https://journal.whu.edu.cn/uploadfiles/2025061120jgu.pdf",
+        "comp_cnt": 5
+      },
+      {
+        "source_url": "https://oss.moocollege.com/unknow/webFile/KN1IBAlY_1725601223721.pdf",
+        "comp_cnt": 93
+      },
+      {
+        "source_url": "https://ucc.fltrp.com/c/2023-05-30/519108.shtml",
+        "comp_cnt": 2
+      },
+      {
+        "source_url": "https://www.tiaozhanbei.net/",
+        "comp_cnt": 2
+      },
+      {
+        "source_url": "local-source://wuhan-sports-university/journalism/2026/catalog.pdf",
+        "comp_cnt": 97
+      }
+    ],
+    "duplicate_competition_name_groups": [
+      {
+        "key": "全国大学生生命科学竞赛",
+        "competition_ids": [
+          53,
+          102
+        ]
+      }
+    ],
+    "edition_year_before_founding": [],
+    "campus_after_national_deadline": [
+      {
+        "id": 46,
+        "school_id": 38,
+        "competition_id": 137,
+        "competition_edition_id": 22,
+        "campus_registration_deadline": "2026-09-30 23:59:59.000000",
+        "official_registration_deadline": "2026-09-15 23:59:59.000000"
+      }
+    ],
+    "orphan_school_competitions": [],
+    "school_competition_edition_mismatch": [],
+    "official_deadline_after_contest_start": [],
+    "non_competition_entities": [
+      {
+        "id": 7,
+        "name": "中国新闻奖",
+        "entity_type": "award",
+        "is_competition": 0,
+        "verification_status": "suspected"
+      },
+      {
+        "id": 12,
+        "name": "全国大学生艺术节",
+        "entity_type": "festival",
+        "is_competition": 0,
+        "verification_status": "suspected"
+      },
+      {
+        "id": 14,
+        "name": "中国舞蹈荷花奖",
+        "entity_type": "award",
+        "is_competition": 0,
+        "verification_status": "suspected"
+      },
+      {
+        "id": 16,
+        "name": "省级新闻奖",
+        "entity_type": "award",
+        "is_competition": 0,
+        "verification_status": "suspected"
+      },
+      {
+        "id": 26,
+        "name": "全国大学生创新创业训练计划年会展示",
+        "entity_type": "exhibition",
+        "is_competition": 0,
+        "verification_status": "suspected"
+      },
+      {
+        "id": 89,
+        "name": "AIGC应用大赛",
+        "entity_type": "unknown",
+        "is_competition": 0,
+        "verification_status": "suspected"
+      },
+      {
+        "id": 90,
+        "name": "市级新闻奖",
+        "entity_type": "award",
+        "is_competition": 0,
+        "verification_status": "suspected"
+      }
+    ],
+    "multi_sa_official_urls": [
+      {
+        "competition_id": 1,
+        "urls": 3
+      },
+      {
+        "competition_id": 2,
+        "urls": 2
+      },
+      {
+        "competition_id": 3,
+        "urls": 2
+      },
+      {
+        "competition_id": 4,
+        "urls": 3
+      },
+      {
+        "competition_id": 5,
+        "urls": 2
+      },
+      {
+        "competition_id": 8,
+        "urls": 2
+      },
+      {
+        "competition_id": 21,
+        "urls": 2
+      },
+      {
+        "competition_id": 22,
+        "urls": 2
+      },
+      {
+        "competition_id": 24,
+        "urls": 2
+      },
+      {
+        "competition_id": 28,
+        "urls": 2
+      },
+      {
+        "competition_id": 32,
+        "urls": 2
+      },
+      {
+        "competition_id": 34,
+        "urls": 2
+      },
+      {
+        "competition_id": 35,
+        "urls": 2
+      },
+      {
+        "competition_id": 36,
+        "urls": 2
+      },
+      {
+        "competition_id": 46,
+        "urls": 2
+      },
+      {
+        "competition_id": 47,
+        "urls": 2
+      },
+      {
+        "competition_id": 56,
+        "urls": 2
+      },
+      {
+        "competition_id": 59,
+        "urls": 2
+      },
+      {
+        "competition_id": 63,
+        "urls": 2
+      },
+      {
+        "competition_id": 65,
+        "urls": 3
+      },
+      {
+        "competition_id": 100,
+        "urls": 2
+      },
+      {
+        "competition_id": 111,
+        "urls": 2
+      },
+      {
+        "competition_id": 114,
+        "urls": 2
+      }
+    ]
+  },
+  "duplicate_name_groups_still_conflicting": [],
+  "pending_verdicts": {
+    "6": {
+      "kind": "national_competition",
+      "recommend": "pending_verification",
+      "reason": "真实全国赛事（教育部推动），缺S/A来源"
+    },
+    "13": {
+      "kind": "national_art_competition",
+      "recommend": "pending_verification",
+      "reason": "真实全国舞蹈赛事，缺官方文件证据"
+    },
+    "15": {
+      "kind": "national_competition",
+      "recommend": "pending_verification",
+      "reason": "科技部系统赛事，缺S级来源"
+    },
+    "17": {
+      "kind": "national_competition",
+      "recommend": "pending_verification",
+      "reason": "真实学科赛事，缺官方来源"
+    },
+    "18": {
+      "kind": "national_competition",
+      "recommend": "pending_verification",
+      "reason": "体育总局系统赛事，缺S级来源"
+    },
+    "88": {
+      "kind": "national_festival_like",
+      "recommend": "pending_verification",
+      "reason": "全国性朗诵艺术节，实体性质需官方章程确认"
+    },
+    "91": {
+      "kind": "provincial",
+      "recommend": "school_confirmed",
+      "reason": "省级教学技能竞赛，非全国核心库"
+    },
+    "92": {
+      "kind": "provincial",
+      "recommend": "pending_verification",
+      "reason": "省级营销挑战赛，来源仅为高校"
+    },
+    "93": {
+      "kind": "provincial_award",
+      "recommend": "non_competition_candidate",
+      "reason": "省级舞蹈奖项/比赛，建议进一步确认实体类型"
+    },
+    "94": {
+      "kind": "provincial",
+      "recommend": "pending_verification",
+      "reason": "省级技能竞赛，来源仅为高校"
+    },
+    "95": {
+      "kind": "national_competition",
+      "recommend": "pending_verification",
+      "reason": "真实国际传播赛事，缺官方来源"
+    },
+    "96": {
+      "kind": "provincial",
+      "recommend": "pending_verification",
+      "reason": "省级科普讲解，来源仅为高校"
+    },
+    "97": {
+      "kind": "college_level",
+      "recommend": "school_confirmed",
+      "reason": "学院级技能赛，不属于全国核心库"
+    },
+    "98": {
+      "kind": "national_competition",
+      "recommend": "pending_verification",
+      "reason": "真实国际学科竞赛（COMAP），缺S级来源"
+    },
+    "102": {
+      "kind": "duplicate",
+      "recommend": "duplicate",
+      "reason": "已并入53（CULSC）"
+    },
+    "109": {
+      "kind": "series_child",
+      "recommend": "school_confirmed",
+      "reason": "外研社系列子赛项，母赛事已S级；子赛项自身证据不足"
+    },
+    "124": {
+      "kind": "campus_competition",
+      "recommend": "school_confirmed",
+      "reason": "校级赛事，不应以全国身份展示"
+    },
+    "126": {
+      "kind": "national_competition",
+      "recommend": "pending_verification",
+      "reason": "真实全国模拟法庭竞赛，缺S级来源"
+    },
+    "127": {
+      "kind": "campus_competition",
+      "recommend": "school_confirmed",
+      "reason": "校级计算机竞赛"
+    },
+    "128": {
+      "kind": "national_competition",
+      "recommend": "pending_verification",
+      "reason": "真实全国FPGA/嵌入式竞赛，缺S级来源"
+    },
+    "129": {
+      "kind": "niche_international",
+      "recommend": "pending_verification",
+      "reason": "国际设计赛事，缺官方来源"
+    },
+    "132": {
+      "kind": "campus_competition",
+      "recommend": "school_confirmed",
+      "reason": "校级智能体大赛"
+    },
+    "133": {
+      "kind": "campus_competition",
+      "recommend": "school_confirmed",
+      "reason": "校级创新创业年会类赛事"
+    },
+    "134": {
+      "kind": "national_competition",
+      "recommend": "pending_verification",
+      "reason": "与生命科学竞赛体系相关，需人工确认归属（suspected duplicate）"
+    },
+    "136": {
+      "kind": "campus_or_brand_competition",
+      "recommend": "school_confirmed",
+      "reason": "校方/品牌案例赛，缺全国官方证据"
+    }
+  },
+  "pending_remaining": 15
+}

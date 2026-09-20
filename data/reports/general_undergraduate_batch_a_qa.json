@@ -1,0 +1,12 @@
+{
+  "requested_sample_size": 30,
+  "available_formal_relations": 0,
+  "sample_size": 0,
+  "sampling": "all available formal relations; population below 30",
+  "summary": {
+    "PASS": 0,
+    "FAIL": 0,
+    "UNCERTAIN": 30
+  },
+  "samples": []
+}

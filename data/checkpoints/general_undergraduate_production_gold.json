@@ -1,0 +1,254 @@
+{
+  "task": "GENERAL_UNDERGRADUATE_PRODUCTION_GOLD",
+  "generated_at": "2026-09-16T01:25:14.609335+00:00",
+  "source": "gold",
+  "dry_run": false,
+  "school_count": 8,
+  "skipped_non_general_a": [
+    "泉州师范学院",
+    "宿迁学院"
+  ],
+  "status_counts": {
+    "VERIFIED_DATA": 8
+  },
+  "totals": {
+    "documents_discovered": 13,
+    "policies_found": 13,
+    "documents_found": 11,
+    "documents_parsed": 11,
+    "competitions_found": 234
+  },
+  "schools": [
+    {
+      "school": "北京工商大学",
+      "discovery_status": "VERIFIED_DATA",
+      "documents_discovered": 2,
+      "channels_attempted": [
+        "external_site_search",
+        "official_root",
+        "teaching_undergraduate",
+        "innovation",
+        "student_youth",
+        "disclosure_rules",
+        "downloads_attachments",
+        "sitemap"
+      ],
+      "crawl": {
+        "target_name": "北京工商大学",
+        "target_url": "https://www.btbu.edu.cn/",
+        "status": "completed",
+        "pages_discovered": 2,
+        "pages_fetched": 0,
+        "documents_found": 2,
+        "documents_parsed": 2,
+        "competitions_found": 41,
+        "colleges_found": 0,
+        "policies_found": 2,
+        "review_items": 136,
+        "errors": [],
+        "started_at": "2026-09-16T01:21:27.763404+00:00",
+        "finished_at": "2026-09-16T01:21:34.795714+00:00"
+      }
+    },
+    {
+      "school": "河北大学",
+      "discovery_status": "VERIFIED_DATA",
+      "documents_discovered": 2,
+      "channels_attempted": [
+        "external_site_search",
+        "official_root",
+        "internal_search",
+        "sitemap"
+      ],
+      "crawl": {
+        "target_name": "河北大学",
+        "target_url": "https://www.hbu.edu.cn/",
+        "status": "completed",
+        "pages_discovered": 2,
+        "pages_fetched": 0,
+        "documents_found": 2,
+        "documents_parsed": 2,
+        "competitions_found": 81,
+        "colleges_found": 0,
+        "policies_found": 2,
+        "review_items": 23,
+        "errors": [],
+        "started_at": "2026-09-16T01:21:48.562128+00:00",
+        "finished_at": "2026-09-16T01:21:53.841481+00:00"
+      }
+    },
+    {
+      "school": "江苏大学",
+      "discovery_status": "VERIFIED_DATA",
+      "documents_discovered": 1,
+      "channels_attempted": [
+        "external_site_search",
+        "official_root",
+        "teaching_undergraduate",
+        "innovation",
+        "student_youth",
+        "disclosure_rules",
+        "sitemap"
+      ],
+      "crawl": {
+        "target_name": "江苏大学",
+        "target_url": "https://www.ujs.edu.cn/",
+        "status": "completed",
+        "pages_discovered": 1,
+        "pages_fetched": 0,
+        "documents_found": 1,
+        "documents_parsed": 1,
+        "competitions_found": 25,
+        "colleges_found": 0,
+        "policies_found": 1,
+        "review_items": 73,
+        "errors": [],
+        "started_at": "2026-09-16T01:22:29.641500+00:00",
+        "finished_at": "2026-09-16T01:22:35.788286+00:00"
+      }
+    },
+    {
+      "school": "深圳大学",
+      "discovery_status": "VERIFIED_DATA",
+      "documents_discovered": 1,
+      "channels_attempted": [
+        "external_site_search",
+        "official_root",
+        "teaching_undergraduate",
+        "innovation",
+        "disclosure_rules",
+        "sitemap"
+      ],
+      "crawl": {
+        "target_name": "深圳大学",
+        "target_url": "https://www.szu.edu.cn/",
+        "status": "completed",
+        "pages_discovered": 1,
+        "pages_fetched": 1,
+        "documents_found": 0,
+        "documents_parsed": 0,
+        "competitions_found": 0,
+        "colleges_found": 0,
+        "policies_found": 1,
+        "review_items": 0,
+        "errors": [],
+        "started_at": "2026-09-16T01:24:30.101848+00:00",
+        "finished_at": "2026-09-16T01:24:36.785869+00:00"
+      }
+    },
+    {
+      "school": "湖北大学",
+      "discovery_status": "VERIFIED_DATA",
+      "documents_discovered": 2,
+      "channels_attempted": [
+        "external_site_search",
+        "official_root",
+        "teaching_undergraduate",
+        "innovation",
+        "disclosure_rules",
+        "sitemap"
+      ],
+      "crawl": {
+        "target_name": "湖北大学",
+        "target_url": "https://www.hubu.edu.cn/",
+        "status": "completed",
+        "pages_discovered": 2,
+        "pages_fetched": 0,
+        "documents_found": 2,
+        "documents_parsed": 2,
+        "competitions_found": 87,
+        "colleges_found": 0,
+        "policies_found": 2,
+        "review_items": 121,
+        "errors": [],
+        "started_at": "2026-09-16T01:24:45.096026+00:00",
+        "finished_at": "2026-09-16T01:24:49.073065+00:00"
+      }
+    },
+    {
+      "school": "昆明理工大学",
+      "discovery_status": "VERIFIED_DATA",
+      "documents_discovered": 3,
+      "channels_attempted": [
+        "external_site_search",
+        "official_root",
+        "teaching_undergraduate",
+        "innovation",
+        "disclosure_rules",
+        "sitemap"
+      ],
+      "crawl": {
+        "target_name": "昆明理工大学",
+        "target_url": "https://www.kmust.edu.cn/",
+        "status": "completed",
+        "pages_discovered": 3,
+        "pages_fetched": 1,
+        "documents_found": 2,
+        "documents_parsed": 2,
+        "competitions_found": 0,
+        "colleges_found": 0,
+        "policies_found": 3,
+        "review_items": 0,
+        "errors": [],
+        "started_at": "2026-09-16T01:24:55.881368+00:00",
+        "finished_at": "2026-09-16T01:24:59.782978+00:00"
+      }
+    },
+    {
+      "school": "西安理工大学",
+      "discovery_status": "VERIFIED_DATA",
+      "documents_discovered": 1,
+      "channels_attempted": [
+        "external_site_search",
+        "official_root",
+        "student_youth",
+        "disclosure_rules",
+        "downloads_attachments",
+        "sitemap"
+      ],
+      "crawl": {
+        "target_name": "西安理工大学",
+        "target_url": "https://www.xaut.edu.cn/",
+        "status": "completed",
+        "pages_discovered": 1,
+        "pages_fetched": 0,
+        "documents_found": 1,
+        "documents_parsed": 1,
+        "competitions_found": 0,
+        "colleges_found": 0,
+        "policies_found": 1,
+        "review_items": 138,
+        "errors": [],
+        "started_at": "2026-09-16T01:25:06.299862+00:00",
+        "finished_at": "2026-09-16T01:25:08.303724+00:00"
+      }
+    },
+    {
+      "school": "西藏民族大学",
+      "discovery_status": "VERIFIED_DATA",
+      "documents_discovered": 1,
+      "channels_attempted": [
+        "external_site_search",
+        "official_root",
+        "disclosure_rules",
+        "sitemap"
+      ],
+      "crawl": {
+        "target_name": "西藏民族大学",
+        "target_url": "https://www.xzmu.edu.cn/",
+        "status": "completed",
+        "pages_discovered": 1,
+        "pages_fetched": 0,
+        "documents_found": 1,
+        "documents_parsed": 1,
+        "competitions_found": 0,
+        "colleges_found": 0,
+        "policies_found": 1,
+        "review_items": 0,
+        "errors": [],
+        "started_at": "2026-09-16T01:25:12.987932+00:00",
+        "finished_at": "2026-09-16T01:25:14.601333+00:00"
+      }
+    }
+  ]
+}

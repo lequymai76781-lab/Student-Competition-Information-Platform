@@ -1,0 +1,354 @@
+{
+  "version": "v0.8.1",
+  "retrieved_at": "2026-09-06T15:28:18.430181+00:00",
+  "scope": "211_non_985",
+  "batches": [
+    {
+      "name": "v081-211-fix-batch-01",
+      "universities": [
+        "武汉理工大学",
+        "华中农业大学",
+        "西南财经大学"
+      ],
+      "size": 3
+    }
+  ],
+  "discovery_reports": [
+    {
+      "university": "武汉理工大学",
+      "batch_name": "v081-211-fix-batch-01",
+      "status": "partial",
+      "methods_attempted": [
+        "sitemap",
+        "navigation",
+        "department_feed",
+        "external_search",
+        "site_search",
+        "wechat",
+        "reverse_match"
+      ],
+      "methods_successful": [],
+      "pages_examined": 1,
+      "candidate_articles": 0,
+      "pages_searched": 17,
+      "competition_leads": 0,
+      "matched_competitions": 0,
+      "new_competitions": 0,
+      "new_editions": 0,
+      "official_sources": 0,
+      "university_notice_count": 0,
+      "college_notice_count": 0,
+      "current_registration_count": 0,
+      "edition_2026_count": 0,
+      "wechat_leads": 0,
+      "internal_deadlines": 0,
+      "last_crawled_at": "2026-09-06T15:28:18.430181+00:00",
+      "reason": "站内搜索失败(搜狗检索失败：ConnectError)；外部检索失败(DuckDuckGo检索失败：ConnectError)；公众号线索失败(Bing 检索失败：ConnectError)；反向匹配失败(Bing 检索失败：ConnectError)；导航发现失败([WinError 10013] 以一种访问权限不允许的方式做了一个访问套接字的尝试。)；各通道均未发现近期赛事通知",
+      "errors": [
+        {
+          "method": "navigation",
+          "error": "[WinError 10013] 以一种访问权限不允许的方式做了一个访问套接字的尝试。"
+        },
+        {
+          "method": "external_search",
+          "error": "DuckDuckGo检索失败：ConnectError"
+        },
+        {
+          "method": "site_search",
+          "error": "搜狗检索失败：ConnectError"
+        },
+        {
+          "method": "wechat",
+          "error": "Bing 检索失败：ConnectError"
+        },
+        {
+          "method": "reverse_match",
+          "error": "Bing 检索失败：ConnectError"
+        }
+      ],
+      "examined_pages": [],
+      "channel_stats": {
+        "sitemap": {
+          "status": "empty",
+          "items": 0,
+          "detail": "未发现Sitemap或未命中通知路径"
+        },
+        "navigation": {
+          "status": "error",
+          "items": 0,
+          "detail": "[WinError 10013] 以一种访问权限不允许的方式做了一个访问套接字的尝试。"
+        },
+        "department_feed": {
+          "status": "empty",
+          "items": 0,
+          "detail": "未发现部门栏目入口"
+        },
+        "external_search": {
+          "status": "error",
+          "items": 0,
+          "detail": "DuckDuckGo检索失败：ConnectError"
+        },
+        "site_search": {
+          "status": "error",
+          "items": 0,
+          "detail": "搜狗检索失败：ConnectError"
+        },
+        "wechat": {
+          "status": "error",
+          "items": 0,
+          "detail": "Bing 检索失败：ConnectError"
+        },
+        "reverse_match": {
+          "status": "error",
+          "items": 0,
+          "detail": "Bing 检索失败：ConnectError"
+        }
+      },
+      "search_queries": [
+        "site:whut.edu.cn 2026 竞赛 报名",
+        "site:whut.edu.cn 2026 大赛 通知",
+        "site:whut.edu.cn 组织参加 竞赛",
+        "site:whut.edu.cn 大学生 学科竞赛",
+        "site:whut.edu.cn 2026 (竞赛 OR 大赛) (报名 OR 参赛)",
+        "site:mp.weixin.qq.com \"武汉理工大学\" 2026 竞赛 报名",
+        "site:mp.weixin.qq.com \"武汉理工大学\" 2026 大赛 通知",
+        "site:mp.weixin.qq.com \"武汉理工大学\" 学科竞赛 2026",
+        "\"武汉理工大学\" 中国国际大学生创新大赛 2026",
+        "\"武汉理工大学\" “挑战杯”全国大学生课外学术科技作品竞赛 2026",
+        "\"武汉理工大学\" “挑战杯”中国大学生创业计划竞赛 2026",
+        "\"武汉理工大学\" 全国大学生数学建模竞赛 2026",
+        "\"武汉理工大学\" 全国大学生电子设计竞赛 2026",
+        "\"武汉理工大学\" 全国大学生机械创新设计大赛 2026",
+        "\"武汉理工大学\" 全国大学生广告艺术大赛 报名",
+        "\"武汉理工大学\" 全国大学生智能汽车竞赛 报名"
+      ],
+      "source_domains": [],
+      "seed_version": "v0.8.1"
+    },
+    {
+      "university": "华中农业大学",
+      "batch_name": "v081-211-fix-batch-01",
+      "status": "partial",
+      "methods_attempted": [
+        "sitemap",
+        "navigation",
+        "department_feed",
+        "external_search",
+        "site_search",
+        "wechat",
+        "reverse_match"
+      ],
+      "methods_successful": [],
+      "pages_examined": 1,
+      "candidate_articles": 0,
+      "pages_searched": 17,
+      "competition_leads": 0,
+      "matched_competitions": 0,
+      "new_competitions": 0,
+      "new_editions": 0,
+      "official_sources": 0,
+      "university_notice_count": 0,
+      "college_notice_count": 0,
+      "current_registration_count": 0,
+      "edition_2026_count": 0,
+      "wechat_leads": 0,
+      "internal_deadlines": 0,
+      "last_crawled_at": "2026-09-06T15:28:18.430181+00:00",
+      "reason": "站内搜索失败(搜狗检索失败：ConnectError)；外部检索失败(DuckDuckGo检索失败：ConnectError)；公众号线索失败(Bing 检索失败：ConnectError)；反向匹配失败(Bing 检索失败：ConnectError)；导航发现失败([WinError 10013] 以一种访问权限不允许的方式做了一个访问套接字的尝试。)；各通道均未发现近期赛事通知",
+      "errors": [
+        {
+          "method": "navigation",
+          "error": "[WinError 10013] 以一种访问权限不允许的方式做了一个访问套接字的尝试。"
+        },
+        {
+          "method": "external_search",
+          "error": "DuckDuckGo检索失败：ConnectError"
+        },
+        {
+          "method": "site_search",
+          "error": "搜狗检索失败：ConnectError"
+        },
+        {
+          "method": "wechat",
+          "error": "Bing 检索失败：ConnectError"
+        },
+        {
+          "method": "reverse_match",
+          "error": "Bing 检索失败：ConnectError"
+        }
+      ],
+      "examined_pages": [],
+      "channel_stats": {
+        "sitemap": {
+          "status": "empty",
+          "items": 0,
+          "detail": "未发现Sitemap或未命中通知路径"
+        },
+        "navigation": {
+          "status": "error",
+          "items": 0,
+          "detail": "[WinError 10013] 以一种访问权限不允许的方式做了一个访问套接字的尝试。"
+        },
+        "department_feed": {
+          "status": "empty",
+          "items": 0,
+          "detail": "未发现部门栏目入口"
+        },
+        "external_search": {
+          "status": "error",
+          "items": 0,
+          "detail": "DuckDuckGo检索失败：ConnectError"
+        },
+        "site_search": {
+          "status": "error",
+          "items": 0,
+          "detail": "搜狗检索失败：ConnectError"
+        },
+        "wechat": {
+          "status": "error",
+          "items": 0,
+          "detail": "Bing 检索失败：ConnectError"
+        },
+        "reverse_match": {
+          "status": "error",
+          "items": 0,
+          "detail": "Bing 检索失败：ConnectError"
+        }
+      },
+      "search_queries": [
+        "site:hzau.edu.cn 2026 竞赛 报名",
+        "site:hzau.edu.cn 2026 大赛 通知",
+        "site:hzau.edu.cn 组织参加 竞赛",
+        "site:hzau.edu.cn 大学生 学科竞赛",
+        "site:hzau.edu.cn 2026 (竞赛 OR 大赛) (报名 OR 参赛)",
+        "site:mp.weixin.qq.com \"华中农业大学\" 2026 竞赛 报名",
+        "site:mp.weixin.qq.com \"华中农业大学\" 2026 大赛 通知",
+        "site:mp.weixin.qq.com \"华中农业大学\" 学科竞赛 2026",
+        "\"华中农业大学\" 中国国际大学生创新大赛 2026",
+        "\"华中农业大学\" “挑战杯”全国大学生课外学术科技作品竞赛 2026",
+        "\"华中农业大学\" “挑战杯”中国大学生创业计划竞赛 2026",
+        "\"华中农业大学\" 全国大学生数学建模竞赛 2026",
+        "\"华中农业大学\" 全国大学生电子设计竞赛 2026",
+        "\"华中农业大学\" 全国大学生机械创新设计大赛 2026",
+        "\"华中农业大学\" 全国大学生广告艺术大赛 报名",
+        "\"华中农业大学\" 全国大学生智能汽车竞赛 报名"
+      ],
+      "source_domains": [],
+      "seed_version": "v0.8.1"
+    },
+    {
+      "university": "西南财经大学",
+      "batch_name": "v081-211-fix-batch-01",
+      "status": "partial",
+      "methods_attempted": [
+        "sitemap",
+        "navigation",
+        "department_feed",
+        "external_search",
+        "site_search",
+        "wechat",
+        "reverse_match"
+      ],
+      "methods_successful": [],
+      "pages_examined": 1,
+      "candidate_articles": 0,
+      "pages_searched": 17,
+      "competition_leads": 0,
+      "matched_competitions": 0,
+      "new_competitions": 0,
+      "new_editions": 0,
+      "official_sources": 0,
+      "university_notice_count": 0,
+      "college_notice_count": 0,
+      "current_registration_count": 0,
+      "edition_2026_count": 0,
+      "wechat_leads": 0,
+      "internal_deadlines": 0,
+      "last_crawled_at": "2026-09-06T15:28:18.430181+00:00",
+      "reason": "站内搜索失败(搜狗检索失败：ConnectError)；外部检索失败(DuckDuckGo检索失败：ConnectError)；公众号线索失败(Bing 检索失败：ConnectError)；反向匹配失败(Bing 检索失败：ConnectError)；导航发现失败([WinError 10013] 以一种访问权限不允许的方式做了一个访问套接字的尝试。)；各通道均未发现近期赛事通知",
+      "errors": [
+        {
+          "method": "navigation",
+          "error": "[WinError 10013] 以一种访问权限不允许的方式做了一个访问套接字的尝试。"
+        },
+        {
+          "method": "external_search",
+          "error": "DuckDuckGo检索失败：ConnectError"
+        },
+        {
+          "method": "site_search",
+          "error": "搜狗检索失败：ConnectError"
+        },
+        {
+          "method": "wechat",
+          "error": "Bing 检索失败：ConnectError"
+        },
+        {
+          "method": "reverse_match",
+          "error": "Bing 检索失败：ConnectError"
+        }
+      ],
+      "examined_pages": [],
+      "channel_stats": {
+        "sitemap": {
+          "status": "empty",
+          "items": 0,
+          "detail": "未发现Sitemap或未命中通知路径"
+        },
+        "navigation": {
+          "status": "error",
+          "items": 0,
+          "detail": "[WinError 10013] 以一种访问权限不允许的方式做了一个访问套接字的尝试。"
+        },
+        "department_feed": {
+          "status": "empty",
+          "items": 0,
+          "detail": "未发现部门栏目入口"
+        },
+        "external_search": {
+          "status": "error",
+          "items": 0,
+          "detail": "DuckDuckGo检索失败：ConnectError"
+        },
+        "site_search": {
+          "status": "error",
+          "items": 0,
+          "detail": "搜狗检索失败：ConnectError"
+        },
+        "wechat": {
+          "status": "error",
+          "items": 0,
+          "detail": "Bing 检索失败：ConnectError"
+        },
+        "reverse_match": {
+          "status": "error",
+          "items": 0,
+          "detail": "Bing 检索失败：ConnectError"
+        }
+      },
+      "search_queries": [
+        "site:swufe.edu.cn 2026 竞赛 报名",
+        "site:swufe.edu.cn 2026 大赛 通知",
+        "site:swufe.edu.cn 组织参加 竞赛",
+        "site:swufe.edu.cn 大学生 学科竞赛",
+        "site:swufe.edu.cn 2026 (竞赛 OR 大赛) (报名 OR 参赛)",
+        "site:mp.weixin.qq.com \"西南财经大学\" 2026 竞赛 报名",
+        "site:mp.weixin.qq.com \"西南财经大学\" 2026 大赛 通知",
+        "site:mp.weixin.qq.com \"西南财经大学\" 学科竞赛 2026",
+        "\"西南财经大学\" 中国国际大学生创新大赛 2026",
+        "\"西南财经大学\" “挑战杯”全国大学生课外学术科技作品竞赛 2026",
+        "\"西南财经大学\" “挑战杯”中国大学生创业计划竞赛 2026",
+        "\"西南财经大学\" 全国大学生数学建模竞赛 2026",
+        "\"西南财经大学\" 全国大学生电子设计竞赛 2026",
+        "\"西南财经大学\" 全国大学生机械创新设计大赛 2026",
+        "\"西南财经大学\" 全国大学生广告艺术大赛 报名",
+        "\"西南财经大学\" 全国大学生智能汽车竞赛 报名"
+      ],
+      "source_domains": [],
+      "seed_version": "v0.8.1"
+    }
+  ],
+  "leads": [],
+  "official_records": [],
+  "edition_relations": []
+}

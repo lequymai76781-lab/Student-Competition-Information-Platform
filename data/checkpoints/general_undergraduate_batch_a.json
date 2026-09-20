@@ -1,0 +1,1201 @@
+{
+  "task": "GENERAL_UNDERGRADUATE_BATCH_A",
+  "collection_batch": "general_a",
+  "schools": [
+    {
+      "school_id": 163,
+      "school": "上海理工大学",
+      "batch": "general_a",
+      "checked_sources": [
+        "https://www.usst.edu.cn/"
+      ],
+      "candidate_count": 0,
+      "relations": {
+        "recognition": 0,
+        "notification": 0,
+        "participation": 0
+      },
+      "relations_delta": {
+        "recognition": 0,
+        "notification": 0,
+        "participation": 0
+      },
+      "sources": 0,
+      "policy_pass": {
+        "status": "completed",
+        "pages_discovered": 305,
+        "pages_fetched": 1,
+        "documents_found": 0,
+        "documents_parsed": 0,
+        "policies_found": 0,
+        "competitions_found": 0,
+        "errors": []
+      },
+      "radar_status": "school timeout after 60s",
+      "pages_examined": 1,
+      "request_count": 1,
+      "final_status": "ACCESS_LIMITED",
+      "needs_deep_pass": false,
+      "elapsed_seconds": 72.843,
+      "last_checked_at": "2026-09-15T05:24:13.394962+00:00"
+    },
+    {
+      "school_id": 164,
+      "school": "新疆师范大学",
+      "batch": "general_a",
+      "checked_sources": [
+        "https://www.xjnu.edu.cn/"
+      ],
+      "candidate_count": 0,
+      "relations": {
+        "recognition": 0,
+        "notification": 0,
+        "participation": 0
+      },
+      "relations_delta": {
+        "recognition": 0,
+        "notification": 0,
+        "participation": 0
+      },
+      "sources": 0,
+      "policy_pass": {
+        "status": "completed",
+        "pages_discovered": 244,
+        "pages_fetched": 1,
+        "documents_found": 0,
+        "documents_parsed": 0,
+        "policies_found": 0,
+        "competitions_found": 0,
+        "errors": []
+      },
+      "radar_status": "school timeout after 25s",
+      "pages_examined": 1,
+      "request_count": 1,
+      "final_status": "ACCESS_LIMITED",
+      "needs_deep_pass": false,
+      "elapsed_seconds": 27.14,
+      "last_checked_at": "2026-09-15T05:26:13.687074+00:00"
+    },
+    {
+      "school_id": 165,
+      "school": "河北大学",
+      "batch": "general_a",
+      "checked_sources": [
+        "https://www.hbu.edu.cn/"
+      ],
+      "candidate_count": 0,
+      "relations": {
+        "recognition": 0,
+        "notification": 0,
+        "participation": 0
+      },
+      "relations_delta": {
+        "recognition": 0,
+        "notification": 0,
+        "participation": 0
+      },
+      "sources": 0,
+      "policy_pass": {
+        "status": "completed",
+        "pages_discovered": 181,
+        "pages_fetched": 2,
+        "documents_found": 0,
+        "documents_parsed": 0,
+        "policies_found": 0,
+        "competitions_found": 0,
+        "errors": []
+      },
+      "radar_status": "school timeout after 25s",
+      "pages_examined": 2,
+      "request_count": 2,
+      "final_status": "ACCESS_LIMITED",
+      "needs_deep_pass": false,
+      "elapsed_seconds": 28.875,
+      "last_checked_at": "2026-09-15T05:26:42.564492+00:00"
+    },
+    {
+      "school_id": 166,
+      "school": "西北师范大学",
+      "batch": "general_a",
+      "checked_sources": [
+        "https://www.nwnu.edu.cn/"
+      ],
+      "candidate_count": 0,
+      "relations": {
+        "recognition": 0,
+        "notification": 0,
+        "participation": 0
+      },
+      "relations_delta": {
+        "recognition": 0,
+        "notification": 0,
+        "participation": 0
+      },
+      "sources": 0,
+      "policy_pass": {
+        "status": "completed",
+        "pages_discovered": 79,
+        "pages_fetched": 1,
+        "documents_found": 0,
+        "documents_parsed": 0,
+        "policies_found": 0,
+        "competitions_found": 0,
+        "errors": []
+      },
+      "radar_status": "school timeout after 25s",
+      "pages_examined": 1,
+      "request_count": 1,
+      "final_status": "ACCESS_LIMITED",
+      "needs_deep_pass": false,
+      "elapsed_seconds": 26.594,
+      "last_checked_at": "2026-09-15T05:27:09.151872+00:00"
+    },
+    {
+      "school_id": 167,
+      "school": "北京工商大学",
+      "batch": "general_a",
+      "checked_sources": [
+        "https://www.btbu.edu.cn/"
+      ],
+      "candidate_count": 0,
+      "relations": {
+        "recognition": 0,
+        "notification": 0,
+        "participation": 0
+      },
+      "relations_delta": {
+        "recognition": 0,
+        "notification": 0,
+        "participation": 0
+      },
+      "sources": 0,
+      "policy_pass": {
+        "status": "completed",
+        "pages_discovered": 786,
+        "pages_fetched": 3,
+        "documents_found": 0,
+        "documents_parsed": 0,
+        "policies_found": 2,
+        "competitions_found": 1,
+        "errors": []
+      },
+      "radar_status": "school timeout after 25s",
+      "pages_examined": 3,
+      "request_count": 3,
+      "final_status": "ACCESS_LIMITED",
+      "needs_deep_pass": false,
+      "elapsed_seconds": 28.906,
+      "last_checked_at": "2026-09-15T05:27:38.060137+00:00",
+      "qa_note": "provisional policy hit rejected as a false positive"
+    },
+    {
+      "school_id": 168,
+      "school": "江西师范大学",
+      "batch": "general_a",
+      "checked_sources": [
+        "https://www.jxnu.edu.cn/"
+      ],
+      "candidate_count": 0,
+      "relations": {
+        "recognition": 0,
+        "notification": 0,
+        "participation": 0
+      },
+      "relations_delta": {
+        "recognition": 0,
+        "notification": 0,
+        "participation": 0
+      },
+      "sources": 0,
+      "policy_pass": {
+        "status": "completed",
+        "pages_discovered": 254,
+        "pages_fetched": 1,
+        "documents_found": 0,
+        "documents_parsed": 0,
+        "policies_found": 0,
+        "competitions_found": 0,
+        "errors": []
+      },
+      "radar_status": "school timeout after 25s",
+      "pages_examined": 1,
+      "request_count": 1,
+      "final_status": "ACCESS_LIMITED",
+      "needs_deep_pass": false,
+      "elapsed_seconds": 31.36,
+      "last_checked_at": "2026-09-15T05:28:09.428424+00:00"
+    },
+    {
+      "school_id": 169,
+      "school": "内蒙古师范大学",
+      "batch": "general_a",
+      "checked_sources": [
+        "https://www.imnu.edu.cn/"
+      ],
+      "candidate_count": 0,
+      "relations": {
+        "recognition": 0,
+        "notification": 0,
+        "participation": 0
+      },
+      "relations_delta": {
+        "recognition": 0,
+        "notification": 0,
+        "participation": 0
+      },
+      "sources": 0,
+      "policy_pass": {
+        "status": "completed",
+        "pages_discovered": 157,
+        "pages_fetched": 1,
+        "documents_found": 0,
+        "documents_parsed": 0,
+        "policies_found": 0,
+        "competitions_found": 0,
+        "errors": []
+      },
+      "radar_status": "school timeout after 25s",
+      "pages_examined": 1,
+      "request_count": 1,
+      "final_status": "ACCESS_LIMITED",
+      "needs_deep_pass": false,
+      "elapsed_seconds": 28.735,
+      "last_checked_at": "2026-09-15T05:28:38.167259+00:00"
+    },
+    {
+      "school_id": 170,
+      "school": "西藏民族大学",
+      "batch": "general_a",
+      "checked_sources": [
+        "https://www.xzmu.edu.cn/"
+      ],
+      "candidate_count": 0,
+      "relations": {
+        "recognition": 0,
+        "notification": 0,
+        "participation": 0
+      },
+      "relations_delta": {
+        "recognition": 0,
+        "notification": 0,
+        "participation": 0
+      },
+      "sources": 0,
+      "policy_pass": {
+        "status": "completed",
+        "pages_discovered": 177,
+        "pages_fetched": 1,
+        "documents_found": 0,
+        "documents_parsed": 0,
+        "policies_found": 0,
+        "competitions_found": 0,
+        "errors": []
+      },
+      "radar_status": "school timeout after 25s",
+      "pages_examined": 1,
+      "request_count": 1,
+      "final_status": "ACCESS_LIMITED",
+      "needs_deep_pass": false,
+      "elapsed_seconds": 27.187,
+      "last_checked_at": "2026-09-15T05:29:05.356469+00:00"
+    },
+    {
+      "school_id": 171,
+      "school": "黑龙江大学",
+      "batch": "general_a",
+      "checked_sources": [
+        "https://www.hlju.edu.cn/"
+      ],
+      "candidate_count": 0,
+      "relations": {
+        "recognition": 0,
+        "notification": 0,
+        "participation": 0
+      },
+      "relations_delta": {
+        "recognition": 0,
+        "notification": 0,
+        "participation": 0
+      },
+      "sources": 0,
+      "policy_pass": {
+        "status": "completed",
+        "pages_discovered": 222,
+        "pages_fetched": 1,
+        "documents_found": 0,
+        "documents_parsed": 0,
+        "policies_found": 0,
+        "competitions_found": 0,
+        "errors": []
+      },
+      "radar_status": "school timeout after 25s",
+      "pages_examined": 1,
+      "request_count": 1,
+      "final_status": "ACCESS_LIMITED",
+      "needs_deep_pass": false,
+      "elapsed_seconds": 26.984,
+      "last_checked_at": "2026-09-15T05:29:32.337335+00:00"
+    },
+    {
+      "school_id": 172,
+      "school": "东北财经大学",
+      "batch": "general_a",
+      "checked_sources": [
+        "https://www.dufe.edu.cn/"
+      ],
+      "candidate_count": 0,
+      "relations": {
+        "recognition": 0,
+        "notification": 0,
+        "participation": 0
+      },
+      "relations_delta": {
+        "recognition": 0,
+        "notification": 0,
+        "participation": 0
+      },
+      "sources": 0,
+      "policy_pass": {
+        "status": "completed",
+        "pages_discovered": 170,
+        "pages_fetched": 1,
+        "documents_found": 0,
+        "documents_parsed": 0,
+        "policies_found": 0,
+        "competitions_found": 0,
+        "errors": []
+      },
+      "radar_status": "school timeout after 25s",
+      "pages_examined": 1,
+      "request_count": 1,
+      "final_status": "ACCESS_LIMITED",
+      "needs_deep_pass": false,
+      "elapsed_seconds": 26.266,
+      "last_checked_at": "2026-09-15T05:29:58.605977+00:00"
+    },
+    {
+      "school_id": 173,
+      "school": "天津师范大学",
+      "batch": "general_a",
+      "checked_sources": [
+        "https://www.tjnu.edu.cn/"
+      ],
+      "candidate_count": 0,
+      "relations": {
+        "recognition": 0,
+        "notification": 0,
+        "participation": 0
+      },
+      "relations_delta": {
+        "recognition": 0,
+        "notification": 0,
+        "participation": 0
+      },
+      "sources": 0,
+      "policy_pass": {
+        "status": "completed",
+        "pages_discovered": 274,
+        "pages_fetched": 1,
+        "documents_found": 0,
+        "documents_parsed": 0,
+        "policies_found": 0,
+        "competitions_found": 0,
+        "errors": []
+      },
+      "radar_status": "school timeout after 25s",
+      "pages_examined": 1,
+      "request_count": 1,
+      "final_status": "ACCESS_LIMITED",
+      "needs_deep_pass": false,
+      "elapsed_seconds": 27.234,
+      "last_checked_at": "2026-09-15T05:30:25.839817+00:00"
+    },
+    {
+      "school_id": 174,
+      "school": "山西师范大学",
+      "batch": "general_a",
+      "checked_sources": [
+        "https://www.sxnu.edu.cn/"
+      ],
+      "candidate_count": 0,
+      "relations": {
+        "recognition": 0,
+        "notification": 0,
+        "participation": 0
+      },
+      "relations_delta": {
+        "recognition": 0,
+        "notification": 0,
+        "participation": 0
+      },
+      "sources": 0,
+      "policy_pass": {
+        "status": "completed",
+        "pages_discovered": 248,
+        "pages_fetched": 1,
+        "documents_found": 0,
+        "documents_parsed": 0,
+        "policies_found": 0,
+        "competitions_found": 0,
+        "errors": []
+      },
+      "radar_status": "school timeout after 25s",
+      "pages_examined": 1,
+      "request_count": 1,
+      "final_status": "ACCESS_LIMITED",
+      "needs_deep_pass": false,
+      "elapsed_seconds": 26.532,
+      "last_checked_at": "2026-09-15T05:30:52.375120+00:00"
+    },
+    {
+      "school_id": 175,
+      "school": "四川师范大学",
+      "batch": "general_a",
+      "checked_sources": [
+        "https://www.sicnu.edu.cn/"
+      ],
+      "candidate_count": 0,
+      "relations": {
+        "recognition": 0,
+        "notification": 0,
+        "participation": 0
+      },
+      "relations_delta": {
+        "recognition": 0,
+        "notification": 0,
+        "participation": 0
+      },
+      "sources": 0,
+      "policy_pass": {
+        "status": "completed",
+        "pages_discovered": 345,
+        "pages_fetched": 1,
+        "documents_found": 0,
+        "documents_parsed": 0,
+        "policies_found": 0,
+        "competitions_found": 0,
+        "errors": []
+      },
+      "radar_status": "school timeout after 25s",
+      "pages_examined": 1,
+      "request_count": 1,
+      "final_status": "ACCESS_LIMITED",
+      "needs_deep_pass": false,
+      "elapsed_seconds": 26.812,
+      "last_checked_at": "2026-09-15T05:31:19.187638+00:00"
+    },
+    {
+      "school_id": 176,
+      "school": "河南师范大学",
+      "batch": "general_a",
+      "checked_sources": [
+        "https://www.htu.edu.cn/"
+      ],
+      "candidate_count": 0,
+      "relations": {
+        "recognition": 0,
+        "notification": 0,
+        "participation": 0
+      },
+      "relations_delta": {
+        "recognition": 0,
+        "notification": 0,
+        "participation": 0
+      },
+      "sources": 0,
+      "policy_pass": {
+        "status": "completed",
+        "pages_discovered": 224,
+        "pages_fetched": 1,
+        "documents_found": 0,
+        "documents_parsed": 0,
+        "policies_found": 0,
+        "competitions_found": 0,
+        "errors": []
+      },
+      "radar_status": "school timeout after 25s",
+      "pages_examined": 1,
+      "request_count": 1,
+      "final_status": "ACCESS_LIMITED",
+      "needs_deep_pass": false,
+      "elapsed_seconds": 27.0,
+      "last_checked_at": "2026-09-15T05:31:46.180407+00:00"
+    },
+    {
+      "school_id": 177,
+      "school": "昆明理工大学",
+      "batch": "general_a",
+      "checked_sources": [
+        "https://www.kmust.edu.cn/"
+      ],
+      "candidate_count": 0,
+      "relations": {
+        "recognition": 0,
+        "notification": 0,
+        "participation": 0
+      },
+      "relations_delta": {
+        "recognition": 0,
+        "notification": 0,
+        "participation": 0
+      },
+      "sources": 0,
+      "policy_pass": {
+        "status": "completed",
+        "pages_discovered": 211,
+        "pages_fetched": 1,
+        "documents_found": 0,
+        "documents_parsed": 0,
+        "policies_found": 0,
+        "competitions_found": 0,
+        "errors": []
+      },
+      "radar_status": "school timeout after 25s",
+      "pages_examined": 1,
+      "request_count": 1,
+      "final_status": "ACCESS_LIMITED",
+      "needs_deep_pass": false,
+      "elapsed_seconds": 26.485,
+      "last_checked_at": "2026-09-15T05:32:12.669045+00:00"
+    },
+    {
+      "school_id": 178,
+      "school": "浙江工业大学",
+      "batch": "general_a",
+      "checked_sources": [
+        "https://www.zjut.edu.cn/"
+      ],
+      "candidate_count": 0,
+      "relations": {
+        "recognition": 0,
+        "notification": 0,
+        "participation": 0
+      },
+      "relations_delta": {
+        "recognition": 0,
+        "notification": 0,
+        "participation": 0
+      },
+      "sources": 0,
+      "policy_pass": {
+        "status": "failed",
+        "pages_discovered": 0,
+        "pages_fetched": 0,
+        "documents_found": 0,
+        "documents_parsed": 0,
+        "policies_found": 0,
+        "competitions_found": 0,
+        "errors": [
+          "Blocked by robots.txt"
+        ]
+      },
+      "radar_status": "school timeout after 25s",
+      "pages_examined": 0,
+      "request_count": 0,
+      "final_status": "ACCESS_LIMITED",
+      "needs_deep_pass": false,
+      "elapsed_seconds": 26.781,
+      "last_checked_at": "2026-09-15T05:32:39.449822+00:00"
+    },
+    {
+      "school_id": 179,
+      "school": "广西师范大学",
+      "batch": "general_a",
+      "checked_sources": [
+        "https://www.gxnu.edu.cn/"
+      ],
+      "candidate_count": 0,
+      "relations": {
+        "recognition": 0,
+        "notification": 0,
+        "participation": 0
+      },
+      "relations_delta": {
+        "recognition": 0,
+        "notification": 0,
+        "participation": 0
+      },
+      "sources": 0,
+      "policy_pass": {
+        "status": "completed",
+        "pages_discovered": 157,
+        "pages_fetched": 2,
+        "documents_found": 1,
+        "documents_parsed": 1,
+        "policies_found": 1,
+        "competitions_found": 0,
+        "errors": []
+      },
+      "radar_status": "school timeout after 25s",
+      "pages_examined": 2,
+      "request_count": 2,
+      "final_status": "ACCESS_LIMITED",
+      "needs_deep_pass": false,
+      "elapsed_seconds": 29.281,
+      "last_checked_at": "2026-09-15T05:33:08.740805+00:00",
+      "qa_note": "provisional policy hit rejected as a false positive"
+    },
+    {
+      "school_id": 180,
+      "school": "湖北大学",
+      "batch": "general_a",
+      "checked_sources": [
+        "https://www.hubu.edu.cn/"
+      ],
+      "candidate_count": 0,
+      "relations": {
+        "recognition": 0,
+        "notification": 0,
+        "participation": 0
+      },
+      "relations_delta": {
+        "recognition": 0,
+        "notification": 0,
+        "participation": 0
+      },
+      "sources": 0,
+      "policy_pass": {
+        "status": "completed",
+        "pages_discovered": 284,
+        "pages_fetched": 1,
+        "documents_found": 0,
+        "documents_parsed": 0,
+        "policies_found": 0,
+        "competitions_found": 0,
+        "errors": []
+      },
+      "radar_status": "school timeout after 25s",
+      "pages_examined": 1,
+      "request_count": 1,
+      "final_status": "ACCESS_LIMITED",
+      "needs_deep_pass": false,
+      "elapsed_seconds": 26.906,
+      "last_checked_at": "2026-09-15T05:33:35.658227+00:00"
+    },
+    {
+      "school_id": 181,
+      "school": "山东师范大学",
+      "batch": "general_a",
+      "checked_sources": [
+        "https://www.sdnu.edu.cn/"
+      ],
+      "candidate_count": 0,
+      "relations": {
+        "recognition": 0,
+        "notification": 0,
+        "participation": 0
+      },
+      "relations_delta": {
+        "recognition": 0,
+        "notification": 0,
+        "participation": 0
+      },
+      "sources": 0,
+      "policy_pass": {
+        "status": "completed",
+        "pages_discovered": 213,
+        "pages_fetched": 1,
+        "documents_found": 0,
+        "documents_parsed": 0,
+        "policies_found": 0,
+        "competitions_found": 0,
+        "errors": []
+      },
+      "radar_status": "school timeout after 25s",
+      "pages_examined": 1,
+      "request_count": 1,
+      "final_status": "ACCESS_LIMITED",
+      "needs_deep_pass": false,
+      "elapsed_seconds": 26.328,
+      "last_checked_at": "2026-09-15T05:34:01.980628+00:00"
+    },
+    {
+      "school_id": 182,
+      "school": "海南师范大学",
+      "batch": "general_a",
+      "checked_sources": [
+        "https://www.hainnu.edu.cn/"
+      ],
+      "candidate_count": 0,
+      "relations": {
+        "recognition": 0,
+        "notification": 0,
+        "participation": 0
+      },
+      "relations_delta": {
+        "recognition": 0,
+        "notification": 0,
+        "participation": 0
+      },
+      "sources": 0,
+      "policy_pass": {
+        "status": "completed",
+        "pages_discovered": 263,
+        "pages_fetched": 2,
+        "documents_found": 0,
+        "documents_parsed": 0,
+        "policies_found": 1,
+        "competitions_found": 0,
+        "errors": []
+      },
+      "radar_status": "school timeout after 25s",
+      "pages_examined": 2,
+      "request_count": 2,
+      "final_status": "ACCESS_LIMITED",
+      "needs_deep_pass": false,
+      "elapsed_seconds": 33.031,
+      "last_checked_at": "2026-09-15T05:34:35.008348+00:00",
+      "qa_note": "provisional policy hit rejected as a false positive"
+    },
+    {
+      "school_id": 183,
+      "school": "深圳大学",
+      "batch": "general_a",
+      "checked_sources": [
+        "https://www.szu.edu.cn/"
+      ],
+      "candidate_count": 0,
+      "relations": {
+        "recognition": 0,
+        "notification": 0,
+        "participation": 0
+      },
+      "relations_delta": {
+        "recognition": 0,
+        "notification": 0,
+        "participation": 0
+      },
+      "sources": 0,
+      "policy_pass": {
+        "status": "completed",
+        "pages_discovered": 185,
+        "pages_fetched": 1,
+        "documents_found": 0,
+        "documents_parsed": 0,
+        "policies_found": 0,
+        "competitions_found": 0,
+        "errors": []
+      },
+      "radar_status": "school timeout after 25s",
+      "pages_examined": 1,
+      "request_count": 1,
+      "final_status": "ACCESS_LIMITED",
+      "needs_deep_pass": false,
+      "elapsed_seconds": 36.438,
+      "last_checked_at": "2026-09-15T05:35:11.458701+00:00"
+    },
+    {
+      "school_id": 184,
+      "school": "福建师范大学",
+      "batch": "general_a",
+      "checked_sources": [
+        "https://www.fjnu.edu.cn/"
+      ],
+      "candidate_count": 0,
+      "relations": {
+        "recognition": 0,
+        "notification": 0,
+        "participation": 0
+      },
+      "relations_delta": {
+        "recognition": 0,
+        "notification": 0,
+        "participation": 0
+      },
+      "sources": 0,
+      "policy_pass": {
+        "status": "completed",
+        "pages_discovered": 169,
+        "pages_fetched": 1,
+        "documents_found": 0,
+        "documents_parsed": 0,
+        "policies_found": 0,
+        "competitions_found": 0,
+        "errors": []
+      },
+      "radar_status": "school timeout after 25s",
+      "pages_examined": 1,
+      "request_count": 1,
+      "final_status": "ACCESS_LIMITED",
+      "needs_deep_pass": false,
+      "elapsed_seconds": 30.61,
+      "last_checked_at": "2026-09-15T05:35:42.082137+00:00"
+    },
+    {
+      "school_id": 185,
+      "school": "安徽师范大学",
+      "batch": "general_a",
+      "checked_sources": [
+        "https://www.ahnu.edu.cn/"
+      ],
+      "candidate_count": 0,
+      "relations": {
+        "recognition": 0,
+        "notification": 0,
+        "participation": 0
+      },
+      "relations_delta": {
+        "recognition": 0,
+        "notification": 0,
+        "participation": 0
+      },
+      "sources": 0,
+      "policy_pass": {
+        "status": "completed",
+        "pages_discovered": 258,
+        "pages_fetched": 2,
+        "documents_found": 0,
+        "documents_parsed": 0,
+        "policies_found": 1,
+        "competitions_found": 0,
+        "errors": []
+      },
+      "radar_status": "school timeout after 25s",
+      "pages_examined": 2,
+      "request_count": 2,
+      "final_status": "ACCESS_LIMITED",
+      "needs_deep_pass": false,
+      "elapsed_seconds": 27.329,
+      "last_checked_at": "2026-09-15T05:36:09.421636+00:00",
+      "qa_note": "provisional policy hit rejected as a false positive"
+    },
+    {
+      "school_id": 186,
+      "school": "青海师范大学",
+      "batch": "general_a",
+      "checked_sources": [
+        "https://www.qhnu.edu.cn/"
+      ],
+      "candidate_count": 0,
+      "relations": {
+        "recognition": 0,
+        "notification": 0,
+        "participation": 0
+      },
+      "relations_delta": {
+        "recognition": 0,
+        "notification": 0,
+        "participation": 0
+      },
+      "sources": 0,
+      "policy_pass": {
+        "status": "completed",
+        "pages_discovered": 157,
+        "pages_fetched": 1,
+        "documents_found": 0,
+        "documents_parsed": 0,
+        "policies_found": 0,
+        "competitions_found": 0,
+        "errors": []
+      },
+      "radar_status": "school timeout after 25s",
+      "pages_examined": 1,
+      "request_count": 1,
+      "final_status": "ACCESS_LIMITED",
+      "needs_deep_pass": false,
+      "elapsed_seconds": 31.109,
+      "last_checked_at": "2026-09-15T05:36:40.531470+00:00"
+    },
+    {
+      "school_id": 187,
+      "school": "西安理工大学",
+      "batch": "general_a",
+      "checked_sources": [
+        "https://www.xaut.edu.cn/"
+      ],
+      "candidate_count": 0,
+      "relations": {
+        "recognition": 0,
+        "notification": 0,
+        "participation": 0
+      },
+      "relations_delta": {
+        "recognition": 0,
+        "notification": 0,
+        "participation": 0
+      },
+      "sources": 0,
+      "policy_pass": {
+        "status": "completed",
+        "pages_discovered": 313,
+        "pages_fetched": 1,
+        "documents_found": 0,
+        "documents_parsed": 0,
+        "policies_found": 0,
+        "competitions_found": 0,
+        "errors": []
+      },
+      "radar_status": "school timeout after 25s",
+      "pages_examined": 1,
+      "request_count": 1,
+      "final_status": "ACCESS_LIMITED",
+      "needs_deep_pass": false,
+      "elapsed_seconds": 33.312,
+      "last_checked_at": "2026-09-15T05:37:13.843641+00:00"
+    },
+    {
+      "school_id": 188,
+      "school": "贵州师范大学",
+      "batch": "general_a",
+      "checked_sources": [
+        "https://www.gznu.edu.cn/"
+      ],
+      "candidate_count": 0,
+      "relations": {
+        "recognition": 0,
+        "notification": 0,
+        "participation": 0
+      },
+      "relations_delta": {
+        "recognition": 0,
+        "notification": 0,
+        "participation": 0
+      },
+      "sources": 0,
+      "policy_pass": {
+        "status": "completed",
+        "pages_discovered": 143,
+        "pages_fetched": 2,
+        "documents_found": 0,
+        "documents_parsed": 0,
+        "policies_found": 0,
+        "competitions_found": 0,
+        "errors": []
+      },
+      "radar_status": "school timeout after 25s",
+      "pages_examined": 2,
+      "request_count": 2,
+      "final_status": "ACCESS_LIMITED",
+      "needs_deep_pass": false,
+      "elapsed_seconds": 28.032,
+      "last_checked_at": "2026-09-15T05:37:41.877147+00:00"
+    },
+    {
+      "school_id": 189,
+      "school": "重庆邮电大学",
+      "batch": "general_a",
+      "checked_sources": [
+        "https://www.cqupt.edu.cn/"
+      ],
+      "candidate_count": 0,
+      "relations": {
+        "recognition": 0,
+        "notification": 0,
+        "participation": 0
+      },
+      "relations_delta": {
+        "recognition": 0,
+        "notification": 0,
+        "participation": 0
+      },
+      "sources": 0,
+      "policy_pass": {
+        "status": "completed",
+        "pages_discovered": 251,
+        "pages_fetched": 1,
+        "documents_found": 0,
+        "documents_parsed": 0,
+        "policies_found": 0,
+        "competitions_found": 0,
+        "errors": []
+      },
+      "radar_status": "school timeout after 25s",
+      "pages_examined": 1,
+      "request_count": 1,
+      "final_status": "ACCESS_LIMITED",
+      "needs_deep_pass": false,
+      "elapsed_seconds": 26.375,
+      "last_checked_at": "2026-09-15T05:38:08.250106+00:00"
+    },
+    {
+      "school_id": 190,
+      "school": "宁夏医科大学",
+      "batch": "general_a",
+      "checked_sources": [
+        "https://www.nxmu.edu.cn/"
+      ],
+      "candidate_count": 0,
+      "relations": {
+        "recognition": 0,
+        "notification": 0,
+        "participation": 0
+      },
+      "relations_delta": {
+        "recognition": 0,
+        "notification": 0,
+        "participation": 0
+      },
+      "sources": 0,
+      "policy_pass": {
+        "status": "completed",
+        "pages_discovered": 180,
+        "pages_fetched": 1,
+        "documents_found": 0,
+        "documents_parsed": 0,
+        "policies_found": 0,
+        "competitions_found": 0,
+        "errors": []
+      },
+      "radar_status": "school timeout after 25s",
+      "pages_examined": 1,
+      "request_count": 1,
+      "final_status": "ACCESS_LIMITED",
+      "needs_deep_pass": false,
+      "elapsed_seconds": 26.625,
+      "last_checked_at": "2026-09-15T05:38:34.878294+00:00"
+    },
+    {
+      "school_id": 191,
+      "school": "江苏大学",
+      "batch": "general_a",
+      "checked_sources": [
+        "https://www.ujs.edu.cn/"
+      ],
+      "candidate_count": 0,
+      "relations": {
+        "recognition": 0,
+        "notification": 0,
+        "participation": 0
+      },
+      "relations_delta": {
+        "recognition": 0,
+        "notification": 0,
+        "participation": 0
+      },
+      "sources": 0,
+      "policy_pass": {
+        "status": "failed",
+        "pages_discovered": 0,
+        "pages_fetched": 0,
+        "documents_found": 0,
+        "documents_parsed": 0,
+        "policies_found": 0,
+        "competitions_found": 0,
+        "errors": [
+          "_ssl.c:993: The handshake operation timed out"
+        ]
+      },
+      "radar_status": "school timeout after 25s",
+      "pages_examined": 0,
+      "request_count": 0,
+      "final_status": "ACCESS_LIMITED",
+      "needs_deep_pass": false,
+      "elapsed_seconds": 83.188,
+      "last_checked_at": "2026-09-15T05:39:58.082303+00:00"
+    },
+    {
+      "school_id": 192,
+      "school": "长春理工大学",
+      "batch": "general_a",
+      "checked_sources": [
+        "https://www.cust.edu.cn/"
+      ],
+      "candidate_count": 0,
+      "relations": {
+        "recognition": 0,
+        "notification": 0,
+        "participation": 0
+      },
+      "relations_delta": {
+        "recognition": 0,
+        "notification": 0,
+        "participation": 0
+      },
+      "sources": 0,
+      "policy_pass": {
+        "status": "completed",
+        "pages_discovered": 190,
+        "pages_fetched": 1,
+        "documents_found": 0,
+        "documents_parsed": 0,
+        "policies_found": 0,
+        "competitions_found": 0,
+        "errors": []
+      },
+      "radar_status": "school timeout after 25s",
+      "pages_examined": 1,
+      "request_count": 1,
+      "final_status": "ACCESS_LIMITED",
+      "needs_deep_pass": false,
+      "elapsed_seconds": 26.297,
+      "last_checked_at": "2026-09-15T05:40:24.390414+00:00"
+    },
+    {
+      "school_id": 193,
+      "school": "长沙理工大学",
+      "batch": "general_a",
+      "checked_sources": [
+        "https://www.csust.edu.cn/"
+      ],
+      "candidate_count": 0,
+      "relations": {
+        "recognition": 0,
+        "notification": 0,
+        "participation": 0
+      },
+      "relations_delta": {
+        "recognition": 0,
+        "notification": 0,
+        "participation": 0
+      },
+      "sources": 0,
+      "policy_pass": {
+        "status": "completed",
+        "pages_discovered": 133,
+        "pages_fetched": 1,
+        "documents_found": 0,
+        "documents_parsed": 0,
+        "policies_found": 0,
+        "competitions_found": 0,
+        "errors": []
+      },
+      "radar_status": "school timeout after 25s",
+      "pages_examined": 1,
+      "request_count": 1,
+      "final_status": "ACCESS_LIMITED",
+      "needs_deep_pass": false,
+      "elapsed_seconds": 29.375,
+      "last_checked_at": "2026-09-15T05:40:53.766249+00:00"
+    },
+    {
+      "school_id": 194,
+      "school": "塔里木大学",
+      "batch": "general_a",
+      "checked_sources": [
+        "https://www.taru.edu.cn/"
+      ],
+      "candidate_count": 0,
+      "relations": {
+        "recognition": 0,
+        "notification": 0,
+        "participation": 0
+      },
+      "relations_delta": {
+        "recognition": 0,
+        "notification": 0,
+        "participation": 0
+      },
+      "sources": 0,
+      "policy_pass": {
+        "status": "failed",
+        "pages_discovered": 0,
+        "pages_fetched": 0,
+        "documents_found": 0,
+        "documents_parsed": 0,
+        "policies_found": 0,
+        "competitions_found": 0,
+        "errors": [
+          "_ssl.c:993: The handshake operation timed out"
+        ]
+      },
+      "radar_status": "school timeout after 25s",
+      "pages_examined": 0,
+      "request_count": 0,
+      "final_status": "ACCESS_LIMITED",
+      "needs_deep_pass": false,
+      "elapsed_seconds": 83.203,
+      "last_checked_at": "2026-09-15T05:42:16.964584+00:00"
+    }
+  ],
+  "last_completed_school": "塔里木大学"
+}

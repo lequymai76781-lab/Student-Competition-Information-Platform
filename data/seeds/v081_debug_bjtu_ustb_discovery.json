@@ -1,0 +1,486 @@
+{
+  "version": "v0.8.1",
+  "retrieved_at": "2026-09-02T09:29:24.705466+00:00",
+  "scope": "211_non_985",
+  "batches": [
+    {
+      "name": "v081-211-fix-batch-01",
+      "universities": [
+        "北京交通大学",
+        "北京科技大学"
+      ],
+      "size": 2
+    }
+  ],
+  "discovery_reports": [
+    {
+      "university": "北京交通大学",
+      "batch_name": "v081-211-fix-batch-01",
+      "status": "completed_with_gaps",
+      "methods_attempted": [
+        "sitemap",
+        "navigation",
+        "department_feed",
+        "external_search",
+        "site_search",
+        "wechat",
+        "reverse_match"
+      ],
+      "methods_successful": [
+        "navigation",
+        "department_feed"
+      ],
+      "pages_examined": 23,
+      "candidate_articles": 4,
+      "pages_searched": 39,
+      "competition_leads": 2,
+      "matched_competitions": 0,
+      "new_competitions": 0,
+      "new_editions": 0,
+      "official_sources": 2,
+      "university_notice_count": 0,
+      "college_notice_count": 0,
+      "current_registration_count": 0,
+      "edition_2026_count": 0,
+      "wechat_leads": 0,
+      "internal_deadlines": 0,
+      "last_crawled_at": "2026-09-02T09:29:24.705466+00:00",
+      "reason": "站内搜索受限(搜狗检索 HTTP 403)；外部检索失败(360检索限流(页面为空))；部门栏目成功(6条)；公众号线索失败(360检索受限(安全验证))；反向匹配失败(360检索受限(安全验证))；导航发现成功(3条)",
+      "errors": [
+        {
+          "method": "department_feed",
+          "error": "http://cie.bjtu.edu.cn/studying-at-school/rules-and-regulations?menuId=1099 Blocked by robots.txt"
+        },
+        {
+          "method": "external_search",
+          "error": "360检索限流(页面为空)"
+        },
+        {
+          "method": "site_search",
+          "error": "搜狗检索 HTTP 403"
+        },
+        {
+          "method": "wechat",
+          "error": "360检索受限(安全验证)"
+        },
+        {
+          "method": "reverse_match",
+          "error": "360检索受限(安全验证)"
+        }
+      ],
+      "examined_pages": [
+        {
+          "url": "http://bksy.bjtu.edu.cn/center/cc/638521750474173887.html",
+          "method": "department_feed",
+          "title": "创新创业教育中心",
+          "notice_like": true,
+          "student_competition": true,
+          "published_at": null,
+          "action": "outside_recent_window"
+        },
+        {
+          "url": "http://bksy.bjtu.edu.cn/center/cc/638521937252901248.html",
+          "method": "department_feed",
+          "title": "创新创业教育中心",
+          "notice_like": true,
+          "student_competition": true,
+          "published_at": null,
+          "action": "outside_recent_window"
+        },
+        {
+          "url": "http://bksy.bjtu.edu.cn/sorry.html",
+          "method": "department_feed",
+          "title": "对不起，您没有权限访问此页面",
+          "notice_like": false,
+          "student_competition": true,
+          "published_at": null,
+          "action": "filtered"
+        },
+        {
+          "url": "https://yyxy.bjtu.edu.cn/cms/item/1662.html",
+          "method": "department_feed",
+          "title": "第九届全国高校学生跨文化能力大赛北京交通大学选拔赛圆满收官",
+          "notice_like": true,
+          "student_competition": true,
+          "published_at": "2026-06-25T00:00:00+00:00",
+          "action": "lead"
+        },
+        {
+          "url": "https://yyxy.bjtu.edu.cn/cms/item/1687.html",
+          "method": "department_feed",
+          "title": "语传学院英语系教师荣获外研社“教学之星”大赛全国半决赛二等奖",
+          "notice_like": true,
+          "student_competition": false,
+          "published_at": "2026-08-27T00:00:00+00:00",
+          "action": "filtered"
+        },
+        {
+          "url": "https://yyxy.bjtu.edu.cn/cms/item/1688.html",
+          "method": "department_feed",
+          "title": "语传学院西班牙语专业学子在第三十八届韩素音国际翻译大赛斩获佳绩",
+          "notice_like": true,
+          "student_competition": true,
+          "published_at": "2026-08-30T00:00:00+00:00",
+          "action": "lead"
+        },
+        {
+          "url": "https://www.bjtu.edu.cn/ztwz/zyczkyzczl/index.htm",
+          "method": "navigation",
+          "title": "中央财政科研政策专栏",
+          "notice_like": false,
+          "student_competition": true,
+          "published_at": null,
+          "action": "filtered"
+        },
+        {
+          "url": "https://www.bjtu.edu.cn/ztwz/gjky/index.htm",
+          "method": "navigation",
+          "title": "北京交通大学",
+          "notice_like": false,
+          "student_competition": true,
+          "published_at": null,
+          "action": "filtered"
+        },
+        {
+          "url": "https://zsw.bjtu.edu.cn/f/newsCenter/article/1373be67ce2c490bb392a47f62be805d",
+          "method": "navigation",
+          "title": "北京交通大学本科招生网",
+          "notice_like": false,
+          "student_competition": false,
+          "published_at": "2026-01-07T00:00:00+00:00",
+          "action": "filtered"
+        }
+      ],
+      "channel_stats": {
+        "sitemap": {
+          "status": "empty",
+          "items": 0,
+          "detail": "未发现Sitemap或未命中通知路径"
+        },
+        "navigation": {
+          "status": "ok",
+          "items": 3,
+          "detail": "提取 209 条首页链接"
+        },
+        "department_feed": {
+          "status": "ok",
+          "items": 6,
+          "detail": "部门栏目抓取 6 条候选文章"
+        },
+        "external_search": {
+          "status": "error",
+          "items": 0,
+          "detail": "360检索限流(页面为空)"
+        },
+        "site_search": {
+          "status": "blocked",
+          "items": 0,
+          "detail": "搜狗检索 HTTP 403"
+        },
+        "wechat": {
+          "status": "error",
+          "items": 0,
+          "detail": "360检索受限(安全验证)"
+        },
+        "reverse_match": {
+          "status": "error",
+          "items": 0,
+          "detail": "360检索受限(安全验证)"
+        }
+      },
+      "search_queries": [
+        "site:bjtu.edu.cn 2026 竞赛 报名",
+        "site:bjtu.edu.cn 2026 大赛 通知",
+        "site:bjtu.edu.cn 组织参加 竞赛",
+        "site:bjtu.edu.cn 大学生 学科竞赛",
+        "site:bjtu.edu.cn 2026 (竞赛 OR 大赛) (报名 OR 参赛)",
+        "site:mp.weixin.qq.com \"北京交通大学\" 2026 竞赛 报名",
+        "site:mp.weixin.qq.com \"北京交通大学\" 2026 大赛 通知",
+        "site:mp.weixin.qq.com \"北京交通大学\" 学科竞赛 2026",
+        "\"北京交通大学\" 中国国际大学生创新大赛 2026",
+        "\"北京交通大学\" “挑战杯”全国大学生课外学术科技作品竞赛 2026",
+        "\"北京交通大学\" “挑战杯”中国大学生创业计划竞赛 2026",
+        "\"北京交通大学\" 全国大学生数学建模竞赛 2026",
+        "\"北京交通大学\" 全国大学生电子设计竞赛 2026",
+        "\"北京交通大学\" 全国大学生机械创新设计大赛 2026",
+        "\"北京交通大学\" 全国大学生广告艺术大赛 报名",
+        "\"北京交通大学\" 全国大学生智能汽车竞赛 报名"
+      ],
+      "source_domains": [
+        "bksy.bjtu.edu.cn",
+        "www.bjtu.edu.cn",
+        "yyxy.bjtu.edu.cn",
+        "zsw.bjtu.edu.cn"
+      ],
+      "seed_version": "v0.8.1"
+    },
+    {
+      "university": "北京科技大学",
+      "batch_name": "v081-211-fix-batch-01",
+      "status": "completed_with_gaps",
+      "methods_attempted": [
+        "sitemap",
+        "navigation",
+        "department_feed",
+        "external_search",
+        "site_search",
+        "wechat",
+        "reverse_match"
+      ],
+      "methods_successful": [
+        "navigation",
+        "department_feed"
+      ],
+      "pages_examined": 28,
+      "candidate_articles": 3,
+      "pages_searched": 44,
+      "competition_leads": 1,
+      "matched_competitions": 0,
+      "new_competitions": 0,
+      "new_editions": 0,
+      "official_sources": 1,
+      "university_notice_count": 0,
+      "college_notice_count": 0,
+      "current_registration_count": 0,
+      "edition_2026_count": 0,
+      "wechat_leads": 0,
+      "internal_deadlines": 0,
+      "last_crawled_at": "2026-09-02T09:29:24.705466+00:00",
+      "reason": "站内搜索受限(搜狗检索 HTTP 403)；外部检索失败(360检索限流(页面为空))；部门栏目成功(11条)；公众号线索失败(360检索受限(安全验证))；反向匹配失败(360检索受限(安全验证))；导航发现成功(2条)",
+      "errors": [
+        {
+          "method": "external_search",
+          "error": "360检索限流(页面为空)"
+        },
+        {
+          "method": "site_search",
+          "error": "搜狗检索 HTTP 403"
+        },
+        {
+          "method": "wechat",
+          "error": "360检索受限(安全验证)"
+        },
+        {
+          "method": "reverse_match",
+          "error": "360检索受限(安全验证)"
+        }
+      ],
+      "examined_pages": [
+        {
+          "url": "https://jwc.ustb.edu.cn/docs/2020-10/35dc6cb253d04a7aa9e08e25c7fa971f.doc",
+          "method": "department_feed",
+          "title": "竞赛获奖证明模板",
+          "notice_like": true,
+          "student_competition": true,
+          "published_at": null,
+          "action": "outside_recent_window"
+        },
+        {
+          "url": "https://jwc.ustb.edu.cn/fylm/xs/kscj/cxxf/index.htm",
+          "method": "department_feed",
+          "title": "北京科技大学教务处",
+          "notice_like": false,
+          "student_competition": true,
+          "published_at": null,
+          "action": "filtered"
+        },
+        {
+          "url": "https://jwc.ustb.edu.cn/fylm/xs/xkjs/2b770aac2a5c4b108fc6ed8f9567443e/cbd9590c0a264942bd698d8001afdc00.htm",
+          "method": "department_feed",
+          "title": "北京科技大学教务处",
+          "notice_like": false,
+          "student_competition": true,
+          "published_at": null,
+          "action": "filtered"
+        },
+        {
+          "url": "https://jwc.ustb.edu.cn/fylm/xs/xkjs/61d8674fa0414e46b8c1c468770e1bf8/20913264febe4cce8c8911d77ae76ba0.htm",
+          "method": "department_feed",
+          "title": "北京科技大学教务处",
+          "notice_like": false,
+          "student_competition": true,
+          "published_at": null,
+          "action": "filtered"
+        },
+        {
+          "url": "https://jwc.ustb.edu.cn/fylm/xs/xkjs/61d8674fa0414e46b8c1c468770e1bf8/4d526c0d597149a1a7eacc5cb98f0166.htm",
+          "method": "department_feed",
+          "title": "北京科技大学教务处",
+          "notice_like": false,
+          "student_competition": true,
+          "published_at": null,
+          "action": "filtered"
+        },
+        {
+          "url": "https://jwc.ustb.edu.cn/fylm/xs/xkjs/index.htm",
+          "method": "department_feed",
+          "title": "北京科技大学教务处",
+          "notice_like": false,
+          "student_competition": true,
+          "published_at": null,
+          "action": "filtered"
+        },
+        {
+          "url": "https://jwc.ustb.edu.cn/fylm/xs/zjzm/xkjshjzm/index.htm",
+          "method": "department_feed",
+          "title": "北京科技大学教务处",
+          "notice_like": false,
+          "student_competition": true,
+          "published_at": null,
+          "action": "filtered"
+        },
+        {
+          "url": "https://jwc.ustb.edu.cn/tztg/6523a882fb664943b52b1c6d58881133.htm",
+          "method": "department_feed",
+          "title": "关于发布2026年华北五省（市、自治区）及港澳台大学生计算机应用比赛的通知",
+          "notice_like": true,
+          "student_competition": true,
+          "published_at": null,
+          "action": "lead"
+        },
+        {
+          "url": "https://jwc.ustb.edu.cn/tztg/e181a27328cc467e9fd8f8ead974f34e.htm",
+          "method": "department_feed",
+          "title": "2020年全国大学生英语竞赛缴费通知",
+          "notice_like": true,
+          "student_competition": true,
+          "published_at": null,
+          "action": "outside_recent_window"
+        },
+        {
+          "url": "https://zhaosheng.ustb.edu.cn/rcpy/cxcy/index.htm",
+          "method": "department_feed",
+          "title": "北京科技大学本科招生网",
+          "notice_like": false,
+          "student_competition": false,
+          "published_at": null,
+          "action": "filtered"
+        }
+      ],
+      "channel_stats": {
+        "sitemap": {
+          "status": "empty",
+          "items": 0,
+          "detail": "未发现Sitemap或未命中通知路径"
+        },
+        "navigation": {
+          "status": "ok",
+          "items": 2,
+          "detail": "提取 392 条首页链接"
+        },
+        "department_feed": {
+          "status": "ok",
+          "items": 11,
+          "detail": "部门栏目抓取 11 条候选文章"
+        },
+        "external_search": {
+          "status": "error",
+          "items": 0,
+          "detail": "360检索限流(页面为空)"
+        },
+        "site_search": {
+          "status": "blocked",
+          "items": 0,
+          "detail": "搜狗检索 HTTP 403"
+        },
+        "wechat": {
+          "status": "error",
+          "items": 0,
+          "detail": "360检索受限(安全验证)"
+        },
+        "reverse_match": {
+          "status": "error",
+          "items": 0,
+          "detail": "360检索受限(安全验证)"
+        }
+      },
+      "search_queries": [
+        "site:ustb.edu.cn 2026 竞赛 报名",
+        "site:ustb.edu.cn 2026 大赛 通知",
+        "site:ustb.edu.cn 组织参加 竞赛",
+        "site:ustb.edu.cn 大学生 学科竞赛",
+        "site:ustb.edu.cn 2026 (竞赛 OR 大赛) (报名 OR 参赛)",
+        "site:mp.weixin.qq.com \"北京科技大学\" 2026 竞赛 报名",
+        "site:mp.weixin.qq.com \"北京科技大学\" 2026 大赛 通知",
+        "site:mp.weixin.qq.com \"北京科技大学\" 学科竞赛 2026",
+        "\"北京科技大学\" 中国国际大学生创新大赛 2026",
+        "\"北京科技大学\" “挑战杯”全国大学生课外学术科技作品竞赛 2026",
+        "\"北京科技大学\" “挑战杯”中国大学生创业计划竞赛 2026",
+        "\"北京科技大学\" 全国大学生数学建模竞赛 2026",
+        "\"北京科技大学\" 全国大学生电子设计竞赛 2026",
+        "\"北京科技大学\" 全国大学生机械创新设计大赛 2026",
+        "\"北京科技大学\" 全国大学生广告艺术大赛 报名",
+        "\"北京科技大学\" 全国大学生智能汽车竞赛 报名"
+      ],
+      "source_domains": [
+        "jwc.ustb.edu.cn",
+        "zhaosheng.ustb.edu.cn"
+      ],
+      "seed_version": "v0.8.1"
+    }
+  ],
+  "leads": [
+    {
+      "raw_title": "第九届全国高校学生跨文化能力大赛北京交通大学选拔赛圆满收官",
+      "source_url": "https://yyxy.bjtu.edu.cn/cms/item/1662.html",
+      "detected_competition_name": null,
+      "possible_year": 2026,
+      "possible_deadline": null,
+      "published_at": "2026-06-25T00:00:00+00:00",
+      "source_name": "北京交通大学公开渠道",
+      "source_scope": "211_non_985",
+      "channel": "university_website",
+      "needs_review": true,
+      "discovery_method": "department_feed",
+      "university": "北京交通大学",
+      "batch_name": "v081-211-fix-batch-01",
+      "raw_content": "北京交通大学语言与传播学院 English 首页 学院概况 学院简介 现任领导 组织结构 历史沿袭 大事记 师资队伍 学科与科研 学科建设 科研政策 科研成果 学术交流 研究中心 学生工作 共青团 学生会 教育实践 语传学子 学生服务与辅导 人才培养 本科生培养 研究生培养 党建工作 党支部建设 党员发展 党建活动 国际合作 新闻与公告 国际交流项目 实验室安全 政策文件 安全队伍 学院新闻 第九届全国高校学生跨文化能力大赛北京交通大学选拔赛圆满收官 2026年6月4日，第九届（2026）“外教社杯”全国高校学生跨文化能力大赛北京交通大学选拔赛圆满落幕。本次赛事紧扣“跨文化知识”“跨文化交际体验”“跨文化故事”三大主题，通过多元赛制全面检验、提升学生的跨文化分析与英语应用能力，有效推动“以赛促教、以赛促学”，为培育国际化复合型人才搭建了重要平台。 （复赛现场） 本次选拔赛由北京交通大学外国语与新闻传播学院跨文化交际大赛组委会主办，特邀4名资深专业教师与1名外籍专家组成评审工作组。比赛分为初赛和复赛两个阶段，初赛采用线上提交视频的形式，吸引了全校各学院63名本科生踊跃报名。复赛现场，选手们围绕文化差异案例、冲突处理方案等展开激烈角逐，凭借扎实的学识、流利的口语和敏捷的思辨，充分展现了北交学子昂扬向上的精神风貌与深厚的人文素养。最终，大赛评选出一等奖5人、二等奖6人、三等奖17人。 （一等奖获得者） 赛后，一等奖获得者即刻组队进入备赛状态。王云彤详细解读了大赛赛制与流程，并制定了假期集训及省赛备战规划。后续，学院将组织专业教师团队，围绕跨文化理论体系、高阶英语表达及实战场景模拟等内容开展系统训练，全方位提升选手竞争力，力争在市级复赛中再创佳绩。 （一等奖获得者与王云彤老师座谈交流） “外教社杯”全国高校学生跨文化能力大赛已列入我校本科生院公共类竞赛目录。此次选拔赛的成功举办，不仅为优秀学子提供了国际化竞技舞台，更在校园内掀起跨文化学习热潮，为培养具有家国情怀、全球视野的高素质人才注入新动能。 供稿 | 雷瑜 排版 | 童周凡 赵婧妃 责编 | 王靖雨 审核 | 孙文博 发布日期：2026-06-25 阅读次数：4009次 版权所有：北京交通大学语言与传播学院 地址：北京市海淀区上园村3号，北京交通大学思源西楼 邮编：100044 备案号：BJTUICP备14092302 北京交通大学 北交大校友会 招生资讯网",
+      "classification": "award_news",
+      "source_type": "university_official",
+      "source_platform": "university_website",
+      "verification_status": "verified_official"
+    },
+    {
+      "raw_title": "语传学院西班牙语专业学子在第三十八届韩素音国际翻译大赛斩获佳绩",
+      "source_url": "https://yyxy.bjtu.edu.cn/cms/item/1688.html",
+      "detected_competition_name": null,
+      "possible_year": 2026,
+      "possible_deadline": null,
+      "published_at": "2026-08-30T00:00:00+00:00",
+      "source_name": "北京交通大学公开渠道",
+      "source_scope": "211_non_985",
+      "channel": "university_website",
+      "needs_review": true,
+      "discovery_method": "department_feed",
+      "university": "北京交通大学",
+      "batch_name": "v081-211-fix-batch-01",
+      "raw_content": "北京交通大学语言与传播学院 English 首页 学院概况 学院简介 现任领导 组织结构 历史沿袭 大事记 师资队伍 学科与科研 学科建设 科研政策 科研成果 学术交流 研究中心 学生工作 共青团 学生会 教育实践 语传学子 学生服务与辅导 人才培养 本科生培养 研究生培养 党建工作 党支部建设 党员发展 党建活动 国际合作 新闻与公告 国际交流项目 实验室安全 政策文件 安全队伍 学院新闻 语传学院西班牙语专业学子在第三十八届韩素音国际翻译大赛斩获佳绩 8月24日，第三十八届韩素音国际翻译大赛获奖名单公布。语传学院西班牙语专业3名本科生从两万余名参赛者中脱颖而出，斩获佳绩。2023级本科生韩瑞苒荣获西译汉组别优秀奖（指导教师：张笑寒）、2024级本科生陈思成荣获西译汉组别优秀奖（指导教师：李蓓儿）、2024级本科生王家慧荣获西译汉组别优秀奖（指导教师：赵挺） 西语专业教师自33届大赛开始选拔并指导学生参赛至今，连续多年获奖，参赛同学的优异表现得益于西语专业教师的精心指导和他们的勤奋努力，更是我校西班牙语专业作为国家级一流本科专业建设点推动高质量人才培养的生动体现。 2026年第三十八届韩素音国际翻译大赛由中国外文局指导，中国翻译协会、当代中国与世界研究院、苏州大学联合主办，苏州大学外国语学院承办，教育部中外语言交流合作中心支持，《中国翻译》杂志社、中国翻译研究院提供学术支持。 本届竞赛设英语、法语、俄语、西班牙语、阿拉伯语、德语、日语、朝鲜语、葡萄牙语、意大利语等十个语种与汉语的互译，共计二十个竞赛项目。大赛共收到参赛译文21984份，经过严格评审讨论，共评出获奖者989名，其中一等奖21名、二等奖39名、三等奖78名、优秀奖851名，获奖比例约为4.5%。 韩素音国际翻译大赛由韩素音女士于1989年访华期间捐资开展，至今已三十余载，是目前中国翻译界组织时间最长、规模最大、影响最广的翻译比赛，激励了一批又一批优秀青年投身翻译事业。 供稿 | 欧亚语系西班牙语专业 排版 | 赵婧妃 童周凡 责编 | 王靖雨 审核 | 孙文博 郝运慧 发布日期：2026-08-30 阅读次数：149次 版权所有：北京交通大学语言与传播学院 地址：北京市海淀区上园村3号，北京交通大学思源西楼 邮编：100044 备案号：BJTUICP备14092302 北京交通大学 北交大校友会 招生资讯网",
+      "classification": "award_news",
+      "source_type": "university_official",
+      "source_platform": "university_website",
+      "verification_status": "verified_official"
+    },
+    {
+      "raw_title": "关于发布2026年华北五省（市、自治区）及港澳台大学生计算机应用比赛的通知",
+      "source_url": "https://jwc.ustb.edu.cn/tztg/6523a882fb664943b52b1c6d58881133.htm",
+      "detected_competition_name": null,
+      "possible_year": 2026,
+      "possible_deadline": null,
+      "published_at": null,
+      "source_name": "北京科技大学公开渠道",
+      "source_scope": "211_non_985",
+      "channel": "university_website",
+      "needs_review": true,
+      "discovery_method": "department_feed",
+      "university": "北京科技大学",
+      "batch_name": "v081-211-fix-batch-01",
+      "raw_content": "北京科技大学教务处 旧版入口 北京科技大学主页 首页 部门概况 教务处简介 教学委员会 教学督导组 机构设置 规章制度 国家法规 校内制度 专业设置 特色培养 人才培养模式 特色教学模式 全面育人模式 创新管理模式 教学风采 教学团队 教学名师 资源下载 办事指南 联系我们 旧版入口 北京科技大学主页 首页 部门概况 教务处简介 教学委员会 教学督导组 机构设置 规章制度 国家法规 校内制度 专业设置 特色培养 人才培养模式 特色教学模式 全面育人模式 创新管理模式 教学风采 教学团队 教学名师 资源下载 办事指南 联系我们 首页 > 通知通告 教通知【2026】132号 关于发布2026年华北五省（市、自治区）及港澳台大学生计算机应用比赛的通知 2 026 年 华北五省（市、自治区）及港澳台大学生计算机应用 大赛将于 9 月份开启，我校学生在历届比赛中取得了优异的成绩，现公布本次大赛的竞赛内容。 （一）大赛主题 习近平总书记指出：发展新质生产力是推动高质量发展的内在要求和重要着力点。科技创新是发展新质生产力的核心要素，人工智能（ AI）是引领新一轮科技革命和产业变革的战略性技术。 国家 “十五五”发展规划中布局的战略新兴产业和未来产业都离不开AI技术和AI赋能。为此，本届计算机应用大赛的主题是：人工智能赋能应用创新，下设三个方向（赛道）： （ 1）大模型与智能体应用赛道。 （ 2）智能网联与智能终端赛道。 （ 3） 具身智能与物理 AI赛道 习。 参赛者根据大赛组委会提供的规范，确定创新、创意设计的主题，利用互联网、物联网、智联网、智能终端设备和物理设备，针对 “人工智能+”的垂直场景应用和具身智能嵌入物理装备的应用，展开研究和设计，编制创意设计方案，完成设计与开发作品。每个赛道具体要求如下。 1 . 人工智能在垂直应用场景的创新设计与开发 面向工业、农业 、服务 业和社会治理等千行百业中的垂直应用场景，用大语言模型、人工智能生成内容（ AIGC ）和智能体（ Intelligent Agent）等新一代人工智能技术，设计和开发出能够适应应用场景的创新、创意设计和开发方案（要有案例）。此赛道提交作品时，必须提交详细的设计文档，包括需求分析、设计思路、功能模块和工具平台介绍等；必须提供可运行的完整软件系统和可在计算机上演示的效果，决赛时需进行现场展示。 2. 移动互联网人工智能应用程序开发 以新一代移动互联网和云平台为依托，面向移动终端设备（手机、可穿戴），开发能够充分利用移动设备的便携性、实时连接性等特性的移动创新型应用，鼓励在移动终端上的智能应用程序（ APP）或智能体(AI Agent)作品。此方向提交作品时，必须提供可运行的完整软件系统，决赛时需进行现场展示；必须提交详细的设计文档，包括需求分析、设计思路、功能模块介绍等，可详细反映项目的设计与开发。 3. 具身智能在物理载体上软硬结合的应用与开发 以机器人（各种形状）、智能车、边缘计算和嵌入式设备等物理载体为依托，开发 具身智能嵌入物理装备的应用系统 ，或数字孪生、物理仿真系统让 AI 理解真实三维物理世界、完成实体交互决策。此方向提交作品时，须提供可运行的完整软硬件系统，决赛时需进行现场演示；必须提交详细的设计文档，包括需求分析、设计思路、功能模块介绍等，提供反映项目的设计与开发的实物作品。 其他详细内容详见《附件 1 大赛方案.pdf》。 （二）设计和开发平台 本次大赛作品的运行平台不限，鼓励基于国产软硬件平台开发进行创新应用开发，但具体软硬件平台及版本号要在提交的文档中详细标明。 本次大赛鼓励使用国产 AI基础大模型，以及调用AI大模型API进行创新应用开发，但需标明所使用的AI大模型名称及版本号。 本次大赛允许使用 AI辅助编程与设计，但具体AI模型及版本号，以及AI编写代码所占比例要在提交的文档中详细标明。 本次大赛的程序设计语言、操作系统和物理载体硬件平台不限，但具体程序设计语言、版本号、开发工具和平台型号规格等，要在提交的文档中详细标明。 （三）参赛方式 竞赛采取团队比赛方式，每队由 2~5名学生组成。每队限报1个作品，每人限参加一个团队。 （四）竞赛日程安排 9月20日前：团队队长登录 https://sjjx.ustb.edu.cn/ustb 竞赛管理系统，认证后填写团队成员报名信息，具体填报方式见《附件 2：竞赛操作手册.docx》，经竞赛负责老师对报名信息进行审核，审核通过的报名团队在竞赛管理系统提交作品。 9月25日前：组织校内赛对各报名作品进行评定，符合参赛要求、达到竞赛水平的作品准予参赛，参赛作品不超过10个。 9月28日前：官网填报本校参赛信息。 10月8日~10月10日：各参赛队须在大赛网站上完成作品的调试、运行和最终的作品提交。 10月21日前：各赛区组织专家评审本赛区的作品，确定入围决赛的作品名单。 11月1 4 日：决赛答辩。 （五）作品提交要求 9月7日~9月19日参赛团队在学校竞赛管理系统中完成作品提交。 提交内容包含 作品简介文档、软件设计文档 及 作品演示视频短片 ，三部分内容制作为一个压缩包（ ZIP或RAR格式）后，按作品名称命名并上传。 （ 1）作品简介文档：包含报名赛道、作品名称、3幅展示软件核心功能的截图、不超过 4 00字的作品文字简介，及队长的联系电话和邮箱。 （ 2）软件设计文档：模板参见《附件3 设计文档模板.doc》，参赛团队按模板规范编写设计文档，以 PDF 文档格式提交。提交的文档需要按照软件工程的要求，详细介绍软件开发的各个周期的设计过程，并提供操作步骤及说明。 （ 3）视频短片：提供参赛作品创意设计与程序演示视频，时长不应超过5分钟，不得超过1 50 MB，文件应为MP4格式。 （六）竞赛奖励 大赛设有特等奖（可空缺）、一等奖、二等奖、三等奖（按照有效参赛队数的 10%、20%、30%设置）。获奖者将由学校给予相应的创新学分。 （七）联系方式 官网： http://bjcac.buu.moocollege.com 官方 QQ群：161444877 校内联系人： 宋晏 13641052882 韩婧 15810031207 附件 1 计算机应用大赛方案（完整版） .pdf 附件 2 竞赛操作手册.docx 附件 3 设计文档模板.doc 相关附件 附件1 计算机应用大赛方案（完整版）.pdf 附件2 竞赛操作手册--学生.docx 附件3 设计文档模板.doc 版权所有 ： 版权所有© 北京科技大学教务处 地址 ： 北京市海淀区学院路30号 联系我们 友情链接 总访问量：1000位 今日访问量：100位 北京科技大学教务处 北京科技大学微教务",
+      "classification": "submission_notice",
+      "source_type": "university_official",
+      "source_platform": "university_website",
+      "verification_status": "verified_official"
+    }
+  ],
+  "official_records": [],
+  "edition_relations": []
+}

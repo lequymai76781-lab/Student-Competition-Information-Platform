@@ -1,0 +1,39 @@
+{
+  "task": "GENERAL_UNDERGRADUATE_GOLD_SET_SEARCH_SNAPSHOT",
+  "captured_at": "2026-09-15",
+  "provenance": "Official URLs returned by policy-specific search queries; snippets are discovery only.",
+  "results": {
+    "北京工商大学": [
+      {"title": "关于开展2023年度创新学分认定工作的通知", "url": "https://jwc.btbu.edu.cn/jblm/kwgl/kwglxkjs/727d92720bc94f1484ea6cad716d8cde.htm"},
+      {"title": "北京工商大学本科生学科竞赛管理办法", "url": "https://jwc.btbu.edu.cn/docs/2023-05/40693507830642d483fea03938edb2f8.pdf"}
+    ],
+    "河北大学": [
+      {"title": "关于2024—2025学年科技竞赛活动单项奖学金申报工作的通知", "url": "https://tuanwei.hbu.edu.cn/contents/541/13973.html"}
+    ],
+    "江苏大学": [
+      {"title": "关于印发《江苏大学学生学科竞赛管理办法》的通知", "url": "https://xxgk.ujs.edu.cn/__local/3/E7/F5/34F87F6231AB129C024CFC43AE0_7260A8B9_2D0D5.pdf"}
+    ],
+    "深圳大学": [
+      {"title": "深圳大学本科生学科竞赛管理办法（修订）", "url": "https://jwb.szu.edu.cn/info/1358/2016.htm"}
+    ],
+    "湖北大学": [
+      {"title": "湖北大学全日制普通本科生学科竞赛管理办法（暂行）", "url": "https://cxcy.hubu.edu.cn/__local/5/99/2D/B59372CFB8A30DA5B35A4FF2377_3A503C64_49AAC.pdf"},
+      {"title": "湖北大学学科竞赛分类一览表（2023年修订）", "url": "https://cybersec.hubu.edu.cn/__local/4/F5/64/D0666771926B4447C5CE54B1FEA_6F0BAFD1_2AEC5.pdf"}
+    ],
+    "昆明理工大学": [
+      {"title": "昆明理工大学本科生学科竞赛管理办法（2019年修订）", "url": "https://fflc.kmust.edu.cn/__local/A/05/CC/C8077C7F483E8A60D25EAD5C9BB_E959710C_41EA1.pdf?e=.pdf"}
+    ],
+    "西安理工大学": [
+      {"title": "西安理工大学科技创新竞赛管理办法", "url": "https://jwc.xaut.edu.cn/__local/A/58/AC/802BEB2FC5A0A51861E4E99FFE3_F7219EA6_2CDD2.pdf"}
+    ],
+    "泉州师范学院": [
+      {"title": "泉州师范学院本科生创新创业学分认定办法", "url": "https://www.qztc.edu.cn/_upload/article/files/f0/cd/15a8c6b642938c5ed5462a62028c/050b8f0a-c837-439f-9bac-c07179b62dde.pdf"}
+    ],
+    "宿迁学院": [
+      {"title": "关于开展2024-2025学年第一学期创新学分申报的通知", "url": "https://cxcy.squ.edu.cn/info/1007/1758.htm"}
+    ],
+    "西藏民族大学": [
+      {"title": "西藏民族大学本专科创新创业学分认定办法", "url": "https://www3.xzmu.edu.cn/jwc/userfiles/file/f4bc28b0-9911-4195-ac5a-781bf7dc4727.pdf"}
+    ]
+  }
+}

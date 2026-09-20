@@ -1,0 +1,288 @@
+{
+  "round": "v12 full audit",
+  "generated_at": "2026-09-05T14:52:38.483323+00:00",
+  "competition_statuses": {
+    "authority_confirmed": 69,
+    "duplicate": 2,
+    "pending_verification": 24,
+    "school_confirmed": 9,
+    "suspected": 7,
+    "unverified": 1,
+    "verified_official": 31
+  },
+  "edition_statuses": {
+    "pending_verification": 11,
+    "school_confirmed": 31,
+    "unverified": 1,
+    "verified_official": 23
+  },
+  "edition_total": 66,
+  "edition_year_distribution": {
+    "2024": 3,
+    "2025": 7,
+    "2026": 56
+  },
+  "core_completeness": {
+    "core_total": 100,
+    "with_organizer": 35,
+    "with_website": 31,
+    "with_target_students": 13,
+    "with_edition": 39,
+    "with_2024_2025_2026": 3
+  },
+  "audit": {
+    "competition_verification_statuses": {
+      "authority_confirmed": 69,
+      "duplicate": 2,
+      "pending_verification": 24,
+      "school_confirmed": 9,
+      "suspected": 7,
+      "unverified": 1,
+      "verified_official": 31
+    },
+    "edition_verification_statuses": {
+      "pending_verification": 11,
+      "school_confirmed": 31,
+      "unverified": 1,
+      "verified_official": 23
+    },
+    "source_authority_levels": {
+      "A": 93,
+      "B": 183,
+      "C": 23,
+      "D": 24,
+      "S": 47
+    },
+    "competitions_with_s_source": 31,
+    "competitions_with_a_source": 93,
+    "competitions_only_university_college_sources": 38,
+    "competitions_without_any_source": 2,
+    "official_without_source": [],
+    "official_only_university_sources": [],
+    "school_copied_national_field_editions": [
+      {
+        "edition_id": 22,
+        "competition_id": 137,
+        "year": 2026,
+        "official_registration_deadline": "2026-09-15 23:59:59.000000"
+      },
+      {
+        "edition_id": 23,
+        "competition_id": 109,
+        "year": 2026,
+        "official_registration_deadline": "2026-10-06 23:59:59.000000"
+      }
+    ],
+    "duplicate_source_rows": [],
+    "shared_source_urls": [
+      {
+        "source_url": "http://www.cnrobocon.net/",
+        "comp_cnt": 2
+      },
+      {
+        "source_url": "https://github.com/Tomzkl/college-competitions-skill/blob/main/competition-catalog.md",
+        "comp_cnt": 24
+      },
+      {
+        "source_url": "https://journal.whu.edu.cn/uploadfiles/2025061120jgu.pdf",
+        "comp_cnt": 5
+      },
+      {
+        "source_url": "https://oss.moocollege.com/unknow/webFile/KN1IBAlY_1725601223721.pdf",
+        "comp_cnt": 93
+      },
+      {
+        "source_url": "https://ucc.fltrp.com/c/2023-05-30/519108.shtml",
+        "comp_cnt": 2
+      },
+      {
+        "source_url": "https://www.tiaozhanbei.net/",
+        "comp_cnt": 2
+      },
+      {
+        "source_url": "local-source://wuhan-sports-university/journalism/2026/catalog.pdf",
+        "comp_cnt": 97
+      }
+    ],
+    "duplicate_competition_name_groups": [
+      {
+        "key": "全国大学生生命科学竞赛",
+        "competition_ids": [
+          53,
+          102
+        ]
+      }
+    ],
+    "edition_year_before_founding": [],
+    "campus_after_national_deadline": [
+      {
+        "id": 46,
+        "school_id": 38,
+        "competition_id": 137,
+        "competition_edition_id": 22,
+        "campus_registration_deadline": "2026-09-30 23:59:59.000000",
+        "official_registration_deadline": "2026-09-15 23:59:59.000000"
+      }
+    ],
+    "orphan_school_competitions": [],
+    "school_competition_edition_mismatch": [],
+    "official_deadline_after_contest_start": [],
+    "non_competition_entities": [
+      {
+        "id": 7,
+        "name": "中国新闻奖",
+        "entity_type": "award",
+        "is_competition": 0,
+        "verification_status": "suspected"
+      },
+      {
+        "id": 12,
+        "name": "全国大学生艺术节",
+        "entity_type": "festival",
+        "is_competition": 0,
+        "verification_status": "suspected"
+      },
+      {
+        "id": 14,
+        "name": "中国舞蹈荷花奖",
+        "entity_type": "award",
+        "is_competition": 0,
+        "verification_status": "suspected"
+      },
+      {
+        "id": 16,
+        "name": "省级新闻奖",
+        "entity_type": "award",
+        "is_competition": 0,
+        "verification_status": "suspected"
+      },
+      {
+        "id": 26,
+        "name": "全国大学生创新创业训练计划年会展示",
+        "entity_type": "exhibition",
+        "is_competition": 0,
+        "verification_status": "suspected"
+      },
+      {
+        "id": 89,
+        "name": "AIGC应用大赛",
+        "entity_type": "unknown",
+        "is_competition": 0,
+        "verification_status": "suspected"
+      },
+      {
+        "id": 90,
+        "name": "市级新闻奖",
+        "entity_type": "award",
+        "is_competition": 0,
+        "verification_status": "suspected"
+      }
+    ],
+    "multi_sa_official_urls": [
+      {
+        "competition_id": 1,
+        "urls": 4
+      },
+      {
+        "competition_id": 2,
+        "urls": 3
+      },
+      {
+        "competition_id": 3,
+        "urls": 3
+      },
+      {
+        "competition_id": 4,
+        "urls": 4
+      },
+      {
+        "competition_id": 5,
+        "urls": 7
+      },
+      {
+        "competition_id": 8,
+        "urls": 2
+      },
+      {
+        "competition_id": 21,
+        "urls": 2
+      },
+      {
+        "competition_id": 22,
+        "urls": 2
+      },
+      {
+        "competition_id": 24,
+        "urls": 3
+      },
+      {
+        "competition_id": 28,
+        "urls": 2
+      },
+      {
+        "competition_id": 32,
+        "urls": 2
+      },
+      {
+        "competition_id": 34,
+        "urls": 2
+      },
+      {
+        "competition_id": 35,
+        "urls": 2
+      },
+      {
+        "competition_id": 36,
+        "urls": 2
+      },
+      {
+        "competition_id": 46,
+        "urls": 2
+      },
+      {
+        "competition_id": 47,
+        "urls": 2
+      },
+      {
+        "competition_id": 56,
+        "urls": 2
+      },
+      {
+        "competition_id": 59,
+        "urls": 2
+      },
+      {
+        "competition_id": 63,
+        "urls": 2
+      },
+      {
+        "competition_id": 65,
+        "urls": 3
+      },
+      {
+        "competition_id": 99,
+        "urls": 4
+      },
+      {
+        "competition_id": 100,
+        "urls": 2
+      },
+      {
+        "competition_id": 111,
+        "urls": 2
+      },
+      {
+        "competition_id": 114,
+        "urls": 2
+      }
+    ]
+  },
+  "violation_keys": [
+    "school_copied_national_field_editions",
+    "shared_source_urls",
+    "duplicate_competition_name_groups",
+    "campus_after_national_deadline",
+    "non_competition_entities",
+    "multi_sa_official_urls"
+  ]
+}

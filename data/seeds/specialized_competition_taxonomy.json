@@ -1,0 +1,16 @@
+{
+  "version":"SPECIALIZED_INSTITUTIONS_COVERAGE_01",
+  "usage_note":"仅用于 discovery、检索与候选分类；不得仅凭关键词确认赛事类型、reference 或院校关系。",
+  "categories":{
+    "sports":["体育","运动训练","体育教育","体育新闻","体育数据","体育科技","裁判","教练","专业技能"],
+    "media":["播音","主持","新闻","传播","广告","广播","电视","新媒体","数据新闻","短视频","摄影","AI+传媒"],
+    "film":["电影","影视","导演","摄影","编剧","纪录片","动画","录音","影视制作","数字媒体"],
+    "drama":["戏剧","戏曲","表演","舞台","舞台美术","音乐剧","艺术创作"],
+    "dance":["舞蹈","编舞","舞蹈教育","舞蹈表演","展演"]
+  },
+  "event_types":["competition","festival","showcase","exhibition","call_for_works","academic_event"],
+  "relation_types":["recognition","notification","participation"],
+  "recognition_scopes":["university","school/college","department","major"],
+  "sports_subtypes":["athletic_competition","sports_science","sports_media","sports_data_technology","innovation_entrepreneurship","officiating_coaching_skill"],
+  "negative_filters":["培训机构","付费证书","无正式主办方","纯商业营销","仅报名无评审","仅展映无奖项"]
+}

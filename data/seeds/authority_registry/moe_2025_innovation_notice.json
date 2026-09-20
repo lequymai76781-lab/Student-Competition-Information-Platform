@@ -1,0 +1,51 @@
+{
+  "registry_id": "moe-2025-innovation-notice",
+  "version": 1,
+  "enabled": true,
+  "source_type": "government_official_notice",
+  "authority_level": "S",
+  "organization_name": "中华人民共和国教育部",
+  "source_name": "教育部关于举办中国国际大学生创新大赛（2025）的通知",
+  "title": "教育部关于举办中国国际大学生创新大赛（2025）的通知",
+  "doc_number": "教高函〔2025〕7号",
+  "source_url": "http://www.moe.gov.cn:8080/srcsite/A08/s5672/202505/t20250509_1189810.html",
+  "canonical_source_url": "https://www.moe.gov.cn/srcsite/A08/s5672/202505/t20250509_1189810.html",
+  "published_at": "2025-05-12",
+  "local_content_path": "data/raw/authority/moe_2025_innovation_notice.md",
+  "expected": {
+    "competition_name": "中国国际大学生创新大赛",
+    "aliases": [
+      "中国国际大学生创新大赛",
+      "中国\"互联网+\"大学生创新创业大赛",
+      "互联网+大学生创新创业大赛"
+    ],
+    "edition_year": 2025,
+    "organizer_hint": "教育部",
+    "domain_hint": "moe.gov.cn"
+  },
+  "relationship_scope": [
+    "competition_identity",
+    "edition_schedule"
+  ],
+  "relation_role": "organizer",
+  "competition_facts": {
+    "official_website": "https://cy.ncss.cn"
+  },
+  "edition": {
+    "year": 2025,
+    "edition_name": "中国国际大学生创新大赛（2025）",
+    "registration_start": "2025-05-09T00:00:00",
+    "official_registration_deadline": null,
+    "competition_start": null,
+    "competition_end": null,
+    "facts": {
+      "competition_period": "2025年4月至10月举办",
+      "registration_period": "参赛报名2025年4—7月；报名系统开放时间为2025年5月9日",
+      "deadline_rule": "报名截止时间由各地根据复赛安排自行决定，但不得晚于2025年7月1日",
+      "final_round": "总决赛2025年9月，设金奖、银奖、铜奖",
+      "organizer_note": "2025届由教育部、中央统战部、中央网信办、国家发展改革委、工业和信息化部、人力资源社会保障部、农业农村部、中国科学院、中国工程院、国家知识产权局、共青团中央和河南省人民政府联合主办；郑州大学和郑州市人民政府共同承办",
+      "official_website": "https://cy.ncss.cn"
+    }
+  },
+  "notes": "教育部正式文件；本记录用于新增2025届官方届次与S级来源。主办省份（河南）为2025届承办方，不写入赛事本体固定主办方字段。"
+}

@@ -1,0 +1,30 @@
+import sqlite3
+
+con = sqlite3.connect(r"D:\Python\xuesheng\data\v02.sqlite")
+
+
+def show(sql):
+    print(sql)
+    for row in con.execute(sql):
+        print(row)
+    print()
+
+
+def fmt(v):
+    if v is None:
+        return None
+    return str(v)
+
+
+show("select id, name, verification_status, is_official_verified, organizer, official_website, "
+     "entity_type, is_competition from competitions where id in (1,4,99,22,8)")
+show("select id, competition_id, year, edition_name, verification_status, is_verified, "
+     "official_registration_deadline, university_registration_deadline, "
+     "official_competition_date, competition_start, competition_end, official_url, source_url "
+     "from competition_editions where competition_id in (1,4) order by competition_id, year desc")
+show("select id, competition_id, competition_edition_id, source_type, authority_level, "
+     "source_name, substr(source_url,1,100), is_verified, verification_status "
+     "from competition_sources where competition_id in (1,4) order by competition_id, id")
+show("select id, competition_id, competition_edition_id, field_name, source_url, "
+     "source_type, source_level, substr(fact_value,1,60) from competition_fact_sources "
+     "where competition_id in (1,4) order by id desc limit 30")

@@ -1,0 +1,16 @@
+[Unit]
+Description=Competition Intelligence Backend (FastAPI)
+After=network.target postgresql.service
+
+[Service]
+Type=simple
+User=www
+Group=www
+WorkingDirectory=/www/wwwroot/competition/backend
+EnvironmentFile=/www/wwwroot/competition/backend/.env
+ExecStart=/www/wwwroot/competition/backend/venv/bin/gunicorn app.main:app -w 2 -k uvicorn.workers.UvicornWorker -b 127.0.0.1:8000 --timeout 120 --access-logfile /www/wwwroot/competition/data/logs/backend-access.log --error-logfile /www/wwwroot/competition/data/logs/backend-error.log
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target

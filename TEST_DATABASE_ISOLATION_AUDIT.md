@@ -1,0 +1,93 @@
+# Test Database Isolation Audit
+
+审计日期：2026-09-17
+
+范围：`backend/tests/`、`references/contest-ddl/tests/`、项目内脚本式 `test_*.py`，以及名称包含 test / verify / benchmark / smoke / report / audit / check / inspect / probe 的验证脚本。
+
+## 分类标准
+
+- A：纯单元测试或纯文件断言，不访问数据库。
+- B：仅使用 pytest 内存/临时目录 SQLite，或统一 API dependency override。
+- C：先复制数据库到 pytest 临时目录，后续全部读写复制库。
+- D：直接连接正式数据库。
+- E：连接目标无法确定。
+
+完成修复后，自动化测试中不存在 D 或 E。
+
+## 统一隔离机制
+
+- pytest 在导入应用前强制设置 `ENVIRONMENT=test`，默认 `DATABASE_URL=sqlite:///:memory:`。
+- `test_engine -> test_session -> db_session` 构成统一内存数据库 fixture 链；每项测试结束后删除全部 schema。
+- 需要完整真实结构和历史数据的测试使用 `production_copy_session_factory` 或模块内复制 fixture；源文件仅通过 `shutil.copy2` 复制，数据库连接只指向 `tmp_path` 副本。
+- API 测试通过 `temporary_dependency_override` 将 `get_db` 指向 `db_session`，退出后恢复原 override，不清除其他测试的 override。
+- pytest 进程内的 `sqlite3.connect` 被轻量包装；任何指向 `data/v02.sqlite` 的目标都会在连接前抛出 `RuntimeError`。
+- `app.database.session` 在创建 engine 前执行路径保护；`ENVIRONMENT=test`、`PYTEST_CURRENT_TEST` 或已加载 pytest 时，正式 SQLite 路径会被拒绝。
+
+## backend/tests 逐文件结果
+
+| 测试文件 | 类别 | 数据库连接方式 | 可能写库 | 正式库连接 | 风险/处置 |
+|---|---:|---|---:|---:|---|
+| `conftest.py` | B/C | 内存 SQLite；按需复制到 `tmp_path` | 是 | 否 | 统一 fixture 与双层保护 |
+| `test_architecture_foundation.py` | B | `db_session` | 是 | 否 | 内存 SQLite |
+| `test_authority_main_library.py` | B | `db_session` | 是 | 否 | 内存 SQLite |
+| `test_competition_discovery.py` | B | API `client` | 否 | 否 | dependency override |
+| `test_competition_freshness_service.py` | B | `db_session` | 是 | 否 | 内存 SQLite |
+| `test_competition_normalization_service.py` | B | `db_session` | 是 | 否 | 内存 SQLite |
+| `test_competition_seed_pipeline.py` | B | `db_session` | 是 | 否 | 内存 SQLite |
+| `test_competitions.py` | B | API `client` | 否 | 否 | dependency override |
+| `test_conference_v1.py` | B | `db_session`；migration 使用 `tmp_path` SQLite | 是 | 否 | 子进程显式临时 `DATABASE_URL` |
+| `test_conference_v11.py` | B | `db_session`；局部内存 SQLite | 是 | 否 | 内存 SQLite |
+| `test_conference_v111.py` | B | `db_session` / API `client` | 是 | 否 | 内存 SQLite |
+| `test_conference_v12.py` | B | `db_session` / API `client` | 是 | 否 | 内存 SQLite |
+| `test_core_library_cleanup.py` | B | `db_session` / API `client` | 是 | 否 | 内存 SQLite |
+| `test_database_isolation.py` | B | `db_session` / API `client` | 是 | 否 | 防回归测试；正式库仅做文件哈希读取 |
+| `test_deadline_resolution_service.py` | A | 无 | 否 | 否 | 纯对象单元测试 |
+| `test_general_undergraduate_batch_a.py` | A | 无 | 否 | 否 | 已移除正式 SQLite 连接，改查 ORM metadata |
+| `test_general_undergraduate_discovery_fix.py` | B | `db_session` | 是 | 否 | 内存 SQLite |
+| `test_general_undergraduate_production.py` | B | `db_session` | 是 | 否 | 生产 runner 接收测试 Session |
+| `test_health.py` | B | API `client` | 否 | 否 | dependency override |
+| `test_home_data_service.py` | B | `db_session` / API `client` | 是 | 否 | 内存 SQLite |
+| `test_policy_resolution_service.py` | B | `db_session` | 是 | 否 | 内存 SQLite |
+| `test_recognition_batch_01.py` | B | `db_session` / API `client` | 是 | 否 | 内存 SQLite |
+| `test_recommendation_service.py` | B | `db_session` | 是 | 否 | 内存 SQLite |
+| `test_school_competition_evidence_type.py` | A | 无 | 否 | 否 | 纯文件/规则断言 |
+| `test_specialized_completion.py` | C | 模块内 `tmp_path` 数据库副本 | 否 | 否 | 审计脚本 `DB` 与报告输出均注入临时路径 |
+| `test_specialized_institutions_coverage.py` | A | 无 | 否 | 否 | 纯文件断言 |
+| `test_specialized_institutions_coverage_02.py` | C | 模块内 `tmp_path` 数据库副本 | 否 | 否 | 审计脚本 `DB` 注入临时路径 |
+| `test_university_policy_data_model.py` | B | `db_session` / API `client` | 是 | 否 | 内存 SQLite |
+| `test_university_policy_pipeline.py` | B | `db_session` | 是 | 否 | 内存 SQLite |
+| `test_v082_discovery_helpers.py` | A | 无 | 否 | 否 | 纯单元测试 |
+| `test_v082_precision_and_pdf.py` | A | 无 | 否 | 否 | 纯解析/规则测试 |
+| `test_v09_semantic_refactor.py` | B | `db_session` | 是 | 否 | 内存 SQLite |
+| `test_v09_user_features.py` | C | `production_copy_session_factory` | 是 | 否 | 已移除全局 `SessionLocal` |
+| `test_v1_notifications_product.py` | C | `production_copy_session_factory` | 是 | 否 | 已移除全局 `SessionLocal` 与正式库清理逻辑 |
+| `test_v12_fact_enrichment.py` | B | `db_session` / API `client` | 是 | 否 | 内存 SQLite |
+| `test_v13_field_evidence.py` | B | `db_session` | 是 | 否 | 内存 SQLite |
+| `test_v14_release_candidate.py` | B | `db_session` | 是 | 否 | 内存 SQLite |
+
+## 其他测试与脚本式测试
+
+| 文件 | 类别/模式 | 数据库行为 | 正式库写风险 | 处置 |
+|---|---|---|---:|---|
+| `references/contest-ddl/tests/test_pipeline.py` | A | 无数据库 | 否 | 无需修改 |
+| `references/contest-ddl/tests/test_sources.py` | A | 无数据库 | 否 | 无需修改 |
+| `references/contest-ddl/tests/test_university_tiers.py` | A | 无数据库 | 否 | 无需修改 |
+| `references/contest-ddl/tests/test_utils.py` | A | 无数据库 | 否 | 无需修改 |
+| `tmp/probe_test.py` | B | `tmp_path` 日志与 SQLite | 否 | 已移除正式日志/数据库写入，应用导入显式临时 URL |
+| `backend/scripts/run_general_undergraduate_real_retest.py` | READ_ONLY | 正式库 `mode=ro&immutable=1` | 否 | 非 pytest；只读连接已强制 |
+| `tmp/inspect_db.py` | READ_ONLY | 正式库 `mode=ro&immutable=1` | 否 | 诊断脚本只读 |
+| `tmp/inspect_v121.py` | READ_ONLY | 正式库 `mode=ro` | 否 | 原本已只读 |
+| `tmp/query_series.py` | READ_ONLY | 正式库 `mode=ro` | 否 | 原本已只读 |
+| `tmp/v121_check.py` | READ_ONLY | 正式库 `mode=ro&immutable=1` | 否 | 已改为只读 |
+| `tmp/v082_diag.py` | READ_ONLY | SQLAlchemy URI `mode=ro&immutable=1` | 否 | 已改为只读 |
+
+## 非测试的生产运维脚本
+
+`backend/scripts/cleanup_test_data.py`、`backend/scripts/seed_v09_test_users.py` 以及采集/导入脚本是显式人工运行的生产数据维护工具，不在 `pytest.ini:testpaths=tests` 收集范围内。它们保留写库能力，不应当作为测试执行；如果在 pytest/test 环境导入全局 Session，生产路径硬保护会直接拒绝连接。
+
+## 结论
+
+- 自动化测试 D 类：0。
+- 自动化测试 E 类：0。
+- 所有数据库写测试均落入 B 或 C。
+- 手工诊断/验证脚本的正式库访问均为显式 READ_ONLY；生产运维写脚本与测试体系分离。

@@ -1,0 +1,322 @@
+{
+  "task": "SPECIALIZED_INSTITUTIONS_COVERAGE_01",
+  "generated_at": "2026-09-14T15:19:12.208052+00:00",
+  "sample_size": 27,
+  "category_counts": {
+    "sports": 5,
+    "dance": 6,
+    "film": 5,
+    "drama": 5,
+    "media": 6
+  },
+  "summary": {
+    "PASS": 27,
+    "FAIL": 0,
+    "UNCERTAIN": 0
+  },
+  "checks": [
+    {
+      "field": "sports",
+      "school": "上海体育大学",
+      "event": "上海体育人工智能创新大赛",
+      "relation_type": "notification",
+      "recognition_scope": "college",
+      "official_source": "https://sise.sus.edu.cn/info/1080/1287.htm",
+      "event_type": "competition",
+      "canonical_competition": true,
+      "result": "PASS"
+    },
+    {
+      "field": "sports",
+      "school": "北京体育大学",
+      "event": "中华经典诵写讲大赛",
+      "relation_type": "recognition",
+      "recognition_scope": "college",
+      "official_source": "https://fld.bsu.edu.cn/rcpy/bkspy/f34377cd24f7462cabced15018f8937c.htm",
+      "event_type": "competition",
+      "canonical_competition": true,
+      "result": "PASS"
+    },
+    {
+      "field": "sports",
+      "school": "哈尔滨体育学院",
+      "event": "全国大学生市场调查与分析大赛",
+      "relation_type": "participation",
+      "recognition_scope": "college",
+      "official_source": "https://www.hrbipe.edu.cn/jwc/info/1012/1171.htm",
+      "event_type": "competition",
+      "canonical_competition": true,
+      "result": "PASS"
+    },
+    {
+      "field": "sports",
+      "school": "天津体育学院",
+      "event": "天津体育学院体育教育专业学生基本功大赛",
+      "relation_type": "recognition",
+      "recognition_scope": "major",
+      "official_source": "https://tyjyxy.tjus.edu.cn/__local/8/C3/E0/A26EE683AEBB988C8F73E93302B_85AFAD82_DADF8.pdf",
+      "event_type": "competition",
+      "canonical_competition": true,
+      "result": "PASS"
+    },
+    {
+      "field": "sports",
+      "school": "山东体育学院",
+      "event": "全国大学生体育产业创新创业大赛",
+      "relation_type": "participation",
+      "recognition_scope": "university",
+      "official_source": "https://xxgk.sdpei.edu.cn/uploadfile/85/Attachment/0350cccb78.pdf",
+      "event_type": "competition",
+      "canonical_competition": true,
+      "result": "PASS"
+    },
+    {
+      "field": "dance",
+      "school": "上海戏剧学院",
+      "event": "“挑战杯”中国大学生创业计划竞赛",
+      "relation_type": "notification",
+      "recognition_scope": "university",
+      "official_source": "https://xs.sta.edu.cn/1035/list.htm",
+      "event_type": "competition",
+      "canonical_competition": true,
+      "result": "PASS"
+    },
+    {
+      "field": "dance",
+      "school": "上海戏剧学院",
+      "event": "上海市大学生红色文化创意大赛",
+      "relation_type": "notification",
+      "recognition_scope": "university",
+      "official_source": "https://mp.weixin.qq.com/s/-ffRKHZM3U3GLONxHNktsA",
+      "event_type": "competition",
+      "canonical_competition": true,
+      "result": "PASS"
+    },
+    {
+      "field": "dance",
+      "school": "云南艺术学院",
+      "event": "中国国际大学生创新大赛",
+      "relation_type": "recognition",
+      "recognition_scope": "university",
+      "official_source": "https://xsc.ynart.edu.cn/info/1193/12370.htm",
+      "event_type": "competition",
+      "canonical_competition": true,
+      "result": "PASS"
+    },
+    {
+      "field": "dance",
+      "school": "内蒙古艺术学院",
+      "event": "“挑战杯”中国大学生创业计划竞赛",
+      "relation_type": "participation",
+      "recognition_scope": "university",
+      "official_source": "https://www.imac.edu.cn/tzgg/20260617/40917.shtml",
+      "event_type": "competition",
+      "canonical_competition": true,
+      "result": "PASS"
+    },
+    {
+      "field": "dance",
+      "school": "北京舞蹈学院",
+      "event": "北京舞蹈大赛",
+      "relation_type": "participation",
+      "recognition_scope": "university",
+      "official_source": "https://jwc.bda.edu.cn/docs/2022-12/20221229093440408687.pdf",
+      "event_type": "competition",
+      "canonical_competition": true,
+      "result": "PASS"
+    },
+    {
+      "field": "film",
+      "school": "上海戏剧学院",
+      "event": "“挑战杯”中国大学生创业计划竞赛",
+      "relation_type": "notification",
+      "recognition_scope": "university",
+      "official_source": "https://xs.sta.edu.cn/1035/list.htm",
+      "event_type": "competition",
+      "canonical_competition": true,
+      "result": "PASS"
+    },
+    {
+      "field": "film",
+      "school": "上海戏剧学院",
+      "event": "上海市大学生红色文化创意大赛",
+      "relation_type": "notification",
+      "recognition_scope": "university",
+      "official_source": "https://mp.weixin.qq.com/s/-ffRKHZM3U3GLONxHNktsA",
+      "event_type": "competition",
+      "canonical_competition": true,
+      "result": "PASS"
+    },
+    {
+      "field": "film",
+      "school": "中国传媒大学",
+      "event": "“挑战杯”中国大学生创业计划竞赛",
+      "relation_type": "participation",
+      "recognition_scope": "college",
+      "official_source": "https://www.cuc.edu.cn/tzgg_10851/list1.htm",
+      "event_type": "competition",
+      "canonical_competition": true,
+      "result": "PASS"
+    },
+    {
+      "field": "film",
+      "school": "云南艺术学院",
+      "event": "中国国际大学生创新大赛",
+      "relation_type": "recognition",
+      "recognition_scope": "university",
+      "official_source": "https://xsc.ynart.edu.cn/info/1193/12370.htm",
+      "event_type": "competition",
+      "canonical_competition": true,
+      "result": "PASS"
+    },
+    {
+      "field": "film",
+      "school": "内蒙古艺术学院",
+      "event": "“挑战杯”中国大学生创业计划竞赛",
+      "relation_type": "participation",
+      "recognition_scope": "university",
+      "official_source": "https://www.imac.edu.cn/tzgg/20260617/40917.shtml",
+      "event_type": "competition",
+      "canonical_competition": true,
+      "result": "PASS"
+    },
+    {
+      "field": "drama",
+      "school": "上海戏剧学院",
+      "event": "“挑战杯”中国大学生创业计划竞赛",
+      "relation_type": "notification",
+      "recognition_scope": "university",
+      "official_source": "https://xs.sta.edu.cn/1035/list.htm",
+      "event_type": "competition",
+      "canonical_competition": true,
+      "result": "PASS"
+    },
+    {
+      "field": "drama",
+      "school": "上海戏剧学院",
+      "event": "上海市大学生红色文化创意大赛",
+      "relation_type": "notification",
+      "recognition_scope": "university",
+      "official_source": "https://mp.weixin.qq.com/s/-ffRKHZM3U3GLONxHNktsA",
+      "event_type": "competition",
+      "canonical_competition": true,
+      "result": "PASS"
+    },
+    {
+      "field": "drama",
+      "school": "中国传媒大学",
+      "event": "“挑战杯”中国大学生创业计划竞赛",
+      "relation_type": "participation",
+      "recognition_scope": "college",
+      "official_source": "https://www.cuc.edu.cn/tzgg_10851/list1.htm",
+      "event_type": "competition",
+      "canonical_competition": true,
+      "result": "PASS"
+    },
+    {
+      "field": "drama",
+      "school": "中国戏曲学院",
+      "event": "国戏杯学生戏曲大赛",
+      "relation_type": "notification",
+      "recognition_scope": "university",
+      "official_source": "https://www.nacta.edu.cn/xwgg/xygg/index9.htm",
+      "event_type": "competition",
+      "canonical_competition": true,
+      "result": "PASS"
+    },
+    {
+      "field": "drama",
+      "school": "中央戏剧学院",
+      "event": "中央戏剧学院5·23青年戏剧节",
+      "relation_type": "notification",
+      "recognition_scope": "university",
+      "official_source": "https://chntheatre.edu.cn/cn/xiao/detail/23094.html",
+      "event_type": "competition_festival",
+      "canonical_competition": true,
+      "result": "PASS"
+    },
+    {
+      "field": "media",
+      "school": "中国传媒大学",
+      "event": "“挑战杯”中国大学生创业计划竞赛",
+      "relation_type": "participation",
+      "recognition_scope": "college",
+      "official_source": "https://www.cuc.edu.cn/tzgg_10851/list1.htm",
+      "event_type": "competition",
+      "canonical_competition": true,
+      "result": "PASS"
+    },
+    {
+      "field": "media",
+      "school": "南京艺术学院",
+      "event": "南京艺术学院毕业展演优秀奖",
+      "relation_type": "recognition",
+      "recognition_scope": "university",
+      "official_source": "https://www.nua.edu.cn/_upload/article/files/41/40/a87c2cfc4877b63b950a4eb5c4b0/a7531b18-f15b-4592-b9b7-6c9806e1b60d.pdf",
+      "event_type": "competition_showcase",
+      "canonical_competition": true,
+      "result": "PASS"
+    },
+    {
+      "field": "media",
+      "school": "南京艺术学院",
+      "event": "南京艺术学院毕业展演优秀奖",
+      "relation_type": "recognition",
+      "recognition_scope": "university",
+      "official_source": "https://www.nua.edu.cn/_upload/article/files/41/40/a87c2cfc4877b63b950a4eb5c4b0/a7531b18-f15b-4592-b9b7-6c9806e1b60d.pdf",
+      "event_type": "competition_showcase",
+      "canonical_competition": true,
+      "result": "PASS"
+    },
+    {
+      "field": "media",
+      "school": "吉林动画学院",
+      "event": "吉林动画学院“力行杯”创新创业大赛",
+      "relation_type": "participation",
+      "recognition_scope": "university",
+      "official_source": "https://www.jlai.edu.cn/info/1028/9521.htm",
+      "event_type": "competition",
+      "canonical_competition": true,
+      "result": "PASS"
+    },
+    {
+      "field": "media",
+      "school": "四川传媒学院",
+      "event": "中国数据新闻大赛",
+      "relation_type": "participation",
+      "recognition_scope": "college",
+      "official_source": "https://znyxys.scmc.edu.cn/2025_10/29_10/content-50154.html",
+      "event_type": "competition",
+      "canonical_competition": true,
+      "result": "PASS"
+    },
+    {
+      "field": "dance",
+      "school": "武汉体育学院",
+      "event": "“桃李杯”全国青少年舞蹈教育教学成果展示活动",
+      "relation_type": "recognition",
+      "recognition_scope": "school/college",
+      "official_source": "https://zwgk.mct.gov.cn/zfxxgkml/kjjy/202602/t20260202_964516.html",
+      "event_type": "showcase",
+      "canonical_competition": false,
+      "canonical_entity": true,
+      "disposition": "DOWNGRADE",
+      "result": "PASS",
+      "note": "文化和旅游部明确说明：1985年创办后前十届为比赛，2015年全国性文艺评奖改革后自第11届转为教育教学成果展示活动。"
+    },
+    {
+      "field": "media",
+      "school": "武汉体育学院",
+      "event": "齐越朗诵艺术节暨全国大学生朗诵大会",
+      "relation_type": "recognition",
+      "recognition_scope": "school/college",
+      "official_source": "http://boyin.cuc.edu.cn/2026/0814/c1266a273269/page.htm",
+      "event_type": "festival",
+      "canonical_competition": false,
+      "canonical_entity": true,
+      "disposition": "DOWNGRADE",
+      "result": "PASS",
+      "note": "2015年第17届官方报道存在总决赛、齐越奖及一二等奖；2026年第28届公告仅规定高校推荐、作品遴选和特色作品展示，未设奖项/名次，必须按届次区分。"
+    }
+  ]
+}

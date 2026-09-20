@@ -1,0 +1,1138 @@
+{
+  "generated_at": "2026-09-05T15:09:29.324503+00:00",
+  "core_total": 100,
+  "task_summary": {
+    "missing_history": 96,
+    "missing_latest_edition": 85,
+    "missing_official_page": 69,
+    "missing_organizer": 65,
+    "missing_participant_rule": 87,
+    "official_site_js_only": 7
+  },
+  "maintenance_tasks": [
+    {
+      "competition_id": 2,
+      "name": "“挑战杯”全国大学生课外学术科技作品竞赛",
+      "verification_status": "verified_official",
+      "tasks": [
+        "missing_participant_rule",
+        "missing_latest_edition",
+        "missing_history"
+      ]
+    },
+    {
+      "competition_id": 3,
+      "name": "“挑战杯”中国大学生创业计划竞赛",
+      "verification_status": "verified_official",
+      "tasks": [
+        "missing_participant_rule",
+        "missing_history"
+      ]
+    },
+    {
+      "competition_id": 8,
+      "name": "ACM-ICPC国际大学生程序设计竞赛",
+      "verification_status": "verified_official",
+      "tasks": [
+        "missing_latest_edition",
+        "missing_history"
+      ]
+    },
+    {
+      "competition_id": 9,
+      "name": "中国大学生医学技术技能大赛",
+      "verification_status": "authority_confirmed",
+      "tasks": [
+        "missing_organizer",
+        "missing_official_page",
+        "missing_participant_rule",
+        "missing_latest_edition",
+        "missing_history"
+      ]
+    },
+    {
+      "competition_id": 10,
+      "name": "全国大学生机械创新设计大赛",
+      "verification_status": "authority_confirmed",
+      "tasks": [
+        "missing_official_page",
+        "missing_participant_rule",
+        "missing_latest_edition",
+        "missing_history"
+      ]
+    },
+    {
+      "competition_id": 11,
+      "name": "全国大学生结构设计竞赛",
+      "verification_status": "authority_confirmed",
+      "tasks": [
+        "missing_official_page",
+        "missing_participant_rule",
+        "missing_latest_edition",
+        "missing_history"
+      ]
+    },
+    {
+      "competition_id": 19,
+      "name": "全国大学生广告艺术大赛",
+      "verification_status": "authority_confirmed",
+      "tasks": [
+        "missing_official_page",
+        "missing_participant_rule",
+        "missing_latest_edition",
+        "missing_history"
+      ]
+    },
+    {
+      "competition_id": 20,
+      "name": "全国大学生智能汽车竞赛",
+      "verification_status": "authority_confirmed",
+      "tasks": [
+        "missing_official_page",
+        "missing_participant_rule",
+        "missing_latest_edition",
+        "missing_history"
+      ]
+    },
+    {
+      "competition_id": 21,
+      "name": "全国大学生电子商务“创新、创意及创业”挑战赛",
+      "verification_status": "verified_official",
+      "tasks": [
+        "official_site_js_only",
+        "missing_participant_rule",
+        "missing_latest_edition",
+        "missing_history"
+      ]
+    },
+    {
+      "competition_id": 22,
+      "name": "中国大学生工程实践与创新能力大赛",
+      "verification_status": "verified_official",
+      "tasks": [
+        "missing_latest_edition",
+        "missing_history"
+      ]
+    },
+    {
+      "competition_id": 23,
+      "name": "全国大学生物流设计大赛",
+      "verification_status": "authority_confirmed",
+      "tasks": [
+        "missing_organizer",
+        "missing_official_page",
+        "missing_participant_rule",
+        "missing_latest_edition",
+        "missing_history"
+      ]
+    },
+    {
+      "competition_id": 24,
+      "name": "外研社·国才杯“理解当代中国”全国大学生外语能力大赛",
+      "verification_status": "verified_official",
+      "tasks": [
+        "missing_history"
+      ]
+    },
+    {
+      "competition_id": 25,
+      "name": "两岸新锐设计竞赛·华灿奖",
+      "verification_status": "authority_confirmed",
+      "tasks": [
+        "missing_organizer",
+        "missing_official_page",
+        "missing_participant_rule",
+        "missing_latest_edition",
+        "missing_history"
+      ]
+    },
+    {
+      "competition_id": 27,
+      "name": "全国大学生化工设计竞赛",
+      "verification_status": "authority_confirmed",
+      "tasks": [
+        "missing_organizer",
+        "missing_official_page",
+        "missing_participant_rule",
+        "missing_latest_edition",
+        "missing_history"
+      ]
+    },
+    {
+      "competition_id": 28,
+      "name": "全国大学生机器人大赛",
+      "verification_status": "verified_official",
+      "tasks": [
+        "missing_organizer",
+        "missing_participant_rule",
+        "missing_latest_edition",
+        "missing_history"
+      ]
+    },
+    {
+      "competition_id": 29,
+      "name": "全国大学生市场调查与分析大赛",
+      "verification_status": "authority_confirmed",
+      "tasks": [
+        "missing_official_page",
+        "missing_participant_rule",
+        "missing_latest_edition",
+        "missing_history"
+      ]
+    },
+    {
+      "competition_id": 30,
+      "name": "全国大学生先进成图技术与产品信息建模创新大赛",
+      "verification_status": "authority_confirmed",
+      "tasks": [
+        "missing_organizer",
+        "missing_official_page",
+        "missing_participant_rule",
+        "missing_latest_edition",
+        "missing_history"
+      ]
+    },
+    {
+      "competition_id": 31,
+      "name": "全国三维数字化创新设计大赛",
+      "verification_status": "authority_confirmed",
+      "tasks": [
+        "missing_organizer",
+        "missing_official_page",
+        "missing_participant_rule",
+        "missing_latest_edition",
+        "missing_history"
+      ]
+    },
+    {
+      "competition_id": 32,
+      "name": "“西门子杯”中国智能制造挑战赛",
+      "verification_status": "verified_official",
+      "tasks": [
+        "missing_participant_rule",
+        "missing_history"
+      ]
+    },
+    {
+      "competition_id": 33,
+      "name": "中国大学生服务外包创新创业大赛",
+      "verification_status": "authority_confirmed",
+      "tasks": [
+        "missing_organizer",
+        "missing_official_page",
+        "missing_participant_rule",
+        "missing_latest_edition",
+        "missing_history"
+      ]
+    },
+    {
+      "competition_id": 34,
+      "name": "中国大学生计算机设计大赛",
+      "verification_status": "verified_official",
+      "tasks": [
+        "missing_organizer",
+        "missing_history"
+      ]
+    },
+    {
+      "competition_id": 35,
+      "name": "中国高校计算机大赛",
+      "verification_status": "verified_official",
+      "tasks": [
+        "missing_organizer",
+        "official_site_js_only",
+        "missing_participant_rule",
+        "missing_latest_edition",
+        "missing_history"
+      ]
+    },
+    {
+      "competition_id": 36,
+      "name": "蓝桥杯全国软件和信息技术专业人才大赛",
+      "verification_status": "verified_official",
+      "tasks": [
+        "official_site_js_only",
+        "missing_participant_rule",
+        "missing_latest_edition",
+        "missing_history"
+      ]
+    },
+    {
+      "competition_id": 37,
+      "name": "米兰设计周—中国高校设计学科师生优秀作品展",
+      "verification_status": "authority_confirmed",
+      "tasks": [
+        "missing_organizer",
+        "missing_official_page",
+        "missing_participant_rule",
+        "missing_latest_edition",
+        "missing_history"
+      ]
+    },
+    {
+      "competition_id": 38,
+      "name": "全国大学生地质技能竞赛",
+      "verification_status": "authority_confirmed",
+      "tasks": [
+        "missing_organizer",
+        "missing_official_page",
+        "missing_participant_rule",
+        "missing_latest_edition",
+        "missing_history"
+      ]
+    },
+    {
+      "competition_id": 39,
+      "name": "全国大学生光电设计竞赛",
+      "verification_status": "authority_confirmed",
+      "tasks": [
+        "missing_organizer",
+        "missing_official_page",
+        "missing_participant_rule",
+        "missing_latest_edition",
+        "missing_history"
+      ]
+    },
+    {
+      "competition_id": 40,
+      "name": "全国大学生集成电路创新创业大赛",
+      "verification_status": "authority_confirmed",
+      "tasks": [
+        "missing_official_page",
+        "missing_participant_rule",
+        "missing_latest_edition",
+        "missing_history"
+      ]
+    },
+    {
+      "competition_id": 41,
+      "name": "全国大学生金相技能大赛",
+      "verification_status": "authority_confirmed",
+      "tasks": [
+        "missing_organizer",
+        "missing_official_page",
+        "missing_participant_rule",
+        "missing_latest_edition",
+        "missing_history"
+      ]
+    },
+    {
+      "competition_id": 42,
+      "name": "全国大学生信息安全竞赛",
+      "verification_status": "authority_confirmed",
+      "tasks": [
+        "missing_official_page",
+        "missing_participant_rule",
+        "missing_latest_edition",
+        "missing_history"
+      ]
+    },
+    {
+      "competition_id": 43,
+      "name": "未来设计师·全国高校数字艺术设计大赛",
+      "verification_status": "authority_confirmed",
+      "tasks": [
+        "missing_organizer",
+        "missing_official_page",
+        "missing_participant_rule",
+        "missing_latest_edition",
+        "missing_history"
+      ]
+    },
+    {
+      "competition_id": 44,
+      "name": "全国周培源大学生力学竞赛",
+      "verification_status": "authority_confirmed",
+      "tasks": [
+        "missing_organizer",
+        "missing_official_page",
+        "missing_participant_rule",
+        "missing_latest_edition",
+        "missing_history"
+      ]
+    },
+    {
+      "competition_id": 45,
+      "name": "中国大学生机械工程创新创意大赛",
+      "verification_status": "authority_confirmed",
+      "tasks": [
+        "missing_official_page",
+        "missing_participant_rule",
+        "missing_latest_edition",
+        "missing_history"
+      ]
+    },
+    {
+      "competition_id": 46,
+      "name": "中国机器人大赛暨RoboCup机器人世界杯中国赛",
+      "verification_status": "verified_official",
+      "tasks": [
+        "missing_organizer",
+        "missing_participant_rule",
+        "missing_latest_edition",
+        "missing_history"
+      ]
+    },
+    {
+      "competition_id": 47,
+      "name": "“中国软件杯”大学生软件设计大赛",
+      "verification_status": "verified_official",
+      "tasks": [
+        "missing_participant_rule",
+        "missing_latest_edition",
+        "missing_history"
+      ]
+    },
+    {
+      "competition_id": 48,
+      "name": "中美青年创客大赛",
+      "verification_status": "authority_confirmed",
+      "tasks": [
+        "missing_official_page",
+        "missing_participant_rule",
+        "missing_latest_edition",
+        "missing_history"
+      ]
+    },
+    {
+      "competition_id": 49,
+      "name": "睿抗机器人开发者大赛（RAICOM）",
+      "verification_status": "authority_confirmed",
+      "tasks": [
+        "missing_organizer",
+        "missing_official_page",
+        "missing_participant_rule",
+        "missing_latest_edition",
+        "missing_history"
+      ]
+    },
+    {
+      "competition_id": 50,
+      "name": "“大唐杯”全国大学生新一代信息通信技术大赛",
+      "verification_status": "authority_confirmed",
+      "tasks": [
+        "missing_organizer",
+        "missing_official_page",
+        "missing_participant_rule",
+        "missing_latest_edition",
+        "missing_history"
+      ]
+    },
+    {
+      "competition_id": 51,
+      "name": "华为ICT大赛",
+      "verification_status": "authority_confirmed",
+      "tasks": [
+        "missing_official_page",
+        "missing_participant_rule",
+        "missing_latest_edition",
+        "missing_history"
+      ]
+    },
+    {
+      "competition_id": 52,
+      "name": "全国大学生嵌入式芯片与系统设计竞赛",
+      "verification_status": "authority_confirmed",
+      "tasks": [
+        "missing_organizer",
+        "missing_official_page",
+        "missing_participant_rule",
+        "missing_latest_edition",
+        "missing_history"
+      ]
+    },
+    {
+      "competition_id": 53,
+      "name": "全国大学生生命科学竞赛（CULSC）",
+      "verification_status": "authority_confirmed",
+      "tasks": [
+        "missing_organizer",
+        "missing_official_page",
+        "missing_participant_rule",
+        "missing_latest_edition",
+        "missing_history"
+      ]
+    },
+    {
+      "competition_id": 54,
+      "name": "全国大学生物理实验竞赛",
+      "verification_status": "authority_confirmed",
+      "tasks": [
+        "missing_organizer",
+        "missing_official_page",
+        "missing_participant_rule",
+        "missing_latest_edition",
+        "missing_history"
+      ]
+    },
+    {
+      "competition_id": 55,
+      "name": "全国高校BIM毕业设计创新大赛",
+      "verification_status": "authority_confirmed",
+      "tasks": [
+        "missing_organizer",
+        "missing_official_page",
+        "missing_participant_rule",
+        "missing_latest_edition",
+        "missing_history"
+      ]
+    },
+    {
+      "competition_id": 56,
+      "name": "全国高校商业精英挑战赛",
+      "verification_status": "verified_official",
+      "tasks": [
+        "missing_organizer",
+        "official_site_js_only",
+        "missing_participant_rule",
+        "missing_latest_edition",
+        "missing_history"
+      ]
+    },
+    {
+      "competition_id": 57,
+      "name": "“学创杯”全国大学生创业综合模拟大赛",
+      "verification_status": "authority_confirmed",
+      "tasks": [
+        "missing_organizer",
+        "missing_official_page",
+        "missing_participant_rule",
+        "missing_latest_edition",
+        "missing_history"
+      ]
+    },
+    {
+      "competition_id": 58,
+      "name": "中国高校智能机器人创意大赛",
+      "verification_status": "authority_confirmed",
+      "tasks": [
+        "missing_organizer",
+        "missing_official_page",
+        "missing_participant_rule",
+        "missing_latest_edition",
+        "missing_history"
+      ]
+    },
+    {
+      "competition_id": 59,
+      "name": "中国好创意暨全国数字艺术设计大赛",
+      "verification_status": "verified_official",
+      "tasks": [
+        "missing_organizer",
+        "missing_participant_rule",
+        "missing_history"
+      ]
+    },
+    {
+      "competition_id": 60,
+      "name": "中国机器人及人工智能大赛",
+      "verification_status": "authority_confirmed",
+      "tasks": [
+        "missing_organizer",
+        "missing_official_page",
+        "missing_participant_rule",
+        "missing_latest_edition",
+        "missing_history"
+      ]
+    },
+    {
+      "competition_id": 61,
+      "name": "全国大学生节能减排社会实践与科技竞赛",
+      "verification_status": "authority_confirmed",
+      "tasks": [
+        "missing_organizer",
+        "missing_official_page",
+        "missing_participant_rule",
+        "missing_latest_edition",
+        "missing_history"
+      ]
+    },
+    {
+      "competition_id": 62,
+      "name": "“21世纪杯”全国英语演讲比赛",
+      "verification_status": "authority_confirmed",
+      "tasks": [
+        "missing_organizer",
+        "missing_official_page",
+        "missing_participant_rule",
+        "missing_latest_edition",
+        "missing_history"
+      ]
+    },
+    {
+      "competition_id": 63,
+      "name": "iCAN大学生创新创业大赛",
+      "verification_status": "verified_official",
+      "tasks": [
+        "missing_organizer",
+        "official_site_js_only",
+        "missing_participant_rule",
+        "missing_latest_edition",
+        "missing_history"
+      ]
+    },
+    {
+      "competition_id": 64,
+      "name": "“工行杯”全国大学生金融科技创新大赛",
+      "verification_status": "authority_confirmed",
+      "tasks": [
+        "missing_organizer",
+        "missing_official_page",
+        "missing_participant_rule",
+        "missing_latest_edition",
+        "missing_history"
+      ]
+    },
+    {
+      "competition_id": 65,
+      "name": "中华经典诵写讲大赛",
+      "verification_status": "verified_official",
+      "tasks": [
+        "official_site_js_only",
+        "missing_history"
+      ]
+    },
+    {
+      "competition_id": 66,
+      "name": "“外教社杯”全国高校学生跨文化能力大赛",
+      "verification_status": "authority_confirmed",
+      "tasks": [
+        "missing_organizer",
+        "missing_official_page",
+        "missing_participant_rule",
+        "missing_latest_edition",
+        "missing_history"
+      ]
+    },
+    {
+      "competition_id": 67,
+      "name": "百度之星·程序设计大赛",
+      "verification_status": "authority_confirmed",
+      "tasks": [
+        "missing_organizer",
+        "missing_official_page",
+        "missing_participant_rule",
+        "missing_latest_edition",
+        "missing_history"
+      ]
+    },
+    {
+      "competition_id": 68,
+      "name": "全国大学生工业设计大赛",
+      "verification_status": "authority_confirmed",
+      "tasks": [
+        "missing_organizer",
+        "missing_participant_rule",
+        "missing_latest_edition",
+        "missing_history"
+      ]
+    },
+    {
+      "competition_id": 69,
+      "name": "全国大学生水利创新设计大赛",
+      "verification_status": "authority_confirmed",
+      "tasks": [
+        "missing_organizer",
+        "missing_official_page",
+        "missing_participant_rule",
+        "missing_latest_edition",
+        "missing_history"
+      ]
+    },
+    {
+      "competition_id": 70,
+      "name": "全国大学生化工实验大赛",
+      "verification_status": "authority_confirmed",
+      "tasks": [
+        "missing_official_page",
+        "missing_participant_rule",
+        "missing_latest_edition",
+        "missing_history"
+      ]
+    },
+    {
+      "competition_id": 71,
+      "name": "全国大学生化学实验创新设计大赛",
+      "verification_status": "authority_confirmed",
+      "tasks": [
+        "missing_official_page",
+        "missing_participant_rule",
+        "missing_latest_edition",
+        "missing_history"
+      ]
+    },
+    {
+      "competition_id": 72,
+      "name": "全国大学生计算机系统能力大赛",
+      "verification_status": "authority_confirmed",
+      "tasks": [
+        "missing_organizer",
+        "missing_official_page",
+        "missing_participant_rule",
+        "missing_latest_edition",
+        "missing_history"
+      ]
+    },
+    {
+      "competition_id": 73,
+      "name": "全国大学生花园设计建造竞赛",
+      "verification_status": "authority_confirmed",
+      "tasks": [
+        "missing_organizer",
+        "missing_official_page",
+        "missing_participant_rule",
+        "missing_latest_edition",
+        "missing_history"
+      ]
+    },
+    {
+      "competition_id": 74,
+      "name": "全国大学生物联网设计竞赛",
+      "verification_status": "authority_confirmed",
+      "tasks": [
+        "missing_organizer",
+        "missing_official_page",
+        "missing_participant_rule",
+        "missing_latest_edition",
+        "missing_history"
+      ]
+    },
+    {
+      "competition_id": 75,
+      "name": "全国大学生信息安全与对抗技术竞赛",
+      "verification_status": "authority_confirmed",
+      "tasks": [
+        "missing_organizer",
+        "missing_official_page",
+        "missing_participant_rule",
+        "missing_latest_edition",
+        "missing_history"
+      ]
+    },
+    {
+      "competition_id": 76,
+      "name": "全国大学生测绘学科创新创业智能大赛",
+      "verification_status": "authority_confirmed",
+      "tasks": [
+        "missing_organizer",
+        "missing_official_page",
+        "missing_participant_rule",
+        "missing_latest_edition",
+        "missing_history"
+      ]
+    },
+    {
+      "competition_id": 77,
+      "name": "全国大学生统计建模大赛",
+      "verification_status": "authority_confirmed",
+      "tasks": [
+        "missing_official_page",
+        "missing_participant_rule",
+        "missing_latest_edition",
+        "missing_history"
+      ]
+    },
+    {
+      "competition_id": 78,
+      "name": "全国大学生能源经济学术创意大赛",
+      "verification_status": "authority_confirmed",
+      "tasks": [
+        "missing_organizer",
+        "missing_official_page",
+        "missing_participant_rule",
+        "missing_latest_edition",
+        "missing_history"
+      ]
+    },
+    {
+      "competition_id": 79,
+      "name": "全国大学生基础医学创新研究暨实验设计论坛（大赛）",
+      "verification_status": "authority_confirmed",
+      "tasks": [
+        "missing_organizer",
+        "missing_official_page",
+        "missing_participant_rule",
+        "missing_latest_edition",
+        "missing_history"
+      ]
+    },
+    {
+      "competition_id": 80,
+      "name": "全国大学生数字媒体科技作品及创意竞赛",
+      "verification_status": "authority_confirmed",
+      "tasks": [
+        "missing_organizer",
+        "missing_official_page",
+        "missing_participant_rule",
+        "missing_latest_edition",
+        "missing_history"
+      ]
+    },
+    {
+      "competition_id": 81,
+      "name": "全国本科院校税收风险管控案例大赛",
+      "verification_status": "authority_confirmed",
+      "tasks": [
+        "missing_organizer",
+        "missing_official_page",
+        "missing_participant_rule",
+        "missing_latest_edition",
+        "missing_history"
+      ]
+    },
+    {
+      "competition_id": 82,
+      "name": "全国企业竞争模拟大赛",
+      "verification_status": "authority_confirmed",
+      "tasks": [
+        "missing_organizer",
+        "missing_official_page",
+        "missing_participant_rule",
+        "missing_latest_edition",
+        "missing_history"
+      ]
+    },
+    {
+      "competition_id": 83,
+      "name": "全国高等院校数智化企业经营沙盘大赛",
+      "verification_status": "authority_confirmed",
+      "tasks": [
+        "missing_organizer",
+        "missing_official_page",
+        "missing_participant_rule",
+        "missing_latest_edition",
+        "missing_history"
+      ]
+    },
+    {
+      "competition_id": 84,
+      "name": "全国数字建筑创新应用大赛",
+      "verification_status": "authority_confirmed",
+      "tasks": [
+        "missing_organizer",
+        "missing_official_page",
+        "missing_participant_rule",
+        "missing_latest_edition",
+        "missing_history"
+      ]
+    },
+    {
+      "competition_id": 85,
+      "name": "全球校园人工智能算法精英大赛",
+      "verification_status": "authority_confirmed",
+      "tasks": [
+        "missing_organizer",
+        "missing_official_page",
+        "missing_participant_rule",
+        "missing_latest_edition",
+        "missing_history"
+      ]
+    },
+    {
+      "competition_id": 86,
+      "name": "国际大学生智能农业装备创新大赛",
+      "verification_status": "authority_confirmed",
+      "tasks": [
+        "missing_organizer",
+        "missing_official_page",
+        "missing_participant_rule",
+        "missing_latest_edition",
+        "missing_history"
+      ]
+    },
+    {
+      "competition_id": 87,
+      "name": "“科云杯”全国大学生财会职业能力大赛",
+      "verification_status": "authority_confirmed",
+      "tasks": [
+        "missing_organizer",
+        "missing_official_page",
+        "missing_participant_rule",
+        "missing_latest_edition",
+        "missing_history"
+      ]
+    },
+    {
+      "competition_id": 100,
+      "name": "RoboMaster机甲大师赛",
+      "verification_status": "verified_official",
+      "tasks": [
+        "missing_participant_rule",
+        "missing_latest_edition",
+        "missing_history"
+      ]
+    },
+    {
+      "competition_id": 101,
+      "name": "全国大学生英语竞赛",
+      "verification_status": "verified_official",
+      "tasks": [
+        "official_site_js_only",
+        "missing_participant_rule",
+        "missing_latest_edition",
+        "missing_history"
+      ]
+    },
+    {
+      "competition_id": 103,
+      "name": "外研社·国才杯英语演讲赛项",
+      "verification_status": "authority_confirmed",
+      "tasks": [
+        "missing_organizer",
+        "missing_official_page",
+        "missing_participant_rule",
+        "missing_latest_edition",
+        "missing_history"
+      ]
+    },
+    {
+      "competition_id": 104,
+      "name": "外研社·国才杯英语写作赛项",
+      "verification_status": "authority_confirmed",
+      "tasks": [
+        "missing_organizer",
+        "missing_official_page",
+        "missing_participant_rule",
+        "missing_latest_edition",
+        "missing_history"
+      ]
+    },
+    {
+      "competition_id": 105,
+      "name": "外研社·国才杯英语阅读赛项",
+      "verification_status": "authority_confirmed",
+      "tasks": [
+        "missing_organizer",
+        "missing_official_page",
+        "missing_participant_rule",
+        "missing_latest_edition",
+        "missing_history"
+      ]
+    },
+    {
+      "competition_id": 106,
+      "name": "外研社·国才杯英语辩论赛项",
+      "verification_status": "authority_confirmed",
+      "tasks": [
+        "missing_organizer",
+        "missing_official_page",
+        "missing_participant_rule",
+        "missing_latest_edition",
+        "missing_history"
+      ]
+    },
+    {
+      "competition_id": 107,
+      "name": "外研社·国才杯国际传播综合能力赛项",
+      "verification_status": "verified_official",
+      "tasks": [
+        "missing_history"
+      ]
+    },
+    {
+      "competition_id": 108,
+      "name": "外研社·国才杯笔译赛项",
+      "verification_status": "verified_official",
+      "tasks": [
+        "missing_participant_rule",
+        "missing_history"
+      ]
+    },
+    {
+      "competition_id": 111,
+      "name": "ABU RoboCon全国大学生机器人大赛",
+      "verification_status": "verified_official",
+      "tasks": [
+        "missing_organizer",
+        "missing_participant_rule",
+        "missing_latest_edition",
+        "missing_history"
+      ]
+    },
+    {
+      "competition_id": 112,
+      "name": "中国高校计算机大赛团体程序设计天梯赛",
+      "verification_status": "authority_confirmed",
+      "tasks": [
+        "missing_organizer",
+        "missing_official_page",
+        "missing_participant_rule",
+        "missing_latest_edition",
+        "missing_history"
+      ]
+    },
+    {
+      "competition_id": 113,
+      "name": "中国高校计算机大赛人工智能创意赛",
+      "verification_status": "authority_confirmed",
+      "tasks": [
+        "missing_organizer",
+        "missing_official_page",
+        "missing_participant_rule",
+        "missing_latest_edition",
+        "missing_history"
+      ]
+    },
+    {
+      "competition_id": 114,
+      "name": "中国高校计算机大赛网络技术挑战赛",
+      "verification_status": "verified_official",
+      "tasks": [
+        "missing_organizer",
+        "missing_participant_rule",
+        "missing_latest_edition",
+        "missing_history"
+      ]
+    },
+    {
+      "competition_id": 115,
+      "name": "中国高校计算机大赛大数据挑战赛",
+      "verification_status": "authority_confirmed",
+      "tasks": [
+        "missing_organizer",
+        "missing_official_page",
+        "missing_participant_rule",
+        "missing_latest_edition",
+        "missing_history"
+      ]
+    },
+    {
+      "competition_id": 116,
+      "name": "中国高校计算机大赛移动应用创新赛",
+      "verification_status": "authority_confirmed",
+      "tasks": [
+        "missing_organizer",
+        "missing_official_page",
+        "missing_participant_rule",
+        "missing_latest_edition",
+        "missing_history"
+      ]
+    },
+    {
+      "competition_id": 117,
+      "name": "全国高校商业精英挑战赛品牌策划竞赛",
+      "verification_status": "authority_confirmed",
+      "tasks": [
+        "missing_organizer",
+        "missing_official_page",
+        "missing_participant_rule",
+        "missing_latest_edition",
+        "missing_history"
+      ]
+    },
+    {
+      "competition_id": 119,
+      "name": "全国高校商业精英挑战赛国际贸易竞赛",
+      "verification_status": "authority_confirmed",
+      "tasks": [
+        "missing_organizer",
+        "missing_official_page",
+        "missing_participant_rule",
+        "missing_latest_edition",
+        "missing_history"
+      ]
+    },
+    {
+      "competition_id": 120,
+      "name": "全国高校商业精英挑战赛创新创业竞赛",
+      "verification_status": "authority_confirmed",
+      "tasks": [
+        "missing_organizer",
+        "missing_official_page",
+        "missing_participant_rule",
+        "missing_latest_edition",
+        "missing_history"
+      ]
+    },
+    {
+      "competition_id": 121,
+      "name": "全国高校商业精英挑战赛文旅与会展创新创业实践竞赛",
+      "verification_status": "authority_confirmed",
+      "tasks": [
+        "missing_organizer",
+        "missing_official_page",
+        "missing_participant_rule",
+        "missing_latest_edition",
+        "missing_history"
+      ]
+    },
+    {
+      "competition_id": 122,
+      "name": "清华大学中国公共政策案例分析大赛",
+      "verification_status": "verified_official",
+      "tasks": [
+        "missing_history"
+      ]
+    },
+    {
+      "competition_id": 125,
+      "name": "中国研究生企业管理创新大赛",
+      "verification_status": "verified_official",
+      "tasks": [
+        "missing_history"
+      ]
+    },
+    {
+      "competition_id": 138,
+      "name": "华为软件精英挑战赛",
+      "verification_status": "verified_official",
+      "tasks": [
+        "missing_official_page",
+        "missing_latest_edition",
+        "missing_history"
+      ]
+    },
+    {
+      "competition_id": 143,
+      "name": "北京市大学生交通科技大赛",
+      "verification_status": "verified_official",
+      "tasks": [
+        "missing_participant_rule",
+        "missing_history"
+      ]
+    }
+  ],
+  "manual_review_competitions": [
+    6,
+    7,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    26,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    109,
+    123,
+    124,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    136,
+    137,
+    139,
+    140,
+    141,
+    142
+  ],
+  "note": "缺失不阻塞产品上线；维护人员按 competition_id 使用 refresh_competition_facts 单赛事更新，不重跑全库。"
+}

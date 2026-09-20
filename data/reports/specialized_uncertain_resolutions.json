@@ -1,0 +1,29 @@
+{
+  "task": "SPECIALIZED_INSTITUTIONS_COVERAGE_01",
+  "resolved_at": "2026-09-14T22:50:00+08:00",
+  "items": [
+    {
+      "competition": "“桃李杯”舞蹈大赛",
+      "result": "DOWNGRADE",
+      "canonical_name": "“桃李杯”全国青少年舞蹈教育教学成果展示活动",
+      "current_event_type": "showcase",
+      "historical_event_type": "competition",
+      "transition_after_edition": 10,
+      "organizer": "中华人民共和国文化和旅游部",
+      "current_source_url": "https://zwgk.mct.gov.cn/zfxxgkml/kjjy/202602/t20260202_964516.html",
+      "historical_source_url": "https://www.mct.gov.cn/whzx/bnsj/whkjs/201707/t20170707_750907.html",
+      "reason": "文化和旅游部明确说明：1985年创办后前十届为比赛，2015年全国性文艺评奖改革后自第11届转为教育教学成果展示活动。"
+    },
+    {
+      "competition": "齐越朗诵艺术节暨全国大学生朗诵大会",
+      "result": "DOWNGRADE",
+      "canonical_name": "齐越朗诵艺术节暨全国大学生朗诵大会",
+      "current_event_type": "festival",
+      "historical_event_type": "competition_festival",
+      "organizer": "国家语言文字推广基地（中国传媒大学）、中国高等院校影视学会",
+      "current_source_url": "http://boyin.cuc.edu.cn/2026/0814/c1266a273269/page.htm",
+      "historical_source_url": "http://www.cuc.edu.cn/cucnews/2015/1116/c1901a163004/page.htm",
+      "reason": "2015年第17届官方报道存在总决赛、齐越奖及一二等奖；2026年第28届公告仅规定高校推荐、作品遴选和特色作品展示，未设奖项/名次，必须按届次区分。"
+    }
+  ]
+}

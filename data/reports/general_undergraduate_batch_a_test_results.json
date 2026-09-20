@@ -1,0 +1,12 @@
+{
+  "backend_pytest": {"passed": 196, "failed": 0},
+  "general_undergraduate_tests": {"passed": 6, "failed": 0},
+  "completion_audit": {"passed": 14, "failed": 0},
+  "full_database_quality_audit": {
+    "passed": 9,
+    "warned": 2,
+    "failed": 2,
+    "pre_existing_failures": true,
+    "failure_detail": "6 verified_official competitions have only university-level sources; Batch A added no formal competition data"
+  }
+}

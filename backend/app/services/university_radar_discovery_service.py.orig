@@ -1,0 +1,1763 @@
+from __future__ import annotations
+
+import base64
+import re
+import threading
+import time
+import xml.etree.ElementTree as ET
+from dataclasses import dataclass, field
+from datetime import datetime, timezone
+from html import unescape
+from html.parser import HTMLParser
+from typing import Any
+from urllib.parse import parse_qs, quote_plus, unquote, urljoin, urlparse
+
+import httpx
+from sqlalchemy import select
+from sqlalchemy.orm import Session
+
+from app.crawler.base.base_crawler import RateLimitConfig
+from app.crawler.fetchers.html_fetcher import FetchResult, HtmlFetcher
+from app.models import Competition, CompetitionAlias
+
+
+NOTICE_TERMS = (
+    "竞赛",
+    "大赛",
+    "比赛",
+    "挑战杯",
+    "创新创业",
+    "作品征集",
+    "学科竞赛",
+    "参赛",
+    "报名",
+    "赛事",
+)
+NOTICE_TERMS = NOTICE_TERMS + (
+    "创新大赛",
+    "创业大赛",
+    "数学建模",
+    "电子设计",
+    "程序设计",
+    "ACM",
+    "ICPC",
+    "机器人",
+    "人工智能",
+    "科技竞赛",
+    "创新竞赛",
+    "作品赛",
+    "设计大赛",
+    "创业计划",
+    "创新训练",
+    "征集作品",
+    "报名通知",
+    "参赛通知",
+    "赛事通知",
+    "组织参赛",
+    "选拔赛",
+    "校赛",
+    "省赛",
+    "国赛",
+    "决赛",
+    "竞赛获奖",
+)
+DISCOVERY_TERMS = NOTICE_TERMS
+ACTION_TERMS = ("报名", "参赛", "组织参加", "校赛", "选拔", "作品征集", "提交", "报送", "招募")
+DEPARTMENT_HINTS = (
+    ("教务处", ("jwc", "jiaowu", "teaching", "bksjy", "教务")),
+    ("本科生院", ("bksjy", "undergraduate", "bks", "bksxy", "本科")),
+    ("团委", ("tw", "youth", "tuantuan", "共青团")),
+    ("创新创业学院", ("cxcy", "cy", "innovation", "chuangye", "创新")),
+    ("学生工作部", ("xsgz", "xgb", "stu", "student", "xsc", "学工")),
+)
+DEPARTMENT_HINTS = DEPARTMENT_HINTS + (
+    ("创新创业", ("iec", "双创", "创新创业", "创新实践", "创新教育")),
+    ("研究生院", ("graduate", "yjs", "研究生院", "研究生教育")),
+    ("科研部门", ("kjc", "science", "research", "科研", "科技处", "科学技术发展院")),
+    ("实践教学", ("experiment", "training", "engineering", "实验教学", "实验中心", "工程训练", "创新实践中心")),
+    ("学院", ("college", "school", "学院")),
+)
+DEPARTMENT_TIERS = {
+    "教务处": 1,
+    "本科生院": 1,
+    "创新创业学院": 1,
+    "创新创业": 1,
+    "团委": 1,
+    "学生工作部": 2,
+    "研究生院": 2,
+    "科研部门": 2,
+    "实践教学": 2,
+    "学院": 2,
+    "通知公告": 3,
+}
+DEPARTMENT_LABELS = {label for label, _ in DEPARTMENT_HINTS}
+NOTICE_PATH_TERMS = ("tzgg", "notice", "news", "tongzhi", "gg", "xw", "资讯", "通知", "公告", "新闻", "竞赛", "赛事")
+ARTICLE_EXTENSIONS = (".html", ".htm", ".shtml", ".jsp")
+RECENT_WINDOW_START = datetime(2025, 9, 1, tzinfo=timezone.utc)
+SEARCH_LOCK = threading.Lock()
+KNOWN_ENTRY_HOST_PREFIXES = (
+    "jwc",
+    "bksy",
+    "undergraduate",
+    "cxcy",
+    "youth",
+    "tw",
+    "graduate",
+    "yjs",
+    "news",
+)
+KNOWN_ENTRY_PATHS = (
+    "/jwc/",
+    "/undergraduate/",
+    "/bksy/",
+    "/innovation/",
+    "/cxcy/",
+    "/tw/",
+    "/youth/",
+)
+EXTERNAL_QUERY_TEMPLATES = (
+    'site:{domain} 2026 竞赛 通知',
+    'site:{domain} 2026 校内选拔赛',
+    'site:{domain} 2026 大赛 报名',
+    'site:{domain} 2026 学科竞赛',
+    'site:{domain} 2026 征稿 大赛',
+    'site:{domain} 2026 数学建模 电子设计',
+    'site:{domain} 2026 挑战杯 创新创业',
+    'site:{domain} 2026 获奖 竞赛',
+)
+
+
+@dataclass(frozen=True, slots=True)
+class CrawlBudget:
+    max_department_entries: int = 16
+    max_department_feeds: int = 12
+    max_list_pages_per_department: int = 4
+    max_department_articles: int = 90
+    max_candidate_urls: int = 180
+    max_page_fetches: int = 130
+    max_known_entry_probes: int = 9
+    max_internal_search_pages: int = 3
+
+
+@dataclass(slots=True)
+class DiscoveryFunnel:
+    discovered_by_source: dict[str, set[str]] = field(default_factory=dict)
+    fetched_urls: set[str] = field(default_factory=set)
+    successful_urls: set[str] = field(default_factory=set)
+    failed_urls: dict[str, str] = field(default_factory=dict)
+    skipped_urls: set[str] = field(default_factory=set)
+    parsed_urls: set[str] = field(default_factory=set)
+    candidate_urls: set[str] = field(default_factory=set)
+    lead_urls: set[str] = field(default_factory=set)
+    entry_urls: set[str] = field(default_factory=set)
+    department_urls: set[str] = field(default_factory=set)
+    search_result_urls: set[str] = field(default_factory=set)
+
+    def discover(self, url: str, source: str, *, entry: bool = False, search_result: bool = False) -> None:
+        self.discovered_by_source.setdefault(source, set()).add(url)
+        if entry:
+            self.entry_urls.add(url)
+            self.department_urls.add(url)
+        if search_result:
+            self.search_result_urls.add(url)
+
+    def fetched(self, url: str, result: Any) -> None:
+        self.fetched_urls.add(url)
+        if isinstance(result, FetchResult):
+            self.successful_urls.add(url)
+            return
+        status = getattr(result, "status_code", None)
+        detail = getattr(result, "message", "") or "fetch_failed"
+        self.failed_urls[url] = f"HTTP {status}" if status else detail
+
+    def as_dict(self) -> dict[str, Any]:
+        failures = list(self.failed_urls.values())
+        discovered = set().union(*self.discovered_by_source.values()) if self.discovered_by_source else set()
+        return {
+            "entry_urls_discovered": len(self.entry_urls),
+            "department_urls_discovered": len(self.department_urls),
+            "search_results_discovered": len(self.search_result_urls),
+            "urls_discovered": len(discovered),
+            "urls_fetched": len(self.fetched_urls),
+            "urls_skipped": len(self.skipped_urls),
+            "urls_failed": len(self.failed_urls),
+            "fetch_success": len(self.successful_urls),
+            "http_403": sum("403" in item for item in failures),
+            "http_412": sum("412" in item for item in failures),
+            "timeout": sum("timeout" in item.lower() or "timed out" in item.lower() or "超时" in item for item in failures),
+            "parsed_pages": len(self.parsed_urls),
+            "competition_candidate_pages": len(self.candidate_urls),
+            "valid_competition_leads": len(self.lead_urls),
+            "discovery_sources": {
+                source: len(urls) for source, urls in sorted(self.discovered_by_source.items())
+            },
+        }
+
+
+@dataclass(slots=True)
+class MethodOutcome:
+    method: str
+    status: str  # ok | empty | error | blocked
+    detail: str = ""
+    items: int = 0
+    pages: int = 0
+
+    def as_dict(self) -> dict[str, Any]:
+        return {
+            "method": self.method,
+            "status": self.status,
+            "detail": self.detail,
+            "items": self.items,
+            "pages": self.pages,
+        }
+
+
+@dataclass(slots=True)
+class PageInfo:
+    url: str
+    title: str = ""
+    text: str = ""
+    published_at: datetime | None = None
+    method: str = ""
+
+
+@dataclass(slots=True)
+class LeadInfo:
+    values: dict[str, Any] = field(default_factory=dict)
+
+
+class _LinkParser(HTMLParser):
+    def __init__(self) -> None:
+        super().__init__()
+        self.links: list[tuple[str, str]] = []
+        self._current_href: str | None = None
+        self._text_parts: list[str] = []
+
+    def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+        if tag != "a":
+            return
+        attributes = dict(attrs)
+        href = attributes.get("href")
+        if href:
+            self._current_href = href
+            self._text_parts = []
+
+    def handle_data(self, data: str) -> None:
+        if self._current_href:
+            self._text_parts.append(data)
+
+    def handle_endtag(self, tag: str) -> None:
+        if tag != "a" or not self._current_href:
+            return
+        text = " ".join("".join(self._text_parts).split())
+        self.links.append((unescape(self._current_href), unescape(text)))
+        self._current_href = None
+        self._text_parts = []
+
+
+class _PageTextParser(HTMLParser):
+    def __init__(self) -> None:
+        super().__init__()
+        self.title_parts: list[str] = []
+        self.text_parts: list[str] = []
+        self.meta_tags: list[tuple[str, str]] = []
+        self.heading_parts: list[str] = []
+        self._in_title = False
+        self._in_heading: str | None = None
+        self._ignored_depth = 0
+
+    def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+        if tag in {"script", "style", "noscript"}:
+            self._ignored_depth += 1
+        elif tag == "title":
+            self._in_title = True
+        elif tag in {"h1", "h2", "h3", "h4"}:
+            self._in_heading = tag
+        elif tag == "meta":
+            attributes = dict(attrs)
+            name = attributes.get("name") or attributes.get("property") or ""
+            content = attributes.get("content")
+            if name and content:
+                self.meta_tags.append((name.lower(), content.strip()))
+
+    def handle_endtag(self, tag: str) -> None:
+        if tag in {"script", "style", "noscript"} and self._ignored_depth:
+            self._ignored_depth -= 1
+        elif tag == "title":
+            self._in_title = False
+        elif tag in {"h1", "h2", "h3", "h4"} and self._in_heading == tag:
+            self._in_heading = None
+
+    def handle_data(self, data: str) -> None:
+        if self._ignored_depth:
+            return
+        value = " ".join(unescape(data).split())
+        if not value:
+            return
+        self.text_parts.append(value)
+        if self._in_title:
+            self.title_parts.append(value)
+        if self._in_heading:
+            self.heading_parts.append(value)
+
+    @property
+    def title(self) -> str:
+        return " ".join(self.title_parts).strip()
+
+    @property
+    def text(self) -> str:
+        return " ".join(self.text_parts)
+
+    @property
+    def headings(self) -> list[str]:
+        return [" ".join(value.split()) for value in self.heading_parts]
+
+
+class _SogouResultParser(HTMLParser):
+    def __init__(self) -> None:
+        super().__init__()
+        self.results: list[dict[str, str]] = []
+        self._href: str | None = None
+        self._title_parts: list[str] = []
+
+    def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+        href = dict(attrs).get("href")
+        if tag == "a" and href and href.startswith("/link?url="):
+            self._href = href
+            self._title_parts = []
+
+    def handle_data(self, data: str) -> None:
+        if self._href:
+            self._title_parts.append(data)
+
+    def handle_endtag(self, tag: str) -> None:
+        if tag != "a" or not self._href:
+            return
+        title = " ".join("".join(self._title_parts).split())
+        if title:
+            self.results.append({"title": unescape(title), "url": f"https://www.sogou.com{self._href}"})
+        self._href = None
+        self._title_parts = []
+
+
+class UniversityRadarDiscoveryService:
+    """V0.8.1 multi-channel competition discovery for 211 universities.
+
+    Channels (combined, not serial fallback only):
+      sitemap         - /sitemap.xml, /sitemap_index.xml, robots.txt Sitemap
+      department_feed - notice/news list pages of 教务处/团委/创新创业学院/...
+      navigation      - internal links from homepage containing department keywords
+      external_search - 360 / DuckDuckGo / Bing site:domain queries
+      wechat          - mp.weixin.qq.com public article leads (no anti-scrape bypass)
+      reverse_match   - school name + known competition name searches
+    """
+
+    bing_url = "https://www.bing.com/search?q={query}&count=10&setlang=zh-hans"
+
+    def __init__(self) -> None:
+        self.fetcher = HtmlFetcher(
+            rate_limit=RateLimitConfig(min_delay_seconds=0.8, max_retries=1, backoff_factor=2.0),
+            respect_robots=True,
+        )
+        self.search_client = httpx.Client(
+            timeout=12,
+            follow_redirects=True,
+            headers={"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36"},
+        )
+        self._search_blocked: dict[str, bool] = {}
+        self._consecutive_captcha = 0
+
+    def close(self) -> None:
+        self.search_client.close()
+
+    def discover(
+        self,
+        db: Session,
+        university_rows: list[dict[str, Any]],
+        *,
+        only_names: set[str] | None = None,
+        workers: int = 1,
+    ) -> dict[str, Any]:
+        observed_at = datetime.now(timezone.utc)
+        competitions = list(
+            db.execute(
+                select(Competition).where(
+                    Competition.is_demo.is_(False),
+                    Competition.is_competition.is_(True),
+                )
+            ).scalars()
+        )
+        matcher = self._build_matcher(db, competitions)
+        reverse_names = self._reverse_search_names(db)
+        if only_names:
+            rows = [row for row in university_rows if row["name"] in only_names]
+        else:
+            rows = university_rows
+        raw_results = self._discover_schools(rows, matcher, reverse_names, observed_at, workers)
+        payload: dict[str, Any] = {
+            "version": "v0.8.1",
+            "retrieved_at": observed_at.isoformat(),
+            "scope": "211_non_985",
+            "batches": [],
+            "discovery_reports": [],
+            "leads": [],
+            "official_records": [],
+            "edition_relations": [],
+        }
+        for index in range(0, len(rows), 8):
+            batch_name = f"v081-211-fix-batch-{index:02d}"
+            batch = rows[index : index + 8]
+            payload["batches"].append(
+                {"name": batch_name, "universities": [row["name"] for row in batch], "size": len(batch)}
+            )
+            for discovered in raw_results[index : index + 8]:
+                discovered["report"]["batch_name"] = batch_name
+                for lead in discovered["leads"]:
+                    lead["batch_name"] = batch_name
+                for relation in discovered["relations"]:
+                    relation["batch_name"] = batch_name
+                payload["discovery_reports"].append(discovered["report"])
+                payload["leads"].extend(discovered["leads"])
+                payload["edition_relations"].extend(discovered["relations"])
+        return payload
+
+    def _discover_schools(
+        self,
+        rows: list[dict[str, Any]],
+        matcher: dict[str, str],
+        reverse_names: list[str],
+        observed_at: datetime,
+        workers: int,
+    ) -> list[dict[str, Any]]:
+        if workers <= 1 or len(rows) <= 1:
+            return [
+                self._discover_university(row, "", matcher, reverse_names, observed_at)
+                for row in rows
+            ]
+        import concurrent.futures
+
+        chunk_size = max(1, (len(rows) + workers - 1) // workers)
+        chunk_offsets = list(range(0, len(rows), chunk_size))
+        raw_results: list[dict[str, Any]] = [None] * len(rows)
+
+        def run_chunk(chunk: list[dict[str, Any]], offset: int) -> dict[int, dict[str, Any]]:
+            service = UniversityRadarDiscoveryService()
+            try:
+                output: dict[int, dict[str, Any]] = {}
+                for local_index, university in enumerate(chunk):
+                    try:
+                        output[offset + local_index] = service._discover_university(
+                            university,
+                            "",
+                            matcher,
+                            reverse_names,
+                            observed_at,
+                        )
+                    except Exception as exc:  # noqa: BLE001 - isolate per-school failures
+                        output[offset + local_index] = self._failed_result(university, exc)
+                return output
+            finally:
+                service.close()
+
+        with concurrent.futures.ThreadPoolExecutor(max_workers=workers) as executor:
+            future_to_offset = {
+                executor.submit(run_chunk, rows[offset : offset + chunk_size], offset): offset
+                for offset in chunk_offsets
+            }
+            for future in concurrent.futures.as_completed(future_to_offset):
+                offset = future_to_offset[future]
+                chunk = rows[offset : offset + chunk_size]
+                try:
+                    for absolute_index, result in future.result().items():
+                        raw_results[absolute_index] = result
+                except Exception as exc:  # noqa: BLE001 - isolate worker failures
+                    for local_index, row in enumerate(chunk):
+                        raw_results[offset + local_index] = self._failed_result(row, exc)
+        for index, row in enumerate(rows):
+            if raw_results[index] is None:
+                raw_results[index] = self._failed_result(row, RuntimeError("worker结果缺失"))
+        return raw_results
+
+    def _failed_result(self, university: dict[str, Any], exc: Exception) -> dict[str, Any]:
+        report = {
+            "university": university["name"],
+            "batch_name": "",
+            "status": "failed",
+            "methods_attempted": [],
+            "methods_successful": [],
+            "pages_examined": 0,
+            "candidate_articles": 0,
+            "pages_searched": 0,
+            "competition_leads": 0,
+            "matched_competitions": 0,
+            "new_competitions": 0,
+            "new_editions": 0,
+            "official_sources": 0,
+            "university_notice_count": 0,
+            "college_notice_count": 0,
+            "current_registration_count": 0,
+            "edition_2026_count": 0,
+            "wechat_leads": 0,
+            "internal_deadlines": 0,
+            "last_crawled_at": datetime.now(timezone.utc).isoformat(),
+            "reason": f"Discovery异常：{type(exc).__name__}: {exc}",
+            "errors": [{"method": "pipeline", "error": f"{type(exc).__name__}: {exc}"}],
+            "examined_pages": [],
+            "channel_stats": {},
+            "search_queries": [],
+            "source_domains": [],
+            "seed_version": "v0.8.1",
+        }
+        return {"report": report, "leads": [], "relations": []}
+
+    # ------------------------------------------------------------------ #
+    # Per-university discovery
+    # ------------------------------------------------------------------ #
+    def _discover_university(
+        self,
+        university: dict[str, Any],
+        batch_name: str,
+        matcher: dict[str, str],
+        reverse_names: list[str],
+        observed_at: datetime,
+    ) -> dict[str, Any]:
+        name = university["name"]
+        short_name = university.get("short_name") or ""
+        aliases = [item for item in (university.get("aliases") or []) if item]
+        domain = university["official_domain"].lower()
+        website = university.get("official_website") or f"https://www.{domain}"
+        outcomes: list[MethodOutcome] = []
+        errors: list[dict[str, str]] = []
+        candidate_urls: dict[str, dict[str, Any]] = {}
+        leads: list[dict[str, Any]] = []
+        relations: list[dict[str, Any]] = []
+        search_queries: list[str] = []
+        source_domains: set[str] = set()
+        fetched_pages = 0
+        candidate_articles = 0
+        fully_scanned_department = False
+
+        def remember(method: str, candidates: list[tuple[str, str]], outcome: MethodOutcome) -> None:
+            for url, title_hint in candidates:
+                candidate_urls.setdefault(url, {"title_hint": title_hint, "method": method})
+            outcomes.append(outcome)
+
+        # ---- A. Sitemap discovery ------------------------------------ #
+        sitemap_urls = self._sitemap_candidates(website, domain)
+        sitemap_candidates: list[tuple[str, str]] = []
+        if sitemap_urls:
+            for item in sitemap_urls:
+                sitemap_candidates.append((item["url"], item.get("title") or ""))
+            remember(
+                "sitemap",
+                sitemap_candidates,
+                MethodOutcome("sitemap", "ok", f"{len(sitemap_candidates)} 条Sitemap URL", len(sitemap_candidates)),
+            )
+        else:
+            remember("sitemap", [], MethodOutcome("sitemap", "empty", "未发现Sitemap或未命中通知路径"))
+
+        # ---- Homepage + C. navigation link discovery ----------------- #
+        homepage_links: list[tuple[str, str]] = []
+        homepage_fetched: FetchResult | Any | None = None
+        home_outcome = MethodOutcome("navigation", "error", "首页抓取失败")
+        homepage = self.fetcher.fetch(website)
+        fetched_pages += 1
+        if isinstance(homepage, FetchResult):
+            final_domain = urlparse(homepage.final_url).netloc.lower().split(":")[0]
+            if self._is_official_domain(final_domain, domain):
+                homepage_links = self._extract_links(homepage.text, homepage.final_url)
+                homepage_fetched = homepage
+                home_outcome = MethodOutcome("navigation", "ok", f"提取 {len(homepage_links)} 条首页链接")
+            else:
+                home_outcome = MethodOutcome("navigation", "error", f"首页跳转到非官方域名 {final_domain}")
+        else:
+            home_outcome = MethodOutcome("navigation", "blocked" if self._is_blocked(homepage) else "error", homepage.message)
+            errors.append({"method": "navigation", "error": homepage.message})
+        outcomes.append(home_outcome)
+        if homepage_links:
+            nav_candidates = self._navigation_candidates(homepage_links, domain)
+            for url, title_hint in nav_candidates:
+                candidate_urls.setdefault(url, {"title_hint": title_hint, "method": "navigation"})
+            home_outcome.items = len(nav_candidates)
+
+        # ---- B. Department feed discovery ---------------------------- #
+        departments = self._department_candidates(homepage_links, website, domain)
+        feed_outcome = self._scan_department_feeds(
+            university,
+            departments,
+            domain,
+            candidate_urls,
+            errors,
+        )
+        fetched_pages += feed_outcome.pages
+        outcomes.append(feed_outcome)
+        if feed_outcome.items >= 5 and feed_outcome.pages >= 4:
+            fully_scanned_department = True
+
+        # ---- D. External search (Bing) ------------------------------- #
+        external_candidates: list[tuple[str, str]] = []
+        external_error: str | None = None
+        external_queries = (
+            f'site:{domain} 2026 竞赛 报名',
+            f'site:{domain} 2026 大赛 通知',
+            f'site:{domain} 组织参加 竞赛',
+            f'site:{domain} 大学生 学科竞赛',
+        )
+        for query in external_queries:
+            search_queries.append(query)
+            results, error = self._search_multi(query)
+            if error:
+                external_error = external_error or error
+                continue
+            for item in results:
+                item_domain = urlparse(item["url"]).netloc.lower().split(":")[0]
+                if self._is_official_domain(item_domain, domain) and any(term in item["title"] for term in NOTICE_TERMS):
+                    external_candidates.append((item["url"], item["title"]))
+        if external_candidates:
+            remember(
+                "external_search",
+                external_candidates,
+                MethodOutcome("external_search", "ok", f"搜索引擎命中 {len(external_candidates)} 条官网URL", len(external_candidates)),
+            )
+        elif external_error:
+            blocked = "HTTP 403" in external_error or "HTTP 429" in external_error
+            outcomes.append(
+                MethodOutcome(
+                    "external_search",
+                    "blocked" if blocked else "error",
+                    external_error,
+                )
+            )
+            errors.append({"method": "external_search", "error": external_error})
+        else:
+            outcomes.append(MethodOutcome("external_search", "empty", "Bing 检索完成，未命中官网通知URL"))
+
+        # ---- Site search (Sogou) - attempt once, record 403/blocked --- #
+        site_search_query = f'site:{domain} 2026 (竞赛 OR 大赛) (报名 OR 参赛)'
+        search_queries.append(site_search_query)
+        site_results, site_error = self._search_sogou(site_search_query, domain)
+        if site_results:
+            for item in site_results:
+                candidate_urls.setdefault(item["url"], {"title_hint": item["title"], "method": "site_search"})
+            outcomes.append(MethodOutcome("site_search", "ok", f"站内搜索命中 {len(site_results)} 条"))
+        elif site_error:
+            blocked = "HTTP 403" in site_error or "HTTP 429" in site_error
+            outcomes.append(MethodOutcome("site_search", "blocked" if blocked else "error", site_error))
+            errors.append({"method": "site_search", "error": site_error})
+        else:
+            outcomes.append(MethodOutcome("site_search", "empty", "站内搜索未命中"))
+
+        # ---- E. WeChat public article leads -------------------------- #
+        wechat_candidates: list[tuple[str, str]] = []
+        wechat_queries = (
+            f'site:mp.weixin.qq.com "{name}" 2026 竞赛 报名',
+            f'site:mp.weixin.qq.com "{name}" 2026 大赛 通知',
+            f'site:mp.weixin.qq.com "{name}" 学科竞赛 2026',
+        )
+        wechat_error: str | None = None
+        for query in wechat_queries:
+            search_queries.append(query)
+            results, error = self._search_multi(query)
+            if error:
+                wechat_error = wechat_error or error
+                continue
+            for item in self._wechat_results(results, name, short_name):
+                wechat_candidates.append((item["url"], item["title"]))
+        if wechat_candidates:
+            outcomes.append(MethodOutcome("wechat", "ok", f"公众号公开线索 {len(wechat_candidates)} 条", len(wechat_candidates)))
+        elif wechat_error:
+            blocked = "HTTP 403" in wechat_error or "HTTP 429" in wechat_error
+            outcomes.append(MethodOutcome("wechat", "blocked" if blocked else "error", wechat_error))
+            errors.append({"method": "wechat", "error": wechat_error})
+        else:
+            outcomes.append(MethodOutcome("wechat", "empty", "公众号公开检索未命中"))
+
+        # ---- F. Reverse competition matching -------------------------- #
+        reverse_official: list[tuple[str, str]] = []
+        reverse_wechat: list[tuple[str, str]] = []
+        reverse_queries = [
+            f'"{name}" {competition} 2026' for competition in reverse_names[:6]
+        ] + [
+            f'"{name}" {competition} 报名' for competition in reverse_names[6:8]
+        ]
+        reverse_error: str | None = None
+        for query in reverse_queries:
+            search_queries.append(query)
+            results, error = self._search_multi(query)
+            if error:
+                reverse_error = reverse_error or error
+                continue
+            for item in results[:4]:
+                item_domain = urlparse(item["url"]).netloc.lower().split(":")[0]
+                if self._is_official_domain(item_domain, domain):
+                    reverse_official.append((item["url"], item["title"]))
+                elif item_domain.endswith("mp.weixin.qq.com") and any(term in item["title"] for term in NOTICE_TERMS):
+                    reverse_wechat.append((item["url"], item["title"]))
+        if reverse_official or reverse_wechat:
+            remember(
+                "reverse_match",
+                reverse_official,
+                MethodOutcome("reverse_match", "ok", f"反向匹配命中 {len(reverse_official) + len(reverse_wechat)} 条", len(reverse_official) + len(reverse_wechat)),
+            )
+            wechat_candidates.extend(reverse_wechat)
+        elif reverse_error:
+            blocked = "HTTP 403" in reverse_error or "HTTP 429" in reverse_error
+            outcomes.append(MethodOutcome("reverse_match", "blocked" if blocked else "error", reverse_error))
+            errors.append({"method": "reverse_match", "error": reverse_error})
+        else:
+            outcomes.append(MethodOutcome("reverse_match", "empty", "已知赛事反向检索未命中"))
+
+        # ---- Article fetching pipeline -------------------------------- #
+        wechat_leads = 0
+        matched_names: set[str] = set()
+        edition_names: set[str] = set()
+        edition_2026_names: set[str] = set()
+        university_notice_count = 0
+        current_registration_count = 0
+        internal_deadline_count = 0
+        official_leads = 0
+        examined_pages: list[dict[str, Any]] = []
+        relations_seen: set[tuple[str, str, str]] = set()
+        page_urls = list(candidate_urls.items())
+        method_priority = {
+            "external_search": 0,
+            "reverse_match": 1,
+            "site_search": 2,
+            "sitemap": 3,
+            "department_feed": 4,
+            "navigation": 5,
+        }
+        page_urls.sort(key=lambda item: (method_priority.get(item[1]["method"], 9), item[0]))
+        for url, meta in page_urls[:110]:
+            fetched = self.fetcher.fetch(url)
+            fetched_pages += 1
+            if not isinstance(fetched, FetchResult):
+                if self._is_blocked(fetched):
+                    errors.append({"method": meta["method"], "error": f"{url} {fetched.message}"})
+                continue
+            final_domain = urlparse(fetched.final_url).netloc.lower().split(":")[0]
+            if not self._is_official_domain(final_domain, domain):
+                continue
+            source_domains.add(final_domain)
+            page = _PageTextParser()
+            page.feed(fetched.text)
+            title = self._page_title(page, meta["title_hint"])
+            text = page.text[:30000]
+            published_at = self._published_at(page.meta_tags, text)
+            competition_year = self._competition_year(title, text)
+            if not self._is_article_url(fetched.final_url):
+                examined_pages.append(
+                    {
+                        "url": fetched.final_url,
+                        "method": meta["method"],
+                        "title": title[:200],
+                        "notice_like": False,
+                        "student_competition": True,
+                        "published_at": published_at.isoformat() if published_at else None,
+                        "action": "column_or_homepage",
+                    }
+                )
+                continue
+            notice_like = any(term in title for term in NOTICE_TERMS) or (
+                any(term in title for term in ("通知", "公告", "新闻")) and any(term in text[:2000] for term in NOTICE_TERMS)
+            )
+            student_notice = self._student_competition_notice(title)
+            if not notice_like or not student_notice:
+                examined_pages.append(
+                    {
+                        "url": fetched.final_url,
+                        "method": meta["method"],
+                        "title": title[:200],
+                        "notice_like": notice_like,
+                        "student_competition": student_notice,
+                        "published_at": published_at.isoformat() if published_at else None,
+                        "action": "filtered",
+                    }
+                )
+                continue
+            candidate_articles += 1
+            if not self._recent_enough(title, text, published_at):
+                examined_pages.append(
+                    {
+                        "url": fetched.final_url,
+                        "method": meta["method"],
+                        "title": title[:200],
+                        "notice_like": True,
+                        "student_competition": True,
+                        "published_at": published_at.isoformat() if published_at else None,
+                        "action": "outside_recent_window",
+                    }
+                )
+                continue
+            if competition_year is not None and competition_year < 2025 and "2025" not in title and "2026" not in title:
+                examined_pages.append(
+                    {
+                        "url": fetched.final_url,
+                        "method": meta["method"],
+                        "title": title[:200],
+                        "notice_like": True,
+                        "student_competition": True,
+                        "published_at": published_at.isoformat() if published_at else None,
+                        "action": "archive_or_old_year",
+                    }
+                )
+                continue
+            examined_pages.append(
+                {
+                    "url": fetched.final_url,
+                    "method": meta["method"],
+                    "title": title[:200],
+                    "notice_like": True,
+                    "student_competition": True,
+                    "published_at": published_at.isoformat() if published_at else None,
+                    "action": "lead",
+                }
+            )
+            classification = self._classification(title, text)
+            if classification == "column_page":
+                examined_pages.append(
+                    {
+                        "url": fetched.final_url,
+                        "method": meta["method"],
+                        "title": title[:200],
+                        "notice_like": True,
+                        "student_competition": True,
+                        "published_at": published_at.isoformat() if published_at else None,
+                        "action": "column_page",
+                    }
+                )
+                continue
+            matched_name = self._match_competition(title, text, matcher)
+            if matched_name:
+                matched_names.add(matched_name)
+            deadline = self._deadline(text)
+            if deadline:
+                internal_deadline_count += 1
+            is_official = self._is_official_domain(final_domain, domain)
+            if is_official:
+                official_leads += 1
+            lead = self._lead(
+                university=name,
+                batch_name=batch_name,
+                title=title,
+                url=fetched.final_url,
+                raw_content=text[:8000],
+                classification=classification,
+                source_type="university_official" if is_official else "university_official",
+                source_platform="university_website",
+                verification_status="verified_official" if is_official else "verified_official",
+                matched_name=matched_name,
+                published_at=published_at,
+                competition_year=competition_year,
+                deadline=deadline,
+                method=meta["method"],
+            )
+            leads.append(lead)
+            if (
+                matched_name
+                and classification in {"registration_notice", "internal_selection", "submission_notice"}
+                and (published_at is None or published_at >= RECENT_WINDOW_START)
+                and self._is_article_url(fetched.final_url)
+            ):
+                autumn_2025 = published_at and published_at >= datetime(2025, 11, 1, tzinfo=timezone.utc)
+                year = (
+                    competition_year
+                    if competition_year in {2025, 2026}
+                    else (2026 if autumn_2025 else None)
+                )
+                if year:
+                    relation_key = (name, matched_name, self._normalize(title))
+                    if relation_key in relations_seen:
+                        continue
+                    relations_seen.add(relation_key)
+                    edition_names.add(matched_name)
+                    if year == 2026:
+                        edition_2026_names.add(matched_name)
+                    current_status = None
+                    if deadline and deadline >= observed_at:
+                        current_status = (
+                            "submission_open" if classification == "submission_notice" else "registration_open"
+                        )
+                        current_registration_count += 1
+                    relations.append(
+                        {
+                            "university": name,
+                            "competition_name": matched_name,
+                            "year": year,
+                            "edition_name": title,
+                            "batch_name": batch_name,
+                            "source_type": "university_official_notice",
+                            "source_platform": "university_website",
+                            "source_name": f"{name}官网",
+                            "notice_type": classification,
+                            "notice_title": title,
+                            "internal_notice_url": fetched.final_url,
+                            "internal_registration_deadline": deadline.isoformat() if deadline else None,
+                            "published_at": published_at.isoformat() if published_at else None,
+                            "observed_at": observed_at.isoformat(),
+                            "last_verified_at": observed_at.isoformat(),
+                            "verification_status": "verified_official",
+                            "is_verified": True,
+                            "current_status": current_status,
+                            "organizing_department": self._department_label(url, meta["method"]),
+                            "notes": "V0.8.1 多通道Discovery实抓；高校截止时间与赛事官方截止时间分开保存。",
+                        }
+                    )
+                    university_notice_count += 1
+
+        for url, title_hint in list(dict.fromkeys(wechat_candidates))[:3]:
+            wechat_leads += 1
+            leads.append(
+                self._lead(
+                    university=name,
+                    batch_name=batch_name,
+                    title=title_hint,
+                    url=url,
+                    raw_content=None,
+                    classification=self._classification(title_hint, ""),
+                    source_type="wechat_public_lead",
+                    source_platform="wechat_search",
+                    verification_status="unverified",
+                    matched_name=self._match_competition(title_hint, "", matcher),
+                    published_at=None,
+                    competition_year=self._competition_year(title_hint, ""),
+                    deadline=None,
+                    method="wechat",
+                )
+            )
+
+        status = self._status(outcomes, fully_scanned_department, fetched_pages, candidate_articles)
+        reason_parts = self._reason_parts(outcomes, errors, candidate_articles, len(leads))
+        report = {
+            "university": name,
+            "batch_name": batch_name,
+            "status": status,
+            "methods_attempted": [item.method for item in outcomes],
+            "methods_successful": [item.method for item in outcomes if item.status == "ok"],
+            "pages_examined": fetched_pages,
+            "candidate_articles": candidate_articles,
+            "pages_searched": fetched_pages + len(search_queries),
+            "competition_leads": len(leads),
+            "matched_competitions": len(matched_names),
+            "new_competitions": 0,
+            "new_editions": len(edition_names),
+            "official_sources": official_leads,
+            "university_notice_count": university_notice_count,
+            "college_notice_count": 0,
+            "current_registration_count": current_registration_count,
+            "edition_2026_count": len(edition_2026_names),
+            "wechat_leads": wechat_leads,
+            "internal_deadlines": internal_deadline_count,
+            "last_crawled_at": observed_at.isoformat(),
+            "reason": "；".join(reason_parts) or None,
+            "errors": errors,
+            "examined_pages": examined_pages,
+            "channel_stats": self._channel_stats(outcomes),
+            "search_queries": search_queries,
+            "source_domains": sorted(source_domains),
+            "seed_version": "v0.8.1",
+        }
+        return {"report": report, "leads": leads, "relations": relations}
+
+    # ------------------------------------------------------------------ #
+    # Channel implementations
+    # ------------------------------------------------------------------ #
+    def _sitemap_candidates(self, website: str, domain: str) -> list[dict[str, Any]]:
+        candidates: list[dict[str, Any]] = []
+        sitemap_urls: list[str] = []
+        parsed = urlparse(website)
+        base = f"{parsed.scheme}://{parsed.netloc}"
+        robots = self.fetcher.fetch(f"{base}/robots.txt")
+        if isinstance(robots, FetchResult):
+            for match in re.finditer(r"(?im)^\s*Sitemap:\s*(\S+)", robots.text):
+                sitemap_urls.append(match.group(1).strip())
+        for path in ("/sitemap.xml", "/sitemap_index.xml", "/sitemap-index.xml"):
+            sitemap_urls.append(urljoin(base, path))
+        seen: set[str] = set()
+        for sitemap_url in sitemap_urls:
+            if sitemap_url in seen:
+                continue
+            seen.add(sitemap_url)
+            fetched = self.fetcher.fetch(sitemap_url)
+            if not isinstance(fetched, FetchResult) or fetched.status_code >= 400:
+                continue
+            for item in self._parse_sitemap(fetched.text):
+                if self._is_official_domain(urlparse(item["url"]).netloc.lower().split(":")[0], domain):
+                    candidates.append(item)
+        return candidates
+
+    def _parse_sitemap(self, content: str) -> list[dict[str, Any]]:
+        try:
+            root = ET.fromstring(content)
+        except ET.ParseError:
+            return []
+        urls: list[dict[str, Any]] = []
+        for element in root.iter():
+            tag = element.tag.rsplit("}", 1)[-1].lower()
+            if tag not in {"url", "sitemap"}:
+                continue
+            loc = ""
+            lastmod: datetime | None = None
+            for child in element:
+                child_tag = child.tag.rsplit("}", 1)[-1].lower()
+                if child_tag == "loc":
+                    loc = (child.text or "").strip()
+                elif child_tag == "lastmod":
+                    lastmod = self._parse_iso_date(child.text or "")
+            if not loc:
+                continue
+            if lastmod and lastmod < RECENT_WINDOW_START:
+                continue
+            urls.append({"url": loc, "lastmod": lastmod})
+        filtered: list[dict[str, Any]] = []
+        for item in urls:
+            url = item["url"]
+            path = urlparse(url).path.lower()
+            if any(term in path for term in NOTICE_PATH_TERMS) or path.endswith(ARTICLE_EXTENSIONS) or re.search(r"(?:info|art|content|detail|show|news|notice)/", path):
+                item["title"] = unquote(path.split("/")[-1]) if path.split("/")[-1] else ""
+                filtered.append(item)
+        return filtered[:150]
+
+    def _navigation_candidates(self, links: list[tuple[str, str]], domain: str) -> list[tuple[str, str]]:
+        candidates: list[tuple[str, str]] = []
+        for href, text in links:
+            full = urljoin("https://", href) if href.startswith("//") else href
+            parsed = urlparse(full)
+            if not parsed.scheme or not parsed.netloc:
+                continue
+            item_domain = parsed.netloc.lower().split(":")[0]
+            if not self._is_official_domain(item_domain, domain):
+                continue
+            path = parsed.path.lower()
+            if any(term in path for term in ("jwc", "undergraduate", "teaching", "innovation", "cxcy", "tw", "youth", "notice", "news", "competition", "contest", "bksjy", "xsc", "学工", "教务", "团委", "创新")):
+                candidates.append((full, text))
+        return candidates[:40]
+
+    def _department_candidates(
+        self,
+        links: list[tuple[str, str]],
+        website: str,
+        domain: str,
+    ) -> list[dict[str, Any]]:
+        departments: list[dict[str, Any]] = []
+        seen_urls: set[str] = set()
+        for href, text in links:
+            full = urljoin(website, href)
+            parsed = urlparse(full)
+            if not parsed.scheme or not parsed.netloc:
+                continue
+            item_domain = parsed.netloc.lower().split(":")[0]
+            if not self._is_official_domain(item_domain, domain):
+                continue
+            path = parsed.path.lower()
+            label = None
+            for candidate_label, keywords in DEPARTMENT_HINTS:
+                if any(keyword in path for keyword in keywords) or any(keyword in text for keyword in keywords):
+                    label = candidate_label
+                    break
+            if label is None and any(term in text for term in ("通知公告", "通知", "公告", "新闻", "资讯", "动态")):
+                label = "通知公告"
+            if label and full not in seen_urls:
+                seen_urls.add(full)
+                departments.append({"label": label, "url": full, "link_text": text})
+        return departments[:8]
+
+    def _scan_department_feeds(
+        self,
+        university: dict[str, Any],
+        departments: list[dict[str, Any]],
+        domain: str,
+        candidate_urls: dict[str, dict[str, Any]],
+        errors: list[dict[str, str]],
+    ) -> MethodOutcome:
+        article_links: list[tuple[str, str]] = []
+        pages_examined = 0
+        if not departments:
+            return MethodOutcome("department_feed", "empty", "未发现部门栏目入口")
+        for department in departments[:5]:
+            home = self.fetcher.fetch(department["url"])
+            pages_examined += 1
+            if not isinstance(home, FetchResult):
+                if self._is_blocked(home):
+                    errors.append({"method": "department_feed", "error": f"{department['url']} {home.message}"})
+                continue
+            final_domain = urlparse(home.final_url).netloc.lower().split(":")[0]
+            if not self._is_official_domain(final_domain, domain):
+                continue
+            links = self._extract_links(home.text, home.final_url)
+            for href, text in links:
+                if any(term in text for term in NOTICE_TERMS):
+                    article_links.append((urljoin(home.final_url, href), text))
+            list_pages: list[str] = []
+            for href, text in links:
+                full = urljoin(home.final_url, href)
+                parsed = urlparse(full)
+                if not parsed.scheme or not parsed.netloc:
+                    continue
+                if not self._is_official_domain(parsed.netloc.lower().split(":")[0], domain):
+                    continue
+                path = parsed.path.lower()
+                if any(term in path for term in NOTICE_PATH_TERMS) or any(term in text for term in ("通知", "公告", "新闻", "动态", "资讯", "竞赛")):
+                    list_pages.append(full)
+            processed: set[str] = set()
+            queue = list_pages[:3]
+            while queue and len(article_links) < 60:
+                list_url = queue.pop(0)
+                if list_url in processed:
+                    continue
+                processed.add(list_url)
+                list_fetched = self.fetcher.fetch(list_url)
+                pages_examined += 1
+                if not isinstance(list_fetched, FetchResult):
+                    continue
+                page_links = self._extract_links(list_fetched.text, list_fetched.final_url)
+                for href, text in page_links:
+                    if any(term in text for term in NOTICE_TERMS):
+                        article_links.append((urljoin(list_fetched.final_url, href), text))
+                    full = urljoin(list_fetched.final_url, href)
+                    if re.search(r"(?:page|index)[-_]?[2345]", urlparse(full).path.lower()) and full not in list_pages and full not in processed:
+                        queue.append(full)
+        unique = list(dict.fromkeys(article_links))
+        for url, title_hint in unique[:60]:
+            candidate_urls.setdefault(url, {"title_hint": title_hint, "method": "department_feed"})
+        if unique:
+            return MethodOutcome("department_feed", "ok", f"部门栏目抓取 {len(unique)} 条候选文章", len(unique), pages_examined)
+        if pages_examined:
+            return MethodOutcome("department_feed", "empty", f"部门栏目抓取 {pages_examined} 页，未发现竞赛类文章", 0, pages_examined)
+        return MethodOutcome("department_feed", "error", "部门栏目页面全部抓取失败", 0, pages_examined)
+
+    def _search_multi(self, query: str) -> tuple[list[dict[str, str]], str | None]:
+        """Try 360 search first, then DuckDuckGo HTML, then Bing."""
+        if self._search_blocked.get("360") and self._search_blocked.get("ddg") and self._search_blocked.get("bing"):
+            return [], "外部搜索引擎全部不可用"
+        results, error = self._search_360(query)
+        if results:
+            self._consecutive_captcha = 0
+            return results, None
+        if error:
+            if "安全验证" in error or "限流" in error:
+                self._consecutive_captcha += 1
+                if self._consecutive_captcha >= 2:
+                    self._search_blocked["360"] = True
+                    return [], "360检索受限(安全验证)"
+                return [], error
+            if "HTTP" in error:
+                self._search_blocked["360"] = True
+                return [], error
+        if self._search_blocked.get("ddg"):
+            return self._search_bing(query)
+        results, error = self._search_ddg(query)
+        if results:
+            return results, None
+        if error and ("HTTP" in error or "失败" in error):
+            self._search_blocked["ddg"] = True
+            return [], error
+        return self._search_bing(query)
+
+    def _search_360(self, query: str) -> tuple[list[dict[str, str]], str | None]:
+        self._wait_search()
+        try:
+            response = self.search_client.get(f"https://www.so.com/s?q={quote_plus(query)}")
+            if response.status_code >= 400:
+                return [], f"360检索 HTTP {response.status_code}"
+            if "验证" in response.text[:3000]:
+                return [], "360检索触发安全验证"
+            anchors = re.findall(r'<h3[^>]*>\s*<a[^>]*href="([^"]+)"[^>]*>(.*?)</a>', response.text, re.S)
+            if not anchors and len(response.text) < 20000:
+                return [], "360检索限流(页面为空)"
+            results: list[dict[str, str]] = []
+            seen: set[str] = set()
+            for href, title_html in anchors[:8]:
+                title = " ".join(re.sub(r"<[^>]+>", "", title_html).split())
+                if not title:
+                    continue
+                url = self._resolve_360_link(href)
+                if not url or url in seen:
+                    continue
+                seen.add(url)
+                results.append({"title": unescape(title), "url": url})
+            return results, None
+        except httpx.HTTPError as exc:
+            return [], f"360检索失败：{type(exc).__name__}"
+
+    def _resolve_360_link(self, href: str) -> str | None:
+        if not href.startswith("http"):
+            return None
+        if "/link?m=" not in href:
+            return href
+        try:
+            redirect = self.search_client.get(href)
+            match = re.search(r'window\.location\.replace\(["\'](https?://[^"\']+)', redirect.text)
+            if not match:
+                return None
+            url = unescape(match.group(1)).replace("\\/", "/")
+            if "?language=" in url:
+                url = url.split("?language=")[0]
+            if "?szyx=" in url:
+                url = url.split("?szyx=")[0]
+            return url
+        except httpx.HTTPError:
+            return None
+
+    def _search_ddg(self, query: str) -> tuple[list[dict[str, str]], str | None]:
+        self._wait_search()
+        try:
+            response = self.search_client.get(
+                f"https://html.duckduckgo.com/html/?q={quote_plus(query)}",
+                headers={"Accept-Language": "zh-CN,zh;q=0.9"},
+                timeout=8,
+            )
+            if response.status_code >= 400:
+                return [], f"DuckDuckGo检索 HTTP {response.status_code}"
+            anchors = re.findall(r'class="result__a"[^>]*href="([^"]+)"[^>]*>(.*?)</a>', response.text, re.S)
+            results: list[dict[str, str]] = []
+            seen: set[str] = set()
+            for href, title_html in anchors[:10]:
+                title = " ".join(re.sub(r"<[^>]+>", "", title_html).split())
+                url = self._decode_ddg_url(href)
+                if not url or url in seen:
+                    continue
+                seen.add(url)
+                results.append({"title": unescape(title), "url": url})
+            return results, None
+        except httpx.HTTPError as exc:
+            return [], f"DuckDuckGo检索失败：{type(exc).__name__}"
+
+    def _decode_ddg_url(self, href: str) -> str | None:
+        if "uddg=" in href:
+            match = re.search(r"uddg=([^&]+)", href)
+            if not match:
+                return None
+            value = unquote(match.group(1))
+            return value if value.startswith("http") else None
+        return href if href.startswith("http") else None
+
+    def _search_bing(self, query: str) -> tuple[list[dict[str, str]], str | None]:
+        self._wait_search()
+        try:
+            response = self.search_client.get(self.bing_url.format(query=quote_plus(query)))
+            if response.status_code >= 400:
+                return [], f"Bing 检索 HTTP {response.status_code}"
+            parser = _LinkParser()
+            parser.feed(response.text)
+            results: list[dict[str, str]] = []
+            seen: set[str] = set()
+            for href, title in parser.links:
+                if not title or "bing.com" in href:
+                    continue
+                url = self._decode_bing_url(href)
+                if not url or url in seen:
+                    continue
+                seen.add(url)
+                results.append({"title": title, "url": url})
+            return results[:12], None
+        except httpx.HTTPError as exc:
+            return [], f"Bing 检索失败：{type(exc).__name__}"
+
+    def _search_sogou(self, query: str, official_domain: str) -> tuple[list[dict[str, str]], str | None]:
+        self._wait_search()
+        try:
+            response = self.search_client.get(f"https://www.sogou.com/web?query={quote_plus(query)}")
+            if response.status_code >= 400:
+                return [], f"搜狗检索 HTTP {response.status_code}"
+            parser = _SogouResultParser()
+            parser.feed(response.text)
+            results: list[dict[str, str]] = []
+            seen: set[str] = set()
+            for item in parser.results[:6]:
+                redirect = self.search_client.get(item["url"])
+                match = re.search(r'window\.location\.replace\(["\'](https?://[^"\']+)', redirect.text)
+                if not match:
+                    continue
+                url = unescape(match.group(1)).replace("\\/", "/")
+                domain = urlparse(url).netloc.lower().split(":")[0]
+                if url in seen or not self._is_official_domain(domain, official_domain):
+                    continue
+                seen.add(url)
+                results.append({"title": item["title"], "url": url})
+            return results, None
+        except httpx.HTTPError as exc:
+            return [], f"搜狗检索失败：{type(exc).__name__}"
+
+    def _wechat_results(self, rows: list[dict[str, str]], university_name: str, short_name: str) -> list[dict[str, str]]:
+        results: list[dict[str, str]] = []
+        for item in rows:
+            if not urlparse(item["url"]).netloc.lower().endswith("mp.weixin.qq.com"):
+                continue
+            title = item["title"]
+            if not any(term in title for term in NOTICE_TERMS):
+                continue
+            university_hint = any(token in title for token in (university_name, short_name) if token)
+            department_hint = any(token in title for token in ("教务处", "团委", "创新创业", "本科生院", "学生工作", "研究生院", "学院", "大学"))
+            if university_hint or (department_hint and any(term in title for term in ACTION_TERMS)):
+                results.append(item)
+        return results
+
+    # ------------------------------------------------------------------ #
+    # Parsing helpers
+    # ------------------------------------------------------------------ #
+    def _extract_links(self, html: str, base_url: str) -> list[tuple[str, str]]:
+        parser = _LinkParser()
+        parser.feed(html)
+        links: list[tuple[str, str]] = []
+        for href, text in parser.links:
+            full = urljoin(base_url, href)
+            parsed = urlparse(full)
+            if parsed.scheme not in {"http", "https"}:
+                continue
+            links.append((full, " ".join(text.split())))
+        return links
+
+    def _published_at(self, meta_tags: list[tuple[str, str]], text: str) -> datetime | None:
+        meta_names = {
+            "pubdate",
+            "publishdate",
+            "published_time",
+            "article:published_time",
+            "dc.date",
+            "date",
+            "articlepubdate",
+            "publish_date",
+            "createdate",
+        }
+        for name, content in meta_tags:
+            if name in meta_names or name.endswith(("pubdate", "publishdate", "published_time")):
+                parsed = self._parse_iso_date(content)
+                if parsed:
+                    return parsed
+        patterns = (
+            r"(?:发布时间|发布日期|时间|日期)[：:\s]{0,4}(20\d{2})[年\-/\.](\d{1,2})[月\-/\.](\d{1,2})",
+            r"(20\d{2})[年\-/\.](\d{1,2})[月\-/\.](\d{1,2})日?\s*(?:\d{1,2}:\d{2})?\s*(?:发布|来源)",
+        )
+        for pattern in patterns:
+            match = re.search(pattern, text[:4000])
+            if match:
+                try:
+                    return datetime(int(match.group(1)), int(match.group(2)), int(match.group(3)), tzinfo=timezone.utc)
+                except ValueError:
+                    continue
+        return None
+
+    def _competition_year(self, title: str, text: str) -> int | None:
+        title_patterns = (
+            r"(20\d{2})[年\-/\.]?(?:第[一二三四五六七八九十\d]+届)?[^\s，。]{0,24}?(?:竞赛|大赛|比赛|报名|选拔|通知|挑战杯)",
+            r"(20\d{2})[年\-/\.]",
+        )
+        for pattern in title_patterns:
+            match = re.search(pattern, title)
+            if match:
+                year = int(match.group(1))
+                return year if 2024 <= year <= 2027 else None
+        for match in re.finditer(
+            r"(202[4567])[年\-/\.]?\s*(?:第[一二三四五六七八九十\d]+届)?[^\s，。；：]{0,20}?(?:竞赛|大赛|比赛|报名|选拔|通知|挑战杯|赛事)",
+            text[:5000],
+        ):
+            return int(match.group(1))
+        return None
+
+    def _student_competition_notice(self, title: str) -> bool:
+        teacher_terms = ("教师", "老师", "青教赛", "教学竞赛", "辅导员", "思政课教师")
+        student_terms = ("大学生", "学生", "本科生", "研究生", "学子", "我校学生", "在校生")
+        if any(term in title for term in teacher_terms) and not any(term in title for term in student_terms):
+            return False
+        if title.lower().startswith("pdf"):
+            return False
+        if any(term in title for term in ("推免", "免试", "保研", "目录", "汇编", "一览表")):
+            return False
+        admission_terms = (
+            "招生", "录取", "调剂", "考研", "复试", "博士", "硕士", "学籍", "报到", "军训", "就业", "招聘",
+        )
+        competition_signals = (
+            "竞赛", "大赛", "比赛", "挑战杯", "创新创业", "作品征集", "学科竞赛", "选拔赛",
+            "参赛", "赛事", "赛项", "技能大赛",
+        )
+        if any(term in title for term in admission_terms) and not any(
+            term in title for term in competition_signals
+        ):
+            return False
+        return True
+
+    def _recent_enough(self, title: str, text: str, published_at: datetime | None) -> bool:
+        if published_at:
+            if published_at >= RECENT_WINDOW_START:
+                return True
+            return "2026" in title or "2025" in title
+        window_text = f"{title} {text[:5000]}"
+        return "2026" in title or "2025" in title or re.search(r"202[56][年\-/\.]", window_text) is not None
+
+    def _is_article_url(self, url: str) -> bool:
+        path = urlparse(url).path.lower().rstrip("/")
+        if path in {"", "/index.htm", "/index.html", "/index.php", "/default.htm", "/default.html", "/main.htm"}:
+            return False
+        if path.endswith(("list.htm", "list.html", "more.jsp", "more.do", "more.htm")):
+            return False
+        return True
+
+    def _classification(self, title: str, text: str) -> str:
+        if re.match(
+            r"^(学科竞赛|通知公告|公告通知|新闻动态|竞赛通知|教务通知|最新通知|赛事信息|创新创业(?:类|活动|实践|大赛)?|实验竞赛|大学生创新创业训练计划|竞赛)[—-]",
+            title,
+        ):
+            return "column_page"
+        teacher_terms = ("教师", "老师", "辅导员", "教职工", "教授", "教学设计", "混合式教学")
+        student_terms = ("学生", "学子", "大学生", "本科生", "研究生", "在校生", "师范生", "学员")
+        if any(term in title for term in teacher_terms) and not any(term in title for term in student_terms):
+            return "irrelevant"
+        admission_terms = (
+            "招生", "录取", "调剂", "考研", "复试", "推免", "免试", "保研", "博士", "硕士",
+            "学籍", "报到", "军训", "就业", "招聘", "选课", "课表", "补考", "重修", "免听",
+            "宿舍", "食堂", "值班安排", "主题党日", "读书班", "转专业",
+            "四六级", "四级", "六级", "普通话水平", "教师资格", "考试报名",
+        )
+        if any(term in title for term in admission_terms):
+            if not any(term in title for term in ("竞赛", "大赛", "比赛", "选拔赛", "参赛", "赛项")):
+                return "irrelevant"
+        result_terms = (
+            "获奖名单", "评审结果", "结果公示", "获奖结果", "获奖情况", "名单公示",
+            "成绩公布", "拟推荐", "公示", "表彰",
+        )
+        award_title_terms = (
+            "创佳绩", "再创佳绩", "获佳绩", "获得优异成绩", "取得优异成绩", "斩获佳绩",
+            "喜获佳绩", "圆满收官", "落下帷幕", "落幕", "圆满结束", "获最高奖", "获最高奖",
+            "殊荣", "双第一", "历史最好",
+        )
+        if any(term in title for term in result_terms):
+            return "result_notice"
+        award_pattern = re.compile(
+            r"(?:获|取得|揽获|斩获|喜获|再获|荣获).{0,10}?(?:一等奖|二等奖|三等奖|特等奖|国奖|最高奖|金牌|桂冠)"
+        )
+        if any(term in title for term in award_title_terms) or award_pattern.search(title):
+            return "award_news"
+        if "揽获" in title or "金奖" in title or "银奖" in title or "铜奖" in title:
+            return "award_news"
+        if any(term in title for term in ("一等奖", "二等奖", "三等奖", "特等奖", "最高奖")):
+            if not any(term in title for term in ("报名", "选拔", "参赛", "征集", "奖项设置", "通知")):
+                return "award_news"
+        training_markers = ("讲座", "培训", "训练营", "宣讲会", "辅导", "集训", "授课", "公开课", "特训")
+        if any(term in title for term in training_markers):
+            if any(term in title for term in ("报名", "选拔", "参赛", "征集")):
+                return "competition_announcement"
+            return "training_notice"
+        activity_markers = (
+            "圆满举行", "顺利举行", "成功举办", "圆满举办", "颁奖典礼", "现场赛", "动员会",
+            "打磨会", "分享会", "交流会", "研讨会", "论坛", "沙龙", "参观", "启动仪式",
+            "落幕", "闭幕", "在我校举行", "在我校举办", "召开", "观摩活动", "专题调研", "调研",
+        )
+        if re.search(r"(?:决赛|总决赛|大赛|竞赛|比赛)[^，。]{0,26}(?:举行|举办|开幕|闭幕|颁奖)", title):
+            if "通知" not in title:
+                return "activity"
+        if any(term in title for term in activity_markers):
+            if any(term in title for term in ("通知", "报名", "选拔", "征集", "参赛")):
+                if not any(term in title for term in ("顺利", "圆满", "成功", "现场赛", "动员会", "打磨会", "观摩")):
+                    pass
+                else:
+                    return "activity"
+            else:
+                return "activity"
+        if re.search(r"(?:大赛|竞赛|比赛)[^，。]{0,18}(?:举行|举办)$", title):
+            return "activity"
+        column_suffix_labels = (
+            "新闻网", "本科生院", "教务处", "研究生院", "团委", "创新创业学院", "创新创业",
+        )
+        core = re.sub(r"[—-][^—-]{0,20}(?:新闻网|本科生院|教务处|研究生院|团委|学院)$", "", title)
+        if core in {"创新创业", "创新创业活动", "创新创业实践", "创新创业大赛", "竞赛", "实验竞赛", "大学生创新创业训练计划", "通知公告", "新闻动态"}:
+            return "irrelevant"
+        combined = f"{title} {text[:1500]}"
+        groups = {
+            "internal_selection": ("校赛", "选拔", "组织参加", "校内选拔", "预选"),
+            "submission_notice": ("作品提交", "提交作品", "报送", "投稿", "作品征集"),
+            "registration_notice": ("报名", "参赛通知", "开始报名", "注册"),
+            "team_recruitment": ("招募", "组队", "队员"),
+        }
+        positions = {
+            classification: min(
+                (combined.find(term) for term in terms if term in combined),
+                default=len(combined) + 1,
+            )
+            for classification, terms in groups.items()
+        }
+        classification, position = min(positions.items(), key=lambda item: item[1])
+        return classification if position <= len(combined) else "competition_notice"
+
+    def _deadline(self, text: str) -> datetime | None:
+        patterns = (
+            r"(?:报名|提交|报送|申报|材料).{0,30}?(?:截止|截至|于).{0,20}?(20\d{2})[年\-/\.](\d{1,2})[月\-/\.](\d{1,2})日?",
+            r"(?:截止|截至).{0,20}?(20\d{2})[年\-/\.](\d{1,2})[月\-/\.](\d{1,2})日?",
+            r"(20\d{2})[年\-/\.](\d{1,2})[月\-/\.](\d{1,2})日?.{0,16}?(?:截止|前)",
+            r"(?:截止时间|截止日期|报名截止)[：:\s]{0,4}(20\d{2})[年\-/\.](\d{1,2})[月\-/\.](\d{1,2})日?",
+        )
+        for pattern in patterns:
+            match = re.search(pattern, text)
+            if match:
+                try:
+                    value = datetime(int(match.group(1)), int(match.group(2)), int(match.group(3)), 23, 59, tzinfo=timezone.utc)
+                    if 2025 <= value.year <= 2027:
+                        return value
+                except ValueError:
+                    continue
+        return None
+
+    def _lead(self, **values: Any) -> dict[str, Any]:
+        matched_name = values.pop("matched_name")
+        published_at = values.pop("published_at")
+        competition_year = values.pop("competition_year")
+        deadline = values.pop("deadline")
+        method = values.pop("method")
+        return {
+            "raw_title": values.pop("title"),
+            "source_url": values.pop("url"),
+            "detected_competition_name": matched_name,
+            "possible_year": competition_year,
+            "possible_deadline": deadline.isoformat() if deadline else None,
+            "published_at": published_at.isoformat() if published_at else None,
+            "source_name": f"{values['university']}公开渠道",
+            "source_scope": "211_non_985",
+            "channel": values["source_platform"],
+            "needs_review": matched_name is None or values["verification_status"] != "verified_official",
+            "discovery_method": method,
+            **values,
+        }
+
+    def _page_title(self, page: _PageTextParser, fallback: str) -> str:
+        headings = [
+            value
+            for value in page.headings
+            if len(value) >= 8 and not re.match(r"^(附件|pdf|文件|下载)", value, re.I)
+        ]
+        if headings:
+            return max(headings, key=len)[:500]
+        return page.title or fallback or ""
+
+    # ------------------------------------------------------------------ #
+    # Competition matching
+    # ------------------------------------------------------------------ #
+    def _build_matcher(self, db: Session, competitions: list[Competition]) -> dict[str, str]:
+        alias_rows = list(db.execute(select(CompetitionAlias)).scalars())
+        alias_by_competition: dict[int, list[str]] = {}
+        for alias in alias_rows:
+            alias_by_competition.setdefault(alias.competition_id, []).append(alias.alias)
+        matcher: dict[str, str] = {}
+        for competition in competitions:
+            names = [competition.name]
+            if competition.short_name:
+                names.append(competition.short_name)
+            if competition.english_name:
+                names.append(competition.english_name)
+            if competition.former_names:
+                names.extend(competition.former_names)
+            names.extend(alias_by_competition.get(competition.id, []))
+            for raw in names:
+                if not raw:
+                    continue
+                normalized = self._normalize(raw)
+                if len(normalized) >= 4:
+                    matcher[normalized] = competition.name
+        return matcher
+
+    def _reverse_search_names(self, db: Session) -> list[str]:
+        pattern_terms = (
+            "数学建模",
+            "挑战杯",
+            "电子设计",
+            "计算机设计",
+            "蓝桥杯",
+            "广告艺术",
+            "三创",
+            "市场调查",
+            "英语竞赛",
+            "智能汽车",
+            "机械创新",
+            "中国国际大学生创新",
+            "节能减排",
+            "工程训练",
+        )
+        competitions = list(
+            db.execute(
+                select(Competition).where(
+                    Competition.is_demo.is_(False),
+                    Competition.is_competition.is_(True),
+                )
+            ).scalars()
+        )
+        names: list[str] = []
+        seen: set[str] = set()
+        for competition in competitions:
+            if any(term in competition.name for term in pattern_terms) and competition.name not in seen:
+                seen.add(competition.name)
+                names.append(competition.name)
+        return names
+
+    def _match_competition(self, title: str, text: str, matcher: dict[str, str]) -> str | None:
+        haystack = self._normalize(title)
+        if not haystack:
+            return None
+        best: tuple[int, str] | None = None
+        for normalized_name, canonical_name in matcher.items():
+            if normalized_name in haystack and len(normalized_name) >= 4:
+                if best is None or len(normalized_name) > best[0]:
+                    best = (len(normalized_name), canonical_name)
+        if best:
+            return best[1]
+        signatures = (
+            (("研究生", "数学建模"), "中国研究生数学建模竞赛"),
+            (("研究生", "电子设计"), "中国研究生电子设计竞赛"),
+            (("挑战杯", "创业计划"), "“挑战杯”中国大学生创业计划竞赛"),
+            (("挑战杯", "课外学术科技"), "“挑战杯”全国大学生课外学术科技作品竞赛"),
+            (("大学生创新大赛",), "中国国际大学生创新大赛"),
+            (("互联网+",), "中国国际大学生创新大赛"),
+            (("数学建模",), "全国大学生数学建模竞赛"),
+            (("电子设计竞赛",), "全国大学生电子设计竞赛"),
+            (("计算机设计大赛",), "中国大学生计算机设计大赛"),
+            (("广告艺术大赛",), "全国大学生广告艺术大赛"),
+            (("全国高校学生跨文化能力大赛",), "“外教社杯”全国高校学生跨文化能力大赛"),
+            (("蓝桥杯",), "蓝桥杯全国软件和信息技术专业人才大赛"),
+            (("市场调查与分析",), "全国大学生市场调查与分析大赛"),
+            (("智能汽车竞赛",), "全国大学生智能汽车竞赛"),
+            (("机械创新设计大赛",), "全国大学生机械创新设计大赛"),
+            (("节能减排",), "全国大学生节能减排社会实践与科技竞赛"),
+        )
+        for keywords, canonical_name in signatures:
+            if not all(keyword in title for keyword in keywords):
+                continue
+            if "研究生" in title and "研究生" not in "".join(keywords):
+                continue
+            if not any(term in keywords for term in ("研究生", "挑战杯")):
+                competition_context = ("大赛", "竞赛", "比赛", "报名", "选拔", "参赛", "通知", "征集", "赛项", "校赛", "赛事")
+                if not any(term in title for term in competition_context):
+                    continue
+            normalized = self._normalize(canonical_name)
+            if normalized in matcher:
+                return matcher[normalized]
+        return None
+
+    # ------------------------------------------------------------------ #
+    # Status / reporting
+    # ------------------------------------------------------------------ #
+    def _status(
+        self,
+        outcomes: list[MethodOutcome],
+        fully_scanned_department: bool,
+        pages_examined: int,
+        candidate_articles: int,
+    ) -> str:
+        if not outcomes:
+            return "not_started"
+        ok_methods = [item for item in outcomes if item.status == "ok"]
+        ran_methods = [item for item in outcomes if item.status in {"ok", "empty"}]
+        blocked = [item for item in outcomes if item.status == "blocked"]
+        errored = [item for item in outcomes if item.status == "error"]
+        if not ran_methods:
+            if blocked and len(blocked) == len(outcomes):
+                return "blocked"
+            return "failed" if errored else "partial"
+        has_gaps = bool(blocked or errored)
+        real_scan = fully_scanned_department or (len(ok_methods) >= 1 and len(ran_methods) >= 2)
+        if real_scan:
+            return "completed_with_gaps" if has_gaps else "completed"
+        if pages_examined >= 3 or candidate_articles:
+            return "completed_with_gaps"
+        return "partial"
+
+    def _reason_parts(
+        self,
+        outcomes: list[MethodOutcome],
+        errors: list[dict[str, str]],
+        candidate_articles: int,
+        lead_count: int,
+    ) -> list[str]:
+        parts: list[str] = []
+        by_method: dict[str, MethodOutcome] = {item.method: item for item in outcomes}
+        for method, label in (
+            ("site_search", "站内搜索"),
+            ("external_search", "外部检索"),
+            ("sitemap", "Sitemap"),
+            ("department_feed", "部门栏目"),
+            ("wechat", "公众号线索"),
+            ("reverse_match", "反向匹配"),
+            ("navigation", "导航发现"),
+        ):
+            outcome = by_method.get(method)
+            if outcome is None:
+                continue
+            if outcome.status == "blocked":
+                parts.append(f"{label}受限({outcome.detail})")
+            elif outcome.status == "error":
+                parts.append(f"{label}失败({outcome.detail})")
+            elif outcome.status == "ok":
+                parts.append(f"{label}成功({outcome.items}条)")
+        if candidate_articles == 0 and not any(item.status == "ok" for item in outcomes):
+            parts.append("各通道均未发现近期赛事通知")
+        elif lead_count == 0:
+            parts.append(f"共检查{candidate_articles}条候选文章，未发现符合近期窗口的赛事通知")
+        return parts
+
+    def _channel_stats(self, outcomes: list[MethodOutcome]) -> dict[str, Any]:
+        stats: dict[str, Any] = {}
+        for outcome in outcomes:
+            stats[outcome.method] = {
+                "status": outcome.status,
+                "items": outcome.items,
+                "detail": outcome.detail,
+            }
+        return stats
+
+    def _department_label(self, url: str, method: str) -> str | None:
+        if method != "department_feed":
+            return None
+        path = urlparse(url).path.lower()
+        for label, keywords in DEPARTMENT_HINTS:
+            if any(keyword in path for keyword in keywords):
+                return label
+        return None
+
+    # ------------------------------------------------------------------ #
+    # Small utilities
+    # ------------------------------------------------------------------ #
+    def _wait_search(self) -> None:
+        with SEARCH_LOCK:
+            time.sleep(0.8)
+
+    def _decode_bing_url(self, value: str) -> str | None:
+        if value.startswith("http") and "bing.com/ck/a" not in value:
+            return value
+        parsed = urlparse(value)
+        encoded = parse_qs(parsed.query).get("u", [None])[0]
+        if not encoded:
+            return None
+        encoded = unquote(encoded)
+        if encoded.startswith("a1"):
+            encoded = encoded[2:]
+        try:
+            padded = encoded + "=" * (-len(encoded) % 4)
+            decoded = base64.urlsafe_b64decode(padded).decode("utf-8")
+            return decoded if decoded.startswith("http") else None
+        except (ValueError, UnicodeDecodeError):
+            return None
+
+    def _is_official_domain(self, candidate: str, official_domain: str) -> bool:
+        official = official_domain.lower().lstrip("www.")
+        candidate = candidate.lower().lstrip("www.")
+        return candidate == official or candidate.endswith(f".{official}")
+
+    def _is_blocked(self, result: Any) -> bool:
+        message = getattr(result, "message", "") or ""
+        status_code = getattr(result, "status_code", None)
+        return "Blocked by robots" in message or status_code in {403, 429}
+
+    def _normalize(self, value: str) -> str:
+        value = re.sub(r"第[一二三四五六七八九十百零〇0-9]+届", "", value)
+        return re.sub(r"[^0-9a-z\u4e00-\u9fff]", "", value.lower())
+
+    def _parse_iso_date(self, value: str) -> datetime | None:
+        if not value:
+            return None
+        match = re.search(r"(20\d{2})[-/.](\d{1,2})[-/.](\d{1,2})", value)
+        if not match:
+            return None
+        try:
+            return datetime(int(match.group(1)), int(match.group(2)), int(match.group(3)), tzinfo=timezone.utc)
+        except ValueError:
+            return None
+
+    def _batches(self, rows: list[dict[str, Any]]) -> list[list[dict[str, Any]]]:
+        return [rows[index : index + 8] for index in range(0, len(rows), 8)]

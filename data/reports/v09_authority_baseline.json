@@ -1,0 +1,63 @@
+{
+  "generated_at": "2026-09-04T12:33:36.781167+00:00",
+  "competitions_total": 143,
+  "editions_total": 53,
+  "status_counts": {
+    "verified_official": 10,
+    "pending_verification": 89,
+    "school_confirmed": 32,
+    "unverified": 12
+  },
+  "competitions_with_s_source": 10,
+  "competitions_with_a_source": 0,
+  "competitions_only_university_college_sources": 118,
+  "competitions_without_any_source": 12,
+  "duplicate_source_rows_per_competition": 0,
+  "duplicate_source_rows_detail": [],
+  "url_used_by_multiple_competitions": 4,
+  "url_multi_competition_detail": [
+    {
+      "url": "local-source://wuhan-sports-university/journalism/2026/catalog.pdf",
+      "competitions": 97,
+      "count": 97
+    },
+    {
+      "url": "https://github.com/Tomzkl/college-competitions-skill/blob/main/competition-catalog.md",
+      "competitions": 24,
+      "count": 24
+    },
+    {
+      "url": "https://journal.whu.edu.cn/uploadfiles/2025061120jgu.pdf",
+      "competitions": 5,
+      "count": 5
+    },
+    {
+      "url": "https://ucc.fltrp.com/c/2023-05-30/519108.shtml",
+      "competitions": 2,
+      "count": 2
+    }
+  ],
+  "competitions_with_multiple_sa_official_urls": 1,
+  "multi_sa_url_detail": [
+    {
+      "competition_id": 4,
+      "distinct_urls": 2
+    }
+  ],
+  "source_type_distribution": {
+    "college_official_notice": 23,
+    "github_seed": 24,
+    "government_official_notice": 1,
+    "official_notice": 2,
+    "organizer_official": 4,
+    "organizer_official_notice": 4,
+    "university_official_notice": 76,
+    "university_policy": 102
+  },
+  "authority_level_distribution": {
+    "B": 178,
+    "C": 23,
+    "D": 24,
+    "S": 11
+  }
+}

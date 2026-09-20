@@ -1,0 +1,9 @@
+[program:competition-scheduler]
+directory=/www/wwwroot/competition/backend
+environment=ENVIRONMENT=production
+command=/www/wwwroot/competition/backend/venv/bin/python scripts/run_v1_prod_ops.py --loop-minutes 1440
+autostart=true
+autorestart=true
+startsecs=10
+stderr_logfile=/www/wwwroot/competition/data/logs/supervisor-scheduler.err.log
+stdout_logfile=/www/wwwroot/competition/data/logs/supervisor-scheduler.out.log

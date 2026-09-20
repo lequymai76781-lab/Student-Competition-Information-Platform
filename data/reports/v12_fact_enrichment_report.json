@@ -1,0 +1,599 @@
+{
+  "pipeline": "v12-fact-enrichment",
+  "dry_run": false,
+  "generated_at": "2026-09-05T14:27:46.268142+00:00",
+  "registry_dir": "D:\\Python\\xuesheng\\data\\seeds\\v12_fact_registry",
+  "entries": [
+    {
+      "competition_id": 1,
+      "name": "中国国际大学生创新大赛",
+      "notes": "永久主办方字段曾误含2026届承办省份江苏省人民政府；依据2024/2025/2026三年教育部通知取交集（不含当届承办省市）。",
+      "actions": [
+        {
+          "type": "unchanged",
+          "field": "organizer"
+        },
+        {
+          "type": "unchanged",
+          "field": "undertakers"
+        },
+        {
+          "type": "unchanged",
+          "field": "target_students"
+        },
+        {
+          "type": "organization_link",
+          "organization": "教育部",
+          "role": "organizer",
+          "mode": "unchanged"
+        },
+        {
+          "type": "organization_link",
+          "organization": "中央统战部",
+          "role": "organizer",
+          "mode": "unchanged"
+        },
+        {
+          "type": "organization_link",
+          "organization": "中央网信办",
+          "role": "organizer",
+          "mode": "unchanged"
+        },
+        {
+          "type": "organization_link",
+          "organization": "国家发展改革委",
+          "role": "organizer",
+          "mode": "unchanged"
+        },
+        {
+          "type": "organization_link",
+          "organization": "工业和信息化部",
+          "role": "organizer",
+          "mode": "unchanged"
+        },
+        {
+          "type": "organization_link",
+          "organization": "人力资源社会保障部",
+          "role": "organizer",
+          "mode": "unchanged"
+        },
+        {
+          "type": "organization_link",
+          "organization": "农业农村部",
+          "role": "organizer",
+          "mode": "unchanged"
+        },
+        {
+          "type": "organization_link",
+          "organization": "中国科学院",
+          "role": "organizer",
+          "mode": "unchanged"
+        },
+        {
+          "type": "organization_link",
+          "organization": "中国工程院",
+          "role": "organizer",
+          "mode": "unchanged"
+        },
+        {
+          "type": "organization_link",
+          "organization": "国家知识产权局",
+          "role": "organizer",
+          "mode": "unchanged"
+        },
+        {
+          "type": "organization_link",
+          "organization": "共青团中央",
+          "role": "organizer",
+          "mode": "unchanged"
+        },
+        {
+          "type": "organization_removal_skip",
+          "organization": "江苏省人民政府",
+          "role": "organizer",
+          "message": "link not found"
+        },
+        {
+          "type": "organization_removal_skip",
+          "organization": "南京大学",
+          "role": "undertaker",
+          "message": "link not found"
+        },
+        {
+          "type": "organization_removal_skip",
+          "organization": "南京市人民政府",
+          "role": "undertaker",
+          "message": "link not found"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "competition_id": 2,
+      "name": "“挑战杯”全国大学生课外学术科技作品竞赛",
+      "notes": "官方简介与第十九届通知均载明共同主办：共青团中央、中国科协、教育部、中国社会科学院、全国学联（当届另含承办省份）。",
+      "actions": [
+        {
+          "type": "unchanged",
+          "field": "organizer"
+        },
+        {
+          "type": "organization_link",
+          "organization": "共青团中央",
+          "role": "organizer",
+          "mode": "unchanged"
+        },
+        {
+          "type": "organization_link",
+          "organization": "中国科协",
+          "role": "organizer",
+          "mode": "unchanged"
+        },
+        {
+          "type": "organization_link",
+          "organization": "教育部",
+          "role": "organizer",
+          "mode": "unchanged"
+        },
+        {
+          "type": "organization_link",
+          "organization": "中国社会科学院",
+          "role": "organizer",
+          "mode": "unchanged"
+        },
+        {
+          "type": "organization_link",
+          "organization": "全国学联",
+          "role": "organizer",
+          "mode": "unchanged"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "competition_id": 3,
+      "name": "“挑战杯”中国大学生创业计划竞赛",
+      "notes": "与课外学术科技作品竞赛为并列项目，共用挑战杯官方网站。",
+      "actions": [
+        {
+          "type": "unchanged",
+          "field": "organizer"
+        },
+        {
+          "type": "organization_link",
+          "organization": "共青团中央",
+          "role": "organizer",
+          "mode": "unchanged"
+        },
+        {
+          "type": "organization_link",
+          "organization": "中国科协",
+          "role": "organizer",
+          "mode": "unchanged"
+        },
+        {
+          "type": "organization_link",
+          "organization": "教育部",
+          "role": "organizer",
+          "mode": "unchanged"
+        },
+        {
+          "type": "organization_link",
+          "organization": "中国社会科学院",
+          "role": "organizer",
+          "mode": "unchanged"
+        },
+        {
+          "type": "organization_link",
+          "organization": "全国学联",
+          "role": "organizer",
+          "mode": "unchanged"
+        },
+        {
+          "type": "organization_removal_skip",
+          "organization": "人社部",
+          "role": "organizer",
+          "message": "link not found"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "competition_id": 4,
+      "name": "全国大学生数学建模竞赛",
+      "notes": "官方章程（2023年修订稿）载明由中国工业与应用数学学会主办；研究生不得参赛。",
+      "actions": [
+        {
+          "type": "unchanged",
+          "field": "target_students"
+        },
+        {
+          "type": "organization_link",
+          "organization": "中国工业与应用数学学会",
+          "role": "organizer",
+          "mode": "unchanged"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "competition_id": 5,
+      "name": "全国大学生电子设计竞赛",
+      "notes": "参赛对象与组队规则出自2025年全国竞赛组委会正式通知。",
+      "actions": [
+        {
+          "type": "unchanged",
+          "field": "target_students"
+        },
+        {
+          "type": "organization_link",
+          "organization": "全国大学生电子设计竞赛组织委员会",
+          "role": "organizer",
+          "mode": "unchanged"
+        },
+        {
+          "type": "organization_removal",
+          "organization": "全国大学生电子设计竞赛组织委员会",
+          "role": "organizer",
+          "reason": "全国组委会是组织机制而非独立主办机构（主办为教育部、工业和信息化部），不写入机构主办关系"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "competition_id": 24,
+      "name": "外研社·国才杯“理解当代中国”全国大学生外语能力大赛",
+      "notes": "2026年大赛官方通知载明：北京外国语大学主办、外语教学与研究出版社承办。",
+      "actions": [
+        {
+          "type": "unchanged",
+          "field": "organizer"
+        },
+        {
+          "type": "unchanged",
+          "field": "undertakers"
+        },
+        {
+          "type": "unchanged",
+          "field": "target_students"
+        },
+        {
+          "type": "organization_link",
+          "organization": "北京外国语大学",
+          "role": "organizer",
+          "mode": "unchanged"
+        },
+        {
+          "type": "organization_link",
+          "organization": "外语教学与研究出版社",
+          "role": "undertaker",
+          "mode": "unchanged"
+        },
+        {
+          "type": "organization_removal_skip",
+          "organization": "外语教学与研究出版社",
+          "role": "organizer",
+          "message": "link not found"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "competition_id": 65,
+      "name": "中华经典诵写讲大赛",
+      "notes": "教育部、国家语委2026年正式通知（教语用函〔2026〕1号）。",
+      "actions": [
+        {
+          "type": "unchanged",
+          "field": "organizer"
+        },
+        {
+          "type": "unchanged",
+          "field": "target_students"
+        },
+        {
+          "type": "organization_link",
+          "organization": "教育部",
+          "role": "organizer",
+          "mode": "unchanged"
+        },
+        {
+          "type": "organization_link",
+          "organization": "国家语委",
+          "role": "organizer",
+          "mode": "unchanged"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "competition_id": 99,
+      "name": "全国大学生数学竞赛",
+      "notes": "第十八届（2026）通知由中国数学会青年工作与大学生数学竞赛委员会发布；cmathc.org.cn为赛事信息发布平台，来源沿用既有审核结论，另记录核验提示。",
+      "actions": [
+        {
+          "type": "unchanged",
+          "field": "target_students"
+        },
+        {
+          "type": "organization_link",
+          "organization": "中国数学会",
+          "role": "organizer",
+          "mode": "unchanged"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "competition_id": 125,
+      "name": "中国研究生企业管理创新大赛",
+      "notes": "官方赛事管理平台（cpipc.acge.org.cn）载明参赛对象与当届赛程。",
+      "actions": [
+        {
+          "type": "unchanged",
+          "field": "target_students"
+        },
+        {
+          "type": "organization_link",
+          "organization": "中国学位与研究生教育学会",
+          "role": "organizer",
+          "mode": "unchanged"
+        },
+        {
+          "type": "organization_link",
+          "organization": "全国工商管理专业学位研究生教育指导委员会",
+          "role": "organizer",
+          "mode": "unchanged"
+        },
+        {
+          "type": "organization_link",
+          "organization": "教育部学位管理与研究生教育司",
+          "role": "guiding",
+          "mode": "unchanged"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "competition_id": 1,
+      "name": "中国国际大学生创新大赛",
+      "notes": "教育部2024/2025/2026三年正式通知均已本地存档。",
+      "actions": [
+        {
+          "type": "edition",
+          "year": 2024,
+          "mode": "updated"
+        },
+        {
+          "type": "edition",
+          "year": 2025,
+          "mode": "updated"
+        },
+        {
+          "type": "edition",
+          "year": 2026,
+          "mode": "updated"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "competition_id": 2,
+      "name": "“挑战杯”全国大学生课外学术科技作品竞赛",
+      "notes": "第十九届（2025）官方通知正文已存档。",
+      "actions": [
+        {
+          "type": "edition",
+          "year": 2025,
+          "mode": "updated"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "competition_id": 3,
+      "name": "“挑战杯”中国大学生创业计划竞赛",
+      "notes": "第十五届（2026）官方通知正文已存档。",
+      "actions": [
+        {
+          "type": "edition",
+          "year": 2026,
+          "mode": "updated"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "competition_id": 4,
+      "name": "全国大学生数学建模竞赛",
+      "notes": "2025届《报名和参赛须知》（2025-04-02修订）PDF已存档，含报名/竞赛/提交时间节点。",
+      "actions": [
+        {
+          "type": "edition",
+          "year": 2025,
+          "mode": "updated"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "competition_id": 5,
+      "name": "全国大学生电子设计竞赛",
+      "notes": "2025国赛与2026专题赛官方通知已存档；2024为双数年赛区赛暨专题赛（偶数年非全国统赛年）。",
+      "actions": [
+        {
+          "type": "edition",
+          "year": 2024,
+          "mode": "updated"
+        },
+        {
+          "type": "edition",
+          "year": 2025,
+          "mode": "updated"
+        },
+        {
+          "type": "edition",
+          "year": 2026,
+          "mode": "updated"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "competition_id": 24,
+      "name": "外研社·国才杯“理解当代中国”全国大学生外语能力大赛",
+      "notes": "2026年大赛官方通知（2026-04-16）已存档。",
+      "actions": [
+        {
+          "type": "edition",
+          "year": 2026,
+          "mode": "updated"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "competition_id": 32,
+      "name": "“西门子杯”中国智能制造挑战赛",
+      "notes": "2026年第二十届竞赛通知已存档。",
+      "actions": [
+        {
+          "type": "edition",
+          "year": 2026,
+          "mode": "updated"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "competition_id": 34,
+      "name": "中国大学生计算机设计大赛",
+      "notes": "2026年（第19届）官网赛事动态显示全国决赛与评审结果公示已于2026-08至09月完成。",
+      "actions": [
+        {
+          "type": "edition",
+          "year": 2026,
+          "mode": "updated"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "competition_id": 59,
+      "name": "中国好创意暨全国数字艺术设计大赛",
+      "notes": "官网赛事通道显示第20届常规赛道报名及作品提交至2026-07-01，最终获奖名单2026-08-15公布。",
+      "actions": [
+        {
+          "type": "edition",
+          "year": 2026,
+          "mode": "updated"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "competition_id": 65,
+      "name": "中华经典诵写讲大赛",
+      "notes": "教育部、国家语委2026年正式通知（教语用函〔2026〕1号）已存档。",
+      "actions": [
+        {
+          "type": "edition",
+          "year": 2026,
+          "mode": "updated"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "competition_id": 99,
+      "name": "全国大学生数学竞赛",
+      "notes": "cmathc.org.cn 为赛事信息发布平台，通知来源为中国数学会/全国大学生数学竞赛工作组；18届正文已存档，17/16届页面为通知标题与发布时间（正文页未全文存档）。",
+      "actions": [
+        {
+          "type": "edition",
+          "year": 2024,
+          "mode": "updated"
+        },
+        {
+          "type": "edition",
+          "year": 2025,
+          "mode": "updated"
+        },
+        {
+          "type": "edition",
+          "year": 2026,
+          "mode": "updated"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "competition_id": 125,
+      "name": "中国研究生企业管理创新大赛",
+      "notes": "官方管理平台（cpipc.acge.org.cn）载明第四届赛程与参赛对象。",
+      "actions": [
+        {
+          "type": "edition",
+          "year": 2026,
+          "mode": "updated"
+        }
+      ],
+      "errors": []
+    }
+  ],
+  "counters": {
+    "audit_rows": 19,
+    "competition_fields_changed": 0,
+    "competition_fields_conflict": 0,
+    "edition_fields_changed": 0,
+    "editions_created": 0,
+    "editions_updated": 18,
+    "entries": 21,
+    "fact_rows_added": 0,
+    "organization_links_added": 0,
+    "organization_links_removed": 1,
+    "organization_links_updated": 0,
+    "organizations_created": 0,
+    "skipped_competition_missing": 0,
+    "skipped_evidence_missing": 0,
+    "source_links_added": 0,
+    "sources_added": 0,
+    "sources_existing": 38
+  },
+  "status_before": {
+    "competitions": {
+      "verified_official": 31,
+      "pending_verification": 24,
+      "suspected": 7,
+      "authority_confirmed": 69,
+      "duplicate": 2,
+      "unverified": 1,
+      "school_confirmed": 9
+    },
+    "editions": {
+      "verified_official": 23,
+      "school_confirmed": 31,
+      "pending_verification": 8
+    }
+  },
+  "status_after": {
+    "competitions": {
+      "verified_official": 31,
+      "pending_verification": 24,
+      "suspected": 7,
+      "authority_confirmed": 69,
+      "duplicate": 2,
+      "unverified": 1,
+      "school_confirmed": 9
+    },
+    "editions": {
+      "verified_official": 23,
+      "school_confirmed": 31,
+      "pending_verification": 8
+    }
+  },
+  "status_deltas": {
+    "competitions": {},
+    "editions": {}
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "stage": "Academic Conference V1.2 quality report",
+  "generated_at": "2026-09-06T11:41:53+00:00",
+  "reference_date": "2026-09-06",
+  "counts": {
+    "series": 206,
+    "editions": 132,
+    "opportunities": 15,
+    "sources": 289,
+    "candidates": 3,
+    "school_conferences": 8,
+    "discipline_mappings": 54,
+    "organization_links": 242
+  },
+  "by_discipline_series": {
+    "artificial_intelligence": 15,
+    "computer_science": 91,
+    "data_science": 17,
+    "economics": 2,
+    "education": 15,
+    "engineering": 18,
+    "interdisciplinary": 9,
+    "journalism_communication": 18,
+    "management": 2,
+    "natural_sciences": 4,
+    "sports_science": 15
+  },
+  "by_discipline_editions": {
+    "artificial_intelligence": 7,
+    "computer_science": 52,
+    "data_science": 12,
+    "economics": 1,
+    "education": 14,
+    "engineering": 9,
+    "interdisciplinary": 2,
+    "journalism_communication": 17,
+    "natural_sciences": 3,
+    "sports_science": 15
+  },
+  "opportunity_status": {
+    "open": 1,
+    "closing_soon": 0,
+    "upcoming": 0,
+    "closed": 3,
+    "held": 1,
+    "unknown": 10
+  },
+  "opportunity_type": {
+    "abstract_submission": 1,
+    "doctoral_consortium": 2,
+    "paper_submission": 6,
+    "poster": 3,
+    "student_forum": 1,
+    "undergraduate_forum": 1,
+    "young_scholar_forum": 1
+  },
+  "opportunity_audience": {
+    "early_career": 1,
+    "master": 2,
+    "phd": 4,
+    "undergraduate": 2,
+    "unknown_or_not_stated": 9
+  },
+  "opportunity_evidence": {
+    "full_page_verified": 15,
+    "pending_or_limited": 0
+  },
+  "recognition": {
+    "recognition_records": 36,
+    "records_with_direct_source_url": 36,
+    "by_system_level": {
+      "CCF-A": 26,
+      "CCF-B": 9,
+      "CCF-C": 1
+    }
+  }
+}

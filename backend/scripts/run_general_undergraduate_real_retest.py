@@ -1,0 +1,159 @@
+"""Read-only real retest for twelve non-Gold schools from old Batch A."""
+from __future__ import annotations
+
+import json
+import sqlite3
+import sys
+from collections import Counter
+from datetime import datetime, timezone
+from hashlib import sha256
+from pathlib import Path
+from urllib.parse import urlsplit
+
+import httpx
+
+BACKEND = Path(__file__).resolve().parents[1]
+ROOT = BACKEND.parent
+if str(BACKEND) not in sys.path:
+    sys.path.insert(0, str(BACKEND))
+
+from app.crawler.discovery.url_normalizer import OfficialUrlNormalizer
+from app.crawler.extractors.competition_extractor import CompetitionExtractor
+from app.crawler.extractors.policy_classifier import PolicyClassifier
+from app.crawler.extractors.policy_relation_extractor import PolicyRelationExtractor
+from app.crawler.parsers.html_parser import HtmlContentParser
+from app.crawler.parsers.pdf_parser import PdfParser
+
+SEED = ROOT / "data/seeds/general_undergraduate_retest_search_snapshot.json"
+REPORT = ROOT / "data/reports/general_undergraduate_real_retest.json"
+RAW = ROOT / "data/raw/general_undergraduate_real_retest"
+DB = ROOT / "data/v02.sqlite"
+POLICY_CATEGORIES = {
+    "competition_policy", "competition_catalog", "innovation_credit_policy", "second_classroom_policy",
+}
+
+
+def known_competitions() -> list[str]:
+    database_uri = f"file:{DB.as_posix()}?mode=ro&immutable=1"
+    with sqlite3.connect(database_uri, uri=True) as db:
+        return [
+            row[0] for row in db.execute(
+                "SELECT name FROM competitions WHERE is_demo=0 AND is_competition=1 ORDER BY length(name) DESC"
+            )
+        ]
+
+
+def main() -> None:
+    seed = json.loads(SEED.read_text(encoding="utf-8"))["schools"]
+    url_normalizer = OfficialUrlNormalizer()
+    classifier = PolicyClassifier()
+    html_parser = HtmlContentParser()
+    competition_extractor = CompetitionExtractor()
+    relation_extractor = PolicyRelationExtractor()
+    known_names = known_competitions()
+    rows: list[dict] = []
+    headers = {"User-Agent": "StudentCompetitionIntelligenceBot/0.2 (+policy-research; contact: local-dev)"}
+    RAW.mkdir(parents=True, exist_ok=True)
+
+    with httpx.Client(timeout=20, follow_redirects=True, headers=headers) as client:
+        for school in seed:
+            sources: list[dict] = []
+            failures: list[dict] = []
+            rejected: list[dict] = []
+            recognition_keys: set[tuple[str, str]] = set()
+            notification_count = 0
+            reachable = 0
+            for candidate in school["results"]:
+                url = url_normalizer.normalize(candidate["url"])
+                if not url_normalizer.is_official(url, school["official_domain"]):
+                    rejected.append({"url": url, "reason": "off_official_domain"})
+                    continue
+                try:
+                    response = client.get(url)
+                    if response.status_code >= 400:
+                        failures.append({"url": url, "status_code": response.status_code, "error": f"HTTP {response.status_code}"})
+                        continue
+                except httpx.HTTPError as exc:
+                    failures.append({"url": url, "status_code": None, "error": f"{type(exc).__name__}: {exc}"})
+                    continue
+                reachable += 1
+                is_pdf = Path(urlsplit(url).path).suffix.lower() == ".pdf" or "pdf" in response.headers.get("content-type", "").lower()
+                if is_pdf:
+                    path = RAW / f"{sha256(response.content).hexdigest()[:20]}.pdf"
+                    if not path.exists():
+                        path.write_bytes(response.content)
+                    parsed = PdfParser().parse(path)
+                    if parsed.error:
+                        failures.append({"url": url, "status_code": response.status_code, "error": f"parse: {parsed.error}"})
+                        continue
+                    text = parsed.text
+                else:
+                    parsed = html_parser.parse(response.text, str(response.url))
+                    text = parsed.text
+                classification = classifier.classify(candidate["title"], text)
+                if classification.category in POLICY_CATEGORIES:
+                    sources.append({
+                        "url": url,
+                        "title": candidate["title"],
+                        "category": classification.category,
+                        "recognition_eligible": classification.recognition_eligible,
+                    })
+                    if classification.recognition_eligible:
+                        extracted = competition_extractor.extract(text, known_names)
+                        for relation in relation_extractor.extract(
+                            extracted, text, classification.category, title=candidate["title"]
+                        ):
+                            if relation.recognition_status == "recognized":
+                                recognition_keys.add((relation.raw_competition_name, url))
+                elif classification.category == "competition_notice":
+                    notification_count += 1
+                    sources.append({"url": url, "title": candidate["title"], "category": classification.category})
+                else:
+                    rejected.append({"url": url, "title": candidate["title"], "category": classification.category})
+
+            if sources:
+                status = "VERIFIED_DATA"
+            elif failures and reachable == 0 and all(
+                item.get("status_code") in {403, 412} or any(
+                    term in item["error"].lower() for term in ("ssl", "timeout", "connect", "login")
+                ) for item in failures
+            ):
+                status = "ACCESS_LIMITED"
+            elif any(item.get("category") == "general_policy" for item in rejected):
+                status = "AMBIGUOUS"
+            else:
+                status = "DISCOVERY_FAILED"
+            rows.append({
+                "school": school["school"],
+                "final_status": status,
+                "recognition": len(recognition_keys),
+                "notification": notification_count,
+                "source": len(sources),
+                "sources": sources,
+                "rejected": rejected,
+                "failures": failures,
+            })
+
+    status_counts = Counter(row["final_status"] for row in rows)
+    for status in ("VERIFIED_DATA", "VERIFIED_NO_PUBLIC_POLICY", "ACCESS_LIMITED", "DISCOVERY_FAILED", "AMBIGUOUS"):
+        status_counts.setdefault(status, 0)
+    payload = {
+        "task": "GENERAL_UNDERGRADUATE_DISCOVERY_FIX_01_REAL_RETEST",
+        "generated_at": datetime.now(timezone.utc).isoformat(),
+        "method": "live official-domain refetch of a current policy-query snapshot; read-only; no DB import",
+        "school_count": len(rows),
+        "status_counts": dict(status_counts),
+        "totals": {
+            "recognition": sum(row["recognition"] for row in rows),
+            "notification": sum(row["notification"] for row in rows),
+            "source": sum(row["source"] for row in rows),
+        },
+        "schools": rows,
+    }
+    REPORT.parent.mkdir(parents=True, exist_ok=True)
+    REPORT.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    print(json.dumps({"status_counts": dict(status_counts), "totals": payload["totals"]}, ensure_ascii=False))
+
+
+if __name__ == "__main__":
+    main()

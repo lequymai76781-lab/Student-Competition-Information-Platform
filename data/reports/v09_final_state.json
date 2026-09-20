@@ -1,0 +1,18 @@
+{
+  "users": 1,
+  "competitions": 143,
+  "editions": 53,
+  "notice_relations": 75,
+  "policy_recognitions": 102,
+  "leads": 491,
+  "sources": 236,
+  "school_competition_rows": 172,
+  "competitions_without_sa_verified_source": 133,
+  "competitions_only_university_policy_source": 63,
+  "competitions_school_confirmed": 32,
+  "competitions_pending_verification": 89,
+  "competitions_verified_official": 10,
+  "school_level_rows": 102,
+  "school_notice_rows": 70,
+  "schools_with_notice_relations": 49
+}

@@ -1,0 +1,4712 @@
+{
+  "editions": [
+    {
+      "series_key": "neurips",
+      "year": 2026,
+      "edition_name": "NeurIPS 2026",
+      "edition_number": 40,
+      "start_date": "2026-12-06",
+      "end_date": "2026-12-12",
+      "country_or_region": "澳大利亚",
+      "city": "悉尼",
+      "venue": null,
+      "edition_status": "announced",
+      "paper_deadline": "2026-05-06",
+      "notification_date": "2026-09-24",
+      "registration_deadline": "2026-10-30",
+      "edition_official_url": "https://neurips.cc/Conferences/2026",
+      "call_for_papers_url": null,
+      "notes": "主会 2026-12-08 至 12-10；workshops/competitions 12-11 至 12-12；Expo Day 12-06。registration_deadline 为早鸟注册截止（官方 Dates 页）。",
+      "sources": [
+        {
+          "source_type": "conference_official_site",
+          "source_name": "NeurIPS 2026 官方 Dates and Deadlines",
+          "source_url": "https://nips.cc/Conferences/2026/Dates",
+          "official_domain": "neurips.cc",
+          "document_name": "2026 Dates and Deadlines",
+          "retrieved_at": "2026-09-06",
+          "notes": "官方确认悉尼主会场日期与论文/注册截止。"
+        }
+      ],
+      "school_relations": [],
+      "opportunities": [
+        {
+          "series_key": "neurips",
+          "year": 2026,
+          "opportunity_type": "paper_submission",
+          "title": "NeurIPS 2026 论文投稿",
+          "official_label": "Call for Papers",
+          "description": "NeurIPS 2026 官方论文投稿（官方 Dates 页记录 paper deadline）。",
+          "audience": null,
+          "deadline": "2026-05-06",
+          "open_date": null,
+          "participation_mode": null,
+          "official_url": "https://neurips.cc/Conferences/2026",
+          "evidence": "NeurIPS 2026 官方会议页 Dates 区域写明论文投稿截止。",
+          "evidence_status": "full_page_verified",
+          "notes": "投稿面向全体研究者开放；未从官方页获得学生专属限制，不写 audience。",
+          "source": {
+            "source_type": "conference_official_site",
+            "source_name": "NeurIPS 2026 论文投稿 官方来源",
+            "source_url": "https://neurips.cc/Conferences/2026",
+            "official_domain": "neurips.cc",
+            "notes": "NeurIPS 2026 官方会议页 Dates 区域写明论文投稿截止。"
+          }
+        }
+      ]
+    },
+    {
+      "series_key": "cvpr",
+      "year": 2026,
+      "edition_name": "CVPR 2026",
+      "start_date": "2026-06-03",
+      "end_date": "2026-06-07",
+      "country_or_region": "美国",
+      "city": "丹佛",
+      "venue": "Colorado Convention Center",
+      "edition_status": "held",
+      "edition_official_url": "https://cvpr.thecvf.com/Conferences/2026",
+      "notes": "官方新闻页确认 2026-06-03 至 06-07 在丹佛 Colorado Convention Center 举行。",
+      "sources": [
+        {
+          "source_type": "conference_official_site",
+          "source_name": "CVPR 2026 官方新闻（Media Registration）",
+          "source_url": "https://cvpr.thecvf.com/Conferences/2026/News/Media_Reg_Open",
+          "official_domain": "thecvf.com",
+          "retrieved_at": "2026-09-06",
+          "notes": "官方确认举办时间与地点。"
+        }
+      ],
+      "school_relations": []
+    },
+    {
+      "series_key": "icml",
+      "year": 2026,
+      "edition_name": "ICML 2026",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-11",
+      "country_or_region": "韩国",
+      "city": "首尔",
+      "venue": "COEX Convention & Exhibition Center",
+      "edition_status": "held",
+      "edition_official_url": "https://icml.cc/Conferences/2026",
+      "notes": "官方页面确认 2026-07-06 至 07-11 在首尔 COEX 举行。",
+      "sources": [
+        {
+          "source_type": "conference_official_site",
+          "source_name": "ICML 2026 官方网站",
+          "source_url": "https://icml.cc/Conferences/2026",
+          "official_domain": "icml.cc",
+          "retrieved_at": "2026-09-06",
+          "notes": "官方确认日期、城市与会场。"
+        }
+      ],
+      "school_relations": []
+    },
+    {
+      "series_key": "iclr",
+      "year": 2026,
+      "edition_name": "ICLR 2026",
+      "edition_number": 14,
+      "start_date": "2026-04-23",
+      "end_date": "2026-04-27",
+      "country_or_region": "巴西",
+      "city": "里约热内卢",
+      "venue": "Riocentro Convention and Event Center",
+      "edition_status": "held",
+      "edition_official_url": "https://iclr.cc/Conferences/2026",
+      "notes": "官方页面确认 2026-04-23 至 04-27 在里约 Riocentro 举行。",
+      "sources": [
+        {
+          "source_type": "conference_official_site",
+          "source_name": "ICLR 2026 官方网站",
+          "source_url": "https://iclr.cc/Conferences/2026",
+          "official_domain": "iclr.cc",
+          "retrieved_at": "2026-09-06"
+        }
+      ],
+      "school_relations": []
+    },
+    {
+      "series_key": "acl",
+      "year": 2026,
+      "edition_name": "ACL 2026",
+      "edition_number": 64,
+      "start_date": "2026-07-02",
+      "end_date": "2026-07-07",
+      "country_or_region": "美国",
+      "city": "圣迭戈",
+      "venue": null,
+      "edition_status": "held",
+      "edition_official_url": "https://2026.aclweb.org/",
+      "call_for_papers_url": "https://2026.aclweb.org/calls/main_conference_papers/",
+      "notes": "tutorials 07-02；workshops 07-03 至 07-04；main conference 07-05 至 07-07。",
+      "sources": [
+        {
+          "source_type": "conference_official_site",
+          "source_name": "ACL 2026 官方网站",
+          "source_url": "https://2026.aclweb.org/",
+          "official_domain": "aclweb.org",
+          "retrieved_at": "2026-09-06",
+          "notes": "官方确认 2026-07-02 至 07-07 在 San Diego 举行。"
+        }
+      ],
+      "school_relations": []
+    },
+    {
+      "series_key": "aaai",
+      "year": 2026,
+      "edition_name": "AAAI-26",
+      "edition_number": 40,
+      "start_date": "2026-01-20",
+      "end_date": "2026-01-27",
+      "country_or_region": "新加坡",
+      "city": "新加坡",
+      "venue": "Singapore EXPO",
+      "edition_status": "held",
+      "edition_official_url": "https://aaai.org/conference/aaai/aaai-26/",
+      "notes": "主技术轨 2026-01-22 至 01-25；整体会期 01-20 至 01-27（新加坡）。",
+      "sources": [
+        {
+          "source_type": "conference_official_site",
+          "source_name": "AAAI-26 官网 Main Technical Track",
+          "source_url": "https://aaai.org/conference/aaai/aaai-26/main-technical-track/",
+          "official_domain": "aaai.org",
+          "retrieved_at": "2026-09-06",
+          "notes": "AAAI 官网确认新加坡会期与会场。"
+        }
+      ],
+      "school_relations": []
+    },
+    {
+      "series_key": "ijcai",
+      "year": 2026,
+      "edition_name": "IJCAI-ECAI 2026",
+      "edition_number": 35,
+      "start_date": "2026-08-15",
+      "end_date": "2026-08-21",
+      "country_or_region": "德国",
+      "city": "不来梅",
+      "venue": null,
+      "edition_status": "held",
+      "edition_official_url": "https://2026.ijcai.org/",
+      "notes": "workshops/tutorials 08-15 至 08-17；main technical program 08-18 至 08-21。",
+      "sources": [
+        {
+          "source_type": "conference_official_site",
+          "source_name": "IJCAI-ECAI 2026 官方网站",
+          "source_url": "https://2026.ijcai.org/",
+          "official_domain": "ijcai.org",
+          "retrieved_at": "2026-09-06"
+        }
+      ],
+      "school_relations": []
+    },
+    {
+      "series_key": "kdd",
+      "year": 2026,
+      "edition_name": "KDD 2026",
+      "edition_number": 32,
+      "start_date": "2026-08-09",
+      "end_date": "2026-08-13",
+      "country_or_region": "韩国",
+      "city": "济州",
+      "venue": "ICC Jeju",
+      "edition_status": "held",
+      "edition_official_url": "https://kdd2026.kdd.org/",
+      "notes": "ACM SIGKDD 官方确认 2026-08-09 至 08-13 在济州举行。",
+      "sources": [
+        {
+          "source_type": "conference_official_site",
+          "source_name": "KDD 2026 官方网站",
+          "source_url": "https://kdd2026.kdd.org/",
+          "official_domain": "kdd.org",
+          "retrieved_at": "2026-09-06"
+        }
+      ],
+      "school_relations": []
+    },
+    {
+      "series_key": "www",
+      "year": 2026,
+      "edition_name": "The Web Conference 2026",
+      "edition_number": 35,
+      "start_date": "2026-06-29",
+      "end_date": "2026-07-03",
+      "country_or_region": "阿联酋",
+      "city": "迪拜",
+      "venue": null,
+      "edition_status": "held",
+      "edition_official_url": "https://www2026.thewebconf.org/",
+      "notes": "官网确认 2026-06-29 至 07-03 在迪拜举行（原 2026-04-13 至 04-17 计划延期）。",
+      "sources": [
+        {
+          "source_type": "conference_official_site",
+          "source_name": "The Web Conference 2026 官网",
+          "source_url": "https://www2026.thewebconf.org/about.html",
+          "official_domain": "thewebconf.org",
+          "retrieved_at": "2026-09-06",
+          "notes": "官网确认延期后日期。"
+        }
+      ],
+      "school_relations": []
+    },
+    {
+      "series_key": "sigir",
+      "year": 2026,
+      "edition_name": "SIGIR 2026",
+      "edition_number": 49,
+      "start_date": "2026-07-20",
+      "end_date": "2026-07-24",
+      "country_or_region": "澳大利亚",
+      "city": "墨尔本",
+      "venue": null,
+      "edition_status": "held",
+      "edition_official_url": "https://sigir2026.org/",
+      "call_for_papers_url": "https://sigir2026.org/en-AU/pages/submissions/full-papers-track",
+      "notes": "官网确认 2026-07-20 至 07-24 在墨尔本举行。",
+      "sources": [
+        {
+          "source_type": "conference_official_site",
+          "source_name": "SIGIR 2026 官方网站",
+          "source_url": "https://sigir2026.org/",
+          "official_domain": "sigir2026.org",
+          "retrieved_at": "2026-09-06"
+        }
+      ],
+      "school_relations": []
+    },
+    {
+      "series_key": "sigmod",
+      "year": 2026,
+      "edition_name": "SIGMOD/PODS 2026",
+      "start_date": "2026-05-31",
+      "end_date": "2026-06-05",
+      "country_or_region": "印度",
+      "city": "班加罗尔",
+      "venue": null,
+      "edition_status": "held",
+      "edition_official_url": "https://2026.sigmod.org/",
+      "notes": "2026-05-31 至 06-05（5月31日 workshops，主会 06-02 至 06-04）。",
+      "sources": [
+        {
+          "source_type": "conference_official_site",
+          "source_name": "SIGMOD 2026 官方网站",
+          "source_url": "https://2026.sigmod.org/",
+          "official_domain": "sigmod.org",
+          "retrieved_at": "2026-09-06"
+        }
+      ],
+      "school_relations": []
+    },
+    {
+      "series_key": "vldb",
+      "year": 2026,
+      "edition_name": "VLDB 2026",
+      "edition_number": 52,
+      "start_date": "2026-08-31",
+      "end_date": "2026-09-04",
+      "country_or_region": "美国",
+      "city": "波士顿",
+      "venue": "The Westin Boston Seaport District",
+      "edition_status": "held",
+      "edition_official_url": "https://vldb.org/2026/",
+      "notes": "主会 2026-09-01 至 09-03；full conference 08-31 至 09-04。",
+      "sources": [
+        {
+          "source_type": "conference_official_site",
+          "source_name": "VLDB 2026 官方网站",
+          "source_url": "https://vldb.org/2026/",
+          "official_domain": "vldb.org",
+          "retrieved_at": "2026-09-06"
+        }
+      ],
+      "school_relations": []
+    },
+    {
+      "series_key": "chi",
+      "year": 2026,
+      "edition_name": "CHI 2026",
+      "start_date": "2026-04-13",
+      "end_date": "2026-04-17",
+      "country_or_region": "西班牙",
+      "city": "巴塞罗那",
+      "venue": "International Barcelona Convention Centre",
+      "edition_status": "held",
+      "edition_official_url": "https://chi2026.acm.org/",
+      "notes": "官网确认 2026-04-13 至 04-17 在巴塞罗那举行。",
+      "sources": [
+        {
+          "source_type": "conference_official_site",
+          "source_name": "CHI 2026 官方网站",
+          "source_url": "https://chi2026.acm.org/",
+          "official_domain": "chi2026.acm.org",
+          "retrieved_at": "2026-09-06"
+        }
+      ],
+      "school_relations": []
+    },
+    {
+      "series_key": "sigcomm",
+      "year": 2026,
+      "edition_name": "SIGCOMM 2026",
+      "edition_number": 40,
+      "start_date": "2026-08-17",
+      "end_date": "2026-08-21",
+      "country_or_region": "美国",
+      "city": "丹佛",
+      "venue": "Colorado Convention Center",
+      "edition_status": "held",
+      "edition_official_url": "https://conferences.sigcomm.org/sigcomm/2026/",
+      "notes": "workshops/tutorials 08-17；main conference 08-18 至 08-21。",
+      "sources": [
+        {
+          "source_type": "conference_official_site",
+          "source_name": "SIGCOMM 2026 官方网站",
+          "source_url": "https://conferences.sigcomm.org/sigcomm/2026/",
+          "official_domain": "sigcomm.org",
+          "retrieved_at": "2026-09-06"
+        }
+      ],
+      "school_relations": []
+    },
+    {
+      "series_key": "usenix_security",
+      "year": 2026,
+      "edition_name": "USENIX Security '26",
+      "edition_number": 35,
+      "start_date": "2026-08-12",
+      "end_date": "2026-08-14",
+      "country_or_region": "美国",
+      "city": "巴尔的摩",
+      "venue": "Baltimore Marriott Waterfront",
+      "edition_status": "held",
+      "edition_official_url": "https://www.usenix.org/conference/usenixsecurity26",
+      "notes": "USENIX 官网确认 2026-08-12 至 08-14 在巴尔的摩举行。",
+      "sources": [
+        {
+          "source_type": "conference_official_site",
+          "source_name": "USENIX Security '26 官网",
+          "source_url": "https://www.usenix.org/conference/usenixsecurity26",
+          "official_domain": "usenix.org",
+          "retrieved_at": "2026-09-06"
+        }
+      ],
+      "school_relations": []
+    },
+    {
+      "series_key": "ndss",
+      "year": 2026,
+      "edition_name": "NDSS Symposium 2026",
+      "edition_number": 33,
+      "start_date": "2026-02-23",
+      "end_date": "2026-02-27",
+      "country_or_region": "美国",
+      "city": "圣迭戈",
+      "venue": "Wyndham San Diego Bayside",
+      "edition_status": "held",
+      "edition_official_url": "https://www.ndss-symposium.org/ndss2026/",
+      "notes": "NDSS 官网确认 2026-02-23 至 02-27 在 San Diego 举行。",
+      "sources": [
+        {
+          "source_type": "conference_official_site",
+          "source_name": "NDSS Symposium 2026 官网",
+          "source_url": "https://www.ndss-symposium.org/ndss2026/attend/venue-and-travel-information/",
+          "official_domain": "ndss-symposium.org",
+          "retrieved_at": "2026-09-06"
+        }
+      ],
+      "school_relations": []
+    },
+    {
+      "series_key": "ccs",
+      "year": 2026,
+      "edition_name": "ACM CCS 2026",
+      "start_date": "2026-11-15",
+      "end_date": "2026-11-19",
+      "country_or_region": "荷兰",
+      "city": "海牙",
+      "venue": "The World Forum",
+      "edition_status": "announced",
+      "edition_official_url": "https://www.sigsac.org/ccs/CCS2026/",
+      "call_for_papers_url": "https://www.sigsac.org/ccs/CCS2026/call-for/call-for-papers.html",
+      "notes": "官网确认 2026-11-15 至 11-19 在海牙举行。",
+      "sources": [
+        {
+          "source_type": "conference_official_site",
+          "source_name": "ACM CCS 2026 官方网站",
+          "source_url": "https://www.sigsac.org/ccs/CCS2026/organization/organizing-committee.html",
+          "official_domain": "sigsac.org",
+          "retrieved_at": "2026-09-06"
+        }
+      ],
+      "school_relations": []
+    },
+    {
+      "series_key": "osdi",
+      "year": 2026,
+      "edition_name": "OSDI '26",
+      "edition_number": 20,
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-15",
+      "country_or_region": "美国",
+      "city": "西雅图",
+      "venue": "The Westin Seattle",
+      "edition_status": "held",
+      "edition_official_url": "https://www.usenix.org/conference/osdi26",
+      "notes": "USENIX 官网确认 2026-07-13 至 07-15 在西雅图举行。",
+      "sources": [
+        {
+          "source_type": "conference_official_site",
+          "source_name": "OSDI '26 官网",
+          "source_url": "https://www.usenix.org/conference/osdi26",
+          "official_domain": "usenix.org",
+          "retrieved_at": "2026-09-06"
+        }
+      ],
+      "school_relations": []
+    },
+    {
+      "series_key": "asplos",
+      "year": 2026,
+      "edition_name": "ASPLOS 2026",
+      "start_date": "2026-03-22",
+      "end_date": "2026-03-26",
+      "country_or_region": "美国",
+      "city": "匹兹堡",
+      "venue": null,
+      "edition_status": "held",
+      "edition_official_url": "https://www.asplos-conference.org/asplos2026/",
+      "notes": "官网确认 2026-03-22 至 03-26 在 Pittsburgh 举行；workshops/tutorials 03-22 至 03-23，主会 03-24 至 03-26。",
+      "sources": [
+        {
+          "source_type": "conference_official_site",
+          "source_name": "ASPLOS 2026 官方网站",
+          "source_url": "https://www.asplos-conference.org/asplos2026/",
+          "official_domain": "asplos-conference.org",
+          "retrieved_at": "2026-09-06"
+        }
+      ],
+      "school_relations": []
+    },
+    {
+      "series_key": "isca",
+      "year": 2026,
+      "edition_name": "ISCA 2026",
+      "edition_number": 53,
+      "start_date": "2026-06-27",
+      "end_date": "2026-07-01",
+      "country_or_region": "美国",
+      "city": "罗利",
+      "venue": "Raleigh Convention Center",
+      "edition_status": "held",
+      "edition_official_url": "https://iscaconf.org/isca2026/",
+      "notes": "官网确认 2026-06-27 至 07-01 在 Raleigh 举行。",
+      "sources": [
+        {
+          "source_type": "conference_official_site",
+          "source_name": "ISCA 2026 官方网站",
+          "source_url": "https://iscaconf.org/isca2026/",
+          "official_domain": "iscaconf.org",
+          "retrieved_at": "2026-09-06"
+        }
+      ],
+      "school_relations": []
+    },
+    {
+      "series_key": "icra",
+      "year": 2026,
+      "edition_name": "ICRA 2026",
+      "start_date": "2026-06-01",
+      "end_date": "2026-06-05",
+      "country_or_region": "奥地利",
+      "city": "维也纳",
+      "venue": "Messe Wien (VIECON)",
+      "edition_status": "held",
+      "edition_official_url": "https://2026.ieee-icra.org/",
+      "notes": "官网确认 2026-06-01 至 06-05 在维也纳举行。",
+      "sources": [
+        {
+          "source_type": "conference_official_site",
+          "source_name": "ICRA 2026 官方网站",
+          "source_url": "https://2026.ieee-icra.org/about/",
+          "official_domain": "ieee-icra.org",
+          "retrieved_at": "2026-09-06"
+        }
+      ],
+      "school_relations": []
+    },
+    {
+      "series_key": "eccv",
+      "year": 2026,
+      "edition_name": "ECCV 2026",
+      "edition_number": 18,
+      "start_date": "2026-09-08",
+      "end_date": "2026-09-12",
+      "country_or_region": "瑞典",
+      "city": "马尔默",
+      "venue": "Malmö Arena and Malmömässan",
+      "edition_status": "held",
+      "edition_official_url": "https://eccv.ecva.net/Conferences/2026",
+      "notes": "workshops/tutorials 09-08 至 09-09；main conference/expo 09-10 至 09-12。",
+      "sources": [
+        {
+          "source_type": "conference_official_site",
+          "source_name": "ECCV 2026 官方网站",
+          "source_url": "https://eccv.ecva.net/Conferences/2026",
+          "official_domain": "ecva.net",
+          "retrieved_at": "2026-09-06"
+        }
+      ],
+      "school_relations": []
+    },
+    {
+      "series_key": "interspeech",
+      "year": 2026,
+      "edition_name": "Interspeech 2026",
+      "edition_number": 27,
+      "start_date": "2026-09-27",
+      "end_date": "2026-10-01",
+      "country_or_region": "澳大利亚",
+      "city": "悉尼",
+      "venue": "International Convention Centre Sydney",
+      "edition_status": "held",
+      "edition_official_url": "https://interspeech2026.org/",
+      "notes": "官网确认 2026-09-27 至 10-01 在悉尼举行。",
+      "sources": [
+        {
+          "source_type": "conference_official_site",
+          "source_name": "Interspeech 2026 官方网站",
+          "source_url": "https://interspeech2026.org/",
+          "official_domain": "interspeech2026.org",
+          "retrieved_at": "2026-09-06"
+        }
+      ],
+      "school_relations": []
+    },
+    {
+      "series_key": "cncc",
+      "year": 2026,
+      "edition_name": "CNCC2026",
+      "start_date": "2026-10-21",
+      "end_date": "2026-10-24",
+      "country_or_region": "中国",
+      "city": "成都",
+      "venue": "中国西部国际博览城/天府国际会议中心",
+      "edition_status": "announced",
+      "edition_official_url": "https://ccf.org.cn/CNCC2026",
+      "notes": "CNCC2026 主题“数聚驱动，智算未来”；大会官网由 CCF 提供。",
+      "sources": [
+        {
+          "source_type": "national_society_official_meeting_page",
+          "source_name": "中国计算机学会 CNCC2026 邀请函",
+          "source_url": "https://www.ccf.org.cn/Media_list/cncc/2026-06-30/908223.shtml",
+          "official_domain": "ccf.org.cn",
+          "published_at": "2026-06-30",
+          "retrieved_at": "2026-09-06"
+        }
+      ],
+      "school_relations": []
+    },
+    {
+      "series_key": "hpc_china",
+      "year": 2026,
+      "edition_name": "CCF HPC China 2026",
+      "edition_number": 22,
+      "start_date": "2026-10-17",
+      "end_date": "2026-10-20",
+      "country_or_region": "中国",
+      "city": "深圳",
+      "venue": "深圳国际会展中心",
+      "edition_status": "announced",
+      "edition_official_url": "https://www.ccf.org.cn/Activities/Event_calendar/zw/2026-08-12/923158.shtml",
+      "notes": "第二十二届；CCF 主办，CCF 高性能计算专委会等承办。",
+      "sources": [
+        {
+          "source_type": "national_society_official_meeting_page",
+          "source_name": "CCF 活动日历（HPC China2026）",
+          "source_url": "https://www.ccf.org.cn/Activities/Event_calendar/zw/2026-08-12/923158.shtml",
+          "official_domain": "ccf.org.cn",
+          "published_at": "2026-08-12",
+          "retrieved_at": "2026-09-06"
+        }
+      ],
+      "school_relations": []
+    },
+    {
+      "series_key": "cfa_finance",
+      "year": 2026,
+      "edition_name": "第二十三届中国金融学年会",
+      "edition_number": 23,
+      "start_date": "2026-10-23",
+      "end_date": "2026-10-25",
+      "country_or_region": "中国",
+      "city": "天津",
+      "venue": "南开大学津南校区",
+      "edition_status": "announced",
+      "edition_official_url": "https://finance.nankai.edu.cn/2026/0609/c34541a598014/page.htm",
+      "notes": "中国金融学年会理事会与南开大学共同主办，南开大学金融学院与国家创新与金融研究院承办。",
+      "sources": [
+        {
+          "source_type": "university_official",
+          "source_name": "南开大学金融学院公告（第一号）",
+          "source_url": "https://finance.nankai.edu.cn/2026/0609/c34541a598014/page.htm",
+          "official_domain": "nankai.edu.cn",
+          "published_at": "2026-06-09",
+          "retrieved_at": "2026-09-06",
+          "notes": "B 级高校来源；会议身份另由年会理事会来源佐证。"
+        },
+        {
+          "source_type": "organizer_official",
+          "source_name": "中国金融研究网（年会公告转载）",
+          "source_url": "https://www.cfrn.com.cn/hyxx/detail/11413.html",
+          "official_domain": "cfrn.com.cn",
+          "published_at": "2026-06-09",
+          "retrieved_at": "2026-09-06"
+        }
+      ],
+      "school_relations": [
+        {
+          "school_name": "南开大学",
+          "relation_type": "organizer",
+          "responsible_college": "金融学院",
+          "notice_url": "https://finance.nankai.edu.cn/2026/0609/c34541a598014/page.htm",
+          "notes": "南开大学金融学院承办；高校官网为 B 级补充来源。",
+          "source_type": "university_official"
+        }
+      ]
+    },
+    {
+      "series_key": "chemsoc_annual",
+      "year": 2026,
+      "edition_name": "中国化学会第35届学术年会",
+      "edition_number": 35,
+      "start_date": "2026-04-11",
+      "end_date": "2026-04-14",
+      "country_or_region": "中国",
+      "city": "重庆",
+      "venue": "重庆科学会堂",
+      "edition_status": "held",
+      "edition_official_url": "https://www.cast.org.cn/xw/qgxh/ZHXX/art/2026/art_e9158a2b974e4c2f9c1d05c516934254.html",
+      "notes": "年会主题“赋能化学 新质未来”；共设学术分会 72 个。",
+      "sources": [
+        {
+          "source_type": "association_official_notice",
+          "source_name": "中国科协官网（学会学术信息）",
+          "source_url": "https://www.cast.org.cn/xw/qgxh/ZHXX/art/2026/art_e9158a2b974e4c2f9c1d05c516934254.html",
+          "official_domain": "cast.org.cn",
+          "published_at": "2026-04-13",
+          "retrieved_at": "2026-09-06"
+        }
+      ],
+      "school_relations": []
+    },
+    {
+      "series_key": "ndbc",
+      "year": 2025,
+      "edition_name": "NDBC 2025",
+      "edition_number": 42,
+      "start_date": "2025-08-01",
+      "end_date": "2025-08-03",
+      "country_or_region": "中国",
+      "city": "长春",
+      "venue": null,
+      "edition_status": "held",
+      "edition_official_url": "https://tc.ccf.org.cn/tcdb/news/2025-08-07/848485.shtml",
+      "notes": "第42届；CCF 主办，CCF 数据库专委会与吉林大学共同承办。",
+      "sources": [
+        {
+          "source_type": "subcommittee_official",
+          "source_name": "CCF 数据库专委会新闻",
+          "source_url": "https://tc.ccf.org.cn/tcdb/news/2025-08-07/848485.shtml",
+          "official_domain": "ccf.org.cn",
+          "published_at": "2025-08-07",
+          "retrieved_at": "2026-09-06"
+        }
+      ],
+      "school_relations": [
+        {
+          "school_name": "吉林大学",
+          "relation_type": "undertaker",
+          "notice_url": null,
+          "notes": "官方专委会新闻确认吉林大学为共同承办单位（S 级来源）。",
+          "source_type": "subcommittee_official"
+        }
+      ]
+    },
+    {
+      "series_key": "cac",
+      "year": 2025,
+      "edition_name": "CAC2025",
+      "start_date": "2025-10-10",
+      "end_date": "2025-10-12",
+      "country_or_region": "中国",
+      "city": "哈尔滨",
+      "venue": "哈尔滨亚冬体育馆",
+      "edition_status": "held",
+      "edition_official_url": "https://cms.cast.org.cn/xw/qgxh/ZHXX/art/2025/art_88f213d86f87406babad9ca4622a13e7.html",
+      "notes": "主题“以智赋能 掌控未来”；中国自动化学会主办，哈尔滨工程大学、哈尔滨工业大学承办，哈尔滨理工大学协办。",
+      "sources": [
+        {
+          "source_type": "association_official_notice",
+          "source_name": "中国科协官网（学会活动报道）",
+          "source_url": "https://cms.cast.org.cn/xw/qgxh/ZHXX/art/2025/art_88f213d86f87406babad9ca4622a13e7.html",
+          "official_domain": "cast.org.cn",
+          "published_at": "2025-10-15",
+          "retrieved_at": "2026-09-06"
+        }
+      ],
+      "school_relations": [
+        {
+          "school_name": "哈尔滨工程大学",
+          "relation_type": "undertaker",
+          "notice_url": "http://news.hrbeu.edu.cn/info/1141/87353.htm",
+          "notes": "哈工程官网新闻确认承办。",
+          "source_type": "university_official"
+        },
+        {
+          "school_name": "哈尔滨工业大学",
+          "relation_type": "co_undertaker",
+          "notice_url": "https://news.hit.edu.cn/2025/1013/c11819a239514/page.htm",
+          "notes": "哈工大新闻网确认共同承办。",
+          "source_type": "university_official"
+        }
+      ]
+    },
+    {
+      "series_key": "cms_annual",
+      "year": 2025,
+      "edition_name": "中国数学会2025年学术年会",
+      "start_date": "2025-10-16",
+      "end_date": "2025-10-20",
+      "country_or_region": "中国",
+      "city": "滨州",
+      "venue": null,
+      "edition_status": "held",
+      "edition_official_url": "https://www.cms.org.cn/index.php/Home/notices/notices_details/id/1296.html",
+      "notes": "10-16 报到、10-20 离会；山东航空学院承办（不在高校注册表中，未建 SchoolConference）。",
+      "sources": [
+        {
+          "source_type": "national_society_official_meeting_page",
+          "source_name": "中国数学会2025年学术年会第一轮会议通知",
+          "source_url": "https://www.cms.org.cn/index.php/Home/notices/notices_details/id/1296.html",
+          "official_domain": "cms.org.cn",
+          "published_at": "2025-03-26",
+          "retrieved_at": "2026-09-06"
+        }
+      ],
+      "school_relations": []
+    },
+    {
+      "series_key": "cps_autumn",
+      "year": 2025,
+      "edition_name": "中国物理学会2025秋季学术会议",
+      "start_date": "2025-09-12",
+      "end_date": "2025-09-14",
+      "country_or_region": "中国",
+      "city": "哈尔滨",
+      "venue": "哈尔滨工程大学（综合体育馆）",
+      "edition_status": "held",
+      "edition_official_url": "https://cps2025.scimeeting.cn/",
+      "notes": "中国物理学会主办，哈尔滨工程大学承办；设 21 个分会专题。",
+      "sources": [
+        {
+          "source_type": "conference_official_site",
+          "source_name": "中国物理学会2025秋季学术会议官网",
+          "source_url": "https://cps2025.scimeeting.cn/",
+          "official_domain": "scimeeting.cn",
+          "retrieved_at": "2026-09-06"
+        }
+      ],
+      "school_relations": [
+        {
+          "school_name": "哈尔滨工程大学",
+          "relation_type": "undertaker",
+          "notice_url": "http://news.hrbeu.edu.cn/info/1141/87157.htm",
+          "notes": "哈工程官网新闻确认承办。",
+          "source_type": "university_official"
+        }
+      ]
+    },
+    {
+      "series_key": "cstam_mechanics",
+      "year": 2025,
+      "edition_name": "中国力学大会-2025",
+      "start_date": "2025-07-18",
+      "end_date": "2025-07-21",
+      "country_or_region": "中国",
+      "city": "长沙",
+      "venue": "长沙国际会议中心",
+      "edition_status": "held",
+      "edition_official_url": "https://cctam2025.cstam.org.cn/",
+      "notes": "中国力学学会联合国防科技大学等主办；7-18 全天报到。",
+      "sources": [
+        {
+          "source_type": "national_society_official_meeting_page",
+          "source_name": "中国力学学会官网（中国力学大会-2025）",
+          "source_url": "https://www.cstam.org.cn/188/202503/21118.html",
+          "official_domain": "cstam.org.cn",
+          "published_at": "2025-03-16",
+          "retrieved_at": "2026-09-06"
+        }
+      ],
+      "school_relations": [
+        {
+          "school_name": "国防科技大学",
+          "relation_type": "co_organizer",
+          "notice_url": null,
+          "notes": "大会官网参会通知列明联合主办单位（S 级来源）。",
+          "source_type": "conference_official_site"
+        }
+      ]
+    },
+    {
+      "series_key": "eurosys",
+      "year": 2026,
+      "edition_name": "EuroSys 2026",
+      "edition_number": null,
+      "start_date": "2026-04-27",
+      "end_date": "2026-04-30",
+      "country_or_region": "英国",
+      "city": "爱丁堡",
+      "venue": null,
+      "edition_status": "held",
+      "edition_official_url": "https://2026.eurosys.org/",
+      "call_for_papers_url": null,
+      "notes": "官网确认 2026-04-27（周一）至 04-30（周四）在爱丁堡举行。",
+      "student_value_tags": null,
+      "audience": null,
+      "participation_details": null,
+      "paper_details": null,
+      "school_relations": [],
+      "sources": [
+        {
+          "source_type": "conference_official_site",
+          "source_name": "EuroSys 2026 官网（Overview/Program）",
+          "source_url": "https://2026.eurosys.org/",
+          "official_domain": "eurosys.org",
+          "retrieved_at": "2026-09-06",
+          "notes": "官方页面确认会期与城市。"
+        }
+      ]
+    },
+    {
+      "series_key": "nsdi",
+      "year": 2026,
+      "edition_name": "USENIX NSDI '26",
+      "edition_number": null,
+      "start_date": "2026-05-04",
+      "end_date": "2026-05-06",
+      "country_or_region": "美国",
+      "city": "Renton（华盛顿州）",
+      "venue": null,
+      "edition_status": "held",
+      "edition_official_url": "https://www.usenix.org/conference/nsdi26",
+      "call_for_papers_url": null,
+      "notes": "USENIX 官方会议页确认 2026-05-04 至 05-06 在华盛顿州 Renton 举行。",
+      "student_value_tags": null,
+      "audience": null,
+      "participation_details": null,
+      "paper_details": null,
+      "school_relations": [],
+      "sources": [
+        {
+          "source_type": "conference_official_site",
+          "source_name": "USENIX NSDI '26 官网",
+          "source_url": "https://www.usenix.org/conference/nsdi26",
+          "official_domain": "usenix.org",
+          "retrieved_at": "2026-09-06",
+          "notes": "USENIX 官方会议页。"
+        }
+      ]
+    },
+    {
+      "series_key": "fast",
+      "year": 2026,
+      "edition_name": "USENIX FAST '26",
+      "edition_number": null,
+      "start_date": "2026-02-24",
+      "end_date": "2026-02-26",
+      "country_or_region": "美国",
+      "city": "圣克拉拉",
+      "venue": null,
+      "edition_status": "held",
+      "edition_official_url": "https://www.usenix.org/conference/fast26",
+      "call_for_papers_url": null,
+      "notes": "USENIX 官方会议页确认 2026-02-24 至 02-26 在 Santa Clara 举行。",
+      "student_value_tags": null,
+      "audience": null,
+      "participation_details": null,
+      "paper_details": null,
+      "school_relations": [],
+      "sources": [
+        {
+          "source_type": "conference_official_site",
+          "source_name": "USENIX FAST '26 官网",
+          "source_url": "https://www.usenix.org/conference/fast26",
+          "official_domain": "usenix.org",
+          "retrieved_at": "2026-09-06",
+          "notes": "USENIX 官方会议页。"
+        }
+      ]
+    },
+    {
+      "series_key": "hpca",
+      "year": 2026,
+      "edition_name": "HPCA 2026",
+      "edition_number": null,
+      "start_date": "2026-01-31",
+      "end_date": "2026-02-04",
+      "country_or_region": "澳大利亚",
+      "city": "悉尼",
+      "venue": null,
+      "edition_status": "held",
+      "edition_official_url": "https://2026.hpca-conf.org/",
+      "call_for_papers_url": null,
+      "notes": "HPCA 2026 官方会议页确认 2026-01-31 至 02-04 在悉尼举行（与 PPoPP 2026 同期）。",
+      "student_value_tags": null,
+      "audience": null,
+      "participation_details": null,
+      "paper_details": null,
+      "school_relations": [],
+      "sources": [
+        {
+          "source_type": "conference_official_site",
+          "source_name": "HPCA 2026 官网",
+          "source_url": "https://2026.hpca-conf.org/",
+          "official_domain": "hpca-conf.org",
+          "retrieved_at": "2026-09-06",
+          "notes": "官方页面确认会期与城市。"
+        }
+      ]
+    },
+    {
+      "series_key": "ppopp",
+      "year": 2026,
+      "edition_name": "PPoPP 2026",
+      "edition_number": null,
+      "start_date": "2026-01-31",
+      "end_date": "2026-02-04",
+      "country_or_region": "澳大利亚",
+      "city": "悉尼",
+      "venue": null,
+      "edition_status": "held",
+      "edition_official_url": "https://ppopp26.sigplan.org/",
+      "call_for_papers_url": null,
+      "notes": "SIGPLAN 会议官网确认 2026-01-31 至 02-04 在悉尼举行。",
+      "student_value_tags": null,
+      "audience": null,
+      "participation_details": null,
+      "paper_details": null,
+      "school_relations": [],
+      "sources": [
+        {
+          "source_type": "conference_official_site",
+          "source_name": "PPoPP 2026 官网",
+          "source_url": "https://ppopp26.sigplan.org/",
+          "official_domain": "sigplan.org",
+          "retrieved_at": "2026-09-06",
+          "notes": "SIGPLAN 官方会议页。"
+        }
+      ]
+    },
+    {
+      "series_key": "icfp",
+      "year": 2026,
+      "edition_name": "ICFP 2026",
+      "edition_number": null,
+      "start_date": "2026-08-24",
+      "end_date": "2026-08-29",
+      "country_or_region": "美国",
+      "city": "印第安纳波利斯",
+      "venue": null,
+      "edition_status": "held",
+      "edition_official_url": "https://icfp26.sigplan.org/",
+      "call_for_papers_url": null,
+      "notes": "SIGPLAN 官网：主会 2026-08-25 至 08-27，会议整体周期 08-24 至 08-29（含 tutorial/workshop 等）。",
+      "student_value_tags": null,
+      "audience": null,
+      "participation_details": null,
+      "paper_details": null,
+      "school_relations": [],
+      "sources": [
+        {
+          "source_type": "conference_official_site",
+          "source_name": "ICFP 2026 官网",
+          "source_url": "https://icfp26.sigplan.org/",
+          "official_domain": "sigplan.org",
+          "retrieved_at": "2026-09-06",
+          "notes": "官方页面确认整体会期与主会日期。"
+        }
+      ]
+    },
+    {
+      "series_key": "splash",
+      "year": 2026,
+      "edition_name": "SPLASH 2026（含 OOPSLA）",
+      "edition_number": null,
+      "start_date": "2026-10-03",
+      "end_date": "2026-10-09",
+      "country_or_region": "美国",
+      "city": "奥克兰",
+      "venue": null,
+      "edition_status": "announced",
+      "edition_official_url": "https://2026.splashcon.org/",
+      "call_for_papers_url": null,
+      "notes": "官方页面显示 2026-10-03（周六）至 10-09（周五）在加州奥克兰举行；OOPSLA 研究论文、海报、博士生研讨会等均在会期内。",
+      "student_value_tags": [
+        "paper_submission",
+        "poster",
+        "doctoral_consortium"
+      ],
+      "audience": null,
+      "participation_details": null,
+      "paper_details": null,
+      "school_relations": [],
+      "sources": [
+        {
+          "source_type": "conference_official_site",
+          "source_name": "SPLASH 2026 官网",
+          "source_url": "https://2026.splashcon.org/",
+          "official_domain": "splashcon.org",
+          "retrieved_at": "2026-09-06",
+          "notes": "官网列明会期、地点，并说明 OOPSLA/poster/doctoral symposium 等环节。"
+        }
+      ],
+      "opportunities": [
+        {
+          "series_key": "splash",
+          "year": 2026,
+          "opportunity_type": "paper_submission",
+          "title": "OOPSLA 研究论文投稿",
+          "official_label": "OOPSLA Research Papers",
+          "description": "SPLASH 2026（OOPSLA）官方研究论文投稿环节。",
+          "audience": null,
+          "deadline": null,
+          "open_date": null,
+          "participation_mode": null,
+          "official_url": "https://2026.splashcon.org/",
+          "evidence": "SPLASH 2026 官方页面列明 OOPSLA 研究论文、海报与博士生研讨会等环节。",
+          "evidence_status": "full_page_verified",
+          "notes": null,
+          "source": {
+            "source_type": "conference_official_site",
+            "source_name": "OOPSLA 研究论文投稿 官方来源",
+            "source_url": "https://2026.splashcon.org/",
+            "official_domain": "2026.splashcon.org",
+            "notes": "SPLASH 2026 官方页面列明 OOPSLA 研究论文、海报与博士生研讨会等环节。"
+          }
+        },
+        {
+          "series_key": "splash",
+          "year": 2026,
+          "opportunity_type": "poster",
+          "title": "SPLASH 2026 海报",
+          "official_label": "Posters",
+          "description": "官方海报环节（面向全体投稿人，具体截止以官网当年页为准）。",
+          "audience": null,
+          "deadline": null,
+          "open_date": null,
+          "participation_mode": null,
+          "official_url": "https://2026.splashcon.org/",
+          "evidence": "SPLASH 2026 官方页面列明海报环节。",
+          "evidence_status": "full_page_verified",
+          "notes": null,
+          "source": {
+            "source_type": "conference_official_site",
+            "source_name": "SPLASH 2026 海报 官方来源",
+            "source_url": "https://2026.splashcon.org/",
+            "official_domain": "2026.splashcon.org",
+            "notes": "SPLASH 2026 官方页面列明海报环节。"
+          }
+        },
+        {
+          "series_key": "splash",
+          "year": 2026,
+          "opportunity_type": "doctoral_consortium",
+          "title": "SPLASH 2026 博士生研讨会",
+          "official_label": "Doctoral Consortium",
+          "description": "面向在读博士生的官方博士生研讨会。",
+          "audience": [
+            "phd"
+          ],
+          "deadline": null,
+          "open_date": null,
+          "participation_mode": null,
+          "official_url": "https://2026.splashcon.org/",
+          "evidence": "SPLASH 2026 官方页面列明 doctoral symposium/consortium 环节。",
+          "evidence_status": "full_page_verified",
+          "notes": null,
+          "source": {
+            "source_type": "conference_official_site",
+            "source_name": "SPLASH 2026 博士生研讨会 官方来源",
+            "source_url": "https://2026.splashcon.org/",
+            "official_domain": "2026.splashcon.org",
+            "notes": "SPLASH 2026 官方页面列明 doctoral symposium/consortium 环节。"
+          }
+        }
+      ]
+    },
+    {
+      "series_key": "issta",
+      "year": 2026,
+      "edition_name": "ISSTA 2026",
+      "edition_number": null,
+      "start_date": "2026-10-03",
+      "end_date": "2026-10-09",
+      "country_or_region": "美国",
+      "city": "奥克兰",
+      "venue": null,
+      "edition_status": "announced",
+      "edition_official_url": "https://conf.researchr.org/home/issta-2026",
+      "call_for_papers_url": null,
+      "notes": "官方会议页显示 2026-10-03 至 10-09 在奥克兰举行，并与 SPLASH 2026 同址联办（SPLASH/ISSTA 2026）。",
+      "student_value_tags": [
+        "paper_submission"
+      ],
+      "audience": null,
+      "participation_details": null,
+      "paper_details": null,
+      "school_relations": [],
+      "sources": [
+        {
+          "source_type": "conference_official_site",
+          "source_name": "ISSTA 2026 官网",
+          "source_url": "https://conf.researchr.org/home/issta-2026",
+          "official_domain": "researchr.org",
+          "retrieved_at": "2026-09-06",
+          "notes": "官方会议页确认会期与城市；SPLASH 赞助页亦写明联合举办。"
+        }
+      ],
+      "opportunities": [
+        {
+          "series_key": "issta",
+          "year": 2026,
+          "opportunity_type": "paper_submission",
+          "title": "ISSTA 2026 论文投稿",
+          "official_label": "Call for Papers",
+          "description": "ISSTA 2026 官方研究论文投稿（与 SPLASH 2026 同期同址）。",
+          "audience": null,
+          "deadline": null,
+          "open_date": null,
+          "participation_mode": null,
+          "official_url": "https://conf.researchr.org/home/issta-2026",
+          "evidence": "ISSTA 2026 官方会议页确认研究论文投稿环节。",
+          "evidence_status": "full_page_verified",
+          "notes": null,
+          "source": {
+            "source_type": "conference_official_site",
+            "source_name": "ISSTA 2026 论文投稿 官方来源",
+            "source_url": "https://conf.researchr.org/home/issta-2026",
+            "official_domain": "conf.researchr.org",
+            "notes": "ISSTA 2026 官方会议页确认研究论文投稿环节。"
+          }
+        }
+      ]
+    },
+    {
+      "series_key": "sc",
+      "year": 2026,
+      "edition_name": "SC26",
+      "edition_number": null,
+      "start_date": null,
+      "end_date": null,
+      "country_or_region": "美国",
+      "city": "芝加哥",
+      "venue": "McCormick Place",
+      "edition_status": "announced",
+      "edition_official_url": "https://sc26.supercomputing.org/",
+      "call_for_papers_url": null,
+      "notes": "2026-09-06 复核：SC26 官网首页确认城市为芝加哥、会场 McCormick Place，并提及 Students@SC 学生项目；会期模板页仍显示旧日期内容（模板 bug），未发现可靠 2026 会期，日期保持 NULL，待官网修复后回补。",
+      "student_value_tags": null,
+      "audience": null,
+      "participation_details": null,
+      "paper_details": null,
+      "school_relations": [],
+      "sources": [
+        {
+          "source_type": "conference_official_site",
+          "source_name": "SC26 官网",
+          "source_url": "https://sc26.supercomputing.org/",
+          "official_domain": "supercomputing.org",
+          "retrieved_at": "2026-09-06",
+          "notes": "2026-09-06 复核：官网确认在芝加哥 McCormick Place 举办；会期模板页存在旧日期 bug，未采信，日期保持 NULL。"
+        }
+      ]
+    },
+    {
+      "series_key": "infocom",
+      "year": 2026,
+      "edition_name": "INFOCOM 2026",
+      "edition_number": null,
+      "start_date": "2026-05-18",
+      "end_date": "2026-05-21",
+      "country_or_region": "日本",
+      "city": "东京",
+      "venue": null,
+      "edition_status": "held",
+      "edition_official_url": "https://infocom2026.ieee-infocom.org/",
+      "call_for_papers_url": null,
+      "notes": "官网页面确认 2026-05-18 至 05-21 在日本东京举行。",
+      "student_value_tags": null,
+      "audience": null,
+      "participation_details": null,
+      "paper_details": null,
+      "school_relations": [],
+      "sources": [
+        {
+          "source_type": "conference_official_site",
+          "source_name": "INFOCOM 2026 官网",
+          "source_url": "https://infocom2026.ieee-infocom.org/",
+          "official_domain": "ieee-infocom.org",
+          "retrieved_at": "2026-09-06",
+          "notes": "官方页面确认会期与城市。"
+        }
+      ]
+    },
+    {
+      "series_key": "icde",
+      "year": 2026,
+      "edition_name": "ICDE 2026",
+      "edition_number": null,
+      "start_date": "2026-05-04",
+      "end_date": "2026-05-08",
+      "country_or_region": "加拿大",
+      "city": "蒙特利尔",
+      "venue": null,
+      "edition_status": "held",
+      "edition_official_url": "https://icde2026.github.io/",
+      "call_for_papers_url": null,
+      "notes": "ICDE 2026 官方会议站确认 2026-05-04 至 05-08 在蒙特利尔举行。",
+      "student_value_tags": null,
+      "audience": null,
+      "participation_details": null,
+      "paper_details": null,
+      "school_relations": [],
+      "sources": [
+        {
+          "source_type": "conference_official_site",
+          "source_name": "ICDE 2026 官网",
+          "source_url": "https://icde2026.github.io/",
+          "official_domain": "icde2026.github.io",
+          "retrieved_at": "2026-09-06",
+          "notes": "官方会议站确认会期与城市。"
+        }
+      ]
+    },
+    {
+      "series_key": "mobicom",
+      "year": 2026,
+      "edition_name": "MobiCom '26",
+      "edition_number": null,
+      "start_date": "2026-10-26",
+      "end_date": "2026-10-30",
+      "country_or_region": "美国",
+      "city": "奥斯汀",
+      "venue": null,
+      "edition_status": "announced",
+      "edition_official_url": "https://www.sigmobile.org/mobicom/2026/",
+      "call_for_papers_url": null,
+      "notes": "ACM SIGMOBILE 官方会议页确认 2026-10-26 至 10-30 在奥斯汀举行。",
+      "student_value_tags": null,
+      "audience": null,
+      "participation_details": null,
+      "paper_details": null,
+      "school_relations": [],
+      "sources": [
+        {
+          "source_type": "conference_official_site",
+          "source_name": "MobiCom 2026 官网",
+          "source_url": "https://www.sigmobile.org/mobicom/2026/",
+          "official_domain": "sigmobile.org",
+          "retrieved_at": "2026-09-06",
+          "notes": "SIGMOBILE 官方会议页。"
+        }
+      ]
+    },
+    {
+      "series_key": "imc",
+      "year": 2026,
+      "edition_name": "IMC 2026",
+      "edition_number": null,
+      "start_date": "2026-10-12",
+      "end_date": "2026-10-16",
+      "country_or_region": "德国",
+      "city": "卡尔斯鲁厄",
+      "venue": null,
+      "edition_status": "announced",
+      "edition_official_url": "https://conferences.sigcomm.org/imc/2026/",
+      "call_for_papers_url": null,
+      "notes": "SIGCOMM 官方活动页确认 IMC 2026 于 2026-10-12 至 10-16 在德国卡尔斯鲁厄举行。",
+      "student_value_tags": null,
+      "audience": null,
+      "participation_details": null,
+      "paper_details": null,
+      "school_relations": [],
+      "sources": [
+        {
+          "source_type": "conference_official_site",
+          "source_name": "IMC 2026 官网",
+          "source_url": "https://conferences.sigcomm.org/imc/2026/",
+          "official_domain": "sigcomm.org",
+          "retrieved_at": "2026-09-06",
+          "notes": "SIGCOMM 官方会议页。"
+        }
+      ]
+    },
+    {
+      "series_key": "conext",
+      "year": 2026,
+      "edition_name": "CoNEXT 2026",
+      "edition_number": null,
+      "start_date": "2026-12-07",
+      "end_date": "2026-12-10",
+      "country_or_region": "荷兰",
+      "city": "乌得勒支",
+      "venue": null,
+      "edition_status": "announced",
+      "edition_official_url": "https://conferences.sigcomm.org/co-next/2026/",
+      "call_for_papers_url": null,
+      "notes": "官方会议页主页显示主会 2026-12-07 至 12-10；SIGCOMM events 页与 CFP 邮件另写 12-07 至 12-11，以官方会议页为准并在 notes 中保留差异。",
+      "student_value_tags": null,
+      "audience": null,
+      "participation_details": null,
+      "paper_details": null,
+      "school_relations": [],
+      "sources": [
+        {
+          "source_type": "conference_official_site",
+          "source_name": "ACM CoNEXT 2026 官网",
+          "source_url": "https://conferences.sigcomm.org/co-next/2026/#!/home",
+          "official_domain": "sigcomm.org",
+          "retrieved_at": "2026-09-06",
+          "notes": "官方会议页显示 12-07~10；SIGCOMM 事件页/CFP 显示 12-07~11。"
+        }
+      ]
+    },
+    {
+      "series_key": "sigmetrics",
+      "year": 2026,
+      "edition_name": "SIGMETRICS 2026",
+      "edition_number": null,
+      "start_date": "2026-06-08",
+      "end_date": "2026-06-12",
+      "country_or_region": "美国",
+      "city": "安娜堡",
+      "venue": null,
+      "edition_status": "held",
+      "edition_official_url": "https://www.sigmetrics.org/sigmetrics2026/",
+      "call_for_papers_url": null,
+      "notes": "官方会议页及 ACM 会议论文集页均确认 2026-06-08 至 06-12 在密歇根大学安娜堡举行。",
+      "student_value_tags": null,
+      "audience": null,
+      "participation_details": null,
+      "paper_details": null,
+      "school_relations": [],
+      "sources": [
+        {
+          "source_type": "conference_official_site",
+          "source_name": "SIGMETRICS 2026 官网",
+          "source_url": "https://www.sigmetrics.org/sigmetrics2026/",
+          "official_domain": "sigmetrics.org",
+          "retrieved_at": "2026-09-06",
+          "notes": "官方页面确认会期与城市。"
+        }
+      ]
+    },
+    {
+      "series_key": "hotnets",
+      "year": 2026,
+      "edition_name": "HotNets 2026",
+      "edition_number": null,
+      "start_date": "2026-11-16",
+      "end_date": "2026-11-17",
+      "country_or_region": null,
+      "city": null,
+      "venue": null,
+      "edition_status": "announced",
+      "edition_official_url": "https://conferences.sigcomm.org/hotnets/2026/index.html",
+      "call_for_papers_url": null,
+      "notes": "SIGCOMM 官方页面确认 HotNets 2026 workshop 会期为 2026-11-16 至 11-17；城市未在官方页面确认，不写入。",
+      "student_value_tags": null,
+      "audience": null,
+      "participation_details": null,
+      "paper_details": null,
+      "school_relations": [],
+      "sources": [
+        {
+          "source_type": "conference_official_site",
+          "source_name": "HotNets 2026 官网",
+          "source_url": "https://conferences.sigcomm.org/hotnets/2026/index.html",
+          "official_domain": "sigcomm.org",
+          "retrieved_at": "2026-09-06",
+          "notes": "官方页面确认 workshop 日期；地点未官宣。"
+        }
+      ]
+    },
+    {
+      "series_key": "eurosp",
+      "year": 2026,
+      "edition_name": "IEEE EuroS&P 2026",
+      "edition_number": null,
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-10",
+      "country_or_region": "葡萄牙",
+      "city": "里斯本",
+      "venue": null,
+      "edition_status": "held",
+      "edition_official_url": "https://eurosp2026.ieee-security.org/",
+      "call_for_papers_url": null,
+      "notes": "IEEE EuroS&P 2026 官网确认 2026-07-06 至 07-10 在里斯本举行。",
+      "student_value_tags": null,
+      "audience": null,
+      "participation_details": null,
+      "paper_details": null,
+      "school_relations": [],
+      "sources": [
+        {
+          "source_type": "conference_official_site",
+          "source_name": "EuroS&P 2026 官网",
+          "source_url": "https://eurosp2026.ieee-security.org/",
+          "official_domain": "ieee-security.org",
+          "retrieved_at": "2026-09-06",
+          "notes": "官方页面确认会期与城市。"
+        }
+      ]
+    },
+    {
+      "series_key": "raid",
+      "year": 2026,
+      "edition_name": "RAID 2026",
+      "edition_number": null,
+      "start_date": "2026-10-11",
+      "end_date": "2026-10-14",
+      "country_or_region": "英国",
+      "city": "兰卡斯特",
+      "venue": null,
+      "edition_status": "announced",
+      "edition_official_url": "https://raid2026.org/",
+      "call_for_papers_url": null,
+      "notes": "RAID 2026 官网确认 2026-10-11 至 10-14 在兰卡斯特举行。",
+      "student_value_tags": null,
+      "audience": null,
+      "participation_details": null,
+      "paper_details": null,
+      "school_relations": [],
+      "sources": [
+        {
+          "source_type": "conference_official_site",
+          "source_name": "RAID 2026 官网",
+          "source_url": "https://raid2026.org/",
+          "official_domain": "raid2026.org",
+          "retrieved_at": "2026-09-06",
+          "notes": "官方会议页确认会期与城市。"
+        }
+      ]
+    },
+    {
+      "series_key": "asiaccs",
+      "year": 2026,
+      "edition_name": "AsiaCCS 2026",
+      "edition_number": null,
+      "start_date": "2026-06-01",
+      "end_date": "2026-06-05",
+      "country_or_region": "印度",
+      "city": "班加罗尔",
+      "venue": null,
+      "edition_status": "held",
+      "edition_official_url": "https://asiaccs2026.cse.iitkgp.ac.in/",
+      "call_for_papers_url": null,
+      "notes": "AsiaCCS 2026 官方会议页确认 2026-06-01 至 06-05 在印度班加罗尔举行。",
+      "student_value_tags": null,
+      "audience": null,
+      "participation_details": null,
+      "paper_details": null,
+      "school_relations": [],
+      "sources": [
+        {
+          "source_type": "conference_official_site",
+          "source_name": "AsiaCCS 2026 官网",
+          "source_url": "https://asiaccs2026.cse.iitkgp.ac.in/",
+          "official_domain": "iitkgp.ac.in",
+          "retrieved_at": "2026-09-06",
+          "notes": "官方会议页确认会期与城市。"
+        }
+      ]
+    },
+    {
+      "series_key": "wisec",
+      "year": 2026,
+      "edition_name": "ACM WiSec 2026",
+      "edition_number": null,
+      "start_date": "2026-06-30",
+      "end_date": "2026-07-03",
+      "country_or_region": "德国",
+      "city": "萨尔布吕肯",
+      "venue": null,
+      "edition_status": "held",
+      "edition_official_url": "http://wisec26.events.cispa.de/",
+      "call_for_papers_url": null,
+      "notes": "WiSec 2026 官方会议页确认 2026-06-30 至 07-03 在萨尔布吕肯（CISPA）举行。",
+      "student_value_tags": null,
+      "audience": null,
+      "participation_details": null,
+      "paper_details": null,
+      "school_relations": [],
+      "sources": [
+        {
+          "source_type": "conference_official_site",
+          "source_name": "ACM WiSec 2026 官网",
+          "source_url": "http://wisec26.events.cispa.de/",
+          "official_domain": "cispa.de",
+          "retrieved_at": "2026-09-06",
+          "notes": "官方会议页确认会期与城市。"
+        }
+      ]
+    },
+    {
+      "series_key": "esorics",
+      "year": 2026,
+      "edition_name": "ESORICS 2026",
+      "edition_number": null,
+      "start_date": "2026-09-14",
+      "end_date": "2026-09-18",
+      "country_or_region": "意大利",
+      "city": "罗马",
+      "venue": null,
+      "edition_status": "announced",
+      "edition_official_url": "https://esorics.org/",
+      "call_for_papers_url": null,
+      "notes": "ESORICS 官网确认 2026-09-14 至 09-18 在罗马举行。",
+      "student_value_tags": null,
+      "audience": null,
+      "participation_details": null,
+      "paper_details": null,
+      "school_relations": [],
+      "sources": [
+        {
+          "source_type": "conference_official_site",
+          "source_name": "ESORICS 2026 官网",
+          "source_url": "https://esorics.org/",
+          "official_domain": "esorics.org",
+          "retrieved_at": "2026-09-06",
+          "notes": "官方会议页确认会期与城市。"
+        }
+      ]
+    },
+    {
+      "series_key": "micro",
+      "year": 2026,
+      "edition_name": "MICRO 2026（MICRO-59）",
+      "edition_number": null,
+      "start_date": "2026-10-31",
+      "end_date": "2026-11-04",
+      "country_or_region": "希腊",
+      "city": "雅典",
+      "venue": null,
+      "edition_status": "announced",
+      "edition_official_url": "https://microarch.org/micro59/",
+      "call_for_papers_url": null,
+      "notes": "MICRO 官网（microarch.org/micro59）确认 MICRO-59 于 2026-10-31 至 11-04 在雅典举行。",
+      "student_value_tags": null,
+      "audience": null,
+      "participation_details": null,
+      "paper_details": null,
+      "school_relations": [],
+      "sources": [
+        {
+          "source_type": "conference_official_site",
+          "source_name": "MICRO 2026 官网",
+          "source_url": "https://microarch.org/micro59/",
+          "official_domain": "microarch.org",
+          "retrieved_at": "2026-09-06",
+          "notes": "官方页面确认会期与城市。"
+        }
+      ]
+    },
+    {
+      "series_key": "pldi",
+      "year": 2026,
+      "edition_name": "PLDI 2026",
+      "edition_number": null,
+      "start_date": "2026-06-15",
+      "end_date": "2026-06-19",
+      "country_or_region": "美国",
+      "city": "博尔德",
+      "venue": null,
+      "edition_status": "held",
+      "edition_official_url": "https://pldi26.sigplan.org/",
+      "call_for_papers_url": null,
+      "notes": "SIGPLAN PLDI 2026 官网确认 2026-06-15 至 06-19 在科罗拉多州博尔德举行。",
+      "student_value_tags": null,
+      "audience": null,
+      "participation_details": null,
+      "paper_details": null,
+      "school_relations": [],
+      "sources": [
+        {
+          "source_type": "conference_official_site",
+          "source_name": "PLDI 2026 官网",
+          "source_url": "https://pldi26.sigplan.org/",
+          "official_domain": "sigplan.org",
+          "retrieved_at": "2026-09-06",
+          "notes": "SIGPLAN 官方会议页确认会期与城市。"
+        }
+      ]
+    },
+    {
+      "series_key": "popl",
+      "year": 2026,
+      "edition_name": "POPL 2026",
+      "edition_number": null,
+      "start_date": "2026-01-11",
+      "end_date": "2026-01-17",
+      "country_or_region": "法国",
+      "city": "雷恩",
+      "venue": null,
+      "edition_status": "held",
+      "edition_official_url": "https://popl26.sigplan.org/",
+      "call_for_papers_url": null,
+      "notes": "SIGPLAN 官网：主会 2026-01-14 至 01-16，整体周期 01-11 至 01-17（含教程/研讨会等）在法国雷恩举行。",
+      "student_value_tags": null,
+      "audience": null,
+      "participation_details": null,
+      "paper_details": null,
+      "school_relations": [],
+      "sources": [
+        {
+          "source_type": "conference_official_site",
+          "source_name": "POPL 2026 官网",
+          "source_url": "https://popl26.sigplan.org/",
+          "official_domain": "sigplan.org",
+          "retrieved_at": "2026-09-06",
+          "notes": "官方页面确认整体会期与主会日期。"
+        }
+      ]
+    },
+    {
+      "series_key": "icse",
+      "year": 2026,
+      "edition_name": "ICSE 2026",
+      "edition_number": null,
+      "start_date": "2026-04-12",
+      "end_date": "2026-04-18",
+      "country_or_region": "巴西",
+      "city": "里约热内卢",
+      "venue": null,
+      "edition_status": "held",
+      "edition_official_url": "https://conf.researchr.org/home/icse-2026",
+      "call_for_papers_url": null,
+      "notes": "ICSE 2026 官方会议页确认 2026-04-12 至 04-18 在里约热内卢举行。",
+      "student_value_tags": null,
+      "audience": null,
+      "participation_details": null,
+      "paper_details": null,
+      "school_relations": [],
+      "sources": [
+        {
+          "source_type": "conference_official_site",
+          "source_name": "ICSE 2026 官网",
+          "source_url": "https://conf.researchr.org/home/icse-2026",
+          "official_domain": "researchr.org",
+          "retrieved_at": "2026-09-06",
+          "notes": "官方会议页确认会期与城市。"
+        }
+      ]
+    },
+    {
+      "series_key": "icassp",
+      "year": 2026,
+      "edition_name": "ICASSP 2026",
+      "edition_number": null,
+      "start_date": "2026-05-04",
+      "end_date": "2026-05-08",
+      "country_or_region": "西班牙",
+      "city": "巴塞罗那",
+      "venue": "CCIB（巴塞罗那国际会议中心）",
+      "edition_status": "held",
+      "edition_official_url": "https://2026.ieeeicassp.org/",
+      "call_for_papers_url": null,
+      "notes": "IEEE SPS 官网与 ICASSP 2026 官网确认 2026-05-04 至 05-08 在巴塞罗那 CCIB 举行。",
+      "student_value_tags": null,
+      "audience": null,
+      "participation_details": null,
+      "paper_details": null,
+      "school_relations": [],
+      "sources": [
+        {
+          "source_type": "conference_official_site",
+          "source_name": "ICASSP 2026 官网",
+          "source_url": "https://2026.ieeeicassp.org/",
+          "official_domain": "ieeeicassp.org",
+          "retrieved_at": "2026-09-06",
+          "notes": "官方页面确认会期、城市与会场。"
+        }
+      ]
+    },
+    {
+      "series_key": "iros",
+      "year": 2026,
+      "edition_name": "IROS 2026",
+      "edition_number": null,
+      "start_date": "2026-09-27",
+      "end_date": "2026-10-01",
+      "country_or_region": "美国",
+      "city": "匹兹堡",
+      "venue": "David Lawrence Convention Center",
+      "edition_status": "announced",
+      "edition_official_url": "https://2026.ieee-iros.org/",
+      "call_for_papers_url": null,
+      "notes": "IROS 2026 官网确认 2026-09-27 至 10-01 在匹兹堡 David Lawrence Convention Center 举行。",
+      "student_value_tags": null,
+      "audience": null,
+      "participation_details": null,
+      "paper_details": null,
+      "school_relations": [],
+      "sources": [
+        {
+          "source_type": "conference_official_site",
+          "source_name": "IROS 2026 官网",
+          "source_url": "https://2026.ieee-iros.org/",
+          "official_domain": "ieee-iros.org",
+          "retrieved_at": "2026-09-06",
+          "notes": "官方页面（Call for Papers）确认会期与会场。"
+        }
+      ]
+    },
+    {
+      "series_key": "rss",
+      "year": 2026,
+      "edition_name": "RSS 2026",
+      "edition_number": null,
+      "start_date": "2026-07-13",
+      "end_date": "2026-07-17",
+      "country_or_region": "澳大利亚",
+      "city": "悉尼",
+      "venue": "悉尼科技大学 / ICC Sydney",
+      "edition_status": "held",
+      "edition_official_url": "https://roboticsconference.org/",
+      "call_for_papers_url": null,
+      "notes": "RSS 官网公告确认第 22 届于 2026-07-13 至 07-17 在悉尼 UTS 与 ICC 举行；workshops 分散在 07-13 与 07-17。",
+      "student_value_tags": null,
+      "audience": null,
+      "participation_details": null,
+      "paper_details": null,
+      "school_relations": [],
+      "sources": [
+        {
+          "source_type": "conference_official_site",
+          "source_name": "RSS 官网（2026 公告）",
+          "source_url": "https://roboticsconference.org/",
+          "official_domain": "roboticsconference.org",
+          "retrieved_at": "2026-09-06",
+          "notes": "RSS 官方站公告确认 2026 届会期与地点。"
+        }
+      ]
+    },
+    {
+      "series_key": "corl",
+      "year": 2026,
+      "edition_name": "CoRL 2026",
+      "edition_number": null,
+      "start_date": "2026-11-09",
+      "end_date": "2026-11-12",
+      "country_or_region": "美国",
+      "city": "奥斯汀",
+      "venue": null,
+      "edition_status": "announced",
+      "edition_official_url": "https://www.corl.org/",
+      "call_for_papers_url": null,
+      "notes": "CoRL 官网确认 2026-11-09 至 11-12 在奥斯汀举行；概览页显示主会 11-10 至 11-12、11-09 为 workshops 日，具体以官网 schedule 为准。",
+      "student_value_tags": null,
+      "audience": null,
+      "participation_details": null,
+      "paper_details": null,
+      "school_relations": [],
+      "sources": [
+        {
+          "source_type": "conference_official_site",
+          "source_name": "CoRL 2026 官网",
+          "source_url": "https://www.corl.org/",
+          "official_domain": "corl.org",
+          "retrieved_at": "2026-09-06",
+          "notes": "官方页面确认会期与城市。"
+        }
+      ]
+    },
+    {
+      "series_key": "emnlp",
+      "year": 2026,
+      "edition_name": "EMNLP 2026",
+      "edition_number": null,
+      "start_date": "2026-10-24",
+      "end_date": "2026-10-29",
+      "country_or_region": "匈牙利",
+      "city": "布达佩斯",
+      "venue": null,
+      "edition_status": "announced",
+      "edition_official_url": "https://2026.emnlp.org/",
+      "call_for_papers_url": null,
+      "notes": "EMNLP 2026 官网确认主会 2026-10-24 至 10-29 在布达佩斯举行。",
+      "student_value_tags": [
+        "paper_submission"
+      ],
+      "audience": null,
+      "participation_details": null,
+      "paper_details": null,
+      "school_relations": [],
+      "sources": [
+        {
+          "source_type": "conference_official_site",
+          "source_name": "EMNLP 2026 官网",
+          "source_url": "https://2026.emnlp.org/",
+          "official_domain": "emnlp.org",
+          "retrieved_at": "2026-09-06",
+          "notes": "官方会议页确认会期与城市。"
+        }
+      ],
+      "opportunities": [
+        {
+          "series_key": "emnlp",
+          "year": 2026,
+          "opportunity_type": "paper_submission",
+          "title": "EMNLP 2026 论文投稿",
+          "official_label": "Call for Papers",
+          "description": "EMNLP 2026 官方研究论文投稿。",
+          "audience": null,
+          "deadline": null,
+          "open_date": null,
+          "participation_mode": null,
+          "official_url": "https://2026.emnlp.org/",
+          "evidence": "EMNLP 2026 官方会议页列明论文投稿环节。",
+          "evidence_status": "full_page_verified",
+          "notes": null,
+          "source": {
+            "source_type": "conference_official_site",
+            "source_name": "EMNLP 2026 论文投稿 官方来源",
+            "source_url": "https://2026.emnlp.org/",
+            "official_domain": "2026.emnlp.org",
+            "notes": "EMNLP 2026 官方会议页列明论文投稿环节。"
+          }
+        }
+      ]
+    },
+    {
+      "series_key": "uist",
+      "year": 2026,
+      "edition_name": "UIST 2026",
+      "edition_number": null,
+      "start_date": "2026-11-02",
+      "end_date": "2026-11-05",
+      "country_or_region": "美国",
+      "city": "底特律",
+      "venue": null,
+      "edition_status": "announced",
+      "edition_official_url": "https://uist.acm.org/2026/",
+      "call_for_papers_url": null,
+      "notes": "UIST 官网确认第 39 届于 2026-11-02 至 11-05 在底特律举行（11-02 workshop 日，主会 11-03 起）。",
+      "student_value_tags": [
+        "paper_submission",
+        "poster"
+      ],
+      "audience": null,
+      "participation_details": null,
+      "paper_details": null,
+      "school_relations": [],
+      "sources": [
+        {
+          "source_type": "conference_official_site",
+          "source_name": "UIST 2026 官网",
+          "source_url": "https://uist.acm.org/2026/",
+          "official_domain": "uist.acm.org",
+          "retrieved_at": "2026-09-06",
+          "notes": "官方 CFP 与 Attending 页确认会期与城市。"
+        }
+      ],
+      "opportunities": [
+        {
+          "series_key": "uist",
+          "year": 2026,
+          "opportunity_type": "paper_submission",
+          "title": "UIST 2026 论文投稿",
+          "official_label": "Call for Papers",
+          "description": "UIST 2026 官方研究论文投稿。",
+          "audience": null,
+          "deadline": null,
+          "open_date": null,
+          "participation_mode": null,
+          "official_url": "https://uist.acm.org/2026/",
+          "evidence": "UIST 2026 官方页面列明论文投稿与海报环节。",
+          "evidence_status": "full_page_verified",
+          "notes": null,
+          "source": {
+            "source_type": "conference_official_site",
+            "source_name": "UIST 2026 论文投稿 官方来源",
+            "source_url": "https://uist.acm.org/2026/",
+            "official_domain": "uist.acm.org",
+            "notes": "UIST 2026 官方页面列明论文投稿与海报环节。"
+          }
+        },
+        {
+          "series_key": "uist",
+          "year": 2026,
+          "opportunity_type": "poster",
+          "title": "UIST 2026 海报",
+          "official_label": "Posters",
+          "description": "官方海报环节。",
+          "audience": null,
+          "deadline": null,
+          "open_date": null,
+          "participation_mode": null,
+          "official_url": "https://uist.acm.org/2026/",
+          "evidence": "UIST 2026 官方页面列明海报环节。",
+          "evidence_status": "full_page_verified",
+          "notes": null,
+          "source": {
+            "source_type": "conference_official_site",
+            "source_name": "UIST 2026 海报 官方来源",
+            "source_url": "https://uist.acm.org/2026/",
+            "official_domain": "uist.acm.org",
+            "notes": "UIST 2026 官方页面列明海报环节。"
+          }
+        }
+      ]
+    },
+    {
+      "series_key": "acmmm",
+      "year": 2026,
+      "edition_name": "ACM Multimedia 2026",
+      "edition_number": null,
+      "start_date": "2026-11-10",
+      "end_date": "2026-11-14",
+      "country_or_region": "巴西",
+      "city": "里约热内卢",
+      "venue": null,
+      "edition_status": "announced",
+      "edition_official_url": "https://2026.acmmm.org/",
+      "call_for_papers_url": null,
+      "notes": "ACM Multimedia 2026 官网确认 2026-11-10 至 11-14 在里约热内卢举行。",
+      "student_value_tags": null,
+      "audience": null,
+      "participation_details": null,
+      "paper_details": null,
+      "school_relations": [],
+      "sources": [
+        {
+          "source_type": "conference_official_site",
+          "source_name": "ACM Multimedia 2026 官网",
+          "source_url": "https://2026.acmmm.org/",
+          "official_domain": "acmmm.org",
+          "retrieved_at": "2026-09-06",
+          "notes": "官方会议页确认会期与城市。"
+        }
+      ]
+    },
+    {
+      "series_key": "siggraph",
+      "year": 2026,
+      "edition_name": "SIGGRAPH 2026",
+      "edition_number": null,
+      "start_date": "2026-07-19",
+      "end_date": "2026-07-23",
+      "country_or_region": "美国",
+      "city": "洛杉矶",
+      "venue": null,
+      "edition_status": "held",
+      "edition_official_url": "https://s2026.siggraph.org/",
+      "call_for_papers_url": null,
+      "notes": "SIGGRAPH 2026 官网确认 2026-07-19 至 07-23 在洛杉矶举行。",
+      "student_value_tags": null,
+      "audience": null,
+      "participation_details": null,
+      "paper_details": null,
+      "school_relations": [],
+      "sources": [
+        {
+          "source_type": "conference_official_site",
+          "source_name": "SIGGRAPH 2026 官网",
+          "source_url": "https://s2026.siggraph.org/",
+          "official_domain": "siggraph.org",
+          "retrieved_at": "2026-09-06",
+          "notes": "官方会议页确认会期与城市。"
+        }
+      ]
+    },
+    {
+      "series_key": "mobisys",
+      "year": 2026,
+      "edition_name": "MobiSys 2026",
+      "edition_number": null,
+      "start_date": "2026-06-21",
+      "end_date": "2026-06-25",
+      "country_or_region": "英国",
+      "city": "剑桥",
+      "venue": null,
+      "edition_status": "held",
+      "edition_official_url": "https://www.sigmobile.org/mobisys/2026/",
+      "call_for_papers_url": null,
+      "notes": "SIGMOBILE 官方页面确认整体会期 2026-06-21 至 06-25（主会 06-22~24；workshops 06-25；06-21 为 IoT Day 等活动日）。",
+      "student_value_tags": null,
+      "audience": null,
+      "participation_details": null,
+      "paper_details": null,
+      "school_relations": [],
+      "sources": [
+        {
+          "source_type": "conference_official_site",
+          "source_name": "MobiSys 2026 官网",
+          "source_url": "https://www.sigmobile.org/mobisys/2026/",
+          "official_domain": "sigmobile.org",
+          "retrieved_at": "2026-09-06",
+          "notes": "官方页面确认会期与分项安排。"
+        }
+      ]
+    },
+    {
+      "series_key": "sensys",
+      "year": 2026,
+      "edition_name": "SenSys 2026",
+      "edition_number": null,
+      "start_date": "2026-05-11",
+      "end_date": "2026-05-14",
+      "country_or_region": "法国",
+      "city": "圣马洛",
+      "venue": null,
+      "edition_status": "held",
+      "edition_official_url": "https://sensys.acm.org/2026/",
+      "call_for_papers_url": null,
+      "notes": "ACM SenSys 2026 官网与 ACM/IEEE 官方资料确认 2026-05-11 至 05-14 在法国圣马洛举行（随 CPS-IoT Week）。",
+      "student_value_tags": null,
+      "audience": null,
+      "participation_details": null,
+      "paper_details": null,
+      "school_relations": [],
+      "sources": [
+        {
+          "source_type": "conference_official_site",
+          "source_name": "ACM SenSys 2026 官网",
+          "source_url": "https://sensys.acm.org/2026/",
+          "official_domain": "sensys.acm.org",
+          "retrieved_at": "2026-09-06",
+          "notes": "官方会议页确认会期与城市。"
+        }
+      ]
+    },
+    {
+      "series_key": "cscw",
+      "year": 2026,
+      "edition_name": "CSCW '26",
+      "edition_number": null,
+      "start_date": "2026-10-10",
+      "end_date": "2026-10-14",
+      "country_or_region": "美国",
+      "city": "盐湖城",
+      "venue": null,
+      "edition_status": "announced",
+      "edition_official_url": "https://cscw.acm.org/2026/",
+      "call_for_papers_url": null,
+      "notes": "ACM SIGCHI 官方活动页与 CSCW 官网确认 2026-10-10 至 10-14 在盐湖城举行。",
+      "student_value_tags": null,
+      "audience": null,
+      "participation_details": null,
+      "paper_details": null,
+      "school_relations": [],
+      "sources": [
+        {
+          "source_type": "conference_official_site",
+          "source_name": "CSCW 2026 官网",
+          "source_url": "https://cscw.acm.org/2026/",
+          "official_domain": "cscw.acm.org",
+          "retrieved_at": "2026-09-06",
+          "notes": "官方会议页确认会期与城市。"
+        }
+      ]
+    },
+    {
+      "series_key": "icwsm",
+      "year": 2026,
+      "edition_name": "ICWSM 2026",
+      "edition_number": null,
+      "start_date": "2026-05-27",
+      "end_date": "2026-05-29",
+      "country_or_region": "美国",
+      "city": "洛杉矶",
+      "venue": null,
+      "edition_status": "held",
+      "edition_official_url": "https://www.icwsm.org/2026/",
+      "call_for_papers_url": null,
+      "notes": "ICWSM 2026 官网确认第 20 届于 2026-05-27 至 05-29 在洛杉矶举行。",
+      "student_value_tags": null,
+      "audience": null,
+      "participation_details": null,
+      "paper_details": null,
+      "school_relations": [],
+      "sources": [
+        {
+          "source_type": "conference_official_site",
+          "source_name": "ICWSM 2026 官网",
+          "source_url": "https://www.icwsm.org/2026/index.html",
+          "official_domain": "icwsm.org",
+          "retrieved_at": "2026-09-06",
+          "notes": "官方会议页确认会期与城市。"
+        }
+      ]
+    },
+    {
+      "series_key": "ipdps",
+      "year": 2026,
+      "edition_name": "IPDPS 2026",
+      "edition_number": null,
+      "start_date": "2026-05-25",
+      "end_date": "2026-05-29",
+      "country_or_region": "美国",
+      "city": "新奥尔良",
+      "venue": null,
+      "edition_status": "held",
+      "edition_official_url": "https://www.ipdps.org/ipdps2026/",
+      "call_for_papers_url": null,
+      "notes": "IPDPS 官网确认第 39 届（2026）于 2026-05-25 至 05-29 在新奥尔良举行（前两日为 workshops/tutorials）。",
+      "student_value_tags": null,
+      "audience": null,
+      "participation_details": null,
+      "paper_details": null,
+      "school_relations": [],
+      "sources": [
+        {
+          "source_type": "conference_official_site",
+          "source_name": "IPDPS 2026 官网",
+          "source_url": "https://www.ipdps.org/ipdps2026/",
+          "official_domain": "ipdps.org",
+          "retrieved_at": "2026-09-06",
+          "notes": "官方页面确认会期与城市。"
+        }
+      ]
+    },
+    {
+      "series_key": "dsn",
+      "year": 2026,
+      "edition_name": "DSN 2026",
+      "edition_number": null,
+      "start_date": "2026-06-22",
+      "end_date": "2026-06-25",
+      "country_or_region": "美国",
+      "city": "夏洛特",
+      "venue": null,
+      "edition_status": "held",
+      "edition_official_url": "https://dsn2026.github.io/",
+      "call_for_papers_url": null,
+      "notes": "DSN 2026 官网确认第 56 届 IEEE/IFIP DSN 于 2026-06-22 至 06-25 在美国夏洛特举行。",
+      "student_value_tags": null,
+      "audience": null,
+      "participation_details": null,
+      "paper_details": null,
+      "school_relations": [],
+      "sources": [
+        {
+          "source_type": "conference_official_site",
+          "source_name": "DSN 2026 官网",
+          "source_url": "https://dsn2026.github.io/",
+          "official_domain": "dsn2026.github.io",
+          "retrieved_at": "2026-09-06",
+          "notes": "官方会议站确认会期与城市。"
+        }
+      ]
+    },
+    {
+      "series_key": "isc_hpc",
+      "year": 2026,
+      "edition_name": "ISC High Performance 2026",
+      "edition_number": null,
+      "start_date": "2026-06-22",
+      "end_date": "2026-06-26",
+      "country_or_region": "德国",
+      "city": "汉堡",
+      "venue": "Congress Center Hamburg",
+      "edition_status": "held",
+      "edition_official_url": "https://www.isc-hpc.com/",
+      "call_for_papers_url": null,
+      "notes": "ISC 官网新闻确认第 41 届 ISC High Performance 于 2026-06-22 至 06-26 在汉堡 Congress Center Hamburg 举行。",
+      "student_value_tags": null,
+      "audience": null,
+      "participation_details": null,
+      "paper_details": null,
+      "school_relations": [],
+      "sources": [
+        {
+          "source_type": "conference_official_site",
+          "source_name": "ISC High Performance 官网",
+          "source_url": "https://isc-hpc.com/",
+          "official_domain": "isc-hpc.com",
+          "retrieved_at": "2026-09-06",
+          "notes": "ISC 官网新闻页确认 2026 届会期与地点。"
+        }
+      ]
+    },
+    {
+      "series_key": "ismb",
+      "year": 2026,
+      "edition_name": "ISMB 2026",
+      "edition_number": null,
+      "start_date": "2026-07-12",
+      "end_date": "2026-07-16",
+      "country_or_region": "美国",
+      "city": "华盛顿",
+      "venue": null,
+      "edition_status": "held",
+      "edition_official_url": "https://www.iscb.org/ismb2026/home",
+      "call_for_papers_url": null,
+      "notes": "ISCB 官方公告确认 ISMB 2026（第 34 届）于 2026-07-12 至 07-16 在美国华盛顿特区举行。",
+      "student_value_tags": null,
+      "audience": null,
+      "participation_details": null,
+      "paper_details": null,
+      "school_relations": [],
+      "sources": [
+        {
+          "source_type": "international_professional_org",
+          "source_name": "ISCB 官网 ISMB 2026",
+          "source_url": "https://www.iscb.org/ismb2026/home",
+          "official_domain": "iscb.org",
+          "retrieved_at": "2026-09-06",
+          "notes": "ISCB 官方公告确认会期与城市。"
+        }
+      ]
+    },
+    {
+      "series_key": "recombc",
+      "year": 2026,
+      "edition_name": "RECOMB 2026",
+      "edition_number": null,
+      "start_date": "2026-05-26",
+      "end_date": "2026-05-29",
+      "country_or_region": "希腊",
+      "city": "塞萨洛尼基",
+      "venue": null,
+      "edition_status": "held",
+      "edition_official_url": "https://recomb.org/recomb2026/",
+      "call_for_papers_url": null,
+      "notes": "RECOMB 官网确认第 30 届 RECOMB 2026 于 2026-05-26 至 05-29 在塞萨洛尼基举行（satellite meetings 05-24~25）。",
+      "student_value_tags": null,
+      "audience": null,
+      "participation_details": null,
+      "paper_details": null,
+      "school_relations": [],
+      "sources": [
+        {
+          "source_type": "conference_official_site",
+          "source_name": "RECOMB 2026 官网",
+          "source_url": "https://recomb.org/recomb2026/",
+          "official_domain": "recomb.org",
+          "retrieved_at": "2026-09-06",
+          "notes": "官方页面确认会期与城市。"
+        }
+      ]
+    },
+    {
+      "series_key": "aera",
+      "year": 2026,
+      "edition_name": "AERA 2026 Annual Meeting",
+      "edition_number": null,
+      "start_date": "2026-04-08",
+      "end_date": "2026-04-12",
+      "country_or_region": "美国",
+      "city": "洛杉矶",
+      "venue": null,
+      "edition_status": "held",
+      "edition_official_url": "https://www.aera.net/Events-Meetings/Annual-Meeting",
+      "call_for_papers_url": null,
+      "notes": "AERA 官网公告确认 2026 Annual Meeting 于 2026-04-08 至 04-12 在洛杉矶举行。",
+      "student_value_tags": null,
+      "audience": null,
+      "participation_details": null,
+      "paper_details": null,
+      "school_relations": [],
+      "sources": [
+        {
+          "source_type": "international_professional_org",
+          "source_name": "AERA 官网 Annual Meeting",
+          "source_url": "https://www.aera.net/Events-Meetings/Annual-Meeting",
+          "official_domain": "aera.net",
+          "retrieved_at": "2026-09-06",
+          "notes": "AERA 官方公告确认会期与城市。"
+        }
+      ]
+    },
+    {
+      "series_key": "iamcr",
+      "year": 2026,
+      "edition_name": "IAMCR 2026 年会",
+      "edition_number": null,
+      "start_date": "2026-06-28",
+      "end_date": "2026-07-02",
+      "country_or_region": "爱尔兰",
+      "city": "戈尔韦",
+      "venue": null,
+      "edition_status": "held",
+      "edition_official_url": "https://iamcr.org/galway2026",
+      "call_for_papers_url": null,
+      "notes": "IAMCR 官网确认 2026 年会于 2026-06-28 至 07-02 在爱尔兰国立大学戈尔韦举行。",
+      "student_value_tags": null,
+      "audience": null,
+      "participation_details": null,
+      "paper_details": null,
+      "school_relations": [],
+      "sources": [
+        {
+          "source_type": "international_professional_org",
+          "source_name": "IAMCR 2026 官网",
+          "source_url": "https://iamcr.org/galway2026",
+          "official_domain": "iamcr.org",
+          "retrieved_at": "2026-09-06",
+          "notes": "IAMCR 官方会议页确认会期与地点。"
+        }
+      ]
+    },
+    {
+      "series_key": "ica",
+      "year": 2026,
+      "edition_name": "ICA 2026 Annual Conference",
+      "edition_number": null,
+      "start_date": "2026-06-04",
+      "end_date": "2026-06-08",
+      "country_or_region": "南非",
+      "city": "开普敦",
+      "venue": null,
+      "edition_status": "held",
+      "edition_official_url": "https://www.icahdq.org/mpage/ICA26-FAQ",
+      "call_for_papers_url": null,
+      "notes": "ICA 官方 FAQ 页面写明主会 2026-06-04 至 06-08 在南非开普敦举行。",
+      "student_value_tags": null,
+      "audience": null,
+      "participation_details": null,
+      "paper_details": null,
+      "school_relations": [],
+      "sources": [
+        {
+          "source_type": "international_professional_org",
+          "source_name": "ICA 2026 官方 FAQ",
+          "source_url": "https://www.icahdq.org/mpage/ICA26-FAQ",
+          "official_domain": "icahdq.org",
+          "retrieved_at": "2026-09-06",
+          "notes": "ICA 官方 FAQ 确认主会期 4–8 June 2026。"
+        }
+      ]
+    },
+    {
+      "series_key": "acsm",
+      "year": 2026,
+      "edition_name": "ACSM 2026 Annual Meeting",
+      "edition_number": null,
+      "start_date": "2026-05-26",
+      "end_date": "2026-05-29",
+      "country_or_region": "美国",
+      "city": "盐湖城",
+      "venue": null,
+      "edition_status": "held",
+      "edition_official_url": "https://acsm.org/events-general/annual-meeting/",
+      "call_for_papers_url": null,
+      "notes": "ACSM 官网 Annual Meeting 页确认 2026-05-26 至 05-29 在盐湖城举行。",
+      "student_value_tags": null,
+      "audience": null,
+      "participation_details": null,
+      "paper_details": null,
+      "school_relations": [],
+      "sources": [
+        {
+          "source_type": "international_professional_org",
+          "source_name": "ACSM 官网 Annual Meeting",
+          "source_url": "https://acsm.org/events-general/annual-meeting/",
+          "official_domain": "acsm.org",
+          "retrieved_at": "2026-09-06",
+          "notes": "ACSM 官方会议页确认会期与城市。"
+        }
+      ]
+    },
+    {
+      "series_key": "csss_sports",
+      "year": 2025,
+      "edition_name": "第十四届全国体育科学大会",
+      "edition_number": 14,
+      "start_date": "2025-11-08",
+      "end_date": "2025-11-09",
+      "country_or_region": "中国",
+      "city": "武汉",
+      "venue": null,
+      "edition_status": "held",
+      "edition_official_url": "https://www.csss.cn/a2183.html",
+      "call_for_papers_url": null,
+      "notes": "中国体育科学学会官网新闻《第十四届全国体育科学大会在武汉召开》确认 2025-11 在武汉举办（学会官网开幕式为 11-08）。部分承办高校/地方科协新闻将报到及前期学术活动写为 11-07~09，此处主会期记 11-08~09。",
+      "student_value_tags": null,
+      "audience": null,
+      "participation_details": null,
+      "paper_details": null,
+      "school_relations": [
+        {
+          "school_name": "武汉体育学院",
+          "relation_type": "undertaker",
+          "responsible_college": null,
+          "source_type": "university_official",
+          "notice_url": "https://csir.whsu.edu.cn/info/1211/2044.htm",
+          "source_name": "武汉体育学院官网（湖北体育产业研究中心）",
+          "notes": "新闻明确第十四届全国体育科学大会由武汉体育学院与华中师范大学共同承办。"
+        },
+        {
+          "school_name": "华中师范大学",
+          "relation_type": "undertaker",
+          "responsible_college": null,
+          "source_type": "university_official",
+          "notice_url": "https://csir.whsu.edu.cn/info/1211/2044.htm",
+          "source_name": "武汉体育学院官网（湖北体育产业研究中心）",
+          "notes": "新闻明确第十四届全国体育科学大会由武汉体育学院与华中师范大学共同承办。"
+        }
+      ],
+      "sources": [
+        {
+          "source_type": "national_society_official_meeting_page",
+          "source_name": "中国体育科学学会官网新闻",
+          "source_url": "https://www.csss.cn/a2183.html",
+          "official_domain": "csss.cn",
+          "retrieved_at": "2026-09-06",
+          "notes": "学会官网确认大会在武汉召开（第十四届）。"
+        },
+        {
+          "source_type": "national_society_official_meeting_page",
+          "source_name": "中国体育科学学会分论坛新闻",
+          "source_url": "http://www.csss.cn/a2185.html",
+          "official_domain": "csss.cn",
+          "retrieved_at": "2026-09-06",
+          "notes": "学会官网确认'科学健身与健康论坛'在武汉举办。"
+        }
+      ]
+    },
+    {
+      "series_key": "cse_education",
+      "year": 2025,
+      "edition_name": "第五届中国基础教育论坛暨中国教育学会第三十七次学术年会",
+      "edition_number": null,
+      "start_date": "2025-11-22",
+      "end_date": "2025-11-23",
+      "country_or_region": "中国",
+      "city": "成都（四川天府新区）",
+      "venue": "天府国际会议中心",
+      "edition_status": "held",
+      "edition_official_url": "https://www.cse.edu.cn/meeting/detail.html?id=398",
+      "call_for_papers_url": null,
+      "notes": "中国教育学会官网通知确认 2025-11-22 至 11-23 在四川天府新区天府国际会议中心举行；收费说明写明'个人会员及在校大学生凭有效证件交纳会务费800元'（学生可报名参会，未见学生专场字样，不推断 student track）。",
+      "student_value_tags": [
+        "academic_exchange"
+      ],
+      "audience": null,
+      "participation_details": {
+        "student_attendance": "可报名参加",
+        "student_fee_cny": 800,
+        "fee_evidence": "个人会员及在校大学生凭有效证件交纳会务费800元；其余参会者1200元。",
+        "registration_deadline": "2025-11-17"
+      },
+      "paper_details": null,
+      "school_relations": [],
+      "sources": [
+        {
+          "source_type": "national_society_official_meeting_page",
+          "source_name": "中国教育学会会议通知",
+          "source_url": "https://www.cse.edu.cn/meeting/detail.html?id=398",
+          "official_domain": "cse.edu.cn",
+          "retrieved_at": "2026-09-06",
+          "notes": "学会官网通知确认会期、地点与参会收费说明。"
+        }
+      ]
+    },
+    {
+      "series_key": "cahe_hef",
+      "year": 2026,
+      "edition_name": "2026高等教育国际论坛年会",
+      "edition_number": null,
+      "start_date": null,
+      "end_date": null,
+      "country_or_region": "中国",
+      "city": "上海",
+      "venue": null,
+      "edition_status": "announced",
+      "edition_official_url": "https://www.cahe.edu.cn/site/content/19528.html",
+      "call_for_papers_url": null,
+      "notes": "中国高等教育学会预通知确认'2026年12月初、上海市'，具体日期与地点待正式通知；预报名与长摘要截止 2026-09-30（官方网站写明年份为 2026）。",
+      "student_value_tags": null,
+      "audience": null,
+      "participation_details": {
+        "preregistration_deadline": "2026-09-30",
+        "abstract_deadline": "2026-09-30",
+        "organizer": "中国高等教育学会、同济大学",
+        "notice_stage": "预通知（2026-04-24 发布）"
+      },
+      "paper_details": null,
+      "school_relations": [],
+      "sources": [
+        {
+          "source_type": "national_society_official_meeting_page",
+          "source_name": "中国高等教育学会预通知",
+          "source_url": "https://www.cahe.edu.cn/site/content/19528.html",
+          "official_domain": "cahe.edu.cn",
+          "retrieved_at": "2026-09-06",
+          "notes": "学会官网预通知确认年份、月份（12月初）与城市（上海）。"
+        }
+      ],
+      "opportunities": [
+        {
+          "series_key": "cahe_hef",
+          "year": 2026,
+          "opportunity_type": "abstract_submission",
+          "title": "2026 高等教育国际论坛年会长摘要投稿",
+          "official_label": "大会预通知（长摘要/预报名）",
+          "description": "中国高等教育学会官方预通知：2026 年 12 月初上海举行，预报名与长摘要截止 2026-09-30。",
+          "audience": null,
+          "deadline": "2026-09-30",
+          "open_date": null,
+          "participation_mode": null,
+          "official_url": "https://www.cahe.edu.cn/site/content/19528.html",
+          "evidence": "中国高等教育学会官网预通知写明预报名与长摘要截止 2026-09-30。",
+          "evidence_status": "full_page_verified",
+          "notes": "具体会期与地点以正式通知为准。",
+          "source": {
+            "source_type": "association_official_notice",
+            "source_name": "中国高等教育学会官网通知",
+            "source_url": "https://www.cahe.edu.cn/site/content/19528.html",
+            "official_domain": "cahe.edu.cn",
+            "notes": "中国高等教育学会官网预通知写明预报名与长摘要截止 2026-09-30。"
+          }
+        }
+      ]
+    },
+    {
+      "series_key": "ccai",
+      "year": 2025,
+      "edition_name": "2025中国人工智能大会（CCAI 2025）",
+      "edition_number": null,
+      "start_date": "2025-11-29",
+      "end_date": "2025-11-30",
+      "country_or_region": "中国",
+      "city": "北京",
+      "venue": null,
+      "edition_status": "held",
+      "edition_official_url": "https://www.caai.cn/site/content/5052.html",
+      "call_for_papers_url": null,
+      "notes": "CAAI 官网新闻与会议活动页确认 2025-11-29 至 11-30 在北京市海淀区召开（与全国人工智能学院院长年会协同举办）；CAAI 学生会员注册价格为注册费事实，不代表学生专场。",
+      "student_value_tags": null,
+      "audience": null,
+      "participation_details": null,
+      "paper_details": null,
+      "school_relations": [],
+      "sources": [
+        {
+          "source_type": "national_society_official_meeting_page",
+          "source_name": "CAAI 官网活动页",
+          "source_url": "https://dl.caai.cn/home/Activity/index.html?activity_id=2",
+          "official_domain": "caai.cn",
+          "retrieved_at": "2026-09-06",
+          "notes": "CAAI 官方活动页确认时间、地点与主办单位。"
+        },
+        {
+          "source_type": "national_society_official_meeting_page",
+          "source_name": "CAAI 官网新闻",
+          "source_url": "https://www.caai.cn/site/content/5052.html",
+          "official_domain": "caai.cn",
+          "retrieved_at": "2026-09-06",
+          "notes": "CAAI 官网新闻确认 2025-11-29~30 在北京海淀区召开。"
+        }
+      ]
+    },
+    {
+      "series_key": "chinasoft",
+      "year": 2025,
+      "edition_name": "2025 CCF中国软件大会（ChinaSoft 2025）",
+      "edition_number": null,
+      "start_date": "2025-11-28",
+      "end_date": "2025-11-30",
+      "country_or_region": "中国",
+      "city": "武汉",
+      "venue": "武汉国际会议中心",
+      "edition_status": "held",
+      "edition_official_url": "http://chinasoft.ccf.org.cn/",
+      "call_for_papers_url": null,
+      "notes": "CCF 官网活动日历确认 2025-11-28 至 11-30 在湖北省武汉市武汉国际会议中心举行（CCF 软件工程专委会等承办）。",
+      "student_value_tags": null,
+      "audience": null,
+      "participation_details": null,
+      "paper_details": null,
+      "school_relations": [],
+      "sources": [
+        {
+          "source_type": "national_society_official_meeting_page",
+          "source_name": "CCF 官网活动日历",
+          "source_url": "https://www.ccf.org.cn/Activities/Event_calendar/zw/2026-08-11/922583.shtml",
+          "official_domain": "ccf.org.cn",
+          "retrieved_at": "2026-09-06",
+          "notes": "CCF 官方活动日历确认会期、城市与会场。"
+        },
+        {
+          "source_type": "conference_official_site",
+          "source_name": "ChinaSoft 2025 官网",
+          "source_url": "http://chinasoft.ccf.org.cn/",
+          "official_domain": "ccf.org.cn",
+          "retrieved_at": "2026-09-06",
+          "notes": "大会官网（CCF 子站）。"
+        }
+      ]
+    },
+    {
+      "series_key": "aejmc",
+      "year": 2026,
+      "edition_name": "AEJMC 2026 Annual Conference",
+      "edition_number": null,
+      "start_date": "2026-08-05",
+      "end_date": "2026-08-08",
+      "country_or_region": "美国",
+      "city": "新奥尔良",
+      "venue": "New Orleans Marriott",
+      "edition_status": "held",
+      "edition_official_url": "https://www.aejmc.org/aejmc-events/conference",
+      "abstract_deadline": null,
+      "paper_deadline": "2026-04-01",
+      "poster_deadline": null,
+      "workshop_deadline": null,
+      "notification_date": null,
+      "camera_ready_deadline": null,
+      "registration_deadline": null,
+      "registration_url": null,
+      "call_for_papers_url": null,
+      "notes": "AEJMC 官方会议页确认 2026/8/5-8 主会（8/4 预会）与新奥尔良地点；论文投稿截止 2026-04-01。",
+      "student_value_tags": null,
+      "audience": null,
+      "participation_details": null,
+      "paper_details": null,
+      "school_relations": [],
+      "sources": [
+        {
+          "source_type": "conference_official_site",
+          "source_name": "AEJMC 年会官方页",
+          "source_url": "https://www.aejmc.org/aejmc-events/conference",
+          "official_domain": "aejmc.org",
+          "retrieved_at": "2026-09-06",
+          "notes": "官方会议页列明会期、地点与投稿截止。"
+        }
+      ],
+      "opportunities": [
+        {
+          "series_key": "aejmc",
+          "year": 2026,
+          "opportunity_type": "paper_submission",
+          "title": "AEJMC 2026 论文投稿",
+          "official_label": "Call for Papers",
+          "description": "AEJMC 2026 官方论文投稿（division 投稿日期以各分会为准，年会总页 deadline 为 2026-04-01）。",
+          "audience": null,
+          "deadline": "2026-04-01",
+          "open_date": null,
+          "participation_mode": null,
+          "official_url": "https://www.aejmc.org/aejmc-events/conference",
+          "evidence": "AEJMC 官方年会页写明论文投稿截止 2026-04-01。",
+          "evidence_status": "full_page_verified",
+          "notes": null,
+          "source": {
+            "source_type": "conference_official_site",
+            "source_name": "AEJMC 2026 论文投稿 官方来源",
+            "source_url": "https://www.aejmc.org/aejmc-events/conference",
+            "official_domain": "www.aejmc.org",
+            "notes": "AEJMC 官方年会页写明论文投稿截止 2026-04-01。"
+          }
+        }
+      ]
+    },
+    {
+      "series_key": "nca",
+      "year": 2026,
+      "edition_name": "NCA 112th Annual Convention",
+      "edition_number": null,
+      "start_date": "2026-11-19",
+      "end_date": "2026-11-22",
+      "country_or_region": "美国",
+      "city": "新奥尔良",
+      "venue": null,
+      "edition_status": "announced",
+      "edition_official_url": "https://www.natcom.org/convention/",
+      "abstract_deadline": null,
+      "paper_deadline": null,
+      "poster_deadline": null,
+      "workshop_deadline": null,
+      "notification_date": null,
+      "camera_ready_deadline": null,
+      "registration_deadline": "2026-09-16",
+      "registration_url": "https://www.natcom.org/convention/",
+      "call_for_papers_url": null,
+      "notes": "NCA 官方大会页与官方 Call/Newsletter 确认 2026/11/19-22 新奥尔良举行（11/18 预会）；早鸟注册截止 2026-09-16。",
+      "student_value_tags": null,
+      "audience": null,
+      "participation_details": null,
+      "paper_details": null,
+      "school_relations": [],
+      "sources": [
+        {
+          "source_type": "conference_official_site",
+          "source_name": "NCA Convention 官方页",
+          "source_url": "https://www.natcom.org/convention/",
+          "official_domain": "natcom.org",
+          "retrieved_at": "2026-09-06",
+          "notes": "官方页面及官方 PDF/Newsletter 确认会期与早鸟注册日。"
+        }
+      ]
+    },
+    {
+      "series_key": "ecrea_ecc",
+      "year": 2026,
+      "edition_name": "ECC 2026（第 11 届）",
+      "edition_number": null,
+      "start_date": "2026-09-08",
+      "end_date": "2026-09-11",
+      "country_or_region": "捷克",
+      "city": "布尔诺",
+      "venue": null,
+      "edition_status": "announced",
+      "edition_official_url": "https://ecrea2026brno.eu/",
+      "abstract_deadline": null,
+      "paper_deadline": null,
+      "poster_deadline": "2026-01-08",
+      "workshop_deadline": null,
+      "notification_date": null,
+      "camera_ready_deadline": null,
+      "registration_deadline": null,
+      "registration_url": null,
+      "call_for_papers_url": null,
+      "notes": "ECC 2026 官网确认 2026/9/8-11 布尔诺会期；海报与导师计划为面向研究生的官方学生环节。",
+      "student_value_tags": [
+        "poster"
+      ],
+      "audience": [
+        "master",
+        "phd"
+      ],
+      "participation_details": {
+        "poster_mentoring_programme": "ECREA ECC 2026 官方 Poster & Mentoring Programme 面向在读博士与硕士，官方提交截止 2026-01-08（已过）；本届为第 11 届。"
+      },
+      "paper_details": null,
+      "school_relations": [],
+      "sources": [
+        {
+          "source_type": "conference_official_site",
+          "source_name": "ECC 2026 官网",
+          "source_url": "https://ecrea2026brno.eu/",
+          "official_domain": "ecrea2026brno.eu",
+          "retrieved_at": "2026-09-06",
+          "notes": "官网确认会期、地点及 poster & mentoring programme 信息。"
+        }
+      ],
+      "opportunities": [
+        {
+          "series_key": "ecrea_ecc",
+          "year": 2026,
+          "opportunity_type": "poster",
+          "title": "ECC 2026 Poster & Mentoring Programme",
+          "official_label": "Poster & Mentoring Programme",
+          "description": "ECREA ECC 2026 官方海报与导师计划，面向在读博士与硕士；官方提交截止 2026-01-08。",
+          "audience": [
+            "master",
+            "phd"
+          ],
+          "deadline": "2026-01-08",
+          "open_date": null,
+          "participation_mode": null,
+          "official_url": "https://ecrea2026brno.eu/",
+          "evidence": "ECC 2026 官网 Poster & Mentoring Programme 页面写明面向研究生与截止日期。",
+          "evidence_status": "full_page_verified",
+          "notes": null,
+          "source": {
+            "source_type": "conference_official_site",
+            "source_name": "ECC 2026 Poster & Mentoring Programme 官方来源",
+            "source_url": "https://ecrea2026brno.eu/",
+            "official_domain": "ecrea2026brno.eu",
+            "notes": "ECC 2026 官网 Poster & Mentoring Programme 页面写明面向研究生与截止日期。"
+          }
+        }
+      ]
+    },
+    {
+      "series_key": "aoir",
+      "year": 2026,
+      "edition_name": "AoIR 2026（第 27 届）",
+      "edition_number": null,
+      "start_date": "2026-10-14",
+      "end_date": "2026-10-17",
+      "country_or_region": "墨西哥",
+      "city": "墨西哥城",
+      "venue": null,
+      "edition_status": "announced",
+      "edition_official_url": "https://aoir.org/",
+      "abstract_deadline": null,
+      "paper_deadline": null,
+      "poster_deadline": null,
+      "workshop_deadline": null,
+      "notification_date": null,
+      "camera_ready_deadline": null,
+      "registration_deadline": null,
+      "registration_url": null,
+      "call_for_papers_url": null,
+      "notes": "AoIR 官网确认 2026/10/14-17 在墨西哥城举行第 27 届年会。",
+      "student_value_tags": null,
+      "audience": null,
+      "participation_details": null,
+      "paper_details": null,
+      "school_relations": [],
+      "sources": [
+        {
+          "source_type": "international_professional_org",
+          "source_name": "AoIR 官网",
+          "source_url": "https://aoir.org/",
+          "official_domain": "aoir.org",
+          "retrieved_at": "2026-09-06",
+          "notes": "官方页面确认年会日期与城市。"
+        }
+      ]
+    },
+    {
+      "series_key": "bea",
+      "year": 2026,
+      "edition_name": "BEA 2026 Annual Convention",
+      "edition_number": null,
+      "start_date": "2026-04-17",
+      "end_date": "2026-04-21",
+      "country_or_region": "美国",
+      "city": "拉斯维加斯",
+      "venue": "Las Vegas Convention Center",
+      "edition_status": "held",
+      "edition_official_url": "https://www.beaweb.org/",
+      "abstract_deadline": null,
+      "paper_deadline": null,
+      "poster_deadline": null,
+      "workshop_deadline": null,
+      "notification_date": null,
+      "camera_ready_deadline": null,
+      "registration_deadline": null,
+      "registration_url": null,
+      "call_for_papers_url": null,
+      "notes": "BEA 官方大会页与检索片段确认 2026/4/17-21 在拉斯维加斯举行；官网对自动访问受限，日期以官方站内片段为准。",
+      "student_value_tags": null,
+      "audience": null,
+      "participation_details": null,
+      "paper_details": null,
+      "school_relations": [],
+      "sources": [
+        {
+          "source_type": "conference_official_site",
+          "source_name": "BEA 官网大会页",
+          "source_url": "https://www.beaweb.org/conv/bea-faculty-and-student-research-in-progress/",
+          "official_domain": "beaweb.org",
+          "retrieved_at": "2026-09-06",
+          "notes": "2026-09-06 通过官方会议页/官方站内检索片段核对日期；官网对自动访问受限，不依赖第三方目录。"
+        }
+      ]
+    },
+    {
+      "series_key": "scms",
+      "year": 2026,
+      "edition_name": "SCMS 2026 Annual Conference",
+      "edition_number": null,
+      "start_date": "2026-03-26",
+      "end_date": "2026-03-29",
+      "country_or_region": "美国",
+      "city": "芝加哥",
+      "venue": null,
+      "edition_status": "held",
+      "edition_official_url": "https://www.cmstudies.org/event/Chicago2026",
+      "abstract_deadline": null,
+      "paper_deadline": null,
+      "poster_deadline": null,
+      "workshop_deadline": null,
+      "notification_date": null,
+      "camera_ready_deadline": null,
+      "registration_deadline": "2026-01-14",
+      "registration_url": null,
+      "call_for_papers_url": null,
+      "notes": "SCMS 官方活动页确认 2026/3/26-29 芝加哥会期；演讲者注册截止 2026-01-14（官网对自动访问受限，日期经官方站内片段核对）。",
+      "student_value_tags": null,
+      "audience": null,
+      "participation_details": null,
+      "paper_details": null,
+      "school_relations": [],
+      "sources": [
+        {
+          "source_type": "conference_official_site",
+          "source_name": "SCMS 官方活动页",
+          "source_url": "https://www.cmstudies.org/event/Chicago2026",
+          "official_domain": "cmstudies.org",
+          "retrieved_at": "2026-09-06",
+          "notes": "2026-09-06 通过官方会议页/官方站内检索片段核对日期；官网对自动访问受限，不依赖第三方目录。"
+        }
+      ]
+    },
+    {
+      "series_key": "meccsa",
+      "year": 2026,
+      "edition_name": "MeCCSA 2026 Conference",
+      "edition_number": null,
+      "start_date": "2026-09-02",
+      "end_date": "2026-09-04",
+      "country_or_region": "英国",
+      "city": "莱斯特",
+      "venue": null,
+      "edition_status": "held",
+      "edition_official_url": "https://www.meccsa.org.uk/events/conference/",
+      "abstract_deadline": null,
+      "paper_deadline": null,
+      "poster_deadline": null,
+      "workshop_deadline": null,
+      "notification_date": null,
+      "camera_ready_deadline": null,
+      "registration_deadline": null,
+      "registration_url": null,
+      "call_for_papers_url": null,
+      "notes": "MeCCSA 官方会议页确认 2026/9/2-4 在莱斯特大学举行；注册已开放。",
+      "student_value_tags": null,
+      "audience": null,
+      "participation_details": null,
+      "paper_details": null,
+      "school_relations": [],
+      "sources": [
+        {
+          "source_type": "conference_official_site",
+          "source_name": "MeCCSA 官方会议页",
+          "source_url": "https://www.meccsa.org.uk/events/conference/",
+          "official_domain": "meccsa.org.uk",
+          "retrieved_at": "2026-09-06",
+          "notes": "官方会议页确认会期、地点与注册状态。"
+        }
+      ]
+    },
+    {
+      "series_key": "isoj",
+      "year": 2026,
+      "edition_name": "ISOJ 2026",
+      "edition_number": null,
+      "start_date": "2026-09-17",
+      "end_date": "2026-09-18",
+      "country_or_region": "美国",
+      "city": "奥斯汀",
+      "venue": null,
+      "edition_status": "announced",
+      "edition_official_url": "https://isoj.org/",
+      "abstract_deadline": null,
+      "paper_deadline": null,
+      "poster_deadline": null,
+      "workshop_deadline": null,
+      "notification_date": null,
+      "camera_ready_deadline": null,
+      "registration_deadline": null,
+      "registration_url": null,
+      "call_for_papers_url": null,
+      "notes": "ISOJ 官方首页确认 2026/9/17-18 在得克萨斯大学奥斯汀分校举行（线下+线上），注册已开放。",
+      "student_value_tags": null,
+      "audience": null,
+      "participation_details": null,
+      "paper_details": null,
+      "school_relations": [],
+      "sources": [
+        {
+          "source_type": "conference_official_site",
+          "source_name": "ISOJ 官网",
+          "source_url": "https://isoj.org/",
+          "official_domain": "isoj.org",
+          "retrieved_at": "2026-09-06",
+          "notes": "官方首页确认会期、地点与注册状态。"
+        }
+      ]
+    },
+    {
+      "series_key": "ire",
+      "year": 2026,
+      "edition_name": "IRE 2026",
+      "edition_number": null,
+      "start_date": "2026-06-18",
+      "end_date": "2026-06-21",
+      "country_or_region": "美国",
+      "city": "National Harbor",
+      "venue": null,
+      "edition_status": "held",
+      "edition_official_url": "https://www.ire.org/training/conferences/",
+      "abstract_deadline": null,
+      "paper_deadline": null,
+      "poster_deadline": null,
+      "workshop_deadline": null,
+      "notification_date": null,
+      "camera_ready_deadline": null,
+      "registration_deadline": null,
+      "registration_url": null,
+      "call_for_papers_url": null,
+      "notes": "IRE 官方会议页确认 2026/6/18-21 在 National Harbor 举行（官网对自动访问受限，日期经官方站内片段核对）。",
+      "student_value_tags": null,
+      "audience": null,
+      "participation_details": null,
+      "paper_details": null,
+      "school_relations": [],
+      "sources": [
+        {
+          "source_type": "conference_official_site",
+          "source_name": "IRE 官方会议页",
+          "source_url": "https://www.ire.org/training/conferences/",
+          "official_domain": "ire.org",
+          "retrieved_at": "2026-09-06",
+          "notes": "2026-09-06 通过官方会议页/官方站内检索片段核对日期；官网对自动访问受限，不依赖第三方目录。"
+        }
+      ]
+    },
+    {
+      "series_key": "ona",
+      "year": 2026,
+      "edition_name": "ONA26",
+      "edition_number": null,
+      "start_date": "2026-03-30",
+      "end_date": "2026-04-01",
+      "country_or_region": "美国",
+      "city": "芝加哥",
+      "venue": null,
+      "edition_status": "held",
+      "edition_official_url": "https://www.journalists.org/conference/",
+      "abstract_deadline": null,
+      "paper_deadline": null,
+      "poster_deadline": null,
+      "workshop_deadline": null,
+      "notification_date": null,
+      "camera_ready_deadline": null,
+      "registration_deadline": null,
+      "registration_url": null,
+      "call_for_papers_url": null,
+      "notes": "ONA 官方会议页确认 2026/3/30-4/1 在芝加哥举行。",
+      "student_value_tags": null,
+      "audience": null,
+      "participation_details": null,
+      "paper_details": null,
+      "school_relations": [],
+      "sources": [
+        {
+          "source_type": "conference_official_site",
+          "source_name": "ONA 官方会议页",
+          "source_url": "https://www.journalists.org/conference/",
+          "official_domain": "journalists.org",
+          "retrieved_at": "2026-09-06",
+          "notes": "官方会议页确认会期与城市。"
+        }
+      ]
+    },
+    {
+      "series_key": "nabj",
+      "year": 2026,
+      "edition_name": "NABJ 2026 Convention & Career Fair",
+      "edition_number": null,
+      "start_date": "2026-08-12",
+      "end_date": "2026-08-16",
+      "country_or_region": "美国",
+      "city": "亚特兰大",
+      "venue": null,
+      "edition_status": "held",
+      "edition_official_url": "https://nabjonline.org/",
+      "abstract_deadline": null,
+      "paper_deadline": null,
+      "poster_deadline": null,
+      "workshop_deadline": null,
+      "notification_date": null,
+      "camera_ready_deadline": null,
+      "registration_deadline": null,
+      "registration_url": null,
+      "call_for_papers_url": null,
+      "notes": "NABJ 官方公告与大会页确认 2026/8/12-16 在亚特兰大举行。",
+      "student_value_tags": null,
+      "audience": null,
+      "participation_details": null,
+      "paper_details": null,
+      "school_relations": [],
+      "sources": [
+        {
+          "source_type": "international_professional_org",
+          "source_name": "NABJ 官网公告",
+          "source_url": "https://nabjonline.org/blog/2026-convention-co-chairs/",
+          "official_domain": "nabjonline.org",
+          "retrieved_at": "2026-09-06",
+          "notes": "官方博客公告确认 2026 大会日期与地点。"
+        }
+      ]
+    },
+    {
+      "series_key": "aaja",
+      "year": 2026,
+      "edition_name": "AAJA26",
+      "edition_number": null,
+      "start_date": "2026-06-24",
+      "end_date": "2026-06-28",
+      "country_or_region": "美国",
+      "city": "明尼阿波利斯",
+      "venue": null,
+      "edition_status": "held",
+      "edition_official_url": "https://www.aaja.org/",
+      "abstract_deadline": null,
+      "paper_deadline": null,
+      "poster_deadline": null,
+      "workshop_deadline": null,
+      "notification_date": null,
+      "camera_ready_deadline": null,
+      "registration_deadline": null,
+      "registration_url": null,
+      "call_for_papers_url": null,
+      "notes": "AAJA 官网新闻确认 2026/6/24-28 在明尼阿波利斯举行全国大会。",
+      "student_value_tags": null,
+      "audience": null,
+      "participation_details": null,
+      "paper_details": null,
+      "school_relations": [],
+      "sources": [
+        {
+          "source_type": "international_professional_org",
+          "source_name": "AAJA 官网新闻",
+          "source_url": "https://www.aaja.org/",
+          "official_domain": "aaja.org",
+          "retrieved_at": "2026-09-06",
+          "notes": "官方新闻（2026/7/9 AAJA26 Minneapolis 发布）确认大会日期与地点；自动访问受限，按官方站内片段核对。"
+        }
+      ]
+    },
+    {
+      "series_key": "nahj",
+      "year": 2026,
+      "edition_name": "NAHJ 2026 Conference & Expo",
+      "edition_number": null,
+      "start_date": "2026-07-22",
+      "end_date": "2026-07-25",
+      "country_or_region": "美国",
+      "city": "新奥尔良",
+      "venue": "New Orleans Marriott",
+      "edition_status": "held",
+      "edition_official_url": "https://nahj.org/event/nahj-conference-expo-new-orleans-2026/",
+      "abstract_deadline": null,
+      "paper_deadline": null,
+      "poster_deadline": null,
+      "workshop_deadline": null,
+      "notification_date": null,
+      "camera_ready_deadline": null,
+      "registration_deadline": null,
+      "registration_url": null,
+      "call_for_papers_url": null,
+      "notes": "NAHJ 官方发布页与会议页一致确认 2026/7/22-25 在新奥尔良举行。",
+      "student_value_tags": null,
+      "audience": null,
+      "participation_details": null,
+      "paper_details": null,
+      "school_relations": [],
+      "sources": [
+        {
+          "source_type": "international_professional_org",
+          "source_name": "NAHJ 官方会议页",
+          "source_url": "https://nahj.org/event/nahj-conference-expo-new-orleans-2026/",
+          "official_domain": "nahj.org",
+          "retrieved_at": "2026-09-06",
+          "notes": "官方发布页与会议页一致确认日期地点。"
+        }
+      ]
+    },
+    {
+      "series_key": "wapor",
+      "year": 2026,
+      "edition_name": "WAPOR 79th Annual Conference",
+      "edition_number": null,
+      "start_date": "2026-10-26",
+      "end_date": "2026-10-29",
+      "country_or_region": "墨西哥",
+      "city": "墨西哥城",
+      "venue": null,
+      "edition_status": "announced",
+      "edition_official_url": "https://wapor.org/events/annual-conference/current-conference/",
+      "abstract_deadline": null,
+      "paper_deadline": null,
+      "poster_deadline": null,
+      "workshop_deadline": null,
+      "notification_date": null,
+      "camera_ready_deadline": null,
+      "registration_deadline": null,
+      "registration_url": null,
+      "call_for_papers_url": null,
+      "notes": "WAPOR 官方年会页与主席通讯确认 2026/10/26-29 在墨西哥城举行第 79 届年会。",
+      "student_value_tags": null,
+      "audience": null,
+      "participation_details": null,
+      "paper_details": null,
+      "school_relations": [],
+      "sources": [
+        {
+          "source_type": "international_professional_org",
+          "source_name": "WAPOR 官方年会页",
+          "source_url": "https://wapor.org/events/annual-conference/current-conference/",
+          "official_domain": "wapor.org",
+          "retrieved_at": "2026-09-06",
+          "notes": "官方年会页及 2026-04 主席通讯确认日期地点。"
+        }
+      ]
+    },
+    {
+      "series_key": "ejta",
+      "year": 2026,
+      "edition_name": "EJTA AGM & Symposium 2026",
+      "edition_number": null,
+      "start_date": "2026-10-28",
+      "end_date": "2026-10-30",
+      "country_or_region": "法国",
+      "city": "波尔多",
+      "venue": "Institut de Journalisme Bordeaux Aquitaine",
+      "edition_status": "announced",
+      "edition_official_url": "https://ejta.eu/",
+      "abstract_deadline": null,
+      "paper_deadline": null,
+      "poster_deadline": null,
+      "workshop_deadline": null,
+      "notification_date": null,
+      "camera_ready_deadline": null,
+      "registration_deadline": null,
+      "registration_url": null,
+      "call_for_papers_url": null,
+      "notes": "EJTA 官网确认 2026/10/28-30 在波尔多 IJBA 举行年度大会与研讨会，注册已开放。",
+      "student_value_tags": null,
+      "audience": null,
+      "participation_details": null,
+      "paper_details": null,
+      "school_relations": [],
+      "sources": [
+        {
+          "source_type": "association_official_notice",
+          "source_name": "EJTA 官方通知",
+          "source_url": "https://ejta.eu/index.php/2026/06/15/ejta-agm-symposium-2026-registration-is-open/",
+          "official_domain": "ejta.eu",
+          "retrieved_at": "2026-09-06",
+          "notes": "官方站内通知确认日期、地点与注册状态。"
+        }
+      ]
+    },
+    {
+      "series_key": "ecss_congress",
+      "year": 2026,
+      "edition_name": "ECSS Lausanne 2026（第 31 届）",
+      "edition_number": null,
+      "start_date": "2026-07-07",
+      "end_date": "2026-07-10",
+      "country_or_region": "瑞士",
+      "city": "洛桑",
+      "venue": null,
+      "edition_status": "held",
+      "edition_official_url": "https://www.sport-science.org/index.php/lausanne-2026",
+      "abstract_deadline": null,
+      "paper_deadline": null,
+      "poster_deadline": null,
+      "workshop_deadline": null,
+      "notification_date": null,
+      "camera_ready_deadline": null,
+      "registration_deadline": null,
+      "registration_url": null,
+      "call_for_papers_url": null,
+      "notes": "ECSS 官网 Lausanne-2026 页面与 key-dates 页确认 2026/7/7-10 举行第 31 届大会。",
+      "student_value_tags": null,
+      "audience": null,
+      "participation_details": null,
+      "paper_details": null,
+      "school_relations": [],
+      "sources": [
+        {
+          "source_type": "international_professional_org",
+          "source_name": "ECSS Lausanne 2026 官方页",
+          "source_url": "https://www.sport-science.org/index.php/lausanne-2026",
+          "official_domain": "sport-science.org",
+          "retrieved_at": "2026-09-06",
+          "notes": "官方站内多页确认日期；页面结构对自动访问不稳定。"
+        }
+      ]
+    },
+    {
+      "series_key": "nsca_conference",
+      "year": 2026,
+      "edition_name": "NSCA National Conference 2026",
+      "edition_number": null,
+      "start_date": "2026-07-08",
+      "end_date": "2026-07-11",
+      "country_or_region": "美国",
+      "city": "新奥尔良",
+      "venue": null,
+      "edition_status": "held",
+      "edition_official_url": "https://www.nsca.com/NSCACon",
+      "abstract_deadline": null,
+      "paper_deadline": null,
+      "poster_deadline": null,
+      "workshop_deadline": null,
+      "notification_date": null,
+      "camera_ready_deadline": null,
+      "registration_deadline": null,
+      "registration_url": null,
+      "call_for_papers_url": null,
+      "notes": "NSCA 官方 NSCACon 页面与站内检索确认 2026/7/8-11 在新奥尔良举行（含线上）。",
+      "student_value_tags": null,
+      "audience": null,
+      "participation_details": null,
+      "paper_details": null,
+      "school_relations": [],
+      "sources": [
+        {
+          "source_type": "international_professional_org",
+          "source_name": "NSCA NSCACon 官方页",
+          "source_url": "https://www.nsca.com/NSCACon",
+          "official_domain": "nsca.com",
+          "retrieved_at": "2026-09-06",
+          "notes": "2026-09-06 通过官方会议页/官方站内检索片段核对日期；官网对自动访问受限，不依赖第三方目录。"
+        }
+      ]
+    },
+    {
+      "series_key": "isbs",
+      "year": 2026,
+      "edition_name": "ISBS 2026（第 44 届）",
+      "edition_number": null,
+      "start_date": "2026-07-27",
+      "end_date": "2026-07-31",
+      "country_or_region": "英国",
+      "city": "拉夫堡",
+      "venue": "Loughborough University",
+      "edition_status": "held",
+      "edition_official_url": "https://isbs.org/",
+      "abstract_deadline": null,
+      "paper_deadline": null,
+      "poster_deadline": null,
+      "workshop_deadline": null,
+      "notification_date": null,
+      "camera_ready_deadline": null,
+      "registration_deadline": null,
+      "registration_url": null,
+      "call_for_papers_url": null,
+      "notes": "ISBS 官网首页确认 2026/7/27-31 在拉夫堡大学举行第 44 届大会。",
+      "student_value_tags": null,
+      "audience": null,
+      "participation_details": null,
+      "paper_details": null,
+      "school_relations": [],
+      "sources": [
+        {
+          "source_type": "international_professional_org",
+          "source_name": "ISBS 官网",
+          "source_url": "https://isbs.org/",
+          "official_domain": "isbs.org",
+          "retrieved_at": "2026-09-06",
+          "notes": "官方首页直接确认会期、地点与届数。"
+        }
+      ]
+    },
+    {
+      "series_key": "issp_world_congress",
+      "year": 2025,
+      "edition_name": "ISSP 16th World Congress",
+      "edition_number": 16,
+      "start_date": "2025-12-08",
+      "end_date": "2025-12-12",
+      "country_or_region": "中国香港",
+      "city": "香港",
+      "venue": "香港中文大学",
+      "edition_status": "held",
+      "edition_official_url": "https://www.issponline.org/",
+      "abstract_deadline": null,
+      "paper_deadline": null,
+      "poster_deadline": null,
+      "workshop_deadline": null,
+      "notification_date": null,
+      "camera_ready_deadline": null,
+      "registration_deadline": null,
+      "registration_url": null,
+      "call_for_papers_url": null,
+      "notes": "ISSP 官宣页、香港体育学院官方主办页及港中大官方页面多源确认 2025/12/8-12 在香港举行第 16 届世界大会。",
+      "student_value_tags": null,
+      "audience": null,
+      "participation_details": null,
+      "paper_details": null,
+      "school_relations": [],
+      "sources": [
+        {
+          "source_type": "international_professional_org",
+          "source_name": "ISSP 官网",
+          "source_url": "https://www.issponline.org/",
+          "official_domain": "issponline.org",
+          "retrieved_at": "2026-09-06",
+          "notes": "官方页确认届数与日期。"
+        }
+      ]
+    },
+    {
+      "series_key": "aasp",
+      "year": 2026,
+      "edition_name": "AASP 41st Annual Conference",
+      "edition_number": null,
+      "start_date": "2026-10-21",
+      "end_date": "2026-10-24",
+      "country_or_region": "美国",
+      "city": "明尼阿波利斯",
+      "venue": "Hyatt Regency Minneapolis",
+      "edition_status": "announced",
+      "edition_official_url": "https://appliedsportpsych.org/annual-conference/",
+      "abstract_deadline": null,
+      "paper_deadline": null,
+      "poster_deadline": null,
+      "workshop_deadline": null,
+      "notification_date": null,
+      "camera_ready_deadline": null,
+      "registration_deadline": null,
+      "registration_url": null,
+      "call_for_papers_url": null,
+      "notes": "AASP 官方年会页确认 2026/10/21-24 在明尼阿波利斯举行第 41 届年会。",
+      "student_value_tags": null,
+      "audience": null,
+      "participation_details": null,
+      "paper_details": null,
+      "school_relations": [],
+      "sources": [
+        {
+          "source_type": "international_professional_org",
+          "source_name": "AASP 官方年会页",
+          "source_url": "https://appliedsportpsych.org/annual-conference/",
+          "official_domain": "appliedsportpsych.org",
+          "retrieved_at": "2026-09-06",
+          "notes": "2026-09-06 通过官方会议页/官方站内检索片段核对日期；官网对自动访问受限，不依赖第三方目录。"
+        }
+      ]
+    },
+    {
+      "series_key": "nasss",
+      "year": 2026,
+      "edition_name": "NASSS 2026",
+      "edition_number": null,
+      "start_date": "2026-11-04",
+      "end_date": "2026-11-07",
+      "country_or_region": "加拿大",
+      "city": "卡尔加里",
+      "venue": null,
+      "edition_status": "announced",
+      "edition_official_url": "https://nasss.org/",
+      "abstract_deadline": null,
+      "paper_deadline": null,
+      "poster_deadline": null,
+      "workshop_deadline": null,
+      "notification_date": null,
+      "camera_ready_deadline": null,
+      "registration_deadline": null,
+      "registration_url": null,
+      "call_for_papers_url": null,
+      "notes": "NASSS 官网确认 2026/11/4-7 在卡尔加里举行年会。",
+      "student_value_tags": null,
+      "audience": null,
+      "participation_details": null,
+      "paper_details": null,
+      "school_relations": [],
+      "sources": [
+        {
+          "source_type": "international_professional_org",
+          "source_name": "NASSS 官网",
+          "source_url": "https://nasss.org/",
+          "official_domain": "nasss.org",
+          "retrieved_at": "2026-09-06",
+          "notes": "2026-09-06 通过官方会议页/官方站内检索片段核对日期；官网对自动访问受限，不依赖第三方目录。"
+        }
+      ]
+    },
+    {
+      "series_key": "shape_national",
+      "year": 2026,
+      "edition_name": "SHAPE America 2026 National Convention & Expo",
+      "edition_number": null,
+      "start_date": "2026-03-17",
+      "end_date": "2026-03-21",
+      "country_or_region": "美国",
+      "city": "堪萨斯城",
+      "venue": "Kansas City Convention Center",
+      "edition_status": "held",
+      "edition_official_url": "https://convention.shapeamerica.org/",
+      "abstract_deadline": null,
+      "paper_deadline": null,
+      "poster_deadline": null,
+      "workshop_deadline": null,
+      "notification_date": null,
+      "camera_ready_deadline": null,
+      "registration_deadline": null,
+      "registration_url": null,
+      "call_for_papers_url": null,
+      "notes": "SHAPE America 官方大会页确认 2026/3/17-21 在堪萨斯城举行。",
+      "student_value_tags": null,
+      "audience": null,
+      "participation_details": null,
+      "paper_details": null,
+      "school_relations": [],
+      "sources": [
+        {
+          "source_type": "conference_official_site",
+          "source_name": "SHAPE America 大会官网",
+          "source_url": "https://convention.shapeamerica.org/",
+          "official_domain": "shapeamerica.org",
+          "retrieved_at": "2026-09-06",
+          "notes": "2026-09-06 通过官方会议页/官方站内检索片段核对日期；官网对自动访问受限，不依赖第三方目录。"
+        }
+      ]
+    },
+    {
+      "series_key": "easm",
+      "year": 2026,
+      "edition_name": "EASM 2026（第 34 届）",
+      "edition_number": null,
+      "start_date": "2026-09-15",
+      "end_date": "2026-09-18",
+      "country_or_region": "希腊",
+      "city": "塞萨洛尼基",
+      "venue": null,
+      "edition_status": "announced",
+      "edition_official_url": "https://easm.net/easm-european-sport-management-conference/",
+      "abstract_deadline": null,
+      "paper_deadline": null,
+      "poster_deadline": null,
+      "workshop_deadline": null,
+      "notification_date": null,
+      "camera_ready_deadline": null,
+      "registration_deadline": null,
+      "registration_url": null,
+      "call_for_papers_url": null,
+      "notes": "EASM 官网大会页与历史页确认 2026/9/15-18 在塞萨洛尼基举行第 34 届大会，并写明学生研讨会为正式议程。",
+      "student_value_tags": [
+        "student_forum",
+        "doctoral_consortium"
+      ],
+      "audience": [
+        "master",
+        "phd"
+      ],
+      "participation_details": {
+        "student_seminars": "EASM 官网大会历史页写明会期含面向学士/硕士的 Student Seminar 与 PhD Seminar，作为大会正式议程组成部分；具体投稿截止以官网当年子页为准。"
+      },
+      "paper_details": null,
+      "school_relations": [],
+      "sources": [
+        {
+          "source_type": "international_professional_org",
+          "source_name": "EASM 官网大会页",
+          "source_url": "https://easm.net/easm-european-sport-management-conference/",
+          "official_domain": "easm.net",
+          "retrieved_at": "2026-09-06",
+          "notes": "官方页面确认会期与学生/博士生研讨会安排。"
+        }
+      ],
+      "opportunities": [
+        {
+          "series_key": "easm",
+          "year": 2026,
+          "opportunity_type": "student_forum",
+          "title": "EASM 2026 Student Seminar（学士/硕士）",
+          "official_label": "Student Seminar (bachelor/master)",
+          "description": "EASM 官网大会历史页写明会期含面向学士/硕士的 Student Seminar，作为大会正式议程。",
+          "audience": [
+            "undergraduate",
+            "master"
+          ],
+          "deadline": null,
+          "open_date": null,
+          "participation_mode": null,
+          "official_url": "https://easm.net/easm-european-sport-management-conference/",
+          "evidence": "EASM 官方大会页/历史页写明 student seminar（bachelor/master）安排。",
+          "evidence_status": "full_page_verified",
+          "notes": null,
+          "source": {
+            "source_type": "conference_official_site",
+            "source_name": "EASM 2026 Student Seminar（学士/硕士） 官方来源",
+            "source_url": "https://easm.net/easm-european-sport-management-conference/",
+            "official_domain": "easm.net",
+            "notes": "EASM 官方大会页/历史页写明 student seminar（bachelor/master）安排。"
+          }
+        },
+        {
+          "series_key": "easm",
+          "year": 2026,
+          "opportunity_type": "doctoral_consortium",
+          "title": "EASM 2026 PhD Seminar",
+          "official_label": "PhD Student Seminar",
+          "description": "EASM 官网大会历史页写明会期含面向博士生的 PhD Seminar。",
+          "audience": [
+            "phd"
+          ],
+          "deadline": null,
+          "open_date": null,
+          "participation_mode": null,
+          "official_url": "https://easm.net/easm-european-sport-management-conference/",
+          "evidence": "EASM 官方大会页/历史页写明 PhD seminar 安排。",
+          "evidence_status": "full_page_verified",
+          "notes": null,
+          "source": {
+            "source_type": "conference_official_site",
+            "source_name": "EASM 2026 PhD Seminar 官方来源",
+            "source_url": "https://easm.net/easm-european-sport-management-conference/",
+            "official_domain": "easm.net",
+            "notes": "EASM 官方大会页/历史页写明 PhD seminar 安排。"
+          }
+        }
+      ]
+    },
+    {
+      "series_key": "iadms",
+      "year": 2026,
+      "edition_name": "IADMS 36th Annual Conference",
+      "edition_number": null,
+      "start_date": "2026-09-24",
+      "end_date": "2026-09-27",
+      "country_or_region": "澳大利亚",
+      "city": "墨尔本",
+      "venue": null,
+      "edition_status": "announced",
+      "edition_official_url": "https://iadms.org/",
+      "abstract_deadline": null,
+      "paper_deadline": null,
+      "poster_deadline": null,
+      "workshop_deadline": null,
+      "notification_date": null,
+      "camera_ready_deadline": null,
+      "registration_deadline": null,
+      "registration_url": null,
+      "call_for_papers_url": null,
+      "notes": "IADMS 官网新闻确认 2026/9/24-27 在墨尔本举行第 36 届年会。",
+      "student_value_tags": null,
+      "audience": null,
+      "participation_details": null,
+      "paper_details": null,
+      "school_relations": [],
+      "sources": [
+        {
+          "source_type": "international_professional_org",
+          "source_name": "IADMS 官网新闻",
+          "source_url": "https://iadms.org/education-resources/news/",
+          "official_domain": "iadms.org",
+          "retrieved_at": "2026-09-06",
+          "notes": "2026-09-06 通过官方会议页/官方站内检索片段核对日期；官网对自动访问受限，不依赖第三方目录。"
+        }
+      ]
+    },
+    {
+      "series_key": "fims_world_congress",
+      "year": 2026,
+      "edition_name": "FIMS 42nd World Congress of Sports Medicine",
+      "edition_number": null,
+      "start_date": "2026-11-24",
+      "end_date": "2026-11-27",
+      "country_or_region": "智利",
+      "city": "圣地亚哥",
+      "venue": null,
+      "edition_status": "announced",
+      "edition_official_url": "https://www.fims.org/",
+      "abstract_deadline": null,
+      "paper_deadline": null,
+      "poster_deadline": null,
+      "workshop_deadline": null,
+      "notification_date": null,
+      "camera_ready_deadline": null,
+      "registration_deadline": null,
+      "registration_url": null,
+      "call_for_papers_url": null,
+      "notes": "FIMS 官网 2026-04-16 新闻确认第 42 届世界运动医学大会于 2026/11/24-27 在圣地亚哥举行。",
+      "student_value_tags": null,
+      "audience": null,
+      "participation_details": null,
+      "paper_details": null,
+      "school_relations": [],
+      "sources": [
+        {
+          "source_type": "international_professional_org",
+          "source_name": "FIMS 官网新闻",
+          "source_url": "https://www.fims.org/news-events/news/fims-executive-committee-meets-in-hong-kong-and-expands-global-network-of-collaborating-centres/",
+          "official_domain": "fims.org",
+          "retrieved_at": "2026-09-06",
+          "notes": "官方 2026-04-16 新闻确认日期与地点。"
+        }
+      ]
+    },
+    {
+      "series_key": "naspspa",
+      "year": 2026,
+      "edition_name": "NASPSPA 2026",
+      "edition_number": null,
+      "start_date": "2026-06-18",
+      "end_date": "2026-06-20",
+      "country_or_region": "加拿大",
+      "city": "蒙特利尔",
+      "venue": null,
+      "edition_status": "held",
+      "edition_official_url": "https://www.naspspa.com/conference/",
+      "abstract_deadline": null,
+      "paper_deadline": null,
+      "poster_deadline": null,
+      "workshop_deadline": null,
+      "notification_date": null,
+      "camera_ready_deadline": null,
+      "registration_deadline": null,
+      "registration_url": null,
+      "call_for_papers_url": null,
+      "notes": "NASPSPA 官方会议页确认 2026/6/18-20 在蒙特利尔举行年会。",
+      "student_value_tags": null,
+      "audience": null,
+      "participation_details": null,
+      "paper_details": null,
+      "school_relations": [],
+      "sources": [
+        {
+          "source_type": "international_professional_org",
+          "source_name": "NASPSPA 官方会议页",
+          "source_url": "https://www.naspspa.com/conference/",
+          "official_domain": "naspspa.com",
+          "retrieved_at": "2026-09-06",
+          "notes": "2026-09-06 通过官方会议页/官方站内检索片段核对日期；官网对自动访问受限，不依赖第三方目录。"
+        }
+      ]
+    },
+    {
+      "series_key": "aiesep",
+      "year": 2026,
+      "edition_name": "AIESEP 2026 World Congress",
+      "edition_number": null,
+      "start_date": "2026-06-15",
+      "end_date": "2026-06-19",
+      "country_or_region": "中国台湾",
+      "city": "台北",
+      "venue": null,
+      "edition_status": "held",
+      "edition_official_url": "https://2026aiesep.org/",
+      "abstract_deadline": null,
+      "paper_deadline": null,
+      "poster_deadline": null,
+      "workshop_deadline": null,
+      "notification_date": null,
+      "camera_ready_deadline": null,
+      "registration_deadline": null,
+      "registration_url": null,
+      "call_for_papers_url": null,
+      "notes": "AIESEP 官方通讯与 2026 大会专题页确认 2026/6/15-19 在台北举行世界大会。",
+      "student_value_tags": null,
+      "audience": null,
+      "participation_details": null,
+      "paper_details": null,
+      "school_relations": [],
+      "sources": [
+        {
+          "source_type": "international_professional_org",
+          "source_name": "AIESEP 2026 大会页",
+          "source_url": "https://2026aiesep.org/",
+          "official_domain": "aiesep.org",
+          "retrieved_at": "2026-09-06",
+          "notes": "官方通讯与专题页确认日期与地点。"
+        }
+      ]
+    },
+    {
+      "series_key": "bases",
+      "year": 2026,
+      "edition_name": "BASES Conference 2026",
+      "edition_number": null,
+      "start_date": "2026-06-02",
+      "end_date": "2026-06-04",
+      "country_or_region": "英国",
+      "city": "曼彻斯特",
+      "venue": "Manchester Metropolitan University",
+      "edition_status": "held",
+      "edition_official_url": "https://www.bases.org.uk/",
+      "abstract_deadline": null,
+      "paper_deadline": null,
+      "poster_deadline": null,
+      "workshop_deadline": null,
+      "notification_date": null,
+      "camera_ready_deadline": null,
+      "registration_deadline": null,
+      "registration_url": null,
+      "call_for_papers_url": null,
+      "notes": "BASES 官方大会通知确认 2026/6/2-4 在曼彻斯特都会大学举行。",
+      "student_value_tags": null,
+      "audience": null,
+      "participation_details": null,
+      "paper_details": null,
+      "school_relations": [],
+      "sources": [
+        {
+          "source_type": "association_official_notice",
+          "source_name": "BASES 官方大会通知",
+          "source_url": "https://www.bases.org.uk/",
+          "official_domain": "bases.org.uk",
+          "retrieved_at": "2026-09-06",
+          "notes": "官方通讯/站内通知确认日期与地点。"
+        }
+      ]
+    },
+    {
+      "series_key": "ecer",
+      "year": 2026,
+      "edition_name": "ECER 2026 Tampere",
+      "edition_number": null,
+      "start_date": "2026-08-17",
+      "end_date": "2026-08-21",
+      "country_or_region": "芬兰",
+      "city": "坦佩雷",
+      "venue": null,
+      "edition_status": "held",
+      "edition_official_url": "https://eera-ecer.de/conferences/ecer-2026-tampere",
+      "abstract_deadline": null,
+      "paper_deadline": null,
+      "poster_deadline": null,
+      "workshop_deadline": null,
+      "notification_date": null,
+      "camera_ready_deadline": null,
+      "registration_deadline": null,
+      "registration_url": null,
+      "call_for_papers_url": null,
+      "notes": "ECER 官方会议页确认 ERC 8/17-18 与主会 8/18-21；ERC 为官方早期研究者/博士生会议。",
+      "student_value_tags": [
+        "student_forum"
+      ],
+      "audience": [
+        "master",
+        "phd"
+      ],
+      "participation_details": {
+        "emerging_researchers_conference": "ECER 2026 会期含官方 Emerging Researchers' Conference（ERC，2026/8/17-18），面向博士与早期研究者；主会 8/18-21 于坦佩雷举行。"
+      },
+      "paper_details": null,
+      "school_relations": [],
+      "sources": [
+        {
+          "source_type": "conference_official_site",
+          "source_name": "ECER 2026 官方会议页",
+          "source_url": "https://eera-ecer.de/conferences/ecer-2026-tampere",
+          "official_domain": "eera-ecer.de",
+          "retrieved_at": "2026-09-06",
+          "notes": "官方页确认会期与 ERC 安排。"
+        }
+      ],
+      "opportunities": [
+        {
+          "series_key": "ecer",
+          "year": 2026,
+          "opportunity_type": "young_scholar_forum",
+          "title": "ECER 2026 Emerging Researchers' Conference",
+          "official_label": "Emerging Researchers' Conference (ERC)",
+          "description": "ECER 2026 官方新兴研究者会议（ERC，2026/8/17-18），面向博士与早期研究者。",
+          "audience": [
+            "phd",
+            "early_career"
+          ],
+          "deadline": null,
+          "open_date": null,
+          "participation_mode": null,
+          "official_url": "https://eera-ecer.de/conferences/ecer-2026-tampere",
+          "evidence": "ECER 2026 官方会议页写明 ERC 为官方新兴研究者/博士会议。",
+          "evidence_status": "full_page_verified",
+          "notes": null,
+          "source": {
+            "source_type": "conference_official_site",
+            "source_name": "ECER 2026 Emerging Researchers' Conference 官方来源",
+            "source_url": "https://eera-ecer.de/conferences/ecer-2026-tampere",
+            "official_domain": "eera-ecer.de",
+            "notes": "ECER 2026 官方会议页写明 ERC 为官方新兴研究者/博士会议。"
+          }
+        }
+      ]
+    },
+    {
+      "series_key": "bera_conference",
+      "year": 2026,
+      "edition_name": "BERA Annual Conference 2026",
+      "edition_number": null,
+      "start_date": "2026-09-08",
+      "end_date": "2026-09-10",
+      "country_or_region": "英国",
+      "city": "曼彻斯特",
+      "venue": null,
+      "edition_status": "announced",
+      "edition_official_url": "https://www.bera.ac.uk/events/upcoming-events",
+      "abstract_deadline": null,
+      "paper_deadline": null,
+      "poster_deadline": null,
+      "workshop_deadline": null,
+      "notification_date": null,
+      "camera_ready_deadline": null,
+      "registration_deadline": null,
+      "registration_url": null,
+      "call_for_papers_url": null,
+      "notes": "BERA 官方活动页确认 2026/9/8-10 在曼彻斯特大学举行年会。",
+      "student_value_tags": null,
+      "audience": null,
+      "participation_details": null,
+      "paper_details": null,
+      "school_relations": [],
+      "sources": [
+        {
+          "source_type": "international_professional_org",
+          "source_name": "BERA 官方活动页",
+          "source_url": "https://www.bera.ac.uk/events/upcoming-events",
+          "official_domain": "bera.ac.uk",
+          "retrieved_at": "2026-09-06",
+          "notes": "官方活动页确认日期与地点。"
+        }
+      ]
+    },
+    {
+      "series_key": "isls_meeting",
+      "year": 2026,
+      "edition_name": "ISLS 2026 Annual Meeting",
+      "edition_number": null,
+      "start_date": "2026-06-15",
+      "end_date": "2026-06-19",
+      "country_or_region": "美国",
+      "city": "欧文",
+      "venue": null,
+      "edition_status": "held",
+      "edition_official_url": "https://2026.isls.org/",
+      "abstract_deadline": null,
+      "paper_deadline": null,
+      "poster_deadline": null,
+      "workshop_deadline": null,
+      "notification_date": null,
+      "camera_ready_deadline": null,
+      "registration_deadline": null,
+      "registration_url": null,
+      "call_for_papers_url": null,
+      "notes": "ISLS 2026 官方会议子站确认 2026/6/15-19 在加州欧文举行年度会议。",
+      "student_value_tags": null,
+      "audience": null,
+      "participation_details": null,
+      "paper_details": null,
+      "school_relations": [],
+      "sources": [
+        {
+          "source_type": "conference_official_site",
+          "source_name": "ISLS 2026 官网",
+          "source_url": "https://2026.isls.org/",
+          "official_domain": "isls.org",
+          "retrieved_at": "2026-09-06",
+          "notes": "官方会议子站确认会期与地点。"
+        }
+      ]
+    },
+    {
+      "series_key": "lak",
+      "year": 2026,
+      "edition_name": "LAK'26",
+      "edition_number": null,
+      "start_date": "2026-04-27",
+      "end_date": "2026-05-01",
+      "country_or_region": "挪威",
+      "city": "卑尔根",
+      "venue": null,
+      "edition_status": "held",
+      "edition_official_url": "https://www.solaresearch.org/",
+      "abstract_deadline": null,
+      "paper_deadline": null,
+      "poster_deadline": null,
+      "workshop_deadline": null,
+      "notification_date": null,
+      "camera_ready_deadline": null,
+      "registration_deadline": "2026-01-29",
+      "registration_url": null,
+      "call_for_papers_url": null,
+      "notes": "SoLAR 官方页面确认 LAK'26 于 2026/4/27-5/1 在卑尔根举行；早鸟注册截止 2026-01-29（已过）。",
+      "student_value_tags": null,
+      "audience": null,
+      "participation_details": null,
+      "paper_details": null,
+      "school_relations": [],
+      "sources": [
+        {
+          "source_type": "international_professional_org",
+          "source_name": "SoLAR 官网",
+          "source_url": "https://www.solaresearch.org/",
+          "official_domain": "solaresearch.org",
+          "retrieved_at": "2026-09-06",
+          "notes": "官方首页及赞助/议程页确认日期与早鸟截止。"
+        }
+      ]
+    },
+    {
+      "series_key": "ashe",
+      "year": 2026,
+      "edition_name": "ASHE 51st Annual Conference",
+      "edition_number": null,
+      "start_date": "2026-11-03",
+      "end_date": "2026-11-06",
+      "country_or_region": "波多黎各",
+      "city": "圣胡安",
+      "venue": null,
+      "edition_status": "announced",
+      "edition_official_url": "https://www.ashe.ws/conference",
+      "abstract_deadline": null,
+      "paper_deadline": null,
+      "poster_deadline": null,
+      "workshop_deadline": null,
+      "notification_date": null,
+      "camera_ready_deadline": null,
+      "registration_deadline": null,
+      "registration_url": null,
+      "call_for_papers_url": null,
+      "notes": "ASHE 官方会议页确认虚拟日 2026/10/22、主会 11/3-6 在圣胡安举行第 51 届年会。",
+      "student_value_tags": null,
+      "audience": null,
+      "participation_details": null,
+      "paper_details": null,
+      "school_relations": [],
+      "sources": [
+        {
+          "source_type": "international_professional_org",
+          "source_name": "ASHE 官方会议页",
+          "source_url": "https://www.ashe.ws/conference",
+          "official_domain": "ashe.ws",
+          "retrieved_at": "2026-09-06",
+          "notes": "2026-09-06 通过官方会议页/官方站内检索片段核对日期；官网对自动访问受限，不依赖第三方目录。"
+        }
+      ]
+    },
+    {
+      "series_key": "srhe",
+      "year": 2026,
+      "edition_name": "SRHE International Conference 2026",
+      "edition_number": null,
+      "start_date": "2026-12-01",
+      "end_date": "2026-12-03",
+      "country_or_region": "英国",
+      "city": "诺丁汉",
+      "venue": "East Midlands Conference Centre",
+      "edition_status": "announced",
+      "edition_official_url": "https://srhe.ac.uk/international-conference-2026-registration/",
+      "abstract_deadline": null,
+      "paper_deadline": null,
+      "poster_deadline": null,
+      "workshop_deadline": null,
+      "notification_date": null,
+      "camera_ready_deadline": null,
+      "registration_deadline": null,
+      "registration_url": null,
+      "call_for_papers_url": null,
+      "notes": "SRHE 官方注册页确认线上日 2026/11/27（Zoom）、线下 12/1-3 在诺丁汉 East Midlands 会议中心举行。",
+      "student_value_tags": null,
+      "audience": null,
+      "participation_details": null,
+      "paper_details": null,
+      "school_relations": [],
+      "sources": [
+        {
+          "source_type": "conference_official_registration",
+          "source_name": "SRHE 2026 官方注册页",
+          "source_url": "https://srhe.ac.uk/international-conference-2026-registration/",
+          "official_domain": "srhe.ac.uk",
+          "retrieved_at": "2026-09-06",
+          "notes": "官方页面确认线下与线上日安排。"
+        }
+      ]
+    },
+    {
+      "series_key": "wera",
+      "year": 2026,
+      "edition_name": "WERA Focal Meeting 2026",
+      "edition_number": null,
+      "start_date": "2026-10-15",
+      "end_date": "2026-10-18",
+      "country_or_region": "中国台湾",
+      "city": "高雄",
+      "venue": "National Sun Yat-sen University",
+      "edition_status": "announced",
+      "edition_official_url": "https://weraonline.org/wera-focal-meeting-2026-taiwan/",
+      "abstract_deadline": null,
+      "paper_deadline": null,
+      "poster_deadline": null,
+      "workshop_deadline": null,
+      "notification_date": null,
+      "camera_ready_deadline": null,
+      "registration_deadline": null,
+      "registration_url": null,
+      "call_for_papers_url": null,
+      "notes": "WERA 官方页面与官方 Call 确认 2026/10/15-18 在高雄国立中山大学举行焦点会议。",
+      "student_value_tags": null,
+      "audience": null,
+      "participation_details": null,
+      "paper_details": null,
+      "school_relations": [],
+      "sources": [
+        {
+          "source_type": "international_professional_org",
+          "source_name": "WERA 官方会议页",
+          "source_url": "https://weraonline.org/wera-focal-meeting-2026-taiwan/",
+          "official_domain": "weraonline.org",
+          "retrieved_at": "2026-09-06",
+          "notes": "官方页面及 Call 确认日期与地点。"
+        }
+      ]
+    },
+    {
+      "series_key": "eaie",
+      "year": 2026,
+      "edition_name": "EAIE 2026 Glasgow",
+      "edition_number": null,
+      "start_date": "2026-09-08",
+      "end_date": "2026-09-11",
+      "country_or_region": "英国",
+      "city": "格拉斯哥",
+      "venue": "Scottish Event Campus",
+      "edition_status": "announced",
+      "edition_official_url": "https://www.eaie.org/events/glasgow.html",
+      "abstract_deadline": null,
+      "paper_deadline": null,
+      "poster_deadline": null,
+      "workshop_deadline": null,
+      "notification_date": null,
+      "camera_ready_deadline": null,
+      "registration_deadline": null,
+      "registration_url": null,
+      "call_for_papers_url": null,
+      "notes": "EAIE 官方活动页确认 2026/9/8-11 在格拉斯哥苏格兰活动园区举行年度大会，注册已开放。",
+      "student_value_tags": null,
+      "audience": null,
+      "participation_details": null,
+      "paper_details": null,
+      "school_relations": [],
+      "sources": [
+        {
+          "source_type": "international_professional_org",
+          "source_name": "EAIE 官方活动页",
+          "source_url": "https://www.eaie.org/events/glasgow.html",
+          "official_domain": "eaie.org",
+          "retrieved_at": "2026-09-06",
+          "notes": "官方活动页确认日期与地点。"
+        }
+      ]
+    },
+    {
+      "series_key": "aect",
+      "year": 2026,
+      "edition_name": "AECT 2026 International Convention",
+      "edition_number": null,
+      "start_date": "2026-11-03",
+      "end_date": "2026-11-07",
+      "country_or_region": "美国",
+      "city": "芝加哥",
+      "venue": "Palmer House",
+      "edition_status": "announced",
+      "edition_official_url": "https://www.aect.org/events/convention",
+      "abstract_deadline": null,
+      "paper_deadline": null,
+      "poster_deadline": null,
+      "workshop_deadline": null,
+      "notification_date": null,
+      "camera_ready_deadline": null,
+      "registration_deadline": null,
+      "registration_url": null,
+      "call_for_papers_url": null,
+      "notes": "AECT 官方会议页确认 2026/11/3-7 在芝加哥 Palmer House 举行大会。",
+      "student_value_tags": null,
+      "audience": null,
+      "participation_details": null,
+      "paper_details": null,
+      "school_relations": [],
+      "sources": [
+        {
+          "source_type": "international_professional_org",
+          "source_name": "AECT 官方会议页",
+          "source_url": "https://www.aect.org/events/convention",
+          "official_domain": "aect.org",
+          "retrieved_at": "2026-09-06",
+          "notes": "2026-09-06 通过官方会议页/官方站内检索片段核对日期；官网对自动访问受限，不依赖第三方目录。"
+        }
+      ]
+    },
+    {
+      "series_key": "asee",
+      "year": 2026,
+      "edition_name": "ASEE 2026 Annual Conference & Exposition",
+      "edition_number": null,
+      "start_date": "2026-06-21",
+      "end_date": "2026-06-24",
+      "country_or_region": "美国",
+      "city": "夏洛特",
+      "venue": null,
+      "edition_status": "held",
+      "edition_official_url": "https://www.asee.org/",
+      "abstract_deadline": null,
+      "paper_deadline": null,
+      "poster_deadline": null,
+      "workshop_deadline": null,
+      "notification_date": null,
+      "camera_ready_deadline": null,
+      "registration_deadline": null,
+      "registration_url": null,
+      "call_for_papers_url": null,
+      "notes": "ASEE 官方未来会议列表确认 2026/6/21-24 在夏洛特举行年会与展览。",
+      "student_value_tags": null,
+      "audience": null,
+      "participation_details": null,
+      "paper_details": null,
+      "school_relations": [],
+      "sources": [
+        {
+          "source_type": "international_professional_org",
+          "source_name": "ASEE 官网",
+          "source_url": "https://www.asee.org/",
+          "official_domain": "asee.org",
+          "retrieved_at": "2026-09-06",
+          "notes": "2026-09-06 通过官方会议页/官方站内检索片段核对日期；官网对自动访问受限，不依赖第三方目录。"
+        }
+      ]
+    },
+    {
+      "series_key": "ncme",
+      "year": 2026,
+      "edition_name": "NCME 2026 Annual Meeting",
+      "edition_number": null,
+      "start_date": "2026-04-08",
+      "end_date": "2026-04-11",
+      "country_or_region": "美国",
+      "city": "洛杉矶",
+      "venue": null,
+      "edition_status": "held",
+      "edition_official_url": "https://ncme.org/ncme-events/",
+      "abstract_deadline": null,
+      "paper_deadline": null,
+      "poster_deadline": null,
+      "workshop_deadline": null,
+      "notification_date": null,
+      "camera_ready_deadline": null,
+      "registration_deadline": null,
+      "registration_url": null,
+      "call_for_papers_url": null,
+      "notes": "NCME 官方活动页确认 2026/4/8-11 在洛杉矶举行年会。",
+      "student_value_tags": null,
+      "audience": null,
+      "participation_details": null,
+      "paper_details": null,
+      "school_relations": [],
+      "sources": [
+        {
+          "source_type": "international_professional_org",
+          "source_name": "NCME 官方活动页",
+          "source_url": "https://ncme.org/ncme-events/",
+          "official_domain": "ncme.org",
+          "retrieved_at": "2026-09-06",
+          "notes": "2026-09-06 通过官方会议页/官方站内检索片段核对日期；官网对自动访问受限，不依赖第三方目录。"
+        }
+      ]
+    },
+    {
+      "series_key": "ieee_bigdata",
+      "year": 2026,
+      "edition_name": "IEEE BigData 2026",
+      "edition_number": null,
+      "start_date": "2026-12-14",
+      "end_date": "2026-12-17",
+      "country_or_region": "美国",
+      "city": "凤凰城",
+      "venue": null,
+      "edition_status": "announced",
+      "edition_official_url": "https://bigdataieee.org/BigData2026",
+      "abstract_deadline": null,
+      "paper_deadline": null,
+      "poster_deadline": null,
+      "workshop_deadline": null,
+      "notification_date": null,
+      "camera_ready_deadline": null,
+      "registration_deadline": null,
+      "registration_url": null,
+      "call_for_papers_url": null,
+      "notes": "IEEE BigData 2026 官网确认 2026/12/14-17 在凤凰城举行，并设官方 Undergraduate & REU Consortium 学生环节。",
+      "student_value_tags": [
+        "undergraduate_friendly"
+      ],
+      "audience": [
+        "undergraduate"
+      ],
+      "participation_details": {
+        "undergraduate_reu_consortium": "IEEE BigData 2026 官方 Undergraduate and REU Consortium 面向本科生与 REU 学生，为学生提供在会议上汇报工作的正式环节（官方页面）。"
+      },
+      "paper_details": null,
+      "school_relations": [],
+      "sources": [
+        {
+          "source_type": "conference_official_site",
+          "source_name": "IEEE BigData 2026 官网",
+          "source_url": "https://bigdataieee.org/BigData2026",
+          "official_domain": "bigdataieee.org",
+          "retrieved_at": "2026-09-06",
+          "notes": "官方页确认会期与 Undergraduate/REU Consortium。"
+        }
+      ],
+      "opportunities": [
+        {
+          "series_key": "ieee_bigdata",
+          "year": 2026,
+          "opportunity_type": "undergraduate_forum",
+          "title": "IEEE BigData 2026 Undergraduate and REU Consortium",
+          "official_label": "Undergraduate and REU Consortium",
+          "description": "面向本科生与 REU 学生的官方联合研讨会，学生可在会议上汇报工作。",
+          "audience": [
+            "undergraduate"
+          ],
+          "deadline": null,
+          "open_date": null,
+          "participation_mode": null,
+          "official_url": "https://bigdataieee.org/BigData2026",
+          "evidence": "IEEE BigData 2026 官方 Undergraduate and REU Consortium 页面。",
+          "evidence_status": "full_page_verified",
+          "notes": null,
+          "source": {
+            "source_type": "conference_official_site",
+            "source_name": "IEEE BigData 2026 Undergraduate and REU Consortium 官方来源",
+            "source_url": "https://bigdataieee.org/BigData2026",
+            "official_domain": "bigdataieee.org",
+            "notes": "IEEE BigData 2026 官方 Undergraduate and REU Consortium 页面。"
+          }
+        }
+      ]
+    },
+    {
+      "series_key": "icdm",
+      "year": 2026,
+      "edition_name": "IEEE ICDM 2026",
+      "edition_number": null,
+      "start_date": "2026-11-12",
+      "end_date": "2026-11-15",
+      "country_or_region": "中国",
+      "city": "沈阳",
+      "venue": null,
+      "edition_status": "announced",
+      "edition_official_url": "http://icdm2026.neu.edu.cn/",
+      "abstract_deadline": null,
+      "paper_deadline": null,
+      "poster_deadline": null,
+      "workshop_deadline": null,
+      "notification_date": null,
+      "camera_ready_deadline": null,
+      "registration_deadline": null,
+      "registration_url": null,
+      "call_for_papers_url": null,
+      "notes": "ICDM 2026 官方会议页（东北大学域名）确认 2026/11/12-15 在沈阳举行；东北大学承办关系仅依据官方会议页。",
+      "student_value_tags": null,
+      "audience": null,
+      "participation_details": null,
+      "paper_details": null,
+      "school_relations": [],
+      "sources": [
+        {
+          "source_type": "conference_official_site",
+          "source_name": "ICDM 2026 官网",
+          "source_url": "http://icdm2026.neu.edu.cn/",
+          "official_domain": "neu.edu.cn",
+          "retrieved_at": "2026-09-06",
+          "notes": "官方会议目录页确认日期与城市。"
+        }
+      ]
+    },
+    {
+      "series_key": "pakdd",
+      "year": 2026,
+      "edition_name": "PAKDD 2026",
+      "edition_number": null,
+      "start_date": "2026-06-09",
+      "end_date": "2026-06-12",
+      "country_or_region": "中国香港",
+      "city": "香港",
+      "venue": null,
+      "edition_status": "held",
+      "edition_official_url": "https://www.pakdd2026.org/",
+      "abstract_deadline": null,
+      "paper_deadline": null,
+      "poster_deadline": null,
+      "workshop_deadline": null,
+      "notification_date": null,
+      "camera_ready_deadline": null,
+      "registration_deadline": null,
+      "registration_url": null,
+      "call_for_papers_url": null,
+      "notes": "PAKDD 2026 官方 Call/注册页确认 2026/6/9-12 在香港举行，且官方写明仅线下（held exclusively in person）。",
+      "student_value_tags": null,
+      "audience": null,
+      "participation_details": null,
+      "paper_details": null,
+      "school_relations": [],
+      "sources": [
+        {
+          "source_type": "conference_official_site",
+          "source_name": "PAKDD 2026 官网",
+          "source_url": "https://www.pakdd2026.org/",
+          "official_domain": "pakdd2026.org",
+          "retrieved_at": "2026-09-06",
+          "notes": "官方 Call 与注册页确认日期、地点与参与形式。"
+        }
+      ]
+    },
+    {
+      "series_key": "jsm",
+      "year": 2026,
+      "edition_name": "JSM 2026",
+      "edition_number": null,
+      "start_date": "2026-08-01",
+      "end_date": "2026-08-06",
+      "country_or_region": "美国",
+      "city": "波士顿",
+      "venue": null,
+      "edition_status": "held",
+      "edition_official_url": "https://ww2.amstat.org/meetings/jsm/2026/",
+      "abstract_deadline": null,
+      "paper_deadline": null,
+      "poster_deadline": null,
+      "workshop_deadline": null,
+      "notification_date": null,
+      "camera_ready_deadline": null,
+      "registration_deadline": null,
+      "registration_url": null,
+      "call_for_papers_url": null,
+      "notes": "ASA 官方 JSM 2026 注册指南确认 2026/8/1-6 在波士顿举行。",
+      "student_value_tags": null,
+      "audience": null,
+      "participation_details": null,
+      "paper_details": null,
+      "school_relations": [],
+      "sources": [
+        {
+          "source_type": "conference_official_site",
+          "source_name": "JSM 2026 官网",
+          "source_url": "https://ww2.amstat.org/meetings/jsm/2026/",
+          "official_domain": "amstat.org",
+          "retrieved_at": "2026-09-06",
+          "notes": "ASA 官方会议页确认日期与地点。"
+        }
+      ]
+    },
+    {
+      "series_key": "sdss",
+      "year": 2026,
+      "edition_name": "SDSS 2026",
+      "edition_number": null,
+      "start_date": "2026-04-28",
+      "end_date": "2026-05-01",
+      "country_or_region": "美国",
+      "city": "密尔沃基",
+      "venue": null,
+      "edition_status": "held",
+      "edition_official_url": "https://ww2.amstat.org/meetings/sdss/2026/",
+      "abstract_deadline": null,
+      "paper_deadline": null,
+      "poster_deadline": null,
+      "workshop_deadline": null,
+      "notification_date": null,
+      "camera_ready_deadline": null,
+      "registration_deadline": null,
+      "registration_url": null,
+      "call_for_papers_url": null,
+      "notes": "ASA 官方 SDSS 2026 页面确认 2026/4/28-5/1 在密尔沃基举行。",
+      "student_value_tags": null,
+      "audience": null,
+      "participation_details": null,
+      "paper_details": null,
+      "school_relations": [],
+      "sources": [
+        {
+          "source_type": "conference_official_site",
+          "source_name": "SDSS 2026 官网",
+          "source_url": "https://ww2.amstat.org/meetings/sdss/2026/",
+          "official_domain": "amstat.org",
+          "retrieved_at": "2026-09-06",
+          "notes": "官方页面确认日期与地点。"
+        }
+      ]
+    },
+    {
+      "series_key": "escience",
+      "year": 2026,
+      "edition_name": "IEEE eScience 2026",
+      "edition_number": null,
+      "start_date": "2026-09-28",
+      "end_date": "2026-10-02",
+      "country_or_region": "意大利",
+      "city": "那不勒斯",
+      "venue": null,
+      "edition_status": "announced",
+      "edition_official_url": "https://www.escience-conference.org/2026/",
+      "abstract_deadline": null,
+      "paper_deadline": null,
+      "poster_deadline": null,
+      "workshop_deadline": null,
+      "notification_date": null,
+      "camera_ready_deadline": null,
+      "registration_deadline": null,
+      "registration_url": null,
+      "call_for_papers_url": null,
+      "notes": "IEEE eScience 2026 官方 CFP/宣传材料确认 2026/9/28-10/2 在那不勒斯举行。",
+      "student_value_tags": null,
+      "audience": null,
+      "participation_details": null,
+      "paper_details": null,
+      "school_relations": [],
+      "sources": [
+        {
+          "source_type": "conference_official_site",
+          "source_name": "IEEE eScience 2026 官网",
+          "source_url": "https://www.escience-conference.org/2026/",
+          "official_domain": "escience-conference.org",
+          "retrieved_at": "2026-09-06",
+          "notes": "官方 CFP/brochure 页确认日期与地点。"
+        }
+      ]
+    },
+    {
+      "series_key": "dsaa",
+      "year": 2026,
+      "edition_name": "IEEE DSAA 2026",
+      "edition_number": null,
+      "start_date": "2026-10-06",
+      "end_date": "2026-10-09",
+      "country_or_region": "印度",
+      "city": "新德里",
+      "venue": null,
+      "edition_status": "announced",
+      "edition_official_url": "https://dsaa2026.dsaa.co/",
+      "abstract_deadline": null,
+      "paper_deadline": null,
+      "poster_deadline": null,
+      "workshop_deadline": null,
+      "notification_date": null,
+      "camera_ready_deadline": null,
+      "registration_deadline": null,
+      "registration_url": null,
+      "call_for_papers_url": null,
+      "notes": "DSAA 官方会议站与 IIIT 官方新闻均确认 2026/10/6-9 在新德里举行。",
+      "student_value_tags": null,
+      "audience": null,
+      "participation_details": null,
+      "paper_details": null,
+      "school_relations": [],
+      "sources": [
+        {
+          "source_type": "conference_official_site",
+          "source_name": "DSAA 2026 官网",
+          "source_url": "https://dsaa2026.dsaa.co/",
+          "official_domain": "dsaa.co",
+          "retrieved_at": "2026-09-06",
+          "notes": "官方会议站与承办方官方新闻一致确认日期地点。"
+        }
+      ]
+    },
+    {
+      "series_key": "websci",
+      "year": 2026,
+      "edition_name": "ACM WebSci'26",
+      "edition_number": null,
+      "start_date": "2026-05-26",
+      "end_date": "2026-05-29",
+      "country_or_region": "德国",
+      "city": "布伦瑞克",
+      "venue": null,
+      "edition_status": "held",
+      "edition_official_url": "https://websci26.org/",
+      "abstract_deadline": null,
+      "paper_deadline": null,
+      "poster_deadline": null,
+      "workshop_deadline": null,
+      "notification_date": null,
+      "camera_ready_deadline": null,
+      "registration_deadline": null,
+      "registration_url": null,
+      "call_for_papers_url": null,
+      "notes": "ACM WebSci'26 官方公告确认 2026/5/26-29 在德国布伦瑞克举行。",
+      "student_value_tags": null,
+      "audience": null,
+      "participation_details": null,
+      "paper_details": null,
+      "school_relations": [],
+      "sources": [
+        {
+          "source_type": "conference_official_site",
+          "source_name": "ACM WebSci'26 官网",
+          "source_url": "https://websci26.org/",
+          "official_domain": "websci26.org",
+          "retrieved_at": "2026-09-06",
+          "notes": "官方公告确认日期与城市。"
+        }
+      ]
+    },
+    {
+      "series_key": "iccs",
+      "year": 2026,
+      "edition_name": "ICCS 2026",
+      "edition_number": null,
+      "start_date": "2026-06-29",
+      "end_date": "2026-07-01",
+      "country_or_region": "德国",
+      "city": "汉堡",
+      "venue": null,
+      "edition_status": "held",
+      "edition_official_url": "https://www.iccs-meeting.org/iccs2026/",
+      "abstract_deadline": null,
+      "paper_deadline": null,
+      "poster_deadline": null,
+      "workshop_deadline": null,
+      "notification_date": null,
+      "camera_ready_deadline": null,
+      "registration_deadline": null,
+      "registration_url": null,
+      "call_for_papers_url": null,
+      "notes": "ICCS 2026 官方 CFP 与大会页确认 2026/6/29-7/1 在汉堡举行。",
+      "student_value_tags": null,
+      "audience": null,
+      "participation_details": null,
+      "paper_details": null,
+      "school_relations": [],
+      "sources": [
+        {
+          "source_type": "conference_official_site",
+          "source_name": "ICCS 2026 官网",
+          "source_url": "https://www.iccs-meeting.org/iccs2026/",
+          "official_domain": "iccs-meeting.org",
+          "retrieved_at": "2026-09-06",
+          "notes": "官方 CFP/EasyChair 链接与会期页确认日期地点。"
+        }
+      ]
+    },
+    {
+      "series_key": "ibc",
+      "year": 2026,
+      "edition_name": "IBC 2026 Seoul",
+      "edition_number": null,
+      "start_date": "2026-07-12",
+      "end_date": "2026-07-16",
+      "country_or_region": "韩国",
+      "city": "首尔",
+      "venue": null,
+      "edition_status": "held",
+      "edition_official_url": "https://www.ibc2026.org/",
+      "abstract_deadline": null,
+      "paper_deadline": null,
+      "poster_deadline": null,
+      "workshop_deadline": null,
+      "notification_date": null,
+      "camera_ready_deadline": null,
+      "registration_deadline": null,
+      "registration_url": null,
+      "call_for_papers_url": null,
+      "notes": "IBC 2026 官方首页确认 2026/7/12-16 在首尔举行（国际生物统计大会）。",
+      "student_value_tags": null,
+      "audience": null,
+      "participation_details": null,
+      "paper_details": null,
+      "school_relations": [],
+      "sources": [
+        {
+          "source_type": "conference_official_site",
+          "source_name": "IBC 2026 官网",
+          "source_url": "https://www.ibc2026.org/",
+          "official_domain": "ibc2026.org",
+          "retrieved_at": "2026-09-06",
+          "notes": "官方首页确认日期与城市。"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "schema_version": "1",
+    "generated_at": "2026-09-06T11:38:07+00:00",
+    "count": 132
+  }
+}

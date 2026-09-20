@@ -1,0 +1,164 @@
+{
+  "task": "GENERAL_UNDERGRADUATE_DISCOVERY_FIX_01_GOLD_BENCHMARK",
+  "generated_at": "2026-09-15T11:55:22.799789+00:00",
+  "method": "frozen policy-query discovery snapshot; official-domain refetch and local parse",
+  "school_count": 10,
+  "metrics": {
+    "document_recall": 1.0,
+    "discovery_url_recall": 1.0,
+    "attachment_recall": 1.0,
+    "evidence_precision": 1.0,
+    "recognition_precision": 1.0,
+    "counts": {
+      "expected_documents": 14,
+      "found_documents": 14,
+      "discovered_document_urls": 14,
+      "expected_attachments": 13,
+      "found_attachments": 13,
+      "accepted_evidence": 14,
+      "predicted_recognition_documents": 7,
+      "valid_predicted_recognition_documents": 7
+    }
+  },
+  "thresholds": {
+    "document_recall": 0.8,
+    "attachment_recall": 0.75,
+    "evidence_precision": 0.9,
+    "recognition_precision": 0.95
+  },
+  "passed": true,
+  "transport_types_observed": [
+    "docx",
+    "pdf",
+    "xls"
+  ],
+  "schools": [
+    {
+      "school": "北京工商大学",
+      "expected_documents": 2,
+      "discovered_documents": 2,
+      "accepted_evidence": 2,
+      "recognition_evidence_documents": 1,
+      "discovered_urls": [
+        "https://jwc.btbu.edu.cn/docs/2023-05/0e1d501e56bf469b993c3cc8437c85b8.pdf",
+        "https://jwc.btbu.edu.cn/docs/2023-05/40693507830642d483fea03938edb2f8.pdf",
+        "https://jwc.btbu.edu.cn/docs/2023-05/bb5a2d628d014e9aa20a31cd1060650a.docx",
+        "https://jwc.btbu.edu.cn/jblm/kwgl/kwglxkjs/727d92720bc94f1484ea6cad716d8cde.htm"
+      ],
+      "failures": []
+    },
+    {
+      "school": "河北大学",
+      "expected_documents": 2,
+      "discovered_documents": 2,
+      "accepted_evidence": 2,
+      "recognition_evidence_documents": 1,
+      "discovered_urls": [
+        "https://tuanwei.hbu.edu.cn/contents/541/13973.html",
+        "https://tuanwei.hbu.edu.cn/upload/files/2025/10/75476e2d171e25ec.docx",
+        "https://tuanwei.hbu.edu.cn/upload/files/2025/10/aad852b57eacf442.xls",
+        "https://tuanwei.hbu.edu.cn/upload/files/2025/10/ad1e2b352b724286.pdf",
+        "https://tuanwei.hbu.edu.cn/upload/files/2025/10/bcc3130047fa3ef6.docx",
+        "https://tuanwei.hbu.edu.cn/upload/files/2025/10/da87634053f38b66.xls"
+      ],
+      "failures": []
+    },
+    {
+      "school": "江苏大学",
+      "expected_documents": 1,
+      "discovered_documents": 1,
+      "accepted_evidence": 1,
+      "recognition_evidence_documents": 1,
+      "discovered_urls": [
+        "https://xxgk.ujs.edu.cn/__local/3/E7/F5/34F87F6231AB129C024CFC43AE0_7260A8B9_2D0D5.pdf"
+      ],
+      "failures": []
+    },
+    {
+      "school": "深圳大学",
+      "expected_documents": 1,
+      "discovered_documents": 1,
+      "accepted_evidence": 1,
+      "recognition_evidence_documents": 0,
+      "discovered_urls": [
+        "https://jwb.szu.edu.cn/info/1358/2016.htm"
+      ],
+      "failures": []
+    },
+    {
+      "school": "湖北大学",
+      "expected_documents": 2,
+      "discovered_documents": 2,
+      "accepted_evidence": 2,
+      "recognition_evidence_documents": 2,
+      "discovered_urls": [
+        "https://cxcy.hubu.edu.cn/__local/5/99/2D/B59372CFB8A30DA5B35A4FF2377_3A503C64_49AAC.pdf",
+        "https://cybersec.hubu.edu.cn/__local/4/F5/64/D0666771926B4447C5CE54B1FEA_6F0BAFD1_2AEC5.pdf"
+      ],
+      "failures": []
+    },
+    {
+      "school": "昆明理工大学",
+      "expected_documents": 1,
+      "discovered_documents": 1,
+      "accepted_evidence": 1,
+      "recognition_evidence_documents": 0,
+      "discovered_urls": [
+        "https://fflc.kmust.edu.cn/__local/A/05/CC/C8077C7F483E8A60D25EAD5C9BB_E959710C_41EA1.pdf?e=.pdf"
+      ],
+      "failures": []
+    },
+    {
+      "school": "西安理工大学",
+      "expected_documents": 1,
+      "discovered_documents": 1,
+      "accepted_evidence": 1,
+      "recognition_evidence_documents": 1,
+      "discovered_urls": [
+        "https://jwc.xaut.edu.cn/__local/A/58/AC/802BEB2FC5A0A51861E4E99FFE3_F7219EA6_2CDD2.pdf"
+      ],
+      "failures": []
+    },
+    {
+      "school": "泉州师范学院",
+      "expected_documents": 1,
+      "discovered_documents": 1,
+      "accepted_evidence": 1,
+      "recognition_evidence_documents": 0,
+      "discovered_urls": [
+        "https://www.qztc.edu.cn/_upload/article/files/f0/cd/15a8c6b642938c5ed5462a62028c/050b8f0a-c837-439f-9bac-c07179b62dde.pdf"
+      ],
+      "failures": []
+    },
+    {
+      "school": "宿迁学院",
+      "expected_documents": 2,
+      "discovered_documents": 2,
+      "accepted_evidence": 2,
+      "recognition_evidence_documents": 1,
+      "discovered_urls": [
+        "https://cxcy.squ.edu.cn/info/1007/1758.htm",
+        "https://cxcy.squ.edu.cn/system/_content/download.jsp?owner=1863038347&urltype=news.DownloadAttachUrl&wbfileid=14928327",
+        "https://cxcy.squ.edu.cn/system/_content/download.jsp?owner=1863038347&urltype=news.DownloadAttachUrl&wbfileid=14928328",
+        "https://cxcy.squ.edu.cn/system/_content/download.jsp?owner=1863038347&urltype=news.DownloadAttachUrl&wbfileid=14928329",
+        "https://cxcy.squ.edu.cn/system/_content/download.jsp?owner=1863038347&urltype=news.DownloadAttachUrl&wbfileid=14928330"
+      ],
+      "failures": []
+    },
+    {
+      "school": "西藏民族大学",
+      "expected_documents": 1,
+      "discovered_documents": 1,
+      "accepted_evidence": 1,
+      "recognition_evidence_documents": 0,
+      "discovered_urls": [
+        "https://www3.xzmu.edu.cn/jwc/userfiles/file/f4bc28b0-9911-4195-ac5a-781bf7dc4727.pdf"
+      ],
+      "failures": []
+    }
+  ],
+  "false_negatives": [],
+  "status_counts": {
+    "VERIFIED_DATA": 10
+  }
+}

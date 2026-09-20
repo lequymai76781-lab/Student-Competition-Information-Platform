@@ -1,0 +1,107 @@
+{
+  "verified_at": "2026-08-31T20:00:00+08:00",
+  "editions": [
+    {
+      "competition_name": "全国大学生数学建模竞赛",
+      "year": 2026,
+      "edition_name": "2026高教社杯全国大学生数学建模竞赛",
+      "registration_deadline": "2026-09-07T20:00:00+08:00",
+      "submission_deadline": "2026-09-14T14:00:00+08:00",
+      "competition_start": "2026-09-10T18:00:00+08:00",
+      "competition_end": "2026-09-13T20:00:00+08:00",
+      "official_url": "https://www.mcm.edu.cn/",
+      "official_notice_url": "https://www.mcm.edu.cn/html_cn/node/d6fd7a0ee8f3a3d525e30af1c365fcec.html",
+      "official_registration_url": "https://cumcm.cnki.net/",
+      "source_url": "https://www.mcm.edu.cn/upload_cn/node/779/D3txF20S95f4041e22b41b4a1f9e0e22ac8a1389.pdf",
+      "status": "registration_open",
+      "is_verified": true,
+      "last_verified_at": "2026-08-31T20:00:00+08:00",
+      "competition_updates": {
+        "organizer": "中国工业与应用数学学会全国大学生数学建模竞赛组委会",
+        "official_website": "https://www.mcm.edu.cn/",
+        "competition_level": "全国性赛事",
+        "team_type": "团队赛",
+        "min_team_size": 1,
+        "max_team_size": 3,
+        "recommended_grade": "大一至大四"
+      },
+      "sources": [
+        {
+          "source_type": "official_notice",
+          "source_name": "2026高教社杯全国大学生数学建模竞赛第一次通知",
+          "source_url": "https://www.mcm.edu.cn/html_cn/node/d6fd7a0ee8f3a3d525e30af1c365fcec.html",
+          "published_at": "2026-03-24T02:42:00+08:00",
+          "is_official": true,
+          "is_verified": true,
+          "credibility_score": 100
+        }
+      ]
+    },
+    {
+      "competition_name": "外研社·国才杯国际传播综合能力赛项",
+      "year": 2026,
+      "edition_name": "2026英语组国际传播综合能力赛项（各校截止时间不同，线上初赛报名最晚10月4日）",
+      "registration_start": "2026-06-02T00:00:00+08:00",
+      "registration_deadline": "2026-10-04T23:59:00+08:00",
+      "official_url": "https://ucc.fltrp.com/",
+      "official_notice_url": "https://ucc.fltrp.com/c/2026-04-15/541569.shtml",
+      "official_registration_url": "https://stu-ucc.fltrp.com/",
+      "source_url": "https://ucc.fltrp.com/c/2023-05-30/519108.shtml",
+      "status": "registration_open",
+      "is_verified": true,
+      "last_verified_at": "2026-08-31T20:00:00+08:00",
+      "competition_updates": {
+        "organizer": "北京外国语大学、外语教学与研究出版社",
+        "official_website": "https://ucc.fltrp.com/",
+        "competition_level": "全国性赛事",
+        "team_type": "个人赛",
+        "recommended_grade": "大一至大四"
+      },
+      "sources": [
+        {
+          "source_type": "official_notice",
+          "source_name": "2026外研社·国才杯大赛通知与校赛管理员指南",
+          "source_url": "https://ucc.fltrp.com/c/2023-05-30/519108.shtml",
+          "published_at": "2026-06-03T00:00:00+08:00",
+          "is_official": true,
+          "is_verified": true,
+          "credibility_score": 100
+        }
+      ]
+    },
+    {
+      "competition_name": "外研社·国才杯笔译赛项",
+      "year": 2026,
+      "edition_name": "2026英语组笔译赛项（各校截止时间不同，线上初赛报名最晚10月4日）",
+      "registration_start": "2026-06-02T00:00:00+08:00",
+      "registration_deadline": "2026-10-04T23:59:00+08:00",
+      "competition_start": "2026-10-11T16:00:00+08:00",
+      "competition_end": "2026-10-11T18:00:00+08:00",
+      "official_url": "https://ucc.fltrp.com/",
+      "official_notice_url": "https://ucc.fltrp.com/c/2026-04-15/517934.shtml",
+      "official_registration_url": "https://stu-ucc.fltrp.com/",
+      "source_url": "https://ucc.fltrp.com/c/2023-05-30/519108.shtml",
+      "status": "registration_open",
+      "is_verified": true,
+      "last_verified_at": "2026-08-31T20:00:00+08:00",
+      "competition_updates": {
+        "organizer": "北京外国语大学、外语教学与研究出版社",
+        "official_website": "https://ucc.fltrp.com/",
+        "competition_level": "全国性赛事",
+        "team_type": "个人赛",
+        "recommended_grade": "大一至大四"
+      },
+      "sources": [
+        {
+          "source_type": "official_notice",
+          "source_name": "2026外研社·国才杯大赛通知与校赛管理员指南",
+          "source_url": "https://ucc.fltrp.com/c/2023-05-30/519108.shtml",
+          "published_at": "2026-06-03T00:00:00+08:00",
+          "is_official": true,
+          "is_verified": true,
+          "credibility_score": 100
+        }
+      ]
+    }
+  ]
+}

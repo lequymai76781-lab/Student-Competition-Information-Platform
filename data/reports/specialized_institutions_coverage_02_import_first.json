@@ -1,0 +1,6 @@
+{
+  "task": "SPECIALIZED_INSTITUTIONS_COVERAGE_02",
+  "generated_at": "2026-09-15T00:51:01.990224+00:00",
+  "input": {"master_units": 20, "verified_rows": 21},
+  "stats": {"college_created": 4, "competition_created": 6, "competition_filled": 3, "edition_created": 14, "fact_created": 59, "policy_created": 2, "recognition_created": 2, "relation_created": 19, "source_created": 21, "university_created": 18}
+}

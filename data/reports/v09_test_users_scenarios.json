@@ -1,0 +1,671 @@
+[
+  {
+    "case": "CASE1",
+    "profile": {
+      "user_id": 1,
+      "email": "case1@test.local",
+      "university_id": 40,
+      "university_name": "武汉体育学院",
+      "college_id": 2,
+      "college_name": "新闻传播学院",
+      "major_id": 1,
+      "major_name": "播音主持",
+      "grade": "大二",
+      "graduation_year": 2029,
+      "interest_tags": [
+        "新闻传播",
+        "AIGC",
+        "影视制作"
+      ],
+      "skills": [],
+      "preferred_team_type": null,
+      "weekly_available_hours": null,
+      "accept_cross_major": true,
+      "accept_cross_university": true
+    },
+    "counts": {
+      "now_available": 14,
+      "direction_related": 64,
+      "school_notices": 0,
+      "college_notices": 0,
+      "school_directory": 90,
+      "college_directory": 90,
+      "upcoming_deadline": 10,
+      "favorites": 3,
+      "personalized_competitions": 136,
+      "open_total": 22
+    },
+    "top5_now_available": [
+      "清华大学中国公共政策案例分析大赛",
+      "全国大学生数学建模竞赛",
+      "大学生“AI+信息素养”大赛",
+      "全国大学生嵌入式芯片与系统设计竞赛FPGA创新设计竞赛",
+      "中国国际大学生创新大赛"
+    ],
+    "school_notice_names": [],
+    "personalized_deadline_items": [
+      {
+        "name": "清华大学中国公共政策案例分析大赛",
+        "deadline": "2026-09-07T12:00:00+00:00",
+        "label": "作品提交截止"
+      },
+      {
+        "name": "全国大学生数学建模竞赛",
+        "deadline": "2026-09-14T14:00:00+00:00",
+        "label": "官方作品截止"
+      },
+      {
+        "name": "大学生“AI+信息素养”大赛",
+        "deadline": "2026-09-17T23:59:59+00:00",
+        "label": "官方报名截止"
+      },
+      {
+        "name": "全国大学生嵌入式芯片与系统设计竞赛FPGA创新设计竞赛",
+        "deadline": "2026-09-22T23:59:59+00:00",
+        "label": "官方报名截止"
+      },
+      {
+        "name": "中国国际大学生创新大赛",
+        "deadline": "2026-09-30T17:00:00+00:00",
+        "label": "官方报名截止"
+      }
+    ]
+  },
+  {
+    "case": "CASE2",
+    "profile": {
+      "user_id": 2,
+      "email": "case2@test.local",
+      "university_id": 26,
+      "university_name": "武汉大学",
+      "college_id": 26,
+      "college_name": "计算机学院",
+      "major_id": 2,
+      "major_name": "计算机科学",
+      "grade": "大三",
+      "graduation_year": 2028,
+      "interest_tags": [
+        "人工智能",
+        "程序设计",
+        "大数据"
+      ],
+      "skills": [],
+      "preferred_team_type": null,
+      "weekly_available_hours": null,
+      "accept_cross_major": true,
+      "accept_cross_university": true
+    },
+    "counts": {
+      "now_available": 8,
+      "direction_related": 36,
+      "school_notices": 0,
+      "college_notices": 0,
+      "school_directory": 5,
+      "college_directory": 0,
+      "upcoming_deadline": 7,
+      "favorites": 3,
+      "personalized_competitions": 136,
+      "open_total": 22
+    },
+    "top5_now_available": [
+      "清华大学中国公共政策案例分析大赛",
+      "全国大学生数学建模竞赛",
+      "大学生“AI+信息素养”大赛",
+      "中国研究生企业管理创新大赛",
+      "中国国际大学生创新大赛"
+    ],
+    "school_notice_names": [],
+    "personalized_deadline_items": [
+      {
+        "name": "清华大学中国公共政策案例分析大赛",
+        "deadline": "2026-09-07T12:00:00+00:00",
+        "label": "作品提交截止"
+      },
+      {
+        "name": "全国大学生数学建模竞赛",
+        "deadline": "2026-09-14T14:00:00+00:00",
+        "label": "官方作品截止"
+      },
+      {
+        "name": "大学生“AI+信息素养”大赛",
+        "deadline": "2026-09-17T23:59:59+00:00",
+        "label": "官方报名截止"
+      },
+      {
+        "name": "中国研究生企业管理创新大赛",
+        "deadline": "2026-09-22T19:00:00+00:00",
+        "label": "官方报名截止"
+      },
+      {
+        "name": "中国国际大学生创新大赛",
+        "deadline": "2026-09-30T17:00:00+00:00",
+        "label": "官方报名截止"
+      }
+    ]
+  },
+  {
+    "case": "CASE3",
+    "profile": {
+      "user_id": 3,
+      "email": "case3@test.local",
+      "university_id": 41,
+      "university_name": "北京交通大学",
+      "college_id": 27,
+      "college_name": "电子信息学院",
+      "major_id": 3,
+      "major_name": "电子信息工程",
+      "grade": "大二",
+      "graduation_year": 2029,
+      "interest_tags": [
+        "电子信息",
+        "人工智能"
+      ],
+      "skills": [],
+      "preferred_team_type": null,
+      "weekly_available_hours": null,
+      "accept_cross_major": true,
+      "accept_cross_university": true
+    },
+    "counts": {
+      "now_available": 5,
+      "direction_related": 27,
+      "school_notices": 0,
+      "college_notices": 0,
+      "school_directory": 0,
+      "college_directory": 0,
+      "upcoming_deadline": 5,
+      "favorites": 3,
+      "personalized_competitions": 136,
+      "open_total": 22
+    },
+    "top5_now_available": [
+      "清华大学中国公共政策案例分析大赛",
+      "大学生“AI+信息素养”大赛",
+      "全国大学生嵌入式芯片与系统设计竞赛FPGA创新设计竞赛",
+      "中国大学生工程实践与创新能力大赛",
+      "AI+教育大学生创新创业大赛"
+    ],
+    "school_notice_names": [],
+    "personalized_deadline_items": [
+      {
+        "name": "清华大学中国公共政策案例分析大赛",
+        "deadline": "2026-09-07T12:00:00+00:00",
+        "label": "作品提交截止"
+      },
+      {
+        "name": "大学生“AI+信息素养”大赛",
+        "deadline": "2026-09-17T23:59:59+00:00",
+        "label": "官方报名截止"
+      },
+      {
+        "name": "全国大学生嵌入式芯片与系统设计竞赛FPGA创新设计竞赛",
+        "deadline": "2026-09-22T23:59:59+00:00",
+        "label": "官方报名截止"
+      },
+      {
+        "name": "中国大学生工程实践与创新能力大赛",
+        "deadline": "2026-10-15T23:59:59+00:00",
+        "label": "报名截止"
+      },
+      {
+        "name": "AI+教育大学生创新创业大赛",
+        "deadline": "2026-10-15T23:59:59+00:00",
+        "label": "报名截止"
+      }
+    ]
+  },
+  {
+    "case": "CASE4",
+    "profile": {
+      "user_id": 4,
+      "email": "case4@test.local",
+      "university_id": 74,
+      "university_name": "南京航空航天大学",
+      "college_id": 28,
+      "college_name": "机电学院",
+      "major_id": 4,
+      "major_name": "机械工程",
+      "grade": "大三",
+      "graduation_year": 2028,
+      "interest_tags": [
+        "机械制造",
+        "机器人"
+      ],
+      "skills": [],
+      "preferred_team_type": null,
+      "weekly_available_hours": null,
+      "accept_cross_major": true,
+      "accept_cross_university": true
+    },
+    "counts": {
+      "now_available": 0,
+      "direction_related": 12,
+      "school_notices": 0,
+      "college_notices": 0,
+      "school_directory": 0,
+      "college_directory": 0,
+      "upcoming_deadline": 0,
+      "favorites": 3,
+      "personalized_competitions": 136,
+      "open_total": 22
+    },
+    "top5_now_available": [],
+    "school_notice_names": [],
+    "personalized_deadline_items": []
+  },
+  {
+    "case": "CASE5",
+    "profile": {
+      "user_id": 5,
+      "email": "case5@test.local",
+      "university_id": 98,
+      "university_name": "西南交通大学",
+      "college_id": 29,
+      "college_name": "经济管理学院",
+      "major_id": 5,
+      "major_name": "工商管理",
+      "grade": "大二",
+      "graduation_year": 2029,
+      "interest_tags": [
+        "商业分析",
+        "创新创业"
+      ],
+      "skills": [],
+      "preferred_team_type": null,
+      "weekly_available_hours": null,
+      "accept_cross_major": true,
+      "accept_cross_university": true
+    },
+    "counts": {
+      "now_available": 6,
+      "direction_related": 26,
+      "school_notices": 4,
+      "college_notices": 0,
+      "school_directory": 0,
+      "college_directory": 0,
+      "upcoming_deadline": 5,
+      "favorites": 3,
+      "personalized_competitions": 136,
+      "open_total": 22
+    },
+    "top5_now_available": [
+      "中国首届“新域新质”创新大赛",
+      "中国研究生企业管理创新大赛",
+      "中国国际大学生创新大赛产业命题赛道",
+      "中国国际大学生创新大赛",
+      "AI+教育大学生创新创业大赛"
+    ],
+    "school_notice_names": [
+      "中国国际大学生创新大赛",
+      "“挑战杯”中国大学生创业计划竞赛",
+      "中国好创意暨全国数字艺术设计大赛",
+      "中国高校计算机大赛移动应用创新赛"
+    ],
+    "personalized_deadline_items": [
+      {
+        "name": "中国首届“新域新质”创新大赛",
+        "deadline": "2026-09-15T23:59:59+00:00",
+        "label": "官方报名截止"
+      },
+      {
+        "name": "中国研究生企业管理创新大赛",
+        "deadline": "2026-09-22T19:00:00+00:00",
+        "label": "官方报名截止"
+      },
+      {
+        "name": "中国国际大学生创新大赛产业命题赛道",
+        "deadline": "2026-09-25T23:59:59+00:00",
+        "label": "报名截止"
+      },
+      {
+        "name": "中国国际大学生创新大赛",
+        "deadline": "2026-09-30T17:00:00+00:00",
+        "label": "官方报名截止"
+      },
+      {
+        "name": "AI+教育大学生创新创业大赛",
+        "deadline": "2026-10-15T23:59:59+00:00",
+        "label": "报名截止"
+      }
+    ]
+  },
+  {
+    "case": "CASE6",
+    "profile": {
+      "user_id": 7,
+      "email": "case6@test.local",
+      "university_id": 45,
+      "university_name": "北京邮电大学",
+      "college_id": 30,
+      "college_name": "信息与通信工程学院",
+      "major_id": 6,
+      "major_name": "通信工程",
+      "grade": "大二",
+      "graduation_year": 2029,
+      "interest_tags": [
+        "电子信息",
+        "程序设计",
+        "网络安全"
+      ],
+      "skills": [],
+      "preferred_team_type": null,
+      "weekly_available_hours": null,
+      "accept_cross_major": true,
+      "accept_cross_university": true
+    },
+    "counts": {
+      "now_available": 2,
+      "direction_related": 27,
+      "school_notices": 0,
+      "college_notices": 0,
+      "school_directory": 0,
+      "college_directory": 0,
+      "upcoming_deadline": 1,
+      "favorites": 2,
+      "personalized_competitions": 136,
+      "open_total": 22
+    },
+    "top5_now_available": [
+      "全国大学生嵌入式芯片与系统设计竞赛FPGA创新设计竞赛",
+      "ACM-ICPC国际大学生程序设计竞赛"
+    ],
+    "school_notice_names": [],
+    "personalized_deadline_items": [
+      {
+        "name": "全国大学生嵌入式芯片与系统设计竞赛FPGA创新设计竞赛",
+        "deadline": "2026-09-22T23:59:59+00:00",
+        "label": "官方报名截止"
+      }
+    ]
+  },
+  {
+    "case": "CASE7",
+    "profile": {
+      "user_id": 8,
+      "email": "case7@test.local",
+      "university_id": 15,
+      "university_name": "复旦大学",
+      "college_id": 31,
+      "college_name": "新闻学院",
+      "major_id": 7,
+      "major_name": "新闻学",
+      "grade": "大三",
+      "graduation_year": 2028,
+      "interest_tags": [
+        "新闻传播",
+        "影视制作",
+        "写作"
+      ],
+      "skills": [],
+      "preferred_team_type": null,
+      "weekly_available_hours": null,
+      "accept_cross_major": true,
+      "accept_cross_university": true
+    },
+    "counts": {
+      "now_available": 9,
+      "direction_related": 51,
+      "school_notices": 0,
+      "college_notices": 0,
+      "school_directory": 0,
+      "college_directory": 0,
+      "upcoming_deadline": 6,
+      "favorites": 3,
+      "personalized_competitions": 136,
+      "open_total": 22
+    },
+    "top5_now_available": [
+      "全国大学生数学建模竞赛",
+      "全国大学生嵌入式芯片与系统设计竞赛FPGA创新设计竞赛",
+      "华中科技大学“环球之星”国际学生才艺与中文演讲大赛",
+      "外研社·国才杯国际传播综合能力赛项",
+      "外研社·国才杯短视频赛项"
+    ],
+    "school_notice_names": [],
+    "personalized_deadline_items": [
+      {
+        "name": "全国大学生数学建模竞赛",
+        "deadline": "2026-09-14T14:00:00+00:00",
+        "label": "官方作品截止"
+      },
+      {
+        "name": "全国大学生嵌入式芯片与系统设计竞赛FPGA创新设计竞赛",
+        "deadline": "2026-09-22T23:59:59+00:00",
+        "label": "官方报名截止"
+      },
+      {
+        "name": "华中科技大学“环球之星”国际学生才艺与中文演讲大赛",
+        "deadline": "2026-09-30T23:59:59+00:00",
+        "label": "作品提交截止"
+      },
+      {
+        "name": "外研社·国才杯国际传播综合能力赛项",
+        "deadline": "2026-10-05T23:59:59+00:00",
+        "label": "官方报名截止"
+      },
+      {
+        "name": "外研社·国才杯短视频赛项",
+        "deadline": "2026-10-06T23:59:59+00:00",
+        "label": "官方报名截止"
+      }
+    ]
+  },
+  {
+    "case": "CASE8",
+    "profile": {
+      "user_id": 9,
+      "email": "case8@test.local",
+      "university_id": 27,
+      "university_name": "华中科技大学",
+      "college_id": 32,
+      "college_name": "机械科学与工程学院",
+      "major_id": 8,
+      "major_name": "机械设计制造及其自动化",
+      "grade": "大三",
+      "graduation_year": 2028,
+      "interest_tags": [
+        "机械制造",
+        "机器人",
+        "人工智能"
+      ],
+      "skills": [],
+      "preferred_team_type": null,
+      "weekly_available_hours": null,
+      "accept_cross_major": true,
+      "accept_cross_university": true
+    },
+    "counts": {
+      "now_available": 13,
+      "direction_related": 72,
+      "school_notices": 1,
+      "college_notices": 0,
+      "school_directory": 0,
+      "college_directory": 0,
+      "upcoming_deadline": 10,
+      "favorites": 3,
+      "personalized_competitions": 136,
+      "open_total": 22
+    },
+    "top5_now_available": [
+      "清华大学中国公共政策案例分析大赛",
+      "全国大学生数学建模竞赛",
+      "大学生“AI+信息素养”大赛",
+      "全国大学生嵌入式芯片与系统设计竞赛FPGA创新设计竞赛",
+      "中国国际大学生创新大赛"
+    ],
+    "school_notice_names": [
+      "中国国际大学生创新大赛"
+    ],
+    "personalized_deadline_items": [
+      {
+        "name": "清华大学中国公共政策案例分析大赛",
+        "deadline": "2026-09-07T12:00:00+00:00",
+        "label": "作品提交截止"
+      },
+      {
+        "name": "全国大学生数学建模竞赛",
+        "deadline": "2026-09-14T14:00:00+00:00",
+        "label": "官方作品截止"
+      },
+      {
+        "name": "大学生“AI+信息素养”大赛",
+        "deadline": "2026-09-17T23:59:59+00:00",
+        "label": "官方报名截止"
+      },
+      {
+        "name": "全国大学生嵌入式芯片与系统设计竞赛FPGA创新设计竞赛",
+        "deadline": "2026-09-22T23:59:59+00:00",
+        "label": "官方报名截止"
+      },
+      {
+        "name": "中国国际大学生创新大赛",
+        "deadline": "2026-09-30T17:00:00+00:00",
+        "label": "官方报名截止"
+      }
+    ]
+  },
+  {
+    "case": "CASE9",
+    "profile": {
+      "user_id": 10,
+      "email": "case9@test.local",
+      "university_id": 33,
+      "university_name": "四川大学",
+      "college_id": 33,
+      "college_name": "文学与新闻学院",
+      "major_id": 9,
+      "major_name": "广告学",
+      "grade": "大二",
+      "graduation_year": 2029,
+      "interest_tags": [
+        "广告设计",
+        "艺术设计",
+        "AIGC"
+      ],
+      "skills": [],
+      "preferred_team_type": null,
+      "weekly_available_hours": null,
+      "accept_cross_major": true,
+      "accept_cross_university": true
+    },
+    "counts": {
+      "now_available": 12,
+      "direction_related": 71,
+      "school_notices": 0,
+      "college_notices": 0,
+      "school_directory": 0,
+      "college_directory": 0,
+      "upcoming_deadline": 9,
+      "favorites": 3,
+      "personalized_competitions": 136,
+      "open_total": 22
+    },
+    "top5_now_available": [
+      "清华大学中国公共政策案例分析大赛",
+      "全国大学生数学建模竞赛",
+      "大学生“AI+信息素养”大赛",
+      "全国大学生嵌入式芯片与系统设计竞赛FPGA创新设计竞赛",
+      "华中科技大学“环球之星”国际学生才艺与中文演讲大赛"
+    ],
+    "school_notice_names": [],
+    "personalized_deadline_items": [
+      {
+        "name": "清华大学中国公共政策案例分析大赛",
+        "deadline": "2026-09-07T12:00:00+00:00",
+        "label": "作品提交截止"
+      },
+      {
+        "name": "全国大学生数学建模竞赛",
+        "deadline": "2026-09-14T14:00:00+00:00",
+        "label": "官方作品截止"
+      },
+      {
+        "name": "大学生“AI+信息素养”大赛",
+        "deadline": "2026-09-17T23:59:59+00:00",
+        "label": "官方报名截止"
+      },
+      {
+        "name": "全国大学生嵌入式芯片与系统设计竞赛FPGA创新设计竞赛",
+        "deadline": "2026-09-22T23:59:59+00:00",
+        "label": "官方报名截止"
+      },
+      {
+        "name": "华中科技大学“环球之星”国际学生才艺与中文演讲大赛",
+        "deadline": "2026-09-30T23:59:59+00:00",
+        "label": "作品提交截止"
+      }
+    ]
+  },
+  {
+    "case": "CASE10",
+    "profile": {
+      "user_id": 11,
+      "email": "case10@test.local",
+      "university_id": 3,
+      "university_name": "中国人民大学",
+      "college_id": 34,
+      "college_name": "经济学院",
+      "major_id": 10,
+      "major_name": "金融学",
+      "grade": "大四",
+      "graduation_year": 2027,
+      "interest_tags": [
+        "商业分析",
+        "创新创业",
+        "职业发展"
+      ],
+      "skills": [],
+      "preferred_team_type": null,
+      "weekly_available_hours": null,
+      "accept_cross_major": true,
+      "accept_cross_university": true
+    },
+    "counts": {
+      "now_available": 6,
+      "direction_related": 27,
+      "school_notices": 0,
+      "college_notices": 0,
+      "school_directory": 0,
+      "college_directory": 0,
+      "upcoming_deadline": 5,
+      "favorites": 3,
+      "personalized_competitions": 136,
+      "open_total": 22
+    },
+    "top5_now_available": [
+      "中国首届“新域新质”创新大赛",
+      "中国研究生企业管理创新大赛",
+      "中国国际大学生创新大赛产业命题赛道",
+      "中国国际大学生创新大赛",
+      "AI+教育大学生创新创业大赛"
+    ],
+    "school_notice_names": [],
+    "personalized_deadline_items": [
+      {
+        "name": "中国首届“新域新质”创新大赛",
+        "deadline": "2026-09-15T23:59:59+00:00",
+        "label": "官方报名截止"
+      },
+      {
+        "name": "中国研究生企业管理创新大赛",
+        "deadline": "2026-09-22T19:00:00+00:00",
+        "label": "官方报名截止"
+      },
+      {
+        "name": "中国国际大学生创新大赛产业命题赛道",
+        "deadline": "2026-09-25T23:59:59+00:00",
+        "label": "报名截止"
+      },
+      {
+        "name": "中国国际大学生创新大赛",
+        "deadline": "2026-09-30T17:00:00+00:00",
+        "label": "官方报名截止"
+      },
+      {
+        "name": "AI+教育大学生创新创业大赛",
+        "deadline": "2026-10-15T23:59:59+00:00",
+        "label": "报名截止"
+      }
+    ]
+  }
+]

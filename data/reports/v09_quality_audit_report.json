@@ -1,0 +1,163 @@
+{
+  "version": "v0.9",
+  "stage": "competition data quality audit",
+  "generated_at": "2026-09-15T05:45:42.053871+00:00",
+  "summary": {
+    "pass": 9,
+    "warn": 2,
+    "fail": 2
+  },
+  "checks": [
+    {
+      "rule_id": "official_without_national_source",
+      "description": "赛事标记 verified_official 但没有 S/A 级已核验来源",
+      "status": "fail",
+      "count": 6,
+      "detail": [
+        {
+          "id": 172,
+          "name": "中国音乐金钟奖"
+        },
+        {
+          "id": 173,
+          "name": "Young·绒—中国创新创意设计大赛"
+        },
+        {
+          "id": 174,
+          "name": "比亚迪全球汽车设计大赛"
+        },
+        {
+          "id": 175,
+          "name": "“到延安去·三秦学子圣地行”主题文创设计大赛"
+        },
+        {
+          "id": 176,
+          "name": "“学院杯”中国室内与环境设计大赛"
+        },
+        {
+          "id": 177,
+          "name": "天津市大学生民族文创设计大赛"
+        }
+      ]
+    },
+    {
+      "rule_id": "duplicate_competition_entities",
+      "description": "归一化后同名赛事实体超过一个",
+      "status": "pass",
+      "count": 0,
+      "detail": []
+    },
+    {
+      "rule_id": "duplicate_source_urls",
+      "description": "同一来源 URL 被重复导入",
+      "status": "pass",
+      "count": 0,
+      "detail": []
+    },
+    {
+      "rule_id": "school_level_in_competition_body",
+      "description": "高校 A/B/Ⅰ/Ⅱ 类等学校级认定写入赛事本体",
+      "status": "pass",
+      "count": 0,
+      "detail": []
+    },
+    {
+      "rule_id": "campus_deadline_in_generic_national_field",
+      "description": "通用报名截止字段仍与校内截止字段相同",
+      "status": "pass",
+      "count": 0,
+      "detail": []
+    },
+    {
+      "rule_id": "orphan_school_competitions",
+      "description": "无任何证据来源的 school_competition 行",
+      "status": "pass",
+      "count": 0,
+      "detail": []
+    },
+    {
+      "rule_id": "verified_without_source",
+      "description": "无任何来源却标记为已核实",
+      "status": "pass",
+      "count": 0,
+      "detail": []
+    },
+    {
+      "rule_id": "university_source_only_verified_official",
+      "description": "只有高校/低权威来源却 verified_official",
+      "status": "fail",
+      "count": 6,
+      "detail": [
+        {
+          "id": 172,
+          "name": "中国音乐金钟奖"
+        },
+        {
+          "id": 173,
+          "name": "Young·绒—中国创新创意设计大赛"
+        },
+        {
+          "id": 174,
+          "name": "比亚迪全球汽车设计大赛"
+        },
+        {
+          "id": 175,
+          "name": "“到延安去·三秦学子圣地行”主题文创设计大赛"
+        },
+        {
+          "id": 176,
+          "name": "“学院杯”中国室内与环境设计大赛"
+        },
+        {
+          "id": 177,
+          "name": "天津市大学生民族文创设计大赛"
+        }
+      ]
+    },
+    {
+      "rule_id": "edition_before_founded_year",
+      "description": "赛事届次早于创办年份",
+      "status": "pass",
+      "count": 0,
+      "detail": []
+    },
+    {
+      "rule_id": "campus_later_than_national",
+      "description": "校内截止晚于全国截止",
+      "status": "pass",
+      "count": 0,
+      "detail": []
+    },
+    {
+      "rule_id": "non_competition_entity_in_catalog",
+      "description": "奖项/艺术节/展览等仍以正式赛事身份展示",
+      "status": "pass",
+      "count": 0,
+      "detail": []
+    },
+    {
+      "rule_id": "dual_track_modeling",
+      "description": "competitions 内 track 行与 competition_tracks 表并存",
+      "status": "warn",
+      "count": 22,
+      "detail": [
+        {
+          "competition_track_rows": 21,
+          "competition_tracks_rows": 1
+        }
+      ]
+    },
+    {
+      "rule_id": "national_deadline_without_sa_evidence",
+      "description": "全国截止时间存在但该届无 S/A 级来源支撑",
+      "status": "warn",
+      "count": 1,
+      "detail": [
+        {
+          "edition_id": 23,
+          "competition": "外研社·国才杯短视频赛项"
+        }
+      ]
+    }
+  ]
+}

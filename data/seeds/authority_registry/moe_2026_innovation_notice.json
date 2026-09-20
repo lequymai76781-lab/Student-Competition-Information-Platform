@@ -1,0 +1,50 @@
+{
+  "registry_id": "moe-2026-innovation-notice",
+  "version": 1,
+  "enabled": true,
+  "source_type": "government_official_notice",
+  "authority_level": "S",
+  "organization_name": "中华人民共和国教育部",
+  "source_name": "教育部关于举办中国国际大学生创新大赛（2026）的通知",
+  "title": "教育部关于举办中国国际大学生创新大赛（2026）的通知",
+  "doc_number": "教高函〔2026〕26号",
+  "source_url": "https://www.moe.gov.cn/srcsite/A08/s5672/202607/t20260731_1445670.html",
+  "canonical_source_url": "https://www.moe.gov.cn/srcsite/A08/s5672/202607/t20260731_1445670.html",
+  "published_at": "2026-07-31",
+  "local_content_path": "data/raw/authority/moe_2026_innovation_notice.md",
+  "expected": {
+    "competition_name": "中国国际大学生创新大赛",
+    "aliases": [
+      "中国国际大学生创新大赛",
+      "中国\"互联网+\"大学生创新创业大赛"
+    ],
+    "edition_year": 2026,
+    "organizer_hint": "教育部",
+    "domain_hint": "moe.gov.cn"
+  },
+  "relationship_scope": [
+    "competition_identity",
+    "edition_schedule"
+  ],
+  "relation_role": "organizer",
+  "existing_source_url": "https://www.moe.gov.cn/srcsite/A08/s5672/202607/t20260731_1445670.html",
+  "competition_facts": {
+    "official_website": "https://cy.ncss.cn"
+  },
+  "edition": {
+    "year": 2026,
+    "edition_name": "中国国际大学生创新大赛（2026）",
+    "registration_start": "2026-08-10T00:00:00",
+    "official_registration_deadline": "2026-09-25T12:00:00",
+    "competition_start": null,
+    "competition_end": null,
+    "facts": {
+      "competition_period": "2026年7月至11月举办",
+      "registration_period": "参赛报名2026年7—9月；报名系统开放时间为2026年8月10日，报名截止时间为9月25日12时",
+      "final_round": "总决赛2026年11月，设金奖、银奖、铜奖",
+      "organizer_note": "2026届由教育部、中央统战部、中央网信办、国家发展改革委、工业和信息化部、人力资源社会保障部、农业农村部、中国科学院、中国工程院、国家知识产权局、共青团中央和江苏省人民政府联合主办；南京大学和南京市人民政府共同承办",
+      "official_website": "https://cy.ncss.cn"
+    }
+  },
+  "notes": "既有S级来源（competition_sources.id=173）同文核验并补齐届次字段；旧值2026-09-30T17:00:00为高校通知来源（东北大学），以官方9月25日12时为准并记录revision。"
+}

@@ -1,0 +1,425 @@
+{
+    "batch":  "REAL_DATA_BATCH_01",
+    "generated_at":  "2026-09-13T14:06:25.432531+00:00",
+    "schools":  [
+                    "北京交通大学",
+                    "北京科技大学",
+                    "南京航空航天大学",
+                    "中国地质大学（武汉）",
+                    "武汉理工大学",
+                    "华中农业大学",
+                    "暨南大学",
+                    "华南师范大学",
+                    "西南交通大学",
+                    "西南财经大学"
+                ],
+    "before":  {
+                   "competitions":  143,
+                   "sources":  370,
+                   "relations":  75,
+                   "school_competitions":  172,
+                   "leads":  491,
+                   "with_website":  34,
+                   "with_organizer":  56,
+                   "with_description":  127,
+                   "with_history":  5,
+                   "with_time":  35
+               },
+    "after":  {
+                  "competitions":  145,
+                  "sources":  389,
+                  "relations":  93,
+                  "school_competitions":  188,
+                  "leads":  543,
+                  "with_website":  36,
+                  "with_organizer":  58,
+                  "with_description":  129,
+                  "with_history":  5,
+                  "with_time":  36
+              },
+    "delta":  {
+                  "competitions":  2,
+                  "sources":  19,
+                  "relations":  18,
+                  "school_competitions":  16,
+                  "leads":  52,
+                  "with_website":  2,
+                  "with_organizer":  2,
+                  "with_description":  2,
+                  "with_history":  0,
+                  "with_time":  1
+              },
+    "discovery":  {
+                      "pages":  630,
+                      "candidates":  167,
+                      "raw_leads":  121,
+                      "curated_leads":  55,
+                      "status":  {
+                                     "completed_with_gaps":  6,
+                                     "failed":  4
+                                 }
+                  },
+    "curation":  {
+                     "raw_leads":  121,
+                     "kept_leads":  55,
+                     "filtered_leads":  66,
+                     "raw_relations":  14,
+                     "kept_relations":  20,
+                     "rejected_relations":  [
+                                                {
+                                                    "url":  "https://jwc.ustb.edu.cn/tztg/2512ca996a6248249300d358b4e2f325.htm",
+                                                    "reason":  "manual_evidence_type_or_year_correction"
+                                                },
+                                                {
+                                                    "url":  "https://news.jnu.edu.cn/content/202601/16/c5841.html",
+                                                    "reason":  "manual_evidence_type_or_year_correction"
+                                                },
+                                                {
+                                                    "url":  "http://news.swjtu.edu.cn/info/8071/153436.htm",
+                                                    "reason":  "manual_evidence_type_or_year_correction"
+                                                }
+                                            ],
+                     "relation_types":  {
+                                            "notification":  11,
+                                            "participation":  9
+                                        }
+                 },
+    "new_competitions":  [
+                             "中国大学生程序设计竞赛",
+                             "全国大学生模拟法庭竞赛"
+                         ],
+    "new_official_competition_sources":  2,
+    "imports":  [
+                    {
+                        "batch":  "REAL_DATA_BATCH_01-01",
+                        "batch_names":  [
+                                            "REAL_DATA_BATCH_01-01"
+                                        ],
+                        "universities_seeded":  0,
+                        "universities_updated":  73,
+                        "reports_created":  8,
+                        "reports_updated":  0,
+                        "leads_created":  33,
+                        "leads_updated":  1,
+                        "official_records_promoted":  0,
+                        "competitions_created":  0,
+                        "editions_created":  0,
+                        "relations_created":  13,
+                        "relations_updated":  0,
+                        "sources_created":  13,
+                        "sources_updated":  0,
+                        "school_competitions_rebuilt":  {
+                                                            "recognition_input_rows":  102,
+                                                            "relation_input_rows":  88,
+                                                            "recognition_pairs":  102,
+                                                            "relation_pairs":  83,
+                                                            "school_competition_rows":  185,
+                                                            "merged_rows":  0,
+                                                            "recognition_only_rows":  102,
+                                                            "relation_only_rows":  83,
+                                                            "recognition_ids_attached":  102,
+                                                            "relation_ids_attached":  88,
+                                                            "conflicts":  [
+                                                                              {
+                                                                                  "school_id":  40,
+                                                                                  "competition_id":  7,
+                                                                                  "competition_name":  "中国新闻奖",
+                                                                                  "notes":  "实体类型异常: award"
+                                                                              },
+                                                                              {
+                                                                                  "school_id":  40,
+                                                                                  "competition_id":  12,
+                                                                                  "competition_name":  "全国大学生艺术节",
+                                                                                  "notes":  "实体类型异常: festival"
+                                                                              },
+                                                                              {
+                                                                                  "school_id":  40,
+                                                                                  "competition_id":  14,
+                                                                                  "competition_name":  "中国舞蹈荷花奖",
+                                                                                  "notes":  "实体类型异常: award"
+                                                                              },
+                                                                              {
+                                                                                  "school_id":  40,
+                                                                                  "competition_id":  16,
+                                                                                  "competition_name":  "省级新闻奖",
+                                                                                  "notes":  "实体类型异常: award"
+                                                                              },
+                                                                              {
+                                                                                  "school_id":  40,
+                                                                                  "competition_id":  26,
+                                                                                  "competition_name":  "全国大学生创新创业训练计划年会展示",
+                                                                                  "notes":  "实体类型异常: exhibition"
+                                                                              },
+                                                                              {
+                                                                                  "school_id":  40,
+                                                                                  "competition_id":  89,
+                                                                                  "competition_name":  "AIGC应用大赛",
+                                                                                  "notes":  "实体类型异常: unknown"
+                                                                              },
+                                                                              {
+                                                                                  "school_id":  40,
+                                                                                  "competition_id":  90,
+                                                                                  "competition_name":  "市级新闻奖",
+                                                                                  "notes":  "实体类型异常: award"
+                                                                              }
+                                                                          ],
+                                                            "conflict_count":  7,
+                                                            "needs_human_review_count":  7
+                                                        }
+                    },
+                    {
+                        "batch":  "REAL_DATA_BATCH_01-02",
+                        "batch_names":  [
+                                            "REAL_DATA_BATCH_01-02"
+                                        ],
+                        "universities_seeded":  0,
+                        "universities_updated":  73,
+                        "reports_created":  2,
+                        "reports_updated":  0,
+                        "leads_created":  19,
+                        "leads_updated":  2,
+                        "official_records_promoted":  0,
+                        "competitions_created":  0,
+                        "editions_created":  0,
+                        "relations_created":  5,
+                        "relations_updated":  2,
+                        "sources_created":  5,
+                        "sources_updated":  2,
+                        "school_competitions_rebuilt":  {
+                                                            "recognition_input_rows":  102,
+                                                            "relation_input_rows":  93,
+                                                            "recognition_pairs":  102,
+                                                            "relation_pairs":  86,
+                                                            "school_competition_rows":  188,
+                                                            "merged_rows":  0,
+                                                            "recognition_only_rows":  102,
+                                                            "relation_only_rows":  86,
+                                                            "recognition_ids_attached":  102,
+                                                            "relation_ids_attached":  93,
+                                                            "conflicts":  [
+                                                                              {
+                                                                                  "school_id":  40,
+                                                                                  "competition_id":  7,
+                                                                                  "competition_name":  "中国新闻奖",
+                                                                                  "notes":  "实体类型异常: award"
+                                                                              },
+                                                                              {
+                                                                                  "school_id":  40,
+                                                                                  "competition_id":  12,
+                                                                                  "competition_name":  "全国大学生艺术节",
+                                                                                  "notes":  "实体类型异常: festival"
+                                                                              },
+                                                                              {
+                                                                                  "school_id":  40,
+                                                                                  "competition_id":  14,
+                                                                                  "competition_name":  "中国舞蹈荷花奖",
+                                                                                  "notes":  "实体类型异常: award"
+                                                                              },
+                                                                              {
+                                                                                  "school_id":  40,
+                                                                                  "competition_id":  16,
+                                                                                  "competition_name":  "省级新闻奖",
+                                                                                  "notes":  "实体类型异常: award"
+                                                                              },
+                                                                              {
+                                                                                  "school_id":  40,
+                                                                                  "competition_id":  26,
+                                                                                  "competition_name":  "全国大学生创新创业训练计划年会展示",
+                                                                                  "notes":  "实体类型异常: exhibition"
+                                                                              },
+                                                                              {
+                                                                                  "school_id":  40,
+                                                                                  "competition_id":  89,
+                                                                                  "competition_name":  "AIGC应用大赛",
+                                                                                  "notes":  "实体类型异常: unknown"
+                                                                              },
+                                                                              {
+                                                                                  "school_id":  40,
+                                                                                  "competition_id":  90,
+                                                                                  "competition_name":  "市级新闻奖",
+                                                                                  "notes":  "实体类型异常: award"
+                                                                              }
+                                                                          ],
+                                                            "conflict_count":  7,
+                                                            "needs_human_review_count":  7
+                                                        }
+                    }
+                ],
+    "quality_refresh":  {
+                            "competitions_scored":  138
+                        },
+    "school_read_model":  {
+                              "recognition_input_rows":  102,
+                              "relation_input_rows":  93,
+                              "recognition_pairs":  102,
+                              "relation_pairs":  86,
+                              "school_competition_rows":  188,
+                              "merged_rows":  0,
+                              "recognition_only_rows":  102,
+                              "relation_only_rows":  86,
+                              "recognition_ids_attached":  102,
+                              "relation_ids_attached":  93,
+                              "conflicts":  [
+                                                {
+                                                    "school_id":  40,
+                                                    "competition_id":  7,
+                                                    "competition_name":  "中国新闻奖",
+                                                    "notes":  "实体类型异常: award"
+                                                },
+                                                {
+                                                    "school_id":  40,
+                                                    "competition_id":  12,
+                                                    "competition_name":  "全国大学生艺术节",
+                                                    "notes":  "实体类型异常: festival"
+                                                },
+                                                {
+                                                    "school_id":  40,
+                                                    "competition_id":  14,
+                                                    "competition_name":  "中国舞蹈荷花奖",
+                                                    "notes":  "实体类型异常: award"
+                                                },
+                                                {
+                                                    "school_id":  40,
+                                                    "competition_id":  16,
+                                                    "competition_name":  "省级新闻奖",
+                                                    "notes":  "实体类型异常: award"
+                                                },
+                                                {
+                                                    "school_id":  40,
+                                                    "competition_id":  26,
+                                                    "competition_name":  "全国大学生创新创业训练计划年会展示",
+                                                    "notes":  "实体类型异常: exhibition"
+                                                },
+                                                {
+                                                    "school_id":  40,
+                                                    "competition_id":  89,
+                                                    "competition_name":  "AIGC应用大赛",
+                                                    "notes":  "实体类型异常: unknown"
+                                                },
+                                                {
+                                                    "school_id":  40,
+                                                    "competition_id":  90,
+                                                    "competition_name":  "市级新闻奖",
+                                                    "notes":  "实体类型异常: award"
+                                                }
+                                            ],
+                              "conflict_count":  7,
+                              "needs_human_review_count":  7
+                          },
+    "audit":  {
+                  "persisted_batch_relations":  20,
+                  "relation_types":  {
+                                         "notification":  11,
+                                         "participation":  9
+                                     },
+                  "orphan_relations":  0,
+                  "empty_source_urls":  0,
+                  "duplicate_exact_competition_names":  [
+
+                                                        ],
+                  "sample":  [
+                                 {
+                                     "status":  "PASS",
+                                     "university":  "北京科技大学",
+                                     "competition":  "中国大学生计算机设计大赛",
+                                     "evidence_type":  "notification",
+                                     "evidence_title":  "关于组织参加2026年中国大学生计算机设计大赛“计算机音乐创作”类专项的通知",
+                                     "evidence_url":  "https://rwsz.ustb.edu.cn/zxdt/tzgg/64333994a875444a974a459fc4332187.htm"
+                                 },
+                                 {
+                                     "status":  "PASS",
+                                     "university":  "暨南大学",
+                                     "competition":  "全国大学生统计建模大赛",
+                                     "evidence_type":  "notification",
+                                     "evidence_title":  "关于组织2026年（第十二届）全国大学生统计建模大赛暨南大学校赛通知",
+                                     "evidence_url":  "https://ec.jnu.edu.cn/2026/0413/c24919a853510/page.htm"
+                                 },
+                                 {
+                                     "status":  "PASS",
+                                     "university":  "暨南大学",
+                                     "competition":  "中国国际大学生创新大赛",
+                                     "evidence_type":  "notification",
+                                     "evidence_title":  "关于启动2026年中国国际大学生创新大赛暨南大学校赛的预通知",
+                                     "evidence_url":  "https://zhjw.jnu.edu.cn/2026/0318/c7164a851911/page.htm"
+                                 },
+                                 {
+                                     "status":  "PASS",
+                                     "university":  "华中农业大学",
+                                     "competition":  "中国国际大学生创新大赛",
+                                     "evidence_type":  "participation",
+                                     "evidence_title":  "工学院关于推荐参加2026年中国国际大学生创新大赛项目的公示-工学院",
+                                     "evidence_url":  "https://cet.hzau.edu.cn/info/1030/11825.htm"
+                                 },
+                                 {
+                                     "status":  "PASS",
+                                     "university":  "暨南大学",
+                                     "competition":  "全国大学生数学竞赛",
+                                     "evidence_type":  "participation",
+                                     "evidence_title":  "我校学子在第十七届全国大学生数学竞赛中喜获佳绩 - 综合新闻 我校学子在第十七届全国大学生数学竞赛中喜获佳绩",
+                                     "evidence_url":  "https://news.jnu.edu.cn/content/202512/20/c5735.html"
+                                 },
+                                 {
+                                     "status":  "PASS",
+                                     "university":  "西南交通大学",
+                                     "competition":  "全国大学生市场调查与分析大赛",
+                                     "evidence_type":  "participation",
+                                     "evidence_title":  "西南交大留学生在“正大杯”第十六届全国大学生市场调查与分析大赛全国总决赛中再创佳绩",
+                                     "evidence_url":  "http://news.swjtu.edu.cn/info/1034/105275.htm"
+                                 },
+                                 {
+                                     "status":  "PASS",
+                                     "university":  "华中农业大学",
+                                     "competition":  "中国大学生计算机设计大赛",
+                                     "evidence_type":  "notification",
+                                     "evidence_title":  "关于举办华中农业大学第十二届计算机设计大赛的通知-信息学院",
+                                     "evidence_url":  "https://coi.hzau.edu.cn/info/1611/61791.htm"
+                                 },
+                                 {
+                                     "status":  "PASS",
+                                     "university":  "西南交通大学",
+                                     "competition":  "“挑战杯”中国大学生创业计划竞赛",
+                                     "evidence_type":  "notification",
+                                     "evidence_title":  "【竞赛】关于开展2026年“挑战杯”西南交通大学大学生创业计划竞赛院赛选拔的通知",
+                                     "evidence_url":  "http://chem.swjtu.edu.cn/info/1119/13749.htm"
+                                 },
+                                 {
+                                     "status":  "PASS",
+                                     "university":  "暨南大学",
+                                     "competition":  "全国大学生数学建模竞赛",
+                                     "evidence_type":  "participation",
+                                     "evidence_title":  "我校学子在2025年全国大学生数学建模竞赛中获多个奖项 - 综合新闻",
+                                     "evidence_url":  "https://news.jnu.edu.cn/content/202601/16/c5841.html"
+                                 },
+                                 {
+                                     "status":  "PASS",
+                                     "university":  "西南交通大学",
+                                     "competition":  "中国国际大学生创新大赛",
+                                     "evidence_type":  "notification",
+                                     "evidence_title":  "西南交通大学关于启动中国国际大学生创新大赛（2026）校内选拔赛的通知",
+                                     "evidence_url":  "https://jwc.swjtu.edu.cn/vatuu/WebAction?newsId=2F36F08662540230\u0026setAction=newsDetail\u0026viewType=web"
+                                 }
+                             ],
+                  "sample_counts":  {
+                                        "PASS":  10
+                                    }
+              },
+    "idempotency_delta":  {
+                              "competitions":  0,
+                              "sources":  0,
+                              "relations":  0,
+                              "school_competitions":  0,
+                              "leads":  0,
+                              "with_website":  0,
+                              "with_organizer":  0,
+                              "with_description":  0,
+                              "with_history":  0,
+                              "with_time":  0
+                          },
+    "corrections":  [
+                        {
+                            "url":  "https://jwc.jnu.edu.cn/2026/0714/c24745a860169/page.htm",
+                            "change":  "participation edition 2025 -\u003e 2026",
+                            "reason":  "页面发布于2026且第十六届对应2026；修复重复来源"
+                        }
+                    ]
+}

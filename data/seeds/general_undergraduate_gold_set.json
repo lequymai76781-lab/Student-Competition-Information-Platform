@@ -1,0 +1,253 @@
+{
+    "task":  "GENERAL_UNDERGRADUATE_GOLD_SET",
+    "version":  "fix-01",
+    "school_count":  10,
+    "expected_document_count":  14,
+    "note":  "Gold Set only; rows from general_b do not start or mutate Batch B.",
+    "schools":  [
+                    {
+                        "school":  "北京工商大学",
+                        "school_type":  "财经类普通本科",
+                        "website_structure":  [
+                                                  "二级域名",
+                                                  "静态PDF",
+                                                  "DOCX附件",
+                                                  "高校CMS"
+                                              ],
+                        "official_website":  "https://www.btbu.edu.cn/",
+                        "official_domain":  "btbu.edu.cn",
+                        "expected_evidence":  [
+                                                  {
+                                                      "expected_title":  "北京工商大学本科生学科竞赛管理办法",
+                                                      "expected_source_url":  "https://jwc.btbu.edu.cn/docs/2023-05/40693507830642d483fea03938edb2f8.pdf",
+                                                      "parent_url":  "https://jwc.btbu.edu.cn/jblm/kwgl/kwglxkjs/727d92720bc94f1484ea6cad716d8cde.htm",
+                                                      "document_type":  "pdf",
+                                                      "published_year":  2021,
+                                                      "recognition_evidence":  true
+                                                  },
+                                                  {
+                                                      "expected_title":  "北京工商大学本科生创新学分认定管理办法",
+                                                      "expected_source_url":  "https://jwc.btbu.edu.cn/docs/2023-05/0e1d501e56bf469b993c3cc8437c85b8.pdf",
+                                                      "parent_url":  "https://jwc.btbu.edu.cn/jblm/kwgl/kwglxkjs/727d92720bc94f1484ea6cad716d8cde.htm",
+                                                      "document_type":  "pdf",
+                                                      "published_year":  2021,
+                                                      "recognition_evidence":  false
+                                                  }
+                                              ],
+                        "transport_samples":  [
+                                                  {
+                                                      "url":  "https://jwc.btbu.edu.cn/docs/2023-05/bb5a2d628d014e9aa20a31cd1060650a.docx",
+                                                      "document_type":  "docx"
+                                                  }
+                                              ]
+                    },
+                    {
+                        "school":  "河北大学",
+                        "school_type":  "地方综合大学",
+                        "website_structure":  [
+                                                  "二级域名",
+                                                  "PDF/DOCX/XLS混合附件",
+                                                  "内容管理系统"
+                                              ],
+                        "official_website":  "https://www.hbu.edu.cn/",
+                        "official_domain":  "hbu.edu.cn",
+                        "expected_evidence":  [
+                                                  {
+                                                      "expected_title":  "河北大学学生课外学术科技竞赛分级目录（2024版）",
+                                                      "expected_source_url":  "https://tuanwei.hbu.edu.cn/upload/files/2025/10/ad1e2b352b724286.pdf",
+                                                      "parent_url":  "https://tuanwei.hbu.edu.cn/contents/541/13973.html",
+                                                      "document_type":  "pdf",
+                                                      "published_year":  2024,
+                                                      "recognition_evidence":  true
+                                                  },
+                                                  {
+                                                      "expected_title":  "河北大学大学生学术科技竞赛奖励方案（试行）",
+                                                      "expected_source_url":  "https://tuanwei.hbu.edu.cn/upload/files/2025/10/bcc3130047fa3ef6.docx",
+                                                      "parent_url":  "https://tuanwei.hbu.edu.cn/contents/541/13973.html",
+                                                      "document_type":  "docx",
+                                                      "published_year":  2025,
+                                                      "recognition_evidence":  false
+                                                  }
+                                              ],
+                        "transport_samples":  [
+                                                  {
+                                                      "url":  "https://tuanwei.hbu.edu.cn/upload/files/2025/10/da87634053f38b66.xls",
+                                                      "document_type":  "xls"
+                                                  }
+                                              ]
+                    },
+                    {
+                        "school":  "江苏大学",
+                        "school_type":  "省属重点大学",
+                        "website_structure":  [
+                                                  "信息公开二级域名",
+                                                  "__local静态PDF"
+                                              ],
+                        "official_website":  "https://www.ujs.edu.cn/",
+                        "official_domain":  "ujs.edu.cn",
+                        "expected_evidence":  [
+                                                  {
+                                                      "expected_title":  "江苏大学学生学科竞赛管理办法",
+                                                      "expected_source_url":  "https://xxgk.ujs.edu.cn/__local/3/E7/F5/34F87F6231AB129C024CFC43AE0_7260A8B9_2D0D5.pdf",
+                                                      "document_type":  "pdf",
+                                                      "published_year":  2019,
+                                                      "recognition_evidence":  true
+                                                  }
+                                              ]
+                    },
+                    {
+                        "school":  "深圳大学",
+                        "school_type":  "地方综合大学",
+                        "website_structure":  [
+                                                  "本科生院二级域名",
+                                                  "纯HTML制度页",
+                                                  "站内栏目"
+                                              ],
+                        "official_website":  "https://www.szu.edu.cn/",
+                        "official_domain":  "szu.edu.cn",
+                        "expected_evidence":  [
+                                                  {
+                                                      "expected_title":  "深圳大学本科生学科竞赛管理办法（修订）",
+                                                      "expected_source_url":  "https://jwb.szu.edu.cn/info/1358/2016.htm",
+                                                      "document_type":  "html",
+                                                      "published_year":  2026,
+                                                      "recognition_evidence":  false
+                                                  }
+                                              ]
+                    },
+                    {
+                        "school":  "湖北大学",
+                        "school_type":  "省属重点大学",
+                        "website_structure":  [
+                                                  "创新创业二级域名",
+                                                  "信息公开",
+                                                  "__local静态PDF"
+                                              ],
+                        "official_website":  "https://www.hubu.edu.cn/",
+                        "official_domain":  "hubu.edu.cn",
+                        "expected_evidence":  [
+                                                  {
+                                                      "expected_title":  "湖北大学全日制普通本科生学科竞赛管理办法（暂行）",
+                                                      "expected_source_url":  "https://cxcy.hubu.edu.cn/__local/5/99/2D/B59372CFB8A30DA5B35A4FF2377_3A503C64_49AAC.pdf",
+                                                      "document_type":  "pdf",
+                                                      "published_year":  2021,
+                                                      "recognition_evidence":  true
+                                                  },
+                                                  {
+                                                      "expected_title":  "湖北大学学科竞赛分类一览表（2023年修订）",
+                                                      "expected_source_url":  "https://cybersec.hubu.edu.cn/__local/4/F5/64/D0666771926B4447C5CE54B1FEA_6F0BAFD1_2AEC5.pdf",
+                                                      "document_type":  "pdf",
+                                                      "published_year":  2023,
+                                                      "recognition_evidence":  true
+                                                  }
+                                              ]
+                    },
+                    {
+                        "school":  "昆明理工大学",
+                        "school_type":  "理工类普通本科",
+                        "website_structure":  [
+                                                  "学院二级域名",
+                                                  "__local PDF带查询参数"
+                                              ],
+                        "official_website":  "https://www.kmust.edu.cn/",
+                        "official_domain":  "kmust.edu.cn",
+                        "expected_evidence":  [
+                                                  {
+                                                      "expected_title":  "昆明理工大学本科生学科竞赛管理办法（2019年修订）",
+                                                      "expected_source_url":  "https://fflc.kmust.edu.cn/__local/A/05/CC/C8077C7F483E8A60D25EAD5C9BB_E959710C_41EA1.pdf?e=.pdf",
+                                                      "document_type":  "pdf",
+                                                      "published_year":  2019,
+                                                      "recognition_evidence":  false
+                                                  }
+                                              ]
+                    },
+                    {
+                        "school":  "西安理工大学",
+                        "school_type":  "理工类普通本科",
+                        "website_structure":  [
+                                                  "教务处二级域名",
+                                                  "__local PDF"
+                                              ],
+                        "official_website":  "https://www.xaut.edu.cn/",
+                        "official_domain":  "xaut.edu.cn",
+                        "expected_evidence":  [
+                                                  {
+                                                      "expected_title":  "西安理工大学科技创新竞赛管理办法",
+                                                      "expected_source_url":  "https://jwc.xaut.edu.cn/__local/A/58/AC/802BEB2FC5A0A51861E4E99FFE3_F7219EA6_2CDD2.pdf",
+                                                      "document_type":  "pdf",
+                                                      "published_year":  2019,
+                                                      "recognition_evidence":  true
+                                                  }
+                                              ]
+                    },
+                    {
+                        "school":  "泉州师范学院",
+                        "school_type":  "师范类普通本科",
+                        "website_structure":  [
+                                                  "静态主站",
+                                                  "_upload PDF",
+                                                  "无可靠站内搜索"
+                                              ],
+                        "official_website":  "https://www.qztc.edu.cn/",
+                        "official_domain":  "qztc.edu.cn",
+                        "expected_evidence":  [
+                                                  {
+                                                      "expected_title":  "泉州师范学院本科生创新创业学分认定办法",
+                                                      "expected_source_url":  "https://www.qztc.edu.cn/_upload/article/files/f0/cd/15a8c6b642938c5ed5462a62028c/050b8f0a-c837-439f-9bac-c07179b62dde.pdf",
+                                                      "document_type":  "pdf",
+                                                      "published_year":  2022,
+                                                      "recognition_evidence":  false
+                                                  }
+                                              ]
+                    },
+                    {
+                        "school":  "宿迁学院",
+                        "school_type":  "地方学院",
+                        "website_structure":  [
+                                                  "创新创业二级域名",
+                                                  "system/_content动态下载接口",
+                                                  "高校CMS"
+                                              ],
+                        "official_website":  "https://www.squ.edu.cn/",
+                        "official_domain":  "squ.edu.cn",
+                        "expected_evidence":  [
+                                                  {
+                                                      "expected_title":  "宿迁学院B类学科竞赛认定项目目录（2023年）",
+                                                      "expected_source_url":  "https://cxcy.squ.edu.cn/system/_content/download.jsp?owner=1863038347\u0026urltype=news.DownloadAttachUrl\u0026wbfileid=14928329",
+                                                      "parent_url":  "https://cxcy.squ.edu.cn/info/1007/1758.htm",
+                                                      "document_type":  "pdf",
+                                                      "published_year":  2023,
+                                                      "recognition_evidence":  true
+                                                  },
+                                                  {
+                                                      "expected_title":  "宿迁学院本科生创新创业学分认定与管理办法（修订）",
+                                                      "expected_source_url":  "https://cxcy.squ.edu.cn/system/_content/download.jsp?owner=1863038347\u0026urltype=news.DownloadAttachUrl\u0026wbfileid=14928330",
+                                                      "parent_url":  "https://cxcy.squ.edu.cn/info/1007/1758.htm",
+                                                      "document_type":  "pdf",
+                                                      "published_year":  2024,
+                                                      "recognition_evidence":  false
+                                                  }
+                                              ]
+                    },
+                    {
+                        "school":  "西藏民族大学",
+                        "school_type":  "地方民族院校",
+                        "website_structure":  [
+                                                  "多级二级域名",
+                                                  "userfiles静态PDF",
+                                                  "旧版CMS"
+                                              ],
+                        "official_website":  "https://www.xzmu.edu.cn/",
+                        "official_domain":  "xzmu.edu.cn",
+                        "expected_evidence":  [
+                                                  {
+                                                      "expected_title":  "西藏民族大学本专科创新创业学分认定办法",
+                                                      "expected_source_url":  "https://www3.xzmu.edu.cn/jwc/userfiles/file/f4bc28b0-9911-4195-ac5a-781bf7dc4727.pdf",
+                                                      "document_type":  "pdf",
+                                                      "published_year":  2017,
+                                                      "recognition_evidence":  false
+                                                  }
+                                              ]
+                    }
+                ]
+}

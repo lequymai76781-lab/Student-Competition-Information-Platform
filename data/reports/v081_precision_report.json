@@ -1,0 +1,136 @@
+{
+  "stats": {
+    "leads_total": 291,
+    "lead_classification": {
+      "registration_notice": 37,
+      "award_news": 65,
+      "result_notice": 26,
+      "submission_notice": 10,
+      "activity": 29,
+      "internal_selection": 49,
+      "training_notice": 5,
+      "irrelevant": 28,
+      "competition_notice": 30,
+      "column_page": 8,
+      "team_recruitment": 3,
+      "competition_announcement": 1
+    },
+    "actionable_leads": 130,
+    "result_award_evidence_leads": 91,
+    "noise_leads": 70,
+    "duplicate_leads": 33,
+    "matched_leads": 98,
+    "suspicious_matches": 1,
+    "relation_count_211": 32,
+    "relation_notice_types": {
+      "internal_selection": 25,
+      "registration_notice": 6,
+      "submission_notice": 1
+    },
+    "deadline_relation_count": 7,
+    "deadline_problem_count": 0
+  },
+  "top_schools": [
+    {
+      "university": "西南交通大学",
+      "total": 34,
+      "actionable": 17,
+      "result_award_evidence": 13,
+      "noise": 4,
+      "duplicates": 5,
+      "precision": 0.5
+    },
+    {
+      "university": "石河子大学",
+      "total": 27,
+      "actionable": 19,
+      "result_award_evidence": 5,
+      "noise": 3,
+      "duplicates": 4,
+      "precision": 0.704
+    },
+    {
+      "university": "湖南师范大学",
+      "total": 19,
+      "actionable": 13,
+      "result_award_evidence": 5,
+      "noise": 1,
+      "duplicates": 0,
+      "precision": 0.684
+    },
+    {
+      "university": "华东理工大学",
+      "total": 18,
+      "actionable": 6,
+      "result_award_evidence": 5,
+      "noise": 7,
+      "duplicates": 3,
+      "precision": 0.333
+    },
+    {
+      "university": "长安大学",
+      "total": 15,
+      "actionable": 4,
+      "result_award_evidence": 9,
+      "noise": 2,
+      "duplicates": 4,
+      "precision": 0.267
+    },
+    {
+      "university": "郑州大学",
+      "total": 12,
+      "actionable": 6,
+      "result_award_evidence": 3,
+      "noise": 3,
+      "duplicates": 3,
+      "precision": 0.5
+    },
+    {
+      "university": "海南大学",
+      "total": 12,
+      "actionable": 3,
+      "result_award_evidence": 5,
+      "noise": 4,
+      "duplicates": 0,
+      "precision": 0.25
+    },
+    {
+      "university": "中国地质大学（武汉）",
+      "total": 11,
+      "actionable": 2,
+      "result_award_evidence": 4,
+      "noise": 5,
+      "duplicates": 0,
+      "precision": 0.182
+    },
+    {
+      "university": "云南大学",
+      "total": 11,
+      "actionable": 8,
+      "result_award_evidence": 1,
+      "noise": 2,
+      "duplicates": 0,
+      "precision": 0.727
+    },
+    {
+      "university": "中国矿业大学",
+      "total": 10,
+      "actionable": 9,
+      "result_award_evidence": 1,
+      "noise": 0,
+      "duplicates": 4,
+      "precision": 0.9
+    }
+  ],
+  "suspicious_matches": [
+    {
+      "title": "关于启动2026年东华大学数学建模暑期预热活动暨报名意向征集的通知",
+      "detected": "全国大学生数学建模竞赛",
+      "matched": "全国大学生数学建模竞赛",
+      "lcs": 4,
+      "ok": false,
+      "reason": ""
+    }
+  ],
+  "deadline_problems": []
+}

@@ -1,0 +1,344 @@
+from datetime import datetime, timedelta, timezone
+
+from sqlalchemy import select
+
+from app.core.security import hash_password
+from app.database.session import SessionLocal
+from app.models import (
+    BetaFeedback,
+    College,
+    Competition,
+    CompetitionEdition,
+    CompetitionUpdateEvent,
+    Favorite,
+    Major,
+    Notification,
+    University,
+    User,
+    UserCompetitionStatus,
+    UserCorrectionSubmission,
+)
+from app.services.notification_service import NotificationService
+from app.services.personal_competition_service import PersonalCompetitionService
+from app.schemas.v1 import ReviewActionIn
+from app.models import CompetitionFactRevision
+
+
+def _cleanup(db, email: str) -> None:
+    user = db.execute(select(User).where(User.email == email)).scalar_one_or_none()
+    if user is not None:
+        db.delete(user)
+        db.flush()
+
+
+def _user(db, email: str, *, admin: bool = False) -> User:
+    user = User(email=email, username=email.split("@")[0], hashed_password=hash_password("test123456"), is_admin=admin)
+    db.add(user)
+    db.flush()
+    return user
+
+
+def _profile(db, user: User, university: str, college: str, major: str):
+    from app.models import UserProfile
+
+    uni = db.execute(select(University).where(University.name == university)).scalar_one()
+    college_row = db.execute(
+        select(College).where(College.university_id == uni.id, College.name == college)
+    ).scalar_one_or_none()
+    if college_row is None:
+        college_row = College(university_id=uni.id, name=college, is_verified=True, is_demo=False)
+        db.add(college_row)
+        db.flush()
+    major_row = db.execute(select(Major).where(Major.name == major)).scalar_one_or_none()
+    if major_row is None:
+        major_row = Major(name=major)
+        db.add(major_row)
+        db.flush()
+    db.add(
+        UserProfile(
+            user_id=user.id,
+            university_id=uni.id,
+            university_name=uni.name,
+            college_id=college_row.id,
+            college_name=college_row.name,
+            major_id=major_row.id,
+            major_name=major_row.name,
+            grade="大二",
+            interest_tags=["创新创业"],
+        )
+    )
+    db.flush()
+
+
+def test_deadline_reminder_generation_and_idempotency():
+    service = NotificationService()
+    with SessionLocal() as db:
+        _cleanup(db, "v1test-remind@example.com")
+        user = _user(db, "v1test-remind@example.com")
+        _profile(db, user, "西南交通大学", "经济管理学院", "工商管理")
+        competitions = list(db.execute(select(Competition).where(Competition.is_demo.is_(False))).scalars())
+        competition = next(item for item in competitions if "创新" in item.name)
+        db.add(Favorite(user_id=user.id, competition_id=competition.id))
+        db.add(
+            UserCompetitionStatus(
+                user_id=user.id,
+                competition_id=competition.id,
+                status="planning",
+            )
+        )
+        db.flush()
+        first = service.ensure_reminders_for_user(db, user)
+        second = service.ensure_reminders_for_user(db, user)
+        count = len(list(db.execute(select(Notification).where(Notification.user_id == user.id)).scalars()))
+        assert first >= 0
+        assert second == 0, "reminders must not duplicate"
+        assert count == first
+        db.rollback()
+
+
+def test_update_event_notifies_followers():
+    service = NotificationService()
+    with SessionLocal() as db:
+        _cleanup(db, "v1test-event@example.com")
+        user = _user(db, "v1test-event@example.com")
+        _profile(db, user, "西南交通大学", "经济管理学院", "工商管理")
+        competitions = list(db.execute(select(Competition).where(Competition.is_demo.is_(False))).scalars())
+        competition = next(item for item in competitions if "创新" in item.name)
+        db.add(Favorite(user_id=user.id, competition_id=competition.id))
+        db.flush()
+        now = datetime.now(timezone.utc)
+        event = CompetitionUpdateEvent(
+            competition_id=competition.id,
+            event_type="deadline_changed",
+            field_name="official_registration_deadline",
+            old_value="2026-09-20",
+            new_value="2026-09-27",
+            source_url="https://example.com/notice",
+            changed_at=now,
+            observed_at=now,
+        )
+        db.add(event)
+        db.flush()
+        result = service.ensure_event_notifications(db)
+        notifications = list(
+            db.execute(
+                select(Notification).where(
+                    Notification.user_id == user.id,
+                    Notification.type == "competition_updated",
+                )
+            ).scalars()
+        )
+        assert result["notifications_created"] >= 1
+        assert notifications
+        db.rollback()
+
+
+def test_correction_and_admin_review_permission_flow():
+    from fastapi import HTTPException
+
+    from app.api.deps import get_current_admin
+
+    with SessionLocal() as db:
+        _cleanup(db, "v1test-normal@example.com")
+        _cleanup(db, "v1test-admin@example.com")
+        normal = _user(db, "v1test-normal@example.com")
+        admin = _user(db, "v1test-admin@example.com", admin=True)
+        competitions = list(db.execute(select(Competition).where(Competition.is_demo.is_(False))).scalars())
+        correction = UserCorrectionSubmission(
+            user_id=normal.id,
+            competition_id=competitions[0].id,
+            correction_type="报名截止错误",
+            description="测试提交",
+            status="pending",
+        )
+        db.add(correction)
+        db.flush()
+        # permission check
+        try:
+            get_current_admin(user=normal)
+            raise AssertionError("normal user should be denied")
+        except HTTPException as exc:
+            assert exc.status_code == 403
+        assert get_current_admin(user=admin).is_admin is True
+        correction.status = "approved"
+        db.flush()
+        assert correction.status == "approved"
+        db.rollback()
+
+
+def test_beta_feedback_submission():
+    with SessionLocal() as db:
+        _cleanup(db, "v1test-feedback@example.com")
+        user = _user(db, "v1test-feedback@example.com")
+        row = BetaFeedback(
+            user_id=user.id,
+            category="使用建议",
+            content="测试反馈",
+            status="pending",
+        )
+        db.add(row)
+        db.flush()
+        assert row.id is not None
+        db.rollback()
+
+
+def test_personal_calendar_uses_user_deadline():
+    service = PersonalCompetitionService()
+    with SessionLocal() as db:
+        _cleanup(db, "v1test-cal@example.com")
+        user = _user(db, "v1test-cal@example.com")
+        _profile(db, user, "西南交通大学", "经济管理学院", "工商管理")
+        events = service.upcoming_events(db, user)
+        for event in events:
+            assert event["deadline"] is not None
+        db.rollback()
+
+
+def test_deadline_revision_full_chain():
+    """原9-20 -> 更新9-27：revision保留旧值、event、通知、edition更新、详情数据可用。"""
+    service = NotificationService()
+    with SessionLocal() as db:
+        _cleanup(db, "v1test-chain@example.com")
+        user = _user(db, "v1test-chain@example.com")
+        _profile(db, user, "西南交通大学", "经济管理学院", "工商管理")
+        competitions = list(db.execute(select(Competition).where(Competition.is_demo.is_(False))).scalars())
+        competition = next(item for item in competitions if "创新" in item.name)
+        db.add(Favorite(user_id=user.id, competition_id=competition.id))
+        db.flush()
+        edition_rows = [
+            edition
+            for edition in db.execute(select(CompetitionEdition)).scalars()
+            if edition.competition_id == competition.id and edition.year >= 2025
+        ]
+        edition = max(edition_rows, key=lambda item: item.year) if edition_rows else None
+        assert edition is not None
+        old = edition.official_registration_deadline or edition.registration_deadline
+        new = datetime(2026, 9, 27, 23, 59, tzinfo=timezone.utc)
+        if old == new:
+            new = datetime(2026, 9, 28, 23, 59, tzinfo=timezone.utc)
+        event = service.apply_deadline_update(
+            db,
+            edition,
+            new_deadline=new,
+            source_url="https://example.com/official-new",
+            source_name="官方通知",
+            field_name="official_registration_deadline",
+        )
+        assert event is not None
+        assert event.old_value != event.new_value
+        revisions = list(
+            db.execute(
+                select(CompetitionFactRevision).where(
+                    CompetitionFactRevision.competition_edition_id == edition.id,
+                    CompetitionFactRevision.field_name == "official_registration_deadline",
+                )
+            ).scalars()
+        )
+        assert revisions, "旧值必须以 FactRevision 保留"
+        notifications = list(
+            db.execute(
+                select(Notification).where(
+                    Notification.user_id == user.id,
+                    Notification.type == "competition_updated",
+                )
+            ).scalars()
+        )
+        assert notifications
+        # restore original deadline and remove test artifacts
+        from app.models import CompetitionUpdateEvent as _Event
+
+        test_events = [
+            row
+            for row in db.execute(select(_Event)).scalars()
+            if row.source_url == "https://example.com/official-new"
+        ]
+        for event_row in test_events:
+            for note in db.execute(select(Notification)).scalars():
+                if note.source_event_id == event_row.id:
+                    db.delete(note)
+            db.delete(event_row)
+        for revision in db.execute(select(CompetitionFactRevision)).scalars():
+            if revision.source_url == "https://example.com/official-new":
+                db.delete(revision)
+        edition.official_registration_deadline = old
+        db.commit()
+
+
+def _restore_deadline_test_artifacts(
+    db,
+    competition_id: int,
+    edition_id: int,
+    source_url: str,
+    old_deadline,
+) -> None:
+    from app.models import CompetitionUpdateEvent as _Event
+
+    events = [
+        row
+        for row in db.execute(select(_Event)).scalars()
+        if row.competition_id == competition_id and row.source_url == source_url
+    ]
+    for event_row in events:
+        for note in db.execute(select(Notification)).scalars():
+            if note.source_event_id == event_row.id:
+                db.delete(note)
+        db.delete(event_row)
+    for revision in db.execute(select(CompetitionFactRevision)).scalars():
+        if revision.competition_id == competition_id and revision.source_url == source_url:
+            db.delete(revision)
+    edition = db.get(CompetitionEdition, edition_id)
+    assert edition is not None
+    edition.official_registration_deadline = old_deadline
+    db.commit()
+
+
+def test_correction_admin_approve_closes_loop():
+    from datetime import datetime as _dt
+
+    from app.api.routes.admin import review_correction
+    from app.models import AdminAuditLog
+
+    with SessionLocal() as db:
+        _cleanup(db, "v1test-corr-user@example.com")
+        _cleanup(db, "v1test-corr-admin@example.com")
+        normal = _user(db, "v1test-corr-user@example.com")
+        admin = _user(db, "v1test-corr-admin@example.com", admin=True)
+        competitions = list(db.execute(select(Competition).where(Competition.is_demo.is_(False))).scalars())
+        competition = next(item for item in competitions if "创新" in item.name)
+        correction = UserCorrectionSubmission(
+            user_id=normal.id,
+            competition_id=competition.id,
+            correction_type="报名截止错误",
+            description="官方截止应为9月27日",
+            source_url="https://example.com/notice",
+            status="pending",
+        )
+        db.add(correction)
+        db.flush()
+        edition = max(
+            (
+                e
+                for e in db.execute(select(CompetitionEdition)).scalars()
+                if e.competition_id == competition.id
+            ),
+            key=lambda item: item.year,
+        )
+        old_deadline = edition.official_registration_deadline
+        review_correction(
+            correction.id,
+            ReviewActionIn(
+                status="approved",
+                note="核验通过",
+                new_deadline=_dt(2026, 9, 27, 23, 59, tzinfo=timezone.utc),
+            ),
+            admin,
+            db,
+        )
+        db.refresh(correction)
+        assert correction.status == "approved"
+        audit_rows = list(db.execute(select(AdminAuditLog)).scalars())
+        assert audit_rows
+        for audit_row in audit_rows:
+            db.delete(audit_row)
+        _restore_deadline_test_artifacts(db, competition.id, edition.id, "https://example.com/notice", old_deadline)
+        db.rollback()

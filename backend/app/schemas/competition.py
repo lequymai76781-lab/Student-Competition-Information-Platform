@@ -285,6 +285,8 @@ class CompetitionListItem(BaseModel):
     effective_deadline: datetime | None = None
     effective_deadline_type: str | None = None
     current_edition_name: str | None = None
+    current_edition_id: int | None = None
+    registration_closing_soon: bool = False
     current_status: str | None = None
     policy_reference_count: int = 0
     university_inclusion_count: int = 0

@@ -2,7 +2,7 @@ import { FileCheck2, ShieldCheck } from "lucide-react";
 import Link from "next/link";
 
 import type { CompetitionListItem } from "@/lib/types";
-import { daysUntil } from "@/lib/format";
+import { daysUntil, formatDate } from "@/lib/format";
 
 type ActivityFeedProps = {
   competitions: CompetitionListItem[];
@@ -33,7 +33,7 @@ export function ActivityFeed({ competitions }: ActivityFeedProps) {
               <span className="min-w-0">
                 <strong className="block truncate text-sm text-ink">{competition.short_name ?? competition.name}</strong>
                 <span className="mt-1 block text-sm text-muted">
-                  报名截止 {competition.registration_deadline ? new Date(competition.registration_deadline).toLocaleDateString("zh-CN") : "待公布"}
+                  报名截止 {competition.registration_deadline ? formatDate(competition.registration_deadline) : "待公布"}
                 </span>
               </span>
             </span>

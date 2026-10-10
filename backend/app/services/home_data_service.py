@@ -61,7 +61,7 @@ class HomeDataService:
 
     def build(self, db: Session, *, now: datetime | None = None, item_limit: int = 10) -> HomeDataRead:
         aware_now = self._aware(now or datetime.now(timezone.utc))
-        query_now = aware_now.replace(tzinfo=None)
+        query_now = aware_now
 
         recognition_section = self._recognitions(db, item_limit=item_limit)
         deadline_nodes = self._deadline_nodes(db, query_now)
@@ -380,7 +380,7 @@ class HomeDataService:
         *,
         item_limit: int,
     ) -> HomeSection[HomeRecentUpdateItem]:
-        cutoff = (aware_now - timedelta(days=30)).replace(tzinfo=None)
+        cutoff = aware_now - timedelta(days=30)
         rows = list(
             db.execute(
                 select(CompetitionFactRevision, Competition, CompetitionEdition)

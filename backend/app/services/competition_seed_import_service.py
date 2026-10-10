@@ -114,6 +114,20 @@ class CompetitionSeedImportService:
         commit_sha: str | None = None,
     ) -> dict[str, int]:
         stats = {"created": 0, "matched": 0, "enriched": 0, "sources_created": 0, "aliases_created": 0}
+        from app.database.review_guard import is_review_guarded
+        if is_review_guarded(db):
+            from app.services.competition_field_ingestion_service import CompetitionFieldIngestionService
+            helper = CompetitionFieldIngestionService()
+            stats["candidates_staged"] = 0
+            for record in records:
+                canonical, aliases = self._canonical_name(record.name)
+                competition = self._find_exact(db, canonical, [record.name, *record.aliases, *aliases])
+                raw = {**asdict(record), "competition_name": canonical, "source_type": "github_seed",
+                    "source_url": f"https://github.com/{source_repository}/blob/{commit_sha or 'main'}/{source_file}",
+                    "source_name": source_file, "source_commit": commit_sha}
+                stats["candidates_staged"] += len(helper.stage_record(db, raw, producer="competition_seed", competition=competition))
+            db.commit()
+            return stats
         for record in records:
             canonical_name, rule_aliases = self._canonical_name(record.name)
             competition = self._find_exact(db, canonical_name, [record.name, *record.aliases, *rule_aliases])

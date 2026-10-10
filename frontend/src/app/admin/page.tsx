@@ -2,6 +2,7 @@ import { Bot, Database, ListTodo, Settings, ShieldAlert, ShieldCheck, TablePrope
 
 import { PageHeader } from "@/components/PageHeader";
 import { getStats } from "@/lib/api";
+import Link from "next/link";
 
 const modules = [
   { title: "竞赛管理", description: "维护 Competition 与 CompetitionEdition。", icon: TableProperties },
@@ -25,6 +26,10 @@ export default async function AdminPage() {
         icon={Settings}
       />
       <section className="container-page py-8">
+        <Link href="/admin/review" className="button-primary mb-6">处理用户纠错与信息补充</Link>
+        <Link href="/admin/document-policy" className="button-secondary mb-6 ml-3">来源文档分类与政策分析</Link>
+        <Link href="/admin/review-learning" className="button-secondary mb-6 ml-3">人机共审学习状态</Link>
+        <Link href="/admin/golden-set" className="button-secondary mb-6 ml-3">Golden Set 人工标注</Link>
         <div className="grid gap-4 md:grid-cols-4">
           <Metric label="比赛" value={stats.competitions} />
           <Metric label="高校" value={stats.universities} />

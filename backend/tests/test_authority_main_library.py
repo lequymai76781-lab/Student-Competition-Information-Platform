@@ -183,7 +183,7 @@ def test_school_deadline_cannot_overwrite_national_deadline(db_session, tmp_path
     report = AuthoritySyncService().run(db_session, registry_dir=registry_dir, dry_run=False)
     db_session.commit()
     db_session.refresh(edition)
-    assert edition.official_registration_deadline == datetime(2026, 9, 25, 12, 0)
+    assert edition.official_registration_deadline == datetime(2026, 9, 25, 12, 0, tzinfo=timezone.utc)
     assert report["counters"].get("field_not_provable", 0) >= 1
 
 
@@ -317,7 +317,7 @@ def test_conflicting_official_sources_generate_warning(db_session, tmp_path) -> 
         )
     ).scalars().one()
     assert report["counters"]["conflicts"] >= 1
-    assert edition.official_registration_deadline == datetime(2026, 9, 1, 0, 0)
+    assert edition.official_registration_deadline == datetime(2026, 9, 1, 0, 0, tzinfo=timezone.utc)
 
 
 def test_uncertain_name_match_requires_review(db_session, tmp_path) -> None:

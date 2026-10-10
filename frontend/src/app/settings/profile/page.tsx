@@ -1,5 +1,7 @@
 "use client";
 
+import { SessionBoundary } from "@/components/v09/SessionBoundary";
+
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 
@@ -9,6 +11,10 @@ import { Settings } from "lucide-react";
 import { me, type V09Profile } from "@/lib/v09-api";
 
 export default function ProfileSettingsPage() {
+  return <SessionBoundary><ProfileSettingsPageSession /></SessionBoundary>;
+}
+
+function ProfileSettingsPageSession() {
   const router = useRouter();
   const [initial, setInitial] = useState<V09Profile | null>(null);
   const [ready, setReady] = useState(false);
@@ -19,10 +25,12 @@ export default function ProfileSettingsPage() {
       router.replace("/login");
       return;
     }
+    let active = true;
     me()
-      .then((session) => setInitial(session.user))
-      .catch(() => router.replace("/login"))
-      .finally(() => setReady(true));
+      .then((session) => { if (active) setInitial(session.user); })
+      .catch(() => { if (active) router.replace("/login"); })
+      .finally(() => { if (active) setReady(true); });
+    return () => { active = false; };
   }, [router]);
 
   return (

@@ -4,19 +4,26 @@ import { useEffect, useState } from "react";
 
 import { competitionContext, type V09Item } from "@/lib/v09-api";
 import { formatDate } from "@/lib/format";
+import { useSessionToken } from "@/lib/use-session";
+import { SessionBoundary } from "@/components/v09/SessionBoundary";
 
-export function PersonalContext({ competitionId }: { competitionId: number }) {
+type ContextProps = { competitionId: number; editionId?: number; universityId?: number; collegeId?: number };
+
+export function PersonalContext(props: ContextProps) {
+  return <SessionBoundary><PersonalContextSession key={`${props.competitionId}-${props.editionId}-${props.universityId}-${props.collegeId}`} {...props} /></SessionBoundary>;
+}
+
+function PersonalContextSession({ competitionId, editionId, universityId, collegeId }: ContextProps) {
+  const token = useSessionToken();
   const [item, setItem] = useState<V09Item | null>(null);
   const [state, setState] = useState<"loading" | "guest" | "done" | "incomplete">("loading");
 
   useEffect(() => {
-    const token = window.localStorage.getItem("v09_token");
-    if (!token) {
-      setState("guest");
-      return;
-    }
-    competitionContext(competitionId)
+    if (!token) return;
+    let current = true;
+    competitionContext(competitionId, { edition_id: editionId, university_id: universityId, college_id: collegeId })
       .then((result) => {
+        if (!current) return;
         if (result.found && result.item) {
           setItem(result.item);
           setState("done");
@@ -24,10 +31,11 @@ export function PersonalContext({ competitionId }: { competitionId: number }) {
           setState("incomplete");
         }
       })
-      .catch(() => setState("guest"));
-  }, [competitionId]);
+      .catch(() => { if (current) setState("guest"); });
+    return () => { current = false; };
+  }, [competitionId, editionId, universityId, collegeId, token]);
 
-  if (state === "guest" || state === "loading") return null;
+  if (!token || state === "guest" || state === "loading") return null;
   if (state === "incomplete" || !item) {
     return (
       <div className="panel-soft p-4">

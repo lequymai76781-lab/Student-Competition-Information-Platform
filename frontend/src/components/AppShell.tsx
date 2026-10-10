@@ -1,6 +1,6 @@
 "use client";
 
-import { GraduationCap, LogIn, Menu, Search, X } from "lucide-react";
+import { GraduationCap, Menu, Search, X } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
@@ -15,7 +15,8 @@ const navItems = [
   { href: "/calendar", label: "竞赛日历" },
   { href: "/universities", label: "高校政策库" },
   { href: "/data", label: "数据工程" },
-  { href: "/my-competitions", label: "我的竞赛" }
+  { href: "/my-competitions", label: "我的竞赛" },
+  { href: "/contribute", label: "补充信息" }
 ];
 
 export function AppShell({ children }: Readonly<{ children: React.ReactNode }>) {
@@ -70,6 +71,12 @@ export function AppShell({ children }: Readonly<{ children: React.ReactNode }>) 
         ) : null}
       </header>
       <main>{children}</main>
+      <footer className="border-t border-line bg-paper">
+        <div className="container-page flex flex-wrap items-center justify-between gap-3 py-6 text-sm text-muted">
+          <p>学校、专业或赛事尚未收录？发现通知或信息有误？</p>
+          <Link href="/contribute" className="font-semibold text-accent hover:underline">提交补充与查看进度 →</Link>
+        </div>
+      </footer>
       <FeedbackButton />
     </div>
   );

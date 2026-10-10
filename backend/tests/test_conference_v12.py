@@ -206,9 +206,12 @@ def test_paper_closed_does_not_close_edition_and_poster_open_keeps_actionable(
     rows = list(db_session.execute(select(ConferenceOpportunity)).scalars())
     paper = next(r for r in rows if r.opportunity_type == "paper_submission")
     poster = next(r for r in rows if r.opportunity_type == "poster")
-    assert opportunity_status(paper, edition=edition) == "closed"
-    assert opportunity_status(poster, edition=edition) == "open"
-    assert edition_lifecycle_status(edition) == "upcoming"
+    # The independent opportunity example is observed before the 14-day
+    # closing-soon window; it must not depend on the machine's calendar date.
+    observed_on = date(2026, 9, 1)
+    assert opportunity_status(paper, edition=edition, today=observed_on) == "closed"
+    assert opportunity_status(poster, edition=edition, today=observed_on) == "open"
+    assert edition_lifecycle_status(edition, today=observed_on) == "upcoming"
 
 
 # 5/6. Audience 受控且不扩散

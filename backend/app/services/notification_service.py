@@ -211,7 +211,8 @@ class NotificationService:
         db.add(event)
         db.flush()
         self._notify_event(db, event)
-        db.commit()
+        # The caller owns the transaction, including queue state and audit records.
+        db.flush()
         return event
 
     # ------------------------------------------------------------------ #
@@ -508,6 +509,6 @@ def self_format(value: datetime) -> str:
 
 def _serialize_dt(value: Any) -> Any:
     if isinstance(value, datetime):
-        value = value if value.tzinfo else value.replace(tzinfo=timezone.utc)
-        return value.date().isoformat()
+        value = value.astimezone(timezone.utc) if value.tzinfo else value.replace(tzinfo=timezone.utc)
+        return value.isoformat()
     return value

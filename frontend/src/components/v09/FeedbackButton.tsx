@@ -4,10 +4,15 @@ import { MessageSquarePlus, X } from "lucide-react";
 import { useState } from "react";
 
 import { submitFeedback } from "@/lib/v09-api";
+import { SessionBoundary } from "@/components/v09/SessionBoundary";
 
 const categories = ["数据错误", "找不到比赛", "学校信息错误", "Deadline问题", "使用困难", "功能建议", "页面问题", "其他"];
 
 export function FeedbackButton() {
+  return <SessionBoundary><FeedbackButtonSession /></SessionBoundary>;
+}
+
+function FeedbackButtonSession() {
   const [open, setOpen] = useState(false);
   const [category, setCategory] = useState("功能建议");
   const [content, setContent] = useState("");

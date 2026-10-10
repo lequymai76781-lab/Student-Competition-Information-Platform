@@ -1,13 +1,17 @@
 "use client";
 
+import { SessionBoundary } from "@/components/v09/SessionBoundary";
+
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 
 import { PageHeader } from "@/components/PageHeader";
 import { BellRing } from "lucide-react";
 import { formatDate } from "@/lib/format";
 import { markNotificationRead, notifications, type V09Notification } from "@/lib/v09-api";
+import { usePrivateResource } from "@/lib/use-private-resource";
+import { useSessionToken } from "@/lib/use-session";
 
 const filters = [
   { key: "", label: "全部" },
@@ -17,31 +21,24 @@ const filters = [
 ];
 
 export default function NotificationsPage() {
-  const router = useRouter();
-  const [filter, setFilter] = useState("");
-  const [items, setItems] = useState<V09Notification[]>([]);
-  const [unread, setUnread] = useState(0);
-  const [loaded, setLoaded] = useState(false);
+  return <SessionBoundary><NotificationsPageSession /></SessionBoundary>;
+}
 
-  function load() {
-    notifications(filter || undefined)
-      .then((data) => {
-        setItems(data.items);
-        setUnread(data.unread);
-      })
-      .catch(() => setItems([]))
-      .finally(() => setLoaded(true));
-  }
+function NotificationsPageSession() {
+  const router = useRouter();
+  const token = useSessionToken();
+  const [filter, setFilter] = useState("");
+  const load = useCallback(() => notifications(filter || undefined), [filter]);
+  const { data, ready: loaded, error, reload } = usePrivateResource(filter, load);
+  const items = data?.items ?? [];
+  const unread = data?.unread ?? 0;
 
   useEffect(() => {
-    const token = window.localStorage.getItem("v09_token");
-    if (!token) {
+    if (!token && !window.localStorage.getItem("v09_token")) {
       router.replace("/login");
       return;
     }
-    load();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [filter]);
+  }, [token, router]);
 
   async function open(item: V09Notification) {
     if (!item.is_read) {
@@ -77,7 +74,8 @@ export default function NotificationsPage() {
             </button>
           ))}
         </div>
-        {loaded && items.length === 0 ? (
+        {error ? <p role="alert" className="mb-4 text-sm text-red-700">通知暂时无法加载。<button type="button" onClick={reload} className="ml-2 underline">重试</button></p> : null}
+        {loaded && !error && items.length === 0 ? (
           <div className="panel-soft p-6 text-sm text-muted">暂无通知。收藏或标记“准备参加”赛事后，我们会在这里提醒你。</div>
         ) : null}
         <div className="grid gap-3">

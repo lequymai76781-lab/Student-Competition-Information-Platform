@@ -1,5 +1,7 @@
 "use client";
 
+import { SessionBoundary } from "@/components/v09/SessionBoundary";
+
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 
@@ -9,6 +11,10 @@ import { Radar } from "lucide-react";
 import { me, type V09Profile } from "@/lib/v09-api";
 
 export default function OnboardingPage() {
+  return <SessionBoundary><OnboardingPageSession /></SessionBoundary>;
+}
+
+function OnboardingPageSession() {
   const router = useRouter();
   const [initial, setInitial] = useState<V09Profile | null>(null);
   const [ready, setReady] = useState(false);
@@ -19,16 +25,19 @@ export default function OnboardingPage() {
       router.replace("/login");
       return;
     }
+    let active = true;
     me()
       .then((session) => {
+        if (!active) return;
         if (session.onboarding_complete) {
           router.replace("/my-competitions");
           return;
         }
         setInitial(session.user);
       })
-      .catch(() => router.replace("/login"))
-      .finally(() => setReady(true));
+      .catch(() => { if (active) router.replace("/login"); })
+      .finally(() => { if (active) setReady(true); });
+    return () => { active = false; };
   }, [router]);
 
   return (

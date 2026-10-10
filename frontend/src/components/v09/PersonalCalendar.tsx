@@ -1,5 +1,7 @@
 "use client";
 
+import { SessionBoundary } from "@/components/v09/SessionBoundary";
+
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
@@ -7,6 +9,10 @@ import { myCalendarEvents } from "@/lib/v09-api";
 import { formatDate } from "@/lib/format";
 
 export function PersonalCalendar() {
+  return <SessionBoundary><PersonalCalendarSession /></SessionBoundary>;
+}
+
+function PersonalCalendarSession() {
   const [events, setEvents] = useState<{ competition_id: number; name: string; deadline: string; deadline_label: string }[] | null>(null);
   const [open, setOpen] = useState(false);
 

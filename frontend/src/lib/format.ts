@@ -5,7 +5,8 @@ export function formatDate(value?: string | null): string {
   return new Intl.DateTimeFormat("zh-CN", {
     year: "numeric",
     month: "2-digit",
-    day: "2-digit"
+    day: "2-digit",
+    timeZone: "Asia/Shanghai"
   }).format(new Date(value));
 }
 
@@ -15,7 +16,7 @@ export function daysUntil(value?: string | null): string {
   }
   const diff = new Date(value).getTime() - Date.now();
   const days = Math.ceil(diff / (1000 * 60 * 60 * 24));
-  if (days < 0) {
+  if (diff < 0) {
     return "已截止";
   }
   if (days === 0) {
@@ -46,6 +47,7 @@ export function statusLabel(status?: string | null): string {
 export function verificationLabel(status?: string | null): string {
   const labels: Record<string, string> = {
     verified_official: "官方来源已核验",
+    verified_manual: "人工核验通过",
     authority_confirmed: "权威目录收录",
     association_confirmed: "高教学会/全国学会目录收录",
     official_site_confirmed: "官方赛事网站已确认",
@@ -65,6 +67,7 @@ export function verificationLabel(status?: string | null): string {
 export function verificationTone(status?: string | null): string {
   const tones: Record<string, string> = {
     verified_official: "border-emerald-200 bg-emerald-50 text-emerald-700",
+    verified_manual: "border-blue-200 bg-blue-50 text-blue-700",
     authority_confirmed: "border-blue-200 bg-blue-50 text-blue-700",
     association_confirmed: "border-blue-200 bg-blue-50 text-blue-700",
     official_site_confirmed: "border-blue-200 bg-blue-50 text-blue-700",

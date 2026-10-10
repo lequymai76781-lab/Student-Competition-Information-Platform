@@ -7,6 +7,7 @@ import { useState } from "react";
 import { PageHeader } from "@/components/PageHeader";
 import { LogIn } from "lucide-react";
 import { login } from "@/lib/v09-api";
+import { safeReturnPath } from "@/lib/safe-return-path";
 
 export default function LoginPage() {
   const router = useRouter();
@@ -20,7 +21,9 @@ export default function LoginPage() {
     setError("");
     try {
       const session = await login(email, password);
-      router.push(session.onboarding_complete ? "/my-competitions" : "/onboarding");
+      const next = new URLSearchParams(window.location.search).get("next");
+      router.push(safeReturnPath(next, window.location.origin)
+        ?? (session.onboarding_complete ? "/my-competitions" : "/onboarding"));
     } catch (exc) {
       setError(exc instanceof Error ? "邮箱或密码错误" : "登录失败");
     } finally {
@@ -47,9 +50,6 @@ export default function LoginPage() {
           </button>
           <p className="mt-4 text-center text-sm text-muted">
             还没有账号？<Link href="/register" className="font-medium text-accent hover:underline">注册</Link>
-          </p>
-          <p className="mt-4 text-center text-xs text-muted">
-            测试账号：case1@test.local / test123456（武汉体育学院）等5个场景账号
           </p>
         </div>
       </section>

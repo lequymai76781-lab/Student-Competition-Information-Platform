@@ -1,0 +1,607 @@
+[
+  {
+    "name": "上海理工大学",
+    "university_id": 163,
+    "region": "东部",
+    "province": "上海",
+    "school_type": null,
+    "official_website": "https://www.usst.edu.cn/",
+    "departments": [
+      "本科生院创新创业学院"
+    ],
+    "has_management_policy": null,
+    "has_award_policy": null,
+    "source_forms": [
+      "HTML、表格、外部报名链接"
+    ],
+    "collection_difficulty": "本轮1条正文可读取；仍需辨别校内流程、赛事届次与通知效力。",
+    "selection_reason": "东部理工样本；本科生院创新创业学院以表格和外部报名链接发布数学建模信息。",
+    "coverage_notes": "已读2025数学建模报名正文；管理和奖励办法本轮未取得。"
+  },
+  {
+    "name": "新疆师范大学",
+    "university_id": 164,
+    "region": "西部",
+    "province": "新疆",
+    "school_type": null,
+    "official_website": "https://www.xjnu.edu.cn/",
+    "departments": [
+      "教务处",
+      "数学科学学院"
+    ],
+    "has_management_policy": null,
+    "has_award_policy": null,
+    "source_forms": [
+      "HTML、Excel附件"
+    ],
+    "collection_difficulty": "本轮1条正文可读取；仍需辨别校内流程、赛事届次与通知效力。",
+    "selection_reason": "西部师范样本；校级教务处与数学科学学院联合发布统计建模选拔通知。",
+    "coverage_notes": "已读2025统计建模校内选拔；无独立认定文件。"
+  },
+  {
+    "name": "河北大学",
+    "university_id": 165,
+    "region": "东部",
+    "province": "河北",
+    "school_type": "综合（学校简介）",
+    "official_website": "https://www.hbu.edu.cn/",
+    "departments": [
+      "电子信息工程学院"
+    ],
+    "has_management_policy": null,
+    "has_award_policy": null,
+    "source_forms": [
+      "HTML、Excel附件"
+    ],
+    "collection_difficulty": "本轮1条正文可读取；仍需辨别校内流程、赛事届次与通知效力。",
+    "selection_reason": "东部综合样本；学院站点发布全国大学生数学竞赛通知。",
+    "coverage_notes": "已读2025全国数学竞赛通知，不能映射为数学建模；学校简介支持综合办学。"
+  },
+  {
+    "name": "西北师范大学",
+    "university_id": 166,
+    "region": "西部",
+    "province": "甘肃",
+    "school_type": null,
+    "official_website": "https://www.nwnu.edu.cn/",
+    "departments": [
+      "经济学院（发布）",
+      "共青团西北师范大学委员会（落款）"
+    ],
+    "has_management_policy": null,
+    "has_award_policy": null,
+    "source_forms": [
+      "HTML公示",
+      "PDF（正文不可提取）"
+    ],
+    "collection_difficulty": "本轮取得1条正文、保留1条受限记录；受限原因为body_not_extractable。",
+    "selection_reason": "西部师范样本；学校主站、学院与团委形成公示发布链，同时存在无法提取正文的PDF。",
+    "coverage_notes": "已读2025挑战杯省赛推报公示；数学建模PDF无法提取正文。"
+  },
+  {
+    "name": "北京工商大学",
+    "university_id": 167,
+    "region": "东部",
+    "province": "北京",
+    "school_type": null,
+    "official_website": "https://www.btbu.edu.cn/",
+    "departments": [
+      "教务处",
+      "数学与统计学院"
+    ],
+    "has_management_policy": null,
+    "has_award_policy": null,
+    "source_forms": [
+      "HTML、二维码"
+    ],
+    "collection_difficulty": "本轮1条正文可读取；仍需辨别校内流程、赛事届次与通知效力。",
+    "selection_reason": "东部经管专业样本；经济学院官网可核验经贸、金融等专业，数学与统计学院承载竞赛报名通知。",
+    "coverage_notes": "已读2025数学建模北京赛区报名；财经为专业覆盖视角，未把学校行政类别写成财经类。"
+  },
+  {
+    "name": "江西师范大学",
+    "university_id": 168,
+    "region": "中部",
+    "province": "江西",
+    "school_type": null,
+    "official_website": "https://www.jxnu.edu.cn/",
+    "departments": [
+      "教务处",
+      "数学与统计学院"
+    ],
+    "has_management_policy": null,
+    "has_award_policy": null,
+    "source_forms": [
+      "ASPX查询页、二维码"
+    ],
+    "collection_difficulty": "本轮1条正文可读取；仍需辨别校内流程、赛事届次与通知效力。",
+    "selection_reason": "中部师范样本；教务处使用ASPX文章入口，通知包含跨单位组织与二维码。",
+    "coverage_notes": "已读2026数学建模预报名；通知日期与明确届次分别记录。"
+  },
+  {
+    "name": "内蒙古师范大学",
+    "university_id": 169,
+    "region": "西部",
+    "province": "内蒙古",
+    "school_type": null,
+    "official_website": "https://www.imnu.edu.cn/",
+    "departments": [
+      "数学科学学院"
+    ],
+    "has_management_policy": null,
+    "has_award_policy": null,
+    "source_forms": [
+      "HTML新闻"
+    ],
+    "collection_difficulty": "本轮1条正文可读取；仍需辨别校内流程、赛事届次与通知效力。",
+    "selection_reason": "西部师范样本；学院以集训新闻记录校内选拔活动，可检验新闻与正式通知的区别。",
+    "coverage_notes": "已读2025集训新闻；暂无报名通知或管理政策正文。"
+  },
+  {
+    "name": "天津师范大学",
+    "university_id": 173,
+    "region": "东部",
+    "province": "天津",
+    "school_type": null,
+    "official_website": "https://www.tjnu.edu.cn/",
+    "departments": [
+      "政治与行政学院"
+    ],
+    "has_management_policy": null,
+    "has_award_policy": null,
+    "source_forms": [
+      "HTML新闻"
+    ],
+    "collection_difficulty": "本轮1条正文可读取；仍需辨别校内流程、赛事届次与通知效力。",
+    "selection_reason": "东部师范样本；学院发布创新大赛赛后消息，可检验赛后新闻不等于报名通知。",
+    "coverage_notes": "已读2025创新大赛学院评选赛结束消息；暂无正式报名通知或认定政策正文。"
+  },
+  {
+    "name": "山西师范大学",
+    "university_id": 174,
+    "region": "中部",
+    "province": "山西",
+    "school_type": null,
+    "official_website": "https://www.sxnu.edu.cn/",
+    "departments": [
+      "数学与计算机科学学院"
+    ],
+    "has_management_policy": null,
+    "has_award_policy": null,
+    "source_forms": [
+      "HTML"
+    ],
+    "collection_difficulty": "本轮1条正文可读取；仍需辨别校内流程、赛事届次与通知效力。",
+    "selection_reason": "中部师范样本；2024年通知仍使用原学院名称，适合检验年份与部门更名。",
+    "coverage_notes": "已读2024数学竞赛报名通知；决赛安排在2025年不改变该届次记录为2024。"
+  },
+  {
+    "name": "四川师范大学",
+    "university_id": 175,
+    "region": "西部",
+    "province": "四川",
+    "school_type": null,
+    "official_website": "https://www.sicnu.edu.cn/",
+    "departments": [
+      "物理与电子工程学院",
+      "校团委"
+    ],
+    "has_management_policy": true,
+    "has_award_policy": true,
+    "source_forms": [
+      "动态参数HTML",
+      "HTML、项目表"
+    ],
+    "collection_difficulty": "本轮2条正文可读取；仍需辨别文件适用范围和历史效力。",
+    "selection_reason": "西部师范样本；历史竞赛管理办法与2026年创业计划专项赛推荐公示可并行对照。",
+    "coverage_notes": "已读2019年起施行的历史管理奖励条款和2026年创业计划专项赛推荐公示；不声称历史政策现行有效。"
+  },
+  {
+    "name": "河南师范大学",
+    "university_id": 176,
+    "region": "中部",
+    "province": "河南",
+    "school_type": null,
+    "official_website": "https://www.htu.edu.cn/",
+    "departments": [
+      "数学与统计学院（密码学院）"
+    ],
+    "has_management_policy": null,
+    "has_award_policy": null,
+    "source_forms": [
+      "HTML、PDF及Word附件"
+    ],
+    "collection_difficulty": "本轮1条正文可读取；仍需辨别校内流程、赛事届次与通知效力。",
+    "selection_reason": "中部师范样本；学院通知含研究生、本科分组及省级推报日期，需区分报名与推荐截止。",
+    "coverage_notes": "已读2026统计建模通知；校级向省赛推荐日期不是学生校内报名截止。"
+  },
+  {
+    "name": "昆明理工大学",
+    "university_id": 177,
+    "region": "西部",
+    "province": "云南",
+    "school_type": "综合、以工为主（学校简介）",
+    "official_website": "https://www.kmust.edu.cn/",
+    "departments": [
+      "外国语言文化学院（托管）",
+      "教务处（解释）"
+    ],
+    "has_management_policy": true,
+    "has_award_policy": true,
+    "source_forms": [
+      "可提取文本PDF"
+    ],
+    "collection_difficulty": "本轮1条正文可读取；仍需辨别文件适用范围和历史效力。",
+    "selection_reason": "西部以工为主的综合大学样本；学院托管校级管理办法PDF。",
+    "coverage_notes": "已读2019年修订管理办法；无明确赛事名称，不建立某赛事认定。"
+  },
+  {
+    "name": "浙江工业大学",
+    "university_id": 178,
+    "region": "东部",
+    "province": "浙江",
+    "school_type": null,
+    "official_website": "https://www.zjut.edu.cn/",
+    "departments": [
+      "计算机学院学生工作办公室",
+      "计算机学院（转载）",
+      "教务处、理学院（组织）"
+    ],
+    "has_management_policy": null,
+    "has_award_policy": true,
+    "source_forms": [
+      "HTML、Word及Excel附件",
+      "HTML、外部报名系统",
+      "HTML（正文受限）"
+    ],
+    "collection_difficulty": "本轮取得2条正文、保留1条受限记录；受限原因为redirect_loop。",
+    "selection_reason": "东部工科办学样本；学院HTML、转发通知、奖励申报与重定向失败并存。",
+    "coverage_notes": "已读2020数学建模校赛转发通知与2025年度成果奖励申报通知；奖励通知发布于2026年，奖励年度不填为赛事届次。"
+  },
+  {
+    "name": "广西师范大学",
+    "university_id": 179,
+    "region": "西部",
+    "province": "广西",
+    "school_type": null,
+    "official_website": "https://www.gxnu.edu.cn/",
+    "departments": [
+      "学生工作部（处）",
+      "校团委",
+      "教务处",
+      "后勤保障处/后勤服务集团",
+      "创新创业学院"
+    ],
+    "has_management_policy": null,
+    "has_award_policy": null,
+    "source_forms": [
+      "HTML"
+    ],
+    "collection_difficulty": "本轮1条正文可读取；仍需辨别校内流程、赛事届次与通知效力。",
+    "selection_reason": "西部师范样本；学校综合活动通知包含创新大赛组织安排，须限制证据范围。",
+    "coverage_notes": "已读2025劳动教育活动方案中的创新大赛组织安排；不是长期认定目录。"
+  },
+  {
+    "name": "湖北大学",
+    "university_id": 180,
+    "region": "中部",
+    "province": "湖北",
+    "school_type": null,
+    "official_website": "https://www.hubu.edu.cn/",
+    "departments": [],
+    "has_management_policy": null,
+    "has_award_policy": null,
+    "source_forms": [
+      "HTML（访问超时）",
+      "HTML（正文受限）",
+      "PDF（正文受限）"
+    ],
+    "collection_difficulty": "本轮取得0条正文、保留3条受限记录；受限原因为timeout。",
+    "selection_reason": "中部高校访问受限样本；本科生院、信息公开和创新创业部门链接均发生超时。",
+    "coverage_notes": "仅发现官方赛事、政策入口；多次正文访问超时。管理/奖励政策存在性和具体内容均留待核验。"
+  },
+  {
+    "name": "山东师范大学",
+    "university_id": 181,
+    "region": "东部",
+    "province": "山东",
+    "school_type": null,
+    "official_website": "https://www.sdnu.edu.cn/",
+    "departments": [
+      "教务处",
+      "大学生数学建模/市场调查竞赛中心"
+    ],
+    "has_management_policy": null,
+    "has_award_policy": null,
+    "source_forms": [
+      "HTML、赛区外部平台"
+    ],
+    "collection_difficulty": "本轮1条正文可读取；仍需辨别校内流程、赛事届次与通知效力。",
+    "selection_reason": "东部师范样本；本科教育站点发布选拔流程变更，通知中的等级表述不直接当作正式认定。",
+    "coverage_notes": "已读2026统计建模选拔流程变更；正文B类称谓仅记上下文，不凭通知设置正式认定。"
+  },
+  {
+    "name": "深圳大学",
+    "university_id": 183,
+    "region": "东部",
+    "province": "广东",
+    "school_type": null,
+    "official_website": "https://www.szu.edu.cn/",
+    "departments": [
+      "教务部"
+    ],
+    "has_management_policy": true,
+    "has_award_policy": true,
+    "source_forms": [
+      "HTML、奖励表",
+      "HTML（正文受限）"
+    ],
+    "collection_difficulty": "本轮取得1条正文、保留1条受限记录；受限原因为timeout。",
+    "selection_reason": "东部高校样本；教务部公开修订管理办法，具体赛事目录另行发布。",
+    "coverage_notes": "已读2026年公布的本科竞赛管理办法修订文本；具体赛事目录未取得，数学学院通知超时。"
+  },
+  {
+    "name": "福建师范大学",
+    "university_id": 184,
+    "region": "东部",
+    "province": "福建",
+    "school_type": null,
+    "official_website": "https://www.fjnu.edu.cn/",
+    "departments": [
+      "教务处"
+    ],
+    "has_management_policy": null,
+    "has_award_policy": null,
+    "source_forms": [
+      "HTML、Word附件"
+    ],
+    "collection_difficulty": "本轮1条正文可读取；仍需辨别校内流程、赛事届次与通知效力。",
+    "selection_reason": "东部师范样本；教务处公布新文科实践赛事，目录未收录的赛事仅保留候选名称。",
+    "coverage_notes": "已读2026新文科实践创新赛事选拔；现有目录没有对应赛事ID，不创建官方赛事。"
+  },
+  {
+    "name": "安徽师范大学",
+    "university_id": 185,
+    "region": "中部",
+    "province": "安徽",
+    "school_type": null,
+    "official_website": "https://www.ahnu.edu.cn/",
+    "departments": [
+      "教务处（创新创业教育学院）",
+      "研究生院",
+      "校团委"
+    ],
+    "has_management_policy": null,
+    "has_award_policy": null,
+    "source_forms": [
+      "HTML、表格、PDF/Word/Excel及RAR附件"
+    ],
+    "collection_difficulty": "本轮1条正文可读取；仍需辨别校内流程、赛事届次与通知效力。",
+    "selection_reason": "中部师范样本；多部门联合组织创新大赛，并设置普通推荐与优秀项目不同截止。",
+    "coverage_notes": "已读2025创新大赛选拔；常规6月15日与优秀项目例外6月20日分别在来源备注中说明。"
+  },
+  {
+    "name": "西安理工大学",
+    "university_id": 187,
+    "region": "西部",
+    "province": "陕西",
+    "school_type": null,
+    "official_website": "https://www.xaut.edu.cn/",
+    "departments": [
+      "教务处",
+      "理学院"
+    ],
+    "has_management_policy": true,
+    "has_award_policy": null,
+    "source_forms": [
+      "HTML、二维码、Excel附件",
+      "可提取文本PDF"
+    ],
+    "collection_difficulty": "本轮2条正文可读取；仍需辨别文件适用范围和历史效力。",
+    "selection_reason": "西部理工样本；教务处HTML选拔通知和校级管理办法PDF并存。",
+    "coverage_notes": "已读2025数学建模校赛选拔和2019管理办法；奖励制度存在性不从未完整核验的PDF部分推断。"
+  },
+  {
+    "name": "贵州师范大学",
+    "university_id": 188,
+    "region": "西部",
+    "province": "贵州",
+    "school_type": null,
+    "official_website": "https://www.gznu.edu.cn/",
+    "departments": [
+      "美术学院"
+    ],
+    "has_management_policy": null,
+    "has_award_policy": null,
+    "source_forms": [
+      "HTML"
+    ],
+    "collection_difficulty": "本轮1条正文可读取；仍需辨别校内流程、赛事届次与通知效力。",
+    "selection_reason": "西部师范艺术专业样本；美术学院承载数字艺术设计赛事选拔。",
+    "coverage_notes": "已读2023数字艺术设计赛事校内选拔；是历史届次，不冒充2026最新通知。"
+  },
+  {
+    "name": "重庆邮电大学",
+    "university_id": 189,
+    "region": "西部",
+    "province": "重庆",
+    "school_type": null,
+    "official_website": "https://www.cqupt.edu.cn/",
+    "departments": [],
+    "has_management_policy": null,
+    "has_award_policy": null,
+    "source_forms": [
+      "PDF（正文受限）",
+      "HTML（正文受限）"
+    ],
+    "collection_difficulty": "本轮取得0条正文、保留2条受限记录；受限原因为tool_not_accessible、http_412。",
+    "selection_reason": "西部信息技术办学样本；中外合作学院通知详情返回412，校办旧PDF也受限。",
+    "coverage_notes": "赛事详情HTTP 412及旧通知PDF工具不可访问；仅保留发现线索，不把摘要作为正文。另查到绩效文件但未找到可核验竞赛条款，未收入赛事来源。"
+  },
+  {
+    "name": "宁夏医科大学",
+    "university_id": 190,
+    "region": "西部",
+    "province": "宁夏",
+    "school_type": null,
+    "official_website": "https://www.nxmu.edu.cn/",
+    "departments": [
+      "团委",
+      "创新创业学院",
+      "公共卫生学院"
+    ],
+    "has_management_policy": null,
+    "has_award_policy": null,
+    "source_forms": [
+      "HTML、附件"
+    ],
+    "collection_difficulty": "本轮1条正文可读取；仍需辨别校内流程、赛事届次与通知效力。",
+    "selection_reason": "西部医学样本；团委、创新创业学院与公共卫生学院共同组织挑战杯选拔。",
+    "coverage_notes": "已读2025挑战杯校内选拔；医学类型为校名体现的办学领域，正式学校类别未另行核验。"
+  },
+  {
+    "name": "江苏大学",
+    "university_id": 191,
+    "region": "东部",
+    "province": "江苏",
+    "school_type": null,
+    "official_website": "https://www.ujs.edu.cn/",
+    "departments": [
+      "信息公开网",
+      "教务处",
+      "数学科学学院"
+    ],
+    "has_management_policy": true,
+    "has_award_policy": true,
+    "source_forms": [
+      "可提取文本PDF",
+      "可提取文本PDF、企业微信群二维码",
+      "HTML（正文受限）"
+    ],
+    "collection_difficulty": "本轮取得2条正文、保留1条受限记录；受限原因为body_not_extractable。",
+    "selection_reason": "东部高校样本；信息公开与数学学院分别托管政策、赛事通知PDF。",
+    "coverage_notes": "已读2019管理办法及2025数学建模集训通知；HTML空正文使用官方PDF补证。"
+  },
+  {
+    "name": "长沙理工大学",
+    "university_id": 193,
+    "region": "中部",
+    "province": "湖南",
+    "school_type": null,
+    "official_website": "https://www.csust.edu.cn/",
+    "departments": [
+      "教务处",
+      "数学与统计学院",
+      "研究生院"
+    ],
+    "has_management_policy": true,
+    "has_award_policy": true,
+    "source_forms": [
+      "HTML、Excel附件",
+      "HTML、内嵌目录表"
+    ],
+    "collection_difficulty": "本轮2条正文可读取；仍需辨别文件适用范围和历史效力。",
+    "selection_reason": "中部理工样本；研究生认定目录与本科/研究生数学建模通知必须分开适用。",
+    "coverage_notes": "已读2025美赛组织通知及2025研究生认定目录；后者统计建模条目仅适用研究生组。"
+  },
+  {
+    "name": "塔里木大学",
+    "university_id": 194,
+    "region": "西部",
+    "province": "新疆",
+    "school_type": null,
+    "official_website": "https://www.taru.edu.cn/",
+    "departments": [
+      "教务处",
+      "信息工程学院"
+    ],
+    "has_management_policy": null,
+    "has_award_policy": null,
+    "source_forms": [
+      "HTML、Word附件、外部报名平台"
+    ],
+    "collection_difficulty": "本轮1条正文可读取；仍需辨别校内流程、赛事届次与通知效力。",
+    "selection_reason": "西部地方高校样本；校内师范专业教学技能竞赛与数学建模协会承办关系需避免误映射。",
+    "coverage_notes": "已读2025师范类专业教学技能竞赛；承办社团名称不能证明与全国数学建模赛事有关。"
+  },
+  {
+    "name": "泉州师范学院",
+    "university_id": 195,
+    "region": "东部",
+    "province": "福建",
+    "school_type": null,
+    "official_website": "https://www.qztc.edu.cn/",
+    "departments": [
+      "交通与航海学院"
+    ],
+    "has_management_policy": null,
+    "has_award_policy": true,
+    "source_forms": [
+      "HTML、Excel名单",
+      "HTML（正文受限）",
+      "PDF（正文受限）"
+    ],
+    "collection_difficulty": "本轮取得1条正文、保留3条受限记录；受限原因为cache_miss、tool_not_accessible、body_not_extractable。",
+    "selection_reason": "东部地方师范学院样本；教务处制度页、学院奖励公示、Excel附件与空正文页面并存。",
+    "coverage_notes": "已读2025年度竞赛奖励公示（2026年发布）；专门管理办法、英语竞赛通知正文仍受限，附件获奖名单未展开。"
+  },
+  {
+    "name": "宿迁学院",
+    "university_id": 196,
+    "region": "东部",
+    "province": "江苏",
+    "school_type": null,
+    "official_website": "https://www.squ.edu.cn/",
+    "departments": [
+      "创新创业学院",
+      "数理学院"
+    ],
+    "has_management_policy": null,
+    "has_award_policy": null,
+    "source_forms": [
+      "HTML、课程表"
+    ],
+    "collection_difficulty": "本轮1条正文可读取；仍需辨别校内流程、赛事届次与通知效力。",
+    "selection_reason": "东部地方学院样本；创新创业学院发布训练班选拔，选拔范围与国赛报名不同。",
+    "coverage_notes": "已读2025数学建模实验班报名选拔；训练班截止不作为全国报名截止。"
+  },
+  {
+    "name": "南京传媒学院",
+    "university_id": 140,
+    "region": "东部",
+    "province": "江苏",
+    "school_type": "民办普通本科（招生章程）",
+    "official_website": "https://www.cucn.edu.cn/",
+    "departments": [
+      "招生就业处"
+    ],
+    "has_management_policy": null,
+    "has_award_policy": true,
+    "source_forms": [
+      "HTML招生章程"
+    ],
+    "collection_difficulty": "本轮1条正文可读取；仍需辨别文件适用范围和历史效力。",
+    "selection_reason": "东部民办本科样本；招生章程含通用竞赛奖励条款，但专门赛事通知尚缺。",
+    "coverage_notes": "已读2025招生章程中的通用竞赛奖学金条款，支持民办普通本科性质；尚无专门赛事通知。"
+  },
+  {
+    "name": "四川传媒学院",
+    "university_id": 142,
+    "region": "西部",
+    "province": "四川",
+    "school_type": null,
+    "official_website": "https://www.scmc.edu.cn/",
+    "departments": [
+      "学生工作部（处）"
+    ],
+    "has_management_policy": null,
+    "has_award_policy": true,
+    "source_forms": [
+      "HTML、奖励金额表格",
+      "HTML（正文受限）"
+    ],
+    "collection_difficulty": "本轮取得1条正文、保留2条受限记录；受限原因为cache_miss、timeout。",
+    "selection_reason": "西部传媒办学样本；外语部门赛事详情访问失败，学生工作部奖学金办法正文可读。",
+    "coverage_notes": "已读2024奖学金办法，未列具体赛事；2026外语赛事通知仅保留受限线索。招生性质独立页面本轮访问失败，school_type不据摘要推断。"
+  }
+]

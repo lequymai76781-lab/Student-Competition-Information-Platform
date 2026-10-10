@@ -18,6 +18,7 @@ class CompetitionNormalizer:
         trusted_policy: bool,
         source_title: str,
         category: str | None = None,
+        source_url: str | None = None,
     ) -> CompetitionNormalizationResult:
         return self.service.normalize_or_create(
             db,
@@ -25,4 +26,5 @@ class CompetitionNormalizer:
             trusted_policy=trusted_policy,
             source_title=source_title,
             category=category,
+            source_url=source_url,
         )

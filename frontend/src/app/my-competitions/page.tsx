@@ -1,15 +1,24 @@
 "use client";
 
+import { SessionBoundary } from "@/components/v09/SessionBoundary";
+
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 
 import { PageHeader } from "@/components/PageHeader";
 import { PersonalItemCard } from "@/components/v09/PersonalItemCard";
 import { LayoutDashboard } from "lucide-react";
-import { myOverview, notifications, type V09Notification, type V09Overview } from "@/lib/v09-api";
+import { myOverview, notifications, type V09Item, type V09Notification, type V09Overview } from "@/lib/v09-api";
+import { useSessionToken } from "@/lib/use-session";
+import { formatDate } from "@/lib/format";
 
 export default function MyCompetitionsPage() {
+  return <SessionBoundary><MyCompetitionsPageSession /></SessionBoundary>;
+}
+
+function MyCompetitionsPageSession() {
   const router = useRouter();
+  const token = useSessionToken();
   const [overview, setOverview] = useState<V09Overview | null>(null);
   const [recent, setRecent] = useState<V09Notification[]>([]);
   const [state, setState] = useState<"loading" | "guest" | "done">("loading");
@@ -25,16 +34,12 @@ export default function MyCompetitionsPage() {
   }
 
   useEffect(() => {
-    const token = window.localStorage.getItem("v09_token");
-    if (!token) {
-      setState("guest");
-      return;
-    }
+    if (!token) return;
     reload();
-  }, []);
+  }, [token]);
 
-  if (state === "loading") return <p className="container-page py-16 text-center text-sm text-muted">加载中…</p>;
-  if (state === "guest" || !overview) {
+  if (token && state === "loading") return <p className="container-page py-16 text-center text-sm text-muted">加载中…</p>;
+  if (!token || state === "guest" || !overview) {
     return (
       <>
         <PageHeader eyebrow="My Competitions" title="我的竞赛" description="请先登录。" icon={LayoutDashboard} />
@@ -100,7 +105,7 @@ export default function MyCompetitionsPage() {
                     <span className="block text-sm font-medium text-ink">{item.title}</span>
                     <span className="mt-0.5 block text-xs text-muted">{item.content}</span>
                   </span>
-                  <span className="shrink-0 text-xs text-quiet">{item.created_at ? item.created_at.slice(5, 10) : ""}</span>
+                  <span className="shrink-0 text-xs text-quiet">{item.created_at ? formatDate(item.created_at) : ""}</span>
                 </button>
               ))}
             </div>
@@ -123,7 +128,7 @@ export default function MyCompetitionsPage() {
   );
 }
 
-function SectionGrid({ title, count, items, onChanged }: { title: string; count: number; items: any[]; onChanged: () => void }) {
+function SectionGrid({ title, count, items, onChanged }: { title: string; count: number; items: V09Item[]; onChanged: () => void }) {
   if (items.length === 0) return null;
   return (
     <div className="mt-8">

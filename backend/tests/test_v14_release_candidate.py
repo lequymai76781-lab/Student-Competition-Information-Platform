@@ -52,7 +52,7 @@ def _add_source(db_session, comp: Competition, level: str, url: str) -> Competit
     return source
 
 
-def test_hall_hides_no_evidence_unverified_but_keeps_pending(db_session) -> None:
+def test_hall_hides_no_evidence_and_pending_candidates(db_session) -> None:
     no_evidence = _comp(db_session, "v14无证据实体不进大厅")
     pending = _comp(
         db_session,
@@ -71,7 +71,7 @@ def test_hall_hides_no_evidence_unverified_but_keeps_pending(db_session) -> None
     rows = CompetitionRepository().list_competitions(db_session, limit=200, offset=0)
     ids = [row.id for row in rows]
     assert no_evidence.id not in ids
-    assert pending.id in ids
+    assert pending.id not in ids
 
 
 def test_hall_excludes_duplicate_and_non_competition(db_session) -> None:

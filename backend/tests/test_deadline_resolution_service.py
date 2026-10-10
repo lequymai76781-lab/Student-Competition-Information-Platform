@@ -10,6 +10,8 @@ def test_deadline_resolution_prefers_college_then_university_then_official() -> 
     college = College(id=2, university_id=1, name="测试学院")
     university_relation = UniversityCompetitionEditionRelation(
         id=10,
+        is_verified=True,
+        verification_status="verified_official",
         university_id=1,
         competition_edition_id=1,
         notice_type="registration_notice",
@@ -20,6 +22,8 @@ def test_deadline_resolution_prefers_college_then_university_then_official() -> 
     university_relation.university = university
     college_relation = UniversityCompetitionEditionRelation(
         id=11,
+        is_verified=True,
+        verification_status="verified_official",
         university_id=1,
         college_id=2,
         competition_edition_id=1,
@@ -36,6 +40,7 @@ def test_deadline_resolution_prefers_college_then_university_then_official() -> 
         year=2026,
         official_registration_deadline=now + timedelta(days=30),
         current_status="registration_open",
+        is_verified=True,
         university_relations=[university_relation, college_relation],
     )
 
@@ -69,6 +74,7 @@ def test_deadline_resolution_ignores_award_news() -> None:
         year=2026,
         official_registration_deadline=now + timedelta(days=30),
         current_status="registration_open",
+        is_verified=True,
         university_relations=[relation],
     )
 
@@ -87,6 +93,7 @@ def test_generic_registration_deadline_is_not_labeled_official() -> None:
         year=2026,
         registration_deadline=now + timedelta(days=30),
         current_status="registration_open",
+        is_verified=True,
         university_relations=[],
     )
 

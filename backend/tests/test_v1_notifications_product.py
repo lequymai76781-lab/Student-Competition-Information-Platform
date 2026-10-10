@@ -18,9 +18,23 @@ from app.models import (
     UserCompetitionStatus,
     UserCorrectionSubmission,
 )
-from app.schemas.v1 import ReviewActionIn
 from app.services.notification_service import NotificationService
 from app.services.personal_competition_service import PersonalCompetitionService
+from app.services.field_review_service import FieldReviewService
+from app.services.field_review_origins import stage_correction
+
+
+def _approve_candidate(db, admin, candidate):
+    detail = FieldReviewService.detail(db, candidate)
+    for field in detail["fields"]:
+        for proposal in field["proposals"]:
+            detail = FieldReviewService.verify_source(db, candidate.id, proposal["id"],
+                {"preview_token": detail["preview_token"], "note": "核对官方通知原文"}, admin=admin)
+    return FieldReviewService.review(db, candidate.id, {
+        "preview_token": detail["preview_token"], "note": "核验通过",
+        "decisions": [{"field_name": field["field_name"], "action": "approve", "proposal_id": field["proposals"][0]["id"]}
+                      for field in detail["fields"]],
+    }, admin=admin)
 
 
 def _user(db, email: str, *, admin: bool = False) -> User:
@@ -166,9 +180,9 @@ def test_personal_calendar_uses_user_deadline(production_copy_session_factory):
 
 def test_deadline_revision_full_chain(production_copy_session_factory):
     """原9-20 -> 更新9-27：revision保留旧值、event、通知、edition更新、详情数据可用。"""
-    service = NotificationService()
     with production_copy_session_factory() as db:
         user = _user(db, "isolated-v1-chain@example.com")
+        admin = _user(db, "isolated-v1-chain-admin@example.com", admin=True)
         _profile(db, user, "西南交通大学", "经济管理学院", "工商管理")
         competitions = list(db.execute(select(Competition).where(Competition.is_demo.is_(False))).scalars())
         competition = next(item for item in competitions if "创新" in item.name)
@@ -185,14 +199,17 @@ def test_deadline_revision_full_chain(production_copy_session_factory):
         new = datetime(2026, 9, 27, 23, 59, tzinfo=timezone.utc)
         if old == new:
             new = datetime(2026, 9, 28, 23, 59, tzinfo=timezone.utc)
-        event = service.apply_deadline_update(
-            db,
-            edition,
-            new_deadline=new,
-            source_url="https://example.com/official-new",
-            source_name="官方通知",
-            field_name="official_registration_deadline",
-        )
+        original_deadline = edition.official_registration_deadline
+        candidate = FieldReviewService.create_candidate(db, {
+            "entity_type": "edition", "competition_id": competition.id, "edition_id": edition.id,
+            "title": "官方报名截止更新", "fields": [{"field_name": "official_registration_deadline",
+                "candidate_value": new.isoformat(), "source": {"source_type": "organizer_notice",
+                    "source_url": "https://example.com/official-new", "source_title": "官方通知"}}],
+        }, submitter_id=admin.id)
+        assert edition.official_registration_deadline == original_deadline
+        _approve_candidate(db, admin, candidate)
+        event = db.scalar(select(CompetitionUpdateEvent).where(CompetitionUpdateEvent.competition_edition_id == edition.id,
+            CompetitionUpdateEvent.source_url == "https://example.com/official-new").order_by(CompetitionUpdateEvent.id.desc()))
         assert event is not None
         assert event.old_value != event.new_value
         revisions = list(
@@ -218,7 +235,6 @@ def test_deadline_revision_full_chain(production_copy_session_factory):
 def test_correction_admin_approve_closes_loop(production_copy_session_factory):
     from datetime import datetime as _dt
 
-    from app.api.routes.admin import review_correction
     from app.models import AdminAuditLog
 
     with production_copy_session_factory() as db:
@@ -226,9 +242,11 @@ def test_correction_admin_approve_closes_loop(production_copy_session_factory):
         admin = _user(db, "isolated-v1-corr-admin@example.com", admin=True)
         competitions = list(db.execute(select(Competition).where(Competition.is_demo.is_(False))).scalars())
         competition = next(item for item in competitions if "创新" in item.name)
+        edition = max(competition.editions, key=lambda item: item.year)
         correction = UserCorrectionSubmission(
             user_id=normal.id,
             competition_id=competition.id,
+            competition_edition_id=edition.id,
             correction_type="报名截止错误",
             description="官方截止应为9月27日",
             source_url="https://example.com/notice",
@@ -236,16 +254,9 @@ def test_correction_admin_approve_closes_loop(production_copy_session_factory):
         )
         db.add(correction)
         db.flush()
-        review_correction(
-            correction.id,
-            ReviewActionIn(
-                status="approved",
-                note="核验通过",
-                new_deadline=_dt(2026, 9, 27, 23, 59, tzinfo=timezone.utc),
-            ),
-            admin,
-            db,
-        )
+        candidate = stage_correction(db, correction, proposed_value=_dt(2026, 9, 27, 23, 59, tzinfo=timezone.utc).isoformat())
+        assert correction.status == "pending"
+        _approve_candidate(db, admin, candidate)
         db.commit()
         db.refresh(correction)
         assert correction.status == "approved"

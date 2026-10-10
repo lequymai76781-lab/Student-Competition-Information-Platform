@@ -5,6 +5,8 @@ from typing import Iterable
 
 from app.models import CompetitionEdition, UniversityCompetitionEditionRelation
 from app.schemas.competition import DeadlineResolutionRead
+from app.services.edition_status_service import edition_status
+from app.services.user_facing_data_policy import UserFacingDataPolicy
 
 ACTION_NOTICE_TYPES = {"registration_notice", "internal_selection", "submission_notice"}
 
@@ -17,7 +19,7 @@ class DeadlineResolutionService:
         university_id: int | None = None,
         college_id: int | None = None,
     ) -> DeadlineResolutionRead:
-        if edition is None:
+        if not UserFacingDataPolicy.verified_record(edition):
             return DeadlineResolutionRead()
 
         official_deadline = edition.official_registration_deadline
@@ -68,12 +70,17 @@ class DeadlineResolutionService:
         *,
         university_id: int | None = None,
         college_id: int | None = None,
+        now: datetime | None = None,
     ) -> tuple[datetime | None, str | None, DeadlineResolutionRead]:
         registration = self.resolve_registration(edition, university_id=university_id, college_id=college_id)
-        if edition is None:
+        if not UserFacingDataPolicy.verified_record(edition):
             return None, None, registration
 
-        if edition.current_status == "submission_open":
+        current_status = self.status(edition, university_id=university_id, college_id=college_id, now=now)
+        if current_status == "registration_upcoming":
+            return self.registration_start(edition, university_id=university_id, college_id=college_id), "报名开始", registration
+
+        if current_status == "submission_open":
             submission_deadline, relation, is_official = self._resolve_submission_deadline(
                 edition,
                 university_id=university_id,
@@ -84,6 +91,34 @@ class DeadlineResolutionService:
         if registration.effective_deadline is not None:
             return registration.effective_deadline, self._registration_label(registration.effective_deadline_type), registration
         return edition.registration_deadline, "报名截止" if edition.registration_deadline else None, registration
+
+    def registration_start(self, edition, *, university_id=None, college_id=None):
+        if not UserFacingDataPolicy.verified_record(edition):
+            return None
+        relations = self._usable_relations(edition.university_relations, university_id)
+        scopes = ([r for r in relations if r.college_id == college_id] if college_id is not None else [],
+                  [r for r in relations if r.college_id is None])
+        for scoped in scopes:
+            # A school/college registration stage may have only a start or only
+            # a deadline. A missing start is unknown in that stage, not the
+            # start of a different official stage.
+            scoped = [r for r in scoped if r.notice_type != "submission_notice" and any((
+                r.college_registration_start, r.internal_registration_start,
+                r.college_registration_deadline, r.internal_registration_deadline))]
+            if scoped:
+                starts = [r.college_registration_start or r.internal_registration_start for r in scoped]
+                return min((value for value in starts if value is not None), key=self._aware, default=None)
+        return edition.registration_start
+
+    def status(self, edition, *, university_id=None, college_id=None, now=None) -> str:
+        if edition is None:
+            return "unknown"
+        registration = self.resolve_registration(edition, university_id=university_id, college_id=college_id)
+        submission, _, _ = self._resolve_submission_deadline(edition, university_id=university_id, college_id=college_id)
+        return edition_status(edition, now=now,
+            registration_start=self.registration_start(edition, university_id=university_id, college_id=college_id),
+            registration_deadline=registration.effective_deadline,
+            submission_deadline=submission)
 
     def _resolve_submission_deadline(
         self,
@@ -123,7 +158,7 @@ class DeadlineResolutionService:
         rows = [
             relation
             for relation in relations
-            if not relation.is_demo and relation.notice_type in ACTION_NOTICE_TYPES
+            if UserFacingDataPolicy.relation_action(relation)
         ]
         if university_id is not None:
             rows = [relation for relation in rows if relation.university_id == university_id]

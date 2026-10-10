@@ -249,5 +249,5 @@ const methodLabel: Record<string, string> = {
 
 function formatCrawlTime(value?: string | null) {
   if (!value) return "尚未扫描";
-  return new Date(value).toLocaleString("zh-CN", { hour12: false });
+  return new Date(value).toLocaleString("zh-CN", { hour12: false, timeZone: "Asia/Shanghai" });
 }

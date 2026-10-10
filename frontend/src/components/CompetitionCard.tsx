@@ -20,13 +20,13 @@ export function CompetitionCard({
   const actionDeadline = competition.action_deadline;
   const deadlineKind = competition.action_deadline_label ?? (competition.current_status === "submission_open" ? "作品提交截止" : "报名截止");
   const hierarchyLabel = competition.competition_type === "series" ? "系列赛事" : competition.competition_type === "track" ? "子赛道" : null;
-  const displayStatus = competition.current_status && competition.current_status !== "unknown" ? competition.current_status : competition.status;
+  const displayStatus = competition.current_status ?? "unknown";
   const freshnessWarning = ["due_for_check", "stale", "unknown"].includes(competition.freshness_status ?? "unknown");
 
   return (
     <article className="panel-interactive flex h-full flex-col p-4 md:p-5">
       <div className="flex flex-wrap items-center gap-2">
-        <StatusBadge status={displayStatus} />
+        <StatusBadge status={displayStatus} closingSoon={competition.registration_closing_soon} />
         <span className={`badge ${verificationTone(competition.verification_status)}`}>
           <ShieldCheck aria-hidden className="h-3.5 w-3.5" />
           {verificationLabel(competition.verification_status)}
@@ -101,7 +101,7 @@ export function CompetitionCard({
         ))}
       </div>
 
-      <Link href={detailHref(competition.id, universityId, collegeId)} className="mt-auto inline-flex min-h-11 items-center gap-2 pt-5 text-sm font-semibold text-accent transition duration-200 hover:text-blue-700">
+      <Link href={detailHref(competition.id, universityId, collegeId, competition.current_edition_id)} className="mt-auto inline-flex min-h-11 items-center gap-2 pt-5 text-sm font-semibold text-accent transition duration-200 hover:text-blue-700">
         查看事实详情
         <ArrowRight aria-hidden className="h-4 w-4" />
       </Link>
@@ -109,10 +109,11 @@ export function CompetitionCard({
   );
 }
 
-function detailHref(id: number, universityId?: string | number, collegeId?: string | number) {
+function detailHref(id: number, universityId?: string | number, collegeId?: string | number, editionId?: number | null) {
   const query = new URLSearchParams();
   if (universityId) query.set("university_id", `${universityId}`);
   if (collegeId) query.set("college_id", `${collegeId}`);
+  if (editionId) query.set("edition_id", String(editionId));
   return query.size ? `/competitions/${id}?${query.toString()}` : `/competitions/${id}`;
 }
 

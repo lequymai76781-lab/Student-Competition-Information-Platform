@@ -115,11 +115,11 @@ def test_campus_deadline_cannot_overwrite_official_deadline(db_session) -> None:
     assert can_prove("university_official_notice", "official_registration_deadline") is False
     assert can_prove("university_official_notice", "campus_registration_deadline") is True
     db_session.refresh(edition)
-    assert edition.official_registration_deadline == datetime(2026, 9, 25, 12, 0)
+    assert edition.official_registration_deadline == datetime(2026, 9, 25, 12, 0, tzinfo=timezone.utc)
 
 
 def test_empty_co_organizers_are_render_safe(client, db_session) -> None:
-    comp = _comp(db_session, "无联合主办渲染安全测试")
+    comp = _comp(db_session, "无联合主办渲染安全测试", verification_status="verified_official")
     db_session.commit()
     detail = client.get(f"/api/competitions/{comp.id}").json()["data"]
     assert detail["co_organizers"] == []

@@ -1,11 +1,13 @@
 import { Filter, Search, SlidersHorizontal } from "lucide-react";
+import Link from "next/link";
 
 import { CompetitionCard } from "@/components/CompetitionCard";
 import { EmptyState } from "@/components/EmptyState";
 import { PageHeader } from "@/components/PageHeader";
 import { TagPill } from "@/components/TagPill";
 import { ViewToolbar } from "@/components/ViewToolbar";
-import { getCompetitions, getTags, getUniversities, getUniversity } from "@/lib/api";
+import { SchoolSelector } from "@/components/SchoolSelector";
+import { getCompetitions, getTags, getAllUniversities, getUniversity } from "@/lib/api";
 
 const filterCategories = ["创新创业", "算法编程", "数学建模", "电子硬件", "机械土木", "文社科", "交叉学科", "学科竞赛", "综合"];
 
@@ -29,11 +31,17 @@ type CompetitionSearchParams = {
   college_id?: string;
   year?: string;
   sort?: string;
+  page?: string;
 };
 
 export default async function CompetitionsPage({ searchParams }: CompetitionsPageProps) {
   const resolvedSearchParams = await Promise.resolve(searchParams ?? {});
-  const [competitions, tags, universities, selectedUniversity] = await Promise.all([
+  const page = Math.max(1, Math.min(10000, Number.parseInt(resolvedSearchParams.page ?? "1", 10) || 1));
+  const pageSize = 30;
+  const invalidSchoolScope = (resolvedSearchParams.source_scope?.startsWith("my_") && !resolvedSearchParams.university_id)
+    || (resolvedSearchParams.source_scope === "my_college_notice" && !resolvedSearchParams.college_id);
+  const [rows, tags, universities, selectedUniversity] = await Promise.all([
+    invalidSchoolScope ? Promise.resolve([]) :
     getCompetitions({
       keyword: resolvedSearchParams.keyword,
       category: resolvedSearchParams.category,
@@ -50,12 +58,20 @@ export default async function CompetitionsPage({ searchParams }: CompetitionsPag
       college_id: resolvedSearchParams.college_id,
       year: resolvedSearchParams.year,
       sort: resolvedSearchParams.sort,
-      limit: 100
+      limit: pageSize + 1,
+      offset: (page - 1) * pageSize
     }),
     getTags(),
-    getUniversities({ limit: 100 }),
+    getAllUniversities(),
     resolvedSearchParams.university_id ? getUniversity(resolvedSearchParams.university_id) : Promise.resolve(null)
   ]);
+  const competitions = rows.slice(0, pageSize);
+  function pageHref(target: number) {
+    const query = new URLSearchParams();
+    Object.entries(resolvedSearchParams).forEach(([key, value]) => { if (value && key !== "page") query.set(key, value); });
+    query.set("page", String(target));
+    return `/competitions?${query}`;
+  }
 
   return (
     <>
@@ -111,6 +127,8 @@ export default async function CompetitionsPage({ searchParams }: CompetitionsPag
                   <option value="registration_upcoming">即将开始报名</option>
                   <option value="submission_open">作品提交中</option>
                   <option value="ongoing">进行中</option>
+                  <option value="registration_closed">报名已截止</option>
+                  <option value="finished">已结束</option>
                 </select>
               </label>
             </div>
@@ -126,25 +144,8 @@ export default async function CompetitionsPage({ searchParams }: CompetitionsPag
                   <option value="registration_open">当前报名中</option>
                 </select>
               </label>
-              <label className="grid gap-2">
-                <span className="label">我的学校</span>
-                <select className="field" name="university_id" defaultValue={resolvedSearchParams.university_id ?? ""}>
-                  <option value="">全部985高校</option>
-                  {universities.filter((university) => university.is_985).map((university) => (
-                    <option key={university.id} value={university.id}>
-                      {university.name}
-                    </option>
-                  ))}
-                </select>
-              </label>
             </div>
-            <label className="grid gap-2">
-              <span className="label">我的学院</span>
-              <select className="field" name="college_id" defaultValue={resolvedSearchParams.college_id ?? ""} disabled={!selectedUniversity?.colleges.length}>
-                <option value="">全校范围</option>
-                {selectedUniversity?.colleges.map((college) => <option key={college.id} value={college.id}>{college.name}</option>)}
-              </select>
-            </label>
+            <SchoolSelector key={`${resolvedSearchParams.university_id}-${resolvedSearchParams.college_id}`} universities={universities} universityId={resolvedSearchParams.university_id} collegeId={resolvedSearchParams.college_id} selectedUniversity={selectedUniversity} />
             <div className="grid grid-cols-2 gap-3 lg:grid-cols-1">
               <label className="grid gap-2">
                 <span className="label">可行动时间窗</span>
@@ -199,11 +200,14 @@ export default async function CompetitionsPage({ searchParams }: CompetitionsPag
               <Filter aria-hidden className="h-4 w-4" />
               应用筛选
             </button>
+            <Link href="/competitions" className="text-center text-sm text-accent">清除筛选</Link>
           </form>
         </aside>
 
         <div>
           <ViewToolbar resultCount={competitions.length} />
+          <p className="mt-2 text-xs text-muted">第 {page} 页 · 每页最多 {pageSize} 项。学校筛选用于查看校内截止；选择“有我的学校通知”可仅显示本校通知。</p>
+          {invalidSchoolScope ? <p role="alert" className="mt-3 text-sm text-amber-800">请先选择学校；查看学院通知还需选择学院。</p> : null}
           <div className="mt-4 flex flex-wrap gap-2">
             {(resolvedSearchParams.tag ? [resolvedSearchParams.tag] : tags.slice(0, 8).map((tag) => tag.name)).map((tag) => (
               <TagPill key={tag} label={tag} />
@@ -219,6 +223,10 @@ export default async function CompetitionsPage({ searchParams }: CompetitionsPag
               <EmptyState title="没有找到匹配竞赛" description="可以放宽方向、参赛形式或届次状态筛选。" />
             </div>
           ) : null}
+          <nav aria-label="竞赛分页" className="mt-6 flex justify-between gap-3">
+            {page > 1 ? <Link href={pageHref(page - 1)} className="button-secondary">上一页</Link> : <span />}
+            {rows.length > pageSize ? <Link href={pageHref(page + 1)} className="button-secondary">下一页</Link> : null}
+          </nav>
         </div>
       </section>
     </>

@@ -1,6 +1,6 @@
 from datetime import datetime
 
-from fastapi import APIRouter, Depends, Query, status
+from fastapi import APIRouter, Depends, HTTPException, Query, status
 from sqlalchemy import select
 from sqlalchemy.orm import Session
 
@@ -15,8 +15,9 @@ from app.schemas.competition import (
     CompetitionUpdate,
 )
 from app.services.competition_service import CompetitionService
+from app.services.user_facing_data_policy import UserFacingDataPolicy
 from app.services.audit_service import record_metric
-from app.models import CompetitionUpdateEvent
+from app.models import CompetitionEdition, CompetitionUpdateEvent
 from app.models import User
 
 router = APIRouter(tags=["competitions"])
@@ -53,6 +54,10 @@ def list_competitions(
     db: Session = Depends(get_db),
     _: None = Depends(rate_limit("competitions_search", limit=180, window_seconds=60)),
 ) -> dict:
+    if source_scope in {"my_university_notice", "my_college_notice"} and university_id is None:
+        raise HTTPException(status_code=422, detail="请选择学校后查看本校通知")
+    if source_scope == "my_college_notice" and college_id is None:
+        raise HTTPException(status_code=422, detail="请选择学院后查看本院通知")
     data = service.list_competitions(
         db,
         keyword=keyword,
@@ -86,6 +91,7 @@ def get_competition(
     competition_id: int,
     university_id: int | None = None,
     college_id: int | None = None,
+    edition_id: int | None = None,
     db: Session = Depends(get_db),
     viewer: User | None = Depends(get_current_user_optional),
 ) -> dict:
@@ -97,15 +103,21 @@ def get_competition(
             competition_id,
             university_id=university_id,
             college_id=college_id,
+            edition_id=edition_id,
         )
     )
 
 
 @router.get("/competitions/{competition_id}/updates")
-def list_competition_updates(competition_id: int, db: Session = Depends(get_db)) -> dict:
+def list_competition_updates(competition_id: int, edition_id: int | None = None, db: Session = Depends(get_db)) -> dict:
+    competition = service.get_competition(db, competition_id)
+    selected_id = edition_id if edition_id is not None else competition.current_edition_id
     rows = db.execute(
         select(CompetitionUpdateEvent)
-        .where(CompetitionUpdateEvent.competition_id == competition_id)
+        .join(CompetitionEdition, CompetitionEdition.id == CompetitionUpdateEvent.competition_edition_id)
+        .where(CompetitionUpdateEvent.competition_id == competition_id,
+               UserFacingDataPolicy.verified_clause(CompetitionEdition),
+               CompetitionUpdateEvent.competition_edition_id == selected_id)
         .order_by(CompetitionUpdateEvent.changed_at.desc())
         .limit(6)
     ).scalars().all()
@@ -113,6 +125,7 @@ def list_competition_updates(competition_id: int, db: Session = Depends(get_db))
         [
             {
                 "id": row.id,
+                "competition_edition_id": row.competition_edition_id,
                 "event_type": row.event_type,
                 "old_value": row.old_value,
                 "new_value": row.new_value,
@@ -136,7 +149,7 @@ def create_competition(
     db: Session = Depends(get_db),
     _admin: User = Depends(get_current_admin),
 ) -> dict:
-    return success_response(service.create_competition(db, competition_in), message="created")
+    raise HTTPException(409, "赛事新增须通过 /admin/field-review 创建候选、核验来源并逐字段批准")
 
 
 @router.put("/competitions/{competition_id}", response_model=ApiResponse[CompetitionDetail])
@@ -146,7 +159,7 @@ def update_competition(
     db: Session = Depends(get_db),
     _admin: User = Depends(get_current_admin),
 ) -> dict:
-    return success_response(service.update_competition(db, competition_id, competition_in), message="updated")
+    raise HTTPException(409, "赛事修改须通过 /admin/field-review 创建候选、核验来源并逐字段批准")
 
 
 @router.get(

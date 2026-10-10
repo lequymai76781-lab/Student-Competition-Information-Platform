@@ -1,0 +1,196 @@
+{
+  "stage": "审核吞吐优化与高校赛事关系正式入库闭环",
+  "date": "2026-09-28",
+  "verdict": "BLOCKED",
+  "only_blocker": "No actual human timing samples; user explicitly deferred manual experiment.",
+  "human_samples": 0,
+  "user_approved_sample_adjustment": "4 real LOW_RISK + 50 explicitly synthetic batch",
+  "initial_counts": {
+    "pending": 254,
+    "approved": 0,
+    "rejected": 0,
+    "partially_approved": 0,
+    "deferred": 0,
+    "conflict": 9,
+    "no_source": 0,
+    "duplicate_suspected": 14,
+    "low_risk": 4,
+    "high_risk": 249,
+    "school_relations": 49
+  },
+  "automated_metrics_seconds": {
+    "real_low": {
+      "samples": 4,
+      "mean_seconds": 7.93284975,
+      "median_seconds": 7.4988025,
+      "p90_seconds": 11.864299,
+      "total_seconds": 31.731399
+    },
+    "single_source": {
+      "samples": 10,
+      "mean_seconds": 12.5448842,
+      "median_seconds": 12.778415500000001,
+      "p90_seconds": 14.525364,
+      "total_seconds": 125.448842
+    },
+    "cross_candidate_consistent": {
+      "samples": 10,
+      "mean_seconds": 31.958822,
+      "median_seconds": 14.703246,
+      "p90_seconds": 43.803813,
+      "total_seconds": 319.58822
+    },
+    "conflict": {
+      "samples": 5,
+      "mean_seconds": 16.439882,
+      "median_seconds": 12.802441,
+      "p90_seconds": 30.392362,
+      "total_seconds": 82.19941
+    },
+    "school_notice": {
+      "samples": 5,
+      "mean_seconds": 4.884567,
+      "median_seconds": 4.877482,
+      "p90_seconds": 5.460633,
+      "total_seconds": 24.422835
+    },
+    "whole_competition": {
+      "samples": 2,
+      "mean_seconds": 5.09724,
+      "median_seconds": 5.09724,
+      "p90_seconds": 7.919175,
+      "total_seconds": 10.19448
+    },
+    "ordinary_single_field": {
+      "samples": 1,
+      "mean_seconds": 13.045287
+    }
+  },
+  "synthetic_batch": {
+    "selection_ms": 1608.7707,
+    "total_ui_ms": 6210.632
+  },
+  "backend_tests_passed": 792,
+  "frontend_tests_passed": 57,
+  "lint": "PASS",
+  "typecheck": "PASS",
+  "build": "PASS",
+  "database_safety": {
+    "production_before": "9f2eb40a640eb5bdbfc0ad4006787f7d0e910a3d1d3598b9d0d551a30768f320",
+    "production_after": "9f2eb40a640eb5bdbfc0ad4006787f7d0e910a3d1d3598b9d0d551a30768f320",
+    "master_before": "6bffca4c20f6aaa673246cc1768913cedab789fbd30d4364e0a1f4e64f4a95b6",
+    "master_after": "6bffca4c20f6aaa673246cc1768913cedab789fbd30d4364e0a1f4e64f4a95b6",
+    "unchanged": true
+  },
+  "real_browser_groups": [
+    {
+      "name": "登录真实隔离API、统计与254候选分页",
+      "passed": true,
+      "counts": {
+        "pending": 218,
+        "approved": 34,
+        "rejected": 2,
+        "partially_approved": 0,
+        "deferred": 0,
+        "conflict": 0,
+        "no_source": 0,
+        "duplicate_suspected": 14,
+        "low_risk": 0,
+        "high_risk": 218,
+        "school_relations": 49
+      }
+    },
+    {
+      "name": "真实4条LOW风险计时与批准/拒绝路径",
+      "passed": true,
+      "ids": [
+        11,
+        39,
+        49,
+        70
+      ],
+      "note": "49历史频率证据含2026新赛制歧义，拒绝模拟，不放宽低风险规则"
+    },
+    {
+      "name": "10条普通单来源连续真实UI操作",
+      "passed": true,
+      "candidates": 10,
+      "total_ms": 134628.2285
+    },
+    {
+      "name": "10组跨候选同字段多源一致对照",
+      "passed": true,
+      "representatives": 10,
+      "within_candidate_multi_source": 0
+    },
+    {
+      "name": "B：5个冲突字段组单条审核与时间线",
+      "passed": true,
+      "candidates": 5
+    },
+    {
+      "name": "C：5所学校通知批准并出现正式关系",
+      "passed": true,
+      "candidates": 5
+    },
+    {
+      "name": "单赛事全部现有候选处理计时",
+      "passed": true,
+      "competition_id": 51,
+      "candidates": 2,
+      "total_ms": 12164.968999999997,
+      "scope": "该赛事现有2条候选全部完成，不代表赛事资料无缺项"
+    },
+    {
+      "name": "D：普通通知不得转换为正式认定政策",
+      "passed": true,
+      "http_status": 422
+    },
+    {
+      "name": "E：409审核失败保留决定、意见、筛选与页码",
+      "passed": true,
+      "status": 409
+    }
+  ],
+  "changed_files": [
+    "README.md",
+    "backend/app/api/routes/field_reviews.py",
+    "backend/app/core/exceptions.py",
+    "backend/app/database/review_guard.py",
+    "backend/app/schemas/review_telemetry.py",
+    "backend/app/schemas/school_relation_review.py",
+    "backend/app/services/field_review_service.py",
+    "backend/app/services/policy_resolution_service.py",
+    "backend/app/services/review_bulk_service.py",
+    "backend/app/services/review_queue_query.py",
+    "backend/app/services/review_telemetry_service.py",
+    "backend/app/services/school_relation_review_service.py",
+    "backend/tests/test_field_ingestion.py",
+    "backend/tests/test_field_review.py",
+    "backend/tests/test_real_data_pilot.py",
+    "backend/tests/test_review_policy_resolution_scope.py",
+    "backend/tests/test_review_telemetry.py",
+    "backend/tests/test_review_throughput.py",
+    "backend/tests/test_review_throughput_api_access.py",
+    "backend/tests/test_school_relation_review.py",
+    "docs/CURRENT_TASK.md",
+    "docs/REVIEW_THROUGHPUT_REPORT_20260928.md",
+    "docs/review-throughput/VALIDATION.json",
+    "docs/superpowers/plans/2026-09-28-review-throughput.md",
+    "docs/superpowers/specs/2026-09-28-review-throughput-design.md",
+    "frontend/src/app/admin/field-review/page.tsx",
+    "frontend/src/components/FieldReviewBatch.tsx",
+    "frontend/src/components/FieldReviewDetail.tsx",
+    "frontend/src/components/ReviewTelemetry.tsx",
+    "frontend/src/components/SchoolRelationReview.tsx",
+    "frontend/src/lib/field-review-api.ts",
+    "frontend/src/lib/v09-api.ts",
+    "frontend/tests/api-security.test.mjs",
+    "frontend/tests/field-review.test.mjs",
+    "frontend/tests/review-throughput.test.mjs"
+  ],
+  "schema_changed": false,
+  "production_mutated": false,
+  "real_data_collected": false,
+  "deployed": false
+}

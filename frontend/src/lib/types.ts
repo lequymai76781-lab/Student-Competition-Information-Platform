@@ -5,6 +5,11 @@ export type ApiResponse<T> = {
   meta?: Record<string, unknown> | null;
 };
 
+export type CompetitionUpdateEvent = {
+  id: number; competition_name?: string | null; event_type: string; old_value?: unknown;
+  new_value?: unknown; source_url?: string | null; changed_at?: string | null; notes?: string | null;
+};
+
 export type Tag = {
   id: number;
   name: string;
@@ -36,6 +41,8 @@ export type CompetitionListItem = {
   effective_deadline?: string | null;
   effective_deadline_type?: string | null;
   current_edition_name?: string | null;
+  current_edition_id?: number | null;
+  registration_closing_soon?: boolean;
   current_status?: string | null;
   policy_reference_count?: number;
   university_inclusion_count?: number;

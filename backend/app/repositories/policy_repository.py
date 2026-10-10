@@ -2,6 +2,7 @@ from datetime import timezone
 
 from sqlalchemy import func, select
 from sqlalchemy.orm import Session
+from app.services.user_facing_data_policy import UserFacingDataPolicy
 
 from app.models import (
     CandidateCompetition,
@@ -34,6 +35,7 @@ class PolicyRepository:
             .join(University, University.id == PolicyDocument.university_id)
             .outerjoin(College, College.id == PolicyDocument.college_id)
             .outerjoin(Major, Major.id == PolicyDocument.major_id)
+            .where(UserFacingDataPolicy.verified_clause(PolicyDocument))
         )
         if university_id is not None:
             stmt = stmt.where(PolicyDocument.university_id == university_id)
@@ -78,6 +80,10 @@ class PolicyRepository:
             .join(University, University.id == CompetitionPolicyRecognition.university_id)
             .outerjoin(College, College.id == CompetitionPolicyRecognition.college_id)
             .outerjoin(Major, Major.id == CompetitionPolicyRecognition.major_id)
+            .where(CompetitionPolicyRecognition.recognition_status == "recognized",
+                   CompetitionPolicyRecognition.needs_manual_review.is_(False),
+                   CompetitionPolicyRecognition.is_demo.is_(False),
+                   UserFacingDataPolicy.verified_clause(PolicyDocument))
         )
         if competition_id is not None:
             stmt = stmt.where(CompetitionPolicyRecognition.competition_id == competition_id)
@@ -108,7 +114,9 @@ class PolicyRepository:
         limit: int = 50,
         offset: int = 0,
     ) -> list[CrawlerJob]:
-        stmt = select(CrawlerJob)
+        # Mid-scale ingestion checkpoints contain internal manifest paths and
+        # failure details. This repository feeds the public policy job list.
+        stmt = select(CrawlerJob).where(CrawlerJob.job_type != "mid_scale_candidate")
         if status:
             stmt = stmt.where(CrawlerJob.status == status)
         stmt = stmt.order_by(CrawlerJob.created_at.desc()).offset(offset).limit(limit)
@@ -128,7 +136,7 @@ class PolicyRepository:
             stmt = stmt.where(ReviewQueue.status == status)
         if university_id is not None:
             stmt = stmt.where(ReviewQueue.university_id == university_id)
-        stmt = stmt.order_by(ReviewQueue.created_at.desc()).offset(offset).limit(limit)
+        stmt = stmt.order_by(ReviewQueue.created_at.desc(), ReviewQueue.id.desc()).offset(offset).limit(limit)
         return [self._review_row(item, university_name) for item, university_name in db.execute(stmt).all()]
 
     def get_985_progress(self, db: Session) -> list[dict]:

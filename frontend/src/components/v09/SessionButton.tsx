@@ -1,15 +1,12 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useSessionToken } from "@/lib/use-session";
 
 import { setToken } from "@/lib/v09-api";
 
 export function SessionButton() {
-  const [token, setTokenState] = useState<string | null>(null);
-  useEffect(() => {
-    setTokenState(window.localStorage.getItem("v09_token"));
-  }, []);
+  const token = useSessionToken();
   if (!token) {
     return (
       <Link href="/login" className="button-secondary hidden sm:inline-flex">
@@ -24,10 +21,9 @@ export function SessionButton() {
       </Link>
       <button
         type="button"
-        className="hidden text-sm text-muted transition hover:text-ink sm:inline-flex"
+        className="inline-flex text-sm text-muted transition hover:text-ink"
         onClick={() => {
           setToken(null);
-          setTokenState(null);
         }}
       >
         退出

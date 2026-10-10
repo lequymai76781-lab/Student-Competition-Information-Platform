@@ -1,0 +1,22 @@
+import { apiFetch } from "@/lib/v09-api";
+import type { PrimaryDocumentType } from "@/lib/document-policy-api";
+export type LearningConfig = { enabled: boolean; actor_mode: "human" | "automation"; model_version?: string };
+export type LearningLabels = { human_primary_type: PrimaryDocumentType; human_secondary_type?: string; human_risk_level?: string };
+export type LearningSession = { session_id: string; id?: string; candidate_id: number; started_at: string; state: string };
+export type LearningEvent = "source_open" | "decision" | "submit";
+export type LearningExample = { id: string; candidate_id?: number; created_at?: string; supersedes_example_id?: string | null; superseded_by_example_id?: string | null; learning_status?: string; correction_reason?: string; human_ground_truth: LearningLabels & { human_action?: string; human_policy?: boolean | null; [key: string]: unknown }; shadow_prediction?: { shadow_primary_type?: string; shadow_model_version?: string }; comparison?: { error_types?: string[]; correction?: boolean }; [key: string]: unknown };
+export type LearningWindow = { sample_count: number; primary_accuracy: number | null; primary_denominator: number; secondary_accuracy: number | null; secondary_denominator: number; policy_precision: number | null; policy_precision_denominator: number; policy_recall: number | null; policy_recall_denominator: number; risk_agreement: number | null; risk_denominator: number; action_agreement: number | null; action_denominator: number; field_agreement: number | null; field_denominator: number; correction_count?: number; error_types: Record<string, number>; model_versions?: string[] };
+export type LearningPerformance = { sample_count: number; status?: string; windows: Record<"all" | "recent_50" | "recent_100", LearningWindow>; by_model_version: Record<string, { sample_count: number; windows: Record<"all" | "recent_50" | "recent_100", LearningWindow> }> };
+export type LearningBatch = { id: string; sample_count?: number; status?: string; created_at?: string; [key: string]: unknown };
+const base = "/admin/review-learning";
+const post = <T,>(path: string, body: unknown) => apiFetch<T>(base + path, { method: "POST", body: JSON.stringify(body) });
+export const learningConfig = () => apiFetch<LearningConfig>(base + "/config");
+export const startLearningSession = (candidate_id: number) => post<LearningSession>("/sessions", { candidate_id });
+export const learningEvent = (id: string, event: LearningEvent, details?: Record<string, unknown>) => post<LearningSession>(`/sessions/${encodeURIComponent(id)}/events`, { event, ...(details ? { details } : {}) });
+export const completeLearningSession = (id: string, labels: LearningLabels) => post<LearningExample>(`/sessions/${encodeURIComponent(id)}/complete`, labels);
+export const learningPerformance = () => apiFetch<LearningPerformance>(base + "/performance");
+export const learningExamples = (offset = 0) => apiFetch<{ items: LearningExample[]; total: number }>(base + `/examples?limit=50&offset=${offset}`);
+export const learningBatches = () => apiFetch<{ items: LearningBatch[] }>(base + "/batches");
+export const createLearningBatch = (min_samples: 100 | 300 | 500) => post<LearningBatch>("/batches", { min_samples });
+export const correctLearningExample = (id: string, human_ground_truth: Partial<LearningLabels>, reason: string) => post<LearningExample>(`/examples/${encodeURIComponent(id)}/correct`, { human_ground_truth, reason });
+

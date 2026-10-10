@@ -82,8 +82,22 @@ class CompetitionNormalizationService:
         trusted_policy: bool,
         source_title: str,
         category: str | None = None,
+        source_url: str | None = None,
     ) -> CompetitionNormalizationResult:
         result = self.normalize(db, raw_name)
+        from app.database.review_guard import is_review_guarded
+        if is_review_guarded(db):
+            if result.competition is not None and not result.needs_manual_review:
+                return result
+            from app.services.competition_field_ingestion_service import CompetitionFieldIngestionService
+            CompetitionFieldIngestionService().stage(
+                db, entity_type="competition", title=f"高校政策发现：{raw_name}",
+                fields={"name": raw_name.strip(), **({"category": category} if category else {})},
+                source={"source_type": "university_policy", "source_title": source_title[:255], "source_url": source_url},
+                producer="policy_normalization", raw={"raw_name": raw_name, "source_title": source_title,
+                    "source_url": source_url, "trusted_policy_claim": trusted_policy},
+            )
+            return self._unmatched(raw_name, "pending_field_review")
         if result.competition and (not trusted_policy or result.method != "fuzzy_name"):
             if result.competition.name != raw_name.strip():
                 self.ensure_alias(

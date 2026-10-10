@@ -1,0 +1,961 @@
+[
+  {
+    "competition_id": 6,
+    "name": "全国大学生职业规划大赛",
+    "reason": "已找到官方来源候选，但正文读取失败；字段保持为空，等待补取原文。",
+    "aliases": [],
+    "sources": [
+      {
+        "key": "msa-6-1",
+        "published_at": null,
+        "accessed_at": "2026-09-27T18:38:17Z",
+        "access_status": "blocked",
+        "verification_status": "unverified",
+        "year": null,
+        "competition_fields": {},
+        "edition_fields": {},
+        "university_notice": null,
+        "source_failure_reason": "timeout",
+        "retrieval_method": "web",
+        "url": "https://www.moe.gov.cn/jyb_xwfb/gzdt_gzdt/s5987/202510/t20251021_1417590.html",
+        "title": "第三届全国大学生职业规划大赛正式启动",
+        "publisher": "教育部",
+        "source_type": "government_document",
+        "evidence_notes": "搜索命中官方通知，但正文打开失败，不提取搜索摘要中的主办方或届次字段。",
+        "source_type_original": "government_official_notice",
+        "source_failure_detail": "web.open 返回 Timeout fetching；HTTP 重试仍失败。"
+      }
+    ]
+  },
+  {
+    "competition_id": 9,
+    "name": "中国大学生医学技术技能大赛",
+    "reason": "已找到官方来源候选，但正文读取失败；字段保持为空，等待补取原文。",
+    "aliases": [],
+    "sources": [
+      {
+        "key": "msa-9-1",
+        "published_at": null,
+        "accessed_at": "2026-09-27T18:38:17Z",
+        "access_status": "blocked",
+        "verification_status": "unverified",
+        "year": null,
+        "competition_fields": {},
+        "edition_fields": {},
+        "university_notice": null,
+        "source_failure_reason": "unknown",
+        "retrieval_method": "web",
+        "url": "https://www.moe.gov.cn/srcsite/A08/moe_740/s3864/202109/t20210916_563749.html",
+        "title": "教育部办公厅关于公布第十届中国大学生医学技术技能大赛总决赛获奖高校名单的通知",
+        "publisher": "教育部办公厅",
+        "source_type": "government_document",
+        "evidence_notes": "仅作为来源线索，正文访问失败，不据搜索摘要提取字段。",
+        "source_type_original": "government_official_notice",
+        "source_failure_detail": "web.open 返回 Redirect loop detected；HTTP 重试仍失败。"
+      }
+    ]
+  },
+  {
+    "competition_id": 12,
+    "name": "全国大学生艺术节",
+    "reason": "目录名称存在实体歧义；保留政府来源线索，等待同一性证据，禁止自动匹配。",
+    "aliases": [],
+    "sources": [
+      {
+        "key": "msa-12-1",
+        "published_at": null,
+        "accessed_at": "2026-09-27T18:38:17Z",
+        "access_status": "blocked",
+        "verification_status": "unverified",
+        "year": null,
+        "competition_fields": {},
+        "edition_fields": {},
+        "university_notice": null,
+        "source_failure_reason": "unknown",
+        "retrieval_method": "web",
+        "url": "https://www.moe.gov.cn/jyb_xwfb/xw_zt/moe_357/s3581/moe_2622/moe_2626/tnull_44018.html",
+        "title": "全国大学生艺术展演活动情况简介（待匹配）",
+        "publisher": "教育部",
+        "source_type": "government_document",
+        "evidence_notes": "模糊实体候选线索。不得把“全国大学生艺术展演活动”直接当作“全国大学生艺术节”，aliases 和事实均留空。",
+        "source_type_original": "government_official_notice",
+        "source_failure_detail": "正文访问发生重定向循环；且目录“艺术节”与官方“艺术展演活动”尚无同一实体证据。"
+      }
+    ]
+  },
+  {
+    "competition_id": 15,
+    "name": "全国科普讲解大赛",
+    "reason": "以官方可读正文提取少量事实；全部保留为未核实候选。",
+    "aliases": [],
+    "sources": [
+      {
+        "key": "msa-15-1",
+        "published_at": "2024-08-28",
+        "accessed_at": "2026-09-27T18:38:17Z",
+        "access_status": "readable",
+        "verification_status": "unverified",
+        "year": 2024,
+        "competition_fields": {
+          "organizer": "科学技术部"
+        },
+        "edition_fields": {
+          "edition_name": "第十一届全国科普讲解大赛",
+          "edition_number": 11
+        },
+        "university_notice": null,
+        "source_failure_reason": null,
+        "retrieval_method": "web",
+        "url": "https://www.most.gov.cn/xxgk/xinxifenlei/fdzdgknr/qtwj/qtwj2024/202408/t20240828_191456.html",
+        "title": "科技部办公厅关于举办第十一届全国科普讲解大赛的通知",
+        "publisher": "科技部办公厅",
+        "source_type": "government_document",
+        "evidence_notes": "正文组织部分明确科技部主办；文件为 2024 年第十一届。各地预赛自行安排，未把决赛选手报名日扩为全国初赛统一截止。",
+        "source_type_original": "government_official_notice"
+      }
+    ]
+  },
+  {
+    "competition_id": 22,
+    "name": "中国大学生工程实践与创新能力大赛",
+    "reason": "以官方可读正文提取少量事实；全部保留为未核实候选。",
+    "aliases": [],
+    "sources": [
+      {
+        "key": "msa-22-1",
+        "published_at": null,
+        "accessed_at": "2026-09-27T18:38:17Z",
+        "access_status": "readable",
+        "verification_status": "unverified",
+        "year": 2027,
+        "competition_fields": {
+          "description": "面向工程实践与工程创新的大学生赛事，通过多学科合作、校企合作及实践环节培养工程技术人才。"
+        },
+        "edition_fields": {
+          "edition_name": "2027年中国大学生工程实践与创新能力大赛"
+        },
+        "university_notice": null,
+        "source_failure_reason": null,
+        "retrieval_method": "web",
+        "url": "https://gcxl.dlut.edu.cn/new/",
+        "title": "2027年中国大学生工程实践与创新能力大赛",
+        "publisher": "中国大学生工程实践与创新能力大赛组委会",
+        "source_type": "official_website",
+        "evidence_notes": "页尾版权主体为大赛组委会，正文主题、赛道和参赛条件可读；该站由大连理工大学域名承载，不是高校校赛通知。动态新闻列表失败，未提取其内容；现有数据库“厦门大学学生处”为主办方缺乏本页支持。",
+        "source_type_original": "competition_official_website"
+      }
+    ]
+  },
+  {
+    "competition_id": 23,
+    "name": "全国大学生物流设计大赛",
+    "reason": "已找到官方来源候选，但正文读取失败；字段保持为空，等待补取原文。",
+    "aliases": [],
+    "sources": [
+      {
+        "key": "msa-23-1",
+        "published_at": null,
+        "accessed_at": "2026-09-27T18:38:17Z",
+        "access_status": "blocked",
+        "verification_status": "unverified",
+        "year": null,
+        "competition_fields": {},
+        "edition_fields": {},
+        "university_notice": null,
+        "source_failure_reason": "unknown",
+        "retrieval_method": "web",
+        "url": "https://wlsjds.clpp.org.cn/about",
+        "title": "关于大赛｜全国大学生物流设计大赛",
+        "publisher": "中国物流与采购联合会",
+        "source_type": "official_website",
+        "evidence_notes": "官方组织域名搜索有赛事简介，但打开失败，不据摘要提取字段。",
+        "source_type_original": "competition_official_website",
+        "source_failure_detail": "web.open 返回 502 Bad Gateway。"
+      }
+    ]
+  },
+  {
+    "competition_id": 25,
+    "name": "两岸新锐设计竞赛·华灿奖",
+    "reason": "以官方可读正文提取少量事实；全部保留为未核实候选。",
+    "aliases": [],
+    "sources": [
+      {
+        "key": "msa-25-1",
+        "published_at": null,
+        "accessed_at": "2026-09-27T18:41:08Z",
+        "access_status": "blocked",
+        "verification_status": "unverified",
+        "year": null,
+        "competition_fields": {},
+        "edition_fields": {},
+        "university_notice": null,
+        "source_failure_reason": "timeout",
+        "retrieval_method": "web",
+        "url": "https://www.huacanjiang.com/",
+        "title": "两岸新锐设计竞赛·华灿奖官网（访问失败）",
+        "publisher": "两岸新锐设计竞赛·华灿奖",
+        "source_type": "official_website",
+        "evidence_notes": "高校通知和赛事资讯均指向该官网，官网无法读取。未据高校的组织单位信息生成全局主办方。",
+        "source_type_original": "competition_official_website",
+        "source_failure_detail": "web.open 返回 Timeout fetching。"
+      },
+      {
+        "key": "msa-25-2",
+        "published_at": "2025-12-17T10:46:00+08:00",
+        "accessed_at": "2026-09-27T18:47:31Z",
+        "access_status": "readable",
+        "verification_status": "unverified",
+        "year": 2025,
+        "competition_fields": {},
+        "edition_fields": {
+          "edition_name": "第十届“两岸新锐设计竞赛·华灿奖”",
+          "edition_number": 10
+        },
+        "university_notice": null,
+        "source_failure_reason": null,
+        "retrieval_method": "web",
+        "url": "https://tjminge.gov.cn/system/2025/12/17/030055442.shtml",
+        "title": "华灿奖再传捷报！——天津高校民革党员搭起两岸青年创意桥梁",
+        "publisher": "中国国民党革命委员会天津市委员会",
+        "source_type": "government_document",
+        "evidence_notes": "民革天津市委会官方.gov.cn网站正文明确第十届“两岸新锐设计竞赛·华灿奖”于2025年颁奖，仅据此识别2025年第十届，不以颁奖日期代替比赛日期。发布者为民主党派地方组织，source_type采用现有官方机构来源类别，其本身不是赛事官网，也不据此认定主办单位。",
+        "source_type_original": "government_official_notice"
+      }
+    ]
+  },
+  {
+    "competition_id": 28,
+    "name": "全国大学生机器人大赛",
+    "reason": "已找到官方来源候选，但正文读取失败；字段保持为空，等待补取原文。",
+    "aliases": [],
+    "sources": [
+      {
+        "key": "msa-28-1",
+        "published_at": null,
+        "accessed_at": "2026-09-27T18:38:17Z",
+        "access_status": "blocked",
+        "verification_status": "unverified",
+        "year": null,
+        "competition_fields": {},
+        "edition_fields": {},
+        "university_notice": null,
+        "source_failure_reason": "timeout",
+        "retrieval_method": "web",
+        "url": "https://www.curc.cn/",
+        "title": "全国大学生机器人大赛官网",
+        "publisher": "全国大学生机器人大赛组织委员会",
+        "source_type": "official_website",
+        "evidence_notes": "官网线索打开失败，ROBOCON、RoboMaster 等赛项不能未经核对替代整个赛事。",
+        "source_type_original": "competition_official_website",
+        "source_failure_detail": "web.open 返回 Timeout fetching。"
+      }
+    ]
+  },
+  {
+    "competition_id": 30,
+    "name": "全国大学生先进成图技术与产品信息建模创新大赛",
+    "reason": "已找到官方来源候选，但正文读取失败；字段保持为空，等待补取原文。",
+    "aliases": [],
+    "sources": [
+      {
+        "key": "msa-30-1",
+        "published_at": null,
+        "accessed_at": "2026-09-27T18:38:17Z",
+        "access_status": "blocked",
+        "verification_status": "unverified",
+        "year": null,
+        "competition_fields": {},
+        "edition_fields": {},
+        "university_notice": null,
+        "source_failure_reason": "timeout",
+        "retrieval_method": "web",
+        "url": "https://www.chengtudasai.com/",
+        "title": "全国大学生先进成图技术与产品信息建模创新大赛官网",
+        "publisher": "全国大学生先进成图技术与产品信息建模创新大赛组委会",
+        "source_type": "official_website",
+        "evidence_notes": "官方站点有搜索结果，但正文读取失败，字段留空。",
+        "source_type_original": "competition_official_website",
+        "source_failure_detail": "web.open HTTPS 超时，HTTP 重试失败。"
+      }
+    ]
+  },
+  {
+    "competition_id": 31,
+    "name": "全国三维数字化创新设计大赛",
+    "reason": "以官方可读正文提取少量事实；全部保留为未核实候选。",
+    "aliases": [],
+    "sources": [
+      {
+        "key": "msa-31-1",
+        "published_at": "2026-03-18T14:21:47+08:00",
+        "accessed_at": "2026-09-27T18:38:17Z",
+        "access_status": "readable",
+        "verification_status": "unverified",
+        "year": 2026,
+        "competition_fields": {
+          "short_name": "3D大赛",
+          "english_name": "Digital Design Dimensions Show",
+          "official_website": "https://3dds.3ddl.net/"
+        },
+        "edition_fields": {
+          "edition_name": "2026第19届全国三维数字化创新设计大赛",
+          "edition_number": 19
+        },
+        "university_notice": null,
+        "source_failure_reason": null,
+        "retrieval_method": "web",
+        "url": "https://3dds.3ddl.net/index.php?ctl=Informationlist&id=696&met=details",
+        "title": "关于举办2026第19届全国三维数字化创新设计大赛的通知",
+        "publisher": "全国三维数字化创新设计大赛组委会",
+        "source_type": "organizer_notice",
+        "evidence_notes": "已读赛事平台通知标题、首段英文及简称、署名和网页发布时间。年度赛与产业专项分别安排，未把本页年度赛日期推广到专项。"
+      }
+    ]
+  },
+  {
+    "competition_id": 33,
+    "name": "中国大学生服务外包创新创业大赛",
+    "reason": "以官方可读正文提取少量事实；全部保留为未核实候选。",
+    "aliases": [],
+    "sources": [
+      {
+        "key": "msa-33-1",
+        "published_at": null,
+        "accessed_at": "2026-09-27T18:38:17Z",
+        "access_status": "readable",
+        "verification_status": "unverified",
+        "year": null,
+        "competition_fields": {
+          "frequency": "每年一届",
+          "official_website": "https://www.fwwb.org.cn/",
+          "description": "面向国内高校的服务外包创新创业赛事，结合企业实际需求与学生创意项目，通过组队、选题和答辩等环节开展竞赛。"
+        },
+        "edition_fields": {},
+        "university_notice": null,
+        "source_failure_reason": null,
+        "retrieval_method": "web",
+        "url": "https://www.fwwb.org.cn/about/index",
+        "title": "大学生服务外包创新创业大赛——关于我们",
+        "publisher": "中国大学生服务外包创新创业大赛组委会",
+        "source_type": "official_website",
+        "evidence_notes": "关于大赛正文介绍全国性竞赛、年度频率及产学结合目标；联系方式明确组委会秘书处。通用介绍不绑定当前届次。",
+        "source_type_original": "competition_official_website"
+      }
+    ]
+  },
+  {
+    "competition_id": 35,
+    "name": "中国高校计算机大赛",
+    "reason": "以官方可读正文提取少量事实；全部保留为未核实候选。",
+    "aliases": [],
+    "sources": [
+      {
+        "key": "msa-35-1",
+        "published_at": null,
+        "accessed_at": "2026-09-27T18:38:17Z",
+        "access_status": "blocked",
+        "verification_status": "unverified",
+        "year": null,
+        "competition_fields": {},
+        "edition_fields": {},
+        "university_notice": null,
+        "source_failure_reason": "unknown",
+        "retrieval_method": "web",
+        "url": "http://www.c4best.cn/",
+        "title": "中国高校计算机大赛（官网线索）",
+        "publisher": "中国高校计算机大赛组委会",
+        "source_type": "official_website",
+        "evidence_notes": "旧官网无法读取；移动应用创新赛的站点是子赛事，未把其网址直接提为整个 C4 总站。",
+        "source_type_original": "competition_official_website",
+        "source_failure_detail": "web.open 重定向到 HTTPS 后返回 502 Bad Gateway。"
+      },
+      {
+        "key": "msa-35-2",
+        "published_at": null,
+        "accessed_at": "2026-09-27T18:47:31Z",
+        "access_status": "readable",
+        "verification_status": "unverified",
+        "year": null,
+        "competition_fields": {
+          "description": "面向高校学生的计算机类系列竞赛。"
+        },
+        "edition_fields": {},
+        "university_notice": null,
+        "source_failure_reason": null,
+        "retrieval_method": "web",
+        "url": "https://www.ceracu.org.cn/h-nd-182.html",
+        "title": "关于举办2019年全国高校计算机能力挑战赛的通知",
+        "publisher": "全国高等学校计算机教育研究会",
+        "source_type": "organizer_notice",
+        "evidence_notes": "主办学会页面正文明确介绍“中国高校计算机大赛”为面向高校学生的计算机类系列竞赛。页面标题是2019年计算机能力挑战赛通知，因此仅取正文对上位赛事的身份描述，不把挑战赛名称、日期或规则当作整个中国高校计算机大赛的信息；历史主办方未提升为当前主办方。"
+      }
+    ]
+  },
+  {
+    "competition_id": 37,
+    "name": "米兰设计周—中国高校设计学科师生优秀作品展",
+    "reason": "以官方可读正文提取少量事实；全部保留为未核实候选。",
+    "aliases": [],
+    "sources": [
+      {
+        "key": "msa-37-1",
+        "published_at": null,
+        "accessed_at": "2026-09-27T18:38:17Z",
+        "access_status": "readable",
+        "verification_status": "unverified",
+        "year": null,
+        "competition_fields": {
+          "frequency": "每年一届",
+          "description": "以作品展览和学术交流为主要形式，展示中国高校艺术设计成果并促进国际交流。"
+        },
+        "edition_fields": {},
+        "university_notice": null,
+        "source_failure_reason": null,
+        "retrieval_method": "web",
+        "url": "https://www.dandad.cn/About/6.html",
+        "title": "大赛章程——米兰设计周·中国高校设计学科师生优秀作品展",
+        "publisher": "米兰设计周—中国高校设计学科师生优秀作品展组委会",
+        "source_type": "official_website",
+        "evidence_notes": "章程第一条和第十一条可读。第四条为共同发起关系，未自动当作当前全部主办单位；当前官网 milan-aap.org.cn 返回空动态页，未仅据该页搜索摘要更新网址。",
+        "source_type_original": "competition_official_website"
+      }
+    ]
+  },
+  {
+    "competition_id": 38,
+    "name": "全国大学生地质技能竞赛",
+    "reason": "以官方可读正文提取少量事实；全部保留为未核实候选。",
+    "aliases": [],
+    "sources": [
+      {
+        "key": "msa-38-1",
+        "published_at": null,
+        "accessed_at": "2026-09-27T18:41:08Z",
+        "access_status": "readable",
+        "verification_status": "unverified",
+        "year": 2026,
+        "competition_fields": {},
+        "edition_fields": {
+          "edition_name": "第八届全国大学生地质技能竞赛",
+          "edition_number": 8
+        },
+        "university_notice": null,
+        "source_failure_reason": null,
+        "retrieval_method": "web",
+        "url": "https://geosociety.org.cn/upload/pdf/notice/20260424171612_12.pdf",
+        "title": "中国地质学会关于印发2026年会议计划的通知",
+        "publisher": "中国地质学会",
+        "source_type": "organizer_notice",
+        "evidence_notes": "官方 PDF 第 15 页（索引14）第67项明确列出第八届全国大学生地质技能竞赛（决赛），拟于 2026 年10月在成都举行。仅提取身份和届次；计划并非最终赛程，不生成具体日期或把承办机构当主办方。截图工具失败，但 PDF 文字提取可读。 原文发布日期未单独确认，不从附件文件名推断。"
+      }
+    ]
+  },
+  {
+    "competition_id": 40,
+    "name": "全国大学生集成电路创新创业大赛",
+    "reason": "以官方可读正文提取少量事实；全部保留为未核实候选。",
+    "aliases": [],
+    "sources": [
+      {
+        "key": "msa-40-1",
+        "published_at": null,
+        "accessed_at": "2026-09-27T18:38:17Z",
+        "access_status": "readable",
+        "verification_status": "unverified",
+        "year": null,
+        "competition_fields": {
+          "organizer": "工业和信息化部人才交流中心",
+          "official_website": "https://univ.ciciec.com/"
+        },
+        "edition_fields": {},
+        "university_notice": null,
+        "source_failure_reason": null,
+        "retrieval_method": "web",
+        "url": "https://univ.ciciec.com/",
+        "title": "全国大学生集成电路创新创业大赛",
+        "publisher": "全国大学生集成电路创新创业大赛组委会",
+        "source_type": "official_website",
+        "evidence_notes": "首页正文的主办单位明确为工信部人才交流中心，页尾为赛事版权。承办、协办、运营单位分列，未混入主办方。",
+        "source_type_original": "competition_official_website"
+      }
+    ]
+  },
+  {
+    "competition_id": 41,
+    "name": "全国大学生金相技能大赛",
+    "reason": "以官方可读正文提取少量事实；全部保留为未核实候选。",
+    "aliases": [],
+    "sources": [
+      {
+        "key": "msa-41-1",
+        "published_at": null,
+        "accessed_at": "2026-09-27T18:38:17Z",
+        "access_status": "readable",
+        "verification_status": "unverified",
+        "year": null,
+        "competition_fields": {
+          "official_website": "https://www.jxds.tech/",
+          "founded_year": 2012,
+          "frequency": "每年一届"
+        },
+        "edition_fields": {},
+        "university_notice": null,
+        "source_failure_reason": null,
+        "retrieval_method": "web",
+        "url": "https://www.jxds.tech/",
+        "title": "全国大学生金相技能大赛",
+        "publisher": "全国大学生金相技能大赛",
+        "source_type": "official_website",
+        "evidence_notes": "首页赛事历史明确首届于 2012 年举办且此后每年一届。教指委在页头为指导单位，正文主办关系为 2015 年历史，未据此生成当前主办方。",
+        "source_type_original": "competition_official_website"
+      }
+    ]
+  },
+  {
+    "competition_id": 42,
+    "name": "全国大学生信息安全竞赛",
+    "reason": "以官方可读正文提取少量事实；全部保留为未核实候选。",
+    "aliases": [],
+    "sources": [
+      {
+        "key": "msa-42-1",
+        "published_at": null,
+        "accessed_at": "2026-09-27T18:38:17Z",
+        "access_status": "blocked",
+        "verification_status": "unverified",
+        "year": null,
+        "competition_fields": {},
+        "edition_fields": {},
+        "university_notice": null,
+        "source_failure_reason": "timeout",
+        "retrieval_method": "web",
+        "url": "https://www.ciscn.cn/competition/securityCompetition?compet_id=41",
+        "title": "第十八届全国大学生信息安全竞赛（创新实践能力赛）通知",
+        "publisher": "全国大学生信息安全竞赛组委会",
+        "source_type": "organizer_notice",
+        "evidence_notes": "搜索命中赛事平台页面，正文读取失败；未把分赛项范围事实提升为全赛事事实。",
+        "source_failure_detail": "web.open 返回 Timeout fetching。"
+      },
+      {
+        "key": "msa-42-2",
+        "published_at": "2025-03-13",
+        "accessed_at": "2026-09-27T18:47:31Z",
+        "access_status": "readable",
+        "verification_status": "unverified",
+        "year": 2025,
+        "competition_fields": {
+          "official_website": "http://www.ciscn.cn"
+        },
+        "edition_fields": {
+          "edition_name": "第十八届全国大学生信息安全竞赛",
+          "edition_number": 18
+        },
+        "university_notice": null,
+        "source_failure_reason": null,
+        "retrieval_method": "web",
+        "url": "https://www.itsec.gov.cn/zxxw/202503/t20250313_216511.html",
+        "title": "再次集结！第二届“长城杯”铁人三项赛半决赛将在五大赛区开赛",
+        "publisher": "中国信息安全测评中心",
+        "source_type": "government_document",
+        "evidence_notes": "中国信息安全测评中心正文明确第十八届全国大学生信息安全竞赛（创新实践能力赛），并明确www.ciscn.cn为赛事官网；正文发布时间2025年3月13日。联合主办单位和3月16日半决赛仅适用创新实践能力赛暨长城杯联合活动，未扩展为整个信息安全竞赛的主办方或统一赛期。",
+        "source_type_original": "government_official_notice"
+      }
+    ]
+  },
+  {
+    "competition_id": 44,
+    "name": "全国周培源大学生力学竞赛",
+    "reason": "以官方可读正文提取少量事实；全部保留为未核实候选。",
+    "aliases": [],
+    "sources": [
+      {
+        "key": "msa-44-1",
+        "published_at": "2024-12-27",
+        "accessed_at": "2026-09-27T18:41:08Z",
+        "access_status": "readable",
+        "verification_status": "unverified",
+        "year": 2025,
+        "competition_fields": {
+          "organizer": "中国力学学会、周培源基金会",
+          "description": "考查理论力学、材料力学及实验能力，设个人赛和团体赛的大学生力学竞赛。"
+        },
+        "edition_fields": {
+          "edition_name": "第十五届全国周培源大学生力学竞赛",
+          "edition_number": 15
+        },
+        "university_notice": null,
+        "source_failure_reason": null,
+        "retrieval_method": "web",
+        "url": "https://www.cstam.org.cn/upload/zglixuexuehui/profile/2024/12/30/23243c42-aa51-492d-b2d4-feb893f2b701.pdf",
+        "title": "关于举办第十五届全国周培源大学生力学竞赛的通知",
+        "publisher": "中国力学学会",
+        "source_type": "organizer_notice",
+        "evidence_notes": "PDF 第1页明确 2025 年第十五届及主办方，落款 2024-12-27。公布的3月31日报名节点仅为个人赛，未扩为各赛道统一截止。"
+      }
+    ]
+  },
+  {
+    "competition_id": 45,
+    "name": "中国大学生机械工程创新创意大赛",
+    "reason": "以官方可读正文提取少量事实；全部保留为未核实候选。",
+    "aliases": [],
+    "sources": [
+      {
+        "key": "msa-45-1",
+        "published_at": null,
+        "accessed_at": "2026-09-27T18:41:08Z",
+        "access_status": "readable",
+        "verification_status": "unverified",
+        "year": 2025,
+        "competition_fields": {},
+        "edition_fields": {
+          "edition_name": "2025年中国大学生机械工程创新创意大赛"
+        },
+        "university_notice": null,
+        "source_failure_reason": null,
+        "retrieval_method": "web",
+        "url": "https://www.cstp-cmes.org.cn/upload/qggcsxxhit/68107c5ae9dfc.pdf",
+        "title": "2025年中国大学生机械工程创新创意大赛实施方案：塑性工程实践与创新赛",
+        "publisher": "中国机械工程学会塑性工程分会",
+        "source_type": "organizer_notice",
+        "evidence_notes": "分会官方 PDF 可读正文为“创新赛道”赛项十，标题支持2025整届身份；只提取整届名称，不把该专项的2至4人、4月30日报名截止或承办单位扩成整赛事实。前3页为图像，截图工具失败。"
+      }
+    ]
+  },
+  {
+    "competition_id": 46,
+    "name": "中国机器人大赛暨RoboCup机器人世界杯中国赛",
+    "reason": "以官方可读正文提取少量事实；全部保留为未核实候选。",
+    "aliases": [],
+    "sources": [
+      {
+        "key": "msa-46-1",
+        "published_at": null,
+        "accessed_at": "2026-09-27T18:41:08Z",
+        "access_status": "readable",
+        "verification_status": "unverified",
+        "year": null,
+        "competition_fields": {
+          "official_website": "https://rcccaa.drct-caa.org.cn/"
+        },
+        "edition_fields": {},
+        "university_notice": null,
+        "source_failure_reason": null,
+        "retrieval_method": "web",
+        "url": "https://rcccaa.drct-caa.org.cn/",
+        "title": "中国自动化学会机器人竞赛与培训部",
+        "publisher": "中国自动化学会机器人竞赛与培训部",
+        "source_type": "official_website",
+        "evidence_notes": "正文公告列表包含合并赛事全名；页尾明确该网站为中国机器人大赛及RoboCup机器人世界杯中国赛官方网站，旧网站因备案不再使用。未把青少年赛或单一赛区规则用于全赛事。",
+        "source_type_original": "competition_official_website"
+      }
+    ]
+  },
+  {
+    "competition_id": 48,
+    "name": "中美青年创客大赛",
+    "reason": "以官方可读正文提取少量事实；全部保留为未核实候选。",
+    "aliases": [],
+    "sources": [
+      {
+        "key": "msa-48-1",
+        "published_at": null,
+        "accessed_at": "2026-09-27T18:41:08Z",
+        "access_status": "readable",
+        "verification_status": "unverified",
+        "year": 2026,
+        "competition_fields": {
+          "organizer": "中华人民共和国教育部",
+          "founded_year": 2014,
+          "official_website": "https://chinaus-maker.cscse.edu.cn/"
+        },
+        "edition_fields": {
+          "edition_name": "2026年中美青年创客大赛"
+        },
+        "university_notice": null,
+        "source_failure_reason": null,
+        "retrieval_method": "web",
+        "url": "https://chinaus-maker.cscse.edu.cn/",
+        "title": "中美青年创客大赛",
+        "publisher": "中国（教育部）留学服务中心",
+        "source_type": "official_website",
+        "evidence_notes": "首页组织机构和赛事简介正文明确教育部主办、自2014年举办，并明确2026赛事。各承办单位另列，未混为主办；赛事宣传中的等级称谓不生成高校认定。",
+        "source_type_original": "competition_official_website"
+      }
+    ]
+  },
+  {
+    "competition_id": 49,
+    "name": "睿抗机器人开发者大赛（RAICOM）",
+    "reason": "以官方可读正文提取少量事实；全部保留为未核实候选。",
+    "aliases": [],
+    "sources": [
+      {
+        "key": "msa-49-1",
+        "published_at": null,
+        "accessed_at": "2026-09-27T18:41:08Z",
+        "access_status": "unavailable",
+        "verification_status": "unverified",
+        "year": null,
+        "competition_fields": {},
+        "edition_fields": {},
+        "university_notice": null,
+        "source_failure_reason": "unknown",
+        "retrieval_method": "web",
+        "url": "https://www.raicom.com.cn/",
+        "title": "睿抗（Raicom）官网",
+        "publisher": "RAICOM国际公开赛组委会",
+        "source_type": "official_website",
+        "evidence_notes": "不把网页页尾可读等同于赛事正文可读。高校参赛通知指向该站，候选身份保留但所有字段为空。",
+        "source_type_original": "competition_official_website",
+        "source_failure_detail": "web.open 仅返回页尾版权3行，赛事主体正文不可用；about.html 打开失败。"
+      },
+      {
+        "key": "msa-49-2",
+        "published_at": null,
+        "accessed_at": "2026-09-27T18:47:31Z",
+        "access_status": "readable",
+        "verification_status": "unverified",
+        "year": 2025,
+        "competition_fields": {
+          "official_website": "https://www.raicom.com.cn/"
+        },
+        "edition_fields": {
+          "edition_name": "2025睿抗机器人开发者大赛"
+        },
+        "university_notice": null,
+        "source_failure_reason": null,
+        "retrieval_method": "web",
+        "url": "https://robocom.oss-cn-hangzhou.aliyuncs.com/7d47c22ffeb84834b5101596115b34a6.pdf",
+        "title": "2025睿抗机器人开发者大赛（RAICOM2025）CAIA数字文化创意艺术疗愈赛项规则文件",
+        "publisher": "睿抗机器人开发者大赛组委会",
+        "source_type": "organizer_notice",
+        "evidence_notes": "已读取对象存储中的赛事原始规则PDF正文；封面给出2025睿抗机器人开发者大赛名称，正文明确列出www.raicom.com.cn为赛事官网。只提取总赛事身份与官网，不将CAIA艺术疗愈赛项的队伍规模、时间和作品要求泛化。对象存储文件的发布主体仍待复核，候选并非已验证。"
+      }
+    ]
+  },
+  {
+    "competition_id": 50,
+    "name": "“大唐杯”全国大学生新一代信息通信技术大赛",
+    "reason": "用赛事原始通知PDF支持2025年第十二届；官网更名仅得搜索线索，不据此更改规范名。",
+    "aliases": [],
+    "sources": [
+      {
+        "key": "msa-50-1",
+        "published_at": null,
+        "accessed_at": "2026-09-27T18:41:08Z",
+        "access_status": "blocked",
+        "verification_status": "unverified",
+        "year": null,
+        "competition_fields": {},
+        "edition_fields": {},
+        "university_notice": null,
+        "source_failure_reason": "unknown",
+        "retrieval_method": "web",
+        "url": "https://dtcup.dtxiaotangren.com/",
+        "title": "信科赛官网（原大唐杯赛事官网线索）",
+        "publisher": "大学生新一代信息通信科技大赛",
+        "source_type": "official_website",
+        "evidence_notes": "搜索摘要提示赛事更名和官网维护，但没有读取更名公告正文。规范名称保持catalog旧名，aliases留空，不生成更名事实。",
+        "source_type_original": "competition_official_website",
+        "source_failure_detail": "web.open 原官网失败；搜索提示的维护期间PC地址 https://www.ksup.cn 亦不可访问。"
+      },
+      {
+        "key": "msa-50-2",
+        "published_at": "2025-05-12",
+        "accessed_at": "2026-09-27T18:47:31Z",
+        "access_status": "readable",
+        "verification_status": "unverified",
+        "year": 2025,
+        "competition_fields": {},
+        "edition_fields": {
+          "edition_name": "第十二届“大唐杯”全国大学生新一代信息通信技术大赛",
+          "edition_number": 12
+        },
+        "university_notice": null,
+        "source_failure_reason": null,
+        "retrieval_method": "web",
+        "url": "https://picture-file-public-read-dt.oss-cn-hangzhou.aliyuncs.com/dt_cup/official_content/%E7%AC%AC%E5%8D%81%E4%BA%8C%E5%B1%8A%E2%80%9C%E5%A4%A7%E5%94%90%E6%9D%AF%E2%80%9D%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%96%B0%E4%B8%80%E4%BB%A3%E4%BF%A1%E6%81%AF%E9%80%9A%E4%BF%A1%E6%8A%80%E6%9C%AF%E5%A4%A7%E8%B5%9B%E8%B5%9B%E9%81%93%E4%B8%89%EF%BC%9AICT%E5%9F%BA%E7%A1%80%E9%80%9A%E8%AF%86%E8%B5%9B%EF%BC%88%E7%9C%81%E8%B5%9B%EF%BC%89%E5%AE%89%E6%8E%92.pdf",
+        "title": "第十二届“大唐杯”全国大学生新一代信息通信技术大赛赛道三：ICT基础通识赛（省赛）安排通知",
+        "publisher": "“大唐杯”全国大学生新一代信息通信技术大赛组委会",
+        "source_type": "organizer_notice",
+        "evidence_notes": "已读取赛事official_content目录下通知PDF，正文标题明确第十二届，落款为大赛组委会且日期为2025年5月12日。仅保留总赛事届次；赛道三省赛时间不写成全国赛统一时间。新网站和更名线索未成功读到正文，未据此改名。"
+      }
+    ]
+  },
+  {
+    "competition_id": 51,
+    "name": "华为ICT大赛",
+    "reason": "以官方可读正文提取少量事实；全部保留为未核实候选。",
+    "aliases": [],
+    "sources": [
+      {
+        "key": "msa-51-1",
+        "published_at": null,
+        "accessed_at": "2026-09-27T18:41:08Z",
+        "access_status": "readable",
+        "verification_status": "unverified",
+        "year": 2026,
+        "competition_fields": {
+          "organizer": "华为",
+          "founded_year": 2015,
+          "frequency": "每年一届",
+          "description": "面向全球高校师生的ICT竞技与交流赛事，促进ICT知识、动手实践和技术创新能力。"
+        },
+        "edition_fields": {
+          "edition_name": "华为ICT大赛2025—2026"
+        },
+        "university_notice": null,
+        "source_failure_reason": null,
+        "retrieval_method": "web",
+        "url": "https://www.huawei.com/minisite/ict-competition-2025-2026-global/cn/",
+        "title": "华为ICT大赛2025—2026全球总决赛",
+        "publisher": "华为",
+        "source_type": "official_website",
+        "evidence_notes": "官方专题简介明确华为打造年度赛事、自2015年举办。年字段以本届总决赛结束年2026表示，原学年名称完整保存；总决赛专题地址不是永久竞赛门户，不写全局官网。",
+        "source_type_original": "competition_official_website"
+      }
+    ]
+  },
+  {
+    "competition_id": 52,
+    "name": "全国大学生嵌入式芯片与系统设计竞赛",
+    "reason": "以官方可读正文提取少量事实；全部保留为未核实候选。",
+    "aliases": [],
+    "sources": [
+      {
+        "key": "msa-52-1",
+        "published_at": null,
+        "accessed_at": "2026-09-27T18:41:08Z",
+        "access_status": "readable",
+        "verification_status": "unverified",
+        "year": null,
+        "competition_fields": {
+          "official_website": "https://www.socchina.net/",
+          "description": "围绕嵌入式芯片、系统设计与可编程逻辑器件应用，培养学生自主设计、工程实践、复杂问题求解和团队合作能力。"
+        },
+        "edition_fields": {},
+        "university_notice": null,
+        "source_failure_reason": null,
+        "retrieval_method": "web",
+        "url": "https://www.socchina.net/news?id=721e5e25543547759ccec506933c8978",
+        "title": "全国大学生嵌入式芯片与系统设计竞赛——大赛背景",
+        "publisher": "全国大学生嵌入式芯片与系统设计竞赛官网",
+        "source_type": "official_website",
+        "evidence_notes": "赛事官网的大赛背景正文可读。首页同时混有2025芯片设计流程及2026应用赛道公告，故不从首页混合时间表提取全赛日期，也不把运营方版权主体作为主办方。",
+        "source_type_original": "competition_official_website"
+      }
+    ]
+  },
+  {
+    "competition_id": 53,
+    "name": "全国大学生生命科学竞赛（CULSC）",
+    "reason": "以官方可读正文提取少量事实；全部保留为未核实候选。",
+    "aliases": [],
+    "sources": [
+      {
+        "key": "msa-53-1",
+        "published_at": null,
+        "accessed_at": "2026-09-27T18:41:08Z",
+        "access_status": "blocked",
+        "verification_status": "unverified",
+        "year": null,
+        "competition_fields": {},
+        "edition_fields": {},
+        "university_notice": null,
+        "source_failure_reason": "unknown",
+        "retrieval_method": "web",
+        "url": "https://www.culsc.cn/",
+        "title": "全国大学生生命科学竞赛官网",
+        "publisher": "全国大学生生命科学竞赛委员会",
+        "source_type": "official_website",
+        "evidence_notes": "官网搜索结果有委员会身份，但正文无法读取，字段留空；不以科学探究类专项通知替代全部赛事规则。",
+        "source_type_original": "competition_official_website",
+        "source_failure_detail": "web.open 返回 502 Bad Gateway。"
+      },
+      {
+        "key": "msa-53-2",
+        "published_at": null,
+        "accessed_at": "2026-09-27T18:47:31Z",
+        "access_status": "readable",
+        "verification_status": "unverified",
+        "year": 2021,
+        "competition_fields": {
+          "official_website": "https://culsc.cn/"
+        },
+        "edition_fields": {
+          "edition_name": "全国大学生生命科学竞赛（2021）"
+        },
+        "university_notice": null,
+        "source_failure_reason": null,
+        "retrieval_method": "web",
+        "url": "https://culsc.cn/website/media/upload/202012/2020O1202S095807.pdf",
+        "title": "关于举办甘肃省第二届大学生生命科学竞赛（全国大学生生命科学竞赛2021）的通知",
+        "publisher": "全国大学生生命科学竞赛委员会、甘肃省第二届大学生生命科学竞赛组委会",
+        "source_type": "organizer_notice",
+        "evidence_notes": "已读取全国赛事网站托管的通知PDF，标题明确全国竞赛2021，正文列明www.culsc.cn。只提取全国赛事官网和年份；“第二届”为甘肃省赛，不作为全国届次。文末署名日期2019年10月21日与文中2020—2021赛程不一致，published_at保留null，不提取省赛规则、规模或日期。"
+      }
+    ]
+  },
+  {
+    "competition_id": 54,
+    "name": "全国大学生物理实验竞赛",
+    "reason": "已找到官方来源候选，但正文读取失败；字段保持为空，等待补取原文。",
+    "aliases": [],
+    "sources": [
+      {
+        "key": "msa-54-1",
+        "published_at": null,
+        "accessed_at": "2026-09-27T18:41:08Z",
+        "access_status": "unavailable",
+        "verification_status": "unverified",
+        "year": null,
+        "competition_fields": {},
+        "edition_fields": {},
+        "university_notice": null,
+        "source_failure_reason": "requires_js",
+        "retrieval_method": "web",
+        "url": "https://wlsycx.moocollege.com/",
+        "title": "全国大学生物理实验竞赛（创新）官网",
+        "publisher": "全国大学生物理实验竞赛组织委员会",
+        "source_type": "official_website",
+        "evidence_notes": "目录名称为全赛事，而该站为创新赛；不将创新赛当前届次、报名日期或频率推广至教学赛与总赛事。",
+        "source_type_original": "competition_official_website",
+        "source_failure_detail": "web.open 返回动态站点空正文（0行）。"
+      }
+    ]
+  },
+  {
+    "competition_id": 55,
+    "name": "全国高校BIM毕业设计创新大赛",
+    "reason": "以官方可读正文提取少量事实；全部保留为未核实候选。",
+    "aliases": [],
+    "sources": [
+      {
+        "key": "msa-55-1",
+        "published_at": null,
+        "accessed_at": "2026-09-27T18:41:08Z",
+        "access_status": "readable",
+        "verification_status": "unverified",
+        "year": 2023,
+        "competition_fields": {
+          "description": "围绕建筑信息模型在设计、施工、造价及项目管理等环节的应用，开展高校毕业设计与创新实践竞赛。"
+        },
+        "edition_fields": {
+          "edition_name": "第九届全国高校BIM毕业设计创新大赛",
+          "edition_number": 9
+        },
+        "university_notice": null,
+        "source_failure_reason": null,
+        "retrieval_method": "web",
+        "url": "https://gxbsxs-9.glodonedu.com/workcompety",
+        "title": "第九届全国高校BIM毕业设计创新大赛——竞赛内容",
+        "publisher": "广联达教育",
+        "source_type": "official_website",
+        "evidence_notes": "第九届官方归档站可读；第九届时间段为2022年10月至2023年6月，year用决赛年2023。页面下方还含第五届旧内容，只取明确第九届区域；不凭证书盖章单位直接认定主办方，不据高校摘要处理“国际高校”更名。",
+        "source_type_original": "competition_official_website"
+      }
+    ]
+  }
+]

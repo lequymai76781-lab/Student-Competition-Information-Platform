@@ -42,8 +42,8 @@ const statusMeta: Record<string, { icon: LucideIcon; tone: string }> = {
   }
 };
 
-export function StatusBadge({ status }: { status?: string | null }) {
-  const label = statusLabel(status);
+export function StatusBadge({ status, closingSoon }: { status?: string | null; closingSoon?: boolean }) {
+  const label = status === "registration_open" && closingSoon ? "即将截止" : statusLabel(status);
   const { icon: Icon, tone } = statusMeta[label] ?? defaultStatusMeta;
 
   return (

@@ -1,4 +1,4 @@
-import { ArrowRight, CalendarClock, Database, FileSearch, Library, Radar, Search, ShieldCheck, Tags, Trophy, type LucideIcon } from "lucide-react";
+import { ArrowRight, CalendarClock, Database, Library, Radar, Search, ShieldCheck, Tags, Trophy, type LucideIcon } from "lucide-react";
 import Link from "next/link";
 
 import { CompetitionCard } from "@/components/CompetitionCard";
@@ -8,7 +8,8 @@ import { SectionTitle } from "@/components/SectionTitle";
 import { StatCard } from "@/components/StatCard";
 import { TagPill } from "@/components/TagPill";
 import { PersonalHome } from "@/components/v09/PersonalHome";
-import { getCompetitions, getStats, getTags, getUniversities, getUniversity } from "@/lib/api";
+import { SchoolSelector } from "@/components/SchoolSelector";
+import { getCompetitions, getStats, getTags, getAllUniversities, getUniversity } from "@/lib/api";
 import { formatDate, statusLabel } from "@/lib/format";
 import type { CompetitionListItem } from "@/lib/types";
 
@@ -18,21 +19,27 @@ type HomePageProps = {
 
 export default async function HomePage({ searchParams }: HomePageProps) {
   const profile = await Promise.resolve(searchParams ?? {});
+  const competitionHref = (filters: Record<string, string> = {}) => {
+    const query = new URLSearchParams(filters);
+    if (profile.university_id) query.set("university_id", profile.university_id);
+    if (profile.college_id) query.set("college_id", profile.college_id);
+    return `/competitions?${query.toString()}`;
+  };
   const [stats, registrationOpen, registrationUpcoming, submissionOpen, closingWindow, tags, universities, selectedUniversity, mySchool] = await Promise.all([
     getStats(),
-    getCompetitions({ edition_status: "registration_open", sort: "deadline", limit: 6 }),
-    getCompetitions({ edition_status: "registration_upcoming", sort: "deadline", limit: 6 }),
-    getCompetitions({ edition_status: "submission_open", sort: "deadline", limit: 6 }),
-    getCompetitions({ availability: "next_30_days", sort: "deadline", limit: 12 }),
+    getCompetitions({ edition_status: "registration_open", university_id: profile.university_id, college_id: profile.college_id, sort: "deadline", limit: 6 }),
+    getCompetitions({ edition_status: "registration_upcoming", university_id: profile.university_id, college_id: profile.college_id, sort: "deadline", limit: 6 }),
+    getCompetitions({ edition_status: "submission_open", university_id: profile.university_id, college_id: profile.college_id, sort: "deadline", limit: 6 }),
+    getCompetitions({ availability: "next_30_days", university_id: profile.university_id, college_id: profile.college_id, sort: "deadline", limit: 12 }),
     getTags(),
-    getUniversities({ limit: 100 }),
+    getAllUniversities(),
     profile.university_id ? getUniversity(profile.university_id) : Promise.resolve(null),
     profile.university_id
       ? getCompetitions({
           source_scope: profile.college_id ? "my_college_notice" : "my_university_notice",
           university_id: profile.university_id,
           college_id: profile.college_id,
-          year: 2026,
+          availability: "next_90_days",
           sort: "deadline",
           limit: 8
         })
@@ -56,11 +63,11 @@ export default async function HomePage({ searchParams }: HomePageProps) {
             </p>
             <HomeSearch />
             <div className="mt-7 flex flex-wrap gap-3">
-              <Link href="/competitions?edition_status=registration_open&sort=deadline" className="button-primary">
+              <Link href={competitionHref({ edition_status: "registration_open", sort: "deadline" })} className="button-primary">
                 <CalendarClock aria-hidden className="h-4 w-4" />
                 查看正在报名
               </Link>
-              <Link href="/competitions?sort=latest" className="button-secondary">
+              <Link href={competitionHref({ sort: "latest" })} className="button-secondary">
                 <Search aria-hidden className="h-4 w-4" />
                 浏览全部竞赛
               </Link>
@@ -79,12 +86,12 @@ export default async function HomePage({ searchParams }: HomePageProps) {
 
       <section className="section-band">
         <div className="container-page grid grid-cols-2 gap-4 py-6 lg:grid-cols-6">
-          <StatCard label="当前可报名" value={(stats.registration_open ?? 0) + (stats.submission_open ?? 0)} helper="报名或作品提交中" icon={CalendarClock} />
+          <StatCard label="正在报名" value={stats.registration_open ?? 0} helper="按当前日期核对报名节点" icon={CalendarClock} />
           <StatCard label="近期截止" value={closingSoon.length} helper="未来30天内有节点" icon={CalendarClock} />
           <StatCard label="收录赛事" value={stats.competitions} helper="已核验真实竞赛对象" icon={Trophy} />
           <StatCard label="方向分类" value={tags.length} helper="按方向浏览赛事" icon={Tags} />
           <StatCard label="赛事届次" value={stats.editions ?? 0} helper="含当前与历史届次" icon={Database} />
-          <StatCard label="覆盖高校" value={stats.universities} helper="985与211情报库" icon={Library} />
+          <StatCard label="收录高校" value={stats.universities} helper="通知与认定覆盖持续补充" icon={Library} />
         </div>
       </section>
 
@@ -95,20 +102,7 @@ export default async function HomePage({ searchParams }: HomePageProps) {
           description={selectedUniversity ? `优先展示 ${selectedUniversity.name} 已公开的赛事通知和校内节点。` : "选择学校后，优先展示该校公开赛事通知和更早的内部截止。"}
         />
         <form action="/" className="mb-6 grid gap-3 border-y border-line bg-white py-4 md:grid-cols-[1fr_1fr_auto]">
-          <label className="grid gap-2">
-            <span className="label">学校</span>
-            <select className="field" name="university_id" defaultValue={profile.university_id ?? ""}>
-              <option value="">选择985高校</option>
-              {universities.filter((item) => item.is_985).map((item) => <option key={item.id} value={item.id}>{item.name}</option>)}
-            </select>
-          </label>
-          <label className="grid gap-2">
-            <span className="label">学院</span>
-            <select className="field" name="college_id" defaultValue={profile.college_id ?? ""} disabled={!selectedUniversity?.colleges.length}>
-              <option value="">全校通知</option>
-              {selectedUniversity?.colleges.map((college) => <option key={college.id} value={college.id}>{college.name}</option>)}
-            </select>
-          </label>
+          <SchoolSelector key={`${profile.university_id}-${profile.college_id}`} universities={universities} universityId={profile.university_id} collegeId={profile.college_id} selectedUniversity={selectedUniversity} />
           <button className="button-secondary self-end" type="submit">应用学校信息</button>
         </form>
         {profile.university_id ? (
@@ -126,7 +120,7 @@ export default async function HomePage({ searchParams }: HomePageProps) {
           eyebrow="Registration Open"
           title="正在报名"
           description="仅展示有已核实报名截止日期的当前届次。"
-          action={<Link href="/competitions?edition_status=registration_open" className="hidden items-center gap-2 text-sm font-semibold text-accent md:inline-flex">全部正在报名 <ArrowRight aria-hidden className="h-4 w-4" /></Link>}
+          action={<Link href={competitionHref({ edition_status: "registration_open" })} className="hidden items-center gap-2 text-sm font-semibold text-accent md:inline-flex">全部正在报名 <ArrowRight aria-hidden className="h-4 w-4" /></Link>}
         />
         <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
           {registrationOpen.slice(0, 4).map((competition) => <CompetitionCard key={competition.id} competition={competition} universityId={profile.university_id} collegeId={profile.college_id} />)}
@@ -140,7 +134,7 @@ export default async function HomePage({ searchParams }: HomePageProps) {
           eyebrow="Submission Open"
           title="作品提交中"
           description="报名已结束但仍可提交作品的届次单独展示。"
-          action={<Link href="/competitions?edition_status=submission_open" className="hidden items-center gap-2 text-sm font-semibold text-accent md:inline-flex">全部提交中赛事 <ArrowRight aria-hidden className="h-4 w-4" /></Link>}
+          action={<Link href={competitionHref({ edition_status: "submission_open" })} className="hidden items-center gap-2 text-sm font-semibold text-accent md:inline-flex">全部提交中赛事 <ArrowRight aria-hidden className="h-4 w-4" /></Link>}
         />
         <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
           {submissionOpen.slice(0, 4).map((competition) => <CompetitionCard key={competition.id} competition={competition} universityId={profile.university_id} collegeId={profile.college_id} />)}
@@ -161,11 +155,11 @@ export default async function HomePage({ searchParams }: HomePageProps) {
             <p className="label">Browse By Field</p>
             <h2 className="mt-1 text-2xl font-semibold text-ink">按方向浏览</h2>
           </div>
-          <Link href="/competitions" className="text-sm font-semibold text-accent">查看全部竞赛</Link>
+          <Link href={competitionHref()} className="text-sm font-semibold text-accent">查看全部竞赛</Link>
         </div>
         <div className="mt-5 flex flex-wrap gap-2">
           {tags.slice(0, 18).map((tag) => (
-            <Link key={tag.id} href={`/competitions?tag=${encodeURIComponent(tag.name)}`}>
+            <Link key={tag.id} href={competitionHref({ tag: tag.name })}>
               <TagPill label={tag.name} />
             </Link>
           ))}
@@ -182,7 +176,7 @@ function EditionList({ title, eyebrow, items, empty, universityId, collegeId }: 
       <h2 className="mt-1 text-2xl font-semibold text-ink">{title}</h2>
       <div className="mt-4 divide-y divide-line border-y border-line bg-white px-4">
         {items.slice(0, 6).map((competition) => (
-          <Link key={competition.id} href={detailHref(competition.id, universityId, collegeId)} className="grid gap-2 py-4 transition hover:text-accent sm:grid-cols-[1fr_auto] sm:items-center">
+          <Link key={competition.id} href={detailHref(competition.id, competition.current_edition_id, universityId, collegeId)} className="grid gap-2 py-4 transition hover:text-accent sm:grid-cols-[1fr_auto] sm:items-center">
             <span>
               <strong className="block text-sm text-ink">{competition.name}</strong>
               <span className="mt-1 block text-xs text-muted">{competition.current_edition_name ?? `${statusLabel(competition.current_status)}届次`}</span>
@@ -196,8 +190,9 @@ function EditionList({ title, eyebrow, items, empty, universityId, collegeId }: 
   );
 }
 
-function detailHref(id: number, universityId?: string, collegeId?: string) {
+function detailHref(id: number, editionId?: number | null, universityId?: string, collegeId?: string) {
   const query = new URLSearchParams();
+  if (editionId) query.set("edition_id", String(editionId));
   if (universityId) query.set("university_id", universityId);
   if (collegeId) query.set("college_id", collegeId);
   return query.size ? `/competitions/${id}?${query.toString()}` : `/competitions/${id}`;

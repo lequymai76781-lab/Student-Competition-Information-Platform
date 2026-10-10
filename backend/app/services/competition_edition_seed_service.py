@@ -20,6 +20,23 @@ class CompetitionEditionSeedService:
         payload = json.loads(path.read_text(encoding="utf-8"))
         items = payload.get("editions", payload)
         stats = {"created": 0, "updated": 0, "sources_created": 0, "not_found": 0}
+        from app.database.review_guard import is_review_guarded
+        if is_review_guarded(db):
+            from app.services.competition_field_ingestion_service import CompetitionFieldIngestionService
+            helper = CompetitionFieldIngestionService()
+            stats["candidates_staged"] = 0
+            for item in items:
+                competition = self._find_competition(db, item["competition_name"])
+                source = next(iter(item.get("sources") or []), {})
+                record = {**(item.get("competition_updates") or {}),
+                    "competition_name": item["competition_name"], "edition": item,
+                    "source_type": source.get("source_type", "crawler"),
+                    "source_name": source.get("source_name") or path.name,
+                    "source_url": source.get("source_url") or item.get("source_url") or item.get("official_notice_url"),
+                    "published_at": source.get("published_at")}
+                stats["candidates_staged"] += len(helper.stage_record(db, record, producer="edition_seed", competition=competition))
+            db.commit()
+            return stats
         for item in items:
             competition = self._find_competition(db, item["competition_name"])
             if competition is None:

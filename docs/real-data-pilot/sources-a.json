@@ -1,0 +1,708 @@
+[
+  {
+    "competition_id": 1,
+    "name": "中国国际大学生创新大赛",
+    "reason": "核对 2024/2025 两届全国报名上限、高校报名窗口、2015 创办和 2023 更名；保留官方链接读取失败，不用高校截止覆盖全国截止。",
+    "aliases": [
+      "中国国际“互联网+”大学生创新创业大赛"
+    ],
+    "sources": [
+      {
+        "key": "a-innovation-2024-national-reprint",
+        "url": "https://www.jyvtc.edu.cn/hlx/476023/965313/1203528/index.html",
+        "title": "教育部关于举办中国国际大学生创新大赛（2024）的通知",
+        "publisher": "济源职业技术学院（转载教育部）",
+        "source_type": "university_notice",
+        "published_at": null,
+        "accessed_at": "2026-09-27T23:47:43+08:00",
+        "access_status": "readable",
+        "verification_status": "unverified",
+        "year": 2024,
+        "competition_fields": {
+          "official_website": "https://cy.ncss.cn"
+        },
+        "edition_fields": {
+          "edition_name": "中国国际大学生创新大赛（2024）",
+          "registration_start": "2024-05-15T00:00:00+08:00",
+          "official_registration_deadline": "2024-08-01T00:00:00+08:00"
+        },
+        "evidence_notes": "已打开并读到正文第八部分：报名系统 5 月 15 日开放，各地截止不得晚于 8 月 1 日。两日期只有日精度，按契约记 00:00；后者是全国允许的最晚报名日，实际地区/高校可能更早，国际项目另行安排。转载页面未显示发布日期，保持 null；正文文件落款为 2024-04-28。承办单位和省份随届次变化，不提为全局长期事实。 原资料细分类为 national_notice_reprint，导入通知类型映射为 competition_notice。",
+        "university_notice": {
+          "university_name": "济源职业技术学院",
+          "notice_type": "competition_notice",
+          "is_formal_recognition": false,
+          "school_deadline": null
+        }
+      },
+      {
+        "key": "a-innovation-2025-national-reprint",
+        "url": "https://dx.lzu.edu.cn/h/spec/lzwsdx/dxdt/zc/2025-05-12/50166.html",
+        "title": "教育部关于举办中国国际大学生创新大赛（2025）的通知",
+        "publisher": "兰州大学（转载教育部）",
+        "source_type": "university_notice",
+        "published_at": "2025-05-12",
+        "accessed_at": "2026-09-27T23:47:43+08:00",
+        "access_status": "readable",
+        "verification_status": "unverified",
+        "year": 2025,
+        "competition_fields": {
+          "official_website": "https://cy.ncss.cn"
+        },
+        "edition_fields": {
+          "edition_name": "中国国际大学生创新大赛（2025）",
+          "registration_start": "2025-05-09T00:00:00+08:00",
+          "official_registration_deadline": "2025-07-01T00:00:00+08:00"
+        },
+        "evidence_notes": "正文第八部分：系统 5 月 9 日开放，各地报名截止不得晚于 7 月 1 日，国际项目另行通知。只有日精度，记 00:00。网页发布 2025-05-12，教育部文件落款 2025-04-25；未把网页发布日期当比赛年份。 原资料细分类为 national_notice_reprint，导入通知类型映射为 competition_notice。",
+        "university_notice": {
+          "university_name": "兰州大学",
+          "notice_type": "competition_notice",
+          "is_formal_recognition": false,
+          "school_deadline": null
+        }
+      },
+      {
+        "key": "a-innovation-history-rename",
+        "url": "https://zhujiang.tjufe.edu.cn/rwxy/2026/0116/c1520a29417/page.htm",
+        "title": "中国国际大学生创新大赛竞赛说明",
+        "publisher": "天津财经大学珠江学院人文学院",
+        "source_type": "university_notice",
+        "published_at": "2026-01-09",
+        "accessed_at": "2026-09-27T23:47:43+08:00",
+        "access_status": "readable",
+        "verification_status": "unverified",
+        "year": null,
+        "competition_fields": {
+          "founded_year": 2015,
+          "development_history": "该赛事的前身于2015年发起，2023年更名为中国国际大学生创新大赛。"
+        },
+        "edition_fields": {},
+        "evidence_notes": "正文首段明确 2015 发起、2023 更名。日期采用页面显示的 2026-01-09，未按 URL 中 0116 猜测发布时间。此文是通用赛事介绍，不是 2026 届通知，year=null；没有更名准确月日，不补造。 原资料细分类为 competition_introduction，导入通知类型映射为 other。",
+        "university_notice": {
+          "university_name": "天津财经大学珠江学院",
+          "notice_type": "other",
+          "is_formal_recognition": false,
+          "school_deadline": null
+        }
+      },
+      {
+        "key": "a-innovation-former-full-name",
+        "url": "https://cxcy.hbwe.edu.cn/info/1301/3271.htm",
+        "title": "我校学子在河北省大学生创新大赛再获金奖",
+        "publisher": "河北水利电力学院学生创新创业指导中心",
+        "source_type": "university_notice",
+        "published_at": "2024-09-20",
+        "accessed_at": "2026-09-27T23:47:43+08:00",
+        "access_status": "readable",
+        "verification_status": "unverified",
+        "year": 2024,
+        "competition_fields": {
+          "former_names": [
+            "中国国际“互联网+”大学生创新创业大赛"
+          ]
+        },
+        "edition_fields": {},
+        "evidence_notes": "正文明确现赛事的前身完整名称。报道的 8 月 9 日是河北省赛结束日期，不作为全国赛事比赛结束候选。 原资料细分类为 result_news，导入通知类型映射为 other。",
+        "university_notice": {
+          "university_name": "河北水利电力学院",
+          "notice_type": "other",
+          "is_formal_recognition": false,
+          "school_deadline": null
+        }
+      },
+      {
+        "key": "a-innovation-njupt-school-2024",
+        "url": "https://cxcy.njupt.edu.cn/2024/0516/c11336a263023/page.htm",
+        "title": "关于中国国际大学生创新大赛（2024）报名工作的通知",
+        "publisher": "南京邮电大学创新创业教育学院、教务处",
+        "source_type": "university_notice",
+        "published_at": "2024-05-16",
+        "accessed_at": "2026-09-27T23:47:43+08:00",
+        "access_status": "readable",
+        "verification_status": "unverified",
+        "year": 2024,
+        "competition_fields": {},
+        "edition_fields": {},
+        "evidence_notes": "校内要求 5 月 16 日至 5 月 31 日完成注册报名。截止只写 school_deadline，原文日精度，以 00:00 存储；这是组织报名通知，没有正式认定含金量或分类。 原资料细分类为 school_registration，导入通知类型映射为 registration_notice。",
+        "university_notice": {
+          "university_name": "南京邮电大学",
+          "notice_type": "registration_notice",
+          "is_formal_recognition": false,
+          "school_deadline": "2024-05-31T00:00:00+08:00"
+        }
+      },
+      {
+        "key": "a-innovation-moe-2024-blocked",
+        "url": "https://www.moe.gov.cn/srcsite/A08/s5672/202405/t20240513_1130304.html",
+        "title": "教育部关于举办中国国际大学生创新大赛（2024）的通知",
+        "publisher": "中华人民共和国教育部",
+        "source_type": "government_document",
+        "published_at": null,
+        "accessed_at": "2026-09-27T23:47:43+08:00",
+        "access_status": "blocked",
+        "verification_status": "unverified",
+        "year": 2024,
+        "competition_fields": {},
+        "edition_fields": {},
+        "evidence_notes": "web 搜索命中原站，连续打开 HTTPS 和 HTTP 都 timeout。仅保留原链接线索；不从搜索摘要填候选，发布时间未据原页正文确认。可读转载另列。",
+        "university_notice": null
+      },
+      {
+        "key": "a-innovation-moe-2025-blocked",
+        "url": "https://www.moe.gov.cn/srcsite/A08/s5672/202505/t20250509_1189810.html",
+        "title": "教育部关于举办中国国际大学生创新大赛（2025）的通知",
+        "publisher": "中华人民共和国教育部",
+        "source_type": "government_document",
+        "published_at": null,
+        "accessed_at": "2026-09-27T23:47:43+08:00",
+        "access_status": "blocked",
+        "verification_status": "unverified",
+        "year": 2025,
+        "competition_fields": {},
+        "edition_fields": {},
+        "evidence_notes": "web 搜索命中原站，连续打开 HTTPS、HTTP 和带 sessionid 链接均失败。没有读到原页正文，不填字段；兰州大学转载作为另一独立来源记录。",
+        "university_notice": null
+      }
+    ]
+  },
+  {
+    "competition_id": 2,
+    "name": "“挑战杯”全国大学生课外学术科技作品竞赛",
+    "reason": "与挑战杯创业计划保持两个独立实体；核对首届、举办频率和 2025 作品推报节点。",
+    "aliases": [],
+    "sources": [
+      {
+        "key": "a-challenge-academic-history",
+        "url": "https://www.tiaozhanbei.net/focus",
+        "title": "竞赛简介",
+        "publisher": "挑战杯竞赛组委会",
+        "source_type": "official_website",
+        "published_at": null,
+        "accessed_at": "2026-09-27T23:47:43+08:00",
+        "access_status": "readable",
+        "verification_status": "unverified",
+        "year": null,
+        "competition_fields": {
+          "name": "“挑战杯”全国大学生课外学术科技作品竞赛",
+          "first_held_year": 1989,
+          "frequency": "每两年一届",
+          "official_website": "https://www.tiaozhanbei.net",
+          "development_history": "1989年举办首届课外学术科技作品竞赛；与创业计划竞赛交叉轮流开展。"
+        },
+        "edition_fields": {},
+        "evidence_notes": "官网正文区分两个并列项目，分别每两年举办一届，并明确课外学术科技作品竞赛首届为 1989 年。简介中“历经十届”属于未更新历史文字，不提为当前届数。",
+        "university_notice": null
+      },
+      {
+        "key": "a-challenge-academic-2025-notice",
+        "url": "https://2025.tiaozhanbei.net/d49/article/676/",
+        "title": "挑战杯丨第十九届“挑战杯”中国移动全国大学生课外学术科技作品竞赛来啦！",
+        "publisher": "第十九届挑战杯竞赛组委会",
+        "source_type": "organizer_notice",
+        "published_at": "2025-06-13",
+        "accessed_at": "2026-09-27T23:47:43+08:00",
+        "access_status": "readable",
+        "verification_status": "unverified",
+        "year": 2025,
+        "competition_fields": {
+          "competition_format": "校级初赛、省级复赛和全国决赛"
+        },
+        "edition_fields": {
+          "edition_name": "第十九届“挑战杯”全国大学生课外学术科技作品竞赛",
+          "edition_number": 19,
+          "host_location": "南京大学",
+          "official_submission_deadline": "2025-06-30T00:00:00+08:00",
+          "official_notice_url": "https://2025.tiaozhanbei.net/d49/article/676/"
+        },
+        "evidence_notes": "第五部分要求各省级团委在 2025-06-30 前完成全国决赛作品推报；该截止是省级团委向全国的推报截止，并非学生校内报名。原文日精度记 00:00。终审仅写下半年，没有确切起止日，留空。主办名单只说明本届，未写为永恒主办方。",
+        "university_notice": null
+      }
+    ]
+  },
+  {
+    "competition_id": 3,
+    "name": "“挑战杯”中国大学生创业计划竞赛",
+    "reason": "验证与课外作品竞赛的实体边界，以及全国终审日期和校内作品截止的分层。",
+    "aliases": [],
+    "sources": [
+      {
+        "key": "a-challenge-business-history",
+        "url": "https://www.tiaozhanbei.net/focus",
+        "title": "竞赛简介",
+        "publisher": "挑战杯竞赛组委会",
+        "source_type": "official_website",
+        "published_at": null,
+        "accessed_at": "2026-09-27T23:47:43+08:00",
+        "access_status": "readable",
+        "verification_status": "unverified",
+        "year": null,
+        "competition_fields": {
+          "name": "“挑战杯”中国大学生创业计划竞赛",
+          "frequency": "每两年一届",
+          "competition_format": "学校、省级和全国三级赛制"
+        },
+        "edition_fields": {},
+        "evidence_notes": "官方简介把创业计划竞赛与课外学术科技作品竞赛并列，分别每两年一届。此页没有创业计划首届年份，不能挪用另一赛事 1989 年。",
+        "university_notice": null
+      },
+      {
+        "key": "a-challenge-business-2024-finals",
+        "url": "https://alumni.xjtu.edu.cn/info/1115/8194.htm",
+        "title": "第十四届“挑战杯”秦创原中国大学生创业计划竞赛在西安交通大学圆满收官 中国西部科技创新港获批“挑战杯”大学生科技创新成果孵化转化基地",
+        "publisher": "西安交通大学校友网（内容来源：西安交大新闻网）",
+        "source_type": "university_notice",
+        "published_at": "2024-11-07",
+        "accessed_at": "2026-09-27T23:47:43+08:00",
+        "access_status": "readable",
+        "verification_status": "unverified",
+        "year": 2024,
+        "competition_fields": {},
+        "edition_fields": {
+          "edition_name": "第十四届“挑战杯”秦创原中国大学生创业计划竞赛",
+          "edition_number": 14,
+          "host_location": "西安交通大学兴庆校区",
+          "competition_start": "2024-10-29T00:00:00+08:00",
+          "competition_end": "2024-11-02T00:00:00+08:00"
+        },
+        "evidence_notes": "正文第一段为 10 月 29 日至 11 月 2 日在兴庆校区举行，结合文中明确的 2024 年届次记录。日期只有日精度，按 00:00 保存；这是全国终审现场阶段，不包含从 6 月启动的全部赛季。 原资料细分类为 result_news，导入通知类型映射为 other。",
+        "university_notice": {
+          "university_name": "西安交通大学",
+          "notice_type": "other",
+          "is_formal_recognition": false,
+          "school_deadline": null
+        }
+      },
+      {
+        "key": "a-challenge-business-czu-school-2024",
+        "url": "https://xxgk.czu.cn/2024/0226/c5469a135732/page.htm",
+        "title": "关于举办2024年第十四届“挑战杯”中国大学生创业计划竞赛校内初赛的通知",
+        "publisher": "常州工学院",
+        "source_type": "university_notice",
+        "published_at": "2024-02-26",
+        "accessed_at": "2026-09-27T23:47:43+08:00",
+        "access_status": "readable",
+        "verification_status": "unverified",
+        "year": 2024,
+        "competition_fields": {},
+        "edition_fields": {},
+        "evidence_notes": "校内初赛作品上交为 2024-03-11 17 点前。当地参赛对象和组队要求不推为全国通用规则；没有正式认定条目。 原资料细分类为 school_submission，导入通知类型映射为 organization_notice。",
+        "university_notice": {
+          "university_name": "常州工学院",
+          "notice_type": "organization_notice",
+          "is_formal_recognition": false,
+          "school_deadline": "2024-03-11T17:00:00+08:00"
+        }
+      }
+    ]
+  },
+  {
+    "competition_id": 4,
+    "name": "全国大学生数学建模竞赛",
+    "reason": "比较 2024/2025 两届精准赛程和全国报名截止；官网历史、比赛结束与电子文档上传截止分离；另取一份正式校级认定政策。",
+    "aliases": [
+      "高教社杯全国大学生数学建模竞赛"
+    ],
+    "sources": [
+      {
+        "key": "a-cumcm-history-home",
+        "url": "https://www.mcm.edu.cn/index.moma",
+        "title": "全国大学生数学建模竞赛",
+        "publisher": "中国工业与应用数学学会",
+        "source_type": "official_website",
+        "published_at": null,
+        "accessed_at": "2026-09-27T23:47:43+08:00",
+        "access_status": "readable",
+        "verification_status": "unverified",
+        "year": null,
+        "competition_fields": {
+          "name": "全国大学生数学建模竞赛",
+          "founded_year": 1992,
+          "frequency": "每年一届",
+          "organizer": "中国工业与应用数学学会",
+          "official_website": "https://www.mcm.edu.cn",
+          "development_history": "全国大学生数学建模竞赛创办于1992年，每年举办一届。"
+        },
+        "edition_fields": {},
+        "evidence_notes": "实际打开首页正文为 2026 内容，历史段明确 1992 创办、每年一届。搜索摘要仍展示 2025 缓存，未将摘要年份当当前正文。页面未显示发布日期。",
+        "university_notice": null
+      },
+      {
+        "key": "a-cumcm-2024-reprint",
+        "url": "https://ist.yctu.edu.cn/2024/0510/c3316a117299/page.htm",
+        "title": "2024高教社杯全国大学生数学建模竞赛”报名第一次通知 数模竟赛[2024一01 ]号",
+        "publisher": "盐城师范学院人工智能学院（转载竞赛组委会）",
+        "source_type": "university_notice",
+        "published_at": "2024-05-10",
+        "accessed_at": "2026-09-27T23:47:43+08:00",
+        "access_status": "readable",
+        "verification_status": "unverified",
+        "year": 2024,
+        "competition_fields": {
+          "min_team_size": 3,
+          "max_team_size": 3,
+          "is_cross_university_supported": false
+        },
+        "edition_fields": {
+          "edition_name": "2024高教社杯全国大学生数学建模竞赛",
+          "official_registration_deadline": "2024-09-02T20:00:00+08:00",
+          "competition_start": "2024-09-05T18:00:00+08:00",
+          "competition_end": "2024-09-08T20:00:00+08:00"
+        },
+        "evidence_notes": "正文第 1、2、4 条给出全国比赛时间、向全国组委会报名截止和同一法人学校组队要求。网页 5 月 10 日发布，文件落款 4 月 8 日。参赛学校向赛区的报名费并非统一 50 元，未提取错误个人费用。 原资料细分类为 national_notice_reprint，导入通知类型映射为 competition_notice。",
+        "university_notice": {
+          "university_name": "盐城师范学院",
+          "notice_type": "competition_notice",
+          "is_formal_recognition": false,
+          "school_deadline": null
+        }
+      },
+      {
+        "key": "a-cumcm-2025-official-pdf",
+        "url": "https://www.mcm.edu.cn/upload_cn/node/745/ogFWOgXVc36c27bb3ee3adf21e06f53146b03585.pdf",
+        "title": "2025高教社杯全国大学生数学建模竞赛第一次通知及附件",
+        "publisher": "全国大学生数学建模竞赛组委会",
+        "source_type": "organizer_notice",
+        "published_at": "2025-04-01",
+        "accessed_at": "2026-09-27T23:47:43+08:00",
+        "access_status": "readable",
+        "verification_status": "unverified",
+        "year": 2025,
+        "competition_fields": {
+          "official_website": "https://www.mcm.edu.cn"
+        },
+        "edition_fields": {
+          "edition_name": "2025高教社杯全国大学生数学建模竞赛",
+          "registration_start": "2025-05-01T09:00:00+08:00",
+          "official_registration_deadline": "2025-09-01T20:00:00+08:00",
+          "competition_start": "2025-09-04T18:00:00+08:00",
+          "competition_end": "2025-09-07T20:00:00+08:00",
+          "official_submission_deadline": "2025-09-08T14:00:00+08:00",
+          "official_registration_url": "https://cumcm.cnki.net"
+        },
+        "evidence_notes": "从官网通知 https://www.mcm.edu.cn/html_cn/node/26a645851659040725c2892fb1935f95.html 点击附件并读取 PDF 第 3-4 页：报名截止 9 月 1 日 20:00，独立完成作品和 MD5 提交截止 9 月 7 日 20:00，电子文档上传截止 9 月 8 日 14:00。后者作为 official_submission_deadline；不可混成比赛结束。published_at 为入口页面显示的 2025-04-01，附件须知另标 2025-04-02 修订，保留版本差异。",
+        "university_notice": null
+      },
+      {
+        "key": "a-njupt-recognition-policy-2025",
+        "url": "https://bhs.njupt.edu.cn/_upload/article/files/f9/3b/699e966e4669a27dae025f4e75f2/225213f0-3e9e-4334-9f28-7f2247ef6d40.pdf",
+        "title": "关于公布《南京邮电大学大学生创新创业竞赛项目认定及分类目录（修订）》的通知（校教发〔2025〕1号）",
+        "publisher": "南京邮电大学",
+        "source_type": "university_policy",
+        "published_at": "2025-01-03",
+        "accessed_at": "2026-09-27T23:47:43+08:00",
+        "access_status": "readable",
+        "verification_status": "unverified",
+        "year": null,
+        "competition_fields": {},
+        "edition_fields": {},
+        "evidence_notes": "PDF 正文第 2 页第 4 项将全国大学生数学建模竞赛列为 A 类、负责部门理学院。文件属于正式项目认定分类，非报名通知。印发日 2025-01-03，官网目录页 https://cxcy.njupt.edu.cn/2025/0110/c15489a277923/page.htm 发布 2025-01-10。仅在南京邮电大学适用，不写全局 competition_level，也不是 2025 届赛程。",
+        "university_notice": {
+          "university_name": "南京邮电大学",
+          "notice_type": "policy_recognition",
+          "is_formal_recognition": true,
+          "school_deadline": null,
+          "recognition_evidence": "校教发〔2025〕1号附件第2页序号4：全国大学生数学建模竞赛，A类，负责部门理学院。"
+        }
+      }
+    ]
+  },
+  {
+    "competition_id": 19,
+    "name": "全国大学生广告艺术大赛",
+    "reason": "官网旧版 URL 已更新为 2026 正文，按正文年份分届；另保留 2025 全国奖公示公告，不能把公示开始当最终结果。",
+    "aliases": [
+      "大广赛"
+    ],
+    "sources": [
+      {
+        "key": "a-ad-2025-award-notice",
+        "url": "https://2025.sun-ada.net/news_xqs2901.html?lid=2",
+        "title": "“中国大学生好创意”第17届大广赛拟定全国奖作品公示及信息核对",
+        "publisher": "全国大学生广告艺术大赛组委会",
+        "source_type": "organizer_notice",
+        "published_at": "2025-08-19",
+        "accessed_at": "2026-09-27T23:47:43+08:00",
+        "access_status": "readable",
+        "verification_status": "unverified",
+        "year": 2025,
+        "competition_fields": {
+          "short_name": "大广赛"
+        },
+        "edition_fields": {
+          "edition_name": "第17届全国大学生广告艺术大赛",
+          "edition_number": 17,
+          "announcement_date": "2025-09-06T12:00:00+08:00"
+        },
+        "evidence_notes": "公告说明全国总评审 8 月 3 日完成，拟奖公示 8 月 19 日 12:00 至 8 月 28 日 16:00；明确最终获奖名单以 9 月 6 日 12:00 正式公布为准，announcement_date 为该公告给定的计划最终公布时刻，不是实际公布完成的独立证明。",
+        "university_notice": null
+      },
+      {
+        "key": "a-ad-2026-guidelines",
+        "url": "https://www.sun-ada.net/index.php/about_intrs2.html",
+        "title": "第18届全国大学生广告艺术大赛参赛指南（2026年4月1日修订版）",
+        "publisher": "全国大学生广告艺术大赛组委会",
+        "source_type": "official_website",
+        "published_at": "2026-04-01",
+        "accessed_at": "2026-09-27T23:47:43+08:00",
+        "access_status": "readable",
+        "verification_status": "unverified",
+        "year": 2026,
+        "competition_fields": {
+          "official_website": "https://www.sun-ada.net",
+          "competition_format": "一次参赛、院校初评、赛区评选、全国总评审"
+        },
+        "edition_fields": {
+          "edition_name": "第18届全国大学生广告艺术大赛",
+          "edition_number": 18,
+          "official_submission_deadline": "2026-06-12T16:00:00+08:00",
+          "edition_rules_url": "https://www.sun-ada.net/index.php/about_intrs2.html"
+        },
+        "evidence_notes": "实际正文写第 18 届、2026-04-01 修订；即使搜索摘要仍命中第 17 届，也按正文 year=2026。第六部分的一般作品线上提交截止为 6 月 12 日 16:00。营销创客单元海选为独立窗口，赛区向全国报送为 7 月 5 日，均不混为同一个学生作品截止。published_at 使用正文修订日，首发日未知。",
+        "university_notice": null
+      }
+    ]
+  },
+  {
+    "competition_id": 21,
+    "name": "全国大学生电子商务“创新、创意及创业”挑战赛",
+    "reason": "真实报名延期同字段冲突：原 2024-12-31 24:00 与后续 2025-01-20 24:00；赛事届次均为 2025，保留学校作品提交截止和管理员审核截止的边界。",
+    "aliases": [
+      "三创赛"
+    ],
+    "sources": [
+      {
+        "key": "a-sanchuang-original-btbu",
+        "url": "https://cxcy.btbu.edu.cn/tzgg/5b95b42e8f04434e84d2ec9586a59d28.htm",
+        "title": "关于举办“第十五届全国大学生电子商务‘创新、创意及创业’挑战赛”北京工商大学校赛的通知",
+        "publisher": "北京工商大学创新创业教育学院",
+        "source_type": "university_notice",
+        "published_at": "2024-11-18",
+        "accessed_at": "2026-09-27T23:47:43+08:00",
+        "access_status": "readable",
+        "verification_status": "unverified",
+        "year": 2025,
+        "competition_fields": {
+          "short_name": "三创赛",
+          "official_website": "https://www.3chuang.net"
+        },
+        "edition_fields": {
+          "edition_name": "第十五届全国大学生电子商务“创新、创意及创业”挑战赛",
+          "edition_number": 15,
+          "official_registration_deadline": "2025-01-01T00:00:00+08:00"
+        },
+        "evidence_notes": "第七部分要求在三创赛官网注册报名，原全国平台截止明确为 2024-12-31 24:00，规范化为次日 2025-01-01 00:00，不选其为最新值。第三部分另设北京工商大学校赛材料邮件提交截止 2025-03-10 12:00，只放 school_deadline。published_at 为 2024 年但赛事为 2025 第 15 届。 原资料细分类为 school_submission，导入通知类型映射为 organization_notice。",
+        "university_notice": {
+          "university_name": "北京工商大学",
+          "notice_type": "organization_notice",
+          "is_formal_recognition": false,
+          "school_deadline": "2025-03-10T12:00:00+08:00"
+        }
+      },
+      {
+        "key": "a-sanchuang-extended-sues",
+        "url": "https://www.sues.edu.cn/3f/df/c271a278495/page.htm",
+        "title": "关于第十五届全国大学生电子商务“创新、创意及创业”挑战赛延长报名时间的通知",
+        "publisher": "上海工程技术大学管理学院、工程训练中心（创新创业学院）",
+        "source_type": "university_notice",
+        "published_at": "2024-12-31",
+        "accessed_at": "2026-09-27T23:47:43+08:00",
+        "access_status": "readable",
+        "verification_status": "unverified",
+        "year": 2025,
+        "competition_fields": {},
+        "edition_fields": {
+          "edition_name": "第十五届全国大学生电子商务“创新、创意及创业”挑战赛",
+          "edition_number": 15,
+          "official_registration_deadline": "2025-01-21T00:00:00+08:00"
+        },
+        "evidence_notes": "正文明确经三创赛竞组委决定，将报名截止从 2024-12-31 延至 2025-01-20 24 点，规范化为次日 2025-01-21 00:00。校赛管理员审核截止 1 月 25 日 24 点是不同事件，不写报名截止。保留与原通知的真实冲突，来源仍 unverified，不自动选胜。 原资料细分类为 national_deadline_update，导入通知类型映射为 competition_notice。",
+        "university_notice": {
+          "university_name": "上海工程技术大学",
+          "notice_type": "competition_notice",
+          "is_formal_recognition": false,
+          "school_deadline": null
+        }
+      },
+      {
+        "key": "a-sanchuang-committee-confirmation",
+        "url": "https://3chuang.oss-cn-hangzhou.aliyuncs.com/uploads/file/2025/03/07/05c154ffb4c380717203d6db8c22c403.pdf",
+        "title": "关于第十五届全国大学生电子商务“创新、创意及创业”挑战赛办好校赛的补充通知（三创赛竞组委文〔2025〕08号）",
+        "publisher": "第十五届三创赛竞赛组织委员会",
+        "source_type": "organizer_notice",
+        "published_at": "2025-03-07",
+        "accessed_at": "2026-09-27T23:47:43+08:00",
+        "access_status": "readable",
+        "verification_status": "unverified",
+        "year": 2025,
+        "competition_fields": {},
+        "edition_fields": {
+          "edition_name": "第十五届全国大学生电子商务“创新、创意及创业”挑战赛",
+          "edition_number": 15
+        },
+        "evidence_notes": "已打开官方三创赛 OSS 存储的组委会 PDF 正文。第 1 条明确追述原 2024-12-31 报名截止延期至 2025-01-20，并将校赛举办截止顺延至 4 月 30 日 24 点。该追述只到日精度，为避免把 1 月 20 日 00:00 与更新通知 24 点制造伪冲突，不重复生成截止候选。校赛举办截止也不是全国总决赛结束。",
+        "university_notice": null
+      }
+    ]
+  },
+  {
+    "competition_id": 29,
+    "name": "全国大学生市场调查与分析大赛",
+    "reason": "检验跨自然年度的第十五届赛事，以及全国个人报名、学校团队材料截止和校通知内部不一致。",
+    "aliases": [
+      "“正大杯”全国大学生市场调查与分析大赛"
+    ],
+    "sources": [
+      {
+        "key": "a-market-2025-xupt",
+        "url": "https://jgy.xupt.edu.cn/info/1052/1030.htm",
+        "title": "关于组织参加第十五届全国大学生市场调查与分析大赛的通知",
+        "publisher": "西安邮电大学经济与管理学院",
+        "source_type": "university_notice",
+        "published_at": "2024-10-10",
+        "accessed_at": "2026-09-27T23:47:43+08:00",
+        "access_status": "readable",
+        "verification_status": "unverified",
+        "year": 2025,
+        "competition_fields": {
+          "organizer": "中国商业统计学会",
+          "min_team_size": 3,
+          "max_team_size": 5
+        },
+        "edition_fields": {
+          "edition_name": "“正大杯”第十五届全国大学生市场调查与分析大赛",
+          "edition_number": 15,
+          "official_registration_deadline": "2024-10-31T00:00:00+08:00"
+        },
+        "evidence_notes": "正文主办方、实践赛团队 3-5 名学生及全国官网个人报名截止可读。截止为 2024-10-31 前，只有日精度，记 00:00；该届后续赛程进入 2025，year 不按发布日期填 2024。3-5 人仅是实践赛团队，不含个人知识赛。学校通知不是认定。 原资料细分类为 national_notice_reprint，导入通知类型映射为 competition_notice。",
+        "university_notice": {
+          "university_name": "西安邮电大学",
+          "notice_type": "competition_notice",
+          "is_formal_recognition": false,
+          "school_deadline": null
+        }
+      },
+      {
+        "key": "a-market-shu-school-conflict",
+        "url": "https://bksy.shu.edu.cn/info/1015/313184.htm",
+        "title": "关于第十五届“正大杯”上海市大学生市场调查分析大赛上海大学校赛的通知",
+        "publisher": "上海大学本科生院、悉尼工商学院",
+        "source_type": "university_notice",
+        "published_at": "2024-10-08",
+        "accessed_at": "2026-09-27T23:47:43+08:00",
+        "access_status": "readable",
+        "verification_status": "unverified",
+        "year": 2025,
+        "competition_fields": {},
+        "edition_fields": {
+          "edition_name": "“正大杯”第十五届全国大学生市场调查与分析大赛",
+          "edition_number": 15
+        },
+        "evidence_notes": "同一正文有未消解的校内时间差异：报名方式要求 2025-03-18 前提交报名表、作品及信息表；竞赛安排又要求作品/PPT 展示视频截至 2025-03-14 中午 12 点。school_deadline 留 null，不选赢家；两个原值和事件完整保留在 scope_notes。不能据此生成全国截止或正式认定。 原资料细分类为 school_submission，导入通知类型映射为 organization_notice。",
+        "university_notice": {
+          "university_name": "上海大学",
+          "notice_type": "organization_notice",
+          "is_formal_recognition": false,
+          "school_deadline": null
+        },
+        "scope_notes": {
+          "school_deadlines": [
+            {
+              "scope": "各院系邮件提交参赛人员报名表、参赛作品及信息表",
+              "raw": "2025年3月18日前",
+              "normalized": "2025-03-18T00:00:00+08:00",
+              "precision": "day"
+            },
+            {
+              "scope": "团队负责人提交参赛报告PDF和PPT展示视频",
+              "raw": "2025年3月14日中午12点",
+              "normalized": "2025-03-14T12:00:00+08:00",
+              "precision": "minute"
+            }
+          ]
+        }
+      },
+      {
+        "key": "a-market-2025-cssc-blocked",
+        "url": "https://www.china-cssc.org/uploadfile/20250523/1748002351891035.pdf",
+        "title": "关于第十五届全国大学生市场调查与分析大赛研究生组总决赛的获奖公告（中商统〔2025〕17号）",
+        "publisher": "中国商业统计学会、全国大学生市场调查与分析大赛组委会",
+        "source_type": "organizer_notice",
+        "published_at": null,
+        "accessed_at": "2026-09-27T23:47:43+08:00",
+        "access_status": "blocked",
+        "verification_status": "unverified",
+        "year": 2025,
+        "competition_fields": {},
+        "edition_fields": {},
+        "evidence_notes": "搜索有完整摘要，但 web 打开官方 PDF 失败。保留链接且不从摘要填字段或发布时间，不声称读到正文；本赛事可读高校通知另列。",
+        "university_notice": null
+      }
+    ]
+  },
+  {
+    "competition_id": 43,
+    "name": "未来设计师·全国高校数字艺术设计大赛",
+    "reason": "有 2012 创办历史证据及 AIGC 专项赛真实延期双来源；专项日期严格隔离在带 scope 的原值记录，不混成整届统一截止。",
+    "aliases": [
+      "NCDA",
+      "未来设计师·全国高校数字艺术设计大赛（NCDA）"
+    ],
+    "sources": [
+      {
+        "key": "a-ncda-2025-original",
+        "url": "https://www.ncda.org.cn/news/2025/0528/671.html",
+        "title": "【赛题发布】关于举办AIGC实践挑战赛的通知",
+        "publisher": "未来设计师·全国高校数字艺术设计大赛组委会",
+        "source_type": "organizer_notice",
+        "published_at": "2025-05-28",
+        "accessed_at": "2026-09-27T23:47:43+08:00",
+        "access_status": "readable",
+        "verification_status": "unverified",
+        "year": 2025,
+        "competition_fields": {
+          "name": "未来设计师·全国高校数字艺术设计大赛（NCDA）",
+          "short_name": "NCDA",
+          "founded_year": 2012,
+          "frequency": "每年一届",
+          "official_website": "https://www.ncda.org.cn"
+        },
+        "edition_fields": {
+          "edition_name": "2025第13届未来设计师·全国高校数字艺术设计大赛（NCDA）",
+          "edition_number": 13
+        },
+        "evidence_notes": "网页发布时间 2025-05-28，落款为 2025-05-26。概况明确始于 2012、每年一届。AIGC 实践挑战赛原作品提交为 7 月 1 日至 9 月 15 日，只有日精度；该专项后来延期。正文副标题误写“数智文创实践挑战赛”，标题及后续正文均称 AIGC，原样记录此内部不一致，不自行修饰为无冲突。未将专项三人队或专项截止推广为整赛规则。",
+        "university_notice": null,
+        "scope_notes": {
+          "track": "产教融合赛道／AIGC实践挑战赛",
+          "raw_submission_deadline": "2025年9月15日",
+          "normalized_submission_deadline": "2025-09-15T00:00:00+08:00",
+          "precision": "day",
+          "not_for_edition_field_import": true
+        }
+      },
+      {
+        "key": "a-ncda-2025-extended",
+        "url": "https://www.ncda.org.cn/news/2025/0915/690.html",
+        "title": "【重要通知】关于AIGC实践挑战赛延期的通知",
+        "publisher": "未来设计师·全国高校数字艺术设计大赛组委会",
+        "source_type": "organizer_notice",
+        "published_at": "2025-09-15",
+        "accessed_at": "2026-09-27T23:47:43+08:00",
+        "access_status": "readable",
+        "verification_status": "unverified",
+        "year": 2025,
+        "competition_fields": {},
+        "edition_fields": {},
+        "evidence_notes": "更新通知将产教融合赛道 AIGC 实践挑战赛的作品上传截止和校方审核提交参赛截止统一延长至 2025-09-30 24:00。规范化为 2025-10-01 00:00；保留与 5 月原通知的冲突，但仅在专项 scope_notes 中保存，当前模型无 track 身份，不生成整届截止候选。",
+        "university_notice": null,
+        "scope_notes": {
+          "track": "产教融合赛道／AIGC实践挑战赛",
+          "raw_submission_deadline": "2025年9月30日24:00",
+          "normalized_submission_deadline": "2025-10-01T00:00:00+08:00",
+          "precision": "minute",
+          "not_for_edition_field_import": true
+        }
+      }
+    ]
+  }
+]

@@ -2,6 +2,7 @@ from datetime import datetime, timezone
 
 from sqlalchemy import func, select
 from sqlalchemy.orm import Session
+from app.services.competition_service import CompetitionService
 
 from app.models import (
     CandidateCompetition,
@@ -48,20 +49,9 @@ class StatsRepository:
         verified_editions = db.scalar(
             select(func.count()).select_from(CompetitionEdition).where(CompetitionEdition.is_verified.is_(True))
         ) or 0
-        registration_open = db.scalar(
-            select(func.count()).select_from(CompetitionEdition).where(
-                CompetitionEdition.is_verified.is_(True),
-                CompetitionEdition.current_status == "registration_open",
-                CompetitionEdition.registration_deadline >= datetime.now(timezone.utc),
-            )
-        ) or 0
-        submission_open = db.scalar(
-            select(func.count()).select_from(CompetitionEdition).where(
-                CompetitionEdition.is_verified.is_(True),
-                CompetitionEdition.current_status == "submission_open",
-                CompetitionEdition.submission_deadline >= datetime.now(timezone.utc),
-            )
-        ) or 0
+        open_counts = CompetitionService().count_open_competitions(db)
+        registration_open = open_counts["registration_open"]
+        submission_open = open_counts["submission_open"]
         tagged_competitions = db.scalar(
             select(func.count(func.distinct(CompetitionTag.competition_id)))
             .select_from(CompetitionTag)

@@ -1,0 +1,58 @@
+[
+  {
+    "competition_id": 4,
+    "competition_name": "全国大学生数学建模竞赛",
+    "university_name": "上海理工大学",
+    "school_source_name": "上海理工大学理学院",
+    "source": {
+      "key": "year-isolation-2024-上海理工大学",
+      "url": "https://lxy.usst.edu.cn/_t710/2024/0619/c6729a322571/page.htm",
+      "title": "关于组织我校本科生参加全国大学生数学建模竞赛的通知",
+      "publisher": "上海理工大学理学院",
+      "source_type": "university_notice",
+      "published_at": "2024-06-19",
+      "accessed_at": "2026-09-28T03:06:22.923669+08:00",
+      "access_status": "readable",
+      "year": 2024,
+      "competition_fields": {},
+      "edition_fields": {},
+      "evidence_notes": "正文明确2024年报名、比赛日期及学校集中向组委会报名。校内截止仅日精度，不填时分；正文落款6月17日与网页发布6月19日分别保留。用于同校2024/2025届次隔离。",
+      "source_failure_reason": null,
+      "retrieval_method": "web",
+      "university_notice": {
+        "university_name": "上海理工大学",
+        "notice_type": "registration_notice",
+        "is_formal_recognition": false,
+        "school_deadline": "2024-08-31"
+      }
+    }
+  },
+  {
+    "competition_id": 4,
+    "competition_name": "全国大学生数学建模竞赛",
+    "university_name": "北京工商大学",
+    "school_source_name": "北京工商大学数学与统计学院",
+    "source": {
+      "key": "year-isolation-2023-北京工商大学",
+      "url": "https://stxy.btbu.edu.cn/tzgg/086397f532b544f5b8a6308e55a3bf56.htm",
+      "title": "关于2023年北京市大学生数学建模与计算机应用竞赛的报名通知",
+      "publisher": "北京工商大学数学与统计学院",
+      "source_type": "university_notice",
+      "published_at": "2023-06-28",
+      "accessed_at": "2026-09-28T03:06:22.923669+08:00",
+      "access_status": "readable",
+      "year": 2023,
+      "competition_fields": {},
+      "edition_fields": {},
+      "evidence_notes": "正文明确此赛即2023全国大学生数学建模竞赛北京赛区，学校统一提交报名名单。历史2023来源与已收2025通知分别保存；不拿其校内报名截止更新全国截止。",
+      "source_failure_reason": null,
+      "retrieval_method": "web",
+      "university_notice": {
+        "university_name": "北京工商大学",
+        "notice_type": "registration_notice",
+        "is_formal_recognition": false,
+        "school_deadline": "2023-07-26T23:00:00+08:00"
+      }
+    }
+  }
+]

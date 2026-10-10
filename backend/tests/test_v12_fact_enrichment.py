@@ -212,7 +212,7 @@ def test_missing_official_website_remains_null_without_official_source(db_sessio
 
 
 def test_empty_co_organizer_fields_stay_hidden_in_detail_api(client, db_session) -> None:
-    comp = _comp(db_session, "无联合主办渲染空安全测试")
+    comp = _comp(db_session, "无联合主办渲染空安全测试", verification_status="verified_official")
     db_session.commit()
     detail = client.get(f"/api/competitions/{comp.id}").json()["data"]
     assert detail["co_organizers"] == []
@@ -224,6 +224,7 @@ def test_history_uses_competition_edition(client, db_session) -> None:
     comp = _comp(
         db_session,
         "历史读取真实届次测试",
+        verification_status="verified_official",
         history_timeline=[{"year": 2020, "title": "旧文本历史（仅作fallback）"}],
     )
     db_session.add(

@@ -298,8 +298,9 @@ class VerifiedPolicyIngestService:
             trusted_policy=trusted_policy,
             source_title=document.title,
             category="学科竞赛",
+            source_url=source_url,
         )
-        if normalization.competition is None:
+        if normalization.competition is None and normalization.reason != "pending_field_review":
             raise ValueError(f"可信政策候选无法归一化: {raw_name} ({normalization.reason})")
         competition = normalization.competition
         candidate = db.execute(
@@ -321,8 +322,8 @@ class VerifiedPolicyIngestService:
             "source_url": source_url,
             "confidence": confidence,
             "normalization_status": normalization.method,
-            "normalized_competition_id": competition.id,
-            "needs_manual_review": needs_manual_review,
+            "normalized_competition_id": competition.id if competition else None,
+            "needs_manual_review": needs_manual_review or competition is None,
             "is_demo": False,
             "metadata_json": {"normalization_reason": normalization.reason},
         }
@@ -338,6 +339,8 @@ class VerifiedPolicyIngestService:
             for key, value in payload.items():
                 setattr(candidate, key, value)
 
+        if competition is None:
+            return
         evidence_hash = hashlib.sha256(evidence_text.encode("utf-8")).hexdigest()
         recognition = db.execute(
             select(CompetitionPolicyRecognition).where(

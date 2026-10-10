@@ -1,33 +1,35 @@
 "use client";
 
+import { SessionBoundary } from "@/components/v09/SessionBoundary";
+
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 
 import { myOverview, type V09Overview } from "@/lib/v09-api";
 import { PersonalItemCard } from "@/components/v09/PersonalItemCard";
+import { useSessionToken } from "@/lib/use-session";
 
 export function PersonalHome() {
+  return <SessionBoundary><PersonalHomeSession /></SessionBoundary>;
+}
+
+function PersonalHomeSession() {
   const router = useRouter();
   const [overview, setOverview] = useState<V09Overview | null>(null);
-  const [hasToken, setHasToken] = useState(false);
+  const token = useSessionToken();
   const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {
-    const token = window.localStorage.getItem("v09_token");
-    setHasToken(Boolean(token));
-    if (!token) {
-      setLoaded(true);
-      return;
-    }
+    if (!token) return;
     myOverview()
       .then(setOverview)
-      .catch(() => window.localStorage.removeItem("v09_token"))
+      .catch(() => setOverview(null))
       .finally(() => setLoaded(true));
-  }, []);
+  }, [token]);
 
-  if (!loaded) return null;
-  if (!hasToken || !overview) {
+  if (token && !loaded) return null;
+  if (!token || !overview) {
     return (
       <section className="container-page py-6">
         <div className="panel-soft flex flex-wrap items-center justify-between gap-3 p-5">

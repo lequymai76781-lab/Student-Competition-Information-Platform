@@ -26,7 +26,8 @@ def _current_user(
     user_id = verify_token(token, get_settings().app_secret)
     if user_id is None:
         return None
-    return db.get(User, user_id)
+    user = db.get(User, user_id)
+    return user if user is not None and user.is_active else None
 
 
 def get_current_user_optional(

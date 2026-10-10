@@ -130,7 +130,8 @@ class FactIntelligenceService:
                 for field, value in payload.items():
                     setattr(raw, field, value)
 
-            if competition is not None:
+            from app.database.review_guard import is_review_guarded
+            if competition is not None and not is_review_guarded(db):
                 competition.entity_type = entity_type
                 competition.is_competition = entity_type == "competition"
                 if not competition.is_competition:
@@ -285,6 +286,9 @@ class FactIntelligenceService:
         return stats
 
     def refresh_verification(self, db: Session) -> dict[str, int]:
+        from app.database.review_guard import is_review_guarded
+        if is_review_guarded(db):
+            return {"deferred_to_field_review": 1}
         stats: dict[str, int] = {}
         competitions = list(db.execute(select(Competition).where(Competition.is_demo.is_(False))).scalars())
         for competition in competitions:
@@ -412,6 +416,11 @@ class FactIntelligenceService:
         return lead, created
 
     def _promote_official_record(self, db: Session, record: dict, observed_at: datetime) -> dict[str, bool]:
+        from app.database.review_guard import is_review_guarded
+        if is_review_guarded(db):
+            from app.services.competition_field_ingestion_service import CompetitionFieldIngestionService
+            rows = CompetitionFieldIngestionService().stage_record(db, record, producer="official_record")
+            return {"competition_created": False, "edition_created": False, "candidates_staged": len(rows)}
         record_source_type = str(
             record.get("source_type")
             or ("organizer_official_notice" if record.get("reliability_tier") == 1 else "university_official_notice")

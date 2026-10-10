@@ -1,9 +1,12 @@
 from dataclasses import dataclass
+from hashlib import sha256
+from datetime import datetime, timezone
 
 from sqlalchemy import select
-from sqlalchemy.orm import Session
+from sqlalchemy.orm import Session, joinedload
 
 from app.models import CompetitionPolicyRecognition, PolicyDocument
+from app.services.user_facing_data_policy import UserFacingDataPolicy
 
 
 @dataclass(slots=True)
@@ -36,6 +39,7 @@ class PolicyResolutionService:
         college_id: int | None = None,
         major_id: int | None = None,
         year: int | None = None,
+        verified_only: bool = False,
     ) -> PolicyResolutionResult:
         scopes = [
             ("major", major_id),
@@ -43,7 +47,7 @@ class PolicyResolutionService:
             ("university", None),
         ]
         scoped_results = [
-            self._scope_result(db, competition_id=competition_id, university_id=university_id, scope_type=scope, scope_id=scope_id, year=year)
+            self._scope_result(db, competition_id=competition_id, university_id=university_id, scope_type=scope, scope_id=scope_id, year=year, verified_only=verified_only)
             for scope, scope_id in scopes
             if scope == "university" or scope_id is not None
         ]
@@ -62,7 +66,7 @@ class PolicyResolutionService:
                 effective_recognition_id=None,
                 secondary_policy_document_id=None,
                 conflict=False,
-                reason="暂未找到公开政策，不能判断认可或不认可。",
+                reason="暂未找到可适用于当前范围的公开政策，不能判断认可或不认可。",
                 evidence_text=None,
                 needs_manual_review=True,
             )
@@ -99,6 +103,7 @@ class PolicyResolutionService:
         scope_type: str,
         scope_id: int | None,
         year: int | None,
+        verified_only: bool = False,
     ) -> dict:
         recognition_stmt = select(CompetitionPolicyRecognition).where(
             CompetitionPolicyRecognition.competition_id == competition_id,
@@ -108,6 +113,14 @@ class PolicyResolutionService:
             PolicyDocument.university_id == university_id,
             PolicyDocument.scope_type == scope_type,
         )
+        if verified_only:
+            policy_stmt = policy_stmt.where(UserFacingDataPolicy.verified_clause(PolicyDocument))
+            recognition_stmt = recognition_stmt.where(
+                CompetitionPolicyRecognition.is_demo.is_(False),
+                CompetitionPolicyRecognition.needs_manual_review.is_(False),
+                CompetitionPolicyRecognition.recognition_status.in_(("recognized", "explicitly_not_recognized", "not_mentioned")),
+                CompetitionPolicyRecognition.policy_document.has(UserFacingDataPolicy.verified_clause(PolicyDocument)),
+            )
         if scope_type == "major":
             recognition_stmt = recognition_stmt.where(CompetitionPolicyRecognition.major_id == scope_id)
             policy_stmt = policy_stmt.where(PolicyDocument.major_id == scope_id)
@@ -124,12 +137,14 @@ class PolicyResolutionService:
             recognition_stmt = recognition_stmt.where(CompetitionPolicyRecognition.year == year)
             policy_stmt = policy_stmt.where(PolicyDocument.year == year)
 
-        recognition = db.execute(
-            recognition_stmt.order_by(
-                CompetitionPolicyRecognition.year.desc().nullslast(),
-                CompetitionPolicyRecognition.confidence.desc(),
-            )
-        ).scalars().first()
+        if verified_only:
+            recognition_stmt = recognition_stmt.options(joinedload(CompetitionPolicyRecognition.policy_document))
+        recognitions = db.scalars(recognition_stmt.order_by(
+            CompetitionPolicyRecognition.year.desc().nullslast(),
+            CompetitionPolicyRecognition.confidence.desc(),
+        ))
+        recognition = next((item for item in recognitions
+                            if not verified_only or self._public_document_scope(item.policy_document)), None)
         if recognition:
             return {
                 "scope": scope_type,
@@ -140,7 +155,9 @@ class PolicyResolutionService:
                 "needs_manual_review": recognition.needs_manual_review,
             }
 
-        policy = db.execute(policy_stmt.order_by(PolicyDocument.year.desc().nullslast())).scalars().first()
+        policies = db.scalars(policy_stmt.order_by(PolicyDocument.year.desc().nullslast()))
+        policy = next((item for item in policies
+                       if not verified_only or self._public_document_scope(item)), None)
         if policy:
             return {
                 "scope": scope_type,
@@ -159,6 +176,42 @@ class PolicyResolutionService:
             "evidence_text": None,
             "needs_manual_review": True,
         }
+
+    @staticmethod
+    def _public_document_scope(document: PolicyDocument) -> bool:
+        # This public resolver has no student-population selector. A reviewed
+        # historical or restricted policy cannot establish current general
+        # applicability just because its positive scoped recognition was omitted.
+        metadata = document.metadata_json or {}
+        if metadata.get("superseded_by") or metadata.get("policy_version_conflict"):
+            return False
+        automation = metadata.get("policy_automation") or {}
+        if automation and automation.get("source_sha256") != sha256((document.content_text or "").encode()).hexdigest():
+            return False
+        if automation.get("blocking_reasons"):
+            return False
+        scope = (document.metadata_json or {}).get("relation_scope")
+        if scope is None:
+            return True
+        if not (isinstance(scope, dict) and document.is_current
+                and scope.get("current_validity_confirmed") is True
+                and scope.get("student_scope") in {"undergraduate", "all"}
+                and not scope.get("revoked")):
+            return False
+        now = datetime.now(timezone.utc)
+        for key in ("effective_from", "effective_until"):
+            value = scope.get(key)
+            if value is None:
+                continue
+            try:
+                instant = datetime.fromisoformat(value.replace("Z", "+00:00"))
+            except (AttributeError, TypeError, ValueError):
+                return False
+            if instant.utcoffset() is None:
+                return False
+            if (key == "effective_from" and instant > now) or (key == "effective_until" and instant < now):
+                return False
+        return True
 
     def _reason(self, scope: str, conflict: bool) -> str:
         scope_label = {

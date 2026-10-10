@@ -108,5 +108,6 @@ class PolicyDataService:
             college_id=college_id,
             major_id=major_id,
             year=year,
+            verified_only=True,
         )
         return PolicyResolutionRead(**asdict(result))

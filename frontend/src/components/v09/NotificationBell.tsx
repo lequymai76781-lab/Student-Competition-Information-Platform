@@ -1,18 +1,24 @@
 "use client";
 
+import { SessionBoundary } from "@/components/v09/SessionBoundary";
+
 import Link from "next/link";
 import { Bell } from "lucide-react";
 import { useEffect, useState } from "react";
 
 import { unreadNotifications } from "@/lib/v09-api";
+import { useSessionToken } from "@/lib/use-session";
 
 export function NotificationBell() {
+  return <SessionBoundary><NotificationBellSession /></SessionBoundary>;
+}
+
+function NotificationBellSession() {
   const [count, setCount] = useState(0);
-  const [token, setTokenState] = useState(false);
+  const token = useSessionToken();
 
   useEffect(() => {
-    if (!window.localStorage.getItem("v09_token")) return;
-    setTokenState(true);
+    if (!token) return;
     const refresh = () =>
       unreadNotifications()
         .then((data) => setCount(data.unread))
@@ -20,7 +26,7 @@ export function NotificationBell() {
     refresh();
     const timer = window.setInterval(refresh, 60_000);
     return () => window.clearInterval(timer);
-  }, []);
+  }, [token]);
 
   if (!token) return null;
   return (

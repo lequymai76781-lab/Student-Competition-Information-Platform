@@ -2,6 +2,7 @@ from sqlalchemy import select
 from sqlalchemy.orm import Session, selectinload
 
 from app.models import Competition, PolicyDocument, University, UniversityCompetitionPolicy, UniversityPolicy
+from app.services.user_facing_data_policy import UserFacingDataPolicy
 
 
 class UniversityRepository:
@@ -37,6 +38,7 @@ class UniversityRepository:
         stmt = select(PolicyDocument).where(
             PolicyDocument.university_id == university_id,
             PolicyDocument.is_demo.is_(False),
+            UserFacingDataPolicy.verified_clause(PolicyDocument),
         )
         if year is not None:
             stmt = stmt.where(PolicyDocument.year == year)
@@ -78,7 +80,10 @@ class UniversityRepository:
             select(UniversityCompetitionPolicy, Competition.name, UniversityPolicy.policy_name)
             .join(Competition, Competition.id == UniversityCompetitionPolicy.competition_id)
             .outerjoin(UniversityPolicy, UniversityPolicy.id == UniversityCompetitionPolicy.policy_id)
-            .where(UniversityCompetitionPolicy.university_id == university_id)
+            .where(UniversityCompetitionPolicy.university_id == university_id,
+                   UniversityCompetitionPolicy.is_demo.is_(False),
+                   UniversityCompetitionPolicy.recognition_status.in_(("recognized", "explicitly_not_recognized")),
+                   UniversityPolicy.is_verified.is_(True), UniversityPolicy.is_demo.is_(False))
             .order_by(UniversityCompetitionPolicy.year.desc(), Competition.name.asc())
         )
         if year is not None:

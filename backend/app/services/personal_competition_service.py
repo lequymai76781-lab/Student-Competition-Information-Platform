@@ -21,6 +21,7 @@ from app.models import (
     CompetitionTag,
     Favorite,
     Major,
+    PolicyDocument,
     Tag,
     University,
     UniversityCompetitionEditionRelation,
@@ -109,7 +110,7 @@ class PersonalCompetitionService:
         for row in competition_tag_rows:
             tag_ids_by_competition.setdefault(row.competition_id, []).append(row.tag_id)
         return {
-            "competitions": {item.id: item for item in competitions},
+            "competitions": {item.id: item for item in competitions if self.policy.competition_allowed(item)},
             "editions": editions,
             "tags": tags,
             "tag_ids_by_competition": tag_ids_by_competition,
@@ -146,7 +147,7 @@ class PersonalCompetitionService:
         rows = [
             edition
             for edition in catalog["editions"]
-            if edition.competition_id == competition_id and edition.year >= 2025
+            if edition.competition_id == competition_id and self.policy.verified_record(edition)
         ]
         return max(rows, key=lambda item: item.year, default=None)
 
@@ -159,19 +160,25 @@ class PersonalCompetitionService:
         user: User,
         *,
         only_ids: set[int] | None = None,
+        edition_id: int | None = None,
+        university_id: int | None = None,
+        college_id: int | None = None,
+        use_profile_scope: bool = True,
     ) -> dict[int, dict[str, Any]]:
         profile = user.profile
         if profile is None:
             return {}
+        if use_profile_scope:
+            university_id, college_id = profile.university_id, profile.college_id
         catalog = self._load_catalog(db)
         user_tags = self._user_tags(profile)
         relations = list(
             db.execute(
                 select(UniversityCompetitionEditionRelation).where(
-                    UniversityCompetitionEditionRelation.university_id == profile.university_id
+                    UniversityCompetitionEditionRelation.university_id == university_id
                 )
             ).scalars()
-        ) if profile.university_id else []
+        ) if university_id else []
         relations = [row for row in relations if self.policy.relation_allowed(row)]
         relation_by_edition: dict[int, list] = {}
         for relation in relations:
@@ -180,22 +187,27 @@ class PersonalCompetitionService:
             row.competition_id
             for row in db.execute(
                 select(CompetitionPolicyRecognition).where(
-                    CompetitionPolicyRecognition.university_id == profile.university_id,
+                    CompetitionPolicyRecognition.university_id == university_id,
                     CompetitionPolicyRecognition.recognition_status == "recognized",
                     CompetitionPolicyRecognition.is_demo.is_(False),
+                    CompetitionPolicyRecognition.needs_manual_review.is_(False),
+                    CompetitionPolicyRecognition.policy_document.has(self.policy.verified_clause(PolicyDocument)),
                 )
             ).scalars()
-        } if profile.university_id else set()
+        } if university_id else set()
         college_recognitions = {
             row.competition_id
             for row in db.execute(
                 select(CompetitionPolicyRecognition).where(
-                    CompetitionPolicyRecognition.college_id == profile.college_id,
+                    CompetitionPolicyRecognition.college_id == college_id,
+                    CompetitionPolicyRecognition.university_id == university_id,
                     CompetitionPolicyRecognition.recognition_status == "recognized",
                     CompetitionPolicyRecognition.is_demo.is_(False),
+                    CompetitionPolicyRecognition.needs_manual_review.is_(False),
+                    CompetitionPolicyRecognition.policy_document.has(self.policy.verified_clause(PolicyDocument)),
                 )
             ).scalars()
-        } if profile.college_id else set()
+        } if college_id else set()
         favorites = {
             row.competition_id
             for row in db.execute(
@@ -214,44 +226,33 @@ class PersonalCompetitionService:
         for competition_id, competition in catalog["competitions"].items():
             if only_ids is not None and competition_id not in only_ids:
                 continue
-            edition = self._latest_edition(competition_id, catalog)
+            edition = (next((e for e in catalog["editions"] if e.id == edition_id and self.policy.verified_record(e)
+                             and e.competition_id == competition_id), None)
+                       if edition_id is not None else self._latest_edition(competition_id, catalog))
             edition_relations = (
                 relation_by_edition.get(edition.id, []) if edition is not None else []
             )
             school_relations = [r for r in edition_relations if r.college_id is None]
             college_relations = [
                 r for r in edition_relations
-                if profile.college_id is not None and r.college_id == profile.college_id
+                if college_id is not None and r.college_id == college_id
             ]
-            if not school_relations:
-                # relations may target any edition of this competition
-                school_relations = [
-                    r for r in relations
-                    if r.competition_edition_id in {
-                        e.id for e in catalog["editions"] if e.competition_id == competition_id
-                    } and r.college_id is None
-                ]
-            if not college_relations:
-                college_relations = [
-                    r for r in relations
-                    if r.competition_edition_id in {
-                        e.id for e in catalog["editions"] if e.competition_id == competition_id
-                    } and profile.college_id is not None and r.college_id == profile.college_id
-                ]
 
             tags = self._competition_tags(competition_id, catalog)
             tag_names = {item["name"] for item in tags}
             matched_tags = sorted(tag_names & user_tags)
             reasons: list[dict[str, str]] = []
-            current_status = edition.current_status if edition else None
+            current_status = self.deadline_service.status(edition, university_id=university_id,
+                                                        college_id=college_id, now=now)
             effective_deadline: datetime | None = None
             effective_label: str | None = None
             deadline_resolution: dict[str, Any] | None = None
             if edition is not None:
                 deadline, label, resolution = self.deadline_service.resolve_action(
                     edition,
-                    university_id=profile.university_id,
-                    college_id=profile.college_id,
+                    university_id=university_id,
+                    college_id=college_id,
+                    now=now,
                 )
                 effective_deadline = self._aware(deadline) if deadline else None
                 effective_label = label
@@ -309,6 +310,7 @@ class PersonalCompetitionService:
                 "tags": tags,
                 "current_status": current_status,
                 "edition_year": edition.year if edition else None,
+                "edition_id": edition.id if edition else None,
                 "edition_name": edition.edition_name if edition else None,
                 "official_url": competition.official_website,
                 "effective_deadline": effective_deadline.isoformat() if effective_deadline else None,
@@ -458,8 +460,11 @@ class PersonalCompetitionService:
             },
         }
 
-    def competition_context(self, db: Session, user: User, competition_id: int) -> dict[str, Any]:
-        row = self.personalized_competitions(db, user, only_ids={competition_id}).get(competition_id)
+    def competition_context(self, db: Session, user: User, competition_id: int, *,
+                            edition_id: int | None = None, university_id: int | None = None,
+                            college_id: int | None = None, use_profile_scope: bool = True) -> dict[str, Any]:
+        row = self.personalized_competitions(db, user, only_ids={competition_id}, edition_id=edition_id,
+            university_id=university_id, college_id=college_id, use_profile_scope=use_profile_scope).get(competition_id)
         if row is None:
             return {"found": False}
         return {"found": True, "item": {key: value for key, value in row.items() if key != "_effective_dt"}}

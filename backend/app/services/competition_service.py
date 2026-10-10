@@ -1,4 +1,4 @@
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 
 from fastapi import HTTPException
 from sqlalchemy import select
@@ -30,6 +30,8 @@ from app.schemas.competition import (
 from app.schemas.tag import TagRead
 from app.services.source_credibility_service import SourceCredibilityService
 from app.services.deadline_resolution_service import DeadlineResolutionService
+from app.services.edition_status_service import ACTIONABLE_STATUSES
+from app.services.user_facing_data_policy import UserFacingDataPolicy
 
 
 class CompetitionService:
@@ -62,7 +64,7 @@ class CompetitionService:
         deadline_before: datetime | None = None,
         year: int | None = None,
         sort: str = "deadline",
-        limit: int = 50,
+        limit: int | None = 50,
         offset: int = 0,
     ) -> list[CompetitionListItem]:
         competitions = self.repository.list_competitions(
@@ -73,36 +75,58 @@ class CompetitionService:
             grade=grade,
             team_type=team_type,
             status=status,
-            edition_status=edition_status,
+            edition_status=None,
             tag=tag,
-            availability=availability,
+            availability=None,
             policy_coverage_min=policy_coverage_min,
             data_completeness_min=data_completeness_min,
             has_college_recognition=has_college_recognition,
             cross_university=cross_university,
             competition_type=competition_type,
-            source_scope=source_scope,
+            source_scope=None if source_scope == "registration_open" else source_scope,
             university_id=university_id,
             college_id=college_id,
             year=year,
             sort=sort,
-            limit=limit,
-            offset=offset,
+            limit=None,
+            offset=0,
         )
-        competitions = self.repository.list_deadline_before(competitions, deadline_before)
+        now = datetime.now(timezone.utc)
+        required_status = edition_status or ("registration_open" if source_scope == "registration_open" else None)
         items = [
-            self._to_list_item(competition, university_id=university_id, college_id=college_id)
+            self._to_list_item(competition, university_id=university_id, college_id=college_id,
+                               now=now, year=year, required_status=required_status, source_scope=source_scope)
             for competition in competitions
         ]
-
+        if source_scope or year is not None:
+            items = [item for item in items if item.current_edition_id is not None]
+        if required_status:
+            items = [item for item in items if item.current_status == required_status]
+        if availability:
+            horizon = now + timedelta(days=30 if availability == "next_30_days" else 90)
+            items = [item for item in items if item.current_status in ACTIONABLE_STATUSES
+                     and item.action_deadline and now <= self._aware(item.action_deadline) <= horizon]
+        if deadline_before:
+            items = [item for item in items if item.action_deadline
+                     and self._aware(item.action_deadline) <= self._aware(deadline_before)]
         if sort == "deadline":
-            return sorted(
+            items = sorted(
                 items,
                 key=lambda item: self._aware(item.action_deadline) if item.action_deadline else datetime.max.replace(tzinfo=timezone.utc),
             )
-        if sort == "latest":
-            return sorted(items, key=lambda item: item.id, reverse=True)
-        return items
+        return items[offset:offset + limit] if limit is not None else items[offset:]
+
+    def count_open_competitions(self, db: Session) -> dict[str, int]:
+        """Count each competition once per status, using the list's edition rules."""
+        competitions = self.repository.list_competitions(db, limit=None)
+        now = datetime.now(timezone.utc)
+        return {
+            status: sum(
+                self._current_edition(competition, now=now, required_status=status) is not None
+                for competition in competitions
+            )
+            for status in ("registration_open", "submission_open")
+        }
 
     def get_competition(
         self,
@@ -111,10 +135,13 @@ class CompetitionService:
         *,
         university_id: int | None = None,
         college_id: int | None = None,
+        edition_id: int | None = None,
     ) -> CompetitionDetail:
         competition = self.repository.get_by_id(db, competition_id)
-        if competition is None:
+        if competition is None or not UserFacingDataPolicy.competition_allowed(competition):
             raise HTTPException(status_code=404, detail="Competition not found")
+        if edition_id is not None and not any(edition.id == edition_id for edition in competition.editions):
+            raise HTTPException(status_code=404, detail="Competition edition not found")
         fact_sources = list(
             db.execute(
                 select(CompetitionFactSource)
@@ -138,6 +165,7 @@ class CompetitionService:
             revisions,
             university_id=university_id,
             college_id=college_id,
+            edition_id=edition_id,
         )
 
     def create_competition(self, db: Session, competition_in: CompetitionCreate) -> CompetitionDetail:
@@ -162,27 +190,55 @@ class CompetitionService:
         rows = self.repository.list_recognition(db, competition_id, university_id)
         return [CompetitionRecognitionRead(**row) for row in rows]
 
-    def _current_edition(self, competition: Competition) -> CompetitionEdition | None:
-        if not competition.editions:
+    def _current_edition(self, competition: Competition, *, university_id=None, college_id=None,
+                         now=None, year=None, required_status=None, edition_id=None, source_scope=None) -> CompetitionEdition | None:
+        editions = [edition for edition in competition.editions
+                    if UserFacingDataPolicy.verified_record(edition) and (year is None or edition.year == year)
+                    and (edition_id is None or edition.id == edition_id)]
+        now = now or datetime.now(timezone.utc)
+        if source_scope:
+            editions = [edition for edition in editions if self._matches_source_scope(
+                edition, source_scope, university_id=university_id, college_id=college_id, now=now)]
+        if required_status:
+            editions = [edition for edition in editions if self.deadline_service.status(
+                edition, university_id=university_id, college_id=college_id, now=now) == required_status]
+        if not editions:
             return None
-        now = datetime.now(timezone.utc)
         actionable = [
             edition
-            for edition in competition.editions
+            for edition in editions
             if edition.is_verified
-            and self._edition_action_deadline(edition, now)
-            and edition.current_status in {"registration_open", "registration_upcoming", "submission_open", "upcoming"}
+            and self.deadline_service.status(edition, university_id=university_id, college_id=college_id, now=now) in ACTIONABLE_STATUSES
         ]
         if actionable:
             return min(
                 actionable,
-                key=lambda edition: self._edition_action_deadline(edition, now) or datetime.max.replace(tzinfo=timezone.utc),
+                key=lambda edition: self._aware(self.deadline_service.resolve_action(
+                    edition, university_id=university_id, college_id=college_id, now=now)[0])
+                    if self.deadline_service.resolve_action(edition, university_id=university_id, college_id=college_id, now=now)[0]
+                    else datetime.max.replace(tzinfo=timezone.utc),
             )
         return sorted(
-            competition.editions,
-            key=lambda edition: (edition.is_verified, edition.year),
+            editions,
+            key=lambda edition: (edition.is_verified, edition.year, edition.id),
             reverse=True,
         )[0]
+
+    def _matches_source_scope(self, edition, source_scope, *, university_id, college_id, now):
+        if source_scope == "registration_open":
+            return self.deadline_service.status(
+                edition, university_id=university_id, college_id=college_id, now=now) == "registration_open"
+        if source_scope == "official_current":
+            return bool(edition.is_verified and edition.year >= now.year and (
+                edition.official_notice_url or edition.official_registration_url or edition.official_registration_deadline))
+        if source_scope in {"university_notice", "my_university_notice", "my_college_notice"}:
+            return any(
+                UserFacingDataPolicy.relation_allowed(relation)
+                and (source_scope == "university_notice" or relation.university_id == university_id)
+                and (source_scope != "my_college_notice" or relation.college_id == college_id)
+                for relation in edition.university_relations
+            )
+        return True
 
     def _to_list_item(
         self,
@@ -190,18 +246,28 @@ class CompetitionService:
         *,
         university_id: int | None = None,
         college_id: int | None = None,
+        now: datetime | None = None,
+        year: int | None = None,
+        required_status: str | None = None,
+        edition_id: int | None = None,
+        source_scope: str | None = None,
     ) -> CompetitionListItem:
-        edition = self._current_edition(competition)
+        now = now or datetime.now(timezone.utc)
+        edition = self._current_edition(competition, university_id=university_id, college_id=college_id,
+                                        now=now, year=year, required_status=required_status, edition_id=edition_id,
+                                        source_scope=source_scope)
         action_deadline, action_label, resolution = self.deadline_service.resolve_action(
             edition,
             university_id=university_id,
             college_id=college_id,
+            now=now,
         )
         statistics = competition.statistics
         featured = self._featured_recognition(competition)
-        university_count = len({item.university_id for item in competition.policy_recognitions})
+        recognitions = [item for item in competition.policy_recognitions if UserFacingDataPolicy.recognition_allowed(item)]
+        university_count = len({item.university_id for item in recognitions})
         college_count = len(
-            {(item.university_id, item.college_id) for item in competition.policy_recognitions if item.college_id is not None}
+            {(item.university_id, item.college_id) for item in recognitions if item.college_id is not None}
         )
         return CompetitionListItem(
             id=competition.id,
@@ -228,11 +294,14 @@ class CompetitionService:
             effective_deadline=resolution.effective_deadline,
             effective_deadline_type=resolution.effective_deadline_type,
             current_edition_name=edition.edition_name if edition else None,
-            current_status=edition.current_status if edition else None,
+            current_edition_id=edition.id if edition else None,
+            registration_closing_soon=bool(action_deadline and now <= self._aware(action_deadline) <= now + timedelta(days=7)
+                and self.deadline_service.status(edition, university_id=university_id, college_id=college_id, now=now) == "registration_open"),
+            current_status=self.deadline_service.status(edition, university_id=university_id, college_id=college_id, now=now),
             policy_reference_count=statistics.policy_reference_count if statistics else 0,
             university_inclusion_count=university_count,
             college_inclusion_count=college_count,
-            has_college_recognition=any(item.college_id is not None for item in competition.policy_recognitions),
+            has_college_recognition=any(item.college_id is not None for item in recognitions),
             official_source_count=statistics.official_source_count if statistics else 0,
             source_count=statistics.source_count if statistics else len([source for source in competition.sources if not source.is_demo]),
             university_source_count=statistics.university_source_count if statistics else self._loaded_university_source_count(competition),
@@ -256,13 +325,17 @@ class CompetitionService:
         *,
         university_id: int | None = None,
         college_id: int | None = None,
+        edition_id: int | None = None,
     ) -> CompetitionDetail:
+        now = datetime.now(timezone.utc)
         list_item = self._to_list_item(
             competition,
             university_id=university_id,
             college_id=college_id,
+            now=now,
+            edition_id=edition_id,
         )
-        current_edition = self._current_edition(competition)
+        current_edition = next((edition for edition in competition.editions if edition.id == list_item.current_edition_id), None)
         return CompetitionDetail(
             **list_item.model_dump(),
             english_name=competition.english_name,
@@ -278,11 +351,11 @@ class CompetitionService:
             undertakers=competition.undertakers or [],
             description_source_url=competition.description_source_url,
             development_history=competition.development_history,
-            history_timeline=competition.history_timeline or [],
-            participation_requirements=competition.participation_requirements or [],
-            competition_process=competition.competition_process or [],
-            submission_requirements=competition.submission_requirements or [],
-            award_settings=competition.award_settings or [],
+            history_timeline=self._verified_items(competition.history_timeline),
+            participation_requirements=self._verified_items(competition.participation_requirements),
+            competition_process=self._verified_items(competition.competition_process),
+            submission_requirements=self._verified_items(competition.submission_requirements),
+            award_settings=self._verified_items(competition.award_settings),
             detail_ready=competition.detail_ready,
             founded_year_candidate=competition.founded_year_candidate,
             competition_format=competition.competition_format,
@@ -309,11 +382,20 @@ class CompetitionService:
                 for child in competition.children
             ],
             tracks=competition.tracks,
-            editions=[self._edition_read(edition) for edition in competition.editions],
-            sources=competition.sources,
-            fact_sources=[CompetitionFactSourceRead.model_validate(item) for item in fact_sources],
-            fact_revisions=[CompetitionFactRevisionRead.model_validate(item) for item in fact_revisions],
-            university_notices=university_notices,
+            editions=[self._edition_read(edition, university_id=university_id, college_id=college_id, now=now)
+                      for edition in competition.editions if UserFacingDataPolicy.verified_record(edition)],
+            sources=[item for item in competition.sources if UserFacingDataPolicy.verified_record(item)
+                     and item.competition_edition_id in (None, list_item.current_edition_id)],
+            fact_sources=[CompetitionFactSourceRead.model_validate(item) for item in fact_sources
+                          if item.competition_edition_id in (None, list_item.current_edition_id)
+                          and item.verification_status in UserFacingDataPolicy.VERIFIED_FACT_STATUSES],
+            fact_revisions=[CompetitionFactRevisionRead.model_validate(item) for item in fact_revisions
+                            if item.competition_edition_id in (None, list_item.current_edition_id)
+                            and item.verification_status in UserFacingDataPolicy.VERIFIED_FACT_STATUSES],
+            university_notices=[item for item in university_notices
+                                if item.competition_edition_id == list_item.current_edition_id
+                                and (university_id is None or item.university_id == university_id)
+                                and (college_id is None or item.college_id in (None, college_id))],
             deadline_resolution=self.deadline_service.resolve_registration(
                 current_edition,
                 university_id=university_id,
@@ -325,12 +407,16 @@ class CompetitionService:
             updated_at=competition.updated_at,
         )
 
-    def _edition_read(self, edition: CompetitionEdition) -> CompetitionEditionRead:
+    def _verified_items(self, items):
+        return [item for item in items or [] if isinstance(item, dict)
+                and item.get("verification_status") in UserFacingDataPolicy.VERIFIED_FACT_STATUSES]
+
+    def _edition_read(self, edition: CompetitionEdition, *, university_id=None, college_id=None, now=None) -> CompetitionEditionRead:
         return CompetitionEditionRead(
             id=edition.id,
             year=edition.year,
             edition_name=edition.edition_name,
-            registration_start=edition.registration_start,
+            registration_start=self.deadline_service.registration_start(edition, university_id=university_id, college_id=college_id),
             registration_deadline=edition.registration_deadline,
             official_registration_deadline=edition.official_registration_deadline,
             university_registration_deadline=edition.university_registration_deadline,
@@ -354,15 +440,16 @@ class CompetitionService:
             source_updated_at=edition.source_updated_at,
             next_check_at=edition.next_check_at,
             freshness_status=edition.freshness_status,
-            status=edition.current_status,
-            current_status=edition.current_status,
+            status=self.deadline_service.status(edition, university_id=university_id, college_id=college_id, now=now),
+            current_status=self.deadline_service.status(edition, university_id=university_id, college_id=college_id, now=now),
         )
 
     def _featured_recognition(self, competition: Competition) -> FeaturedRecognition | None:
-        if not competition.policy_recognitions:
+        recognitions = [item for item in competition.policy_recognitions if UserFacingDataPolicy.recognition_allowed(item)]
+        if not recognitions:
             return None
         ordered = sorted(
-            competition.policy_recognitions,
+            recognitions,
             key=lambda item: (
                 item.university.name != "武汉体育学院",
                 item.college_id is None,
@@ -426,6 +513,7 @@ class CompetitionService:
                 is_verified=relation.is_verified,
             )
             for relation, university_name, college_name, edition in rows
+            if UserFacingDataPolicy.relation_allowed(relation)
         ]
 
     def _loaded_university_source_count(self, competition: Competition) -> int:
@@ -460,6 +548,7 @@ class CompetitionService:
 
     def _verification_label(self, status: str) -> str:
         return {
+            "verified_manual": "人工核验通过",
             "verified_official": "官方来源已核实",
             "authority_confirmed": "国家级权威已确认",
             "association_confirmed": "高教学会/全国学会目录已收录（非教育部认定）",

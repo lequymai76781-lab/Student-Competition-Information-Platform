@@ -2,20 +2,23 @@ from __future__ import annotations
 
 import logging
 
-from fastapi import APIRouter, Depends, HTTPException, status
+from fastapi import Query, APIRouter, Depends, HTTPException, status
 from sqlalchemy import select
 from sqlalchemy.orm import Session
 
 from app.api.deps import get_current_user, get_current_user_optional, get_db
 from app.core.responses import ApiResponse, success_response
+from app.services.field_review_origins import stage_correction
 from app.core.ratelimit import rate_limit
 from app.models import (
     BetaFeedback,
     College,
     Competition,
+    CompetitionEdition,
     Favorite,
     Major,
     Notification,
+    ReviewQueue,
     University,
     User,
     UserCompetitionStatus,
@@ -78,17 +81,9 @@ def update_profile(
                 College.name == college_name.strip(),
             )
         ).scalar_one_or_none()
-        if college is None:
-            college = College(
-                university_id=university_id,
-                name=college_name.strip(),
-                is_verified=True,
-                is_demo=False,
-            )
-            db.add(college)
-            db.flush()
-        college_id = college.id
-        college_name = college.name
+        if college is not None and college.is_verified and not college.is_demo:
+            college_id = college.id
+            college_name = college.name
 
     major_id = payload.major_id
     major_name = payload.major_name
@@ -96,12 +91,9 @@ def update_profile(
         major = db.execute(
             select(Major).where(Major.name == major_name.strip())
         ).scalar_one_or_none()
-        if major is None:
-            major = Major(name=major_name.strip())
-            db.add(major)
-            db.flush()
-        major_id = major.id
-        major_name = major.name
+        if major is not None:
+            major_id = major.id
+            major_name = major.name
 
     updates = {
         "university_id": university_id,
@@ -119,6 +111,12 @@ def update_profile(
         "accept_cross_major": payload.accept_cross_major,
         "accept_cross_university": payload.accept_cross_university,
     }
+    # A new free-text name replaces an old directory link; it is not a request
+    # to verify or create a shared directory entry.
+    if college_name and payload.college_id is None:
+        profile.college_id = college_id
+    if major_name and payload.major_id is None:
+        profile.major_id = major_id
     for key, value in updates.items():
         if value is not None:
             setattr(profile, key, value)
@@ -143,10 +141,15 @@ def overview(user: User = Depends(get_current_user), db: Session = Depends(get_d
 @router.get("/users/me/competitions/{competition_id}/context", response_model=ApiResponse)
 def competition_context(
     competition_id: int,
+    edition_id: int | None = None,
+    university_id: int | None = None,
+    college_id: int | None = None,
     user: User = Depends(get_current_user),
     db: Session = Depends(get_db),
 ) -> dict:
-    return success_response(service.competition_context(db, user, competition_id))
+    return success_response(service.competition_context(db, user, competition_id,
+        edition_id=edition_id, university_id=university_id, college_id=college_id,
+        use_profile_scope=university_id is None and college_id is None))
 
 
 @router.get("/users/me/calendar-events", response_model=ApiResponse)
@@ -253,7 +256,7 @@ def interest_options() -> dict:
 def university_colleges(university_id: int, db: Session = Depends(get_db)) -> dict:
     rows = db.execute(
         select(College)
-        .where(College.university_id == university_id, College.is_demo.is_(False))
+        .where(College.university_id == university_id, College.is_demo.is_(False), College.is_verified.is_(True))
         .order_by(College.name.asc())
     ).scalars().all()
     return success_response([{"id": row.id, "name": row.name} for row in rows])
@@ -339,6 +342,10 @@ def submit_correction(
     competition = db.get(Competition, payload.competition_id)
     if competition is None:
         raise HTTPException(status_code=404, detail="赛事不存在")
+    if payload.competition_edition_id is not None:
+        edition = db.get(CompetitionEdition, payload.competition_edition_id)
+        if edition is None or edition.competition_id != payload.competition_id:
+            raise HTTPException(status_code=422, detail="届次不属于此赛事")
     row = UserCorrectionSubmission(
         user_id=user.id,
         competition_id=payload.competition_id,
@@ -349,18 +356,32 @@ def submit_correction(
         contact_note=payload.contact_note,
         status="pending",
     )
-    db.add(row)
-    record_metric(db, "correction_submitted", user.id)
-    db.commit()
-    return success_response({"id": row.id, "status": "pending"}, message="submitted")
+    try:
+        db.add(row)
+        db.flush()
+        db.add(ReviewQueue(item_type="user_correction", item_id=row.id, competition_id=row.competition_id,
+            reason=row.correction_type, evidence_text=row.description, source_url=row.source_url,
+            status="pending", is_demo=False))
+        candidate = stage_correction(db, row, proposed_value=payload.proposed_value)
+        record_metric(db, "correction_submitted", user.id)
+        result = {"id": row.id, "status": "pending", "field_review_id": candidate.id}
+        db.commit()
+    except Exception:
+        db.rollback()
+        raise
+    return success_response(result, message="submitted")
 
 
 @router.get("/users/me/corrections", response_model=ApiResponse)
-def my_corrections(user: User = Depends(get_current_user), db: Session = Depends(get_db)) -> dict:
+def my_corrections(
+    user: User = Depends(get_current_user), db: Session = Depends(get_db),
+    limit: int = Query(50, ge=1, le=100), offset: int = Query(0, ge=0),
+) -> dict:
     rows = db.execute(
         select(UserCorrectionSubmission)
         .where(UserCorrectionSubmission.user_id == user.id)
-        .order_by(UserCorrectionSubmission.created_at.desc())
+        .order_by(UserCorrectionSubmission.created_at.desc(), UserCorrectionSubmission.id.desc())
+        .limit(limit).offset(offset)
     ).scalars().all()
     return success_response(
         [
@@ -368,6 +389,9 @@ def my_corrections(user: User = Depends(get_current_user), db: Session = Depends
                 "id": row.id,
                 "competition_id": row.competition_id,
                 "correction_type": row.correction_type,
+                "competition_edition_id": row.competition_edition_id,
+                "source_url": row.source_url,
+                "review_note": row.review_note,
                 "description": row.description,
                 "status": row.status,
                 "created_at": row.created_at.isoformat() if row.created_at else None,

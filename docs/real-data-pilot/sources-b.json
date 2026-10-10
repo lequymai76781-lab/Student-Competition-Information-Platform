@@ -1,0 +1,779 @@
+[
+  {
+    "competition_id": 5,
+    "name": "全国大学生电子设计竞赛",
+    "reason": "核对全国报名截止、精确比赛时刻与校内截止分离，并保留读取失败来源。",
+    "aliases": [],
+    "sources": [
+      {
+        "key": "b05-national-2025",
+        "url": "https://nuedc-sh.sjtu.edu.cn/storage/seiee/project/nuedc/article/2025/04/00d80fd1c067b95f5f7bf3968a58d3d5.pdf",
+        "title": "关于组织2025年全国大学生电子设计竞赛的通知",
+        "publisher": "全国大学生电子设计竞赛组委会",
+        "source_type": "organizer_notice",
+        "published_at": null,
+        "accessed_at": "2026-09-27T15:50:09Z",
+        "access_status": "readable",
+        "year": 2025,
+        "competition_fields": {
+          "min_team_size": 3,
+          "max_team_size": 3,
+          "target_students": "具有正式学籍的全日制在校本科或高职高专学生",
+          "official_website": "http://nuedc.xjtu.edu.cn"
+        },
+        "edition_fields": {
+          "edition_name": "2025年全国大学生电子设计竞赛",
+          "official_registration_deadline": "2025-05-31T00:00:00+08:00",
+          "competition_start": "2025-07-30T08:00:00+08:00",
+          "competition_end": "2025-08-02T20:00:00+08:00"
+        },
+        "evidence_notes": "全国组委会文件由上海赛区网站提供；正文第三页列明全国截止及起止时刻。报名截止仅日精度，按契约记00:00；未读到落款日期，发布时间留空。",
+        "university_notice": null
+      },
+      {
+        "key": "b05-ustb-2025",
+        "url": "https://jwc.ustb.edu.cn/tztg/e8068136b4b64b298ca4fe6a6e57ccb3.htm",
+        "title": "2025年全国大学生电子设计竞赛暨校内赛启动报名通知",
+        "publisher": "北京科技大学教务处、高等工程师学院",
+        "source_type": "university_notice",
+        "published_at": null,
+        "accessed_at": "2026-09-27T15:50:09Z",
+        "access_status": "readable",
+        "year": 2025,
+        "competition_fields": {
+          "competition_format": "网上发题、本校制作、校外集中测评"
+        },
+        "edition_fields": {
+          "competition_start": "2025-07-30T08:00:00+08:00",
+          "competition_end": "2025-08-02T20:00:00+08:00"
+        },
+        "evidence_notes": "教通知〔2025〕39号。校内报名截止原文为3月22日24:00，等价记为次日00:00；网页无明确发布日期。学分和奖学金安排不直接解释为赛事分类认定。",
+        "university_notice": {
+          "university_name": "北京科技大学",
+          "notice_type": "registration_notice",
+          "is_formal_recognition": false,
+          "school_deadline": "2025-03-23T00:00:00+08:00"
+        }
+      },
+      {
+        "key": "b05-shanghai-2025",
+        "url": "https://nuedc-sh.sjtu.edu.cn/storage/seiee/project/nuedc/article/2025/04/0d6f9533df52fb134cb6c1eb4d9f86e1.pdf",
+        "title": "关于转发《关于组织2025年全国大学生电子设计竞赛的通知》的通知",
+        "publisher": "全国大学生电子设计竞赛上海赛区组织委员会",
+        "source_type": "organizer_notice",
+        "published_at": "2025-04-23",
+        "accessed_at": "2026-09-27T15:50:09Z",
+        "access_status": "readable",
+        "year": 2025,
+        "competition_fields": {},
+        "edition_fields": {
+          "competition_start": "2025-07-30T08:00:00+08:00",
+          "competition_end": "2025-08-02T20:00:00+08:00"
+        },
+        "evidence_notes": "电上组字〔2025〕01号。正文明确为全国同时竞赛时刻；上海大学承办、跨校限制及征题截止属于上海赛区，未写入全国通用字段。",
+        "university_notice": null
+      },
+      {
+        "key": "b05-shanghai-unavailable",
+        "url": "https://nuedc-sh.sjtu.edu.cn/post_detail.php?id=42",
+        "title": null,
+        "publisher": "全国大学生电子设计竞赛上海赛区网站",
+        "source_type": "official_website",
+        "published_at": null,
+        "accessed_at": "2026-09-27T15:50:09Z",
+        "access_status": "unavailable",
+        "year": null,
+        "competition_fields": {},
+        "edition_fields": {},
+        "evidence_notes": "web.open超时，未读取正文或完整标题；搜索结果只作线索，无事实候选。",
+        "university_notice": null
+      }
+    ]
+  },
+  {
+    "competition_id": 8,
+    "name": "ACM-ICPC国际大学生程序设计竞赛",
+    "reason": "既有实体保留，候选区分ICPC现名称、曾用名、1970起源与1977首届总决赛。",
+    "aliases": [
+      "ICPC",
+      "ICPC国际大学生程序设计竞赛",
+      "ACM-ICPC国际大学生程序设计竞赛",
+      "ACM International Collegiate Programming Contest"
+    ],
+    "sources": [
+      {
+        "key": "b08-history-2008",
+        "url": "https://docs.icpc.global/wf2008/",
+        "title": "The 2008 ACM INTERNATIONAL COLLEGIATE PROGRAMMING CONTEST — FACT SHEET – 29 JAN 2008",
+        "publisher": "ICPC Documents",
+        "source_type": "official_website",
+        "published_at": "2008-01-29",
+        "accessed_at": "2026-09-27T15:50:09Z",
+        "access_status": "readable",
+        "year": 2008,
+        "competition_fields": {
+          "history_timeline": [
+            {
+              "year": 1970,
+              "title": "竞赛起源",
+              "description": "Texas A&M的UPE Alpha分会举办早期竞赛。"
+            },
+            {
+              "year": 1977,
+              "title": "首届总决赛",
+              "description": "首届总决赛在ACM Computer Science Conference举行。"
+            }
+          ]
+        },
+        "edition_fields": {},
+        "evidence_notes": "官方历史文档区分起源与首届总决赛，不把1977直接写为创办年。FACT SHEET日期明确；2008是文档对应总决赛年，本条仅提供历史候选。",
+        "university_notice": null
+      },
+      {
+        "key": "b08-current-2026",
+        "url": "https://wf.icpc.global/2026/about/",
+        "title": "The 2026 ICPC World Finals Dubai hosted by Dubai Chamber of Digital Economy — About ICPC",
+        "publisher": "ICPC",
+        "source_type": "official_website",
+        "published_at": null,
+        "accessed_at": "2026-09-27T15:50:09Z",
+        "access_status": "readable",
+        "year": 2026,
+        "competition_fields": {
+          "english_name": "International Collegiate Programming Contest",
+          "short_name": "ICPC",
+          "min_team_size": 3,
+          "max_team_size": 3,
+          "competition_scope": "全球高校"
+        },
+        "edition_fields": {
+          "edition_name": "2026 ICPC World Finals Dubai",
+          "host_location": "Dubai"
+        },
+        "evidence_notes": "2026官方介绍再次说明1970起源、1977首届冠军赛；正文写每队三人。未提供页面发布日期或可确认的比赛日，均未推断。",
+        "university_notice": null
+      },
+      {
+        "key": "b08-former-name-cup",
+        "url": "https://www.cup.edu.cn/cupai/xw/11e12803bb80448eb3f3344423fab2e7.htm",
+        "title": "信息学子在两项大学生程序设计竞赛中获佳绩",
+        "publisher": "中国石油大学（北京）",
+        "source_type": "university_notice",
+        "published_at": "2019-11-07",
+        "accessed_at": "2026-09-27T15:50:09Z",
+        "access_status": "readable",
+        "year": 2019,
+        "competition_fields": {
+          "name": "ICPC国际大学生程序设计竞赛",
+          "former_names": [
+            "ACM-ICPC国际大学生程序设计竞赛"
+          ]
+        },
+        "edition_fields": {},
+        "evidence_notes": "正文明确写ICPC原名ACM-ICPC。没有给出确切更名年份，因此不生成2018年更名时间线；报道银川站成绩不当作校级认定。",
+        "university_notice": {
+          "university_name": "中国石油大学（北京）",
+          "notice_type": "other",
+          "is_formal_recognition": false,
+          "school_deadline": null
+        }
+      }
+    ]
+  },
+  {
+    "competition_id": 10,
+    "name": "全国大学生机械创新设计大赛",
+    "reason": "两届资料覆盖2024和2026，识别通知发布日期与届次年度、常规赛和挑战赛分季的差别。",
+    "aliases": [],
+    "sources": [
+      {
+        "key": "b10-2026-first-notice",
+        "url": "https://12umic.hit.edu.cn/2025/0321/c20012a364782/page.htm",
+        "title": "第十二届全国大学生机械创新设计大赛主题与内容的通知（第1号通知）",
+        "publisher": "全国大学生机械创新设计大赛组委会（哈尔滨工业大学赛事专站）",
+        "source_type": "organizer_notice",
+        "published_at": "2025-03-21",
+        "accessed_at": "2026-09-27T15:50:09Z",
+        "access_status": "readable",
+        "year": 2026,
+        "competition_fields": {
+          "organizer": "全国大学生机械创新设计大赛组委会",
+          "max_team_size": 5,
+          "team_type": "个人或小组",
+          "official_website": "https://umic.moocollege.com",
+          "development_history": "第十二届分为2026年常规赛赛季和2027年数字孪生设计挑战赛赛季。"
+        },
+        "edition_fields": {
+          "edition_name": "第十二届全国大学生机械创新设计大赛（2026年常规赛）",
+          "edition_number": 12,
+          "host_location": "黑龙江省哈尔滨市哈尔滨工业大学"
+        },
+        "evidence_notes": "页面发布于2025年；年度依据正文常规赛2026年。决赛仅称7月中下旬，未造具体日期；2027挑战赛保留在历史说明，未混入2026赛程。",
+        "university_notice": null
+      },
+      {
+        "key": "b10-ahut-2024",
+        "url": "https://jxgcxy.ahut.edu.cn/info/2573/13436.htm",
+        "title": "关于第十一届（2024年）全国大学生机械创新设计大赛安徽工业大学校级选拔赛的通知",
+        "publisher": "安徽工业大学机械工程学院、创新教育学院",
+        "source_type": "university_notice",
+        "published_at": "2024-03-20",
+        "accessed_at": "2026-09-27T15:50:09Z",
+        "access_status": "readable",
+        "year": 2024,
+        "competition_fields": {
+          "frequency": "每两年举办一次",
+          "max_team_size": 5
+        },
+        "edition_fields": {
+          "edition_name": "第十一届全国大学生机械创新设计大赛",
+          "edition_number": 11,
+          "host_location": "华中科技大学"
+        },
+        "evidence_notes": "频率为2024来源表述，与2026新分季规则需人工对照。校内材料截止3月26日12:00；国赛仅称2024年7月，未生成具体比赛日。",
+        "university_notice": {
+          "university_name": "安徽工业大学",
+          "notice_type": "organization_notice",
+          "is_formal_recognition": false,
+          "school_deadline": "2024-03-26T12:00:00+08:00"
+        }
+      },
+      {
+        "key": "b10-2024-official-blocked",
+        "url": "http://11umic.hust.edu.cn/",
+        "title": null,
+        "publisher": "华中科技大学第十一届机械创新设计大赛网站",
+        "source_type": "official_website",
+        "published_at": null,
+        "accessed_at": "2026-09-27T15:50:09Z",
+        "access_status": "blocked",
+        "year": null,
+        "competition_fields": {},
+        "edition_fields": {},
+        "evidence_notes": "由安徽工业大学通知指向；web.open返回不可访问，未读取标题或正文，不提取事实。",
+        "university_notice": null
+      },
+      {
+        "key": "b10-shmtu-pdf-unavailable",
+        "url": "https://jwc.shmtu.edu.cn/_upload/article/files/1d/8f/5b333b7448dc9df96ec5ddccea16/b4fae240-0e8d-4ff2-aa65-db99ea3168d8.pdf",
+        "title": "第十一届全国大学生机械创新设计大赛文件",
+        "publisher": "上海海事大学教务处（附件载体）",
+        "source_type": "university_notice",
+        "published_at": null,
+        "accessed_at": "2026-09-27T15:50:09Z",
+        "access_status": "unavailable",
+        "year": null,
+        "competition_fields": {},
+        "edition_fields": {},
+        "evidence_notes": "搜索发现附件，web.open内部错误；标题来自索引，未读取正文，未提事实。",
+        "university_notice": {
+          "university_name": "上海海事大学",
+          "notice_type": "other",
+          "is_formal_recognition": false,
+          "school_deadline": null
+        }
+      }
+    ]
+  },
+  {
+    "competition_id": 11,
+    "name": "全国大学生结构设计竞赛",
+    "reason": "核对历史来源、全国决赛日期及校赛安排，并避免将校赛组队上限推广到国赛。",
+    "aliases": [],
+    "sources": [
+      {
+        "key": "b11-nyist-2025",
+        "url": "https://xsc.nyist.edu.cn/info/1025/13098.htm",
+        "title": "2025年关于组织第十八届全国大学生结构设计竞赛的通知",
+        "publisher": "南阳理工学院学生处",
+        "source_type": "university_notice",
+        "published_at": "2025-01-07",
+        "accessed_at": "2026-09-27T15:50:09Z",
+        "access_status": "readable",
+        "year": 2025,
+        "competition_fields": {
+          "founded_year": 2005,
+          "official_website": "http://www.structurecontest.com/",
+          "development_history": "2005年由浙江大学倡导并牵头国内11所高校共同发起。"
+        },
+        "edition_fields": {
+          "edition_name": "第十八届全国大学生结构设计竞赛",
+          "edition_number": 18,
+          "host_location": "绍兴文理学院风则江校区",
+          "competition_start": "2025-10-15T00:00:00+08:00",
+          "competition_end": "2025-10-19T00:00:00+08:00"
+        },
+        "evidence_notes": "全国决赛日期在此来源中为拟定，日精度按00:00记录；未将教育部门批准表述当成学校认定。",
+        "university_notice": {
+          "university_name": "南阳理工学院",
+          "notice_type": "competition_notice",
+          "is_formal_recognition": false,
+          "school_deadline": null
+        }
+      },
+      {
+        "key": "b11-xzit-2025",
+        "url": "https://jwc.xzit.edu.cn/04/ef/c6057a197871/page.htm",
+        "title": "关于举办2025年校级大学生结构设计竞赛的通知",
+        "publisher": "徐州工程学院教务处、土木工程学院",
+        "source_type": "university_notice",
+        "published_at": "2025-04-24",
+        "accessed_at": "2026-09-27T15:50:09Z",
+        "access_status": "readable",
+        "year": 2025,
+        "competition_fields": {},
+        "edition_fields": {
+          "edition_name": "2025年“建行杯”第十八届全国大学生结构设计竞赛",
+          "edition_number": 18
+        },
+        "evidence_notes": "校内报名4月24日至30日，截止日精度按00:00。每队不超过4人及校赛改题属于本校规则，未写为全国参赛人数或赛题。",
+        "university_notice": {
+          "university_name": "徐州工程学院",
+          "notice_type": "registration_notice",
+          "is_formal_recognition": false,
+          "school_deadline": "2025-04-30T00:00:00+08:00"
+        }
+      },
+      {
+        "key": "b11-ujs-final-2025",
+        "url": "https://www.ujs.edu.cn/info/1062/203542.htm",
+        "title": "学校在全国大学生结构设计竞赛中首获一等奖",
+        "publisher": "江苏大学（教务处、土木工程与力学学院）",
+        "source_type": "university_notice",
+        "published_at": "2025-10-24",
+        "accessed_at": "2026-09-27T15:50:09Z",
+        "access_status": "readable",
+        "year": 2025,
+        "competition_fields": {},
+        "edition_fields": {
+          "edition_number": 18,
+          "competition_start": "2025-10-15T00:00:00+08:00",
+          "competition_end": "2025-10-19T00:00:00+08:00",
+          "host_location": "绍兴文理学院"
+        },
+        "evidence_notes": "赛后报道确认总决赛10月15日至19日举行，可与年初拟定安排核对；日期仅日精度。学校获奖报道不等于学校赛事认定。",
+        "university_notice": {
+          "university_name": "江苏大学",
+          "notice_type": "other",
+          "is_formal_recognition": false,
+          "school_deadline": null
+        }
+      }
+    ]
+  },
+  {
+    "competition_id": 20,
+    "name": "全国大学生智能汽车竞赛",
+    "reason": "2024/2025两届及多校来源，观察官方主办方、总决赛与校赛日期隔离。",
+    "aliases": [
+      "全国大学生智能车竞赛"
+    ],
+    "sources": [
+      {
+        "key": "b20-final-2024",
+        "url": "https://cxcyxy.jsut.edu.cn/_upload/article/files/d3/0b/0de6e8a3482bbafb903df5c35a75/1a18aa04-2096-4eb1-a42d-5677af0dc75b.pdf",
+        "title": "关于第十九届全国大学生智能汽车竞赛总决赛的通知",
+        "publisher": "全国大学生智能汽车竞赛组委会（哈尔滨工程大学代，江苏理工学院网站转载）",
+        "source_type": "university_notice",
+        "published_at": "2024-08-07",
+        "accessed_at": "2026-09-27T15:50:09Z",
+        "access_status": "readable",
+        "year": 2024,
+        "competition_fields": {
+          "organizer": "中国自动化学会",
+          "official_website": "http://www.smartcarrace.com"
+        },
+        "edition_fields": {
+          "edition_name": "第十九届全国大学生智能汽车竞赛总决赛",
+          "edition_number": 19,
+          "competition_start": "2024-08-19T00:00:00+08:00",
+          "competition_end": "2024-08-22T00:00:00+08:00",
+          "host_location": "哈尔滨工程大学"
+        },
+        "evidence_notes": "正文和落款完整可读。总决赛安排8月19日至22日，含报到日，日精度记00:00；高校站转载的组委会附件，保留高校来源类型。",
+        "university_notice": {
+          "university_name": "江苏理工学院",
+          "notice_type": "competition_notice",
+          "is_formal_recognition": false,
+          "school_deadline": null
+        }
+      },
+      {
+        "key": "b20-dhu-2024",
+        "url": "https://jw.dhu.edu.cn/2024/0422/c22080a343203/page.htm",
+        "title": "2024年第十九届全国大学生智能汽车竞赛校内选拔赛通知",
+        "publisher": "东华大学教务处",
+        "source_type": "university_notice",
+        "published_at": "2024-04-22",
+        "accessed_at": "2026-09-27T15:50:09Z",
+        "access_status": "readable",
+        "year": 2024,
+        "competition_fields": {},
+        "edition_fields": {
+          "edition_number": 19
+        },
+        "evidence_notes": "校内报名截止5月6日15:00，5月7日比赛为校赛而非全国赛。页面的创新学分与奖学金适用于本次校级竞赛，未当作全国赛事分类认定。",
+        "university_notice": {
+          "university_name": "东华大学",
+          "notice_type": "registration_notice",
+          "is_formal_recognition": false,
+          "school_deadline": "2024-05-06T15:00:00+08:00"
+        }
+      },
+      {
+        "key": "b20-yznu-2025",
+        "url": "https://jwc.yznu.edu.cn/2025/0313/c1802a256459/page.htm",
+        "title": "关于组织学生参加第二十届全国大学生智能汽车竞赛的通知",
+        "publisher": "长江师范学院教务处、电子信息工程学院",
+        "source_type": "university_notice",
+        "published_at": "2025-03-13",
+        "accessed_at": "2026-09-27T15:50:09Z",
+        "access_status": "readable",
+        "year": 2025,
+        "competition_fields": {
+          "organizer": "中国自动化学会、第二十届全国大学生智能汽车竞赛组织委员会"
+        },
+        "edition_fields": {
+          "edition_name": "第二十届全国大学生智能汽车竞赛",
+          "edition_number": 20
+        },
+        "evidence_notes": "网页发布日期3月13日、正文落款3月12日，保留前者。校内报名截止3月19日，日精度记00:00；国赛只写8月，未造日精度日期。",
+        "university_notice": {
+          "university_name": "长江师范学院",
+          "notice_type": "registration_notice",
+          "is_formal_recognition": false,
+          "school_deadline": "2025-03-19T00:00:00+08:00"
+        }
+      },
+      {
+        "key": "b20-jsu-unavailable",
+        "url": "https://cise.jsu.edu.cn/tzgg/92686856b09f4ebebc770089d215b8b3.htm",
+        "title": "关于举办2024年吉首大学智能汽车竞赛暨第十九届全国大学生智能汽车竞赛选拔赛的通知",
+        "publisher": "吉首大学通信与电子工程学院",
+        "source_type": "university_notice",
+        "published_at": null,
+        "accessed_at": "2026-09-27T15:50:09Z",
+        "access_status": "unavailable",
+        "year": null,
+        "competition_fields": {},
+        "edition_fields": {},
+        "evidence_notes": "搜索提供线索，web.open超时，未读取正文；不采信索引中2006年历史或校赛事实。",
+        "university_notice": {
+          "university_name": "吉首大学",
+          "notice_type": "other",
+          "is_formal_recognition": false,
+          "school_deadline": null
+        }
+      }
+    ]
+  },
+  {
+    "competition_id": 27,
+    "name": "全国大学生化工设计竞赛",
+    "reason": "全国官方报名与预赛作品截止清晰；燕山大学通知含学校分类声称及独立校赛截止，未取得认定政策原文。",
+    "aliases": [],
+    "sources": [
+      {
+        "key": "b27-official-2025",
+        "url": "https://iche.zju.edu.cn/a/sstz/1544.html",
+        "title": "2025年“天正设计杯”第十九届全国大学生化工设计竞赛通知",
+        "publisher": "中国化工学会、中国化工教育协会、全国大学生化工设计竞赛委员会",
+        "source_type": "organizer_notice",
+        "published_at": "2025-02-28",
+        "accessed_at": "2026-09-27T15:50:09Z",
+        "access_status": "readable",
+        "year": 2025,
+        "competition_fields": {
+          "organizer": "中国化工学会、中国化工教育协会",
+          "min_team_size": 5,
+          "max_team_size": 5,
+          "is_cross_university_supported": false,
+          "is_cross_major_supported": true
+        },
+        "edition_fields": {
+          "edition_name": "2025年“天正设计杯”第十九届全国大学生化工设计竞赛",
+          "edition_number": 19,
+          "registration_start": "2025-03-01T00:00:00+08:00",
+          "official_registration_deadline": "2025-03-31T00:00:00+08:00",
+          "official_submission_deadline": "2025-07-15T00:00:00+08:00",
+          "host_location": "天津大学"
+        },
+        "evidence_notes": "报名3月1日至31日；7月15日前为预赛作品截止，非8月10日前决赛修改稿。日精度记00:00。全国总决赛8月12至17日为拟定，未当作最终日期。",
+        "university_notice": null
+      },
+      {
+        "key": "b27-ysu-2025",
+        "url": "https://cxcy.ysu.edu.cn/info/1043/2761.htm",
+        "title": "关于报名参加2025年第十九届全国大学生化工设计竞赛通知",
+        "publisher": "燕山大学创新创业教育与指导中心、环境与化学工程学院",
+        "source_type": "university_notice",
+        "published_at": "2025-03-04",
+        "accessed_at": "2026-09-27T15:50:09Z",
+        "access_status": "readable",
+        "year": 2025,
+        "competition_fields": {},
+        "edition_fields": {
+          "edition_number": 19
+        },
+        "evidence_notes": "报名通知正文声称本校一类创新创业竞赛，未取得政策原文，is_formal_recognition=false。7月1日为校赛作品截止，仅存school_deadline；日精度按00:00，不覆盖全国预赛7月15日。",
+        "university_notice": {
+          "university_name": "燕山大学",
+          "notice_type": "registration_notice",
+          "is_formal_recognition": false,
+          "school_deadline": "2025-07-01T00:00:00+08:00"
+        }
+      },
+      {
+        "key": "b27-introduction-empty",
+        "url": "https://iche.zju.edu.cn/jsjj.html",
+        "title": "竞赛简介",
+        "publisher": "全国大学生化工设计竞赛官网",
+        "source_type": "official_website",
+        "published_at": null,
+        "accessed_at": "2026-09-27T15:50:09Z",
+        "access_status": "unavailable",
+        "year": null,
+        "competition_fields": {},
+        "edition_fields": {},
+        "evidence_notes": "由官网竞赛简介链接打开，返回0行，未能读取正文；不推断创办年份等字段。",
+        "university_notice": null
+      }
+    ]
+  },
+  {
+    "competition_id": 32,
+    "name": "“西门子杯”中国智能制造挑战赛",
+    "reason": "官网2025/2026全国截止与两校2025校内截止并列，保留曾用名与2006发起证据。",
+    "aliases": [
+      "CIMC",
+      "全国大学生控制仿真挑战赛",
+      "全国大学生工业自动化挑战赛",
+      "全国大学生“西门子杯”工业自动化挑战赛"
+    ],
+    "sources": [
+      {
+        "key": "b32-official-2025",
+        "url": "https://www.siemenscup-cimc.org.cn/notice/NoticeDetail?id=1937",
+        "title": "关于开展2025年第十九届CIMC“西门子杯”中国智能制造挑战赛的通知",
+        "publisher": "中国智能制造挑战赛全国竞赛组委会",
+        "source_type": "organizer_notice",
+        "published_at": "2025-03-01",
+        "accessed_at": "2026-09-27T15:50:09Z",
+        "access_status": "readable",
+        "year": 2025,
+        "competition_fields": {
+          "former_names": [
+            "全国大学生控制仿真挑战赛",
+            "全国大学生工业自动化挑战赛"
+          ],
+          "founded_year": 2006,
+          "short_name": "CIMC"
+        },
+        "edition_fields": {
+          "edition_name": "2025年第十九届CIMC“西门子杯”中国智能制造挑战赛",
+          "edition_number": 19,
+          "registration_start": "2025-03-01T00:00:00+08:00",
+          "official_registration_deadline": "2025-05-31T00:00:00+08:00"
+        },
+        "evidence_notes": "正文要求在官网注册组队，日期仅到日，按00:00记录。页尾简介明确北京化工大学与西门子于2006年共同发起。",
+        "university_notice": null
+      },
+      {
+        "key": "b32-finals-2025",
+        "url": "https://www.siemenscup-cimc.org.cn/notice/NoticeDetail?id=2422",
+        "title": "2025年CIMC“西门子杯”中国智能制造挑战赛 全国总决赛通知",
+        "publisher": "中国智能制造挑战赛全国竞赛组委会",
+        "source_type": "organizer_notice",
+        "published_at": "2025-07-25",
+        "accessed_at": "2026-09-27T15:50:09Z",
+        "access_status": "readable",
+        "year": 2025,
+        "competition_fields": {},
+        "edition_fields": {
+          "competition_start": "2025-08-11T00:00:00+08:00",
+          "competition_end": "2025-08-15T00:00:00+08:00",
+          "host_location": "山西省太原市太原理工大学"
+        },
+        "evidence_notes": "总决赛通知明确8月11日至15日在太原理工大学进行；日期仅日精度，按00:00。",
+        "university_notice": null
+      },
+      {
+        "key": "b32-cugb-2025",
+        "url": "https://jwc.cugb.edu.cn/c/2025-04-15/823937.shtml",
+        "title": "第十九届 “西门子杯”中国智能制造挑战赛报名通知",
+        "publisher": "中国地质大学（北京）教务处、信息工程学院",
+        "source_type": "university_notice",
+        "published_at": "2025-04-15",
+        "accessed_at": "2026-09-27T15:50:09Z",
+        "access_status": "readable",
+        "year": 2025,
+        "competition_fields": {
+          "min_team_size": 1,
+          "max_team_size": 3
+        },
+        "edition_fields": {
+          "official_registration_deadline": "2025-05-31T00:00:00+08:00"
+        },
+        "evidence_notes": "正文分列学校系统截止5月22日12:00和官网报名5月31日，后者日精度记00:00。人数为1至3，通识方向单人；组织选拔和费用报销不等于学校正式分类认定。",
+        "university_notice": {
+          "university_name": "中国地质大学（北京）",
+          "notice_type": "registration_notice",
+          "is_formal_recognition": false,
+          "school_deadline": "2025-05-22T12:00:00+08:00"
+        }
+      },
+      {
+        "key": "b32-hfut-2025",
+        "url": "https://gpzx.hfut.edu.cn/2025/0324/c2411a310901/page.htm",
+        "title": "关于组织2025年第十九届CIMC“西门子杯”中国智能制造挑战赛报名的通知",
+        "publisher": "合肥工业大学教务处、工程素质教育中心、电气与自动化工程学院",
+        "source_type": "university_notice",
+        "published_at": "2025-03-24",
+        "accessed_at": "2026-09-27T15:50:09Z",
+        "access_status": "readable",
+        "year": 2025,
+        "competition_fields": {},
+        "edition_fields": {
+          "edition_number": 19
+        },
+        "evidence_notes": "网页3月24日发布，正文落款3月19日。报名截止3月31日为本校，日精度记00:00；4月30日校内技术方案截止留在此说明，不当全国作品截止。",
+        "university_notice": {
+          "university_name": "合肥工业大学",
+          "notice_type": "registration_notice",
+          "is_formal_recognition": false,
+          "school_deadline": "2025-03-31T00:00:00+08:00"
+        }
+      },
+      {
+        "key": "b32-official-2026",
+        "url": "https://www.siemenscup-cimc.org.cn/joinflow/index",
+        "title": "2026年CIMC参赛说明",
+        "publisher": "中国智能制造挑战赛全国竞赛组委会",
+        "source_type": "official_website",
+        "published_at": null,
+        "accessed_at": "2026-09-27T15:50:09Z",
+        "access_status": "readable",
+        "year": 2026,
+        "competition_fields": {},
+        "edition_fields": {
+          "edition_name": "2026年CIMC“西门子杯”中国智能制造挑战赛",
+          "registration_start": "2026-03-01T00:00:00+08:00",
+          "official_registration_deadline": "2026-05-31T00:00:00+08:00"
+        },
+        "evidence_notes": "当前动态页面正文明确全国报名3月1日至5月31日，日精度记00:00；没有明确发布日。各赛项方案截止不同，未合成全赛统一作品截止。",
+        "university_notice": null
+      }
+    ]
+  },
+  {
+    "competition_id": 34,
+    "name": "中国大学生计算机设计大赛",
+    "reason": "官网明确2008创办及2024/2025两届，多校报名及学校分类声称对照，并保留发布日期异常；未取得认定政策原文。",
+    "aliases": [
+      "4C"
+    ],
+    "sources": [
+      {
+        "key": "b34-official-2025",
+        "url": "https://jsjds.blcu.edu.cn/info/1043/2474.htm",
+        "title": "2025年4C省级赛通知汇集（动态更新）",
+        "publisher": "中国大学生计算机设计大赛组织委员会",
+        "source_type": "official_website",
+        "published_at": "2025-01-21",
+        "accessed_at": "2026-09-27T15:50:09Z",
+        "access_status": "readable",
+        "year": 2025,
+        "competition_fields": {
+          "founded_year": 2008,
+          "frequency": "每年举办一次",
+          "organizer": "中国大学生计算机设计大赛组织委员会",
+          "competition_format": "校级赛、省级赛、国家级赛三级竞赛"
+        },
+        "edition_fields": {
+          "edition_name": "2025年（第18届）中国大学生计算机设计大赛",
+          "edition_number": 18
+        },
+        "evidence_notes": "官方正文明确教育部计算机相关教指委于2008年创办；各省赛通知动态更新。7月中旬至8月下旬只是常规国赛时段，不生成具体日期。",
+        "university_notice": null
+      },
+      {
+        "key": "b34-official-2024",
+        "url": "https://jsjds.blcu.edu.cn/4C2024tongzhiV2.pdf",
+        "title": "关于举办“2024年（第17届）中国大学生计算机设计大赛”的通知（第二次）",
+        "publisher": "中国大学生计算机设计大赛组织委员会",
+        "source_type": "organizer_notice",
+        "published_at": null,
+        "accessed_at": "2026-09-27T15:50:09Z",
+        "access_status": "readable",
+        "year": 2024,
+        "competition_fields": {
+          "first_held_year": 2008,
+          "history_timeline": [
+            {
+              "year": 2007,
+              "title": "开始筹备"
+            },
+            {
+              "year": 2008,
+              "title": "举办首届"
+            }
+          ]
+        },
+        "edition_fields": {
+          "edition_name": "2024年（第17届）中国大学生计算机设计大赛",
+          "edition_number": 17
+        },
+        "evidence_notes": "PDF正文可读，规程明确2007始筹、2008首届。搜索索引日期4月18日而打开提取落款1月1日，截图工具不可用，故发布日期留空；分赛区日期未合成全赛统一日期。",
+        "university_notice": null
+      },
+      {
+        "key": "b34-cdu-2025",
+        "url": "https://jw.cdu.edu.cn/info/1039/11829.htm",
+        "title": "关于举办2025年中国大学生计算机设计大赛的通知",
+        "publisher": "成都大学教务处、计算机学院、美术与设计学院",
+        "source_type": "university_notice",
+        "published_at": "2025-03-28",
+        "accessed_at": "2026-09-27T15:50:09Z",
+        "access_status": "readable",
+        "year": 2025,
+        "competition_fields": {
+          "founded_year": 2008
+        },
+        "edition_fields": {
+          "edition_number": 18
+        },
+        "evidence_notes": "正文称自2008年开赛。学校报名截止4月23日，作品最后提交5月5日；前者存school_deadline（日精度00:00），后者仅备注，均不进入全国截止。",
+        "university_notice": {
+          "university_name": "成都大学",
+          "notice_type": "registration_notice",
+          "is_formal_recognition": false,
+          "school_deadline": "2025-04-23T00:00:00+08:00"
+        }
+      },
+      {
+        "key": "b34-hbfs-2025",
+        "url": "https://www.hbfs.edu.cn/ysx/56/d5/c10747a349909/pagem.htm",
+        "title": "关于组织2025年（第18届）中国大学生计算机设计大赛的通知",
+        "publisher": "湖北经济学院法商学院传媒与艺术设计系、信息与管理工程系",
+        "source_type": "university_notice",
+        "published_at": "2025-03-31",
+        "accessed_at": "2026-09-27T15:50:09Z",
+        "access_status": "readable",
+        "year": 2025,
+        "competition_fields": {
+          "founded_year": 2008
+        },
+        "edition_fields": {
+          "edition_number": 18
+        },
+        "evidence_notes": "组织通知正文声称本校A类竞赛，未取得政策原文，is_formal_recognition=false。页首3月31日与落款5月31日冲突；校内截止4月18日仅存school_deadline（日精度00:00）。",
+        "university_notice": {
+          "university_name": "湖北经济学院法商学院",
+          "notice_type": "organization_notice",
+          "is_formal_recognition": false,
+          "school_deadline": "2025-04-18T00:00:00+08:00"
+        }
+      }
+    ]
+  }
+]

@@ -7,33 +7,36 @@ import { StatusBadge } from "@/components/StatusBadge";
 import { TagPill } from "@/components/TagPill";
 import { PersonalContext } from "@/components/v09/PersonalContext";
 import { CorrectionForm } from "@/components/v09/CorrectionForm";
-import { getCompetition, getCompetitionRecognition, getCompetitionUpdates } from "@/lib/api";
-import { freshnessDate, freshnessLabel, statusLabel, verificationLabel, verificationTone } from "@/lib/format";
+import { SchoolSelector } from "@/components/SchoolSelector";
+import { getCompetition, getCompetitionRecognition, getCompetitionUpdates, getAllUniversities, getUniversity } from "@/lib/api";
+import { formatDate, freshnessDate, freshnessLabel, statusLabel, verificationLabel, verificationTone } from "@/lib/format";
 import type { CompetitionEdition, CompetitionFactRevision, CompetitionFactSource, CompetitionSource, DeadlineResolution, DetailFactItem, UniversityCompetitionNotice } from "@/lib/types";
 
 type CompetitionDetailPageProps = {
   params: Promise<{ id: string }> | { id: string };
-  searchParams?: Promise<{ university_id?: string; college_id?: string }> | { university_id?: string; college_id?: string };
+  searchParams?: Promise<{ university_id?: string; college_id?: string; edition_id?: string }> | { university_id?: string; college_id?: string; edition_id?: string };
 };
 
 export default async function CompetitionDetailPage({ params, searchParams }: CompetitionDetailPageProps) {
   const { id } = await Promise.resolve(params);
   const profile = await Promise.resolve(searchParams ?? {});
-  const [competition, recognitions, updates] = await Promise.all([
-    getCompetition(id, { university_id: profile.university_id, college_id: profile.college_id }),
-    getCompetitionRecognition(id),
-    getCompetitionUpdates(id)
-  ]);
+  if (!/^\d+$/.test(id)) notFound();
+  const competition = await getCompetition(id, { university_id: profile.university_id, college_id: profile.college_id, edition_id: profile.edition_id });
   if (!competition) notFound();
+  const [allRecognitions, updates, universities, selectedUniversity] = await Promise.all([
+    getCompetitionRecognition(id),
+    getCompetitionUpdates(id, competition.current_edition_id ?? profile.edition_id),
+    getAllUniversities(),
+    profile.university_id ? getUniversity(profile.university_id) : Promise.resolve(null)
+  ]);
+  const recognitions = allRecognitions.filter((item) => !profile.university_id || String(item.university_id) === profile.university_id);
 
   const aliases = unique([...(competition.aliases ?? []), ...(competition.former_names ?? [])]);
   const selectedNotices = profile.university_id
     ? competition.university_notices.filter((notice) => `${notice.university_id}` === profile.university_id)
     : competition.university_notices;
   const editions = [...competition.editions].sort((a, b) => b.year - a.year);
-  const currentEdition = editions.find((edition) => ["registration_open", "submission_open", "ongoing"].includes(edition.current_status))
-    ?? editions.find((edition) => edition.year === 2026)
-    ?? editions[0];
+  const currentEdition = editions.find((edition) => edition.id === competition.current_edition_id);
   const sourceGroups = groupSources(competition.sources, competition.fact_sources);
   const overviewFacts = compactFacts([
     ["主办单位", competition.organizer],
@@ -43,7 +46,7 @@ export default async function CompetitionDetailPage({ params, searchParams }: Co
     ["参赛形式", competition.team_type],
     ["团队人数", teamSize(competition.min_team_size, competition.max_team_size)],
     ["创办年份", competition.founded_year ? `${competition.founded_year}年` : null],
-    [currentEdition?.current_status === "submission_open" ? "作品提交截止" : "报名截止", safeDate(currentEdition?.official_submission_deadline ?? currentEdition?.submission_deadline ?? currentEdition?.official_registration_deadline ?? currentEdition?.registration_deadline)],
+    [competition.action_deadline_label ?? "报名截止", safeDate(competition.action_deadline)],
     ["赛事范围", competition.competition_scope],
     ["国家或地区", competition.country_or_region],
     ["其他名称", aliases.join("、")]
@@ -52,8 +55,10 @@ export default async function CompetitionDetailPage({ params, searchParams }: Co
   const hasOrganization = Boolean(competition.organizer || competition.co_organizers?.length || competition.guiding_organizations?.length || competition.undertakers?.length || competition.official_account);
   const hasParticipation = Boolean(competition.target_students || competition.team_type || competition.min_team_size || competition.max_team_size || competition.participation_requirements?.length);
   const hasProcess = Boolean(competition.competition_process?.length || competition.competition_format || competition.typical_schedule);
-  const hasHistory = Boolean(editions.length || competition.history_timeline?.length || competition.development_history || competition.founded_year || competition.first_held_year || competition.frequency);
-  const displayStatus = competition.current_status && competition.current_status !== "unknown" ? competition.current_status : competition.status;
+  const verifiedHistory = (competition.history_timeline ?? []).filter((event) => isHttpUrl(event.source_url) && event.verification_status?.startsWith("verified"));
+  const historySource = competition.fact_sources.find((source) => source.field_name === "development_history"
+    && source.verification_status.startsWith("verified") && isHttpUrl(source.source_url));
+  const displayStatus = competition.current_status ?? "unknown";
   const hasDescription = usefulDescription(competition.description);
   const freshnessWarning = ["due_for_check", "stale", "unknown"].includes(currentEdition?.freshness_status ?? "unknown");
   const deadlineRevisions = (competition.fact_revisions ?? []).filter((revision) => deadlineRevisionFields.has(revision.field_name)).slice(0, 3);
@@ -78,7 +83,16 @@ export default async function CompetitionDetailPage({ params, searchParams }: Co
       </div>
 
       <main className="container-page grid max-w-5xl gap-6 py-8">
-        <PersonalContext competitionId={Number(id)} />
+        <section className="panel-soft p-5" aria-label="选择学校查看通知与认定">
+          <h2 className="font-semibold text-ink">查看我的学校通知与认定</h2>
+          <form action={`/competitions/${id}`} className="mt-3 grid gap-3 sm:grid-cols-[1fr_1fr_auto]">
+            {profile.edition_id ? <input type="hidden" name="edition_id" value={profile.edition_id} /> : null}
+            <SchoolSelector key={`${profile.university_id}-${profile.college_id}`} universities={universities} universityId={profile.university_id} collegeId={profile.college_id} selectedUniversity={selectedUniversity} />
+            <button type="submit" className="button-secondary self-end">查看学校信息</button>
+          </form>
+          {profile.university_id && !recognitions.length ? <p className="mt-3 text-sm text-muted">暂未收录所选学校的认定文件；这不代表学校不认可该赛事。</p> : null}
+        </section>
+        <PersonalContext competitionId={Number(id)} editionId={competition.current_edition_id ?? (profile.edition_id ? Number(profile.edition_id) : undefined)} universityId={profile.university_id ? Number(profile.university_id) : undefined} collegeId={profile.college_id ? Number(profile.college_id) : undefined} />
         <section className="panel p-5" aria-labelledby="overview-title">
           <div className="flex flex-wrap items-center gap-2">
             <StatusBadge status={displayStatus} />
@@ -156,7 +170,7 @@ export default async function CompetitionDetailPage({ params, searchParams }: Co
           {selectedNotices.length ? <div className="mt-4 divide-y divide-line border-t border-line">{selectedNotices.map((notice) => <UniversityNoticeRow key={notice.id} notice={notice} />)}</div> : null}
         </section> : null}
 
-        {hasHistory ? <section className="panel p-5" aria-labelledby="history-title">
+        <section className="panel p-5" aria-labelledby="history-title">
           <SectionHeading id="history-title" icon={History} title="赛事历史" />
           <FactGrid facts={compactFacts([["创办年份", competition.founded_year ? `${competition.founded_year}年` : null], ["首次举办", competition.first_held_year ? `${competition.first_held_year}年` : null], ["举办频率", competition.frequency], ["已核实届数", competition.edition_count ? `${competition.edition_count}届` : null]])} />
           {editions.length ? <ol className="mt-4 border-l-2 border-blue-100 pl-5">{editions.map((edition) => <li key={`edition-${edition.id ?? edition.year}`} className="relative pb-5 last:pb-0">
@@ -166,12 +180,12 @@ export default async function CompetitionDetailPage({ params, searchParams }: Co
             {edition.host_location ? <p className="mt-1 text-sm leading-6 text-muted">举办地点：{edition.host_location}</p> : null}
             {isHttpUrl(edition.official_notice_url) ? <SourceLink href={edition.official_notice_url} label="官方通知" /> : null}
           </li>)}</ol> : null}
-          {!editions.length && competition.development_history ? <p className="mt-4 text-sm leading-7 text-muted">{competition.development_history}</p> : null}
-          {!editions.length && competition.history_timeline?.length ? <ol className="mt-4 border-l-2 border-blue-100 pl-5">{competition.history_timeline.map((event, index) => <li key={`${event.year}-${event.title}-${index}`} className="relative pb-5 last:pb-0">
+          {competition.development_history && historySource ? <div className="mt-4"><p className="whitespace-pre-wrap text-sm leading-7 text-muted">{competition.development_history}</p><SourceLink href={historySource.source_url} label="查看历史正文依据" /></div> : null}
+          {verifiedHistory.length ? <><h3 className="mt-5 text-sm font-semibold text-ink">有来源的历史沿革</h3><ol className="mt-4 border-l-2 border-blue-100 pl-5">{verifiedHistory.map((event, index) => <li key={`${event.year}-${event.title}-${index}`} className="relative pb-5 last:pb-0">
             <span className="absolute -left-[25px] top-1 h-2 w-2 rounded-full bg-accent" /><p className="text-xs font-semibold text-accent">{event.year}</p><strong className="mt-1 block text-sm text-ink">{event.title}</strong>{event.description ? <p className="mt-1 text-sm leading-6 text-muted">{event.description}</p> : null}
-          </li>)}</ol> : null}
-          {!editions.length && !competition.history_timeline?.length && !competition.development_history ? <p className="mt-4 border-t border-line py-4 text-sm text-muted">暂未收录可核验的历届官方资料。</p> : null}
-        </section> : null}
+            <SourceLink href={event.source_url!} label="查看历史依据" />
+          </li>)}</ol></> : !(competition.development_history && historySource) ? <p className="mt-4 border-t border-line py-4 text-sm text-muted">赛事沿革尚待来源补全。已有届次见上方记录；可通过下方入口补充官方历史资料。</p> : null}
+        </section>
 
         {hasOrganization ? <section className="panel p-5" aria-labelledby="organization-title"><SectionHeading id="organization-title" icon={Building2} title="组织机构" /><FactGrid facts={compactFacts([["主办单位", competition.organizer], ["联合主办", joinValues(competition.co_organizers)], ["指导单位", joinValues(competition.guiding_organizations)], ["承办单位", joinValues(competition.undertakers)], ["官方公众号", competition.official_account]])} /></section> : null}
 
@@ -203,11 +217,11 @@ export default async function CompetitionDetailPage({ params, searchParams }: Co
           <section className="panel p-5" aria-labelledby="recent-updates-title">
             <SectionHeading id="recent-updates-title" icon={History} title="最近更新" />
             <div className="mt-3 divide-y divide-line">
-              {(updates as any[]).slice(0, 4).map((event) => (
+              {updates.slice(0, 4).map((event) => (
                 <div key={event.id} className="py-3 text-sm">
                   <div className="flex items-center justify-between gap-3">
                     <span className="font-medium text-ink">{updateTypeLabel(event.event_type)}</span>
-                    <span className="shrink-0 text-xs text-muted">{event.changed_at ? event.changed_at.slice(0, 10) : ""}</span>
+                    <span className="shrink-0 text-xs text-muted">{event.changed_at ? formatDate(event.changed_at) : ""}</span>
                   </div>
                   {event.old_value != null && event.new_value != null ? (
                     <p className="mt-1 text-muted">
@@ -225,7 +239,7 @@ export default async function CompetitionDetailPage({ params, searchParams }: Co
             </div>
           </section>
         ) : null}
-        <CorrectionForm competitionId={Number(id)} />
+        <CorrectionForm competitionId={Number(id)} editionId={currentEdition?.id ?? (profile.edition_id ? Number(profile.edition_id) : undefined)} />
       </main>
     </>
   );
@@ -257,7 +271,7 @@ function DeadlinePanel({ resolution, hasUniversitySelection }: { resolution: Dea
 
 function UniversityNoticeRow({ notice }: { notice: UniversityCompetitionNotice }) {
   const facts = compactFacts([["官方截止", safeDate(notice.official_registration_deadline)], ["学校截止", !notice.college_id ? safeDate(notice.internal_registration_deadline) : null], ["学院截止", safeDate(notice.college_registration_deadline)], ["作品提交截止", safeDate(notice.internal_submission_deadline ?? notice.college_submission_deadline)], ["校内开始", safeDate(notice.internal_registration_start)], ["组织单位", notice.organizing_department], ["联系人", notice.contact_person ?? notice.internal_contact], ["联系方式", notice.contact_method]]);
-  return <article className="py-4"><div className="flex flex-wrap items-center gap-2"><strong className="text-sm text-ink">{notice.university_name}</strong>{notice.college_name ? <span className="badge">{notice.college_name}</span> : null}<span className="badge">{notice.edition_year}届</span><span className="badge">{noticeTypeLabel[notice.notice_type] ?? "赛事通知"}</span></div>{notice.notice_title ? <p className="mt-2 text-sm font-medium text-ink">{notice.notice_title}</p> : null}{facts.length ? <FactGrid facts={facts} /> : null}<SourceLink href={notice.internal_notice_url} label="打开高校通知" /></article>;
+  return <article className="py-4"><div className="flex flex-wrap items-center gap-2"><strong className="text-sm text-ink">{notice.university_name}</strong>{notice.college_name ? <span className="badge">{notice.college_name}</span> : null}<span className="badge">{notice.edition_year}届</span><span className="badge">{noticeTypeLabel[notice.notice_type] ?? "赛事通知"}</span>{!notice.is_verified ? <span className="badge">待核验</span> : null}</div>{notice.notice_title ? <p className="mt-2 text-sm font-medium text-ink">{notice.notice_title}</p> : null}{notice.published_at ? <p className="mt-1 text-xs text-muted">通知发布：{safeDate(notice.published_at)}</p> : null}{facts.length ? <FactGrid facts={facts} /> : null}{isHttpUrl(notice.internal_notice_url) ? <SourceLink href={notice.internal_notice_url} label="打开高校通知" /> : <p className="mt-2 text-xs text-muted">原文保存在本地档案</p>}</article>;
 }
 
 function DetailItems({ items = [] }: { items?: DetailFactItem[] }) {
@@ -275,11 +289,13 @@ function SectionHeading({ id, icon: Icon, title, className = "" }: { id: string;
 }
 
 function ExternalButton({ href, label, primary = false }: { href: string; label: string; primary?: boolean }) {
-  return <Link href={href} className={primary ? "button-primary" : "button-secondary"}>{label}<ExternalLink aria-hidden className="h-4 w-4" /></Link>;
+  if (!isHttpUrl(href)) return null;
+  return <a href={href} target="_blank" rel="noreferrer" className={primary ? "button-primary" : "button-secondary"}>{label}<ExternalLink aria-hidden className="h-4 w-4" /></a>;
 }
 
 function SourceLink({ href, label }: { href: string; label: string }) {
-  return <Link href={href} className="mt-2 inline-flex items-center gap-1 text-xs font-semibold text-accent">{label}<ExternalLink aria-hidden className="h-3.5 w-3.5" /></Link>;
+  if (!isHttpUrl(href)) return null;
+  return <a href={href} target="_blank" rel="noreferrer" className="mt-2 inline-flex items-center gap-1 text-xs font-semibold text-accent">{label}<ExternalLink aria-hidden className="h-3.5 w-3.5" /></a>;
 }
 
 type SourceGroup = { url: string; name: string; type: string; fields: string[] };
@@ -305,7 +321,7 @@ function safeDate(value?: string | null) {
   if (!value) return null;
   const date = new Date(value);
   if (Number.isNaN(date.getTime())) return null;
-  return new Intl.DateTimeFormat("zh-CN", { year: "numeric", month: "2-digit", day: "2-digit" }).format(date);
+  return formatDate(value);
 }
 
 function revisionDate(value: unknown) { return typeof value === "string" ? safeDate(value) ?? value : "暂未核实"; }
@@ -336,7 +352,7 @@ function updateTypeLabel(type: string) {
   };
   return labels[type] ?? "赛事信息更新";
 }
-const deadlineTypeLabel: Record<string, string> = { college: "学院公开通知", university: "学校公开通知", official: "赛事官方时间" };
+const deadlineTypeLabel: Record<string, string> = { college_registration_deadline: "学院公开通知", university_registration_deadline: "学校公开通知", official_registration_deadline: "赛事官方时间" };
 const noticeTypeLabel: Record<string, string> = { registration_notice: "报名通知", internal_selection: "校内选拔", submission_notice: "作品提交", competition_announcement: "赛事公告", result_notice: "结果公示", award_news: "获奖新闻", training_notice: "培训通知", team_recruitment: "组队招募" };
 const deadlineRevisionFields = new Set(["registration_deadline", "official_registration_deadline", "university_registration_deadline", "submission_deadline", "official_submission_deadline"]);
 const factLabel: Record<string, string> = {

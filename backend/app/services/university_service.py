@@ -36,7 +36,9 @@ class UniversityService:
         university = self.repository.get_by_id(db, university_id)
         if university is None:
             raise HTTPException(status_code=404, detail="University not found")
-        return UniversityDetail.model_validate(university)
+        detail = UniversityDetail.model_validate(university)
+        detail.colleges = [college for college in detail.colleges if college.is_verified and not college.is_demo]
+        return detail
 
     def list_policies(
         self,
@@ -63,4 +65,3 @@ class UniversityService:
             raise HTTPException(status_code=404, detail="University not found")
         rows = self.repository.list_competition_policies(db, university_id, year=year, usage_type=usage_type)
         return [UniversityCompetitionPolicyRead(**row) for row in rows]
-

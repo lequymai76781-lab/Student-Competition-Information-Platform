@@ -3,7 +3,7 @@
 import { useRouter } from "next/navigation";
 import { useEffect, useMemo, useState } from "react";
 
-import { getUniversities } from "@/lib/api";
+import { getAllUniversities } from "@/lib/api";
 import { interestOptions, universityColleges, updateProfile, type V09Profile } from "@/lib/v09-api";
 
 type UniversityOption = { id: number; name: string; short_name?: string | null };
@@ -27,7 +27,7 @@ export function ProfileForm({
   const [colleges, setColleges] = useState<CollegeOption[]>([]);
   const [interestOptionsList, setInterestOptionsList] = useState<{ label: string; tags: string[] }[]>([]);
   const [universityName, setUniversityName] = useState(initial?.university_name ?? "");
-  const [collegeName, setCollegeName] = useState(initial?.college_name ?? "");
+  const [collegeName] = useState(initial?.college_name ?? "");
   const [collegeFreeText, setCollegeFreeText] = useState("");
   const [majorName, setMajorName] = useState(initial?.major_name ?? "");
   const [grade, setGrade] = useState(initial?.grade ?? "");
@@ -37,7 +37,7 @@ export function ProfileForm({
   const [error, setError] = useState("");
 
   useEffect(() => {
-    getUniversities({ limit: 200 }).then(setUniversities).catch(() => undefined);
+    getAllUniversities().then(setUniversities).catch(() => setError("学校列表加载失败，请刷新重试。"));
     interestOptions().then(setInterestOptionsList).catch(() => undefined);
   }, []);
 

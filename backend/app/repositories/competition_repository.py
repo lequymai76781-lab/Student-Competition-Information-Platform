@@ -16,6 +16,7 @@ from app.models import (
     University,
 )
 from app.schemas.competition import CompetitionCreate, CompetitionUpdate
+from app.services.user_facing_data_policy import UserFacingDataPolicy
 
 
 class CompetitionRepository:
@@ -42,7 +43,7 @@ class CompetitionRepository:
         college_id: int | None = None,
         year: int | None = None,
         sort: str = "deadline",
-        limit: int = 50,
+        limit: int | None = 50,
         offset: int = 0,
     ) -> list[Competition]:
         stmt = select(Competition).options(
@@ -71,13 +72,10 @@ class CompetitionRepository:
         # no-evidence entity must not look identical to confirmed core events.
         stmt = stmt.where(
             or_(
-                Competition.verification_status != "unverified",
-                Competition.sources.any(
-                    and_(
-                        CompetitionSource.is_verified.is_(True),
-                        CompetitionSource.is_demo.is_(False),
-                    )
-                ),
+                Competition.verification_status.in_(UserFacingDataPolicy.VERIFIED_FACT_STATUSES),
+                and_(Competition.verification_status == "unverified", or_(
+                    Competition.is_official_verified.is_(True),
+                    Competition.sources.any(UserFacingDataPolicy.verified_clause(CompetitionSource)))),
             )
         )
 
@@ -115,7 +113,13 @@ class CompetitionRepository:
         if data_completeness_min is not None:
             stmt = stmt.where(Competition.data_completeness_score >= data_completeness_min)
         if has_college_recognition is not None:
-            has_college = Competition.policy_recognitions.any(CompetitionPolicyRecognition.college_id.is_not(None))
+            has_college = Competition.policy_recognitions.any(and_(
+                CompetitionPolicyRecognition.college_id.is_not(None),
+                CompetitionPolicyRecognition.recognition_status == "recognized",
+                CompetitionPolicyRecognition.needs_manual_review.is_(False),
+                CompetitionPolicyRecognition.is_demo.is_(False),
+                CompetitionPolicyRecognition.policy_document.has(UserFacingDataPolicy.verified_clause(PolicyDocument)),
+            ))
             stmt = stmt.where(has_college if has_college_recognition else ~has_college)
         if cross_university is not None:
             stmt = stmt.where(Competition.is_cross_university_supported.is_(cross_university))
@@ -211,7 +215,9 @@ class CompetitionRepository:
             stmt = stmt.order_by(Competition.name.asc())
         else:
             stmt = stmt.order_by(Competition.updated_at.desc())
-        stmt = stmt.offset(offset).limit(limit)
+        stmt = stmt.offset(offset)
+        if limit is not None:
+            stmt = stmt.limit(limit)
         return list(db.execute(stmt).scalars().unique().all())
 
     def get_by_id(self, db: Session, competition_id: int) -> Competition | None:
@@ -282,6 +288,9 @@ class CompetitionRepository:
             .where(
                 CompetitionPolicyRecognition.competition_id == competition_id,
                 CompetitionPolicyRecognition.is_demo.is_(False),
+                CompetitionPolicyRecognition.recognition_status == "recognized",
+                CompetitionPolicyRecognition.needs_manual_review.is_(False),
+                UserFacingDataPolicy.verified_clause(PolicyDocument),
             )
             .order_by(CompetitionPolicyRecognition.year.desc(), University.name.asc())
         )

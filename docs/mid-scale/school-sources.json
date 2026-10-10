@@ -1,0 +1,1280 @@
+[
+  {
+    "competition_id": 4,
+    "competition_name": "全国大学生数学建模竞赛",
+    "university_name": "上海理工大学",
+    "school_source_name": "本科生院创新创业学院",
+    "source": {
+      "key": "mid-school-163-01",
+      "url": "https://cxcy.usst.edu.cn/2025/0708/c16859a344827/page.psp",
+      "title": "2025年上海理工大学数学建模竞赛获奖名单 暨全国大学生数学建模竞赛报名通知",
+      "publisher": "上海理工大学 · 本科生院创新创业学院",
+      "source_type": "university_notice",
+      "published_at": "2025-07-08",
+      "accessed_at": "2026-09-28T02:40:10+08:00",
+      "access_status": "readable",
+      "year": 2025,
+      "evidence_notes": "正文说明校赛参赛者直接取得国赛资格，其他有经验学生可报名；校内截止原文为7月30日24点，换算为次日零点。校赛获奖表不作为国赛认定证据。",
+      "source_failure_reason": null,
+      "retrieval_method": "web",
+      "university_notice": {
+        "university_name": "上海理工大学",
+        "notice_type": "registration_notice",
+        "is_formal_recognition": false,
+        "recognition_evidence": null,
+        "school_deadline": "2025-07-31T00:00:00+08:00"
+      }
+    }
+  },
+  {
+    "competition_id": 77,
+    "competition_name": "全国大学生统计建模大赛",
+    "university_name": "新疆师范大学",
+    "school_source_name": "教务处；数学科学学院",
+    "source": {
+      "key": "mid-school-164-01",
+      "url": "https://www.xjnu.edu.cn/info/1075/75022.htm",
+      "title": "关于举办新疆师范大学2025年全国大学生统计建模大赛校园选拔赛的通知",
+      "publisher": "新疆师范大学 · 教务处；数学科学学院",
+      "source_type": "university_notice",
+      "published_at": "2025-03-03",
+      "accessed_at": "2026-09-28T02:40:10+08:00",
+      "access_status": "readable",
+      "year": 2025,
+      "evidence_notes": "正文明确第十一届国赛的校内选拔和报名邮件截止；本科与研究生分组，校内参赛条件不代表学校认定等级。",
+      "source_failure_reason": null,
+      "retrieval_method": "web",
+      "university_notice": {
+        "university_name": "新疆师范大学",
+        "notice_type": "selection_notice",
+        "is_formal_recognition": false,
+        "recognition_evidence": null,
+        "school_deadline": "2025-03-11T18:00:00+08:00"
+      }
+    }
+  },
+  {
+    "competition_id": 4,
+    "competition_name": "全国大学生数学建模竞赛",
+    "university_name": "北京工商大学",
+    "school_source_name": "教务处；数学与统计学院",
+    "source": {
+      "key": "mid-school-167-01",
+      "url": "https://stxy.btbu.edu.cn/tzgg/4260b96199e547d3bd73820d05df3956.htm",
+      "title": "关于2025年北京市大学生数学建模与计算机应用竞赛的报名通知",
+      "publisher": "北京工商大学 · 教务处；数学与统计学院",
+      "source_type": "university_notice",
+      "published_at": "2025-07-03",
+      "accessed_at": "2026-09-28T02:40:10+08:00",
+      "access_status": "readable",
+      "year": 2025,
+      "evidence_notes": "正文明确北京市竞赛同时为全国大学生数学建模竞赛北京赛区，须完成校内平台与微信群两步报名；页面日期7月3日、落款7月1日。",
+      "source_failure_reason": null,
+      "retrieval_method": "web",
+      "university_notice": {
+        "university_name": "北京工商大学",
+        "notice_type": "registration_notice",
+        "is_formal_recognition": false,
+        "recognition_evidence": null,
+        "school_deadline": "2025-07-31T18:00:00+08:00"
+      }
+    }
+  },
+  {
+    "competition_id": 4,
+    "competition_name": "全国大学生数学建模竞赛",
+    "university_name": "江西师范大学",
+    "school_source_name": "教务处；数学与统计学院",
+    "source": {
+      "key": "mid-school-168-01",
+      "url": "https://jwc.jxnu.edu.cn/Portal/ArticlesView.aspx?ID=13683",
+      "title": "2026年江西师范大学全国大学生数学建模竞赛预报名通知",
+      "publisher": "江西师范大学 · 教务处；数学与统计学院",
+      "source_type": "university_notice",
+      "published_at": "2026-07-02T10:25:45+08:00",
+      "accessed_at": "2026-09-28T02:40:10+08:00",
+      "access_status": "readable",
+      "year": 2026,
+      "evidence_notes": "正文为校内预报名而非正式国赛报名；截止原文为7月9日24点，换算次日零点。署期6月29日，使用页面发布时间。",
+      "source_failure_reason": null,
+      "retrieval_method": "web",
+      "university_notice": {
+        "university_name": "江西师范大学",
+        "notice_type": "registration_notice",
+        "is_formal_recognition": false,
+        "recognition_evidence": null,
+        "school_deadline": "2026-07-10T00:00:00+08:00"
+      }
+    }
+  },
+  {
+    "competition_id": 99,
+    "competition_name": "全国大学生数学竞赛",
+    "university_name": "河北大学",
+    "school_source_name": "电子信息工程学院",
+    "source": {
+      "key": "mid-school-165-01",
+      "url": "https://ceie.hbu.edu.cn/info/1115/5112.htm",
+      "title": "关于参加第十七届全国大学生数学竞赛初赛的通知",
+      "publisher": "河北大学 · 电子信息工程学院",
+      "source_type": "university_notice",
+      "published_at": "2025-09-23",
+      "accessed_at": "2026-09-28T02:41:55+08:00",
+      "access_status": "readable",
+      "year": 2025,
+      "evidence_notes": "正文规定由学院统一报名，不接受个人单独报名；赛事是数学竞赛而非数学建模。",
+      "source_failure_reason": null,
+      "retrieval_method": "web",
+      "university_notice": {
+        "university_name": "河北大学",
+        "notice_type": "registration_notice",
+        "is_formal_recognition": false,
+        "recognition_evidence": null,
+        "school_deadline": "2025-09-26T18:00:00+08:00"
+      }
+    }
+  },
+  {
+    "competition_id": 1,
+    "competition_name": "中国国际大学生创新大赛",
+    "university_name": "天津师范大学",
+    "school_source_name": "政治与行政学院",
+    "source": {
+      "key": "mid-school-173-01",
+      "url": "https://zzyxz.tjnu.edu.cn/info/1086/5907.htm",
+      "title": "创新潮头立，政行正当时：2025创新大赛（主赛道）政治与行政学院评选赛圆满落幕",
+      "publisher": "天津师范大学 · 政治与行政学院",
+      "source_type": "university_notice",
+      "published_at": "2025-05-16T21:44:00+08:00",
+      "accessed_at": "2026-09-28T02:41:55+08:00",
+      "access_status": "readable",
+      "year": 2025,
+      "evidence_notes": "已读正文为5月14日院级评选赛的事后报道，明确选拔参加中国国际大学生创新大赛高教主赛道；不是报名通知或认定文件。",
+      "source_failure_reason": null,
+      "retrieval_method": "web",
+      "university_notice": {
+        "university_name": "天津师范大学",
+        "notice_type": "other",
+        "is_formal_recognition": false,
+        "recognition_evidence": null,
+        "school_deadline": null
+      }
+    }
+  },
+  {
+    "competition_id": 4,
+    "competition_name": "全国大学生数学建模竞赛",
+    "university_name": "四川师范大学",
+    "school_source_name": "物理与电子工程学院",
+    "source": {
+      "key": "mid-school-175-01",
+      "url": "https://phy.sicnu.edu.cn/p/0/?StId=st_app_news_i_x637140803709606848",
+      "title": "四川师范大学大学生学科竞赛管理办法",
+      "publisher": "四川师范大学 · 物理与电子工程学院",
+      "source_type": "university_policy",
+      "published_at": "2020-01-08T11:39:23+08:00",
+      "accessed_at": "2026-09-28T02:41:55+08:00",
+      "access_status": "readable",
+      "year": null,
+      "evidence_notes": "正文含组织管理、类别认定、经费与竞赛激励；第十七条点名全国大学生数学建模比赛及获奖奖励。自2019年施行，本轮未验证是否被后续文件替代。",
+      "source_failure_reason": null,
+      "retrieval_method": "web",
+      "university_notice": {
+        "university_name": "四川师范大学",
+        "notice_type": "award_policy",
+        "is_formal_recognition": true,
+        "recognition_evidence": "第十七条第2款第（2）项明确列出全国大学生数学建模比赛，并规定A类竞赛对应获奖学生一、二、三等奖的奖励；仅作为该历史文件证据，未核验现行有效性。",
+        "school_deadline": null
+      }
+    }
+  },
+  {
+    "competition_id": 77,
+    "competition_name": "全国大学生统计建模大赛",
+    "university_name": "河南师范大学",
+    "school_source_name": "数学与统计学院（密码学院）",
+    "source": {
+      "key": "mid-school-176-01",
+      "url": "https://www.htu.edu.cn/math/2026/0322/c1143a376184/page.htm",
+      "title": "2026年（第十二届）全国大学生统计建模大赛报名通知",
+      "publisher": "河南师范大学 · 数学与统计学院（密码学院）",
+      "source_type": "university_notice",
+      "published_at": "2026-03-22",
+      "accessed_at": "2026-09-28T02:43:23+08:00",
+      "access_status": "readable",
+      "year": 2026,
+      "evidence_notes": "正文明确校内遴选后推荐省赛；5月17日前为学校推荐节点，未给出学生校内报名截止，因此school_deadline留空。",
+      "source_failure_reason": null,
+      "retrieval_method": "web",
+      "university_notice": {
+        "university_name": "河南师范大学",
+        "notice_type": "registration_notice",
+        "is_formal_recognition": false,
+        "recognition_evidence": null,
+        "school_deadline": null
+      }
+    }
+  },
+  {
+    "competition_id": 4,
+    "competition_name": "全国大学生数学建模竞赛",
+    "university_name": "西安理工大学",
+    "school_source_name": "教务处；理学院",
+    "source": {
+      "key": "mid-school-187-01",
+      "url": "https://jwc.xaut.edu.cn/info/1133/4155.htm",
+      "title": "关于举办西安理工大学2025年大学生数学建模竞赛暨全国大学生数学建模竞赛校内选拔赛的通知",
+      "publisher": "西安理工大学 · 教务处；理学院",
+      "source_type": "university_notice",
+      "published_at": "2025-04-11",
+      "accessed_at": "2026-09-28T02:43:23+08:00",
+      "access_status": "readable",
+      "year": 2025,
+      "evidence_notes": "正文为国赛队员校内选拔；学生交表截止4月25日中午12点，学院汇总4月26日，两者分开记录。校赛奖励不推断国赛认定。",
+      "source_failure_reason": null,
+      "retrieval_method": "web",
+      "university_notice": {
+        "university_name": "西安理工大学",
+        "notice_type": "selection_notice",
+        "is_formal_recognition": false,
+        "recognition_evidence": null,
+        "school_deadline": "2025-04-25T12:00:00+08:00"
+      }
+    }
+  },
+  {
+    "competition_id": 4,
+    "competition_name": "全国大学生数学建模竞赛",
+    "university_name": "宿迁学院",
+    "school_source_name": "创新创业学院；数理学院",
+    "source": {
+      "key": "mid-school-196-01",
+      "url": "https://cxcy.squ.edu.cn/info/1027/1888.htm",
+      "title": "关于宿迁学院2025年“数学建模竞赛实验班”报名选拔的通知",
+      "publisher": "宿迁学院 · 创新创业学院；数理学院",
+      "source_type": "university_notice",
+      "published_at": "2025-03-21",
+      "accessed_at": "2026-09-28T02:43:23+08:00",
+      "access_status": "readable",
+      "year": 2025,
+      "evidence_notes": "选拔约80名学生参加备赛实验班，再择优选拔国赛队员；原文截止仅日期，未填造具体时刻。",
+      "source_failure_reason": null,
+      "retrieval_method": "web",
+      "university_notice": {
+        "university_name": "宿迁学院",
+        "notice_type": "selection_notice",
+        "is_formal_recognition": false,
+        "recognition_evidence": null,
+        "school_deadline": "2025-03-30"
+      }
+    }
+  },
+  {
+    "competition_id": 98,
+    "competition_name": "美国大学生数学建模竞赛",
+    "university_name": "长沙理工大学",
+    "school_source_name": "教务处；数学与统计学院",
+    "source": {
+      "key": "mid-school-193-01",
+      "url": "https://www.csust.edu.cn/jwc/info/1101/6715.htm",
+      "title": "关于2025年美国大学生数学建模竞赛报名的通知",
+      "publisher": "长沙理工大学 · 教务处；数学与统计学院",
+      "source_type": "university_notice",
+      "published_at": "2024-12-26",
+      "accessed_at": "2026-09-28T02:43:23+08:00",
+      "access_status": "readable",
+      "year": 2025,
+      "evidence_notes": "校内报备截止仅给日期；正文要求自主注册后向学校备案，未备案不认定成绩，但不是竞赛认定目录，formal_recognition仍为false。页面日期与落款12月23日不同。",
+      "source_failure_reason": null,
+      "retrieval_method": "web",
+      "university_notice": {
+        "university_name": "长沙理工大学",
+        "notice_type": "registration_notice",
+        "is_formal_recognition": false,
+        "recognition_evidence": null,
+        "school_deadline": "2025-01-24"
+      }
+    }
+  },
+  {
+    "competition_id": 2,
+    "competition_name": "“挑战杯”全国大学生课外学术科技作品竞赛",
+    "university_name": "宁夏医科大学",
+    "school_source_name": "团委；创新创业学院；公共卫生学院",
+    "source": {
+      "key": "mid-school-190-01",
+      "url": "https://www.nxmu.edu.cn/tw/info/1003/2531.htm",
+      "title": "关于组织开展宁夏医科大学第十五届“挑战杯”大学生课外学术科技作品竞赛的通知",
+      "publisher": "宁夏医科大学 · 团委；创新创业学院；公共卫生学院",
+      "source_type": "university_notice",
+      "published_at": "2025-04-23",
+      "accessed_at": "2026-09-28T02:43:23+08:00",
+      "access_status": "readable",
+      "year": 2025,
+      "evidence_notes": "宁医团发〔2025〕14号明确校赛为自治区第十四届和全国第十九届作品竞赛备赛；5月12日前学院报送，不是创业计划赛。",
+      "source_failure_reason": null,
+      "retrieval_method": "web",
+      "university_notice": {
+        "university_name": "宁夏医科大学",
+        "notice_type": "selection_notice",
+        "is_formal_recognition": false,
+        "recognition_evidence": null,
+        "school_deadline": "2025-05-12"
+      }
+    }
+  },
+  {
+    "competition_id": 99,
+    "competition_name": "全国大学生数学竞赛",
+    "university_name": "山西师范大学",
+    "school_source_name": "数学与计算机科学学院",
+    "source": {
+      "key": "mid-school-174-01",
+      "url": "https://sjxy.sxnu.edu.cn/info/1049/4798.htm",
+      "title": "关于组织开展第十六届全国大学生数学竞赛的通知",
+      "publisher": "山西师范大学 · 数学与计算机科学学院",
+      "source_type": "university_notice",
+      "published_at": "2024-09-14",
+      "accessed_at": "2026-09-28T02:43:23+08:00",
+      "access_status": "readable",
+      "year": 2024,
+      "evidence_notes": "以2024年初赛确定届次年份，2025年决赛是同届后续阶段；学院汇总报名9月26日前，具体时刻未给。保留落款原部门名，与当前网站数学科学学院名称不同。",
+      "source_failure_reason": null,
+      "retrieval_method": "web",
+      "university_notice": {
+        "university_name": "山西师范大学",
+        "notice_type": "registration_notice",
+        "is_formal_recognition": false,
+        "recognition_evidence": null,
+        "school_deadline": "2024-09-26"
+      }
+    }
+  },
+  {
+    "competition_id": 4,
+    "competition_name": "全国大学生数学建模竞赛",
+    "university_name": "内蒙古师范大学",
+    "school_source_name": "数学科学学院",
+    "source": {
+      "key": "mid-school-169-01",
+      "url": "https://math.imnu.edu.cn/info/1043/6359.htm",
+      "title": "内蒙古师范大学2025年数学建模暑期集训圆满落幕",
+      "publisher": "内蒙古师范大学 · 数学科学学院",
+      "source_type": "university_notice",
+      "published_at": "2025-07-23",
+      "accessed_at": "2026-09-28T02:43:23+08:00",
+      "access_status": "readable",
+      "year": 2025,
+      "evidence_notes": "正文为集训结束报道，并明确提及2025年全国数学建模竞赛校级选拔已举行；不作为报名或政策认定证据。",
+      "source_failure_reason": null,
+      "retrieval_method": "web",
+      "university_notice": {
+        "university_name": "内蒙古师范大学",
+        "notice_type": "other",
+        "is_formal_recognition": false,
+        "recognition_evidence": null,
+        "school_deadline": null
+      }
+    }
+  },
+  {
+    "competition_id": null,
+    "competition_name": null,
+    "university_name": "浙江工业大学",
+    "school_source_name": "计算机学院学生工作办公室",
+    "source": {
+      "key": "mid-school-178-01",
+      "url": "https://www.soft.zjut.edu.cn/4045.html",
+      "title": "关于做好2025年本科学生课外学术科技成果登记与奖励工作的通知",
+      "publisher": "浙江工业大学 · 计算机学院学生工作办公室",
+      "source_type": "university_policy",
+      "published_at": "2026-06-12T10:57:37+08:00",
+      "accessed_at": "2026-09-28T02:43:23+08:00",
+      "access_status": "readable",
+      "year": null,
+      "evidence_notes": "奖励2025年度成果，标题年份不是赛事届次。正文泛称挑战杯系列，专项赛是否奖励待定，无法唯一映射作品赛或创业计划赛；以通用奖励执行文件收录，不推断某赛事认定。附件办法未读取。",
+      "source_failure_reason": null,
+      "retrieval_method": "web",
+      "university_notice": {
+        "university_name": "浙江工业大学",
+        "notice_type": "award_policy",
+        "is_formal_recognition": false,
+        "recognition_evidence": null,
+        "school_deadline": "2026-06-16T12:00:00+08:00"
+      }
+    }
+  },
+  {
+    "competition_id": 77,
+    "competition_name": "全国大学生统计建模大赛",
+    "university_name": "长沙理工大学",
+    "school_source_name": "研究生院",
+    "source": {
+      "key": "mid-school-193-02",
+      "url": "https://www.csust.edu.cn/yjsy/info/1162/11357.htm",
+      "title": "关于长沙理工大学2025年度研究生学科竞赛认定项目的通知",
+      "publisher": "长沙理工大学 · 研究生院",
+      "source_type": "university_policy",
+      "published_at": "2025-06-19",
+      "accessed_at": "2026-09-28T02:43:23+08:00",
+      "access_status": "readable",
+      "year": null,
+      "evidence_notes": "正文批准2025年度研究生竞赛认定项目，内嵌附件1第21项列全国大学生统计建模（研究生组）大赛为C类。仅研究生组和年度目录，不外推本科或其他年度。",
+      "source_failure_reason": null,
+      "retrieval_method": "web",
+      "university_notice": {
+        "university_name": "长沙理工大学",
+        "notice_type": "policy_recognition",
+        "is_formal_recognition": true,
+        "recognition_evidence": "2025年度认定通知正文批准目录；附件1第21项明确全国大学生统计建模（研究生组）大赛为C类，并由数学与统计学院组织。范围仅研究生组。",
+        "school_deadline": null
+      }
+    }
+  },
+  {
+    "competition_id": 1,
+    "competition_name": "中国国际大学生创新大赛",
+    "university_name": "广西师范大学",
+    "school_source_name": "学生工作部（处）；校团委；教务处；后勤保障处/后勤服务集团；创新创业学院",
+    "source": {
+      "key": "mid-school-179-01",
+      "url": "https://www.gxnu.edu.cn/2025/0507/c4327a314634/page.psp",
+      "title": "关于开展广西师范大学2025年“劳动周”“劳动月”活动的通知",
+      "publisher": "广西师范大学 · 学生工作部（处）；校团委；教务处；后勤保障处/后勤服务集团；创新创业学院",
+      "source_type": "university_notice",
+      "published_at": "2025-05-07",
+      "accessed_at": "2026-09-28T02:46:50+08:00",
+      "access_status": "readable",
+      "year": 2025,
+      "evidence_notes": "正文第十二项明确2025年创新大赛校赛、推荐广西区赛及训练营安排；仅月份安排，未给学生报名截止。",
+      "source_failure_reason": null,
+      "retrieval_method": "web",
+      "university_notice": {
+        "university_name": "广西师范大学",
+        "notice_type": "organization_notice",
+        "is_formal_recognition": false,
+        "recognition_evidence": null,
+        "school_deadline": null
+      }
+    }
+  },
+  {
+    "competition_id": 77,
+    "competition_name": "全国大学生统计建模大赛",
+    "university_name": "山东师范大学",
+    "school_source_name": "教务处；大学生数学建模/市场调查竞赛中心",
+    "source": {
+      "key": "mid-school-181-01",
+      "url": "https://bkjy.sdnu.edu.cn/info/1371/18741.htm",
+      "title": "关于修改2026年全国大学生统计建模大赛校内选拔赛比赛流程和参赛方法的通知",
+      "publisher": "山东师范大学 · 教务处；大学生数学建模/市场调查竞赛中心",
+      "source_type": "university_notice",
+      "published_at": "2026-04-17T17:25:00+08:00",
+      "accessed_at": "2026-09-28T02:46:50+08:00",
+      "access_status": "readable",
+      "year": 2026,
+      "evidence_notes": "正文调整山东赛区报名及材料提交流程，4月28日20时为赛区平台报名节点，不冒充独立校内截止。通知称该赛为学校B类，但本条仍是流程通知，待认定目录独立核验。",
+      "source_failure_reason": null,
+      "retrieval_method": "web",
+      "university_notice": {
+        "university_name": "山东师范大学",
+        "notice_type": "selection_notice",
+        "is_formal_recognition": false,
+        "recognition_evidence": null,
+        "school_deadline": null
+      }
+    }
+  },
+  {
+    "competition_id": 43,
+    "competition_name": "未来设计师·全国高校数字艺术设计大赛",
+    "university_name": "贵州师范大学",
+    "school_source_name": "美术学院",
+    "source": {
+      "key": "mid-school-188-01",
+      "url": "https://art.gznu.edu.cn/info/1080/2632.htm",
+      "title": "关于组织参加第十一届未来设计师·全国高校数字艺术设计大赛的通知",
+      "publisher": "贵州师范大学 · 美术学院",
+      "source_type": "university_notice",
+      "published_at": "2023-05-09T10:04:00+08:00",
+      "accessed_at": "2026-09-28T02:46:50+08:00",
+      "access_status": "readable",
+      "year": 2023,
+      "evidence_notes": "正文明确上传作品截止6月5日、6月6日至10日校内初选，再参加省赛与全国赛；作为历史届次记录。",
+      "source_failure_reason": null,
+      "retrieval_method": "web",
+      "university_notice": {
+        "university_name": "贵州师范大学",
+        "notice_type": "selection_notice",
+        "is_formal_recognition": false,
+        "recognition_evidence": null,
+        "school_deadline": "2023-06-05"
+      }
+    }
+  },
+  {
+    "competition_id": 2,
+    "competition_name": "“挑战杯”全国大学生课外学术科技作品竞赛",
+    "university_name": "西北师范大学",
+    "school_source_name": "经济学院（发布）；共青团西北师范大学委员会（落款）",
+    "source": {
+      "key": "mid-school-166-01",
+      "url": "https://www.nwnu.edu.cn/2025/0623/c3841a256652/page.htm",
+      "title": "第十九届“挑战杯”全国大学生课外学术科技作品竞赛甘肃省推报项目公示",
+      "publisher": "西北师范大学 · 经济学院（发布）；共青团西北师范大学委员会（落款）",
+      "source_type": "university_notice",
+      "published_at": "2025-06-23",
+      "accessed_at": "2026-09-28T02:46:50+08:00",
+      "access_status": "readable",
+      "year": 2025,
+      "evidence_notes": "正文为依据省赛结果拟推荐国赛项目的公示；6月27日为异议反馈截止而非报名截止。",
+      "source_failure_reason": null,
+      "retrieval_method": "web",
+      "university_notice": {
+        "university_name": "西北师范大学",
+        "notice_type": "recommendation_notice",
+        "is_formal_recognition": false,
+        "recognition_evidence": null,
+        "school_deadline": null
+      }
+    }
+  },
+  {
+    "competition_id": null,
+    "competition_name": null,
+    "university_name": "深圳大学",
+    "school_source_name": "教务部",
+    "source": {
+      "key": "mid-school-183-01",
+      "url": "https://jwb.szu.edu.cn/info/1358/2016.htm",
+      "title": "深圳大学本科生学科竞赛管理办法（修订）",
+      "publisher": "深圳大学 · 教务部",
+      "source_type": "university_policy",
+      "published_at": "2026-09-02",
+      "accessed_at": "2026-09-28T02:46:50+08:00",
+      "access_status": "readable",
+      "year": null,
+      "evidence_notes": "2025年6月9日校长办公会议通过，网站2026年9月2日发布；规定立项、实施、结题与奖励。具体赛事须另查清单；创新大赛及挑战杯另有办法，不纳入该办法资助奖励范围。",
+      "source_failure_reason": null,
+      "retrieval_method": "web",
+      "university_notice": {
+        "university_name": "深圳大学",
+        "notice_type": "award_policy",
+        "is_formal_recognition": false,
+        "recognition_evidence": null,
+        "school_deadline": null
+      }
+    }
+  },
+  {
+    "competition_id": null,
+    "competition_name": null,
+    "university_name": "昆明理工大学",
+    "school_source_name": "外国语言文化学院（托管）；教务处（解释）",
+    "source": {
+      "key": "mid-school-177-01",
+      "url": "https://fflc.kmust.edu.cn/__local/A/05/CC/C8077C7F483E8A60D25EAD5C9BB_E959710C_41EA1.pdf?e=.pdf",
+      "title": "昆明理工大学关于印发《本科生学科竞赛管理办法（2019年修订）》的通知",
+      "publisher": "昆明理工大学 · 外国语言文化学院（托管）；教务处（解释）",
+      "source_type": "university_policy",
+      "published_at": "2019-11-11",
+      "accessed_at": "2026-09-28T02:46:50+08:00",
+      "access_status": "readable",
+      "year": null,
+      "evidence_notes": "PDF正文为昆理工大校教字〔2019〕22号，明确校院职责、经费、学分和教师激励；按一般条件规定竞赛范围，无具体赛事清单，不推断某赛事认定。现行效力待复核。",
+      "source_failure_reason": null,
+      "retrieval_method": "web",
+      "university_notice": {
+        "university_name": "昆明理工大学",
+        "notice_type": "other",
+        "is_formal_recognition": false,
+        "recognition_evidence": null,
+        "school_deadline": null
+      }
+    }
+  },
+  {
+    "competition_id": null,
+    "competition_name": null,
+    "university_name": "西安理工大学",
+    "school_source_name": "教务处",
+    "source": {
+      "key": "mid-school-187-02",
+      "url": "https://jwc.xaut.edu.cn/__local/A/58/AC/802BEB2FC5A0A51861E4E99FFE3_F7219EA6_2CDD2.pdf",
+      "title": "西安理工大学科技创新竞赛管理办法",
+      "publisher": "西安理工大学 · 教务处",
+      "source_type": "university_policy",
+      "published_at": "2019-01-11",
+      "accessed_at": "2026-09-28T02:46:50+08:00",
+      "access_status": "readable",
+      "year": null,
+      "evidence_notes": "PDF为西安理工本教〔2019〕5号，落款1月11日、办公室1月26日印发。规定部门职责、类别、备案及目录机制；正文强调目录是认定依据，通用规则不推断具体赛事认定。现行效力待复核。",
+      "source_failure_reason": null,
+      "retrieval_method": "web",
+      "university_notice": {
+        "university_name": "西安理工大学",
+        "notice_type": "other",
+        "is_formal_recognition": false,
+        "recognition_evidence": null,
+        "school_deadline": null
+      }
+    }
+  },
+  {
+    "competition_id": 2,
+    "competition_name": "“挑战杯”全国大学生课外学术科技作品竞赛",
+    "university_name": "江苏大学",
+    "school_source_name": "信息公开网；教务处",
+    "source": {
+      "key": "mid-school-191-01",
+      "url": "https://xxgk.ujs.edu.cn/__local/3/E7/F5/34F87F6231AB129C024CFC43AE0_7260A8B9_2D0D5.pdf",
+      "title": "江苏大学学生学科竞赛管理办法（江大校〔2019〕91号）",
+      "publisher": "江苏大学 · 信息公开网；教务处",
+      "source_type": "university_policy",
+      "published_at": "2019-03-22",
+      "accessed_at": "2026-09-28T02:46:50+08:00",
+      "access_status": "readable",
+      "year": null,
+      "evidence_notes": "PDF第五条直接列出挑战杯作品竞赛为国家级A+类；文件2019年4月1日起施行，未据此推断2026年仍属相同类别。",
+      "source_failure_reason": null,
+      "retrieval_method": "web",
+      "university_notice": {
+        "university_name": "江苏大学",
+        "notice_type": "policy_recognition",
+        "is_formal_recognition": true,
+        "recognition_evidence": "江大校〔2019〕91号第五条第（一）项明确将“挑战杯”全国大学生课外学术科技作品竞赛列入国家级A+类；只证明2019年文件条款，现行类别未复核。",
+        "school_deadline": null
+      }
+    }
+  },
+  {
+    "competition_id": 4,
+    "competition_name": "全国大学生数学建模竞赛",
+    "university_name": "江苏大学",
+    "school_source_name": "教务处；数学科学学院",
+    "source": {
+      "key": "mid-school-191-02",
+      "url": "https://math.ujs.edu.cn/__local/B/D0/A7/80560AD78836229BA044F03D05B_CC30E4AE_2131C.pdf",
+      "title": "2025年江苏大学第十三届大学生数学建模竞赛获奖名单公示及暑期集训安排通知",
+      "publisher": "江苏大学 · 教务处；数学科学学院",
+      "source_type": "university_notice",
+      "published_at": "2025-06-16",
+      "accessed_at": "2026-09-28T02:46:50+08:00",
+      "access_status": "readable",
+      "year": 2025,
+      "evidence_notes": "PDF明确2025年全国大学生数学建模竞赛选手从暑期培训学生中产生；8月8日为培训集合而非报名截止，6月20日为校赛成绩异议期限。",
+      "source_failure_reason": null,
+      "retrieval_method": "web",
+      "university_notice": {
+        "university_name": "江苏大学",
+        "notice_type": "organization_notice",
+        "is_formal_recognition": false,
+        "recognition_evidence": null,
+        "school_deadline": null
+      }
+    }
+  },
+  {
+    "competition_id": null,
+    "competition_name": "塔里木大学师范类专业教学技能竞赛",
+    "university_name": "塔里木大学",
+    "school_source_name": "教务处；信息工程学院",
+    "source": {
+      "key": "mid-school-194-01",
+      "url": "https://jwc.taru.edu.cn/info/1002/4292.htm",
+      "title": "关于举办塔里木大学师范类专业教学技能竞赛的通知",
+      "publisher": "塔里木大学 · 教务处；信息工程学院",
+      "source_type": "university_notice",
+      "published_at": "2025-09-17",
+      "accessed_at": "2026-09-28T02:46:50+08:00",
+      "access_status": "readable",
+      "year": 2025,
+      "evidence_notes": "这是校级师范技能竞赛，虽由数学建模协会协办且使用其公众号报名，不能映射全国数学建模竞赛；候选赛事不创建正式条目。",
+      "source_failure_reason": null,
+      "retrieval_method": "web",
+      "university_notice": {
+        "university_name": "塔里木大学",
+        "notice_type": "registration_notice",
+        "is_formal_recognition": false,
+        "recognition_evidence": null,
+        "school_deadline": "2025-09-24"
+      }
+    }
+  },
+  {
+    "competition_id": null,
+    "competition_name": "大学生新文科实践创新大赛",
+    "university_name": "福建师范大学",
+    "school_source_name": "教务处",
+    "source": {
+      "key": "mid-school-184-01",
+      "url": "https://jwc.fjnu.edu.cn/de/14/c9107a450068/page.htm",
+      "title": "关于举办2026年大学生新文科实践创新大赛校内初赛的通知",
+      "publisher": "福建师范大学 · 教务处",
+      "source_type": "university_notice",
+      "published_at": "2026-08-27",
+      "accessed_at": "2026-09-28T02:46:50+08:00",
+      "access_status": "readable",
+      "year": 2026,
+      "evidence_notes": "正文明确校内初赛及晋级全国决赛，截止9月14日；不将排除条件提到的创新大赛/挑战杯错误映射为本通知对象。",
+      "source_failure_reason": null,
+      "retrieval_method": "web",
+      "university_notice": {
+        "university_name": "福建师范大学",
+        "notice_type": "selection_notice",
+        "is_formal_recognition": false,
+        "recognition_evidence": null,
+        "school_deadline": "2026-09-14"
+      }
+    }
+  },
+  {
+    "competition_id": null,
+    "competition_name": null,
+    "university_name": "南京传媒学院",
+    "school_source_name": "招生就业处",
+    "source": {
+      "key": "mid-school-140-01",
+      "url": "https://zsb.cucn.edu.cn/home/constitution/info/id/777/catId/3.html",
+      "title": "2025年招生章程",
+      "publisher": "南京传媒学院 · 招生就业处",
+      "source_type": "university_policy",
+      "published_at": "2025-05-12",
+      "accessed_at": "2026-09-28T02:46:50+08:00",
+      "access_status": "readable",
+      "year": null,
+      "evidence_notes": "已读第十九条，学校设优秀成果等奖学金奖励各类竞赛表现；泛称竞赛，不列具体比赛或额度。仅通用奖励依据，本轮未取得专门竞赛通知。第二条同时支持民办、本科及校址信息。",
+      "source_failure_reason": null,
+      "retrieval_method": "web",
+      "university_notice": {
+        "university_name": "南京传媒学院",
+        "notice_type": "award_policy",
+        "is_formal_recognition": false,
+        "recognition_evidence": null,
+        "school_deadline": null
+      }
+    }
+  },
+  {
+    "competition_id": 1,
+    "competition_name": "中国国际大学生创新大赛",
+    "university_name": "安徽师范大学",
+    "school_source_name": "教务处（创新创业教育学院）；研究生院；校团委",
+    "source": {
+      "key": "mid-school-185-01",
+      "url": "https://tao.ahnu.edu.cn/info/1028/11856.htm",
+      "title": "关于举办我校2025年中国国际大学生创新大赛校内选拔赛的通知",
+      "publisher": "安徽师范大学 · 教务处（创新创业教育学院）；研究生院；校团委",
+      "source_type": "university_notice",
+      "published_at": "2025-05-08",
+      "accessed_at": "2026-09-28T02:50:35+08:00",
+      "access_status": "readable",
+      "year": 2025,
+      "evidence_notes": "普通院级推荐及材料报送截止6月15日，正文另允许特别优秀项目6月20日前补报；不能压缩成无例外的统一全国截止。虽含本次学分奖励表，仍作为选拔通知，不推断长期赛事等级。",
+      "source_failure_reason": null,
+      "retrieval_method": "web",
+      "university_notice": {
+        "university_name": "安徽师范大学",
+        "notice_type": "selection_notice",
+        "is_formal_recognition": false,
+        "recognition_evidence": null,
+        "school_deadline": "2025-06-15"
+      }
+    }
+  },
+  {
+    "competition_id": null,
+    "competition_name": null,
+    "university_name": "泉州师范学院",
+    "school_source_name": "交通与航海学院",
+    "source": {
+      "key": "mid-school-195-01",
+      "url": "https://www.qztc.edu.cn/jtyhh/2026/0603/c6976a293634/page.htm",
+      "title": "关于发放2025年省级以上学科竞赛获奖项目奖金的公示",
+      "publisher": "泉州师范学院 · 交通与航海学院",
+      "source_type": "university_policy",
+      "published_at": "2026-06-03",
+      "accessed_at": "2026-09-28T02:50:35+08:00",
+      "access_status": "readable",
+      "year": null,
+      "evidence_notes": "正文依学生〔2018〕47号落实2025年度竞赛奖金，包含不重复奖励规则；附件获奖名单未读取。6月5日16时是异议反馈截止而非赛事报名截止，未填school_deadline。",
+      "source_failure_reason": null,
+      "retrieval_method": "web",
+      "university_notice": {
+        "university_name": "泉州师范学院",
+        "notice_type": "award_policy",
+        "is_formal_recognition": false,
+        "recognition_evidence": null,
+        "school_deadline": null
+      }
+    }
+  },
+  {
+    "competition_id": 4,
+    "competition_name": "全国大学生数学建模竞赛",
+    "university_name": "浙江工业大学",
+    "school_source_name": "计算机学院（转载）；教务处、理学院（组织）",
+    "source": {
+      "key": "mid-school-178-02",
+      "url": "https://www.soft.zjut.edu.cn/2389.html",
+      "title": "转：第21届浙江工业大学大学生数学建模竞赛报名通知",
+      "publisher": "浙江工业大学 · 计算机学院（转载）；教务处、理学院（组织）",
+      "source_type": "university_notice",
+      "published_at": "2020-05-08T03:24:00+08:00",
+      "accessed_at": "2026-09-28T02:50:35+08:00",
+      "access_status": "readable",
+      "year": 2020,
+      "evidence_notes": "正文明确校赛用于选拔2020年全国数学建模、2021年美国数学建模队员；本条映射2020年国赛，只保留历史校内报名日期，不用2021年作为国赛届次。",
+      "source_failure_reason": null,
+      "retrieval_method": "web",
+      "university_notice": {
+        "university_name": "浙江工业大学",
+        "notice_type": "repost",
+        "is_formal_recognition": false,
+        "recognition_evidence": null,
+        "school_deadline": "2020-05-17"
+      }
+    }
+  },
+  {
+    "competition_id": 3,
+    "competition_name": "“挑战杯”中国大学生创业计划竞赛",
+    "university_name": "四川师范大学",
+    "school_source_name": "校团委",
+    "source": {
+      "key": "mid-school-175-02",
+      "url": "https://www.sicnu.edu.cn/info/1001/285001.htm",
+      "title": "关于四川师范大学拟推报参加第十五届“挑战杯”中国大学生创业计划竞赛东北振兴产业升级专项赛项目的公示",
+      "publisher": "四川师范大学 · 校团委",
+      "source_type": "university_notice",
+      "published_at": "2026-08-19",
+      "accessed_at": "2026-09-28T02:50:35+08:00",
+      "access_status": "readable",
+      "year": 2026,
+      "evidence_notes": "正文公示11个拟推荐专项赛项目；只是东北振兴产业升级专项赛，不等同主体赛名额或长期学校认定。8月26日为公示期结束。",
+      "source_failure_reason": null,
+      "retrieval_method": "web",
+      "university_notice": {
+        "university_name": "四川师范大学",
+        "notice_type": "recommendation_notice",
+        "is_formal_recognition": false,
+        "recognition_evidence": null,
+        "school_deadline": null
+      }
+    }
+  },
+  {
+    "competition_id": null,
+    "competition_name": null,
+    "university_name": "四川传媒学院",
+    "school_source_name": "学生工作部（处）",
+    "source": {
+      "key": "mid-school-142-01",
+      "url": "https://xgb.scmc.edu.cn/2024_09/02_17/content-42354.html",
+      "title": "四川传媒学院优秀学生奖学金评定办法",
+      "publisher": "四川传媒学院 · 学生工作部（处）",
+      "source_type": "university_policy",
+      "published_at": "2024-09-02T17:14:18+08:00",
+      "accessed_at": "2026-09-28T02:57:20+08:00",
+      "access_status": "readable",
+      "year": null,
+      "evidence_notes": "正文列出文体和学术科研单项奖，泛称学科竞赛获奖，并自2024年9月1日起修订实施；未列具体赛事名称，不能推断任何赛事认定。该页面同时面向本、专科，不据此推断学校性质。",
+      "source_failure_reason": null,
+      "retrieval_method": "web",
+      "university_notice": {
+        "university_name": "四川传媒学院",
+        "notice_type": "award_policy",
+        "is_formal_recognition": false,
+        "recognition_evidence": null,
+        "school_deadline": null
+      }
+    }
+  },
+  {
+    "competition_id": 99,
+    "competition_name": "全国大学生数学竞赛",
+    "university_name": "湖北大学",
+    "school_source_name": "本科生院",
+    "source": {
+      "key": "mid-school-180-01",
+      "url": "https://jwc.hubu.edu.cn/info/1023/9306.htm",
+      "title": "关于组织参加“第十七届全国大学生数学竞赛——湖北赛区竞赛”的通知",
+      "publisher": "湖北大学 · 本科生院",
+      "source_type": "university_notice",
+      "published_at": null,
+      "accessed_at": "2026-09-28T02:43:23+08:00",
+      "access_status": "unavailable",
+      "year": null,
+      "evidence_notes": "搜索摘要发现链接，正文打开返回Timeout fetching；不采用摘要的年份与报名细节作为已核验事实。",
+      "source_failure_reason": "timeout",
+      "retrieval_method": "web",
+      "university_notice": {
+        "university_name": "湖北大学",
+        "notice_type": "registration_notice",
+        "is_formal_recognition": false,
+        "recognition_evidence": null,
+        "school_deadline": null
+      }
+    }
+  },
+  {
+    "competition_id": 4,
+    "competition_name": "全国大学生数学建模竞赛",
+    "university_name": "西北师范大学",
+    "school_source_name": "教务处",
+    "source": {
+      "key": "mid-school-166-02",
+      "url": "https://jwc.nwnu.edu.cn/_upload/article/files/38/4f/ee8d529f44d2bf64f5bb531ab289/3e310e2c-218c-4d61-ae6f-682ee0ee4e8f.pdf",
+      "title": "全国大学生数学建模竞赛组织委员会通知（搜索发现，正文待人工核验）",
+      "publisher": null,
+      "source_type": "university_notice",
+      "published_at": null,
+      "accessed_at": "2026-09-28T02:41:55+08:00",
+      "access_status": "unavailable",
+      "year": null,
+      "evidence_notes": "学校托管PDF能够识别2页，但正文提取为0行；截图调用未返回可检查图像。本轮仅保留发现记录，不以搜索摘要充当正文。",
+      "source_failure_reason": "unknown",
+      "retrieval_method": "web",
+      "university_notice": {
+        "university_name": "西北师范大学",
+        "notice_type": "repost",
+        "is_formal_recognition": false,
+        "recognition_evidence": null,
+        "school_deadline": null
+      },
+      "source_failure_detail": "body_not_extractable"
+    }
+  },
+  {
+    "competition_id": 4,
+    "competition_name": "全国大学生数学建模竞赛",
+    "university_name": "深圳大学",
+    "school_source_name": "数学科学学院",
+    "source": {
+      "key": "mid-school-183-02",
+      "url": "https://math.szu.edu.cn/info/1051/5496.htm",
+      "title": "2025年全国大学生数学建模竞赛赛题讲评与经验交流会通知",
+      "publisher": "深圳大学 · 数学科学学院",
+      "source_type": "university_notice",
+      "published_at": null,
+      "accessed_at": "2026-09-28T02:50:35+08:00",
+      "access_status": "unavailable",
+      "year": null,
+      "evidence_notes": "搜索发现赛后交流会通知，正文请求超时；未核验会议安排。",
+      "source_failure_reason": "timeout",
+      "retrieval_method": "web",
+      "university_notice": {
+        "university_name": "深圳大学",
+        "notice_type": "repost",
+        "is_formal_recognition": false,
+        "recognition_evidence": null,
+        "school_deadline": null
+      }
+    }
+  },
+  {
+    "competition_id": null,
+    "competition_name": null,
+    "university_name": "湖北大学",
+    "school_source_name": "信息公开网",
+    "source": {
+      "key": "mid-school-180-02",
+      "url": "https://xxgk.hubu.edu.cn/info/1237/9455.htm",
+      "title": "湖北大学全日制普通本科生学科竞赛管理办法（暂行）",
+      "publisher": "湖北大学 · 信息公开网",
+      "source_type": "university_policy",
+      "published_at": null,
+      "accessed_at": "2026-09-28T02:50:35+08:00",
+      "access_status": "unavailable",
+      "year": null,
+      "evidence_notes": "搜索发现政策，正文超时；不认定任何赛事，也不把政策存在标记为已核验。",
+      "source_failure_reason": "timeout",
+      "retrieval_method": "web",
+      "university_notice": {
+        "university_name": "湖北大学",
+        "notice_type": "other",
+        "is_formal_recognition": false,
+        "recognition_evidence": null,
+        "school_deadline": null
+      }
+    }
+  },
+  {
+    "competition_id": null,
+    "competition_name": null,
+    "university_name": "湖北大学",
+    "school_source_name": "创新创业学院",
+    "source": {
+      "key": "mid-school-180-03",
+      "url": "https://cxcy.hubu.edu.cn/__local/5/99/2D/B59372CFB8A30DA5B35A4FF2377_3A503C64_49AAC.pdf",
+      "title": "湖北大学全日制普通本科生学科竞赛管理办法（暂行）（PDF发现）",
+      "publisher": "湖北大学 · 创新创业学院",
+      "source_type": "university_policy",
+      "published_at": null,
+      "accessed_at": "2026-09-28T02:50:35+08:00",
+      "access_status": "unavailable",
+      "year": null,
+      "evidence_notes": "搜索发现PDF，替代入口亦超时；未读取正文。",
+      "source_failure_reason": "timeout",
+      "retrieval_method": "web",
+      "university_notice": {
+        "university_name": "湖北大学",
+        "notice_type": "other",
+        "is_formal_recognition": false,
+        "recognition_evidence": null,
+        "school_deadline": null
+      }
+    }
+  },
+  {
+    "competition_id": null,
+    "competition_name": null,
+    "university_name": "泉州师范学院",
+    "school_source_name": "教务处",
+    "source": {
+      "key": "mid-school-195-02",
+      "url": "https://www.qztc.edu.cn/jwc/_t41/2026/0403/c1022a292407/page.htm",
+      "title": "泉州师范学院关于印发《泉州师范学院大学生学科专业竞赛管理办法》的通知",
+      "publisher": "泉州师范学院 · 教务处",
+      "source_type": "university_policy",
+      "published_at": null,
+      "accessed_at": "2026-09-28T02:50:35+08:00",
+      "access_status": "unavailable",
+      "year": null,
+      "evidence_notes": "管理文件目录可读，但点击正式政策详情返回Cache miss；不以目录冒充正文。",
+      "source_failure_reason": "unknown",
+      "retrieval_method": "web",
+      "university_notice": {
+        "university_name": "泉州师范学院",
+        "notice_type": "other",
+        "is_formal_recognition": false,
+        "recognition_evidence": null,
+        "school_deadline": null
+      },
+      "source_failure_detail": "cache_miss"
+    }
+  },
+  {
+    "competition_id": null,
+    "competition_name": null,
+    "university_name": "泉州师范学院",
+    "school_source_name": "教务处",
+    "source": {
+      "key": "mid-school-195-03",
+      "url": "https://www.qztc.edu.cn/_upload/article/files/45/22/d79a4fd54a26b52c5c34b0c99784/ac45dbb6-ce98-4911-a63c-aac017200caa.pdf",
+      "title": "泉州师范学院学科专业技能竞赛管理办法（PDF发现）",
+      "publisher": "泉州师范学院 · 教务处",
+      "source_type": "university_policy",
+      "published_at": null,
+      "accessed_at": "2026-09-28T02:50:35+08:00",
+      "access_status": "unavailable",
+      "year": null,
+      "evidence_notes": "搜索发现政策PDF，正文工具报not accessible；未读条款。",
+      "source_failure_reason": "unknown",
+      "retrieval_method": "web",
+      "university_notice": {
+        "university_name": "泉州师范学院",
+        "notice_type": "other",
+        "is_formal_recognition": false,
+        "recognition_evidence": null,
+        "school_deadline": null
+      },
+      "source_failure_detail": "tool_not_accessible"
+    }
+  },
+  {
+    "competition_id": 101,
+    "competition_name": "全国大学生英语竞赛",
+    "university_name": "泉州师范学院",
+    "school_source_name": "教务处",
+    "source": {
+      "key": "mid-school-195-04",
+      "url": "https://www.qztc.edu.cn/jwc/2025/0303/c5501a281211/page.htm",
+      "title": "关于组织报名参加2025年全国大学生英语竞赛的通知",
+      "publisher": "泉州师范学院 · 教务处",
+      "source_type": "university_notice",
+      "published_at": null,
+      "accessed_at": "2026-09-28T02:50:35+08:00",
+      "access_status": "unavailable",
+      "year": null,
+      "evidence_notes": "页面标题和发布时间可见，正文区域为空；未核验实际报名办法。",
+      "source_failure_reason": "unknown",
+      "retrieval_method": "web",
+      "university_notice": {
+        "university_name": "泉州师范学院",
+        "notice_type": "registration_notice",
+        "is_formal_recognition": false,
+        "recognition_evidence": null,
+        "school_deadline": null
+      },
+      "source_failure_detail": "body_not_extractable"
+    }
+  },
+  {
+    "competition_id": null,
+    "competition_name": null,
+    "university_name": "江苏大学",
+    "school_source_name": "教务处",
+    "source": {
+      "key": "mid-school-191-03",
+      "url": "https://jwc.ujs.edu.cn/info/1181/26111.htm",
+      "title": "关于举办江苏大学第十三届大学生数学建模竞赛的通知",
+      "publisher": "江苏大学 · 教务处",
+      "source_type": "university_notice",
+      "published_at": null,
+      "accessed_at": "2026-09-28T02:50:35+08:00",
+      "access_status": "unavailable",
+      "year": null,
+      "evidence_notes": "网页只有标题和日期，无正文；不根据校赛标题推断国赛映射。另已取得校赛后续培训PDF正文。",
+      "source_failure_reason": "unknown",
+      "retrieval_method": "web",
+      "university_notice": {
+        "university_name": "江苏大学",
+        "notice_type": "organization_notice",
+        "is_formal_recognition": false,
+        "recognition_evidence": null,
+        "school_deadline": null
+      },
+      "source_failure_detail": "body_not_extractable"
+    }
+  },
+  {
+    "competition_id": 2,
+    "competition_name": "“挑战杯”全国大学生课外学术科技作品竞赛",
+    "university_name": "重庆邮电大学",
+    "school_source_name": "党办校办",
+    "source": {
+      "key": "mid-school-189-01",
+      "url": "https://office.cqupt.edu.cn/__local/6/48/6B/74937F987005DE90E222630CD5A_7FCDFF31_58568.pdf",
+      "title": "关于第十四届“挑战杯”全国大学生课外学术科技作品竞赛参赛作品的通知（搜索发现）",
+      "publisher": "重庆邮电大学 · 党办校办",
+      "source_type": "university_notice",
+      "published_at": null,
+      "accessed_at": "2026-09-28T02:50:35+08:00",
+      "access_status": "unavailable",
+      "year": null,
+      "evidence_notes": "搜索发现重邮〔2015〕118号，PDF工具报not accessible；年份不以搜索摘要视为已核验。",
+      "source_failure_reason": "unknown",
+      "retrieval_method": "web",
+      "university_notice": {
+        "university_name": "重庆邮电大学",
+        "notice_type": "organization_notice",
+        "is_formal_recognition": false,
+        "recognition_evidence": null,
+        "school_deadline": null
+      },
+      "source_failure_detail": "tool_not_accessible"
+    }
+  },
+  {
+    "competition_id": 34,
+    "competition_name": "中国大学生计算机设计大赛",
+    "university_name": "重庆邮电大学",
+    "school_source_name": "远东联邦大学联合学院",
+    "source": {
+      "key": "mid-school-189-02",
+      "url": "https://uc.cqupt.edu.cn/news-notices/notice-detail.html?id=3&title=%E9%87%8D%E5%BA%86%E9%82%AE%E7%94%B5%E5%A4%A7%E5%AD%A6%E5%85%B3%E4%BA%8E%E4%B8%BE%E5%8A%9E2026%E5%B9%B4%E4%B8%AD%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%AE%BE%E8%AE%A1%E5%A4%A7%E8%B5%9B%E6%A0%A1%E7%BA%A7%E9%80%89%E6%8B%94%E8%B5%9B%E7%9A%84%E9%80%9A%E7%9F%A5",
+      "title": "重庆邮电大学关于举办2026年中国大学生计算机设计大赛校级选拔赛的通知",
+      "publisher": "重庆邮电大学 · 远东联邦大学联合学院",
+      "source_type": "university_notice",
+      "published_at": null,
+      "accessed_at": "2026-09-28T02:50:35+08:00",
+      "access_status": "blocked",
+      "year": null,
+      "evidence_notes": "从官方学院首页点击链接，详情返回412 Precondition Failed；校赛具体资格和截止未读。",
+      "source_failure_reason": "blocked",
+      "retrieval_method": "web",
+      "university_notice": {
+        "university_name": "重庆邮电大学",
+        "notice_type": "selection_notice",
+        "is_formal_recognition": false,
+        "recognition_evidence": null,
+        "school_deadline": null
+      },
+      "source_failure_detail": "http_412"
+    }
+  },
+  {
+    "competition_id": 24,
+    "competition_name": "外研社·国才杯“理解当代中国”全国大学生外语能力大赛",
+    "university_name": "四川传媒学院",
+    "school_source_name": "外国语部",
+    "source": {
+      "key": "mid-school-142-02",
+      "url": "https://wgyb.scmc.edu.cn/2026_08/25_09/content-55129.html",
+      "title": "2026“外研社·国才杯”“理解当代中国”全国大学生外语能力大赛四川传媒学院校赛英语组综合能力赛项报名通知",
+      "publisher": "四川传媒学院 · 外国语部",
+      "source_type": "university_notice",
+      "published_at": null,
+      "accessed_at": "2026-09-28T02:50:35+08:00",
+      "access_status": "unavailable",
+      "year": null,
+      "evidence_notes": "官方部门首页展示标题，但详情多次返回Cache miss或not accessible；不能将首页摘要标为通知正文可读。",
+      "source_failure_reason": "unknown",
+      "retrieval_method": "web",
+      "university_notice": {
+        "university_name": "四川传媒学院",
+        "notice_type": "registration_notice",
+        "is_formal_recognition": false,
+        "recognition_evidence": null,
+        "school_deadline": null
+      },
+      "source_failure_detail": "cache_miss"
+    }
+  },
+  {
+    "competition_id": 110,
+    "competition_name": "外研社·国才杯“四新”专项赛",
+    "university_name": "四川传媒学院",
+    "school_source_name": "外国语部",
+    "source": {
+      "key": "mid-school-142-03",
+      "url": "https://wgyb.scmc.edu.cn/2026_08/24_09/content-55132.html",
+      "title": "2026“外研社·国才杯”“理解当代中国”全国大学生外语能力大赛四川传媒学院校赛英语组“四新”专项赛报名通知",
+      "publisher": "四川传媒学院 · 外国语部",
+      "source_type": "university_notice",
+      "published_at": null,
+      "accessed_at": "2026-09-28T02:50:35+08:00",
+      "access_status": "unavailable",
+      "year": null,
+      "evidence_notes": "从官方外国语部首页点击，详情请求超时；暂只保留发现和待核验映射。",
+      "source_failure_reason": "timeout",
+      "retrieval_method": "web",
+      "university_notice": {
+        "university_name": "四川传媒学院",
+        "notice_type": "registration_notice",
+        "is_formal_recognition": false,
+        "recognition_evidence": null,
+        "school_deadline": null
+      }
+    }
+  },
+  {
+    "competition_id": 4,
+    "competition_name": "全国大学生数学建模竞赛",
+    "university_name": "浙江工业大学",
+    "school_source_name": "理学院",
+    "source": {
+      "key": "mid-school-178-03",
+      "url": "https://wlxy.zjut.edu.cn/index.php/Index/file_news_read?id=9158&mid=63&pid=8",
+      "title": "浙江工业大学数学建模竞赛通知（搜索发现，页面标题未核验）",
+      "publisher": "浙江工业大学 · 理学院",
+      "source_type": "university_notice",
+      "published_at": null,
+      "accessed_at": "2026-09-28T02:50:35+08:00",
+      "access_status": "unavailable",
+      "year": null,
+      "evidence_notes": "搜索找到的PHP参数页打开时报告Redirect loop detected；不使用摘要中的日期。另有历史HTML转载正文可读。",
+      "source_failure_reason": "unknown",
+      "retrieval_method": "web",
+      "university_notice": {
+        "university_name": "浙江工业大学",
+        "notice_type": "registration_notice",
+        "is_formal_recognition": false,
+        "recognition_evidence": null,
+        "school_deadline": null
+      },
+      "source_failure_detail": "redirect_loop"
+    }
+  }
+]

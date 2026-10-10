@@ -619,6 +619,7 @@ class UniversityPolicyPipeline:
                 trusted_policy=trusted_policy,
                 source_title=document.title,
                 category="学科竞赛",
+                source_url=document.attachment_url or document.source_url,
             )
             candidate = self._persist_candidate_competition(
                 db,

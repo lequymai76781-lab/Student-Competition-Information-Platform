@@ -2,6 +2,7 @@ import type {
   ApiResponse,
   CompetitionDiscoveryCoverageSummary,
   CompetitionDetail,
+  CompetitionUpdateEvent,
   CompetitionListItem,
   CompetitionRecognition,
   PlatformStats,
@@ -14,7 +15,7 @@ import type {
   UniversityPolicy
 } from "@/lib/types";
 
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL ?? "http://localhost:8000/api";
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL ?? "http://127.0.0.1:8001/api";
 
 const emptyStats: PlatformStats = {
   competitions: 0,
@@ -142,24 +143,22 @@ const emptyCompetitionDiscoveryCoverage: CompetitionDiscoveryCoverageSummary = {
   progress: []
 };
 
-async function request<T>(path: string, init?: RequestInit): Promise<T | null> {
-  try {
-    const response = await fetch(`${API_BASE_URL}${path}`, {
-      ...init,
-      headers: {
-        "Content-Type": "application/json",
-        ...(init?.headers ?? {})
-      },
-      cache: "no-store"
-    });
-    if (!response.ok) {
-      return null;
-    }
-    const payload = (await response.json()) as ApiResponse<T>;
-    return payload.success ? payload.data : null;
-  } catch {
-    return null;
+async function request<T>(path: string, init?: RequestInit, allowNotFound = false): Promise<T | null> {
+  // Let Next.js control-flow exceptions (including no-store prerender bailout)
+  // reach the framework; only a real API 404 is mapped to a missing record.
+  const response = await fetch(`${API_BASE_URL}${path}`, {
+    ...init,
+    headers: { "Content-Type": "application/json", ...(init?.headers ?? {}) },
+    cache: "no-store",
+    signal: init?.signal ?? AbortSignal.timeout(12000)
+  });
+  if (!response.ok) {
+    if (allowNotFound && response.status === 404) return null;
+    throw new Error("数据服务暂时不可用，请稍后重试。");
   }
+  const payload = (await response.json()) as ApiResponse<T>;
+  if (!payload.success || payload.data == null) throw new Error("数据服务返回异常，请重试。");
+  return payload.data;
 }
 
 function withQuery(path: string, params?: Record<string, string | number | undefined | null>): string {
@@ -200,23 +199,32 @@ export async function getCompetition(
   id: string | number,
   params?: Record<string, string | number | undefined | null>
 ): Promise<CompetitionDetail | null> {
-  return (await request<CompetitionDetail>(withQuery(`/competitions/${id}`, params))) ?? null;
+  return (await request<CompetitionDetail>(withQuery(`/competitions/${id}`, params), undefined, true)) ?? null;
 }
 
 export async function getCompetitionRecognition(id: string | number): Promise<CompetitionRecognition[]> {
   return (await request<CompetitionRecognition[]>(`/competition/${id}/university-recognition`)) ?? [];
 }
 
-export async function getCompetitionUpdates(id: string | number): Promise<unknown[]> {
-  return (await request<unknown[]>(`/competitions/${id}/updates`)) ?? [];
+export async function getCompetitionUpdates(id: string | number, editionId?: string | number | null): Promise<CompetitionUpdateEvent[]> {
+  return (await request<CompetitionUpdateEvent[]>(withQuery(`/competitions/${id}/updates`, { edition_id: editionId }))) ?? [];
 }
 
 export async function getUniversities(params?: Record<string, string | number | undefined | null>): Promise<University[]> {
   return (await request<University[]>(withQuery("/universities", params))) ?? [];
 }
 
+export async function getAllUniversities(): Promise<University[]> {
+  const items: University[] = [];
+  for (let offset = 0; ; offset += 100) {
+    const page = await getUniversities({ limit: 100, offset });
+    items.push(...page);
+    if (page.length < 100) return items;
+  }
+}
+
 export async function getUniversity(id: string | number): Promise<UniversityDetail | null> {
-  return (await request<UniversityDetail>(`/universities/${id}`)) ?? null;
+  return (await request<UniversityDetail>(`/universities/${id}`, undefined, true)) ?? null;
 }
 
 export async function getUniversityPolicies(id: string | number): Promise<UniversityPolicy[]> {

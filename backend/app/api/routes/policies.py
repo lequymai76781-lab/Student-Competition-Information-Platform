@@ -1,8 +1,9 @@
 from fastapi import APIRouter, Depends, Query
 from sqlalchemy.orm import Session
 
-from app.api.deps import get_db
+from app.api.deps import get_current_admin, get_db
 from app.core.responses import ApiResponse, success_response
+from app.models import User
 from app.schemas.policy import (
     CrawlerJobRead,
     PolicyCoverageSummary,
@@ -104,6 +105,7 @@ def list_review_queue(
     university_id: int | None = None,
     limit: int = Query(default=50, ge=1, le=100),
     offset: int = Query(default=0, ge=0),
+    admin: User = Depends(get_current_admin),
     db: Session = Depends(get_db),
 ) -> dict:
     data = service.list_review_queue(db, status=status, university_id=university_id, limit=limit, offset=offset)

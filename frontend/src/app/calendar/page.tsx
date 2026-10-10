@@ -22,7 +22,7 @@ export default async function CalendarPage({ searchParams }: CalendarPageProps) 
     university_id: profile.university_id,
     college_id: profile.college_id
   })).filter((item) => item.action_deadline);
-  const monthLabel = new Intl.DateTimeFormat("zh-CN", { year: "numeric", month: "long" }).format(new Date());
+  const monthLabel = new Intl.DateTimeFormat("zh-CN", { year: "numeric", month: "long", timeZone: "Asia/Shanghai" }).format(new Date());
   const upcoming = competitions.slice(0, 4);
 
   return (

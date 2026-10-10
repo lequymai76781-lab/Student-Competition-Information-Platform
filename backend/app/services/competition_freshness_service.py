@@ -94,6 +94,8 @@ class CompetitionFreshnessService:
         source_name: str | None = None,
         verification_status: str = "verified_official",
     ) -> bool:
+        if isinstance(value, datetime):
+            value = self._aware(value)
         old_value = getattr(edition, field_name)
         if self._comparable(old_value) == self._comparable(value):
             return False
